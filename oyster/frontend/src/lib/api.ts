@@ -2022,23 +2022,39 @@ export async function getCompatibleScenario(cveId: string): Promise<{ cve_id: st
 }
 
 // ---------------------------------------------------------------------------
-// Security Intel — "Latest intelligence" feed (OpenCVE, read-only)
+// Security Intel — "Latest intelligence" feed. OpenCVE's hosted API needs an
+// organisation token; without one the backend automatically falls back to
+// the public CISA KEV catalog (no self-hosting, no installation) — `source`
+// says which one a given CveFeedState came from, so the UI always labels it
+// correctly rather than guessing.
 // ---------------------------------------------------------------------------
 
 export interface CveFeedEntry {
   cve_id: string;
-  title: string | null;
-  description: string | null;
-  created_at: string;   // OpenCVE catalog timestamp — NOT NVD publishedDate
-  updated_at: string;   // OpenCVE catalog timestamp — NOT NVD lastModifiedDate
-  newly_published: boolean;
-  recently_modified: boolean;
+  // OpenCVE-shaped fields (present when source === "opencve"):
+  title?: string | null;
+  description?: string | null;
+  created_at?: string;   // OpenCVE catalog timestamp — NOT NVD publishedDate
+  updated_at?: string;   // OpenCVE catalog timestamp — NOT NVD lastModifiedDate
+  newly_published?: boolean;
+  recently_modified?: boolean;
   metrics?: unknown;
   weaknesses?: unknown;
   vendors?: unknown;
+  // CISA KEV-shaped fields (present when source === "cisa_kev"). No severity
+  // field ever — KEV doesn't carry one and this feed never invents one.
+  vendor_project?: string | null;
+  product?: string | null;
+  vulnerability_name?: string | null;
+  date_added?: string;
+  short_description?: string | null;
+  required_action?: string | null;
+  due_date?: string | null;
+  source_url?: string;
 }
 
 export interface CveFeedState {
+  source: "opencve" | "cisa_kev";
   entries: CveFeedEntry[];
   last_synced_at: number | null;
   last_attempt_at: number | null;

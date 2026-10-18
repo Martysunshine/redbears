@@ -154,6 +154,7 @@ def get_feed() -> dict:
     last_attempt_at = cache.get("last_attempt_at")
     stale = bool(last_attempt_at and last_attempt_at != last_synced_at and cache.get("last_error"))
     return {
+        "source": "opencve",
         "entries": entries,
         "last_synced_at": last_synced_at,
         "last_attempt_at": last_attempt_at,

@@ -796,7 +796,8 @@ function LatestIntelligenceFeed() {
   async function handleResearch(entry: CveFeedEntry) {
     setResearching(entry.cve_id);
     try {
-      const result = await researchCve(entry.cve_id, entry.description ?? entry.title ?? undefined);
+      const summary = entry.description ?? entry.title ?? entry.short_description ?? entry.vulnerability_name ?? undefined;
+      const result = await researchCve(entry.cve_id, summary, entry.source_url ?? undefined);
       setResearchResult((r) => ({ ...r, [entry.cve_id]: { lab_validation: result.lab_validation, investigation_id: result.investigation_id } }));
     } catch (e) {
       setResearchResult((r) => ({ ...r, [entry.cve_id]: { lab_validation: "error", investigation_id: e instanceof Error ? e.message : "failed" } }));
@@ -817,10 +818,16 @@ function LatestIntelligenceFeed() {
       <div className="flex flex-wrap items-center gap-2">
         <Rss size={14} className="text-oyster-accent shrink-0" />
         <h3 className="text-sm font-medium text-oyster-text">Latest intelligence</h3>
-        <span className="text-[11px] text-oyster-muted">OpenCVE catalog — newly published &amp; recently modified</span>
+        {feed?.source === "cisa_kev" ? (
+          <span className="text-[11px] px-1.5 py-0.5 rounded-md bg-oyster-accent/10 text-oyster-accent border border-oyster-accent/20 font-medium">
+            Source: CISA KEV
+          </span>
+        ) : (
+          <span className="text-[11px] text-oyster-muted">OpenCVE catalog — newly published &amp; recently modified</span>
+        )}
         <div className="ml-auto flex items-center gap-2">
-          {feed && !feed.configured && (
-            <span className="text-[11px] text-oyster-muted">Not configured — set OPENCVE_API_TOKEN</span>
+          {feed?.source === "opencve" && !feed.configured && (
+            <span className="text-[11px] text-oyster-muted">OpenCVE not configured — using CISA KEV</span>
           )}
           <input
             value={vendor}
@@ -846,6 +853,14 @@ function LatestIntelligenceFeed() {
         </div>
       </div>
 
+      {feed?.source === "cisa_kev" && (
+        <p className="text-[11px] text-oyster-muted leading-relaxed">
+          OpenCVE&rsquo;s hosted API needs an organisation token, which isn&rsquo;t configured here, so this feed is the
+          public <strong>CISA Known Exploited Vulnerabilities (KEV)</strong> catalog instead — vulnerabilities CISA has
+          confirmed are being actively exploited, <em>not every CVE</em>, and with no CVSS/severity score attached (KEV
+          doesn&rsquo;t carry one, and none is invented here).
+        </p>
+      )}
       <p className="text-[11px] text-oyster-muted leading-relaxed">
         &ldquo;Research this CVE&rdquo; seeds the investigation workflow&rsquo;s Research/Investigate stages from this
         record. It only runs an actual lab scenario if that exact CVE id has been explicitly mapped to one — none are
@@ -873,7 +888,9 @@ function LatestIntelligenceFeed() {
         <p className="text-sm text-oyster-muted text-center py-4">Loading…</p>
       ) : !feed || feed.entries.length === 0 ? (
         <p className="text-sm text-oyster-muted text-center py-4">
-          {feed?.configured === false
+          {feed?.source === "cisa_kev"
+            ? "No cached CVEs yet. Click Refresh to fetch the latest from CISA KEV."
+            : feed?.configured === false
             ? "OpenCVE is not configured. Set OPENCVE_API_TOKEN, then Refresh."
             : "No cached CVEs yet. Click Refresh to fetch the latest from OpenCVE."}
         </p>
@@ -881,17 +898,26 @@ function LatestIntelligenceFeed() {
         <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
           {feed.entries.map((entry) => {
             const research = researchResult[entry.cve_id];
+            const isKev = feed.source === "cisa_kev";
+            const title = isKev ? entry.vulnerability_name : entry.title;
+            const description = isKev ? entry.short_description : entry.description;
+            const detailUrl = isKev ? entry.source_url : `https://app.opencve.io/cve/${entry.cve_id}`;
             return (
               <div key={entry.cve_id} className="border border-oyster-border rounded-lg p-3 space-y-1.5">
                 <div className="flex flex-wrap items-center gap-2">
                   <a
-                    href={`https://app.opencve.io/cve/${entry.cve_id}`}
+                    href={detailUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="text-sm font-medium text-oyster-accent hover:underline inline-flex items-center gap-1"
                   >
                     {entry.cve_id} <ExternalLink size={11} />
                   </a>
+                  {isKev && entry.vendor_project && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-oyster-surface text-oyster-muted border border-oyster-border">
+                      {entry.vendor_project}{entry.product ? ` · ${entry.product}` : ""}
+                    </span>
+                  )}
                   {entry.newly_published && (
                     <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-green-500/10 text-green-400 border border-green-500/20">
                       newly published
@@ -903,14 +929,28 @@ function LatestIntelligenceFeed() {
                     </span>
                   )}
                 </div>
-                {entry.title && <p className="text-xs text-oyster-text">{entry.title}</p>}
-                {entry.description && (
-                  <p className="text-xs text-oyster-muted line-clamp-2">{entry.description}</p>
+                {title && <p className="text-xs text-oyster-text">{title}</p>}
+                {description && (
+                  <p className="text-xs text-oyster-muted line-clamp-2">{description}</p>
                 )}
-                <p className="text-[10px] text-oyster-muted">
-                  OpenCVE catalog: created {fmt(entry.created_at)} · updated {fmt(entry.updated_at)}
-                  {" · "}severity scoring unavailable (OpenCVE v2&rsquo;s metrics shape is not verified against a live credential — see docs/INVESTIGATION.md)
-                </p>
+                {isKev ? (
+                  <>
+                    <p className="text-[10px] text-oyster-muted">
+                      Added to CISA KEV {fmt(entry.date_added ?? null)}
+                      {entry.due_date ? ` · remediation due ${fmt(entry.due_date)}` : ""}
+                    </p>
+                    {entry.required_action && (
+                      <p className="text-[10px] text-oyster-muted line-clamp-2">
+                        Remediation: {entry.required_action}
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <p className="text-[10px] text-oyster-muted">
+                    OpenCVE catalog: created {fmt(entry.created_at ?? null)} · updated {fmt(entry.updated_at ?? null)}
+                    {" · "}severity scoring unavailable (OpenCVE v2&rsquo;s metrics shape is not verified against a live credential — see docs/INVESTIGATION.md)
+                  </p>
+                )}
                 <button
                   onClick={() => void handleResearch(entry)}
                   disabled={researching === entry.cve_id}

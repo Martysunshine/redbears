@@ -777,6 +777,15 @@ OPENCVE_RECENT_WINDOW_S: int = _env_int("OPENCVE_RECENT_WINDOW_S", 7 * 86400)
 # every OPENCVE_SCHEDULED_REFRESH_INTERVAL_S; see app.py's startup hook. Never
 # exercised against a live feed on this machine (no credential).
 OPENCVE_SCHEDULED_REFRESH_ENABLED: bool = _env("OPENCVE_SCHEDULED_REFRESH_ENABLED", "false").lower() in ("1", "true", "yes")
+
+# Fallback for the same "Latest intelligence" feed when OpenCVE has no token
+# configured (its hosted API requires auth — verified live: GET /cves with no
+# bearer returns 401 {"error":{"code":"not_authenticated",...}}). Reuses the
+# same public CISA KEV JSON (config.KEV_FEED_URL, already used by the
+# knowledge-base ingestion pipeline) but keeps its own cache file, since this
+# UI feed's refresh cadence/shape is independent of that pipeline's sync job.
+KEV_INTEL_CACHE_PATH: str = _env(
+    "KEV_INTEL_CACHE_PATH", str(Path.home() / "redbears-assets" / "data" / "kev_intel_feed_cache.json"))
 OPENCVE_SCHEDULED_REFRESH_INTERVAL_S: int = _env_int("OPENCVE_SCHEDULED_REFRESH_INTERVAL_S", 3600)
 
 # --- Second-stage lexical reranker ------------------------------------------
