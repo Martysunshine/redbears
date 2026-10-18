@@ -1,0 +1,19 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/database/wmi/reference-wmi-statements.yml -->
+rule:
+  meta:
+    name: reference WMI statements
+    namespace: collection/database/wmi
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Collection::Data from Information Repositories [T1213]
+    examples:
+      - al-khaser_x86.exe_:0x433490
+  features:
+    - or:
+      - string: /SELECT\s+\*\s+FROM\s+CIM_.+/
+      - string: /SELECT\s+\*\s+FROM\s+Win32_.+/
+      - string: /SELECT\s+\*\s+FROM\s+MSAcpi_.+/

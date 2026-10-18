@@ -1,0 +1,17 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/database/sql/reference-sql-statements.yml -->
+rule:
+  meta:
+    name: reference SQL statements
+    namespace: collection/database/sql
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Collection::Data from Information Repositories [T1213]
+    examples:
+      - 5F66B82558CA92E54E77F216EF4C066C:0x42B1DF
+  features:
+    - and:
+      - string: /SELECT.*FROM.*WHERE/

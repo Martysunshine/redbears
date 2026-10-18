@@ -1,0 +1,38 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_event/registry_event_susp_mic_cam_access.yml -->
+title: Suspicious Camera and Microphone Access
+id: 62120148-6b7a-42be-8b91-271c04e281a3
+status: test
+description: Detects Processes accessing the camera and microphone from suspicious folder
+references:
+    - https://medium.com/@7a616368/can-you-track-processes-accessing-the-camera-and-microphone-7e6885b37072
+author: Den Iuzvyk
+date: 2020-06-07
+modified: 2022-10-09
+tags:
+    - attack.collection
+    - attack.t1125
+    - attack.t1123
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection_1:
+        TargetObject|contains|all:
+            - '\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\'
+            - '\NonPackaged'
+    selection_2:
+        TargetObject|contains:
+            - microphone
+            - webcam
+    selection_3:
+        TargetObject|contains:
+            - ':#Windows#Temp#'
+            - ':#$Recycle.bin#'
+            - ':#Temp#'
+            - ':#Users#Public#'
+            - ':#Users#Default#'
+            - ':#Users#Desktop#'
+    condition: all of selection_*
+falsepositives:
+    - Unlikely, there could be conferencing software running from a Temp folder accessing the devices
+level: high

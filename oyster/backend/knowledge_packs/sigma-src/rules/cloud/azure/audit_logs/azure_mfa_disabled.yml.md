@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_mfa_disabled.yml -->
+title: Disabled MFA to Bypass Authentication Mechanisms
+id: 7ea78478-a4f9-42a6-9dcd-f861816122bf
+status: test
+description: Detection for when multi factor authentication has been disabled, which might indicate a malicious activity to bypass authentication mechanisms.
+references:
+    - https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userstates
+    - https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-audit-activities#core-directory
+    - https://research.splunk.com/cloud/482dd42a-acfa-486b-a0bb-d6fcda27318e/
+    - https://analyticsrules.exchange/analyticrules/65c78944-930b-4cae-bd79-c3664ae30ba7/
+    - https://www.elastic.co/docs/reference/security/prebuilt-rules/rules/integrations/azure/persistence_entra_id_mfa_disabled_for_user
+author: '@ionsor'
+date: 2022-02-08
+modified: 2026-04-30
+tags:
+    - attack.credential-access
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1556
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        operationName: 'Disable Strong Authentication'
+        properties.result: 'success'
+    condition: selection
+falsepositives:
+    - Authorized modification by administrators
+level: medium

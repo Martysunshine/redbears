@@ -1,0 +1,2187 @@
+{
+  "id": "atomic-red-team-src",
+  "name": "atomic-red-team-src",
+  "version": "9f85cf3e54b0",
+  "title": "Atomic Red Team (upstream)",
+  "domain": "offensive",
+  "security_domain": "adversary-emulation",
+  "description": "Imported from https://atomicredteam.io/ at 9f85cf3e54b0. 357 documents.",
+  "authority": "Red Canary",
+  "publisher": "Red Canary, Inc.",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "Atomic Red Team, \u00a9 Red Canary, Inc., MIT licence.",
+  "tags": [
+    "atomic-red-team",
+    "attack",
+    "emulation",
+    "ttp",
+    "testing"
+  ],
+  "applicable_tools": [
+    "invoke-atomicredteam",
+    "powershell",
+    "bash"
+  ],
+  "applicable_platforms": [
+    "windows",
+    "linux",
+    "macos"
+  ],
+  "risk_classification": "medium",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly. Maps 1:1 to ATT&CK techniques.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "atomic-red-team-src",
+  "upstream_commit": "9f85cf3e54b0cbdd6c702375c555273913eff442",
+  "source_urls": [
+    "https://atomicredteam.io/",
+    "https://github.com/redcanaryco/atomic-red-team"
+  ],
+  "docs": [
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/azure-ad-index.md",
+      "source_title": "Azure AD Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/azure-ad-index.md",
+      "section": "Azure AD Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/containers-index.md",
+      "source_title": "Containers Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/containers-index.md",
+      "section": "Containers Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/esxi-index.md",
+      "source_title": "ESXi Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/esxi-index.md",
+      "section": "ESXi Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/google-workspace-index.md",
+      "source_title": "Google Workspace Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/google-workspace-index.md",
+      "section": "Google Workspace Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/iaas-index.md",
+      "source_title": "IaaS Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/iaas-index.md",
+      "section": "IaaS Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/index.md",
+      "source_title": "All Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/index.md",
+      "section": "All Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/linux-index.md",
+      "source_title": "Linux Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/linux-index.md",
+      "section": "Linux Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/macos-index.md",
+      "source_title": "macOS Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/macos-index.md",
+      "section": "macOS Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/office-365-index.md",
+      "source_title": "Office 365 Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/office-365-index.md",
+      "section": "Office 365 Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Indexes-Markdown/windows-index.md",
+      "source_title": "Windows Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Indexes-Markdown/windows-index.md",
+      "section": "Windows Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Matrices/esxi-matrix.md",
+      "source_title": "ESXi Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Matrices/esxi-matrix.md",
+      "section": "ESXi Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Matrices/linux-matrix.md",
+      "source_title": "Linux Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Matrices/linux-matrix.md",
+      "section": "Linux Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Matrices/macos-matrix.md",
+      "source_title": "macOS Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Matrices/macos-matrix.md",
+      "section": "macOS Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Matrices/matrix.md",
+      "source_title": "All Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Matrices/matrix.md",
+      "section": "All Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/Indexes/Matrices/windows-matrix.md",
+      "source_title": "Windows Atomic Tests by ATT&CK Tactic & Technique",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/Indexes/Matrices/windows-matrix.md",
+      "section": "Windows Atomic Tests by ATT&CK Tactic & Technique"
+    },
+    {
+      "file": "atomics/T1001.002/T1001.002.md",
+      "source_title": "T1001.002 - Data Obfuscation via Steganography",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1001.002/T1001.002.md",
+      "section": "T1001.002 - Data Obfuscation via Steganography"
+    },
+    {
+      "file": "atomics/T1003/T1003.md",
+      "source_title": "T1003 - OS Credential Dumping",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003/T1003.md",
+      "section": "T1003 - OS Credential Dumping"
+    },
+    {
+      "file": "atomics/T1003.001/T1003.001.md",
+      "source_title": "T1003.001 - OS Credential Dumping: LSASS Memory",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.001/T1003.001.md",
+      "section": "T1003.001 - OS Credential Dumping: LSASS Memory"
+    },
+    {
+      "file": "atomics/T1003.002/T1003.002.md",
+      "source_title": "T1003.002 - OS Credential Dumping: Security Account Manager",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.002/T1003.002.md",
+      "section": "T1003.002 - OS Credential Dumping: Security Account Manager"
+    },
+    {
+      "file": "atomics/T1003.003/T1003.003.md",
+      "source_title": "T1003.003 - OS Credential Dumping: NTDS",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.003/T1003.003.md",
+      "section": "T1003.003 - OS Credential Dumping: NTDS"
+    },
+    {
+      "file": "atomics/T1003.004/T1003.004.md",
+      "source_title": "T1003.004 - OS Credential Dumping: LSA Secrets",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.004/T1003.004.md",
+      "section": "T1003.004 - OS Credential Dumping: LSA Secrets"
+    },
+    {
+      "file": "atomics/T1003.005/T1003.005.md",
+      "source_title": "T1003.005 - OS Credential Dumping: Cached Domain Credentials",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.005/T1003.005.md",
+      "section": "T1003.005 - OS Credential Dumping: Cached Domain Credentials"
+    },
+    {
+      "file": "atomics/T1003.006/T1003.006.md",
+      "source_title": "T1003.006 - OS Credential Dumping: DCSync",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.006/T1003.006.md",
+      "section": "T1003.006 - OS Credential Dumping: DCSync"
+    },
+    {
+      "file": "atomics/T1003.007/T1003.007.md",
+      "source_title": "T1003.007 - OS Credential Dumping: Proc Filesystem",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.007/T1003.007.md",
+      "section": "T1003.007 - OS Credential Dumping: Proc Filesystem"
+    },
+    {
+      "file": "atomics/T1003.008/T1003.008.md",
+      "source_title": "T1003.008 - OS Credential Dumping: /etc/passwd, /etc/master.passwd and /etc/shadow",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1003.008/T1003.008.md",
+      "section": "T1003.008 - OS Credential Dumping: /etc/passwd, /etc/master.passwd and /etc/shadow"
+    },
+    {
+      "file": "atomics/T1005/T1005.md",
+      "source_title": "T1005 - Data from Local System",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1005/T1005.md",
+      "section": "T1005 - Data from Local System"
+    },
+    {
+      "file": "atomics/T1006/T1006.md",
+      "source_title": "T1006 - Direct Volume Access",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1006/T1006.md",
+      "section": "T1006 - Direct Volume Access"
+    },
+    {
+      "file": "atomics/T1007/T1007.md",
+      "source_title": "T1007 - System Service Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1007/T1007.md",
+      "section": "T1007 - System Service Discovery"
+    },
+    {
+      "file": "atomics/T1010/T1010.md",
+      "source_title": "T1010 - Application Window Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1010/T1010.md",
+      "section": "T1010 - Application Window Discovery"
+    },
+    {
+      "file": "atomics/T1012/T1012.md",
+      "source_title": "T1012 - Query Registry",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1012/T1012.md",
+      "section": "T1012 - Query Registry"
+    },
+    {
+      "file": "atomics/T1014/T1014.md",
+      "source_title": "T1014 - Rootkit",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1014/T1014.md",
+      "section": "T1014 - Rootkit"
+    },
+    {
+      "file": "atomics/T1016/T1016.md",
+      "source_title": "T1016 - System Network Configuration Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1016/T1016.md",
+      "section": "T1016 - System Network Configuration Discovery"
+    },
+    {
+      "file": "atomics/T1016.001/T1016.001.md",
+      "source_title": "T1016.001 - System Network Configuration Discovery: Internet Connection Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1016.001/T1016.001.md",
+      "section": "T1016.001 - System Network Configuration Discovery: Internet Connection Discovery"
+    },
+    {
+      "file": "atomics/T1016.002/T1016.002.md",
+      "source_title": "T1016.002 - System Network Configuration Discovery: Wi-Fi Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1016.002/T1016.002.md",
+      "section": "T1016.002 - System Network Configuration Discovery: Wi-Fi Discovery"
+    },
+    {
+      "file": "atomics/T1018/T1018.md",
+      "source_title": "T1018 - Remote System Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1018/T1018.md",
+      "section": "T1018 - Remote System Discovery"
+    },
+    {
+      "file": "atomics/T1020/T1020.md",
+      "source_title": "T1020 - Automated Exfiltration",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1020/T1020.md",
+      "section": "T1020 - Automated Exfiltration"
+    },
+    {
+      "file": "atomics/T1021.001/T1021.001.md",
+      "source_title": "T1021.001 - Remote Services: Remote Desktop Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.001/T1021.001.md",
+      "section": "T1021.001 - Remote Services: Remote Desktop Protocol"
+    },
+    {
+      "file": "atomics/T1021.002/T1021.002.md",
+      "source_title": "T1021.002 - Remote Services: SMB/Windows Admin Shares",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.002/T1021.002.md",
+      "section": "T1021.002 - Remote Services: SMB/Windows Admin Shares"
+    },
+    {
+      "file": "atomics/T1021.003/T1021.003.md",
+      "source_title": "T1021.003 - Remote Services: Distributed Component Object Model",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.003/T1021.003.md",
+      "section": "T1021.003 - Remote Services: Distributed Component Object Model"
+    },
+    {
+      "file": "atomics/T1021.004/T1021.004.md",
+      "source_title": "T1021.004 - Remote Services: SSH",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.004/T1021.004.md",
+      "section": "T1021.004 - Remote Services: SSH"
+    },
+    {
+      "file": "atomics/T1021.005/T1021.005.md",
+      "source_title": "T1021.005 - Remote Services:VNC",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.005/T1021.005.md",
+      "section": "T1021.005 - Remote Services:VNC"
+    },
+    {
+      "file": "atomics/T1021.006/T1021.006.md",
+      "source_title": "T1021.006 - Remote Services: Windows Remote Management",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1021.006/T1021.006.md",
+      "section": "T1021.006 - Remote Services: Windows Remote Management"
+    },
+    {
+      "file": "atomics/T1025/T1025.md",
+      "source_title": "T1025 - Data from Removable Media",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1025/T1025.md",
+      "section": "T1025 - Data from Removable Media"
+    },
+    {
+      "file": "atomics/T1027/T1027.md",
+      "source_title": "T1027 - Obfuscated Files or Information",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027/T1027.md",
+      "section": "T1027 - Obfuscated Files or Information"
+    },
+    {
+      "file": "atomics/T1027.001/T1027.001.md",
+      "source_title": "T1027.001 - Obfuscated Files or Information: Binary Padding",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.001/T1027.001.md",
+      "section": "T1027.001 - Obfuscated Files or Information: Binary Padding"
+    },
+    {
+      "file": "atomics/T1027.002/T1027.002.md",
+      "source_title": "T1027.002 - Obfuscated Files or Information: Software Packing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.002/T1027.002.md",
+      "section": "T1027.002 - Obfuscated Files or Information: Software Packing"
+    },
+    {
+      "file": "atomics/T1027.004/T1027.004.md",
+      "source_title": "T1027.004 - Obfuscated Files or Information: Compile After Delivery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.004/T1027.004.md",
+      "section": "T1027.004 - Obfuscated Files or Information: Compile After Delivery"
+    },
+    {
+      "file": "atomics/T1027.006/T1027.006.md",
+      "source_title": "T1027.006 - HTML Smuggling",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.006/T1027.006.md",
+      "section": "T1027.006 - HTML Smuggling"
+    },
+    {
+      "file": "atomics/T1027.007/T1027.007.md",
+      "source_title": "T1027.007 - Obfuscated Files or Information: Dynamic API Resolution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.007/T1027.007.md",
+      "section": "T1027.007 - Obfuscated Files or Information: Dynamic API Resolution"
+    },
+    {
+      "file": "atomics/T1027.013/T1027.013.md",
+      "source_title": "T1027.013 - Obfuscated Files or Information: Encrypted/Encoded File",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.013/T1027.013.md",
+      "section": "T1027.013 - Obfuscated Files or Information: Encrypted/Encoded File"
+    },
+    {
+      "file": "atomics/T1027.018/T1027.018.md",
+      "source_title": "T1027.018 - Obfuscated Files or Information: Invisible Unicode",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1027.018/T1027.018.md",
+      "section": "T1027.018 - Obfuscated Files or Information: Invisible Unicode"
+    },
+    {
+      "file": "atomics/T1030/T1030.md",
+      "source_title": "T1030 - Data Transfer Size Limits",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1030/T1030.md",
+      "section": "T1030 - Data Transfer Size Limits"
+    },
+    {
+      "file": "atomics/T1033/T1033.md",
+      "source_title": "T1033 - System Owner/User Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1033/T1033.md",
+      "section": "T1033 - System Owner/User Discovery"
+    },
+    {
+      "file": "atomics/T1036/T1036.md",
+      "source_title": "T1036 - Masquerading",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036/T1036.md",
+      "section": "T1036 - Masquerading"
+    },
+    {
+      "file": "atomics/T1036.002/T1036.002.md",
+      "source_title": "T1036.002 - Masquerading:Right-to-Left Override",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.002/T1036.002.md",
+      "section": "T1036.002 - Masquerading:Right-to-Left Override"
+    },
+    {
+      "file": "atomics/T1036.003/T1036.003.md",
+      "source_title": "T1036.003 - Masquerading: Rename System Utilities",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.003/T1036.003.md",
+      "section": "T1036.003 - Masquerading: Rename System Utilities"
+    },
+    {
+      "file": "atomics/T1036.004/T1036.004.md",
+      "source_title": "T1036.004 - Masquerading: Masquerade Task or Service",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.004/T1036.004.md",
+      "section": "T1036.004 - Masquerading: Masquerade Task or Service"
+    },
+    {
+      "file": "atomics/T1036.005/T1036.005.md",
+      "source_title": "T1036.005 - Masquerading: Match Legitimate Name or Location",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.005/T1036.005.md",
+      "section": "T1036.005 - Masquerading: Match Legitimate Name or Location"
+    },
+    {
+      "file": "atomics/T1036.006/T1036.006.md",
+      "source_title": "T1036.006 - Masquerading: Space after Filename",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.006/T1036.006.md",
+      "section": "T1036.006 - Masquerading: Space after Filename"
+    },
+    {
+      "file": "atomics/T1036.007/T1036.007.md",
+      "source_title": "T1036.007 - Masquerading: Double File Extension",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.007/T1036.007.md",
+      "section": "T1036.007 - Masquerading: Double File Extension"
+    },
+    {
+      "file": "atomics/T1036.008/T1036.008.md",
+      "source_title": "T1036.008 - Masquerading: Masquerade File Type",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1036.008/T1036.008.md",
+      "section": "T1036.008 - Masquerading: Masquerade File Type"
+    },
+    {
+      "file": "atomics/T1037.001/T1037.001.md",
+      "source_title": "T1037.001 - Boot or Logon Initialization Scripts: Logon Script (Windows)",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1037.001/T1037.001.md",
+      "section": "T1037.001 - Boot or Logon Initialization Scripts: Logon Script (Windows)"
+    },
+    {
+      "file": "atomics/T1037.002/T1037.002.md",
+      "source_title": "T1037.002 - Boot or Logon Initialization Scripts: Logon Script (Mac)",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1037.002/T1037.002.md",
+      "section": "T1037.002 - Boot or Logon Initialization Scripts: Logon Script (Mac)"
+    },
+    {
+      "file": "atomics/T1037.004/T1037.004.md",
+      "source_title": "T1037.004 - Boot or Logon Initialization Scripts: Rc.common",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1037.004/T1037.004.md",
+      "section": "T1037.004 - Boot or Logon Initialization Scripts: Rc.common"
+    },
+    {
+      "file": "atomics/T1037.005/T1037.005.md",
+      "source_title": "T1037.005 - Boot or Logon Initialization Scripts: Startup Items",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1037.005/T1037.005.md",
+      "section": "T1037.005 - Boot or Logon Initialization Scripts: Startup Items"
+    },
+    {
+      "file": "atomics/T1039/T1039.md",
+      "source_title": "T1039 - Data from Network Shared Drive",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1039/T1039.md",
+      "section": "T1039 - Data from Network Shared Drive"
+    },
+    {
+      "file": "atomics/T1040/T1040.md",
+      "source_title": "T1040 - Network Sniffing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1040/T1040.md",
+      "section": "T1040 - Network Sniffing"
+    },
+    {
+      "file": "atomics/T1041/T1041.md",
+      "source_title": "T1041 - Exfiltration Over C2 Channel",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1041/T1041.md",
+      "section": "T1041 - Exfiltration Over C2 Channel"
+    },
+    {
+      "file": "atomics/T1046/T1046.md",
+      "source_title": "T1046 - Network Service Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1046/T1046.md",
+      "section": "T1046 - Network Service Discovery"
+    },
+    {
+      "file": "atomics/T1047/T1047.md",
+      "source_title": "T1047 - Windows Management Instrumentation",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1047/T1047.md",
+      "section": "T1047 - Windows Management Instrumentation"
+    },
+    {
+      "file": "atomics/T1048/T1048.md",
+      "source_title": "T1048 - Exfiltration Over Alternative Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1048/T1048.md",
+      "section": "T1048 - Exfiltration Over Alternative Protocol"
+    },
+    {
+      "file": "atomics/T1048.002/T1048.002.md",
+      "source_title": "T1048.002 - Exfiltration Over Alternative Protocol - Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1048.002/T1048.002.md",
+      "section": "T1048.002 - Exfiltration Over Alternative Protocol - Exfiltration Over Asymmetric Encrypted Non-C2 Protocol"
+    },
+    {
+      "file": "atomics/T1048.003/T1048.003.md",
+      "source_title": "T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1048.003/T1048.003.md",
+      "section": "T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol"
+    },
+    {
+      "file": "atomics/T1049/T1049.md",
+      "source_title": "T1049 - System Network Connections Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1049/T1049.md",
+      "section": "T1049 - System Network Connections Discovery"
+    },
+    {
+      "file": "atomics/T1053.002/T1053.002.md",
+      "source_title": "T1053.002 - Scheduled Task/Job: At",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1053.002/T1053.002.md",
+      "section": "T1053.002 - Scheduled Task/Job: At"
+    },
+    {
+      "file": "atomics/T1053.003/T1053.003.md",
+      "source_title": "T1053.003 - Scheduled Task/Job: Cron",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1053.003/T1053.003.md",
+      "section": "T1053.003 - Scheduled Task/Job: Cron"
+    },
+    {
+      "file": "atomics/T1053.005/T1053.005.md",
+      "source_title": "T1053.005 - Scheduled Task/Job: Scheduled Task",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1053.005/T1053.005.md",
+      "section": "T1053.005 - Scheduled Task/Job: Scheduled Task"
+    },
+    {
+      "file": "atomics/T1053.006/T1053.006.md",
+      "source_title": "T1053.006 - Scheduled Task/Job: Systemd Timers",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1053.006/T1053.006.md",
+      "section": "T1053.006 - Scheduled Task/Job: Systemd Timers"
+    },
+    {
+      "file": "atomics/T1053.007/T1053.007.md",
+      "source_title": "T1053.007 - Kubernetes Cronjob",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1053.007/T1053.007.md",
+      "section": "T1053.007 - Kubernetes Cronjob"
+    },
+    {
+      "file": "atomics/T1055/T1055.md",
+      "source_title": "T1055 - Process Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055/T1055.md",
+      "section": "T1055 - Process Injection"
+    },
+    {
+      "file": "atomics/T1055.001/T1055.001.md",
+      "source_title": "T1055.001 - Process Injection: Dynamic-link Library Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.001/T1055.001.md",
+      "section": "T1055.001 - Process Injection: Dynamic-link Library Injection"
+    },
+    {
+      "file": "atomics/T1055.002/T1055.002.md",
+      "source_title": "T1055.002 - Process Injection: Portable Executable Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.002/T1055.002.md",
+      "section": "T1055.002 - Process Injection: Portable Executable Injection"
+    },
+    {
+      "file": "atomics/T1055.003/T1055.003.md",
+      "source_title": "T1055.003 - Thread Execution Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.003/T1055.003.md",
+      "section": "T1055.003 - Thread Execution Hijacking"
+    },
+    {
+      "file": "atomics/T1055.004/T1055.004.md",
+      "source_title": "T1055.004 - Process Injection: Asynchronous Procedure Call",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.004/T1055.004.md",
+      "section": "T1055.004 - Process Injection: Asynchronous Procedure Call"
+    },
+    {
+      "file": "atomics/T1055.009/T1055.009.md",
+      "source_title": "T1055.009 - Process Injection: Proc Memory",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.009/T1055.009.md",
+      "section": "T1055.009 - Process Injection: Proc Memory"
+    },
+    {
+      "file": "atomics/T1055.011/T1055.011.md",
+      "source_title": "T1055.011 - Process Injection: Extra Window Memory Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.011/T1055.011.md",
+      "section": "T1055.011 - Process Injection: Extra Window Memory Injection"
+    },
+    {
+      "file": "atomics/T1055.012/T1055.012.md",
+      "source_title": "T1055.012 - Process Injection: Process Hollowing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.012/T1055.012.md",
+      "section": "T1055.012 - Process Injection: Process Hollowing"
+    },
+    {
+      "file": "atomics/T1055.015/T1055.015.md",
+      "source_title": "T1055.015 - Process Injection: ListPlanting",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1055.015/T1055.015.md",
+      "section": "T1055.015 - Process Injection: ListPlanting"
+    },
+    {
+      "file": "atomics/T1056.001/T1056.001.md",
+      "source_title": "T1056.001 - Input Capture: Keylogging",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1056.001/T1056.001.md",
+      "section": "T1056.001 - Input Capture: Keylogging"
+    },
+    {
+      "file": "atomics/T1056.002/T1056.002.md",
+      "source_title": "T1056.002 - Input Capture: GUI Input Capture",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1056.002/T1056.002.md",
+      "section": "T1056.002 - Input Capture: GUI Input Capture"
+    },
+    {
+      "file": "atomics/T1056.004/T1056.004.md",
+      "source_title": "T1056.004 - Input Capture: Credential API Hooking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1056.004/T1056.004.md",
+      "section": "T1056.004 - Input Capture: Credential API Hooking"
+    },
+    {
+      "file": "atomics/T1057/T1057.md",
+      "source_title": "T1057 - Process Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1057/T1057.md",
+      "section": "T1057 - Process Discovery"
+    },
+    {
+      "file": "atomics/T1059/T1059.md",
+      "source_title": "T1059 - Command and Scripting Interpreter",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059/T1059.md",
+      "section": "T1059 - Command and Scripting Interpreter"
+    },
+    {
+      "file": "atomics/T1059.001/T1059.001.md",
+      "source_title": "T1059.001 - Command and Scripting Interpreter: PowerShell",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.001/T1059.001.md",
+      "section": "T1059.001 - Command and Scripting Interpreter: PowerShell"
+    },
+    {
+      "file": "atomics/T1059.002/T1059.002.md",
+      "source_title": "T1059.002 - Command and Scripting Interpreter: AppleScript",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.002/T1059.002.md",
+      "section": "T1059.002 - Command and Scripting Interpreter: AppleScript"
+    },
+    {
+      "file": "atomics/T1059.003/T1059.003.md",
+      "source_title": "T1059.003 - Command and Scripting Interpreter: Windows Command Shell",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.003/T1059.003.md",
+      "section": "T1059.003 - Command and Scripting Interpreter: Windows Command Shell"
+    },
+    {
+      "file": "atomics/T1059.004/T1059.004.md",
+      "source_title": "T1059.004 - Command and Scripting Interpreter: Bash",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.004/T1059.004.md",
+      "section": "T1059.004 - Command and Scripting Interpreter: Bash"
+    },
+    {
+      "file": "atomics/T1059.005/T1059.005.md",
+      "source_title": "T1059.005 - Command and Scripting Interpreter: Visual Basic",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.005/T1059.005.md",
+      "section": "T1059.005 - Command and Scripting Interpreter: Visual Basic"
+    },
+    {
+      "file": "atomics/T1059.006/T1059.006.md",
+      "source_title": "T1059.006 - Command and Scripting Interpreter: Python",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.006/T1059.006.md",
+      "section": "T1059.006 - Command and Scripting Interpreter: Python"
+    },
+    {
+      "file": "atomics/T1059.007/T1059.007.md",
+      "source_title": "T1059.007 - Command and Scripting Interpreter: JavaScript",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.007/T1059.007.md",
+      "section": "T1059.007 - Command and Scripting Interpreter: JavaScript"
+    },
+    {
+      "file": "atomics/T1059.010/T1059.010.md",
+      "source_title": "T1059.010 - Command and Scripting Interpreter: AutoHotKey & AutoIT",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1059.010/T1059.010.md",
+      "section": "T1059.010 - Command and Scripting Interpreter: AutoHotKey & AutoIT"
+    },
+    {
+      "file": "atomics/T1069.001/T1069.001.md",
+      "source_title": "T1069.001 - Permission Groups Discovery: Local Groups",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1069.001/T1069.001.md",
+      "section": "T1069.001 - Permission Groups Discovery: Local Groups"
+    },
+    {
+      "file": "atomics/T1069.002/T1069.002.md",
+      "source_title": "T1069.002 - Permission Groups Discovery: Domain Groups",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1069.002/T1069.002.md",
+      "section": "T1069.002 - Permission Groups Discovery: Domain Groups"
+    },
+    {
+      "file": "atomics/T1070/T1070.md",
+      "source_title": "T1070 - Indicator Removal on Host",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070/T1070.md",
+      "section": "T1070 - Indicator Removal on Host"
+    },
+    {
+      "file": "atomics/T1070.003/T1070.003.md",
+      "source_title": "T1070.003 - Indicator Removal on Host: Clear Command History",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070.003/T1070.003.md",
+      "section": "T1070.003 - Indicator Removal on Host: Clear Command History"
+    },
+    {
+      "file": "atomics/T1070.004/T1070.004.md",
+      "source_title": "T1070.004 - Indicator Removal on Host: File Deletion",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070.004/T1070.004.md",
+      "section": "T1070.004 - Indicator Removal on Host: File Deletion"
+    },
+    {
+      "file": "atomics/T1070.005/T1070.005.md",
+      "source_title": "T1070.005 - Indicator Removal on Host: Network Share Connection Removal",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070.005/T1070.005.md",
+      "section": "T1070.005 - Indicator Removal on Host: Network Share Connection Removal"
+    },
+    {
+      "file": "atomics/T1070.006/T1070.006.md",
+      "source_title": "T1070.006 - Indicator Removal on Host: Timestomp",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070.006/T1070.006.md",
+      "section": "T1070.006 - Indicator Removal on Host: Timestomp"
+    },
+    {
+      "file": "atomics/T1070.008/T1070.008.md",
+      "source_title": "T1070.008 - Email Collection: Mailbox Manipulation",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1070.008/T1070.008.md",
+      "section": "T1070.008 - Email Collection: Mailbox Manipulation"
+    },
+    {
+      "file": "atomics/T1071/T1071.md",
+      "source_title": "T1071 - Application Layer Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1071/T1071.md",
+      "section": "T1071 - Application Layer Protocol"
+    },
+    {
+      "file": "atomics/T1071.001/T1071.001.md",
+      "source_title": "T1071.001 - Application Layer Protocol: Web Protocols",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1071.001/T1071.001.md",
+      "section": "T1071.001 - Application Layer Protocol: Web Protocols"
+    },
+    {
+      "file": "atomics/T1071.004/T1071.004.md",
+      "source_title": "T1071.004 - Application Layer Protocol: DNS",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1071.004/T1071.004.md",
+      "section": "T1071.004 - Application Layer Protocol: DNS"
+    },
+    {
+      "file": "atomics/T1072/T1072.md",
+      "source_title": "T1072 - Software Deployment Tools",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1072/T1072.md",
+      "section": "T1072 - Software Deployment Tools"
+    },
+    {
+      "file": "atomics/T1074.001/T1074.001.md",
+      "source_title": "T1074.001 - Data Staged: Local Data Staging",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1074.001/T1074.001.md",
+      "section": "T1074.001 - Data Staged: Local Data Staging"
+    },
+    {
+      "file": "atomics/T1078.001/T1078.001.md",
+      "source_title": "T1078.001 - Valid Accounts: Default Accounts",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1078.001/T1078.001.md",
+      "section": "T1078.001 - Valid Accounts: Default Accounts"
+    },
+    {
+      "file": "atomics/T1078.003/T1078.003.md",
+      "source_title": "T1078.003 - Valid Accounts: Local Accounts",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1078.003/T1078.003.md",
+      "section": "T1078.003 - Valid Accounts: Local Accounts"
+    },
+    {
+      "file": "atomics/T1078.004/T1078.004.md",
+      "source_title": "T1078.004 - Valid Accounts: Cloud Accounts",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1078.004/T1078.004.md",
+      "section": "T1078.004 - Valid Accounts: Cloud Accounts"
+    },
+    {
+      "file": "atomics/T1082/T1082.md",
+      "source_title": "T1082 - System Information Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1082/T1082.md",
+      "section": "T1082 - System Information Discovery"
+    },
+    {
+      "file": "atomics/T1083/T1083.md",
+      "source_title": "T1083 - File and Directory Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1083/T1083.md",
+      "section": "T1083 - File and Directory Discovery"
+    },
+    {
+      "file": "atomics/T1087.001/T1087.001.md",
+      "source_title": "T1087.001 - Account Discovery: Local Account",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1087.001/T1087.001.md",
+      "section": "T1087.001 - Account Discovery: Local Account"
+    },
+    {
+      "file": "atomics/T1087.002/T1087.002.md",
+      "source_title": "T1087.002 - Account Discovery: Domain Account",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1087.002/T1087.002.md",
+      "section": "T1087.002 - Account Discovery: Domain Account"
+    },
+    {
+      "file": "atomics/T1090.001/T1090.001.md",
+      "source_title": "T1090.001 - Proxy: Internal Proxy",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1090.001/T1090.001.md",
+      "section": "T1090.001 - Proxy: Internal Proxy"
+    },
+    {
+      "file": "atomics/T1090.003/T1090.003.md",
+      "source_title": "T1090.003 - Proxy: Multi-hop Proxy",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1090.003/T1090.003.md",
+      "section": "T1090.003 - Proxy: Multi-hop Proxy"
+    },
+    {
+      "file": "atomics/T1091/T1091.md",
+      "source_title": "T1091 - Replication Through Removable Media",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1091/T1091.md",
+      "section": "T1091 - Replication Through Removable Media"
+    },
+    {
+      "file": "atomics/T1095/T1095.md",
+      "source_title": "T1095 - Non-Application Layer Protocol",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1095/T1095.md",
+      "section": "T1095 - Non-Application Layer Protocol"
+    },
+    {
+      "file": "atomics/T1098/T1098.md",
+      "source_title": "T1098 - Account Manipulation",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1098/T1098.md",
+      "section": "T1098 - Account Manipulation"
+    },
+    {
+      "file": "atomics/T1098.001/T1098.001.md",
+      "source_title": "T1098.001 - Account Manipulation: Additional Cloud Credentials",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1098.001/T1098.001.md",
+      "section": "T1098.001 - Account Manipulation: Additional Cloud Credentials"
+    },
+    {
+      "file": "atomics/T1098.002/T1098.002.md",
+      "source_title": "T1098.002 - Account Manipulation: Additional Email Delegate Permissions",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1098.002/T1098.002.md",
+      "section": "T1098.002 - Account Manipulation: Additional Email Delegate Permissions"
+    },
+    {
+      "file": "atomics/T1098.003/T1098.003.md",
+      "source_title": "T1098.003 - Account Manipulation: Additional Cloud Roles",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1098.003/T1098.003.md",
+      "section": "T1098.003 - Account Manipulation: Additional Cloud Roles"
+    },
+    {
+      "file": "atomics/T1098.004/T1098.004.md",
+      "source_title": "T1098.004 - SSH Authorized Keys",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1098.004/T1098.004.md",
+      "section": "T1098.004 - SSH Authorized Keys"
+    },
+    {
+      "file": "atomics/T1102.002/T1102.002.md",
+      "source_title": "T1102.002 - Web Service: Bidirectional Communication",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1102.002/T1102.002.md",
+      "section": "T1102.002 - Web Service: Bidirectional Communication"
+    },
+    {
+      "file": "atomics/T1105/T1105.md",
+      "source_title": "T1105 - Ingress Tool Transfer",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1105/T1105.md",
+      "section": "T1105 - Ingress Tool Transfer"
+    },
+    {
+      "file": "atomics/T1106/T1106.md",
+      "source_title": "T1106 - Native API",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1106/T1106.md",
+      "section": "T1106 - Native API"
+    },
+    {
+      "file": "atomics/T1110.001/T1110.001.md",
+      "source_title": "T1110.001 - Brute Force: Password Guessing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1110.001/T1110.001.md",
+      "section": "T1110.001 - Brute Force: Password Guessing"
+    },
+    {
+      "file": "atomics/T1110.002/T1110.002.md",
+      "source_title": "T1110.002 - Brute Force: Password Cracking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1110.002/T1110.002.md",
+      "section": "T1110.002 - Brute Force: Password Cracking"
+    },
+    {
+      "file": "atomics/T1110.003/T1110.003.md",
+      "source_title": "T1110.003 - Brute Force: Password Spraying",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1110.003/T1110.003.md",
+      "section": "T1110.003 - Brute Force: Password Spraying"
+    },
+    {
+      "file": "atomics/T1110.004/T1110.004.md",
+      "source_title": "T1110.004 - Brute Force: Credential Stuffing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1110.004/T1110.004.md",
+      "section": "T1110.004 - Brute Force: Credential Stuffing"
+    },
+    {
+      "file": "atomics/T1112/T1112.md",
+      "source_title": "T1112 - Modify Registry",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1112/T1112.md",
+      "section": "T1112 - Modify Registry"
+    },
+    {
+      "file": "atomics/T1113/T1113.md",
+      "source_title": "T1113 - Screen Capture",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1113/T1113.md",
+      "section": "T1113 - Screen Capture"
+    },
+    {
+      "file": "atomics/T1114.001/T1114.001.md",
+      "source_title": "T1114.001 - Email Collection: Local Email Collection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1114.001/T1114.001.md",
+      "section": "T1114.001 - Email Collection: Local Email Collection"
+    },
+    {
+      "file": "atomics/T1114.002/T1114.002.md",
+      "source_title": "T1114.002 - Email Collection: Remote Email Collection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1114.002/T1114.002.md",
+      "section": "T1114.002 - Email Collection: Remote Email Collection"
+    },
+    {
+      "file": "atomics/T1114.003/T1114.003.md",
+      "source_title": "T1114.003 - Email Collection: Email Forwarding Rule",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1114.003/T1114.003.md",
+      "section": "T1114.003 - Email Collection: Email Forwarding Rule"
+    },
+    {
+      "file": "atomics/T1115/T1115.md",
+      "source_title": "T1115 - Clipboard Data",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1115/T1115.md",
+      "section": "T1115 - Clipboard Data"
+    },
+    {
+      "file": "atomics/T1119/T1119.md",
+      "source_title": "T1119 - Automated Collection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1119/T1119.md",
+      "section": "T1119 - Automated Collection"
+    },
+    {
+      "file": "atomics/T1120/T1120.md",
+      "source_title": "T1120 - Peripheral Device Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1120/T1120.md",
+      "section": "T1120 - Peripheral Device Discovery"
+    },
+    {
+      "file": "atomics/T1123/T1123.md",
+      "source_title": "T1123 - Audio Capture",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1123/T1123.md",
+      "section": "T1123 - Audio Capture"
+    },
+    {
+      "file": "atomics/T1124/T1124.md",
+      "source_title": "T1124 - System Time Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1124/T1124.md",
+      "section": "T1124 - System Time Discovery"
+    },
+    {
+      "file": "atomics/T1125/T1125.md",
+      "source_title": "T1125 - Video Capture",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1125/T1125.md",
+      "section": "T1125 - Video Capture"
+    },
+    {
+      "file": "atomics/T1127/T1127.md",
+      "source_title": "T1127 - Trusted Developer Utilities Proxy Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1127/T1127.md",
+      "section": "T1127 - Trusted Developer Utilities Proxy Execution"
+    },
+    {
+      "file": "atomics/T1127.001/T1127.001.md",
+      "source_title": "T1127.001 - Trusted Developer Utilities Proxy Execution: MSBuild",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1127.001/T1127.001.md",
+      "section": "T1127.001 - Trusted Developer Utilities Proxy Execution: MSBuild"
+    },
+    {
+      "file": "atomics/T1129/T1129.md",
+      "source_title": "T1129 - Server Software Component",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1129/T1129.md",
+      "section": "T1129 - Server Software Component"
+    },
+    {
+      "file": "atomics/T1132.001/T1132.001.md",
+      "source_title": "T1132.001 - Data Encoding: Standard Encoding",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1132.001/T1132.001.md",
+      "section": "T1132.001 - Data Encoding: Standard Encoding"
+    },
+    {
+      "file": "atomics/T1133/T1133.md",
+      "source_title": "T1133 - External Remote Services",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1133/T1133.md",
+      "section": "T1133 - External Remote Services"
+    },
+    {
+      "file": "atomics/T1134.001/T1134.001.md",
+      "source_title": "T1134.001 - Access Token Manipulation: Token Impersonation/Theft",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1134.001/T1134.001.md",
+      "section": "T1134.001 - Access Token Manipulation: Token Impersonation/Theft"
+    },
+    {
+      "file": "atomics/T1134.002/T1134.002.md",
+      "source_title": "T1134.002 - Create Process with Token",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1134.002/T1134.002.md",
+      "section": "T1134.002 - Create Process with Token"
+    },
+    {
+      "file": "atomics/T1134.004/T1134.004.md",
+      "source_title": "T1134.004 - Access Token Manipulation: Parent PID Spoofing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1134.004/T1134.004.md",
+      "section": "T1134.004 - Access Token Manipulation: Parent PID Spoofing"
+    },
+    {
+      "file": "atomics/T1134.005/T1134.005.md",
+      "source_title": "T1134.005 - Access Token Manipulation: SID-History Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1134.005/T1134.005.md",
+      "section": "T1134.005 - Access Token Manipulation: SID-History Injection"
+    },
+    {
+      "file": "atomics/T1135/T1135.md",
+      "source_title": "T1135 - Network Share Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1135/T1135.md",
+      "section": "T1135 - Network Share Discovery"
+    },
+    {
+      "file": "atomics/T1136.001/T1136.001.md",
+      "source_title": "T1136.001 - Create Account: Local Account",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1136.001/T1136.001.md",
+      "section": "T1136.001 - Create Account: Local Account"
+    },
+    {
+      "file": "atomics/T1136.002/T1136.002.md",
+      "source_title": "T1136.002 - Create Account: Domain Account",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1136.002/T1136.002.md",
+      "section": "T1136.002 - Create Account: Domain Account"
+    },
+    {
+      "file": "atomics/T1136.003/T1136.003.md",
+      "source_title": "T1136.003 - Create Account: Cloud Account",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1136.003/T1136.003.md",
+      "section": "T1136.003 - Create Account: Cloud Account"
+    },
+    {
+      "file": "atomics/T1137/T1137.md",
+      "source_title": "T1137 - Office Application Startup",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137/T1137.md",
+      "section": "T1137 - Office Application Startup"
+    },
+    {
+      "file": "atomics/T1137.001/T1137.001.md",
+      "source_title": "T1137.001 - Office Application Startup: Office Template Macros.",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137.001/T1137.001.md",
+      "section": "T1137.001 - Office Application Startup: Office Template Macros."
+    },
+    {
+      "file": "atomics/T1137.002/T1137.002.md",
+      "source_title": "T1137.002 - Office Application Startup: Office Test",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137.002/T1137.002.md",
+      "section": "T1137.002 - Office Application Startup: Office Test"
+    },
+    {
+      "file": "atomics/T1137.004/T1137.004.md",
+      "source_title": "T1137.004 - Office Application Startup: Outlook Home Page",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137.004/T1137.004.md",
+      "section": "T1137.004 - Office Application Startup: Outlook Home Page"
+    },
+    {
+      "file": "atomics/T1137.005/T1137.005.md",
+      "source_title": "T1137.005 - Office Application Startup: Outlook Rules",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137.005/T1137.005.md",
+      "section": "T1137.005 - Office Application Startup: Outlook Rules"
+    },
+    {
+      "file": "atomics/T1137.006/T1137.006.md",
+      "source_title": "T1137.006 - Office Application Startup: Add-ins",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1137.006/T1137.006.md",
+      "section": "T1137.006 - Office Application Startup: Add-ins"
+    },
+    {
+      "file": "atomics/T1140/T1140.md",
+      "source_title": "T1140 - Deobfuscate/Decode Files or Information",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1140/T1140.md",
+      "section": "T1140 - Deobfuscate/Decode Files or Information"
+    },
+    {
+      "file": "atomics/T1176/T1176.md",
+      "source_title": "T1176 - Browser Extensions",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1176/T1176.md",
+      "section": "T1176 - Browser Extensions"
+    },
+    {
+      "file": "atomics/T1187/T1187.md",
+      "source_title": "T1187 - Forced Authentication",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1187/T1187.md",
+      "section": "T1187 - Forced Authentication"
+    },
+    {
+      "file": "atomics/T1195/T1195.md",
+      "source_title": "T1195 - Supply Chain Compromise",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1195/T1195.md",
+      "section": "T1195 - Supply Chain Compromise"
+    },
+    {
+      "file": "atomics/T1195.002/T1195.002.md",
+      "source_title": "T1195.002 - Compromise Software Supply Chain",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1195.002/T1195.002.md",
+      "section": "T1195.002 - Compromise Software Supply Chain"
+    },
+    {
+      "file": "atomics/T1197/T1197.md",
+      "source_title": "T1197 - BITS Jobs",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1197/T1197.md",
+      "section": "T1197 - BITS Jobs"
+    },
+    {
+      "file": "atomics/T1201/T1201.md",
+      "source_title": "T1201 - Password Policy Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1201/T1201.md",
+      "section": "T1201 - Password Policy Discovery"
+    },
+    {
+      "file": "atomics/T1202/T1202.md",
+      "source_title": "T1202 - Indirect Command Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1202/T1202.md",
+      "section": "T1202 - Indirect Command Execution"
+    },
+    {
+      "file": "atomics/T1204.002/T1204.002.md",
+      "source_title": "T1204.002 - User Execution: Malicious File",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1204.002/T1204.002.md",
+      "section": "T1204.002 - User Execution: Malicious File"
+    },
+    {
+      "file": "atomics/T1204.003/T1204.003.md",
+      "source_title": "T1204.003 - User Execution: Malicious Image",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1204.003/T1204.003.md",
+      "section": "T1204.003 - User Execution: Malicious Image"
+    },
+    {
+      "file": "atomics/T1204.004/T1204.004.md",
+      "source_title": "T1204.004 - Malicious Copy and Paste",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1204.004/T1204.004.md",
+      "section": "T1204.004 - Malicious Copy and Paste"
+    },
+    {
+      "file": "atomics/T1207/T1207.md",
+      "source_title": "T1207 - Rogue Domain Controller",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1207/T1207.md",
+      "section": "T1207 - Rogue Domain Controller"
+    },
+    {
+      "file": "atomics/T1216/T1216.md",
+      "source_title": "T1216 - Signed Script Proxy Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1216/T1216.md",
+      "section": "T1216 - Signed Script Proxy Execution"
+    },
+    {
+      "file": "atomics/T1216.001/T1216.001.md",
+      "source_title": "T1216.001 - Signed Script Proxy Execution: Pubprn",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1216.001/T1216.001.md",
+      "section": "T1216.001 - Signed Script Proxy Execution: Pubprn"
+    },
+    {
+      "file": "atomics/T1216.002/T1216.002.md",
+      "source_title": "T1216.002 - System Script Proxy Execution: SyncAppvPublishingServer",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1216.002/T1216.002.md",
+      "section": "T1216.002 - System Script Proxy Execution: SyncAppvPublishingServer"
+    },
+    {
+      "file": "atomics/T1217/T1217.md",
+      "source_title": "T1217 - Browser Bookmark Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1217/T1217.md",
+      "section": "T1217 - Browser Bookmark Discovery"
+    },
+    {
+      "file": "atomics/T1218/T1218.md",
+      "source_title": "T1218 - Signed Binary Proxy Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218/T1218.md",
+      "section": "T1218 - Signed Binary Proxy Execution"
+    },
+    {
+      "file": "atomics/T1218.001/T1218.001.md",
+      "source_title": "T1218.001 - Signed Binary Proxy Execution: Compiled HTML File",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.001/T1218.001.md",
+      "section": "T1218.001 - Signed Binary Proxy Execution: Compiled HTML File"
+    },
+    {
+      "file": "atomics/T1218.002/T1218.002.md",
+      "source_title": "T1218.002 - Signed Binary Proxy Execution: Control Panel",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.002/T1218.002.md",
+      "section": "T1218.002 - Signed Binary Proxy Execution: Control Panel"
+    },
+    {
+      "file": "atomics/T1218.003/T1218.003.md",
+      "source_title": "T1218.003 - Signed Binary Proxy Execution: CMSTP",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.003/T1218.003.md",
+      "section": "T1218.003 - Signed Binary Proxy Execution: CMSTP"
+    },
+    {
+      "file": "atomics/T1218.004/T1218.004.md",
+      "source_title": "T1218.004 - Signed Binary Proxy Execution: InstallUtil",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.004/T1218.004.md",
+      "section": "T1218.004 - Signed Binary Proxy Execution: InstallUtil"
+    },
+    {
+      "file": "atomics/T1218.005/T1218.005.md",
+      "source_title": "T1218.005 - Signed Binary Proxy Execution: Mshta",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.005/T1218.005.md",
+      "section": "T1218.005 - Signed Binary Proxy Execution: Mshta"
+    },
+    {
+      "file": "atomics/T1218.007/T1218.007.md",
+      "source_title": "T1218.007 - Signed Binary Proxy Execution: Msiexec",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.007/T1218.007.md",
+      "section": "T1218.007 - Signed Binary Proxy Execution: Msiexec"
+    },
+    {
+      "file": "atomics/T1218.008/T1218.008.md",
+      "source_title": "T1218.008 - Signed Binary Proxy Execution: Odbcconf",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.008/T1218.008.md",
+      "section": "T1218.008 - Signed Binary Proxy Execution: Odbcconf"
+    },
+    {
+      "file": "atomics/T1218.008/src/odbcconf net.40/packages/DllExport.1.5.2/Readme.md",
+      "source_title": "[DllExport](https://github.com/3F/DllExport)",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.008/src/odbcconf net.40/packages/DllExport.1.5.2/Readme.md",
+      "section": "[DllExport](https://github.com/3F/DllExport)"
+    },
+    {
+      "file": "atomics/T1218.009/T1218.009.md",
+      "source_title": "T1218.009 - Signed Binary Proxy Execution: Regsvcs/Regasm",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.009/T1218.009.md",
+      "section": "T1218.009 - Signed Binary Proxy Execution: Regsvcs/Regasm"
+    },
+    {
+      "file": "atomics/T1218.010/T1218.010.md",
+      "source_title": "T1218.010 - Signed Binary Proxy Execution: Regsvr32",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.010/T1218.010.md",
+      "section": "T1218.010 - Signed Binary Proxy Execution: Regsvr32"
+    },
+    {
+      "file": "atomics/T1218.011/T1218.011.md",
+      "source_title": "T1218.011 - Signed Binary Proxy Execution: Rundll32",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1218.011/T1218.011.md",
+      "section": "T1218.011 - Signed Binary Proxy Execution: Rundll32"
+    },
+    {
+      "file": "atomics/T1219/T1219.md",
+      "source_title": "T1219 - Remote Access Software",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1219/T1219.md",
+      "section": "T1219 - Remote Access Software"
+    },
+    {
+      "file": "atomics/T1220/T1220.md",
+      "source_title": "T1220 - XSL Script Processing",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1220/T1220.md",
+      "section": "T1220 - XSL Script Processing"
+    },
+    {
+      "file": "atomics/T1221/T1221.md",
+      "source_title": "T1221 - Template Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1221/T1221.md",
+      "section": "T1221 - Template Injection"
+    },
+    {
+      "file": "atomics/T1222/T1222.md",
+      "source_title": "T1222 - File and Directory Permissions Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1222/T1222.md",
+      "section": "T1222 - File and Directory Permissions Modification"
+    },
+    {
+      "file": "atomics/T1222.001/T1222.001.md",
+      "source_title": "T1222.001 - File and Directory Permissions Modification: Windows File and Directory Permissions Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1222.001/T1222.001.md",
+      "section": "T1222.001 - File and Directory Permissions Modification: Windows File and Directory Permissions Modification"
+    },
+    {
+      "file": "atomics/T1222.002/T1222.002.md",
+      "source_title": "T1222.002 - File and Directory Permissions Modification: FreeBSD, Linux and Mac File and Directory Permissions Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1222.002/T1222.002.md",
+      "section": "T1222.002 - File and Directory Permissions Modification: FreeBSD, Linux and Mac File and Directory Permissions Modification"
+    },
+    {
+      "file": "atomics/T1482/T1482.md",
+      "source_title": "T1482 - Domain Trust Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1482/T1482.md",
+      "section": "T1482 - Domain Trust Discovery"
+    },
+    {
+      "file": "atomics/T1484.001/T1484.001.md",
+      "source_title": "T1484.001 - Domain Policy Modification: Group Policy Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1484.001/T1484.001.md",
+      "section": "T1484.001 - Domain Policy Modification: Group Policy Modification"
+    },
+    {
+      "file": "atomics/T1484.002/T1484.002.md",
+      "source_title": "T1484.002 - Domain Trust Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1484.002/T1484.002.md",
+      "section": "T1484.002 - Domain Trust Modification"
+    },
+    {
+      "file": "atomics/T1485/T1485.md",
+      "source_title": "T1485 - Data Destruction",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1485/T1485.md",
+      "section": "T1485 - Data Destruction"
+    },
+    {
+      "file": "atomics/T1486/T1486.md",
+      "source_title": "T1486 - Data Encrypted for Impact",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1486/T1486.md",
+      "section": "T1486 - Data Encrypted for Impact"
+    },
+    {
+      "file": "atomics/T1489/T1489.md",
+      "source_title": "T1489 - Service Stop",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1489/T1489.md",
+      "section": "T1489 - Service Stop"
+    },
+    {
+      "file": "atomics/T1490/T1490.md",
+      "source_title": "T1490 - Inhibit System Recovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1490/T1490.md",
+      "section": "T1490 - Inhibit System Recovery"
+    },
+    {
+      "file": "atomics/T1491.001/T1491.001.md",
+      "source_title": "T1491.001 - Defacement: Internal Defacement",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1491.001/T1491.001.md",
+      "section": "T1491.001 - Defacement: Internal Defacement"
+    },
+    {
+      "file": "atomics/T1496/T1496.md",
+      "source_title": "T1496 - Resource Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1496/T1496.md",
+      "section": "T1496 - Resource Hijacking"
+    },
+    {
+      "file": "atomics/T1497.001/T1497.001.md",
+      "source_title": "T1497.001 - Virtualization/Sandbox Evasion: System Checks",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1497.001/T1497.001.md",
+      "section": "T1497.001 - Virtualization/Sandbox Evasion: System Checks"
+    },
+    {
+      "file": "atomics/T1497.003/T1497.003.md",
+      "source_title": "T1497.003 - Time Based Evasion",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1497.003/T1497.003.md",
+      "section": "T1497.003 - Time Based Evasion"
+    },
+    {
+      "file": "atomics/T1505.002/T1505.002.md",
+      "source_title": "T1505.002 - Server Software Component: Transport Agent",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1505.002/T1505.002.md",
+      "section": "T1505.002 - Server Software Component: Transport Agent"
+    },
+    {
+      "file": "atomics/T1505.003/T1505.003.md",
+      "source_title": "T1505.003 - Server Software Component: Web Shell",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1505.003/T1505.003.md",
+      "section": "T1505.003 - Server Software Component: Web Shell"
+    },
+    {
+      "file": "atomics/T1505.004/T1505.004.md",
+      "source_title": "T1505.004 - IIS Components",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1505.004/T1505.004.md",
+      "section": "T1505.004 - IIS Components"
+    },
+    {
+      "file": "atomics/T1505.005/T1505.005.md",
+      "source_title": "T1505.005 - Server Software Component: Terminal Services DLL",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1505.005/T1505.005.md",
+      "section": "T1505.005 - Server Software Component: Terminal Services DLL"
+    },
+    {
+      "file": "atomics/T1518/T1518.md",
+      "source_title": "T1518 - Software Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1518/T1518.md",
+      "section": "T1518 - Software Discovery"
+    },
+    {
+      "file": "atomics/T1518.001/T1518.001.md",
+      "source_title": "T1518.001 - Software Discovery: Security Software Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1518.001/T1518.001.md",
+      "section": "T1518.001 - Software Discovery: Security Software Discovery"
+    },
+    {
+      "file": "atomics/T1526/T1526.md",
+      "source_title": "T1526 - Cloud Service Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1526/T1526.md",
+      "section": "T1526 - Cloud Service Discovery"
+    },
+    {
+      "file": "atomics/T1528/T1528.md",
+      "source_title": "T1528 - Steal Application Access Token",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1528/T1528.md",
+      "section": "T1528 - Steal Application Access Token"
+    },
+    {
+      "file": "atomics/T1529/T1529.md",
+      "source_title": "T1529 - System Shutdown/Reboot",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1529/T1529.md",
+      "section": "T1529 - System Shutdown/Reboot"
+    },
+    {
+      "file": "atomics/T1530/T1530.md",
+      "source_title": "T1530 - Data from Cloud Storage Object",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1530/T1530.md",
+      "section": "T1530 - Data from Cloud Storage Object"
+    },
+    {
+      "file": "atomics/T1531/T1531.md",
+      "source_title": "T1531 - Account Access Removal",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1531/T1531.md",
+      "section": "T1531 - Account Access Removal"
+    },
+    {
+      "file": "atomics/T1539/T1539.md",
+      "source_title": "T1539 - Steal Web Session Cookie",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1539/T1539.md",
+      "section": "T1539 - Steal Web Session Cookie"
+    },
+    {
+      "file": "atomics/T1542.001/T1542.001.md",
+      "source_title": "T1542.001 - Pre-OS Boot: System Firmware",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1542.001/T1542.001.md",
+      "section": "T1542.001 - Pre-OS Boot: System Firmware"
+    },
+    {
+      "file": "atomics/T1543.001/T1543.001.md",
+      "source_title": "T1543.001 - Create or Modify System Process: Launch Agent",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1543.001/T1543.001.md",
+      "section": "T1543.001 - Create or Modify System Process: Launch Agent"
+    },
+    {
+      "file": "atomics/T1543.002/T1543.002.md",
+      "source_title": "T1543.002 - Create or Modify System Process: SysV/Systemd Service",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1543.002/T1543.002.md",
+      "section": "T1543.002 - Create or Modify System Process: SysV/Systemd Service"
+    },
+    {
+      "file": "atomics/T1543.003/T1543.003.md",
+      "source_title": "T1543.003 - Create or Modify System Process: Windows Service",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1543.003/T1543.003.md",
+      "section": "T1543.003 - Create or Modify System Process: Windows Service"
+    },
+    {
+      "file": "atomics/T1543.004/T1543.004.md",
+      "source_title": "T1543.004 - Create or Modify System Process: Launch Daemon",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1543.004/T1543.004.md",
+      "section": "T1543.004 - Create or Modify System Process: Launch Daemon"
+    },
+    {
+      "file": "atomics/T1546/T1546.md",
+      "source_title": "T1546 - Event Triggered Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546/T1546.md",
+      "section": "T1546 - Event Triggered Execution"
+    },
+    {
+      "file": "atomics/T1546.001/T1546.001.md",
+      "source_title": "T1546.001 - Event Triggered Execution: Change Default File Association",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.001/T1546.001.md",
+      "section": "T1546.001 - Event Triggered Execution: Change Default File Association"
+    },
+    {
+      "file": "atomics/T1546.002/T1546.002.md",
+      "source_title": "T1546.002 - Event Triggered Execution: Screensaver",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.002/T1546.002.md",
+      "section": "T1546.002 - Event Triggered Execution: Screensaver"
+    },
+    {
+      "file": "atomics/T1546.003/T1546.003.md",
+      "source_title": "T1546.003 - Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.003/T1546.003.md",
+      "section": "T1546.003 - Event Triggered Execution: Windows Management Instrumentation Event Subscription"
+    },
+    {
+      "file": "atomics/T1546.004/T1546.004.md",
+      "source_title": "T1546.004 - Event Triggered Execution: .bash_profile .bashrc and .shrc",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.004/T1546.004.md",
+      "section": "T1546.004 - Event Triggered Execution: .bash_profile .bashrc and .shrc"
+    },
+    {
+      "file": "atomics/T1546.005/T1546.005.md",
+      "source_title": "T1546.005 - Event Triggered Execution: Trap",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.005/T1546.005.md",
+      "section": "T1546.005 - Event Triggered Execution: Trap"
+    },
+    {
+      "file": "atomics/T1546.007/T1546.007.md",
+      "source_title": "T1546.007 - Event Triggered Execution: Netsh Helper DLL",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.007/T1546.007.md",
+      "section": "T1546.007 - Event Triggered Execution: Netsh Helper DLL"
+    },
+    {
+      "file": "atomics/T1546.008/T1546.008.md",
+      "source_title": "T1546.008 - Event Triggered Execution: Accessibility Features",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.008/T1546.008.md",
+      "section": "T1546.008 - Event Triggered Execution: Accessibility Features"
+    },
+    {
+      "file": "atomics/T1546.009/T1546.009.md",
+      "source_title": "T1546.009 - Event Triggered Execution: AppCert DLLs",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.009/T1546.009.md",
+      "section": "T1546.009 - Event Triggered Execution: AppCert DLLs"
+    },
+    {
+      "file": "atomics/T1546.010/T1546.010.md",
+      "source_title": "T1546.010 - Event Triggered Execution: AppInit DLLs",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.010/T1546.010.md",
+      "section": "T1546.010 - Event Triggered Execution: AppInit DLLs"
+    },
+    {
+      "file": "atomics/T1546.011/T1546.011.md",
+      "source_title": "T1546.011 - Event Triggered Execution: Application Shimming",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.011/T1546.011.md",
+      "section": "T1546.011 - Event Triggered Execution: Application Shimming"
+    },
+    {
+      "file": "atomics/T1546.012/T1546.012.md",
+      "source_title": "T1546.012 - Event Triggered Execution: Image File Execution Options Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.012/T1546.012.md",
+      "section": "T1546.012 - Event Triggered Execution: Image File Execution Options Injection"
+    },
+    {
+      "file": "atomics/T1546.013/T1546.013.md",
+      "source_title": "T1546.013 - Event Triggered Execution: PowerShell Profile",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.013/T1546.013.md",
+      "section": "T1546.013 - Event Triggered Execution: PowerShell Profile"
+    },
+    {
+      "file": "atomics/T1546.014/T1546.014.md",
+      "source_title": "T1546.014 - Event Triggered Execution: Emond",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.014/T1546.014.md",
+      "section": "T1546.014 - Event Triggered Execution: Emond"
+    },
+    {
+      "file": "atomics/T1546.015/T1546.015.md",
+      "source_title": "T1546.015 - Event Triggered Execution: Component Object Model Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.015/T1546.015.md",
+      "section": "T1546.015 - Event Triggered Execution: Component Object Model Hijacking"
+    },
+    {
+      "file": "atomics/T1546.018/T1546.018.md",
+      "source_title": "T1546.018 - Event Triggered Execution: Python Startup Hooks",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1546.018/T1546.018.md",
+      "section": "T1546.018 - Event Triggered Execution: Python Startup Hooks"
+    },
+    {
+      "file": "atomics/T1547/T1547.md",
+      "source_title": "T1547 - Boot or Logon Autostart Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547/T1547.md",
+      "section": "T1547 - Boot or Logon Autostart Execution"
+    },
+    {
+      "file": "atomics/T1547.001/T1547.001.md",
+      "source_title": "T1547.001 - Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.001/T1547.001.md",
+      "section": "T1547.001 - Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder"
+    },
+    {
+      "file": "atomics/T1547.002/T1547.002.md",
+      "source_title": "T1547.002 - Authentication Package",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.002/T1547.002.md",
+      "section": "T1547.002 - Authentication Package"
+    },
+    {
+      "file": "atomics/T1547.003/T1547.003.md",
+      "source_title": "T1547.003 - Time Providers",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.003/T1547.003.md",
+      "section": "T1547.003 - Time Providers"
+    },
+    {
+      "file": "atomics/T1547.004/T1547.004.md",
+      "source_title": "T1547.004 - Boot or Logon Autostart Execution: Winlogon Helper DLL",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.004/T1547.004.md",
+      "section": "T1547.004 - Boot or Logon Autostart Execution: Winlogon Helper DLL"
+    },
+    {
+      "file": "atomics/T1547.005/T1547.005.md",
+      "source_title": "T1547.005 - Boot or Logon Autostart Execution: Security Support Provider",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.005/T1547.005.md",
+      "section": "T1547.005 - Boot or Logon Autostart Execution: Security Support Provider"
+    },
+    {
+      "file": "atomics/T1547.006/T1547.006.md",
+      "source_title": "T1547.006 - Boot or Logon Autostart Execution: Kernel Modules and Extensions",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.006/T1547.006.md",
+      "section": "T1547.006 - Boot or Logon Autostart Execution: Kernel Modules and Extensions"
+    },
+    {
+      "file": "atomics/T1547.007/T1547.007.md",
+      "source_title": "T1547.007 - Boot or Logon Autostart Execution: Re-opened Applications",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.007/T1547.007.md",
+      "section": "T1547.007 - Boot or Logon Autostart Execution: Re-opened Applications"
+    },
+    {
+      "file": "atomics/T1547.008/T1547.008.md",
+      "source_title": "T1547.008 - Boot or Logon Autostart Execution: LSASS Driver",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.008/T1547.008.md",
+      "section": "T1547.008 - Boot or Logon Autostart Execution: LSASS Driver"
+    },
+    {
+      "file": "atomics/T1547.009/T1547.009.md",
+      "source_title": "T1547.009 - Boot or Logon Autostart Execution: Shortcut Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.009/T1547.009.md",
+      "section": "T1547.009 - Boot or Logon Autostart Execution: Shortcut Modification"
+    },
+    {
+      "file": "atomics/T1547.010/T1547.010.md",
+      "source_title": "T1547.010 - Boot or Logon Autostart Execution: Port Monitors",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.010/T1547.010.md",
+      "section": "T1547.010 - Boot or Logon Autostart Execution: Port Monitors"
+    },
+    {
+      "file": "atomics/T1547.012/T1547.012.md",
+      "source_title": "T1547.012 - Boot or Logon Autostart Execution: Print Processors",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.012/T1547.012.md",
+      "section": "T1547.012 - Boot or Logon Autostart Execution: Print Processors"
+    },
+    {
+      "file": "atomics/T1547.014/T1547.014.md",
+      "source_title": "T1547.014 - Active Setup",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.014/T1547.014.md",
+      "section": "T1547.014 - Active Setup"
+    },
+    {
+      "file": "atomics/T1547.015/T1547.015.md",
+      "source_title": "T1547.015 - Boot or Logon Autostart Execution: Login Items",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1547.015/T1547.015.md",
+      "section": "T1547.015 - Boot or Logon Autostart Execution: Login Items"
+    },
+    {
+      "file": "atomics/T1548.001/T1548.001.md",
+      "source_title": "T1548.001 - Abuse Elevation Control Mechanism: Setuid and Setgid",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1548.001/T1548.001.md",
+      "section": "T1548.001 - Abuse Elevation Control Mechanism: Setuid and Setgid"
+    },
+    {
+      "file": "atomics/T1548.002/T1548.002.md",
+      "source_title": "T1548.002 - Abuse Elevation Control Mechanism: Bypass User Account Control",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1548.002/T1548.002.md",
+      "section": "T1548.002 - Abuse Elevation Control Mechanism: Bypass User Account Control"
+    },
+    {
+      "file": "atomics/T1548.003/T1548.003.md",
+      "source_title": "T1548.003 - Abuse Elevation Control Mechanism: Sudo and Sudo Caching",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1548.003/T1548.003.md",
+      "section": "T1548.003 - Abuse Elevation Control Mechanism: Sudo and Sudo Caching"
+    },
+    {
+      "file": "atomics/T1550.002/T1550.002.md",
+      "source_title": "T1550.002 - Use Alternate Authentication Material: Pass the Hash",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1550.002/T1550.002.md",
+      "section": "T1550.002 - Use Alternate Authentication Material: Pass the Hash"
+    },
+    {
+      "file": "atomics/T1550.003/T1550.003.md",
+      "source_title": "T1550.003 - Use Alternate Authentication Material: Pass the Ticket",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1550.003/T1550.003.md",
+      "section": "T1550.003 - Use Alternate Authentication Material: Pass the Ticket"
+    },
+    {
+      "file": "atomics/T1552/T1552.md",
+      "source_title": "T1552 - Unsecured Credentials",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552/T1552.md",
+      "section": "T1552 - Unsecured Credentials"
+    },
+    {
+      "file": "atomics/T1552.001/T1552.001.md",
+      "source_title": "T1552.001 - Unsecured Credentials: Credentials In Files",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.001/T1552.001.md",
+      "section": "T1552.001 - Unsecured Credentials: Credentials In Files"
+    },
+    {
+      "file": "atomics/T1552.002/T1552.002.md",
+      "source_title": "T1552.002 - Unsecured Credentials: Credentials in Registry",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.002/T1552.002.md",
+      "section": "T1552.002 - Unsecured Credentials: Credentials in Registry"
+    },
+    {
+      "file": "atomics/T1552.003/T1552.003.md",
+      "source_title": "T1552.003 - Unsecured Credentials: Bash History",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.003/T1552.003.md",
+      "section": "T1552.003 - Unsecured Credentials: Bash History"
+    },
+    {
+      "file": "atomics/T1552.004/T1552.004.md",
+      "source_title": "T1552.004 - Unsecured Credentials: Private Keys",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.004/T1552.004.md",
+      "section": "T1552.004 - Unsecured Credentials: Private Keys"
+    },
+    {
+      "file": "atomics/T1552.005/T1552.005.md",
+      "source_title": "T1552.005 - Unsecured Credentials: Cloud Instance Metadata API",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.005/T1552.005.md",
+      "section": "T1552.005 - Unsecured Credentials: Cloud Instance Metadata API"
+    },
+    {
+      "file": "atomics/T1552.006/T1552.006.md",
+      "source_title": "T1552.006 - Unsecured Credentials: Group Policy Preferences",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.006/T1552.006.md",
+      "section": "T1552.006 - Unsecured Credentials: Group Policy Preferences"
+    },
+    {
+      "file": "atomics/T1552.007/T1552.007.md",
+      "source_title": "T1552.007 - Kubernetes List Secrets",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1552.007/T1552.007.md",
+      "section": "T1552.007 - Kubernetes List Secrets"
+    },
+    {
+      "file": "atomics/T1553.001/T1553.001.md",
+      "source_title": "T1553.001 - Subvert Trust Controls: Gatekeeper Bypass",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1553.001/T1553.001.md",
+      "section": "T1553.001 - Subvert Trust Controls: Gatekeeper Bypass"
+    },
+    {
+      "file": "atomics/T1553.003/T1553.003.md",
+      "source_title": "T1553.003 - Subvert Trust Controls: SIP and Trust Provider Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1553.003/T1553.003.md",
+      "section": "T1553.003 - Subvert Trust Controls: SIP and Trust Provider Hijacking"
+    },
+    {
+      "file": "atomics/T1553.004/T1553.004.md",
+      "source_title": "T1553.004 - Subvert Trust Controls: Install Root Certificate",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1553.004/T1553.004.md",
+      "section": "T1553.004 - Subvert Trust Controls: Install Root Certificate"
+    },
+    {
+      "file": "atomics/T1553.005/T1553.005.md",
+      "source_title": "T1553.005 - Subvert Trust Controls: Mark-of-the-Web Bypass",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1553.005/T1553.005.md",
+      "section": "T1553.005 - Subvert Trust Controls: Mark-of-the-Web Bypass"
+    },
+    {
+      "file": "atomics/T1553.006/T1553.006.md",
+      "source_title": "T1553.006 - Subvert Trust Controls: Code Signing Policy Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1553.006/T1553.006.md",
+      "section": "T1553.006 - Subvert Trust Controls: Code Signing Policy Modification"
+    },
+    {
+      "file": "atomics/T1555/T1555.md",
+      "source_title": "T1555 - Credentials from Password Stores",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1555/T1555.md",
+      "section": "T1555 - Credentials from Password Stores"
+    },
+    {
+      "file": "atomics/T1555.001/T1555.001.md",
+      "source_title": "T1555.001 - Credentials from Password Stores: Keychain",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1555.001/T1555.001.md",
+      "section": "T1555.001 - Credentials from Password Stores: Keychain"
+    },
+    {
+      "file": "atomics/T1555.003/T1555.003.md",
+      "source_title": "T1555.003 - Credentials from Password Stores: Credentials from Web Browsers",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1555.003/T1555.003.md",
+      "section": "T1555.003 - Credentials from Password Stores: Credentials from Web Browsers"
+    },
+    {
+      "file": "atomics/T1555.004/T1555.004.md",
+      "source_title": "T1555.004 - Credentials from Password Stores: Windows Credential Manager",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1555.004/T1555.004.md",
+      "section": "T1555.004 - Credentials from Password Stores: Windows Credential Manager"
+    },
+    {
+      "file": "atomics/T1555.006/T1555.006.md",
+      "source_title": "T1555.006 - Credentials from Password Stores: Cloud Secrets Management Stores",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1555.006/T1555.006.md",
+      "section": "T1555.006 - Credentials from Password Stores: Cloud Secrets Management Stores"
+    },
+    {
+      "file": "atomics/T1556.001/T1556.001.md",
+      "source_title": "T1556.001 - Modify Authentication Process: Domain Controller Authentication",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1556.001/T1556.001.md",
+      "section": "T1556.001 - Modify Authentication Process: Domain Controller Authentication"
+    },
+    {
+      "file": "atomics/T1556.002/T1556.002.md",
+      "source_title": "T1556.002 - Modify Authentication Process: Password Filter DLL",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1556.002/T1556.002.md",
+      "section": "T1556.002 - Modify Authentication Process: Password Filter DLL"
+    },
+    {
+      "file": "atomics/T1556.003/T1556.003.md",
+      "source_title": "T1556.003 - Modify Authentication Process: Pluggable Authentication Modules",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1556.003/T1556.003.md",
+      "section": "T1556.003 - Modify Authentication Process: Pluggable Authentication Modules"
+    },
+    {
+      "file": "atomics/T1557.001/T1557.001.md",
+      "source_title": "T1557.001 - Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1557.001/T1557.001.md",
+      "section": "T1557.001 - Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay"
+    },
+    {
+      "file": "atomics/T1558.001/T1558.001.md",
+      "source_title": "T1558.001 - Steal or Forge Kerberos Tickets: Golden Ticket",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1558.001/T1558.001.md",
+      "section": "T1558.001 - Steal or Forge Kerberos Tickets: Golden Ticket"
+    },
+    {
+      "file": "atomics/T1558.002/T1558.002.md",
+      "source_title": "T1558.002 - Steal or Forge Kerberos Tickets: Silver Ticket",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1558.002/T1558.002.md",
+      "section": "T1558.002 - Steal or Forge Kerberos Tickets: Silver Ticket"
+    },
+    {
+      "file": "atomics/T1558.003/T1558.003.md",
+      "source_title": "T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1558.003/T1558.003.md",
+      "section": "T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting"
+    },
+    {
+      "file": "atomics/T1558.004/T1558.004.md",
+      "source_title": "T1558.004 - Steal or Forge Kerberos Tickets: AS-REP Roasting",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1558.004/T1558.004.md",
+      "section": "T1558.004 - Steal or Forge Kerberos Tickets: AS-REP Roasting"
+    },
+    {
+      "file": "atomics/T1559/T1559.md",
+      "source_title": "T1559 - Inter-Process Communication",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1559/T1559.md",
+      "section": "T1559 - Inter-Process Communication"
+    },
+    {
+      "file": "atomics/T1559.002/T1559.002.md",
+      "source_title": "T1559.002 - Inter-Process Communication: Dynamic Data Exchange",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1559.002/T1559.002.md",
+      "section": "T1559.002 - Inter-Process Communication: Dynamic Data Exchange"
+    },
+    {
+      "file": "atomics/T1560/T1560.md",
+      "source_title": "T1560 - Archive Collected Data",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1560/T1560.md",
+      "section": "T1560 - Archive Collected Data"
+    },
+    {
+      "file": "atomics/T1560.001/T1560.001.md",
+      "source_title": "T1560.001 - Archive Collected Data: Archive via Utility",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1560.001/T1560.001.md",
+      "section": "T1560.001 - Archive Collected Data: Archive via Utility"
+    },
+    {
+      "file": "atomics/T1560.002/T1560.002.md",
+      "source_title": "T1560.002 - Archive Collected Data: Archive via Library",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1560.002/T1560.002.md",
+      "section": "T1560.002 - Archive Collected Data: Archive via Library"
+    },
+    {
+      "file": "atomics/T1563.002/T1563.002.md",
+      "source_title": "T1563.002 - Remote Service Session Hijacking: RDP Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1563.002/T1563.002.md",
+      "section": "T1563.002 - Remote Service Session Hijacking: RDP Hijacking"
+    },
+    {
+      "file": "atomics/T1564/T1564.md",
+      "source_title": "T1564 - Hide Artifacts",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564/T1564.md",
+      "section": "T1564 - Hide Artifacts"
+    },
+    {
+      "file": "atomics/T1564.001/T1564.001.md",
+      "source_title": "T1564.001 - Hide Artifacts: Hidden Files and Directories",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.001/T1564.001.md",
+      "section": "T1564.001 - Hide Artifacts: Hidden Files and Directories"
+    },
+    {
+      "file": "atomics/T1564.002/T1564.002.md",
+      "source_title": "T1564.002 - Hide Artifacts: Hidden Users",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.002/T1564.002.md",
+      "section": "T1564.002 - Hide Artifacts: Hidden Users"
+    },
+    {
+      "file": "atomics/T1564.003/T1564.003.md",
+      "source_title": "T1564.003 - Hide Artifacts: Hidden Window",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.003/T1564.003.md",
+      "section": "T1564.003 - Hide Artifacts: Hidden Window"
+    },
+    {
+      "file": "atomics/T1564.004/T1564.004.md",
+      "source_title": "T1564.004 - Hide Artifacts: NTFS File Attributes",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.004/T1564.004.md",
+      "section": "T1564.004 - Hide Artifacts: NTFS File Attributes"
+    },
+    {
+      "file": "atomics/T1564.006/T1564.006.md",
+      "source_title": "T1564.006 - Run Virtual Instance",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.006/T1564.006.md",
+      "section": "T1564.006 - Run Virtual Instance"
+    },
+    {
+      "file": "atomics/T1564.008/T1564.008.md",
+      "source_title": "T1564.008 - Hide Artifacts: Email Hiding Rules",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1564.008/T1564.008.md",
+      "section": "T1564.008 - Hide Artifacts: Email Hiding Rules"
+    },
+    {
+      "file": "atomics/T1566.001/T1566.001.md",
+      "source_title": "T1566.001 - Phishing: Spearphishing Attachment",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1566.001/T1566.001.md",
+      "section": "T1566.001 - Phishing: Spearphishing Attachment"
+    },
+    {
+      "file": "atomics/T1566.002/T1566.002.md",
+      "source_title": "T1566.002 - Phishing: Spearphishing Link",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1566.002/T1566.002.md",
+      "section": "T1566.002 - Phishing: Spearphishing Link"
+    },
+    {
+      "file": "atomics/T1567.002/T1567.002.md",
+      "source_title": "T1567.002 - Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1567.002/T1567.002.md",
+      "section": "T1567.002 - Exfiltration Over Web Service: Exfiltration to Cloud Storage"
+    },
+    {
+      "file": "atomics/T1567.003/T1567.003.md",
+      "source_title": "T1567.003 - Exfiltration Over Web Service: Exfiltration to Text Storage Sites",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1567.003/T1567.003.md",
+      "section": "T1567.003 - Exfiltration Over Web Service: Exfiltration to Text Storage Sites"
+    },
+    {
+      "file": "atomics/T1567.004/T1567.004.md",
+      "source_title": "T1567.004 - Exfiltration Over Web Service: Exfiltration Over Webhook",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1567.004/T1567.004.md",
+      "section": "T1567.004 - Exfiltration Over Web Service: Exfiltration Over Webhook"
+    },
+    {
+      "file": "atomics/T1568.002/T1568.002.md",
+      "source_title": "T1568.002 - Dynamic Resolution: Domain Generation Algorithms",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1568.002/T1568.002.md",
+      "section": "T1568.002 - Dynamic Resolution: Domain Generation Algorithms"
+    },
+    {
+      "file": "atomics/T1569.001/T1569.001.md",
+      "source_title": "T1569.001 - System Services: Launchctl",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1569.001/T1569.001.md",
+      "section": "T1569.001 - System Services: Launchctl"
+    },
+    {
+      "file": "atomics/T1569.002/T1569.002.md",
+      "source_title": "T1569.002 - System Services: Service Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1569.002/T1569.002.md",
+      "section": "T1569.002 - System Services: Service Execution"
+    },
+    {
+      "file": "atomics/T1569.003/T1569.003.md",
+      "source_title": "T1569.003 - System Services: Systemctl",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1569.003/T1569.003.md",
+      "section": "T1569.003 - System Services: Systemctl"
+    },
+    {
+      "file": "atomics/T1570/T1570.md",
+      "source_title": "T1570 - Lateral Tool Transfer",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1570/T1570.md",
+      "section": "T1570 - Lateral Tool Transfer"
+    },
+    {
+      "file": "atomics/T1571/T1571.md",
+      "source_title": "T1571 - Non-Standard Port",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1571/T1571.md",
+      "section": "T1571 - Non-Standard Port"
+    },
+    {
+      "file": "atomics/T1572/T1572.md",
+      "source_title": "T1572 - Protocol Tunneling",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1572/T1572.md",
+      "section": "T1572 - Protocol Tunneling"
+    },
+    {
+      "file": "atomics/T1573/T1573.md",
+      "source_title": "T1573 - Encrypted Channel",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1573/T1573.md",
+      "section": "T1573 - Encrypted Channel"
+    },
+    {
+      "file": "atomics/T1574.001/T1574.001.md",
+      "source_title": "T1574.001 - Hijack Execution Flow: DLL",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.001/T1574.001.md",
+      "section": "T1574.001 - Hijack Execution Flow: DLL"
+    },
+    {
+      "file": "atomics/T1574.006/T1574.006.md",
+      "source_title": "T1574.006 - Hijack Execution Flow: LD_PRELOAD",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.006/T1574.006.md",
+      "section": "T1574.006 - Hijack Execution Flow: LD_PRELOAD"
+    },
+    {
+      "file": "atomics/T1574.008/T1574.008.md",
+      "source_title": "T1574.008 - Hijack Execution Flow: Path Interception by Search Order Hijacking",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.008/T1574.008.md",
+      "section": "T1574.008 - Hijack Execution Flow: Path Interception by Search Order Hijacking"
+    },
+    {
+      "file": "atomics/T1574.009/T1574.009.md",
+      "source_title": "T1574.009 - Hijack Execution Flow: Path Interception by Unquoted Path",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.009/T1574.009.md",
+      "section": "T1574.009 - Hijack Execution Flow: Path Interception by Unquoted Path"
+    },
+    {
+      "file": "atomics/T1574.011/T1574.011.md",
+      "source_title": "T1574.011 - Hijack Execution Flow: Services Registry Permissions Weakness",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.011/T1574.011.md",
+      "section": "T1574.011 - Hijack Execution Flow: Services Registry Permissions Weakness"
+    },
+    {
+      "file": "atomics/T1574.012/T1574.012.md",
+      "source_title": "T1574.012 - Hijack Execution Flow: COR_PROFILER",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1574.012/T1574.012.md",
+      "section": "T1574.012 - Hijack Execution Flow: COR_PROFILER"
+    },
+    {
+      "file": "atomics/T1578.001/T1578.001.md",
+      "source_title": "T1578.001 - Modify Cloud Compute Infrastructure: Create Snapshot",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1578.001/T1578.001.md",
+      "section": "T1578.001 - Modify Cloud Compute Infrastructure: Create Snapshot"
+    },
+    {
+      "file": "atomics/T1578.002/T1578.002.md",
+      "source_title": "T1578.002 - Create Cloud Instance",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1578.002/T1578.002.md",
+      "section": "T1578.002 - Create Cloud Instance"
+    },
+    {
+      "file": "atomics/T1580/T1580.md",
+      "source_title": "T1580 - Cloud Infrastructure Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1580/T1580.md",
+      "section": "T1580 - Cloud Infrastructure Discovery"
+    },
+    {
+      "file": "atomics/T1592.001/T1592.001.md",
+      "source_title": "T1592.001 - Gather Victim Host Information: Hardware",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1592.001/T1592.001.md",
+      "section": "T1592.001 - Gather Victim Host Information: Hardware"
+    },
+    {
+      "file": "atomics/T1595.003/T1595.003.md",
+      "source_title": "T1595.003 - Active Scanning: Wordlist Scanning",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1595.003/T1595.003.md",
+      "section": "T1595.003 - Active Scanning: Wordlist Scanning"
+    },
+    {
+      "file": "atomics/T1606.002/T1606.002.md",
+      "source_title": "T1606.002 - Forge Web Credentials: SAML token",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1606.002/T1606.002.md",
+      "section": "T1606.002 - Forge Web Credentials: SAML token"
+    },
+    {
+      "file": "atomics/T1609/T1609.md",
+      "source_title": "T1609 - Kubernetes Exec Into Container",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1609/T1609.md",
+      "section": "T1609 - Kubernetes Exec Into Container"
+    },
+    {
+      "file": "atomics/T1610/T1610.md",
+      "source_title": "T1610 - Deploy a container",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1610/T1610.md",
+      "section": "T1610 - Deploy a container"
+    },
+    {
+      "file": "atomics/T1611/T1611.md",
+      "source_title": "T1611 - Escape to Host",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1611/T1611.md",
+      "section": "T1611 - Escape to Host"
+    },
+    {
+      "file": "atomics/T1612/T1612.md",
+      "source_title": "T1612 - Build Image on Host",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1612/T1612.md",
+      "section": "T1612 - Build Image on Host"
+    },
+    {
+      "file": "atomics/T1613/T1613.md",
+      "source_title": "T1613 - Container and Resource Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1613/T1613.md",
+      "section": "T1613 - Container and Resource Discovery"
+    },
+    {
+      "file": "atomics/T1614/T1614.md",
+      "source_title": "T1614 - System Location Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1614/T1614.md",
+      "section": "T1614 - System Location Discovery"
+    },
+    {
+      "file": "atomics/T1614.001/T1614.001.md",
+      "source_title": "T1614.001 - System Location Discovery: System Language Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1614.001/T1614.001.md",
+      "section": "T1614.001 - System Location Discovery: System Language Discovery"
+    },
+    {
+      "file": "atomics/T1615/T1615.md",
+      "source_title": "T1615 - Group Policy Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1615/T1615.md",
+      "section": "T1615 - Group Policy Discovery"
+    },
+    {
+      "file": "atomics/T1619/T1619.md",
+      "source_title": "T1619 - Cloud Storage Object Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1619/T1619.md",
+      "section": "T1619 - Cloud Storage Object Discovery"
+    },
+    {
+      "file": "atomics/T1620/T1620.md",
+      "source_title": "T1620 - Reflective Code Loading",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1620/T1620.md",
+      "section": "T1620 - Reflective Code Loading"
+    },
+    {
+      "file": "atomics/T1622/T1622.md",
+      "source_title": "T1622 - Debugger Evasion",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1622/T1622.md",
+      "section": "T1622 - Debugger Evasion"
+    },
+    {
+      "file": "atomics/T1647/T1647.md",
+      "source_title": "T1647 - Plist File Modification",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1647/T1647.md",
+      "section": "T1647 - Plist File Modification"
+    },
+    {
+      "file": "atomics/T1648/T1648.md",
+      "source_title": "T1648 - Serverless Execution",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1648/T1648.md",
+      "section": "T1648 - Serverless Execution"
+    },
+    {
+      "file": "atomics/T1649/T1649.md",
+      "source_title": "T1649 - Steal or Forge Authentication Certificates",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1649/T1649.md",
+      "section": "T1649 - Steal or Forge Authentication Certificates"
+    },
+    {
+      "file": "atomics/T1651/T1651.md",
+      "source_title": "T1651 - Cloud Administration Command",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1651/T1651.md",
+      "section": "T1651 - Cloud Administration Command"
+    },
+    {
+      "file": "atomics/T1652/T1652.md",
+      "source_title": "T1652 - Device Driver Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1652/T1652.md",
+      "section": "T1652 - Device Driver Discovery"
+    },
+    {
+      "file": "atomics/T1654/T1654.md",
+      "source_title": "T1654 - Log Enumeration",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1654/T1654.md",
+      "section": "T1654 - Log Enumeration"
+    },
+    {
+      "file": "atomics/T1659/T1659.md",
+      "source_title": "T1659 - Content Injection",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1659/T1659.md",
+      "section": "T1659 - Content Injection"
+    },
+    {
+      "file": "atomics/T1680/T1680.md",
+      "source_title": "T1680 - Local Storage Discovery",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1680/T1680.md",
+      "section": "T1680 - Local Storage Discovery"
+    },
+    {
+      "file": "atomics/T1685/T1685.md",
+      "source_title": "T1685 - Disable or Modify Tools",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685/T1685.md",
+      "section": "T1685 - Disable or Modify Tools"
+    },
+    {
+      "file": "atomics/T1685.001/T1685.001.md",
+      "source_title": "T1685.001 - Disable or Modify Tools: Disable or Modify Windows Event Log",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685.001/T1685.001.md",
+      "section": "T1685.001 - Disable or Modify Tools: Disable or Modify Windows Event Log"
+    },
+    {
+      "file": "atomics/T1685.002/T1685.002.md",
+      "source_title": "T1685.002 - Disable or Modify Tools: Disable or Modify Cloud Log",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685.002/T1685.002.md",
+      "section": "T1685.002 - Disable or Modify Tools: Disable or Modify Cloud Log"
+    },
+    {
+      "file": "atomics/T1685.004/T1685.004.md",
+      "source_title": "T1685.004 - Disable or Modify Tools: Disable or Modify Linux Audit System Log",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685.004/T1685.004.md",
+      "section": "T1685.004 - Disable or Modify Tools: Disable or Modify Linux Audit System Log"
+    },
+    {
+      "file": "atomics/T1685.005/T1685.005.md",
+      "source_title": "T1685.005 - Disable or Modify Tools: Clear Windows Event Logs",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685.005/T1685.005.md",
+      "section": "T1685.005 - Disable or Modify Tools: Clear Windows Event Logs"
+    },
+    {
+      "file": "atomics/T1685.006/T1685.006.md",
+      "source_title": "T1685.006 - Disable or Modify Tools: Clear Linux or Mac System Logs",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1685.006/T1685.006.md",
+      "section": "T1685.006 - Disable or Modify Tools: Clear Linux or Mac System Logs"
+    },
+    {
+      "file": "atomics/T1686/T1686.md",
+      "source_title": "T1686 - Disable or Modify System Firewall",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1686/T1686.md",
+      "section": "T1686 - Disable or Modify System Firewall"
+    },
+    {
+      "file": "atomics/T1688/T1688.md",
+      "source_title": "T1688 - Safe Mode Boot",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1688/T1688.md",
+      "section": "T1688 - Safe Mode Boot"
+    },
+    {
+      "file": "atomics/T1689/T1689.md",
+      "source_title": "T1689 - Downgrade Attack",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1689/T1689.md",
+      "section": "T1689 - Downgrade Attack"
+    },
+    {
+      "file": "atomics/T1690/T1690.md",
+      "source_title": "T1690 - Prevent Command History Logging",
+      "source_url": "https://github.com/redcanaryco/atomic-red-team/blob/9f85cf3e54b0cbdd6c702375c555273913eff442/atomics/T1690/T1690.md",
+      "section": "T1690 - Prevent Command History Logging"
+    }
+  ]
+}

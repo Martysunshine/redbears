@@ -1,0 +1,28 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/application/mssqlserver/win_mssql_add_sysadmin_account.yml -->
+title: MSSQL Add Account To Sysadmin Role
+id: 08200f85-2678-463e-9c32-88dce2f073d1
+status: test
+description: Detects when an attacker tries to backdoor the MSSQL server by adding a backdoor account to the sysadmin fixed server role
+references:
+    - https://www.netspi.com/blog/technical/network-penetration-testing/sql-server-persistence-part-1-startup-stored-procedures/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-07-13
+modified: 2024-06-26
+tags:
+    - attack.persistence
+logsource:
+    product: windows
+    service: application
+    definition: 'Requirements: MSSQL audit policy must be enabled in order to receive this event in the application log'
+    # warning: The 'data' field used in the detection section is the container for the event data as a whole. You may have to adapt the rule for your backend accordingly
+detection:
+    selection:
+        Provider_Name|contains: 'MSSQL' # Note: We use contains to account for other third party providers - See https://github.com/SigmaHQ/sigma/issues/4876
+        EventID: 33205
+        Data|contains|all:
+            - 'object_name:sysadmin'
+            - 'statement:alter server role [sysadmin] add member '
+    condition: selection
+falsepositives:
+    - Rare legitimate administrative activity
+level: high

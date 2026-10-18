@@ -1,0 +1,35 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2026/TA/TeamPCP/file_event_lnx_teampcp_litellm_supply_chain_attack_indicators.yml -->
+title: TeamPCP LiteLLM Supply Chain Attack Persistence Indicators
+id: 81c0b7f5-81c9-435e-a291-bc32fc2b72cd
+status: experimental
+description: |
+    Detects the creation of specific persistence files as observed in the LiteLLM PyPI supply chain attack.
+    In March 2026, a supply chain attack was discovered involving the popular open-source LLM framework LiteLLM by Threat Actor TeamPCP.
+    The malicious package harvests every credential on the system, encrypts and exfiltrates them, and installs a persistent C2 backdoor.
+references:
+    - https://novasky.io/hunts/hunting-litellm-supply-chain
+    - https://www.virustotal.com/gui/file/71e35aef03099cd1f2d6446734273025a163597de93912df321ef118bf135238/
+    - https://huskyhacks.io/posts/litellm-cred-stealer/
+    - https://www.wiz.io/blog/threes-a-crowd-teampcp-trojanizes-litellm-in-continuation-of-campaign
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2026-03-30
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.t1543.002
+    - attack.initial-access
+    - attack.t1195.002
+    - detection.emerging-threats
+logsource:
+    category: file_event
+    product: linux
+detection:
+    selection:
+        Image|contains: '/python3'
+        TargetFilename|endswith:
+            - '/.config/sysmon/sysmon.py'
+            - '/.config/systemd/user/sysmon.service'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

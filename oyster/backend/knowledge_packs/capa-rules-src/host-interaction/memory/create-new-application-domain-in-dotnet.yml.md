@@ -1,0 +1,27 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/memory/create-new-application-domain-in-dotnet.yml -->
+rule:
+  meta:
+    name: create new application domain in .NET
+    namespace: host-interaction/memory
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: file
+      dynamic: unsupported  # requires class features
+    att&ck:
+      - Persistence::Hijack Execution Flow [T1574]
+    mbc:
+      - Persistence::Hijack Execution Flow [F0015]
+    references:
+      - https://learn.microsoft.com/en-us/dotnet/framework/app-domains/application-domains
+      - https://www.rapid7.com/blog/post/2023/05/05/appdomain-manager-injection-new-techniques-for-red-teams/
+    examples:
+      - 6f6acca4d3696e08af9ed80f237f3542c362ebc2bcc9759bb64aa3f5c007320e
+  features:
+    - and:
+      - format: dotnet
+      - class: System.AppDomainManager
+      - class: System.AppDomainSetup
+      - or:
+        - string: "InitializeNewDomain"
+        - string: "CreateDomain"

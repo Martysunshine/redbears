@@ -1,0 +1,22 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2018/TA/TropicTrooper/proc_creation_win_apt_tropictrooper.yml -->
+title: TropicTrooper Campaign November 2018
+id: 8c7090c3-e0a0-4944-bd08-08c3a0cecf79
+status: stable
+description: Detects TropicTrooper activity, an actor who targeted high-profile organizations in the energy and food and beverage sectors in Asia
+references:
+    - https://www.microsoft.com/en-us/security/blog/2018/11/28/windows-defender-atp-device-risk-score-exposes-new-cyberattack-drives-conditional-access-to-protect-networks/
+author: '@41thexplorer, Microsoft Defender ATP'
+date: 2019-11-12
+modified: 2020-08-27
+tags:
+    - attack.execution
+    - attack.t1059.001
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        CommandLine|contains: 'abCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCc'
+    condition: selection
+level: high

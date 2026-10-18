@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_csi_use_of_csharp_console.yml -->
+title: Suspicious Use of CSharp Interactive Console
+id: a9e416a8-e613-4f8b-88b8-a7d1d1af2f61
+status: test
+description: Detects the execution of CSharp interactive console by PowerShell
+references:
+    - https://redcanary.com/blog/detecting-attacks-leveraging-the-net-framework/
+author: Michael R. (@nahamike01)
+date: 2020-03-08
+modified: 2022-07-14
+tags:
+    - attack.execution
+    - attack.stealth
+    - attack.t1127
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: '\csi.exe'
+        ParentImage|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+            - '\powershell_ise.exe'
+        OriginalFileName: 'csi.exe'
+    condition: selection
+falsepositives:
+    - Possible depending on environment. Pair with other factors such as net connections, command-line args, etc.
+level: high

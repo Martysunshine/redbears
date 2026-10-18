@@ -1,0 +1,12 @@
+{
+  "id": "threat-intel",
+  "version": "1.0.0",
+  "title": "Threat Intelligence",
+  "domain": "defensive",
+  "description": "Indicators vs. TTPs, the Pyramid of Pain, ATT&CK mapping, STIX/TAXII sharing, and turning intelligence into detections and threat-informed testing.",
+  "tags": ["threat-intel", "ioc", "ttp", "attack", "stix", "misp"],
+  "authority": "MITRE ATT&CK / OASIS STIX",
+  "docs": [
+    {"file": "intel-to-detection.md", "source_title": "MITRE ATT&CK", "source_url": "https://attack.mitre.org/"}
+  ]
+}

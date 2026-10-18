@@ -1,0 +1,23 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/persistence/registry/persist-via-active-setup-registry-key.yml -->
+rule:
+  meta:
+    name: persist via Active Setup registry key
+    namespace: persistence/registry
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Persistence::Boot or Logon Autostart Execution::Active Setup [T1547.014]
+    references:
+      - https://www.fireeye.com/blog/threat-research/2017/02/spear_phishing_techn.html
+    examples:
+      - c335a9d41185a32ad918c5389ee54235:0x4028F0
+  features:
+    - and:
+      - or:
+        - match: set registry value
+        - number: 0x80000002 = HKEY_LOCAL_MACHINE
+      - string: /Software\\Microsoft\\Active Setup\\Installed Components/i
+      - string: "StubPath"

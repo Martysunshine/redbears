@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/windefend/win_defender_config_change_sample_submission_consent.yml -->
+title: Windows Defender Submit Sample Feature Disabled
+id: 91903aba-1088-42ee-b680-d6d94fe002b0
+related:
+    - id: 1321dc4e-a1fe-481d-a016-52c45f0c8b4f
+      type: similar
+    - id: a3ab73f1-bd46-4319-8f06-4b20d0617886
+      type: similar
+    - id: 801bd44f-ceed-4eb6-887c-11544633c0aa
+      type: similar
+status: stable
+description: Detects disabling of the "Automatic Sample Submission" feature of Windows Defender.
+references:
+    - https://learn.microsoft.com/en-us/defender-endpoint/troubleshoot-microsoft-defender-antivirus?view=o365-worldwide
+    - https://bidouillesecurity.com/disable-windows-defender-in-powershell/#DisableAntiSpyware
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-12-06
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: windows
+    service: windefend
+detection:
+    selection:
+        EventID: 5007 # The antimalware platform configuration changed.
+        NewValue|contains: '\Real-Time Protection\SubmitSamplesConsent = 0x0'
+    condition: selection
+falsepositives:
+    - Administrator activity (must be investigated)
+level: low

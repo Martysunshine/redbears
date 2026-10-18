@@ -1,0 +1,37 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Rcsi.yml -->
+---
+Name: rcsi.exe
+Description: Non-Interactive command line inerface included with Visual Studio.
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: rcsi.exe {PATH:.csx}
+    Description: Use embedded C# within the csx script to execute the code.
+    Usecase: Local execution of arbitrary C# code stored in local CSX file.
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: CSharp
+  - Command: rcsi.exe {PATH:.csx}
+    Description: Use embedded C# within the csx script to execute the code.
+    Usecase: Local execution of arbitrary C# code stored in local CSX file.
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: CSharp
+Full_Path:
+  - Path: no default
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/c04bef2fbbe8beff6c7620d5d7ea6872dbe7acba/rules/windows/process_creation/proc_creation_win_csi_execution.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_unusual_process_network_connection.toml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_network_connection_from_windows_binary.toml
+  - BlockRule: https://github.com/SigmaHQ/sigma/blob/c04bef2fbbe8beff6c7620d5d7ea6872dbe7acba/rules/windows/process_creation/proc_creation_win_csi_execution.yml
+Resources:
+  - Link: https://enigma0x3.net/2016/11/21/bypassing-application-whitelisting-by-using-rcsi-exe/
+Acknowledgement:
+  - Person: Matt Nelson
+    Handle: '@enigma0x3'

@@ -1,0 +1,15 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/clamscan -->
+---
+functions:
+  file-read:
+  - binary: false
+    code: |-
+      touch x.yara
+      clamscan --no-summary -d x.yara -f /path/to/input-file 2>&1 | sed -nE 's/^(.*): No such file or directory$/\1/p'
+    comment: |-
+      Each line of the file is interpreted as a path and the content is leaked via error messages. The output can optionally be cleaned using `sed`.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+...

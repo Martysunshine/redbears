@@ -1,0 +1,24 @@
+# torch CPU pin — MUST match backend/requirements.txt. security_kb's setup.md
+# tells the operator to "reuse the backend venv" and `pip install -r` THIS file;
+# without the pin, sentence-transformers below would drag PyPI's default CUDA
+# torch back into that venv the moment it needs a torch newer than what's pinned,
+# silently undoing the 3.4GB disk-space fix (commit 0ad733ef). macOS gets the
+# plain wheel (no +cpu tag exists there); Linux/Windows get +cpu.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0+cpu ; sys_platform != "darwin"
+torch==2.13.0     ; sys_platform == "darwin"
+chromadb>=0.5.0
+sentence-transformers>=2.7.0
+python-dotenv>=1.0.0
+beautifulsoup4>=4.12.0
+lxml>=5.2.0
+markdown>=3.6
+pypdf>=4.3.0
+requests>=2.32.0
+tqdm>=4.66.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.10.0
+GitPython>=3.1.40
+chardet>=5.2.0
+rich>=13.7.0

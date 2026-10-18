@@ -1,0 +1,32 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/network/interface/get-networking-interfaces.yml -->
+rule:
+  meta:
+    name: get networking interfaces
+    namespace: host-interaction/network/interface
+    authors:
+      - moritz.raabe@mandiant.com
+      - joakim@intezer.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Discovery::System Network Configuration Discovery [T1016]
+    examples:
+      - B7841B9D5DC1F511A93CC7576672EC0C:0x1000EBF0
+  features:
+    - or:
+      - and:
+        - os: windows
+        - api: iphlpapi.GetIfTable
+        - api: iphlpapi.GetAdaptersInfo
+      - and:
+        - os: linux
+        - api: getifaddrs
+      - and:
+        - or:
+          - api: System.Net.NetworkInformation.NetworkInterface::GetIPProperties
+          - api: System.Net.NetworkInformation.NetworkInterface::GetIPStatistics
+          - api: System.Net.NetworkInformation.NetworkInterface::GetIPv4Statistics
+        - optional:
+          - api: System.Net.NetworkInformation.NetworkInterface::GetAllNetworkInterfaces

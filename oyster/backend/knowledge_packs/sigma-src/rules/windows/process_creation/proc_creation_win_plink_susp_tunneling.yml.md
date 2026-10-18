@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_plink_susp_tunneling.yml -->
+title: Potential RDP Tunneling Via Plink
+id: f38ce0b9-5e97-4b47-a211-7dc8d8b871da
+related:
+    - id: f7d7ebd5-a016-46e2-9c54-f9932f2d386d # ssh.exe
+      type: similar
+status: test
+description: Execution of plink to perform data exfiltration and tunneling
+references:
+    - https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/
+author: Florian Roth (Nextron Systems)
+date: 2022-08-04
+modified: 2023-01-27
+tags:
+    - attack.command-and-control
+    - attack.t1572
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_a:
+        Image|endswith: '\plink.exe'
+        CommandLine|contains: ':127.0.0.1:3389'
+    selection_b1:
+        Image|endswith: '\plink.exe'
+        CommandLine|contains: ':3389'
+    selection_b2:
+        CommandLine|contains:
+            - ' -P 443'
+            - ' -P 22'
+    condition: selection_a or all of selection_b*
+falsepositives:
+    - Unknown
+level: high

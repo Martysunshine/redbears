@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/PaloAlto-NetworkBeaconing.yaml -->
+id: 84476c34-5be4-4485-83ae-d15327a96512
+name: Palo Alto - potential beaconing detected
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Analytic%20Rules/PaloAlto-NetworkBeaconing.yaml'
+version: 1.0.0

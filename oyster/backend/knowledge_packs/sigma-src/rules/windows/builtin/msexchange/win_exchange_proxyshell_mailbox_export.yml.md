@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml -->
+title: Mailbox Export to Exchange Webserver
+id: 516376b4-05cd-4122-bae0-ad7641c38d48
+status: test
+description: Detects a successful export of an Exchange mailbox to untypical directory or with aspx name suffix which can be used to place a webshell or the needed role assignment for it
+references:
+    - https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html
+author: Florian Roth (Nextron Systems), Rich Warren, Christian Burkard (Nextron Systems)
+date: 2021-08-09
+modified: 2023-04-30
+tags:
+    - attack.persistence
+    - attack.t1505.003
+logsource:
+    service: msexchange-management
+    product: windows
+detection:
+    export_command:
+        '|all':
+            - 'New-MailboxExportRequest'
+            - ' -Mailbox '
+    export_params:
+        - '-FilePath "\\\\' # We care about any share location.
+        - '.aspx'
+    role_assignment:
+        '|all':
+            - 'New-ManagementRoleAssignment'
+            - ' -Role "Mailbox Import Export"'
+            - ' -User '
+    condition: (export_command and export_params) or role_assignment
+falsepositives:
+    - Unlikely
+level: critical

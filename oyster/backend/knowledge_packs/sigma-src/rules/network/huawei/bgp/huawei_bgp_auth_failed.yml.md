@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/huawei/bgp/huawei_bgp_auth_failed.yml -->
+title: Huawei BGP Authentication Failures
+id: a557ffe6-ac54-43d2-ae69-158027082350
+status: test
+description: Detects BGP failures which may be indicative of brute force attacks to manipulate routing.
+references:
+    - https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v3.pdf
+author: Tim Brown
+date: 2023-01-09
+modified: 2023-01-23
+tags:
+    - attack.initial-access
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.credential-access
+    - attack.collection
+    - attack.stealth
+    - attack.t1078
+    - attack.t1110
+    - attack.t1557
+logsource:
+    product: huawei
+    service: bgp
+    definition: 'Requirements: huawei bgp logs need to be enabled and ingested'
+detection:
+    keywords_bgp_huawei:
+        '|all':
+            - ':179' # Protocol
+            - 'BGP_AUTH_FAILED'
+    condition: keywords_bgp_huawei
+falsepositives:
+    - Unlikely. Except due to misconfigurations
+level: low

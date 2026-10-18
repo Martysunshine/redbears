@@ -1,0 +1,38 @@
+# Ollama serving config for the PROMOTED v2 candidate: oyster-dolphin-v2-gguf-q4.
+#
+# This is the same transformed (refusal-ablated) Dolphin 3.0 Llama 3.1 8B weights
+# as the MLX build (oyster-dolphin-v2-q4), but EXPORTED TO GGUF so it serves on
+# the fast llama.cpp runner instead of Ollama's experimental MLX runner. The MLX
+# build ran ~1.85x slower for identical weights (13.8 vs 25.5 tok/s, matched
+# conditions); the GGUF build is at V1 parity (24.7 tok/s, 6.0 GB VRAM) and
+# reports the true 8.03B params (the MLX "2.4B" was a packed-shape counting
+# artifact — same 291-tensor set, verified).
+#
+# Build (no re-abliteration — reuses the saved transformed f16 weights):
+#   HV=/Users/pritsss/oyster-heretic-work/.venv/bin/python   # has torch+gguf+sentencepiece
+#   SRC=/Users/pritsss/oyster-heretic-work/oyster-dolphin-v2-f16-cpu
+#   CONV=.../llama.cpp/convert_hf_to_gguf.py
+#   "$HV" "$CONV" "$SRC" --outfile oyster-dolphin-v2-f16.gguf --outtype f16
+#   llama-quantize oyster-dolphin-v2-f16.gguf oyster-dolphin-v2-q4_k_m.gguf Q4_K_M
+#   ollama create oyster-dolphin-v2-gguf-q4 -f oyster-dolphin-v2-gguf-q4.Modelfile
+#
+# Served digest: sha256:d82c7860dff52af5ba63f2f4eda43b958ef3f309f0e2d79ca7b0782926166670
+# Rollback: oyster-dolphin-v1-q4 (b6e5d24c) stays registered/selectable; dolphin3
+# for anonymous. MLX build oyster-dolphin-v2-q4 (3ca7cf03) + raw-backup (3b32a271)
+# preserved. Point FROM at the local GGUF path produced above.
+FROM /Users/pritsss/oyster-heretic-work/oyster-dolphin-v2-q4_k_m.gguf
+# Source-exact ChatML (oyster-dolphin-v2-f16-cpu/chat_template.jinja); assistant
+# cue <|im_start|>assistant\n. Stop tokens = source eos_token_id
+# [128256,128001,128008,128009] -> <|im_end|>,<|end_of_text|>,<|eom_id|>,<|eot_id|>.
+TEMPLATE """{{ range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|end_of_text|>"
+PARAMETER stop "<|eom_id|>"
+PARAMETER stop "<|eot_id|>"
+PARAMETER temperature 0
+PARAMETER top_p 0.9
+PARAMETER num_ctx 8192
+PARAMETER num_batch 64

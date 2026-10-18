@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/network_connection/net_connection_win_regsvr32_network_activity.yml -->
+title: Network Connection Initiated By Regsvr32.EXE
+id: c7e91a02-d771-4a6d-a700-42587e0b1095
+status: test
+description: Detects a network connection initiated by "Regsvr32.exe"
+references:
+    - https://pentestlab.blog/2017/05/11/applocker-bypass-regsvr32/
+    - https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
+author: Dmitriy Lifanov, oscd.community
+date: 2019-10-25
+modified: 2023-09-18
+tags:
+    - attack.execution
+    - attack.stealth
+    - attack.t1559.001
+    - attack.t1218.010
+logsource:
+    category: network_connection
+    product: windows
+detection:
+    selection:
+        Initiated: 'true'
+        Image|endswith: '\regsvr32.exe'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

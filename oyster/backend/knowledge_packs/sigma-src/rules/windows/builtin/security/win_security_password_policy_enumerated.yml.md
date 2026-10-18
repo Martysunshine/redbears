@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_password_policy_enumerated.yml -->
+title: Password Policy Enumerated
+id: 12ba6a38-adb3-4d6b-91ba-a7fb248e3199
+status: test
+description: Detects when the password policy is enumerated.
+references:
+    - https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4661
+    - https://github.com/jpalanco/alienvault-ossim/blob/f74359c0c027e42560924b5cff25cdf121e5505a/os-sim/agent/src/ParserUtil.py#L951
+author: Zach Mathis
+date: 2023-05-19
+tags:
+    - attack.discovery
+    - attack.t1201
+logsource:
+    product: windows
+    service: security
+    definition: dfd8c0f4-e6ad-4e07-b91b-f2fca0ddef64
+detection:
+    selection:
+        EventID: 4661 # A handle to an object was requested.
+        AccessList|contains: '%%5392' # ReadPasswordParameters
+        ObjectServer: 'Security Account Manager'
+    condition: selection
+level: medium

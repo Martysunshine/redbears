@@ -1,0 +1,1404 @@
+{
+  "id": "suricata-userguide-src",
+  "name": "suricata-userguide-src",
+  "version": "9a2b7004716b",
+  "title": "Suricata User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://suricata.io/ at 9a2b7004716b. 227 documents.",
+  "authority": "OISF",
+  "publisher": "Open Information Security Foundation",
+  "trust_level": "official",
+  "licence": "gpl-2.0",
+  "attribution": "Suricata User Guide, Open Information Security Foundation (OISF), GPL-2.0.",
+  "tags": [
+    "suricata",
+    "ids",
+    "ips",
+    "network",
+    "detection"
+  ],
+  "applicable_tools": [
+    "suricata"
+  ],
+  "applicable_platforms": [
+    "linux",
+    "network"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "suricata-userguide-src",
+  "upstream_commit": "9a2b7004716b750f390ee52cf6053c97398d7af3",
+  "source_urls": [
+    "https://suricata.io/",
+    "https://github.com/OISF/suricata"
+  ],
+  "docs": [
+    {
+      "file": "doc/userguide/3rd-party-integration/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/3rd-party-integration/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/3rd-party-integration/symantec-sslv.rst.md",
+      "source_title": "symantec-sslv.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/3rd-party-integration/symantec-sslv.rst",
+      "section": "symantec-sslv.rst"
+    },
+    {
+      "file": "doc/userguide/acknowledgements.rst.md",
+      "source_title": "acknowledgements.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/acknowledgements.rst",
+      "section": "acknowledgements.rst"
+    },
+    {
+      "file": "doc/userguide/appendix/eve-index.rst.md",
+      "source_title": "eve-index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/appendix/eve-index.rst",
+      "section": "eve-index.rst"
+    },
+    {
+      "file": "doc/userguide/appendix/eve-schema.rst.md",
+      "source_title": "eve-schema.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/appendix/eve-schema.rst",
+      "section": "eve-schema.rst"
+    },
+    {
+      "file": "doc/userguide/appendix/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/appendix/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/af-packet.rst.md",
+      "source_title": "af-packet.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/af-packet.rst",
+      "section": "af-packet.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/af-xdp.rst.md",
+      "source_title": "af-xdp.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/af-xdp.rst",
+      "section": "af-xdp.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/dpdk.rst.md",
+      "source_title": "dpdk.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/dpdk.rst",
+      "section": "dpdk.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/ebpf-xdp.rst.md",
+      "source_title": "ebpf-xdp.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/ebpf-xdp.rst",
+      "section": "ebpf-xdp.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/endace-dag.rst.md",
+      "source_title": "endace-dag.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/endace-dag.rst",
+      "section": "endace-dag.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/myricom.rst.md",
+      "source_title": "myricom.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/myricom.rst",
+      "section": "myricom.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/napatech.rst.md",
+      "source_title": "napatech.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/napatech.rst",
+      "section": "napatech.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/netmap.rst.md",
+      "source_title": "netmap.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/netmap.rst",
+      "section": "netmap.rst"
+    },
+    {
+      "file": "doc/userguide/capture-hardware/pcap-file.rst.md",
+      "source_title": "pcap-file.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/pcap-file.rst",
+      "section": "pcap-file.rst"
+    },
+    {
+      "file": "doc/userguide/command-line-options.rst.md",
+      "source_title": "command-line-options.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/command-line-options.rst",
+      "section": "command-line-options.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/dropping-privileges.rst.md",
+      "source_title": "dropping-privileges.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/dropping-privileges.rst",
+      "section": "dropping-privileges.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/exception-policies.rst.md",
+      "source_title": "exception-policies.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/exception-policies.rst",
+      "section": "exception-policies.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/global-thresholds.rst.md",
+      "source_title": "global-thresholds.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/global-thresholds.rst",
+      "section": "global-thresholds.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/includes.rst.md",
+      "source_title": "includes.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/includes.rst",
+      "section": "includes.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/landlock.rst.md",
+      "source_title": "landlock.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/landlock.rst",
+      "section": "landlock.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/multi-tenant.rst.md",
+      "source_title": "multi-tenant.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/multi-tenant.rst",
+      "section": "multi-tenant.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/snort-to-suricata.rst.md",
+      "source_title": "snort-to-suricata.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/snort-to-suricata.rst",
+      "section": "snort-to-suricata.rst"
+    },
+    {
+      "file": "doc/userguide/configuration/suricata-yaml.rst.md",
+      "source_title": "The packet acquisition module reads packets from the network.",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/suricata-yaml.rst",
+      "section": "The packet acquisition module reads packets from the network."
+    },
+    {
+      "file": "doc/userguide/configuration/systemd-notify.rst.md",
+      "source_title": "systemd-notify.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/configuration/systemd-notify.rst",
+      "section": "systemd-notify.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/code-style.rst.md",
+      "source_title": "code-style.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/code-style.rst",
+      "section": "code-style.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/fuzz-testing.rst.md",
+      "source_title": "fuzz-testing.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/fuzz-testing.rst",
+      "section": "fuzz-testing.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/installation-from-git.rst.md",
+      "source_title": "installation-from-git.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/installation-from-git.rst",
+      "section": "installation-from-git.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/testing.rst.md",
+      "source_title": "testing.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/testing.rst",
+      "section": "testing.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/unittests-c.rst.md",
+      "source_title": "unittests-c.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/unittests-c.rst",
+      "section": "unittests-c.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/codebase/unittests-rust.rst.md",
+      "source_title": "unittests-rust.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/codebase/unittests-rust.rst",
+      "section": "unittests-rust.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/contributing/backports-guide.rst.md",
+      "source_title": "backports-guide.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/contributing/backports-guide.rst",
+      "section": "backports-guide.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/contributing/code-submission-process.rst.md",
+      "source_title": "code-submission-process.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/contributing/code-submission-process.rst",
+      "section": "code-submission-process.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/contributing/contribution-process.rst.md",
+      "source_title": "contribution-process.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/contributing/contribution-process.rst",
+      "section": "contribution-process.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/contributing/github-pr-workflow.rst.md",
+      "source_title": "github-pr-workflow.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/contributing/github-pr-workflow.rst",
+      "section": "github-pr-workflow.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/contributing/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/contributing/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/app-layer/app-layer-frames.rst.md",
+      "source_title": "app-layer-frames.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/app-layer/app-layer-frames.rst",
+      "section": "app-layer-frames.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/app-layer/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/app-layer/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/app-layer/overview.rst.md",
+      "source_title": "overview.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/app-layer/overview.rst",
+      "section": "overview.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/app-layer/parser.rst.md",
+      "source_title": "parser.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/app-layer/parser.rst",
+      "section": "parser.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/app-layer/transactions.rst.md",
+      "source_title": "transactions.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/app-layer/transactions.rst",
+      "section": "transactions.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/capture/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/capture/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/decoder/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/decoder/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/detect/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/detect/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/detect/transforms.rst.md",
+      "source_title": "transforms.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/detect/transforms.rst",
+      "section": "transforms.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/exception-policies/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/exception-policies/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/flow-lifecycle-callbacks.rst.md",
+      "source_title": "flow-lifecycle-callbacks.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/flow-lifecycle-callbacks.rst",
+      "section": "flow-lifecycle-callbacks.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/output/eve-filetypes.rst.md",
+      "source_title": "eve-filetypes.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/output/eve-filetypes.rst",
+      "section": "eve-filetypes.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/output/eve-hooks.rst.md",
+      "source_title": "eve-hooks.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/output/eve-hooks.rst",
+      "section": "eve-hooks.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/output/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/output/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/extending/threads.rst.md",
+      "source_title": "threads.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/extending/threads.rst",
+      "section": "threads.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/datastructs/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/datastructs/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/engines/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/engines/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/engines/stream/inspection_raw_data.rst.md",
+      "source_title": "inspection_raw_data.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/engines/stream/inspection_raw_data.rst",
+      "section": "inspection_raw_data.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/pipeline/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/pipeline/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/internals/threading/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/internals/threading/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/libsuricata/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/libsuricata/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/devguide/upgrading/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/devguide/upgrading/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/file-extraction/config-update.rst.md",
+      "source_title": "config-update.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/file-extraction/config-update.rst",
+      "section": "config-update.rst"
+    },
+    {
+      "file": "doc/userguide/file-extraction/file-extraction.rst.md",
+      "source_title": "file-extraction.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/file-extraction/file-extraction.rst",
+      "section": "file-extraction.rst"
+    },
+    {
+      "file": "doc/userguide/file-extraction/md5.rst.md",
+      "source_title": "md5.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/file-extraction/md5.rst",
+      "section": "md5.rst"
+    },
+    {
+      "file": "doc/userguide/file-extraction/public-sha1-md5-data-sets.rst.md",
+      "source_title": "public-sha1-md5-data-sets.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/file-extraction/public-sha1-md5-data-sets.rst",
+      "section": "public-sha1-md5-data-sets.rst"
+    },
+    {
+      "file": "doc/userguide/firewall/firewall-design.rst.md",
+      "source_title": "firewall-design.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/firewall/firewall-design.rst",
+      "section": "firewall-design.rst"
+    },
+    {
+      "file": "doc/userguide/firewall/firewall-example.rst.md",
+      "source_title": "firewall-example.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/firewall/firewall-example.rst",
+      "section": "firewall-example.rst"
+    },
+    {
+      "file": "doc/userguide/firewall/firewall-stats.rst.md",
+      "source_title": "firewall-stats.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/firewall/firewall-stats.rst",
+      "section": "firewall-stats.rst"
+    },
+    {
+      "file": "doc/userguide/firewall/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/firewall/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/initscripts.rst.md",
+      "source_title": "initscripts.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/initscripts.rst",
+      "section": "initscripts.rst"
+    },
+    {
+      "file": "doc/userguide/install/debian.rst.md",
+      "source_title": "debian.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install/debian.rst",
+      "section": "debian.rst"
+    },
+    {
+      "file": "doc/userguide/install/other.rst.md",
+      "source_title": "other.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install/other.rst",
+      "section": "other.rst"
+    },
+    {
+      "file": "doc/userguide/install/rpm.rst.md",
+      "source_title": "rpm.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install/rpm.rst",
+      "section": "rpm.rst"
+    },
+    {
+      "file": "doc/userguide/install/ubuntu.rst.md",
+      "source_title": "ubuntu.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install/ubuntu.rst",
+      "section": "ubuntu.rst"
+    },
+    {
+      "file": "doc/userguide/install/windows.rst.md",
+      "source_title": "windows.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install/windows.rst",
+      "section": "windows.rst"
+    },
+    {
+      "file": "doc/userguide/install.rst.md",
+      "source_title": "install.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/install.rst",
+      "section": "install.rst"
+    },
+    {
+      "file": "doc/userguide/ips/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/ips/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/ips/ips-concept.rst.md",
+      "source_title": "ips-concept.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/ips/ips-concept.rst",
+      "section": "ips-concept.rst"
+    },
+    {
+      "file": "doc/userguide/ips/setting-up-ipsinline-for-linux.rst.md",
+      "source_title": "setting-up-ipsinline-for-linux.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/ips/setting-up-ipsinline-for-linux.rst",
+      "section": "setting-up-ipsinline-for-linux.rst"
+    },
+    {
+      "file": "doc/userguide/ips/setting-up-ipsinline-for-windows.rst.md",
+      "source_title": "setting-up-ipsinline-for-windows.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/ips/setting-up-ipsinline-for-windows.rst",
+      "section": "setting-up-ipsinline-for-windows.rst"
+    },
+    {
+      "file": "doc/userguide/licenses/cc-nc-4.0.rst.md",
+      "source_title": "cc-nc-4.0.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/licenses/cc-nc-4.0.rst",
+      "section": "cc-nc-4.0.rst"
+    },
+    {
+      "file": "doc/userguide/licenses/gnu-gpl-v2.0.rst.md",
+      "source_title": "gnu-gpl-v2.0.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/licenses/gnu-gpl-v2.0.rst",
+      "section": "gnu-gpl-v2.0.rst"
+    },
+    {
+      "file": "doc/userguide/licenses/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/licenses/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/lua/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/base64.rst.md",
+      "source_title": "base64.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/base64.rst",
+      "section": "base64.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/bytevar.rst.md",
+      "source_title": "bytevar.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/bytevar.rst",
+      "section": "bytevar.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/config.rst.md",
+      "source_title": "config.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/config.rst",
+      "section": "config.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/dnp3.rst.md",
+      "source_title": "dnp3.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/dnp3.rst",
+      "section": "dnp3.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/dns.rst.md",
+      "source_title": "dns.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/dns.rst",
+      "section": "dns.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/file.rst.md",
+      "source_title": "file.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/file.rst",
+      "section": "file.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/flowint.rst.md",
+      "source_title": "flowint.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/flowint.rst",
+      "section": "flowint.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/flowlib.rst.md",
+      "source_title": "flowlib.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/flowlib.rst",
+      "section": "flowlib.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/flowvar.rst.md",
+      "source_title": "flowvar.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/flowvar.rst",
+      "section": "flowvar.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/hashlib.rst.md",
+      "source_title": "hashlib.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/hashlib.rst",
+      "section": "hashlib.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/http.rst.md",
+      "source_title": "http.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/http.rst",
+      "section": "http.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/ja3.rst.md",
+      "source_title": "ja3.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/ja3.rst",
+      "section": "ja3.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/log.rst.md",
+      "source_title": "log.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/log.rst",
+      "section": "log.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/ntp.rst.md",
+      "source_title": "ntp.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/ntp.rst",
+      "section": "ntp.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/packetlib.rst.md",
+      "source_title": "packetlib.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/packetlib.rst",
+      "section": "packetlib.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/rule.rst.md",
+      "source_title": "rule.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/rule.rst",
+      "section": "rule.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/smtp.rst.md",
+      "source_title": "smtp.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/smtp.rst",
+      "section": "smtp.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/ssh.rst.md",
+      "source_title": "ssh.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/ssh.rst",
+      "section": "ssh.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/tls.rst.md",
+      "source_title": "tls.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/tls.rst",
+      "section": "tls.rst"
+    },
+    {
+      "file": "doc/userguide/lua/libs/util.rst.md",
+      "source_title": "util.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/libs/util.rst",
+      "section": "util.rst"
+    },
+    {
+      "file": "doc/userguide/lua/lua-functions.rst.md",
+      "source_title": "lua-functions.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/lua-functions.rst",
+      "section": "lua-functions.rst"
+    },
+    {
+      "file": "doc/userguide/lua/lua-usage.rst.md",
+      "source_title": "lua-usage.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/lua/lua-usage.rst",
+      "section": "lua-usage.rst"
+    },
+    {
+      "file": "doc/userguide/make-sense-alerts.rst.md",
+      "source_title": "make-sense-alerts.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/make-sense-alerts.rst",
+      "section": "make-sense-alerts.rst"
+    },
+    {
+      "file": "doc/userguide/manpages/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/manpages/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/manpages/suricata.rst.md",
+      "source_title": "suricata.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/manpages/suricata.rst",
+      "section": "suricata.rst"
+    },
+    {
+      "file": "doc/userguide/manpages/suricatactl-filestore.rst.md",
+      "source_title": "suricatactl-filestore.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/manpages/suricatactl-filestore.rst",
+      "section": "suricatactl-filestore.rst"
+    },
+    {
+      "file": "doc/userguide/manpages/suricatactl.rst.md",
+      "source_title": "suricatactl.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/manpages/suricatactl.rst",
+      "section": "suricatactl.rst"
+    },
+    {
+      "file": "doc/userguide/manpages/suricatasc.rst.md",
+      "source_title": "suricatasc.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/manpages/suricatasc.rst",
+      "section": "suricatasc.rst"
+    },
+    {
+      "file": "doc/userguide/output/custom-tls-logging.rst.md",
+      "source_title": "custom-tls-logging.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/custom-tls-logging.rst",
+      "section": "custom-tls-logging.rst"
+    },
+    {
+      "file": "doc/userguide/output/eve/eve-json-examplesjq.rst.md",
+      "source_title": "eve-json-examplesjq.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/eve/eve-json-examplesjq.rst",
+      "section": "eve-json-examplesjq.rst"
+    },
+    {
+      "file": "doc/userguide/output/eve/eve-json-format.rst.md",
+      "source_title": "eve-json-format.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/eve/eve-json-format.rst",
+      "section": "eve-json-format.rst"
+    },
+    {
+      "file": "doc/userguide/output/eve/eve-json-output.rst.md",
+      "source_title": "eve-json-output.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/eve/eve-json-output.rst",
+      "section": "eve-json-output.rst"
+    },
+    {
+      "file": "doc/userguide/output/eve/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/eve/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/output/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/output/log-rotation.rst.md",
+      "source_title": "log-rotation.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/log-rotation.rst",
+      "section": "log-rotation.rst"
+    },
+    {
+      "file": "doc/userguide/output/lua-output.rst.md",
+      "source_title": "lua-output.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/lua-output.rst",
+      "section": "lua-output.rst"
+    },
+    {
+      "file": "doc/userguide/output/syslog-alerting-comp.rst.md",
+      "source_title": "syslog-alerting-comp.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/output/syslog-alerting-comp.rst",
+      "section": "syslog-alerting-comp.rst"
+    },
+    {
+      "file": "doc/userguide/partials/commands-pcap-sc.rst.md",
+      "source_title": "commands-pcap-sc.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/partials/commands-pcap-sc.rst",
+      "section": "commands-pcap-sc.rst"
+    },
+    {
+      "file": "doc/userguide/partials/commands-sc.rst.md",
+      "source_title": "commands-sc.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/partials/commands-sc.rst",
+      "section": "commands-sc.rst"
+    },
+    {
+      "file": "doc/userguide/partials/options-unittests.rst.md",
+      "source_title": "options-unittests.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/partials/options-unittests.rst",
+      "section": "options-unittests.rst"
+    },
+    {
+      "file": "doc/userguide/partials/options.rst.md",
+      "source_title": "options.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/partials/options.rst",
+      "section": "options.rst"
+    },
+    {
+      "file": "doc/userguide/performance/analysis.rst.md",
+      "source_title": "analysis.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/analysis.rst",
+      "section": "analysis.rst"
+    },
+    {
+      "file": "doc/userguide/performance/high-performance-config.rst.md",
+      "source_title": "high-performance-config.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/high-performance-config.rst",
+      "section": "high-performance-config.rst"
+    },
+    {
+      "file": "doc/userguide/performance/hyperscan.rst.md",
+      "source_title": "hyperscan.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/hyperscan.rst",
+      "section": "hyperscan.rst"
+    },
+    {
+      "file": "doc/userguide/performance/ignoring-traffic.rst.md",
+      "source_title": "ignoring-traffic.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/ignoring-traffic.rst",
+      "section": "ignoring-traffic.rst"
+    },
+    {
+      "file": "doc/userguide/performance/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/performance/packet-capture.rst.md",
+      "source_title": "packet-capture.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/packet-capture.rst",
+      "section": "packet-capture.rst"
+    },
+    {
+      "file": "doc/userguide/performance/packet-profiling.rst.md",
+      "source_title": "packet-profiling.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/packet-profiling.rst",
+      "section": "packet-profiling.rst"
+    },
+    {
+      "file": "doc/userguide/performance/rule-profiling.rst.md",
+      "source_title": "rule-profiling.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/rule-profiling.rst",
+      "section": "rule-profiling.rst"
+    },
+    {
+      "file": "doc/userguide/performance/runmodes.rst.md",
+      "source_title": "runmodes.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/runmodes.rst",
+      "section": "runmodes.rst"
+    },
+    {
+      "file": "doc/userguide/performance/statistics.rst.md",
+      "source_title": "statistics.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/statistics.rst",
+      "section": "statistics.rst"
+    },
+    {
+      "file": "doc/userguide/performance/tcmalloc.rst.md",
+      "source_title": "tcmalloc.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/tcmalloc.rst",
+      "section": "tcmalloc.rst"
+    },
+    {
+      "file": "doc/userguide/performance/tuning-considerations.rst.md",
+      "source_title": "tuning-considerations.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/performance/tuning-considerations.rst",
+      "section": "tuning-considerations.rst"
+    },
+    {
+      "file": "doc/userguide/plugins/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/plugins/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/plugins/ndpi.rst.md",
+      "source_title": "ndpi.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/plugins/ndpi.rst",
+      "section": "ndpi.rst"
+    },
+    {
+      "file": "doc/userguide/protocols/protocols.rst.md",
+      "source_title": "protocols.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/protocols/protocols.rst",
+      "section": "protocols.rst"
+    },
+    {
+      "file": "doc/userguide/public-data-sets.rst.md",
+      "source_title": "public-data-sets.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/public-data-sets.rst",
+      "section": "public-data-sets.rst"
+    },
+    {
+      "file": "doc/userguide/quickstart.rst.md",
+      "source_title": "quickstart.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/quickstart.rst",
+      "section": "quickstart.rst"
+    },
+    {
+      "file": "doc/userguide/reputation/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/reputation/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/reputation/ipreputation/ip-reputation-config.rst.md",
+      "source_title": "ip-reputation-config.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/reputation/ipreputation/ip-reputation-config.rst",
+      "section": "ip-reputation-config.rst"
+    },
+    {
+      "file": "doc/userguide/reputation/ipreputation/ip-reputation-format.rst.md",
+      "source_title": "ip-reputation-format.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/reputation/ipreputation/ip-reputation-format.rst",
+      "section": "ip-reputation-format.rst"
+    },
+    {
+      "file": "doc/userguide/reputation/ipreputation/ip-reputation.rst.md",
+      "source_title": "ip-reputation.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/reputation/ipreputation/ip-reputation.rst",
+      "section": "ip-reputation.rst"
+    },
+    {
+      "file": "doc/userguide/rule-management/adding-your-own-rules.rst.md",
+      "source_title": "adding-your-own-rules.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rule-management/adding-your-own-rules.rst",
+      "section": "adding-your-own-rules.rst"
+    },
+    {
+      "file": "doc/userguide/rule-management/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rule-management/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/rule-management/rule-profiling.rst.md",
+      "source_title": "rule-profiling.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rule-management/rule-profiling.rst",
+      "section": "rule-profiling.rst"
+    },
+    {
+      "file": "doc/userguide/rule-management/rule-reload.rst.md",
+      "source_title": "rule-reload.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rule-management/rule-reload.rst",
+      "section": "rule-reload.rst"
+    },
+    {
+      "file": "doc/userguide/rule-management/suricata-update.rst.md",
+      "source_title": "suricata-update.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rule-management/suricata-update.rst",
+      "section": "suricata-update.rst"
+    },
+    {
+      "file": "doc/userguide/rules/app-layer.rst.md",
+      "source_title": "app-layer.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/app-layer.rst",
+      "section": "app-layer.rst"
+    },
+    {
+      "file": "doc/userguide/rules/base64-keywords.rst.md",
+      "source_title": "base64-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/base64-keywords.rst",
+      "section": "base64-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/bypass-keyword.rst.md",
+      "source_title": "bypass-keyword.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/bypass-keyword.rst",
+      "section": "bypass-keyword.rst"
+    },
+    {
+      "file": "doc/userguide/rules/config.rst.md",
+      "source_title": "config.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/config.rst",
+      "section": "config.rst"
+    },
+    {
+      "file": "doc/userguide/rules/datasets.rst.md",
+      "source_title": "datasets.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/datasets.rst",
+      "section": "datasets.rst"
+    },
+    {
+      "file": "doc/userguide/rules/dcerpc-keywords.rst.md",
+      "source_title": "dcerpc-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/dcerpc-keywords.rst",
+      "section": "dcerpc-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/decode-layer.rst.md",
+      "source_title": "decode-layer.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/decode-layer.rst",
+      "section": "decode-layer.rst"
+    },
+    {
+      "file": "doc/userguide/rules/dhcp-keywords.rst.md",
+      "source_title": "dhcp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/dhcp-keywords.rst",
+      "section": "dhcp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/differences-from-snort.rst.md",
+      "source_title": "differences-from-snort.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/differences-from-snort.rst",
+      "section": "differences-from-snort.rst"
+    },
+    {
+      "file": "doc/userguide/rules/dnp3-keywords.rst.md",
+      "source_title": "dnp3-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/dnp3-keywords.rst",
+      "section": "dnp3-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/dns-keywords.rst.md",
+      "source_title": "dns-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/dns-keywords.rst",
+      "section": "dns-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/email-keywords.rst.md",
+      "source_title": "email-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/email-keywords.rst",
+      "section": "email-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/enip-keyword.rst.md",
+      "source_title": "enip-keyword.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/enip-keyword.rst",
+      "section": "enip-keyword.rst"
+    },
+    {
+      "file": "doc/userguide/rules/fast-pattern-explained.rst.md",
+      "source_title": "fast-pattern-explained.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/fast-pattern-explained.rst",
+      "section": "fast-pattern-explained.rst"
+    },
+    {
+      "file": "doc/userguide/rules/file-keywords.rst.md",
+      "source_title": "file-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/file-keywords.rst",
+      "section": "file-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/flow-keywords.rst.md",
+      "source_title": "flow-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/flow-keywords.rst",
+      "section": "flow-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ftp-keywords.rst.md",
+      "source_title": "ftp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ftp-keywords.rst",
+      "section": "ftp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/header-keywords.rst.md",
+      "source_title": "header-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/header-keywords.rst",
+      "section": "header-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/http-keywords.rst.md",
+      "source_title": "http-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/http-keywords.rst",
+      "section": "http-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/http2-keywords.rst.md",
+      "source_title": "http2-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/http2-keywords.rst",
+      "section": "http2-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ike-keywords.rst.md",
+      "source_title": "ike-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ike-keywords.rst",
+      "section": "ike-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "doc/userguide/rules/integer-keywords.rst.md",
+      "source_title": "integer-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/integer-keywords.rst",
+      "section": "integer-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/intro.rst.md",
+      "source_title": "intro.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/intro.rst",
+      "section": "intro.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ip-reputation-rules.rst.md",
+      "source_title": "ip-reputation-rules.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ip-reputation-rules.rst",
+      "section": "ip-reputation-rules.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ipaddr.rst.md",
+      "source_title": "ipaddr.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ipaddr.rst",
+      "section": "ipaddr.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ja-keywords.rst.md",
+      "source_title": "ja-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ja-keywords.rst",
+      "section": "ja-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/kerberos-keywords.rst.md",
+      "source_title": "kerberos-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/kerberos-keywords.rst",
+      "section": "kerberos-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ldap-keywords.rst.md",
+      "source_title": "ldap-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ldap-keywords.rst",
+      "section": "ldap-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/llmnr-keywords.rst.md",
+      "source_title": "llmnr-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/llmnr-keywords.rst",
+      "section": "llmnr-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/lua-detection.rst.md",
+      "source_title": "lua-detection.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/lua-detection.rst",
+      "section": "lua-detection.rst"
+    },
+    {
+      "file": "doc/userguide/rules/mdns-keywords.rst.md",
+      "source_title": "mdns-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/mdns-keywords.rst",
+      "section": "mdns-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/meta.rst.md",
+      "source_title": "meta.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/meta.rst",
+      "section": "meta.rst"
+    },
+    {
+      "file": "doc/userguide/rules/modbus-keyword.rst.md",
+      "source_title": "modbus-keyword.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/modbus-keyword.rst",
+      "section": "modbus-keyword.rst"
+    },
+    {
+      "file": "doc/userguide/rules/mqtt-keywords.rst.md",
+      "source_title": "mqtt-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/mqtt-keywords.rst",
+      "section": "mqtt-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/multi-buffer-matching.rst.md",
+      "source_title": "multi-buffer-matching.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/multi-buffer-matching.rst",
+      "section": "multi-buffer-matching.rst"
+    },
+    {
+      "file": "doc/userguide/rules/nfs-keywords.rst.md",
+      "source_title": "nfs-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/nfs-keywords.rst",
+      "section": "nfs-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/noalert.rst.md",
+      "source_title": "noalert.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/noalert.rst",
+      "section": "noalert.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ntp-keywords.rst.md",
+      "source_title": "ntp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ntp-keywords.rst",
+      "section": "ntp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/payload-keywords.rst.md",
+      "source_title": "payload-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/payload-keywords.rst",
+      "section": "payload-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/pgsql-keywords.rst.md",
+      "source_title": "pgsql-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/pgsql-keywords.rst",
+      "section": "pgsql-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/prefilter-keywords.rst.md",
+      "source_title": "prefilter-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/prefilter-keywords.rst",
+      "section": "prefilter-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/quic-keywords.rst.md",
+      "source_title": "quic-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/quic-keywords.rst",
+      "section": "quic-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/rfb-keywords.rst.md",
+      "source_title": "rfb-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/rfb-keywords.rst",
+      "section": "rfb-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/rule-types.rst.md",
+      "source_title": "rule-types.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/rule-types.rst",
+      "section": "rule-types.rst"
+    },
+    {
+      "file": "doc/userguide/rules/rules-internals.rst.md",
+      "source_title": "rules-internals.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/rules-internals.rst",
+      "section": "rules-internals.rst"
+    },
+    {
+      "file": "doc/userguide/rules/sctp-keywords.rst.md",
+      "source_title": "sctp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/sctp-keywords.rst",
+      "section": "sctp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/sdp-keywords.rst.md",
+      "source_title": "sdp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/sdp-keywords.rst",
+      "section": "sdp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/sip-keywords.rst.md",
+      "source_title": "sip-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/sip-keywords.rst",
+      "section": "sip-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/smb-keywords.rst.md",
+      "source_title": "smb-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/smb-keywords.rst",
+      "section": "smb-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/smtp-keywords.rst.md",
+      "source_title": "smtp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/smtp-keywords.rst",
+      "section": "smtp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/snmp-keywords.rst.md",
+      "source_title": "snmp-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/snmp-keywords.rst",
+      "section": "snmp-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/ssh-keywords.rst.md",
+      "source_title": "ssh-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/ssh-keywords.rst",
+      "section": "ssh-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/tag.rst.md",
+      "source_title": "tag.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/tag.rst",
+      "section": "tag.rst"
+    },
+    {
+      "file": "doc/userguide/rules/thresholding.rst.md",
+      "source_title": "thresholding.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/thresholding.rst",
+      "section": "thresholding.rst"
+    },
+    {
+      "file": "doc/userguide/rules/tls-keywords.rst.md",
+      "source_title": "tls-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/tls-keywords.rst",
+      "section": "tls-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/transforms.rst.md",
+      "source_title": "transforms.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/transforms.rst",
+      "section": "transforms.rst"
+    },
+    {
+      "file": "doc/userguide/rules/vlan-keywords.rst.md",
+      "source_title": "vlan-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/vlan-keywords.rst",
+      "section": "vlan-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/websocket-keywords.rst.md",
+      "source_title": "websocket-keywords.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/websocket-keywords.rst",
+      "section": "websocket-keywords.rst"
+    },
+    {
+      "file": "doc/userguide/rules/xbits.rst.md",
+      "source_title": "xbits.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/rules/xbits.rst",
+      "section": "xbits.rst"
+    },
+    {
+      "file": "doc/userguide/security.rst.md",
+      "source_title": "security.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/security.rst",
+      "section": "security.rst"
+    },
+    {
+      "file": "doc/userguide/support-status.rst.md",
+      "source_title": "support-status.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/support-status.rst",
+      "section": "support-status.rst"
+    },
+    {
+      "file": "doc/userguide/unix-socket.rst.md",
+      "source_title": "unix-socket.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/unix-socket.rst",
+      "section": "unix-socket.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade/8.0-dns-logging-changes.rst.md",
+      "source_title": "8.0-dns-logging-changes.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade/8.0-dns-logging-changes.rst",
+      "section": "8.0-dns-logging-changes.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade/8.0-napatech-plugin.rst.md",
+      "source_title": "8.0-napatech-plugin.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade/8.0-napatech-plugin.rst",
+      "section": "8.0-napatech-plugin.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade/8.0-pfring-plugin.rst.md",
+      "source_title": "8.0-pfring-plugin.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade/8.0-pfring-plugin.rst",
+      "section": "8.0-pfring-plugin.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade/9.0-logging-changes.rst.md",
+      "source_title": "9.0-logging-changes.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade/9.0-logging-changes.rst",
+      "section": "9.0-logging-changes.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade/unified2.rst.md",
+      "source_title": "unified2.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade/unified2.rst",
+      "section": "unified2.rst"
+    },
+    {
+      "file": "doc/userguide/upgrade.rst.md",
+      "source_title": "upgrade.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/upgrade.rst",
+      "section": "upgrade.rst"
+    },
+    {
+      "file": "doc/userguide/verifying-source-files.rst.md",
+      "source_title": "verifying-source-files.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/verifying-source-files.rst",
+      "section": "verifying-source-files.rst"
+    },
+    {
+      "file": "doc/userguide/what-is-suricata.rst.md",
+      "source_title": "what-is-suricata.rst",
+      "source_url": "https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/what-is-suricata.rst",
+      "section": "what-is-suricata.rst"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "incident-response-dfir",
+  "version": "1.0.0",
+  "title": "Incident Response & Digital Forensics",
+  "domain": "defensive",
+  "description": "The IR lifecycle (NIST SP 800-61), order of volatility, evidence preservation and chain of custody, and the DFIR toolkit for acquisition, memory, timeline, and network analysis.",
+  "tags": ["dfir", "incident-response", "forensics", "volatility", "nist"],
+  "authority": "NIST SP 800-61 / SANS",
+  "docs": [
+    {"file": "ir-lifecycle-and-forensics.md", "source_title": "NIST SP 800-61r2 — Computer Security Incident Handling Guide", "source_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"}
+  ]
+}

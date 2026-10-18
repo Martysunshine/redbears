@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/juniper/bgp/juniper_bgp_missing_md5.yml -->
+title: Juniper BGP Missing MD5
+id: a7c0ae48-8df8-42bf-91bd-2ea57e2f9d43
+status: test
+description: Detects juniper BGP missing MD5 digest. Which may be indicative of brute force attacks to manipulate routing.
+references:
+    - https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v3.pdf
+author: Tim Brown
+date: 2023-01-09
+modified: 2023-01-23
+tags:
+    - attack.initial-access
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.credential-access
+    - attack.collection
+    - attack.stealth
+    - attack.t1078
+    - attack.t1110
+    - attack.t1557
+logsource:
+    product: juniper
+    service: bgp
+    definition: 'Requirements: juniper bgp logs need to be enabled and ingested'
+detection:
+    keywords_bgp_juniper:
+        '|all':
+            - ':179' # Protocol
+            - 'missing MD5 digest'
+    condition: keywords_bgp_juniper
+falsepositives:
+    - Unlikely. Except due to misconfigurations
+level: low

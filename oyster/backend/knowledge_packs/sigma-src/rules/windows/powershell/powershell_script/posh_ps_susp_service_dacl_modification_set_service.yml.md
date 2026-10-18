@@ -1,0 +1,43 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_susp_service_dacl_modification_set_service.yml -->
+title: Suspicious Service DACL Modification Via Set-Service Cmdlet - PS
+id: 22d80745-6f2c-46da-826b-77adaededd74
+related:
+    - id: a95b9b42-1308-4735-a1af-abb1c5e6f5ac
+      type: similar
+status: test
+description: Detects usage of the "Set-Service" powershell cmdlet to configure a new SecurityDescriptor that allows a service to be hidden from other utilities such as "sc.exe", "Get-Service"...etc. (Works only in powershell 7)
+references:
+    - https://twitter.com/Alh4zr3d/status/1580925761996828672
+    - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-service?view=powershell-7.2
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-10-24
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.011
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection_sddl_flag:
+        ScriptBlockText|contains:
+            - '-SecurityDescriptorSddl '
+            - '-sd '
+    selection_set_service:
+        ScriptBlockText|contains|all:
+            - 'Set-Service '
+            - 'D;;'
+        ScriptBlockText|contains:
+            - ';;;IU'
+            - ';;;SU'
+            - ';;;BA'
+            - ';;;SY'
+            - ';;;WD'
+    condition: all of selection_*
+falsepositives:
+    - Rare intended use of hidden services
+    - Rare FP could occur due to the non linearity of the ScriptBlockText log
+level: high

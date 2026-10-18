@@ -1,0 +1,28 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_event/registry_event_office_trust_record_modification.yml -->
+title: Windows Registry Trust Record Modification
+id: 295a59c1-7b79-4b47-a930-df12c15fc9c2
+related:
+    - id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
+      type: similar
+status: test
+description: Alerts on trust record modification within the registry, indicating usage of macros
+references:
+    - https://outflank.nl/blog/2018/01/16/hunting-for-evil-detect-macros-being-executed/
+    - http://az4n6.blogspot.com/2016/02/more-on-trust-records-macros-and.html
+    - https://twitter.com/inversecos/status/1494174785621819397
+author: Antonlovesdnb, Trent Liffick (@tliffick)
+date: 2020-02-19
+modified: 2023-06-21
+tags:
+    - attack.initial-access
+    - attack.t1566.001
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: '\Security\Trusted Documents\TrustRecords'
+    condition: selection
+falsepositives:
+    - This will alert on legitimate macro usage as well, additional tuning is required
+level: medium

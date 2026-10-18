@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_tar_extraction.yml -->
+title: Compressed File Extraction Via Tar.EXE
+id: bf361876-6620-407a-812f-bfe11e51e924
+status: test
+description: |
+    Detects execution of "tar.exe" in order to extract compressed file.
+    Adversaries may abuse various utilities in order to decompress data to avoid detection.
+references:
+    - https://unit42.paloaltonetworks.com/chromeloader-malware/
+    - https://lolbas-project.github.io/lolbas/Binaries/Tar/
+    - https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cicada-apt10-japan-espionage
+author: AdmU3
+date: 2023-12-19
+tags:
+    - attack.collection
+    - attack.exfiltration
+    - attack.t1560
+    - attack.t1560.001
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_img:
+        - Image|endswith: '\tar.exe'
+        - OriginalFileName: 'bsdtar'
+    selection_extract:
+        CommandLine|contains: '-x'
+    condition: all of selection_*
+falsepositives:
+    - Likely
+level: low

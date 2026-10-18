@@ -1,0 +1,12 @@
+{
+  "id": "detection-engineering",
+  "version": "1.0.0",
+  "title": "Detection Engineering & Purple Teaming",
+  "domain": "defensive",
+  "description": "Turn attacker behavior into detections: Sigma/YARA rules, KQL/SPL queries, ATT&CK mapping, and the purple-team loop of test → observe telemetry → tune → measure coverage.",
+  "tags": ["sigma", "yara", "kql", "attack", "purple-team", "detection"],
+  "authority": "MITRE ATT&CK / Sigma / Atomic Red Team",
+  "docs": [
+    {"file": "detections-and-purple-team.md", "source_title": "SigmaHQ", "source_url": "https://github.com/SigmaHQ/sigma"}
+  ]
+}

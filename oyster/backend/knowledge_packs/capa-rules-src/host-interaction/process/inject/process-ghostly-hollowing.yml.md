@@ -1,0 +1,27 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/inject/process-ghostly-hollowing.yml -->
+rule:
+  meta:
+    name: process ghostly hollowing
+    namespace: host-interaction/process/inject
+    authors:
+      - sara.rincon@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    references:
+      - https://github.com/hasherezade/transacted_hollowing/tree/main#ghostly-hollowing
+    examples:
+      - 3b2eba4789bd4a799fe18476a4d1ce9f37ecc4c202eb406e06425c7e792904ff:0x140007aa0  # open_file
+      - 3b2eba4789bd4a799fe18476a4d1ce9f37ecc4c202eb406e06425c7e792904ff:0x140007840  # delete_pending_file
+  features:
+    - or:
+      - and:
+        - operand[1].number: 0xC0110000 = DELETE | SYNCHRONIZE | GENERIC_READ | GENERIC_WRITE
+        - operand[1].number: 0x20 = FILE_SUPERSEDE | FILE_SYNCHRONOUS_IO_NONALERT
+        - or:
+          - api: NtOpenFile
+          - string: "NtOpenFile"
+      - and:
+        - api: NtWriteFile
+        - api: NtSetInformationFile
+        - api: NtCreateSection

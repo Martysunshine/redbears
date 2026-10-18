@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/m365/audit/microsoft365_disabling_mfa.yml -->
+title: Disabling Multi Factor Authentication
+id: 60de9b57-dc4d-48b9-a6a0-b39e0469f876
+status: test
+description: Detects disabling of Multi Factor Authentication.
+references:
+    - https://research.splunk.com/cloud/c783dd98-c703-4252-9e8a-f19d9f5c949e/
+author: Splunk Threat Research Team (original rule), Harjot Singh @cyb3rjy0t (sigma rule)
+date: 2023-09-18
+tags:
+    - attack.persistence
+    - attack.credential-access
+    - attack.defense-impairment
+    - attack.t1556.006
+logsource:
+    service: audit
+    product: m365
+detection:
+    selection:
+        Operation|contains: 'Disable Strong Authentication.'
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

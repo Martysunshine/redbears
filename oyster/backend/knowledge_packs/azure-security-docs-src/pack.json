@@ -1,0 +1,724 @@
+{
+  "id": "azure-security-docs-src",
+  "name": "azure-security-docs-src",
+  "version": "881030285d5d",
+  "title": "Azure Security Documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://learn.microsoft.com/azure/security/ at 881030285d5d. 114 documents.",
+  "authority": "Microsoft",
+  "publisher": "Microsoft Corporation",
+  "trust_level": "official",
+  "licence": "cc-by-4.0",
+  "attribution": "Azure Security Documentation, Microsoft Corporation, CC BY 4.0.",
+  "tags": [
+    "azure",
+    "cloud",
+    "microsoft",
+    "security-baseline"
+  ],
+  "applicable_tools": [
+    "azure"
+  ],
+  "applicable_platforms": [
+    "cloud"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "azure-security-docs-src",
+  "upstream_commit": "881030285d5d0af1024af93dd7027036195477a0",
+  "source_urls": [
+    "https://learn.microsoft.com/azure/security/",
+    "https://github.com/MicrosoftDocs/azure-docs"
+  ],
+  "docs": [
+    {
+      "file": "articles/security/develop/secure-deploy.md",
+      "source_title": "Deploy secure applications on Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/secure-deploy.md",
+      "section": "Deploy secure applications on Azure"
+    },
+    {
+      "file": "articles/security/develop/secure-design.md",
+      "source_title": "Design secure applications on Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/secure-design.md",
+      "section": "Design secure applications on Azure"
+    },
+    {
+      "file": "articles/security/develop/secure-dev-overview.md",
+      "source_title": "Secure development best practices on Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/secure-dev-overview.md",
+      "section": "Secure development best practices on Azure"
+    },
+    {
+      "file": "articles/security/develop/secure-develop.md",
+      "source_title": "Develop secure applications on Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/secure-develop.md",
+      "section": "Develop secure applications on Azure"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-auditing-and-logging.md",
+      "source_title": "Security Frame: Auditing and Logging | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-auditing-and-logging.md",
+      "section": "Security Frame: Auditing and Logging | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-authentication.md",
+      "source_title": "Security Frame: Authentication | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-authentication.md",
+      "section": "Security Frame: Authentication | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-authorization.md",
+      "source_title": "Security Frame: Authorization | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-authorization.md",
+      "section": "Security Frame: Authorization | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-communication-security.md",
+      "source_title": "Security Frame: Communication Security | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-communication-security.md",
+      "section": "Security Frame: Communication Security | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-configuration-management.md",
+      "source_title": "Security Frame: Configuration Management | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-configuration-management.md",
+      "section": "Security Frame: Configuration Management | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-cryptography.md",
+      "source_title": "Security Frame: Cryptography | Mitigation",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-cryptography.md",
+      "section": "Security Frame: Cryptography | Mitigation"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-exception-management.md",
+      "source_title": "Security Frame: Exception Management | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-exception-management.md",
+      "section": "Security Frame: Exception Management | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-feature-overview.md",
+      "source_title": "Threat Modeling Tool feature overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-feature-overview.md",
+      "section": "Threat Modeling Tool feature overview"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-getting-started.md",
+      "source_title": "Getting started with the Threat Modeling Tool",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-getting-started.md",
+      "section": "Getting started with the Threat Modeling Tool"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-input-validation.md",
+      "source_title": "Security Frame: Input Validation | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-input-validation.md",
+      "section": "Security Frame: Input Validation | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-mitigations.md",
+      "source_title": "Microsoft Threat Modeling Tool mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-mitigations.md",
+      "section": "Microsoft Threat Modeling Tool mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71509112.md",
+      "source_title": "Threat Modeling Tool GA release 7.1.50911.2 - 9/12/2018",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71509112.md",
+      "section": "Threat Modeling Tool GA release 7.1.50911.2 - 9/12/2018"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71510231.md",
+      "source_title": "Threat Modeling Tool update release 7.1.51023.1 - 11/1/2018",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71510231.md",
+      "section": "Threat Modeling Tool update release 7.1.51023.1 - 11/1/2018"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71601261.md",
+      "source_title": "Threat Modeling Tool update release 7.1.60126.1 - 1/29/2019",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71601261.md",
+      "section": "Threat Modeling Tool update release 7.1.60126.1 - 1/29/2019"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71604081.md",
+      "source_title": "Threat Modeling Tool update release 7.1.60408.1 - 4/9/2019",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71604081.md",
+      "section": "Threat Modeling Tool update release 7.1.60408.1 - 4/9/2019"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71607021.md",
+      "source_title": "Threat Modeling Tool update release 7.1.60702.1 - 7/2/2019",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71607021.md",
+      "section": "Threat Modeling Tool update release 7.1.60702.1 - 7/2/2019"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-71610151.md",
+      "source_title": "Threat Modeling Tool update release 7.1.61015.1 - 10/16/2019",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-71610151.md",
+      "section": "Threat Modeling Tool update release 7.1.61015.1 - 10/16/2019"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73002061.md",
+      "source_title": "Threat Modeling Tool update release 7.3.00206.1 - 02/11/2020",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73002061.md",
+      "section": "Threat Modeling Tool update release 7.3.00206.1 - 02/11/2020"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73003161.md",
+      "source_title": "Threat Modeling Tool update release 7.3.00316.1 - 03/22/2020",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73003161.md",
+      "section": "Threat Modeling Tool update release 7.3.00316.1 - 03/22/2020"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73007142.md",
+      "source_title": "Threat Modeling Tool update release 7.3.00714.2 - 07/14/2020",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73007142.md",
+      "section": "Threat Modeling Tool update release 7.3.00714.2 - 07/14/2020"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73007291.md",
+      "source_title": "Threat Modeling Tool update release 7.3.00729.1 - 07/29/2020",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73007291.md",
+      "section": "Threat Modeling Tool update release 7.3.00729.1 - 07/29/2020"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73209279.md",
+      "source_title": "Threat Modeling Tool update release 7.3.20927.9 - 09/27/2022",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73209279.md",
+      "section": "Threat Modeling Tool update release 7.3.20927.9 - 09/27/2022"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73211082.md",
+      "source_title": "Threat Modeling Tool update release 7.3.21108.2 - 11/08/2022",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73211082.md",
+      "section": "Threat Modeling Tool update release 7.3.21108.2 - 11/08/2022"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73306305.md",
+      "source_title": "Threat Modeling Tool update release 7.3.30630.5 - 06/30/2023",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73306305.md",
+      "section": "Threat Modeling Tool update release 7.3.30630.5 - 06/30/2023"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73308291.md",
+      "source_title": "Threat Modeling Tool update release 7.3.30829.1 - 08/30/2023",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73308291.md",
+      "section": "Threat Modeling Tool update release 7.3.30829.1 - 08/30/2023"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73309251.md",
+      "source_title": "Threat Modeling Tool update release 7.3.30925.1 - 09/25/2023",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73309251.md",
+      "section": "Threat Modeling Tool update release 7.3.30925.1 - 09/25/2023"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73310263.md",
+      "source_title": "Threat Modeling Tool update release 7.3.31026.3 - 10/26/2023",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73310263.md",
+      "section": "Threat Modeling Tool update release 7.3.31026.3 - 10/26/2023"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases-73511101.md",
+      "source_title": "Threat Modeling Tool update release 7.3.51110.1 - 11/10/2025",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases-73511101.md",
+      "section": "Threat Modeling Tool update release 7.3.51110.1 - 11/10/2025"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-releases.md",
+      "source_title": "Threat Modeling Tool Releases",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-releases.md",
+      "section": "Threat Modeling Tool Releases"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-sensitive-data.md",
+      "source_title": "Security Frame: Sensitive Data | Mitigations",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-sensitive-data.md",
+      "section": "Security Frame: Sensitive Data | Mitigations"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-session-management.md",
+      "source_title": "Security Frame: Session Management",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-session-management.md",
+      "section": "Security Frame: Session Management"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool-threats.md",
+      "source_title": "Microsoft Threat Modeling Tool threats",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool-threats.md",
+      "section": "Microsoft Threat Modeling Tool threats"
+    },
+    {
+      "file": "articles/security/develop/threat-modeling-tool.md",
+      "source_title": "Microsoft Threat Modeling Tool",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/develop/threat-modeling-tool.md",
+      "section": "Microsoft Threat Modeling Tool"
+    },
+    {
+      "file": "articles/security/fundamentals/ai-security-best-practices.md",
+      "source_title": "Azure AI security best practices",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ai-security-best-practices.md",
+      "section": "Azure AI security best practices"
+    },
+    {
+      "file": "articles/security/fundamentals/antimalware-code-samples.md",
+      "source_title": "Code samples to enable and configure Microsoft Antimalware for Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/antimalware-code-samples.md",
+      "section": "Code samples to enable and configure Microsoft Antimalware for Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/antimalware.md",
+      "source_title": "Microsoft Antimalware for Azure Cloud Services and Virtual Machines (VMs)",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/antimalware.md",
+      "section": "Microsoft Antimalware for Azure Cloud Services and Virtual Machines (VMs)"
+    },
+    {
+      "file": "articles/security/fundamentals/azure-certificate-authority-details.md",
+      "source_title": "Azure Certificate Authority details",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/azure-certificate-authority-details.md",
+      "section": "Azure Certificate Authority details"
+    },
+    {
+      "file": "articles/security/fundamentals/azure-domains.md",
+      "source_title": "Reference list of Azure domains (not comprehensive)",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/azure-domains.md",
+      "section": "Reference list of Azure domains (not comprehensive)"
+    },
+    {
+      "file": "articles/security/fundamentals/azure-integrated-hardware-security-module-overview.md",
+      "source_title": "Azure Integrated HSM overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/azure-integrated-hardware-security-module-overview.md",
+      "section": "Azure Integrated HSM overview"
+    },
+    {
+      "file": "articles/security/fundamentals/azure-marketplace-images.md",
+      "source_title": "Security recommendations for Azure Marketplace images",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/azure-marketplace-images.md",
+      "section": "Security recommendations for Azure Marketplace images"
+    },
+    {
+      "file": "articles/security/fundamentals/backup-plan-to-protect-against-ransomware.md",
+      "source_title": "Backup and restore plan to protect against ransomware",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/backup-plan-to-protect-against-ransomware.md",
+      "section": "Backup and restore plan to protect against ransomware"
+    },
+    {
+      "file": "articles/security/fundamentals/best-practices-and-patterns.md",
+      "source_title": "Azure security best practices and patterns",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/best-practices-and-patterns.md",
+      "section": "Azure security best practices and patterns"
+    },
+    {
+      "file": "articles/security/fundamentals/certificate-pinning.md",
+      "source_title": "What is certificate pinning?",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/certificate-pinning.md",
+      "section": "What is certificate pinning?"
+    },
+    {
+      "file": "articles/security/fundamentals/code-integrity.md",
+      "source_title": "Platform code integrity",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/code-integrity.md",
+      "section": "Platform code integrity"
+    },
+    {
+      "file": "articles/security/fundamentals/customer-lockbox-alternative-email.md",
+      "source_title": "Customer Lockbox for Microsoft Azure alternate email notifications",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/customer-lockbox-alternative-email.md",
+      "section": "Customer Lockbox for Microsoft Azure alternate email notifications"
+    },
+    {
+      "file": "articles/security/fundamentals/customer-lockbox-overview.md",
+      "source_title": "Customer Lockbox for Microsoft Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/customer-lockbox-overview.md",
+      "section": "Customer Lockbox for Microsoft Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/data-encryption-best-practices.md",
+      "source_title": "Azure data security and encryption best practices",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/data-encryption-best-practices.md",
+      "section": "Azure data security and encryption best practices"
+    },
+    {
+      "file": "articles/security/fundamentals/database-security-checklist.md",
+      "source_title": "Azure database security checklist",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/database-security-checklist.md",
+      "section": "Azure database security checklist"
+    },
+    {
+      "file": "articles/security/fundamentals/double-encryption.md",
+      "source_title": "Double encryption",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/double-encryption.md",
+      "section": "Double encryption"
+    },
+    {
+      "file": "articles/security/fundamentals/encryption-atrest.md",
+      "source_title": "Azure data encryption at rest",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/encryption-atrest.md",
+      "section": "Azure data encryption at rest"
+    },
+    {
+      "file": "articles/security/fundamentals/encryption-customer-managed-keys-support.md",
+      "source_title": "Services that support customer-managed keys in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/encryption-customer-managed-keys-support.md",
+      "section": "Services that support customer-managed keys in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/encryption-models.md",
+      "source_title": "Data encryption models",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/encryption-models.md",
+      "section": "Data encryption models"
+    },
+    {
+      "file": "articles/security/fundamentals/encryption-overview.md",
+      "source_title": "Azure encryption overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/encryption-overview.md",
+      "section": "Azure encryption overview"
+    },
+    {
+      "file": "articles/security/fundamentals/end-to-end.md",
+      "source_title": "End-to-end security in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/end-to-end.md",
+      "section": "End-to-end security in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/feature-availability.md",
+      "source_title": "Cloud feature availability for US Government customers",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/feature-availability.md",
+      "section": "Cloud feature availability for US Government customers"
+    },
+    {
+      "file": "articles/security/fundamentals/firmware.md",
+      "source_title": "Firmware security",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/firmware.md",
+      "section": "Firmware security"
+    },
+    {
+      "file": "articles/security/fundamentals/how-to-deploy-azure-integrated-hardware-security-module.md",
+      "source_title": "Deploy a virtual machine with Azure Integrated HSM enabled",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/how-to-deploy-azure-integrated-hardware-security-module.md",
+      "section": "Deploy a virtual machine with Azure Integrated HSM enabled"
+    },
+    {
+      "file": "articles/security/fundamentals/hypervisor.md",
+      "source_title": "Hypervisor security on the Azure fleet",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/hypervisor.md",
+      "section": "Hypervisor security on the Azure fleet"
+    },
+    {
+      "file": "articles/security/fundamentals/iaas.md",
+      "source_title": "Security best practices for IaaS workloads in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/iaas.md",
+      "section": "Security best practices for IaaS workloads in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/identity-management-best-practices.md",
+      "source_title": "Azure identity management and access control best practices",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/identity-management-best-practices.md",
+      "section": "Azure identity management and access control best practices"
+    },
+    {
+      "file": "articles/security/fundamentals/identity-management-overview.md",
+      "source_title": "Customer intent: As an IT Pro or decision maker, I want to learn about identity management capabilities in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/identity-management-overview.md",
+      "section": "Customer intent: As an IT Pro or decision maker, I want to learn about identity management capabilities in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/incident-response-overview.md",
+      "source_title": "Incident response overview for Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/incident-response-overview.md",
+      "section": "Incident response overview for Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-availability.md",
+      "source_title": "Azure infrastructure availability",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-availability.md",
+      "section": "Azure infrastructure availability"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-components.md",
+      "source_title": "Azure information system components and boundaries",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-components.md",
+      "section": "Azure information system components and boundaries"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-integrity.md",
+      "source_title": "Azure infrastructure integrity",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-integrity.md",
+      "section": "Azure infrastructure integrity"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-monitoring.md",
+      "source_title": "Azure infrastructure monitoring",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-monitoring.md",
+      "section": "Azure infrastructure monitoring"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-network.md",
+      "source_title": "Azure network architecture",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-network.md",
+      "section": "Azure network architecture"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-operations.md",
+      "source_title": "Management and operation of the Azure production network",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-operations.md",
+      "section": "Management and operation of the Azure production network"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure-sql.md",
+      "source_title": "Azure SQL Database security features",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure-sql.md",
+      "section": "Azure SQL Database security features"
+    },
+    {
+      "file": "articles/security/fundamentals/infrastructure.md",
+      "source_title": "Azure infrastructure security",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/infrastructure.md",
+      "section": "Azure infrastructure security"
+    },
+    {
+      "file": "articles/security/fundamentals/isolation-choices.md",
+      "source_title": "Isolation in the Azure public cloud",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/isolation-choices.md",
+      "section": "Isolation in the Azure public cloud"
+    },
+    {
+      "file": "articles/security/fundamentals/key-management-choose.md",
+      "source_title": "How to choose the right Azure key management solution",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/key-management-choose.md",
+      "section": "How to choose the right Azure key management solution"
+    },
+    {
+      "file": "articles/security/fundamentals/key-management.md",
+      "source_title": "Key management in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/key-management.md",
+      "section": "Key management in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/log-audit.md",
+      "source_title": "Azure security logging and auditing",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/log-audit.md",
+      "section": "Azure security logging and auditing"
+    },
+    {
+      "file": "articles/security/fundamentals/managed-tls-changes.md",
+      "source_title": "Changes to the managed TLS feature",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/managed-tls-changes.md",
+      "section": "Changes to the managed TLS feature"
+    },
+    {
+      "file": "articles/security/fundamentals/management-monitoring-overview.md",
+      "source_title": "Azure security management and monitoring overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/management-monitoring-overview.md",
+      "section": "Azure security management and monitoring overview"
+    },
+    {
+      "file": "articles/security/fundamentals/measured-boot-host-attestation.md",
+      "source_title": "Firmware measured boot and host attestation",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/measured-boot-host-attestation.md",
+      "section": "Firmware measured boot and host attestation"
+    },
+    {
+      "file": "articles/security/fundamentals/network-best-practices.md",
+      "source_title": "Azure network security best practices",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/network-best-practices.md",
+      "section": "Azure network security best practices"
+    },
+    {
+      "file": "articles/security/fundamentals/network-overview.md",
+      "source_title": "Azure network security overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/network-overview.md",
+      "section": "Azure network security overview"
+    },
+    {
+      "file": "articles/security/fundamentals/operational-best-practices.md",
+      "source_title": "Azure operational security best practices",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/operational-best-practices.md",
+      "section": "Azure operational security best practices"
+    },
+    {
+      "file": "articles/security/fundamentals/operational-checklist.md",
+      "source_title": "Azure operational security checklist",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/operational-checklist.md",
+      "section": "Azure operational security checklist"
+    },
+    {
+      "file": "articles/security/fundamentals/operational-overview.md",
+      "source_title": "Azure operational security overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/operational-overview.md",
+      "section": "Azure operational security overview"
+    },
+    {
+      "file": "articles/security/fundamentals/overview.md",
+      "source_title": "Introduction to Azure security",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/overview.md",
+      "section": "Introduction to Azure security"
+    },
+    {
+      "file": "articles/security/fundamentals/paas-applications-using-app-services.md",
+      "source_title": "Best practices for securing PaaS web and mobile applications by using Azure App Service",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/paas-applications-using-app-services.md",
+      "section": "Best practices for securing PaaS web and mobile applications by using Azure App Service"
+    },
+    {
+      "file": "articles/security/fundamentals/paas-applications-using-sql.md",
+      "source_title": "Best practices for securing PaaS databases in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/paas-applications-using-sql.md",
+      "section": "Best practices for securing PaaS databases in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/paas-applications-using-storage.md",
+      "source_title": "Best practices for securing PaaS web and mobile applications by using Azure Storage",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/paas-applications-using-storage.md",
+      "section": "Best practices for securing PaaS web and mobile applications by using Azure Storage"
+    },
+    {
+      "file": "articles/security/fundamentals/paas-deployments.md",
+      "source_title": "Securing PaaS deployments",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/paas-deployments.md",
+      "section": "Securing PaaS deployments"
+    },
+    {
+      "file": "articles/security/fundamentals/pen-testing.md",
+      "source_title": "Penetration testing",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/pen-testing.md",
+      "section": "Penetration testing"
+    },
+    {
+      "file": "articles/security/fundamentals/physical-security.md",
+      "source_title": "Azure facilities, premises, and physical security",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/physical-security.md",
+      "section": "Azure facilities, premises, and physical security"
+    },
+    {
+      "file": "articles/security/fundamentals/platform.md",
+      "source_title": "Platform integrity and security overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/platform.md",
+      "section": "Platform integrity and security overview"
+    },
+    {
+      "file": "articles/security/fundamentals/production-network.md",
+      "source_title": "Azure production network",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/production-network.md",
+      "section": "Azure production network"
+    },
+    {
+      "file": "articles/security/fundamentals/project-cerberus.md",
+      "source_title": "Project Cerberus",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/project-cerberus.md",
+      "section": "Project Cerberus"
+    },
+    {
+      "file": "articles/security/fundamentals/protection-customer-data.md",
+      "source_title": "Azure customer data protection",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/protection-customer-data.md",
+      "section": "Azure customer data protection"
+    },
+    {
+      "file": "articles/security/fundamentals/ransomware-detect-respond.md",
+      "source_title": "Detect and respond to ransomware attacks",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ransomware-detect-respond.md",
+      "section": "Detect and respond to ransomware attacks"
+    },
+    {
+      "file": "articles/security/fundamentals/ransomware-features-resources.md",
+      "source_title": "Azure ransomware protection features and resources",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ransomware-features-resources.md",
+      "section": "Azure ransomware protection features and resources"
+    },
+    {
+      "file": "articles/security/fundamentals/ransomware-prepare.md",
+      "source_title": "Prepare for a ransomware attack",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ransomware-prepare.md",
+      "section": "Prepare for a ransomware attack"
+    },
+    {
+      "file": "articles/security/fundamentals/ransomware-protection-with-azure-firewall.md",
+      "source_title": "Improve ransomware defenses with Azure Firewall Premium",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ransomware-protection-with-azure-firewall.md",
+      "section": "Improve ransomware defenses with Azure Firewall Premium"
+    },
+    {
+      "file": "articles/security/fundamentals/ransomware-protection.md",
+      "source_title": "Ransomware protection in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/ransomware-protection.md",
+      "section": "Ransomware protection in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/secrets-best-practices.md",
+      "source_title": "Best practices for protecting secrets",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/secrets-best-practices.md",
+      "section": "Best practices for protecting secrets"
+    },
+    {
+      "file": "articles/security/fundamentals/secure-boot.md",
+      "source_title": "Secure Boot",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/secure-boot.md",
+      "section": "Secure Boot"
+    },
+    {
+      "file": "articles/security/fundamentals/service-fabric-best-practices.md",
+      "source_title": "Best practices for Azure Service Fabric security",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/service-fabric-best-practices.md",
+      "section": "Best practices for Azure Service Fabric security"
+    },
+    {
+      "file": "articles/security/fundamentals/services-technologies.md",
+      "source_title": "Security services and technologies in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/services-technologies.md",
+      "section": "Security services and technologies in Azure"
+    },
+    {
+      "file": "articles/security/fundamentals/shared-responsibility-ai.md",
+      "source_title": "Artificial intelligence (AI) shared responsibility model",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/shared-responsibility-ai.md",
+      "section": "Artificial intelligence (AI) shared responsibility model"
+    },
+    {
+      "file": "articles/security/fundamentals/shared-responsibility.md",
+      "source_title": "Shared responsibility in the cloud",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/shared-responsibility.md",
+      "section": "Shared responsibility in the cloud"
+    },
+    {
+      "file": "articles/security/fundamentals/steps-secure-identity.md",
+      "source_title": "Secure your Microsoft Entra identity infrastructure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/steps-secure-identity.md",
+      "section": "Secure your Microsoft Entra identity infrastructure"
+    },
+    {
+      "file": "articles/security/fundamentals/subdomain-takeover.md",
+      "source_title": "Prevent dangling DNS entries and avoid subdomain takeover",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/subdomain-takeover.md",
+      "section": "Prevent dangling DNS entries and avoid subdomain takeover"
+    },
+    {
+      "file": "articles/security/fundamentals/threat-detection.md",
+      "source_title": "Azure threat protection",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/threat-detection.md",
+      "section": "Azure threat protection"
+    },
+    {
+      "file": "articles/security/fundamentals/trusted-hardware-identity-management.md",
+      "source_title": "Trusted Hardware Identity Management",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/trusted-hardware-identity-management.md",
+      "section": "Trusted Hardware Identity Management"
+    },
+    {
+      "file": "articles/security/fundamentals/virtual-machines-overview.md",
+      "source_title": "Azure Virtual Machines security overview",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/virtual-machines-overview.md",
+      "section": "Azure Virtual Machines security overview"
+    },
+    {
+      "file": "articles/security/fundamentals/zero-trust.md",
+      "source_title": "Zero Trust security in Azure",
+      "source_url": "https://github.com/MicrosoftDocs/azure-docs/blob/881030285d5d0af1024af93dd7027036195477a0/articles/security/fundamentals/zero-trust.md",
+      "section": "Zero Trust security in Azure"
+    }
+  ]
+}

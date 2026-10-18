@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml -->
+title: Invoke-Obfuscation RUNDLL LAUNCHER - PowerShell
+id: e6cb92b4-b470-4eb8-8a9d-d63e8583aae0
+status: test
+description: Detects Obfuscated Powershell via RUNDLL LAUNCHER
+references:
+    - https://github.com/SigmaHQ/sigma/issues/1009 # (Task 23)
+author: Timur Zinniatullin, oscd.community
+date: 2020-10-18
+modified: 2022-11-29
+tags:
+    - attack.stealth
+    - attack.t1027
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection_4104:
+        ScriptBlockText|contains|all:
+            - 'rundll32.exe'
+            - 'shell32.dll'
+            - 'shellexec_rundll'
+            - 'powershell'
+    condition: selection_4104
+falsepositives:
+    - Unknown
+level: medium

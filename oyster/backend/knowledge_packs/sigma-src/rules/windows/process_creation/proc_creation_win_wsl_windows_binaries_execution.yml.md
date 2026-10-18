@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_wsl_windows_binaries_execution.yml -->
+title: Windows Binary Executed From WSL
+id: ed825c86-c009-4014-b413-b76003e33d35
+status: test
+description: |
+    Detects the execution of Windows binaries from within a WSL instance.
+    This could be used to masquerade parent-child relationships
+references:
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-02-14
+tags:
+    - attack.execution
+    - attack.stealth
+    - attack.t1202
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|re: '[a-zA-Z]:\\'
+        CurrentDirectory|contains: '\\\\wsl.localhost' # Note: programs not supporting UNC paths (example: cmd.exe). Will default to another location
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

@@ -1,0 +1,2 @@
+Oyster demo incident alpha
+The Alpha workstation showed repeated failed logins and then a PowerShell process launched from a macro-enabled document. Recommended containment: isolate the host, preserve volatile evidence, and rotate credentials after scoping the incident.

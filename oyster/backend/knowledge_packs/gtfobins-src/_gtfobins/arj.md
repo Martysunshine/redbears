@@ -1,0 +1,26 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/arj -->
+---
+functions:
+  file-read:
+  - binary: false
+    code: |-
+      arj a /path/to/output-file /path/to/input-file
+      arj p /path/to/output-file
+    comment: |-
+      The `.arj` suffix will be added to `output-file`.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  file-write:
+  - code: |-
+      echo DATA >output-file
+      arj a x output-file
+      arj e x /path/to/output-dir/
+    comment: |-
+      The `.arj` suffix will be added to `x`.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+...

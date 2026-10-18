@@ -1,0 +1,1496 @@
+{
+  "id": "lolbas-src",
+  "name": "lolbas-src",
+  "version": "3403b338875b",
+  "title": "LOLBAS \u2014 Living Off The Land Binaries (upstream)",
+  "domain": "offensive",
+  "security_domain": "windows-privilege-escalation",
+  "description": "Imported from https://lolbas-project.github.io/ at 3403b338875b. 243 documents.",
+  "authority": "LOLBAS Project",
+  "publisher": "LOLBAS Project",
+  "trust_level": "community",
+  "licence": "GPL-3.0",
+  "attribution": "LOLBAS Project, licensed under GPL-3.0.",
+  "tags": [
+    "lolbas",
+    "windows",
+    "lolbin",
+    "living-off-the-land"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "windows"
+  ],
+  "risk_classification": "medium",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "lolbas-src",
+  "upstream_commit": "3403b338875b8a99a0cd7ba4ced5086e8d310bf7",
+  "source_urls": [
+    "https://lolbas-project.github.io/",
+    "https://github.com/LOLBAS-Project/LOLBAS"
+  ],
+  "docs": [
+    {
+      "file": "yml/HonorableMentions/Code.yml.md",
+      "source_title": "Code.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/HonorableMentions/Code.yml",
+      "section": "Code.yml"
+    },
+    {
+      "file": "yml/HonorableMentions/GfxDownloadWrapper.yml.md",
+      "source_title": "GfxDownloadWrapper.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/HonorableMentions/GfxDownloadWrapper.yml",
+      "section": "GfxDownloadWrapper.yml"
+    },
+    {
+      "file": "yml/HonorableMentions/PowerShell.yml.md",
+      "source_title": "PowerShell.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/HonorableMentions/PowerShell.yml",
+      "section": "PowerShell.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Addinutil.yml.md",
+      "source_title": "Addinutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Addinutil.yml",
+      "section": "Addinutil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/AppInstaller.yml.md",
+      "source_title": "AppInstaller.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/AppInstaller.yml",
+      "section": "AppInstaller.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Aspnet_Compiler.yml.md",
+      "source_title": "Aspnet_Compiler.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Aspnet_Compiler.yml",
+      "section": "Aspnet_Compiler.yml"
+    },
+    {
+      "file": "yml/OSBinaries/At.yml.md",
+      "source_title": "At.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/At.yml",
+      "section": "At.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Atbroker.yml.md",
+      "source_title": "Atbroker.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Atbroker.yml",
+      "section": "Atbroker.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Bash.yml.md",
+      "source_title": "Bash.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Bash.yml",
+      "section": "Bash.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Bitsadmin.yml.md",
+      "source_title": "Bitsadmin.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Bitsadmin.yml",
+      "section": "Bitsadmin.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Certoc.yml.md",
+      "source_title": "Certoc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Certoc.yml",
+      "section": "Certoc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Certreq.yml.md",
+      "source_title": "Certreq.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Certreq.yml",
+      "section": "Certreq.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Certutil.yml.md",
+      "source_title": "Certutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Certutil.yml",
+      "section": "Certutil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Change.yml.md",
+      "source_title": "Change.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Change.yml",
+      "section": "Change.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cipher.yml.md",
+      "source_title": "Cipher.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cipher.yml",
+      "section": "Cipher.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cmd.yml.md",
+      "source_title": "Cmd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cmd.yml",
+      "section": "Cmd.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cmdkey.yml.md",
+      "source_title": "Cmdkey.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cmdkey.yml",
+      "section": "Cmdkey.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cmdl32.yml.md",
+      "source_title": "Cmdl32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cmdl32.yml",
+      "section": "Cmdl32.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cmstp.yml.md",
+      "source_title": "Cmstp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cmstp.yml",
+      "section": "Cmstp.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Colorcpl.yml.md",
+      "source_title": "Colorcpl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Colorcpl.yml",
+      "section": "Colorcpl.yml"
+    },
+    {
+      "file": "yml/OSBinaries/ComputerDefaults.yml.md",
+      "source_title": "ComputerDefaults.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/ComputerDefaults.yml",
+      "section": "ComputerDefaults.yml"
+    },
+    {
+      "file": "yml/OSBinaries/ConfigSecurityPolicy.yml.md",
+      "source_title": "ConfigSecurityPolicy.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/ConfigSecurityPolicy.yml",
+      "section": "ConfigSecurityPolicy.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Conhost.yml.md",
+      "source_title": "Conhost.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Conhost.yml",
+      "section": "Conhost.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Control.yml.md",
+      "source_title": "Control.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Control.yml",
+      "section": "Control.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Csc.yml.md",
+      "source_title": "Csc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Csc.yml",
+      "section": "Csc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Cscript.yml.md",
+      "source_title": "Cscript.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Cscript.yml",
+      "section": "Cscript.yml"
+    },
+    {
+      "file": "yml/OSBinaries/CustomShellHost.yml.md",
+      "source_title": "CustomShellHost.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/CustomShellHost.yml",
+      "section": "CustomShellHost.yml"
+    },
+    {
+      "file": "yml/OSBinaries/DataSvcUtil.yml.md",
+      "source_title": "DataSvcUtil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/DataSvcUtil.yml",
+      "section": "DataSvcUtil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Desktopimgdownldr.yml.md",
+      "source_title": "Desktopimgdownldr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Desktopimgdownldr.yml",
+      "section": "Desktopimgdownldr.yml"
+    },
+    {
+      "file": "yml/OSBinaries/DeviceCredentialDeployment.yml.md",
+      "source_title": "DeviceCredentialDeployment.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/DeviceCredentialDeployment.yml",
+      "section": "DeviceCredentialDeployment.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Dfsvc.yml.md",
+      "source_title": "Dfsvc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Dfsvc.yml",
+      "section": "Dfsvc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Diantz.yml.md",
+      "source_title": "Diantz.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Diantz.yml",
+      "section": "Diantz.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Diskshadow.yml.md",
+      "source_title": "Diskshadow.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Diskshadow.yml",
+      "section": "Diskshadow.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Dnscmd.yml.md",
+      "source_title": "Dnscmd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Dnscmd.yml",
+      "section": "Dnscmd.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Esentutl.yml.md",
+      "source_title": "Esentutl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Esentutl.yml",
+      "section": "Esentutl.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Eudcedit.yml.md",
+      "source_title": "Eudcedit.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Eudcedit.yml",
+      "section": "Eudcedit.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Eventvwr.yml.md",
+      "source_title": "Eventvwr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Eventvwr.yml",
+      "section": "Eventvwr.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Expand.yml.md",
+      "source_title": "Expand.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Expand.yml",
+      "section": "Expand.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Explorer.yml.md",
+      "source_title": "Explorer.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Explorer.yml",
+      "section": "Explorer.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Extexport.yml.md",
+      "source_title": "Extexport.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Extexport.yml",
+      "section": "Extexport.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Extrac32.yml.md",
+      "source_title": "Extrac32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Extrac32.yml",
+      "section": "Extrac32.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Findstr.yml.md",
+      "source_title": "Findstr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Findstr.yml",
+      "section": "Findstr.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Finger.yml.md",
+      "source_title": "Finger.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Finger.yml",
+      "section": "Finger.yml"
+    },
+    {
+      "file": "yml/OSBinaries/FltMC.yml.md",
+      "source_title": "FltMC.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/FltMC.yml",
+      "section": "FltMC.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Forfiles.yml.md",
+      "source_title": "Forfiles.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Forfiles.yml",
+      "section": "Forfiles.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Fsutil.yml.md",
+      "source_title": "Fsutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Fsutil.yml",
+      "section": "Fsutil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ftp.yml.md",
+      "source_title": "Ftp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ftp.yml",
+      "section": "Ftp.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Gpscript.yml.md",
+      "source_title": "Gpscript.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Gpscript.yml",
+      "section": "Gpscript.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Hh.yml.md",
+      "source_title": "Hh.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Hh.yml",
+      "section": "Hh.yml"
+    },
+    {
+      "file": "yml/OSBinaries/IMEWDBLD.yml.md",
+      "source_title": "IMEWDBLD.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/IMEWDBLD.yml",
+      "section": "IMEWDBLD.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ie4uinit.yml.md",
+      "source_title": "Ie4uinit.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ie4uinit.yml",
+      "section": "Ie4uinit.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Iediagcmd.yml.md",
+      "source_title": "Iediagcmd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Iediagcmd.yml",
+      "section": "Iediagcmd.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ieexec.yml.md",
+      "source_title": "Ieexec.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ieexec.yml",
+      "section": "Ieexec.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ilasm.yml.md",
+      "source_title": "Ilasm.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ilasm.yml",
+      "section": "Ilasm.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Infdefaultinstall.yml.md",
+      "source_title": "Infdefaultinstall.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Infdefaultinstall.yml",
+      "section": "Infdefaultinstall.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Installutil.yml.md",
+      "source_title": "Installutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Installutil.yml",
+      "section": "Installutil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Iscsicpl.yml.md",
+      "source_title": "Iscsicpl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Iscsicpl.yml",
+      "section": "Iscsicpl.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Jsc.yml.md",
+      "source_title": "Jsc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Jsc.yml",
+      "section": "Jsc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ldifde.yml.md",
+      "source_title": "Ldifde.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ldifde.yml",
+      "section": "Ldifde.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Makecab.yml.md",
+      "source_title": "Makecab.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Makecab.yml",
+      "section": "Makecab.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Mavinject.yml.md",
+      "source_title": "Mavinject.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Mavinject.yml",
+      "section": "Mavinject.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Microsoft.Workflow.Compiler.yml.md",
+      "source_title": "Microsoft.Workflow.Compiler.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Microsoft.Workflow.Compiler.yml",
+      "section": "Microsoft.Workflow.Compiler.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Mmc.yml.md",
+      "source_title": "Mmc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Mmc.yml",
+      "section": "Mmc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Mofcomp.yml.md",
+      "source_title": "Mofcomp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Mofcomp.yml",
+      "section": "Mofcomp.yml"
+    },
+    {
+      "file": "yml/OSBinaries/MpCmdRun.yml.md",
+      "source_title": "MpCmdRun.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/MpCmdRun.yml",
+      "section": "MpCmdRun.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msbuild.yml.md",
+      "source_title": "Msbuild.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msbuild.yml",
+      "section": "Msbuild.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msconfig.yml.md",
+      "source_title": "Msconfig.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msconfig.yml",
+      "section": "Msconfig.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msdt.yml.md",
+      "source_title": "Msdt.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msdt.yml",
+      "section": "Msdt.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msedge.yml.md",
+      "source_title": "Msedge.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msedge.yml",
+      "section": "Msedge.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Mshta.yml.md",
+      "source_title": "Mshta.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Mshta.yml",
+      "section": "Mshta.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msiexec.yml.md",
+      "source_title": "Msiexec.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msiexec.yml",
+      "section": "Msiexec.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Msoxmled.yml.md",
+      "source_title": "Msoxmled.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Msoxmled.yml",
+      "section": "Msoxmled.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Netsh.yml.md",
+      "source_title": "Netsh.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Netsh.yml",
+      "section": "Netsh.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ngen.yml.md",
+      "source_title": "Ngen.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ngen.yml",
+      "section": "Ngen.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Odbcconf.yml.md",
+      "source_title": "Odbcconf.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Odbcconf.yml",
+      "section": "Odbcconf.yml"
+    },
+    {
+      "file": "yml/OSBinaries/OfflineScannerShell.yml.md",
+      "source_title": "OfflineScannerShell.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/OfflineScannerShell.yml",
+      "section": "OfflineScannerShell.yml"
+    },
+    {
+      "file": "yml/OSBinaries/OneDriveStandaloneUpdater.yml.md",
+      "source_title": "OneDriveStandaloneUpdater.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/OneDriveStandaloneUpdater.yml",
+      "section": "OneDriveStandaloneUpdater.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Pcalua.yml.md",
+      "source_title": "Pcalua.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Pcalua.yml",
+      "section": "Pcalua.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Pcwrun.yml.md",
+      "source_title": "Pcwrun.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Pcwrun.yml",
+      "section": "Pcwrun.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Pktmon.yml.md",
+      "source_title": "Pktmon.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Pktmon.yml",
+      "section": "Pktmon.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Pnputil.yml.md",
+      "source_title": "Pnputil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Pnputil.yml",
+      "section": "Pnputil.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Presentationhost.yml.md",
+      "source_title": "Presentationhost.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Presentationhost.yml",
+      "section": "Presentationhost.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Print.yml.md",
+      "source_title": "Print.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Print.yml",
+      "section": "Print.yml"
+    },
+    {
+      "file": "yml/OSBinaries/PrintBrm.yml.md",
+      "source_title": "PrintBrm.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/PrintBrm.yml",
+      "section": "PrintBrm.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Provlaunch.yml.md",
+      "source_title": "Provlaunch.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Provlaunch.yml",
+      "section": "Provlaunch.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Psr.yml.md",
+      "source_title": "Psr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Psr.yml",
+      "section": "Psr.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Query.yml.md",
+      "source_title": "Query.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Query.yml",
+      "section": "Query.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Rasautou.yml.md",
+      "source_title": "Rasautou.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Rasautou.yml",
+      "section": "Rasautou.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Rdrleakdiag.yml.md",
+      "source_title": "Rdrleakdiag.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Rdrleakdiag.yml",
+      "section": "Rdrleakdiag.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Reg.yml.md",
+      "source_title": "Reg.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Reg.yml",
+      "section": "Reg.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Regasm.yml.md",
+      "source_title": "Regasm.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Regasm.yml",
+      "section": "Regasm.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Regedit.yml.md",
+      "source_title": "Regedit.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Regedit.yml",
+      "section": "Regedit.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Regini.yml.md",
+      "source_title": "Regini.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Regini.yml",
+      "section": "Regini.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Register-cimprovider.yml.md",
+      "source_title": "Register-cimprovider.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Register-cimprovider.yml",
+      "section": "Register-cimprovider.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Regsvcs.yml.md",
+      "source_title": "Regsvcs.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Regsvcs.yml",
+      "section": "Regsvcs.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Regsvr32.yml.md",
+      "source_title": "Regsvr32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Regsvr32.yml",
+      "section": "Regsvr32.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Replace.yml.md",
+      "source_title": "Replace.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Replace.yml",
+      "section": "Replace.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Reset.yml.md",
+      "source_title": "Reset.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Reset.yml",
+      "section": "Reset.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Rpcping.yml.md",
+      "source_title": "Rpcping.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Rpcping.yml",
+      "section": "Rpcping.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Rundll32.yml.md",
+      "source_title": "Rundll32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Rundll32.yml",
+      "section": "Rundll32.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Runexehelper.yml.md",
+      "source_title": "Runexehelper.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Runexehelper.yml",
+      "section": "Runexehelper.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Runonce.yml.md",
+      "source_title": "Runonce.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Runonce.yml",
+      "section": "Runonce.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Runscripthelper.yml.md",
+      "source_title": "Runscripthelper.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Runscripthelper.yml",
+      "section": "Runscripthelper.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Sc.yml.md",
+      "source_title": "Sc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Sc.yml",
+      "section": "Sc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Schtasks.yml.md",
+      "source_title": "Schtasks.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Schtasks.yml",
+      "section": "Schtasks.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Scp.yml.md",
+      "source_title": "Scp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Scp.yml",
+      "section": "Scp.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Scriptrunner.yml.md",
+      "source_title": "Scriptrunner.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Scriptrunner.yml",
+      "section": "Scriptrunner.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Setres.yml.md",
+      "source_title": "Setres.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Setres.yml",
+      "section": "Setres.yml"
+    },
+    {
+      "file": "yml/OSBinaries/SettingSyncHost.yml.md",
+      "source_title": "SettingSyncHost.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/SettingSyncHost.yml",
+      "section": "SettingSyncHost.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Sftp.yml.md",
+      "source_title": "Sftp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Sftp.yml",
+      "section": "Sftp.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Sigverif.yml.md",
+      "source_title": "Sigverif.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Sigverif.yml",
+      "section": "Sigverif.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ssh.yml.md",
+      "source_title": "Ssh.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ssh.yml",
+      "section": "Ssh.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Stordiag.yml.md",
+      "source_title": "Stordiag.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Stordiag.yml",
+      "section": "Stordiag.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Syncappvpublishingserver.yml.md",
+      "source_title": "Syncappvpublishingserver.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Syncappvpublishingserver.yml",
+      "section": "Syncappvpublishingserver.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Tar.yml.md",
+      "source_title": "Tar.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Tar.yml",
+      "section": "Tar.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Ttdinject.yml.md",
+      "source_title": "Ttdinject.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Ttdinject.yml",
+      "section": "Ttdinject.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Tttracer.yml.md",
+      "source_title": "Tttracer.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Tttracer.yml",
+      "section": "Tttracer.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Unregmp2.yml.md",
+      "source_title": "Unregmp2.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Unregmp2.yml",
+      "section": "Unregmp2.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Vbc.yml.md",
+      "source_title": "Vbc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Vbc.yml",
+      "section": "Vbc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Verclsid.yml.md",
+      "source_title": "Verclsid.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Verclsid.yml",
+      "section": "Verclsid.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wab.yml.md",
+      "source_title": "Wab.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wab.yml",
+      "section": "Wab.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wbadmin.yml.md",
+      "source_title": "Wbadmin.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wbadmin.yml",
+      "section": "Wbadmin.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wbemtest.yml.md",
+      "source_title": "Wbemtest.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wbemtest.yml",
+      "section": "Wbemtest.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Winget.yml.md",
+      "source_title": "Winget.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Winget.yml",
+      "section": "Winget.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wlrmdr.yml.md",
+      "source_title": "Wlrmdr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wlrmdr.yml",
+      "section": "Wlrmdr.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wmic.yml.md",
+      "source_title": "Wmic.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wmic.yml",
+      "section": "Wmic.yml"
+    },
+    {
+      "file": "yml/OSBinaries/WorkFolders.yml.md",
+      "source_title": "WorkFolders.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/WorkFolders.yml",
+      "section": "WorkFolders.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wscript.yml.md",
+      "source_title": "Wscript.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wscript.yml",
+      "section": "Wscript.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wsreset.yml.md",
+      "source_title": "Wsreset.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wsreset.yml",
+      "section": "Wsreset.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Wuauclt.yml.md",
+      "source_title": "Wuauclt.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Wuauclt.yml",
+      "section": "Wuauclt.yml"
+    },
+    {
+      "file": "yml/OSBinaries/Xwizard.yml.md",
+      "source_title": "Xwizard.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/Xwizard.yml",
+      "section": "Xwizard.yml"
+    },
+    {
+      "file": "yml/OSBinaries/msedge_proxy.yml.md",
+      "source_title": "msedge_proxy.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/msedge_proxy.yml",
+      "section": "msedge_proxy.yml"
+    },
+    {
+      "file": "yml/OSBinaries/msedgewebview2.yml.md",
+      "source_title": "msedgewebview2.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/msedgewebview2.yml",
+      "section": "msedgewebview2.yml"
+    },
+    {
+      "file": "yml/OSBinaries/odbcad32.yml.md",
+      "source_title": "odbcad32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/odbcad32.yml",
+      "section": "odbcad32.yml"
+    },
+    {
+      "file": "yml/OSBinaries/setupugc.yml.md",
+      "source_title": "setupugc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/setupugc.yml",
+      "section": "setupugc.yml"
+    },
+    {
+      "file": "yml/OSBinaries/write.yml.md",
+      "source_title": "write.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/write.yml",
+      "section": "write.yml"
+    },
+    {
+      "file": "yml/OSBinaries/wt.yml.md",
+      "source_title": "wt.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSBinaries/wt.yml",
+      "section": "wt.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Advpack.yml.md",
+      "source_title": "Advpack.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Advpack.yml",
+      "section": "Advpack.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Desk.yml.md",
+      "source_title": "Desk.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Desk.yml",
+      "section": "Desk.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Dfshim.yml.md",
+      "source_title": "Dfshim.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Dfshim.yml",
+      "section": "Dfshim.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Ieadvpack.yml.md",
+      "source_title": "Ieadvpack.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Ieadvpack.yml",
+      "section": "Ieadvpack.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Ieframe.yml.md",
+      "source_title": "Ieframe.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Ieframe.yml",
+      "section": "Ieframe.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Mshtml.yml.md",
+      "source_title": "Mshtml.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Mshtml.yml",
+      "section": "Mshtml.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Pcwutl.yml.md",
+      "source_title": "Pcwutl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Pcwutl.yml",
+      "section": "Pcwutl.yml"
+    },
+    {
+      "file": "yml/OSLibraries/PhotoViewer.yml.md",
+      "source_title": "PhotoViewer.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/PhotoViewer.yml",
+      "section": "PhotoViewer.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Scrobj.yml.md",
+      "source_title": "Scrobj.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Scrobj.yml",
+      "section": "Scrobj.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Setupapi.yml.md",
+      "source_title": "Setupapi.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Setupapi.yml",
+      "section": "Setupapi.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Shdocvw.yml.md",
+      "source_title": "Shdocvw.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Shdocvw.yml",
+      "section": "Shdocvw.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Shell32.yml.md",
+      "source_title": "Shell32.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Shell32.yml",
+      "section": "Shell32.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Shimgvw.yml.md",
+      "source_title": "Shimgvw.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Shimgvw.yml",
+      "section": "Shimgvw.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Syssetup.yml.md",
+      "source_title": "Syssetup.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Syssetup.yml",
+      "section": "Syssetup.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Url.yml.md",
+      "source_title": "Url.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Url.yml",
+      "section": "Url.yml"
+    },
+    {
+      "file": "yml/OSLibraries/Zipfldr.yml.md",
+      "source_title": "Zipfldr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/Zipfldr.yml",
+      "section": "Zipfldr.yml"
+    },
+    {
+      "file": "yml/OSLibraries/comsvcs.yml.md",
+      "source_title": "comsvcs.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSLibraries/comsvcs.yml",
+      "section": "comsvcs.yml"
+    },
+    {
+      "file": "yml/OSScripts/CL_LoadAssembly.yml.md",
+      "source_title": "CL_LoadAssembly.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/CL_LoadAssembly.yml",
+      "section": "CL_LoadAssembly.yml"
+    },
+    {
+      "file": "yml/OSScripts/CL_mutexverifiers.yml.md",
+      "source_title": "CL_mutexverifiers.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/CL_mutexverifiers.yml",
+      "section": "CL_mutexverifiers.yml"
+    },
+    {
+      "file": "yml/OSScripts/Cl_invocation.yml.md",
+      "source_title": "Cl_invocation.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Cl_invocation.yml",
+      "section": "Cl_invocation.yml"
+    },
+    {
+      "file": "yml/OSScripts/Launch-VsDevShell.yml.md",
+      "source_title": "Launch-VsDevShell.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Launch-VsDevShell.yml",
+      "section": "Launch-VsDevShell.yml"
+    },
+    {
+      "file": "yml/OSScripts/Manage-bde.yml.md",
+      "source_title": "Manage-bde.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Manage-bde.yml",
+      "section": "Manage-bde.yml"
+    },
+    {
+      "file": "yml/OSScripts/Pubprn.yml.md",
+      "source_title": "Pubprn.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Pubprn.yml",
+      "section": "Pubprn.yml"
+    },
+    {
+      "file": "yml/OSScripts/Syncappvpublishingserver.yml.md",
+      "source_title": "Syncappvpublishingserver.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Syncappvpublishingserver.yml",
+      "section": "Syncappvpublishingserver.yml"
+    },
+    {
+      "file": "yml/OSScripts/UtilityFunctions.yml.md",
+      "source_title": "UtilityFunctions.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/UtilityFunctions.yml",
+      "section": "UtilityFunctions.yml"
+    },
+    {
+      "file": "yml/OSScripts/Winrm.yml.md",
+      "source_title": "Winrm.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/Winrm.yml",
+      "section": "Winrm.yml"
+    },
+    {
+      "file": "yml/OSScripts/pester.yml.md",
+      "source_title": "pester.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OSScripts/pester.yml",
+      "section": "pester.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/AccCheckConsole.yml.md",
+      "source_title": "AccCheckConsole.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/AccCheckConsole.yml",
+      "section": "AccCheckConsole.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Adplus.yml.md",
+      "source_title": "Adplus.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Adplus.yml",
+      "section": "Adplus.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Agentexecutor.yml.md",
+      "source_title": "Agentexecutor.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Agentexecutor.yml",
+      "section": "Agentexecutor.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/AppLauncher.yml.md",
+      "source_title": "AppLauncher.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/AppLauncher.yml",
+      "section": "AppLauncher.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Appcert.yml.md",
+      "source_title": "Appcert.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Appcert.yml",
+      "section": "Appcert.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Appvlp.yml.md",
+      "source_title": "Appvlp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Appvlp.yml",
+      "section": "Appvlp.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Bcp.yml.md",
+      "source_title": "Bcp.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Bcp.yml",
+      "section": "Bcp.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Bginfo.yml.md",
+      "source_title": "Bginfo.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Bginfo.yml",
+      "section": "Bginfo.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Cdb.yml.md",
+      "source_title": "Cdb.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Cdb.yml",
+      "section": "Cdb.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Coregen.yml.md",
+      "source_title": "Coregen.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Coregen.yml",
+      "section": "Coregen.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Createdump.yml.md",
+      "source_title": "Createdump.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Createdump.yml",
+      "section": "Createdump.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Csi.yml.md",
+      "source_title": "Csi.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Csi.yml",
+      "section": "Csi.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/DefaultPack.yml.md",
+      "source_title": "DefaultPack.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/DefaultPack.yml",
+      "section": "DefaultPack.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Devinit.yml.md",
+      "source_title": "Devinit.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Devinit.yml",
+      "section": "Devinit.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Devtoolslauncher.yml.md",
+      "source_title": "Devtoolslauncher.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Devtoolslauncher.yml",
+      "section": "Devtoolslauncher.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dnx.yml.md",
+      "source_title": "Dnx.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dnx.yml",
+      "section": "Dnx.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dotnet.yml.md",
+      "source_title": "Dotnet.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dotnet.yml",
+      "section": "Dotnet.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dsdbutil.yml.md",
+      "source_title": "Dsdbutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dsdbutil.yml",
+      "section": "Dsdbutil.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dtutil.yml.md",
+      "source_title": "Dtutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dtutil.yml",
+      "section": "Dtutil.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dump64.yml.md",
+      "source_title": "Dump64.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dump64.yml",
+      "section": "Dump64.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/DumpMinitool.yml.md",
+      "source_title": "DumpMinitool.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/DumpMinitool.yml",
+      "section": "DumpMinitool.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Dxcap.yml.md",
+      "source_title": "Dxcap.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Dxcap.yml",
+      "section": "Dxcap.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/ECMangen.yml.md",
+      "source_title": "ECMangen.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/ECMangen.yml",
+      "section": "ECMangen.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Excel.yml.md",
+      "source_title": "Excel.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Excel.yml",
+      "section": "Excel.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Fsi.yml.md",
+      "source_title": "Fsi.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Fsi.yml",
+      "section": "Fsi.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/FsiAnyCpu.yml.md",
+      "source_title": "FsiAnyCpu.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/FsiAnyCpu.yml",
+      "section": "FsiAnyCpu.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/IntelliTrace.yml.md",
+      "source_title": "IntelliTrace.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/IntelliTrace.yml",
+      "section": "IntelliTrace.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Logger.yml.md",
+      "source_title": "Logger.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Logger.yml",
+      "section": "Logger.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Mftrace.yml.md",
+      "source_title": "Mftrace.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Mftrace.yml",
+      "section": "Mftrace.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Microsoft.NodejsTools.PressAnyKey.yml.md",
+      "source_title": "Microsoft.NodejsTools.PressAnyKey.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Microsoft.NodejsTools.PressAnyKey.yml",
+      "section": "Microsoft.NodejsTools.PressAnyKey.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Mpiexec.yml.md",
+      "source_title": "Mpiexec.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Mpiexec.yml",
+      "section": "Mpiexec.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Msaccess.yml.md",
+      "source_title": "Msaccess.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Msaccess.yml",
+      "section": "Msaccess.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Mscopilot.yml.md",
+      "source_title": "Mscopilot.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Mscopilot.yml",
+      "section": "Mscopilot.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Mscopilot_proxy.yml.md",
+      "source_title": "Mscopilot_proxy.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Mscopilot_proxy.yml",
+      "section": "Mscopilot_proxy.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Msdeploy.yml.md",
+      "source_title": "Msdeploy.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Msdeploy.yml",
+      "section": "Msdeploy.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/MsoHtmEd.yml.md",
+      "source_title": "MsoHtmEd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/MsoHtmEd.yml",
+      "section": "MsoHtmEd.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Mspub.yml.md",
+      "source_title": "Mspub.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Mspub.yml",
+      "section": "Mspub.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Msxsl.yml.md",
+      "source_title": "Msxsl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Msxsl.yml",
+      "section": "Msxsl.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Nmcap.yml.md",
+      "source_title": "Nmcap.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Nmcap.yml",
+      "section": "Nmcap.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Ntdsutil.yml.md",
+      "source_title": "Ntdsutil.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Ntdsutil.yml",
+      "section": "Ntdsutil.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Ntsd.yml.md",
+      "source_title": "Ntsd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Ntsd.yml",
+      "section": "Ntsd.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/OpenConsole.yml.md",
+      "source_title": "OpenConsole.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/OpenConsole.yml",
+      "section": "OpenConsole.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Outlook.yml.md",
+      "source_title": "Outlook.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Outlook.yml",
+      "section": "Outlook.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Pixtool.yml.md",
+      "source_title": "Pixtool.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Pixtool.yml",
+      "section": "Pixtool.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Powerpnt.yml.md",
+      "source_title": "Powerpnt.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Powerpnt.yml",
+      "section": "Powerpnt.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Procdump.yml.md",
+      "source_title": "Procdump.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Procdump.yml",
+      "section": "Procdump.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/ProtocolHandler.yml.md",
+      "source_title": "ProtocolHandler.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/ProtocolHandler.yml",
+      "section": "ProtocolHandler.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Rcsi.yml.md",
+      "source_title": "Rcsi.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Rcsi.yml",
+      "section": "Rcsi.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Remote.yml.md",
+      "source_title": "Remote.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Remote.yml",
+      "section": "Remote.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Sqldumper.yml.md",
+      "source_title": "Sqldumper.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Sqldumper.yml",
+      "section": "Sqldumper.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Sqlps.yml.md",
+      "source_title": "Sqlps.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Sqlps.yml",
+      "section": "Sqlps.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Sqltoolsps.yml.md",
+      "source_title": "Sqltoolsps.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Sqltoolsps.yml",
+      "section": "Sqltoolsps.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Squirrel.yml.md",
+      "source_title": "Squirrel.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Squirrel.yml",
+      "section": "Squirrel.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Te.yml.md",
+      "source_title": "Te.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Te.yml",
+      "section": "Te.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Teams.yml.md",
+      "source_title": "Teams.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Teams.yml",
+      "section": "Teams.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Testwindowremoteagent.yml.md",
+      "source_title": "Testwindowremoteagent.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Testwindowremoteagent.yml",
+      "section": "Testwindowremoteagent.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Tracker.yml.md",
+      "source_title": "Tracker.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Tracker.yml",
+      "section": "Tracker.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Update.yml.md",
+      "source_title": "Update.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Update.yml",
+      "section": "Update.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/VSDiagnostics.yml.md",
+      "source_title": "VSDiagnostics.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/VSDiagnostics.yml",
+      "section": "VSDiagnostics.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/VSIISExeLauncher.yml.md",
+      "source_title": "VSIISExeLauncher.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/VSIISExeLauncher.yml",
+      "section": "VSIISExeLauncher.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Visio.yml.md",
+      "source_title": "Visio.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Visio.yml",
+      "section": "Visio.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/VisualUiaVerifyNative.yml.md",
+      "source_title": "VisualUiaVerifyNative.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/VisualUiaVerifyNative.yml",
+      "section": "VisualUiaVerifyNative.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/VsLaunchBrowser.yml.md",
+      "source_title": "VsLaunchBrowser.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/VsLaunchBrowser.yml",
+      "section": "VsLaunchBrowser.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Vshadow.yml.md",
+      "source_title": "Vshadow.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Vshadow.yml",
+      "section": "Vshadow.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Vsjitdebugger.yml.md",
+      "source_title": "Vsjitdebugger.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Vsjitdebugger.yml",
+      "section": "Vsjitdebugger.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/WFMFormat.yml.md",
+      "source_title": "WFMFormat.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/WFMFormat.yml",
+      "section": "WFMFormat.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Wfc.yml.md",
+      "source_title": "Wfc.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Wfc.yml",
+      "section": "Wfc.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/WinDbg.yml.md",
+      "source_title": "WinDbg.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/WinDbg.yml",
+      "section": "WinDbg.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Winproj.yml.md",
+      "source_title": "Winproj.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Winproj.yml",
+      "section": "Winproj.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Winword.yml.md",
+      "source_title": "Winword.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Winword.yml",
+      "section": "Winword.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Wsb.yml.md",
+      "source_title": "Wsb.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Wsb.yml",
+      "section": "Wsb.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/Wsl.yml.md",
+      "source_title": "Wsl.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/Wsl.yml",
+      "section": "Wsl.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/XBootMgr.yml.md",
+      "source_title": "XBootMgr.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/XBootMgr.yml",
+      "section": "XBootMgr.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/XBootMgrSleep.yml.md",
+      "source_title": "XBootMgrSleep.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/XBootMgrSleep.yml",
+      "section": "XBootMgrSleep.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/devtunnels.yml.md",
+      "source_title": "devtunnels.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/devtunnels.yml",
+      "section": "devtunnels.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/vsls-agent.yml.md",
+      "source_title": "vsls-agent.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/vsls-agent.yml",
+      "section": "vsls-agent.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/vstest.console.yml.md",
+      "source_title": "vstest.console.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/vstest.console.yml",
+      "section": "vstest.console.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/winfile.yml.md",
+      "source_title": "winfile.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/winfile.yml",
+      "section": "winfile.yml"
+    },
+    {
+      "file": "yml/OtherMSBinaries/xsd.yml.md",
+      "source_title": "xsd.yml",
+      "source_url": "https://github.com/LOLBAS-Project/LOLBAS/blob/3403b338875b8a99a0cd7ba4ced5086e8d310bf7/yml/OtherMSBinaries/xsd.yml",
+      "section": "xsd.yml"
+    }
+  ]
+}

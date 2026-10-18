@@ -1,0 +1,6 @@
+<!-- source: https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/disaster-recovery-resiliency.md -->
+# Resilience in Amazon GuardDuty<a name="disaster-recovery-resiliency"></a>
+
+The AWS global infrastructure is built around AWS Regions and Availability Zones\. Regions provide multiple physically separated and isolated Availability Zones, which are connected through low\-latency, high\-throughput, and highly redundant networking\. With Availability Zones, you can design and operate applications and databases that automatically fail over between zones without interruption\. Availability Zones are more highly available, fault tolerant, and scalable than traditional single or multiple data center infrastructures\.
+
+For more information about AWS Regions and Availability Zones, see [AWS global infrastructure](http://aws.amazon.com/about-aws/global-infrastructure/)\.

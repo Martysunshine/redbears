@@ -1,0 +1,56 @@
+[
+  {
+    "technique_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "description": "Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained."
+  },
+  {
+    "technique_id": "T1003",
+    "technique_name": "OS Credential Dumping",
+    "tactic": "Credential Access",
+    "description": "Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password."
+  },
+  {
+    "technique_id": "T1059",
+    "technique_name": "Command and Scripting Interpreter",
+    "tactic": "Execution",
+    "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries."
+  },
+  {
+    "technique_id": "T1059.001",
+    "technique_name": "Command and Scripting Interpreter: PowerShell",
+    "tactic": "Execution",
+    "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system."
+  },
+  {
+    "technique_id": "T1543.003",
+    "technique_name": "Create or Modify System Process: Windows Service",
+    "tactic": "Persistence",
+    "description": "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence."
+  },
+  {
+    "technique_id": "T1053.005",
+    "technique_name": "Scheduled Task/Job: Scheduled Task",
+    "tactic": "Persistence",
+    "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code."
+  },
+  {
+    "technique_id": "T1027",
+    "technique_name": "Obfuscated Files or Information",
+    "tactic": "Defense Evasion",
+    "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit."
+  },
+  {
+    "technique_id": "T1071.004",
+    "technique_name": "Application Layer Protocol: DNS",
+    "tactic": "Command and Control",
+    "description": "Adversaries may communicate using the Domain Name System (DNS) application layer protocol to avoid detection or network filtering by blending in with existing traffic."
+  },
+  {
+    "technique_id": "T1071.001",
+    "technique_name": "Application Layer Protocol: Web Protocols",
+    "tactic": "Command and Control",
+    "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection or network filtering."
+  }
+]

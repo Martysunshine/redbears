@@ -1,0 +1,29 @@
+{
+  "id": "owasp-wstg",
+  "name": "OWASP Web Security Testing Guide",
+  "version": "1.0.0",
+  "title": "OWASP Web Security Testing Guide (WSTG)",
+  "domain": "offensive",
+  "security_domain": "web-application-security",
+  "description": "The OWASP WSTG methodology: reconnaissance, authentication, authorization, session management, input validation, business logic, API and client-side testing, and reporting. Concise per-category summaries with WSTG test IDs and links.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC BY-SA 4.0 (OWASP WSTG). This pack contains original condensed summaries with attribution and links to the canonical WSTG.",
+  "attribution": "OWASP Web Security Testing Guide — https://owasp.org/www-project-web-security-testing-guide/ (CC BY-SA 4.0).",
+  "tags": ["owasp", "wstg", "web", "authn", "authz", "session", "injection", "api", "reporting"],
+  "supported_tasks": ["test-planning", "web-assessment", "methodology-lookup"],
+  "intended_audience": ["pentester", "appsec-engineer"],
+  "applicable_tools": ["burp-suite", "zap", "ffuf", "sqlmap", "nuclei"],
+  "applicable_platforms": ["web"],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Review against WSTG stable releases (roughly annual).",
+  "retrieved_at": "2026-07-24",
+  "last_reviewed_at": "2026-07-24",
+  "source_urls": ["https://owasp.org/www-project-web-security-testing-guide/", "https://github.com/OWASP/wstg"],
+  "docs": [
+    {"file": "methodology.md", "source_title": "OWASP WSTG — Methodology & Recon", "source_url": "https://owasp.org/www-project-web-security-testing-guide/stable/", "section": "Methodology"},
+    {"file": "authn-authz-session-input.md", "source_title": "OWASP WSTG — AuthN/AuthZ/Session/Input", "source_url": "https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/", "section": "Core test categories"}
+  ]
+}

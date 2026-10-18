@@ -1,0 +1,40 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_susp_raccess_sensitive_fext.yml -->
+title: Suspicious Access to Sensitive File Extensions
+id: 91c945bc-2ad1-4799-a591-4d00198a1215
+related:
+    - id: 286b47ed-f6fe-40b3-b3a8-35129acd43bc
+      type: similar
+status: test
+description: Detects known sensitive file extensions accessed on a network share
+references:
+    - Internal Research
+author: Samir Bousseaden
+date: 2019-04-03
+modified: 2025-10-17
+tags:
+    - attack.collection
+    - attack.t1039
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 5145
+        RelativeTargetName|endswith:
+            - '.bak'
+            - '.dmp'
+            - '.edb'
+            - '.kirbi'
+            - '.msg'
+            - '.nsf'
+            - '.nst'
+            - '.oab'
+            - '.ost'
+            - '.pst'
+            - '.rdp'
+            # - '\groups.xml'  # Commented out: groups.xml is accessed legitimately by Group Policy processing; high FP rate in enterprise environments
+    condition: selection
+falsepositives:
+    - Help Desk operator doing backup or re-imaging end user machine or backup software
+    - Users working with these data types or exchanging message files
+level: medium

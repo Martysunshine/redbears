@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AquaBlizzardAVHits.yaml -->
+id: 96c8f92e-a617-4158-94ea-dea51557b40e
+name: Aqua Blizzard AV hits - Feb 2022
+description: | 
+  'As part of content migration, this file is moved to new location. You can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftDefenderForEndpoint/Analytic%20Rules/AquaBlizzardAVHits.yaml'
+version: 1.1.4

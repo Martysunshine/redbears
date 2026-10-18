@@ -1,0 +1,28 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/operations/Configure-AD-FS-to-Send-Password-Expiry-Claims.md -->
+---
+description: "Learn more about: Configure AD FS to Send Password Expiry Claims"
+title: Configure AD FS to Send Password Expiry Claims
+ms.date: 04/08/2025
+ms.topic: how-to
+---
+# Configure AD FS to Send Password Expiry Claims
+
+
+You can configure Active Directory Federation Services (AD FS) to send password expiry claims to the relying party trusts (applications) that are protected by AD FS. How these claims are used depends on the application. For example, with Office 365 as your relying party, updates have been implemented to Exchange and Outlook to notify federated users of their soon-to-be-expired passwords.
+
+To configure AD FS to send password expiry claims to a relying party trust, you must add the following claim rules to this relying party trust:
+
+```
+@RuleName = "Issue Password Expiry Claims"
+c1:[Type == "http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime"]
+ => issue(store = "_PasswordExpiryStore", types = ("http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime", "http://schemas.microsoft.com/ws/2012/01/passwordexpirationdays", "http://schemas.microsoft.com/ws/2012/01/passwordchangeurl"), query = "{0};", param = c1.Value);
+```
+
+> [!NOTE]
+> Password expiry claims are only available for username and password and Windows Hello for Business authentication types.  If the user authenticates using Windows integrated authentication and Passport is not configured, the claims will not be available and the users will not see password expiry notifications.
+
+> [!NOTE]
+> There is a 14 days window so the sent claims will only be populated if the password is expiring within 14 days.
+
+## See Also
+[AD FS Operations](../ad-fs-operations.md)

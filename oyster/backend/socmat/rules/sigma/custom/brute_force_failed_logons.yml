@@ -1,0 +1,31 @@
+title: Multiple Failed Logon Attempts (Brute Force)
+id: 5c3d8f2a-1b7e-4c9d-8a2f-6b1e3c5d7f0a
+status: stable
+description: >
+  Detects repeated Windows logon failures (Event ID 4625) from a single source,
+  indicative of a brute force or credential stuffing attack against local or
+  domain accounts.
+references:
+  - https://attack.mitre.org/techniques/T1110/
+  - https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625
+author: SOC Copilot Workbench
+date: 2024/01/10
+modified: 2024/02/20
+tags:
+  - attack.credential_access
+  - attack.t1110
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4625
+    LogonType:
+      - 3
+      - 10
+  condition: selection
+falsepositives:
+  - Users who frequently mistype passwords
+  - Automated scripts with stale credentials
+  - Application service accounts with expired passwords
+level: medium

@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/UserAccounts-CABlockedSigninSpikes.yaml -->
+id: 0a148944-dbbb-454f-a032-48ef02d0a0d7
+name: User Accounts - Sign in Failure due to CA Spikes
+description: |
+  'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/UserAccounts-CABlockedSigninSpikes.yaml'
+version: 1.0.2

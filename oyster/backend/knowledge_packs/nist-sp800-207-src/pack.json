@@ -1,0 +1,515 @@
+{
+  "id": "nist-sp800-207-src",
+  "name": "nist-sp800-207-src",
+  "version": "0290d6ece248",
+  "title": "NIST SP 800-207 \u2014 Zero Trust Architecture",
+  "domain": "defensive",
+  "security_domain": "zero-trust-architecture",
+  "description": "Imported from https://doi.org/10.6028/NIST.SP.800-207 at 0290d6ece248. 79 documents.",
+  "authority": "NIST",
+  "publisher": "National Institute of Standards and Technology",
+  "trust_level": "official",
+  "licence": "public-domain",
+  "attribution": "NIST Special Publication 800-207, Zero Trust Architecture \u2014 a U.S. Government work, not subject to copyright in the United States.",
+  "tags": [
+    "nist",
+    "zero-trust",
+    "zta",
+    "identity",
+    "network-security"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "network",
+    "identity",
+    "cloud"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Stable final publication (Aug 2020); re-check for superseding revision.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "nist-sp800-207-src",
+  "upstream_commit": "0290d6ece248",
+  "source_urls": [
+    "https://doi.org/10.6028/NIST.SP.800-207",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf"
+  ],
+  "docs": [
+    {
+      "file": "sections/3-1-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.1.3 ZTA Using Network Infrastructure and Software Defined Perimeters . 12",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.1.3 ZTA Using Network Infrastructure and Software Defined Perimeters . 12"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6 Zero Trust Architecture and Possible Interactions with Existing Federal",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6 Zero Trust Architecture and Possible Interactions with Existing Federal"
+    },
+    {
+      "file": "sections/6-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.3 ZTA and Federal Identity, Credential, and Access Management Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.3 ZTA and Federal Identity, Credential, and Access Management Architecture"
+    },
+    {
+      "file": "sections/7-3-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.3 Identify Key Processes and Evaluate Risks Associated with Executing",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.3 Identify Key Processes and Evaluate Risks Associated with Executing"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1 Introduction",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1 Introduction"
+    },
+    {
+      "file": "sections/1-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1.1 History of Zero Trust Efforts Related to Federal Agencies",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1.1 History of Zero Trust Efforts Related to Federal Agencies"
+    },
+    {
+      "file": "sections/1-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1.2 Structure of This Document",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1.2 Structure of This Document"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 2 Zero Trust Basics",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "2 Zero Trust Basics"
+    },
+    {
+      "file": "sections/2-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 2.1 Tenets of Zero Trust",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "2.1 Tenets of Zero Trust"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1 All data sources and computing services are considered resources. A network may be",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1 All data sources and computing services are considered resources. A network may be"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 2 All communication is secured regardless of network location. Network location alone",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "2 All communication is secured regardless of network location. Network location alone"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3 Access to individual enterprise resources is granted on a per-session basis. Trust in",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3 Access to individual enterprise resources is granted on a per-session basis. Trust in"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4 Access to resources is determined by dynamic policy\u2014including  the observable state",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4 Access to resources is determined by dynamic policy\u2014including  the observable state"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5 The enterprise monitors and measures the integrity and security posture of all",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5 The enterprise monitors and measures the integrity and security posture of all"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6 All resource authentication and authorization are dynamic and strictly enforced",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6 All resource authentication and authorization are dynamic and strictly enforced"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7 The enterprise collects as much information as possible about the current state of",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7 The enterprise collects as much information as possible about the current state of"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1 The entire enterprise private network is not considered an implicit trust zone. Assets",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1 The entire enterprise private network is not considered an implicit trust zone. Assets"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 2 Devices on the network may not be owned or configurable by the enterprise. Visitors",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "2 Devices on the network may not be owned or configurable by the enterprise. Visitors"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3 No resource is inherently trusted. Every asset must have its security posture evaluated",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3 No resource is inherently trusted. Every asset must have its security posture evaluated"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4 Not all enterprise resources are on enterprise-owned infrastructure. Resources",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4 Not all enterprise resources are on enterprise-owned infrastructure. Resources"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5 Remote enterprise subjects and assets cannot fully trust their local network",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5 Remote enterprise subjects and assets cannot fully trust their local network"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6 Assets and workflows moving between enterprise and nonenterprise infrastructure",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6 Assets and workflows moving between enterprise and nonenterprise infrastructure"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3 Logical Components of Zero Trust Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3 Logical Components of Zero Trust Architecture"
+    },
+    {
+      "file": "sections/3-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.1 Variations of Zero Trust Architecture Approaches",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.1 Variations of Zero Trust Architecture Approaches"
+    },
+    {
+      "file": "sections/3-1-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.1.1 ZTA Using Enhanced Identity Governance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.1.1 ZTA Using Enhanced Identity Governance"
+    },
+    {
+      "file": "sections/3-1-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.1.2 ZTA Using Micro-Segmentation",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.1.2 ZTA Using Micro-Segmentation"
+    },
+    {
+      "file": "sections/3-1-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.1.3 ZTA Using Network Infrastructure and Software Defined Perimeters",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.1.3 ZTA Using Network Infrastructure and Software Defined Perimeters"
+    },
+    {
+      "file": "sections/3-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.2 Deployed Variations of the Abstract Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.2 Deployed Variations of the Abstract Architecture"
+    },
+    {
+      "file": "sections/3-2-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.2.1 Device Agent/Gateway-Based Deployment",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.2.1 Device Agent/Gateway-Based Deployment"
+    },
+    {
+      "file": "sections/3-2-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.2.2 Enclave-Based Deployment",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.2.2 Enclave-Based Deployment"
+    },
+    {
+      "file": "sections/3-2-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.2.3 Resource Portal-Based Deployment",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.2.3 Resource Portal-Based Deployment"
+    },
+    {
+      "file": "sections/3-2-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.2.4 Device Application Sandboxing",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.2.4 Device Application Sandboxing"
+    },
+    {
+      "file": "sections/3-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.3 Trust Algorithm",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.3 Trust Algorithm"
+    },
+    {
+      "file": "sections/3-3-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.3.1 Trust Algorithm Variations",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.3.1 Trust Algorithm Variations"
+    },
+    {
+      "file": "sections/3-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3.4 Network/Environment Components",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3.4 Network/Environment Components"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 1 Enterprise assets have basic network connectivity. The local area network (LAN),",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "1 Enterprise assets have basic network connectivity. The local area network (LAN),"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 2 The enterprise must be able to distinguish between what assets are owned or",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "2 The enterprise must be able to distinguish between what assets are owned or"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 3 The enterprise can observe all network traffic. The enterprise records packets seen on",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "3 The enterprise can observe all network traffic. The enterprise records packets seen on"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4 Enterprise resources should not be reachable without accessing a PEP. Enterprise",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4 Enterprise resources should not be reachable without accessing a PEP. Enterprise"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5 The data plane and control plane are logically separate. The policy engine, policy",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5 The data plane and control plane are logically separate. The policy engine, policy"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6 Enterprise assets can reach the PEP component. Enterprise subjects must be able to",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6 Enterprise assets can reach the PEP component. Enterprise subjects must be able to"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7 The PEP is the only component that accesses the policy administrator as part of a",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7 The PEP is the only component that accesses the policy administrator as part of a"
+    },
+    {
+      "file": "sections/8.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 8 Remote enterprise assets should be able to access enterprise resources without",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "8 Remote enterprise assets should be able to access enterprise resources without"
+    },
+    {
+      "file": "sections/9.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 9 The infrastructure used to support the ZTA access decision process should be made",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "9 The infrastructure used to support the ZTA access decision process should be made"
+    },
+    {
+      "file": "sections/10.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 10 Enterprise assets may not be able to reach certain PEPs due to policy or observable",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "10 Enterprise assets may not be able to reach certain PEPs due to policy or observable"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4 Deployment Scenarios/Use Cases",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4 Deployment Scenarios/Use Cases"
+    },
+    {
+      "file": "sections/4-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4.1 Enterprise with Satellite Facilities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4.1 Enterprise with Satellite Facilities"
+    },
+    {
+      "file": "sections/4-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4.2 Multi-cloud/Cloud-to-Cloud Enterprise",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4.2 Multi-cloud/Cloud-to-Cloud Enterprise"
+    },
+    {
+      "file": "sections/4-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4.3 Enterprise with Contracted Services and/or Nonemployee Access",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4.3 Enterprise with Contracted Services and/or Nonemployee Access"
+    },
+    {
+      "file": "sections/4-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4.4 Collaboration Across Enterprise Boundaries",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4.4 Collaboration Across Enterprise Boundaries"
+    },
+    {
+      "file": "sections/4-5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 4.5 Enterprise with Public- or Customer-Facing Services",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "4.5 Enterprise with Public- or Customer-Facing Services"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5 Threats Associated with Zero Trust Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5 Threats Associated with Zero Trust Architecture"
+    },
+    {
+      "file": "sections/5-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.1 Subversion of ZTA Decision Process",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.1 Subversion of ZTA Decision Process"
+    },
+    {
+      "file": "sections/5-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.2 Denial-of-Service or Network Disruption",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.2 Denial-of-Service or Network Disruption"
+    },
+    {
+      "file": "sections/5-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.3 Stolen Credentials/Insider Threat",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.3 Stolen Credentials/Insider Threat"
+    },
+    {
+      "file": "sections/5-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.4 Visibility on the Network",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.4 Visibility on the Network"
+    },
+    {
+      "file": "sections/5-5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.5 Storage of System and Network Information",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.5 Storage of System and Network Information"
+    },
+    {
+      "file": "sections/5-6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.6 Reliance on Proprietary Data Formats or Solutions",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.6 Reliance on Proprietary Data Formats or Solutions"
+    },
+    {
+      "file": "sections/5-7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 5.7 Use of Non-person Entities (NPE) in ZTA Administration",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "5.7 Use of Non-person Entities (NPE) in ZTA Administration"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6 Zero Trust Architecture and Possible Interactions with Existing Federal",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6 Zero Trust Architecture and Possible Interactions with Existing Federal"
+    },
+    {
+      "file": "sections/6-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.1 ZTA and NIST Risk Management Framework",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.1 ZTA and NIST Risk Management Framework"
+    },
+    {
+      "file": "sections/6-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.2 Zero Trust and NIST Privacy Framework",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.2 Zero Trust and NIST Privacy Framework"
+    },
+    {
+      "file": "sections/6-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.3 ZTA and Federal Identity, Credential, and Access Management Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.3 ZTA and Federal Identity, Credential, and Access Management Architecture"
+    },
+    {
+      "file": "sections/6-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.4 ZTA and Trusted Internet Connections 3.0",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.4 ZTA and Trusted Internet Connections 3.0"
+    },
+    {
+      "file": "sections/6-5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.5 ZTA and EINSTEIN (NCPS \u2013 National Cybersecurity Protection System)",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.5 ZTA and EINSTEIN (NCPS \u2013 National Cybersecurity Protection System)"
+    },
+    {
+      "file": "sections/6-6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.6 ZTA and DHS Continuous Diagnostics and Mitigations (CDM) Program",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.6 ZTA and DHS Continuous Diagnostics and Mitigations (CDM) Program"
+    },
+    {
+      "file": "sections/6-7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 6.7 ZTA, Cloud Smart, and the Federal Data Strategy",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "6.7 ZTA, Cloud Smart, and the Federal Data Strategy"
+    },
+    {
+      "file": "sections/9.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 9 Federal Data Strategy: https://strategy.data.gov/",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "9 Federal Data Strategy: https://strategy.data.gov/"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7 Migrating to a Zero Trust Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7 Migrating to a Zero Trust Architecture"
+    },
+    {
+      "file": "sections/7-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.1 Pure Zero Trust Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.1 Pure Zero Trust Architecture"
+    },
+    {
+      "file": "sections/7-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.2 Hybrid ZTA and Perimeter-Based Architecture",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.2 Hybrid ZTA and Perimeter-Based Architecture"
+    },
+    {
+      "file": "sections/7-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3 Steps to Introducing ZTA to a Perimeter-Based Architected Network",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3 Steps to Introducing ZTA to a Perimeter-Based Architected Network"
+    },
+    {
+      "file": "sections/7-3-1.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.1 Identify Actors on the Enterprise",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.1 Identify Actors on the Enterprise"
+    },
+    {
+      "file": "sections/7-3-2.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.2 Identify Assets Owned by the Enterprise",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.2 Identify Assets Owned by the Enterprise"
+    },
+    {
+      "file": "sections/7-3-3.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.3 Identify Key Processes and Evaluate Risks Associated with Executing Process",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.3 Identify Key Processes and Evaluate Risks Associated with Executing Process"
+    },
+    {
+      "file": "sections/7-3-4.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.4 Formulating Policies for the ZTA Candidate",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.4 Formulating Policies for the ZTA Candidate"
+    },
+    {
+      "file": "sections/7-3-5.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.5 Identifying Candidate Solutions",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.5 Identifying Candidate Solutions"
+    },
+    {
+      "file": "sections/7-3-6.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.6 Initial Deployment and Monitoring",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.6 Initial Deployment and Monitoring"
+    },
+    {
+      "file": "sections/7-3-7.md",
+      "source_title": "NIST SP 800-207 \u2014 Zero Trust Architecture \u2014 7.3.7 Expanding the ZTA",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "section": "7.3.7 Expanding the ZTA"
+    }
+  ]
+}

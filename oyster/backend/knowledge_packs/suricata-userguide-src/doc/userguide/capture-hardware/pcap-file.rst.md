@@ -1,0 +1,117 @@
+<!-- source: https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/capture-hardware/pcap-file.rst -->
+.. _pcap_file:
+
+PCAP File Reading
+=================
+
+Suricata offers a ``pcap-file`` capture method to process PCAP files and 
+directories of PCAP files in an offline or live-feed manner.
+
+Configuration
+-------------
+
+.. code-block:: yaml
+
+  pcap-file:
+    checksum-checks: auto
+    # buffer-size: 128 KiB
+    # tenant-id: none
+    # Applies to file and directory. Options: false (no deletion), true (always delete),
+    #   "non-alerts" (delete only files with no alerts)
+    # delete-when-done: false
+    # recursive: false
+    # continuous: false
+    # delay: 30
+    # poll-interval: 5
+
+
+Buffer Size
+-----------
+
+This option specifies the size of the read buffer for the PCAP file.
+The larger the buffer, the more data Suricata can read at once.
+This can improve performance, especially for large files.
+The size can be specified through the command line option, see
+:ref:`--pcap-file-buffer-size <cmdline-option-pcap-file-buffer-size>`
+
+Setting ``buffer-size`` to ``0`` disables ``setvbuf`` buffering. This is the
+explicit opt-out for non-seekable sources such as ``/dev/stdin`` or named
+pipes, where buffering the underlying file descriptor is not supported.
+
+Directory-related options
+-------------------------
+
+The **recursive** option enables Suricata to traverse subdirectories within 
+the specified directory, up to a maximum depth of 255. This allows for 
+processing of PCAP files located in nested folders. Note that the recursive 
+option cannot be used together with the ``continuous`` option. 
+The command-line option is
+:ref:`--pcap-file-recursive <cmdline-option-pcap-file-recursive>`.
+
+The **continuous** option allows Suricata to monitor the specified directory
+for new files, processing them as they appear.
+This is useful for live environments where new PCAP files are continuously
+added. The continuous option cannot be combined with the ``recursive`` option.
+The command-line option is
+:ref:`--pcap-file-continuous <cmdline-option-pcap-file-continuous>`..
+
+The **delay** option specifies the amount of time, in seconds,
+that Suricata waits before processing newly detected files.
+This helps prevent the processing of incomplete files that are still
+being written. The delay option is applicable with
+the ``continuous`` mode.
+
+The **poll-interval** option determines how frequently, in seconds,
+Suricata checks the directory for new files. Adjusting this interval
+can help balance responsiveness and resource usage.
+
+.. note::
+
+  ``continuous`` and ``recursive`` cannot be enabled simultaneously.
+
+.. note::
+  
+  Symlinks are ignored during recursive traversal.
+
+
+Other options
+-------------
+
+**checksum-checks**
+
+- **auto** (default): Suricata detects checksum offloading statistically.
+- **yes**: Forces checksum validation.
+- **no**: Disables checksum validation.
+- The command-line option is :ref:`-k <cmdline-option-k>`
+
+**tenant-id**
+
+- Specifies the tenant for multi-tenant setups with direct select.
+- The PCAP is processed by the detection engine assigned to the specified
+  tenant.
+
+**delete-when-done**
+
+Controls when PCAP files are deleted after processing. Three values are supported:
+
+- ``false`` (default): Files are never deleted
+- ``true``: Files are always deleted after processing
+- ``"non-alerts"``: Files are deleted only if they didn't generate any alerts
+
+.. note::
+
+   The command-line option :ref:`--pcap-file-delete <cmdline-option-pcap-file-delete>`
+   overrides this configuration and forces "always delete" mode (``true``).
+
+.. warning::
+
+   When using ``"non-alerts"`` mode, file deletion is deferred until thread
+   cleanup to ensure alert counts are finalized. This may delay deletion
+   compared to other modes.
+
+**BPF filter**
+
+- Suricata supports BPF filters for packet capture that is also applicable
+  to the ``pcap-file`` capture method.
+- The BPF filter is specified in the file with the :ref:`-F <cmdline-option-F>`
+  command-line option.

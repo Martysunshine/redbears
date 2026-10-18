@@ -1,0 +1,48 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_schtasks_system_process.yml -->
+title: Scheduled Task Creation Masquerading as System Processes
+id: 9f8573c9-22b4-40e3-89c1-72bc2b8d49ab
+status: experimental
+description: Detects the creation of scheduled tasks that involve system processes, which may indicate malicious actors masquerading as or abusing these processes to execute payloads or maintain persistence.
+references:
+    - https://tria.ge/241015-l98snsyeje/behavioral2
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2025-02-05
+tags:
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.persistence
+    - attack.stealth
+    - attack.t1053.005
+    - attack.t1036.004
+    - attack.t1036.005
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\schtasks.exe'
+        - OriginalFileName: 'schtasks.exe'
+    selection_cli:
+        CommandLine|contains|windash: ' /create '
+        CommandLine|contains:
+            - ' audiodg'
+            - ' conhost'
+            - ' dwm.exe'
+            - ' explorer'
+            - ' lsass'
+            - ' lsm'
+            - ' mmc'
+            - ' msiexec'
+            - ' regsvr32'
+            - ' rundll32'
+            - ' services'
+            - ' spoolsv'
+            - ' svchost'
+            - ' taskeng'
+            - ' taskhost'
+            - ' wininit'
+            - ' winlogon'
+    condition: all of selection_*
+falsepositives:
+    - Legitimate system administration tasks scheduling trusted system processes.
+level: high

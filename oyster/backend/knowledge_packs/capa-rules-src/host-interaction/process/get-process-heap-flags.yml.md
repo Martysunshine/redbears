@@ -1,0 +1,34 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/get-process-heap-flags.yml -->
+rule:
+  meta:
+    name: get process heap flags
+    namespace: host-interaction/process
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: unsupported
+    att&ck:
+      - Discovery::Process Discovery [T1057]
+    references:
+      - https://github.com/LordNoteworthy/al-khaser/blob/bed03d2f849d9060c68f8d5905bd204d0cb3f593/al-khaser/AntiDebug/ProcessHeap_Flags.cpp#L13
+    examples:
+      - al-khaser_x86.exe_:0x425470
+  features:
+    - and:
+      - or:
+        - match: PEB access
+        - api: GetProcessHeap
+      - or:
+        - and:
+          - arch: i386
+          - offset: 0x18 = PEB->ProcessHeap
+          - or:
+            - offset: 0x40 = ProcessHeap->HeapFlags >= Vista
+            - offset: 0xC = ProcessHeap->HeapFlags < Vista
+        - and:
+          - arch: amd64
+          - offset: 0x30 = PEB->ProcessHeap
+          - or:
+            - offset: 0x70 = ProcessHeap->HeapFlags >= Vista
+            - offset: 0x14 = ProcessHeap->HeapFlags < Vista

@@ -1,0 +1,41 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OSScripts/Manage-bde.yml -->
+---
+Name: Manage-bde.wsf
+Description: Script for managing BitLocker
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: set comspec={PATH_ABSOLUTE:.exe} & cscript c:\windows\system32\manage-bde.wsf
+    Description: Set the comspec variable to another executable prior to calling manage-bde.wsf for execution.
+    Usecase: Proxy execution from script
+    Category: Execute
+    Privileges: User
+    MitreID: T1216
+    OperatingSystem: Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
+  - Command: copy c:\users\person\evil.exe c:\users\public\manage-bde.exe & cd c:\users\public\ & cscript.exe c:\windows\system32\manage-bde.wsf
+    Description: Run the manage-bde.wsf script with a payload named manage-bde.exe in the same directory to run the payload file.
+    Usecase: Proxy execution from script
+    Category: Execute
+    Privileges: User
+    MitreID: T1216
+    OperatingSystem: Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
+Full_Path:
+  - Path: C:\Windows\System32\manage-bde.wsf
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_manage_bde.yml
+  - IOC: Manage-bde.wsf should not be invoked by a standard user under normal situations
+Resources:
+  - Link: https://gist.github.com/bohops/735edb7494fe1bd1010d67823842b712
+  - Link: https://twitter.com/bohops/status/980659399495741441
+  - Link: https://twitter.com/JohnLaTwC/status/1223292479270600706
+Acknowledgement:
+  - Person: Jimmy
+    Handle: '@bohops'
+  - Person: Daniel Bohannon
+    Handle: '@danielbohannon'
+  - Person: John Lambert
+    Handle: '@JohnLaTwC'

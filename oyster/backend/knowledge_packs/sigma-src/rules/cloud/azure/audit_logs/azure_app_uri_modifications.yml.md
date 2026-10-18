@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_app_uri_modifications.yml -->
+title: Application URI Configuration Changes
+id: 0055ad1f-be85-4798-83cf-a6da17c993b3
+status: test
+description: |
+    Detects when a configuration change is made to an applications URI.
+    URIs for domain names that no longer exist (dangling URIs), not using HTTPS, wildcards at the end of the domain, URIs that are no unique to that app, or URIs that point to domains you do not control should be investigated.
+references:
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-applications#application-configuration-changes
+author: Mark Morowczynski '@markmorow', Bailey Bercik '@baileybercik'
+date: 2022-06-02
+tags:
+    - attack.initial-access
+    - attack.stealth
+    - attack.t1528
+    - attack.t1078.004
+    - attack.persistence
+    - attack.credential-access
+    - attack.privilege-escalation
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        properties.message: Update Application Sucess- Property Name AppAddress
+    condition: selection
+falsepositives:
+    - When and administrator is making legitimate URI configuration changes to an application. This should be a planned event.
+level: high

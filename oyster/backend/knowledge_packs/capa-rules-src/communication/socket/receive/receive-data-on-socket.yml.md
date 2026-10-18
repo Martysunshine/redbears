@@ -1,0 +1,44 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/socket/receive/receive-data-on-socket.yml -->
+rule:
+  meta:
+    name: receive data on socket
+    namespace: communication/socket/receive
+    authors:
+      - moritz.raabe@mandiant.com
+      - joakim@intezer.com
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    mbc:
+      - Communication::Socket Communication::Receive Data [C0001.006]
+    examples:
+      - Practical Malware Analysis Lab 01-01.dll_:0x10001010
+  features:
+    - or:
+      - api: recv
+      - api: ws2_32.recv
+      - api: ws2_32.#16 = recv
+      - api: ws2_32.recvfrom
+      - api: ws2_32.#17 = recvfrom
+      - api: ws2_32.WSARecv
+      - api: ws2_32.#71 = WSARecv
+      - api: ws2_32.WSARecvDisconnect
+      - api: ws2_32.#72 = WSARecvDisconnect
+      - api: ws2_32.WSARecvEx
+      - api: ws2_32.WSARecvFrom
+      - api: ws2_32.#73 = WSARecvFrom
+      - api: ws2_32.WSARecvMsg
+      - api: recvmsg
+      - api: System.Net.Sockets.Socket::Receive
+      - api: System.Net.Sockets.Socket::ReceiveAsync
+      - api: System.Net.Sockets.Socket::ReceiveFrom
+      - api: System.Net.Sockets.Socket::ReceiveFromAsync
+      - api: System.Net.Sockets.Socket::ReceiveMessageFrom
+      - api: System.Net.Sockets.Socket::ReceiveMessageFromAsync
+      - api: System.Net.Sockets.Socket::BeginReceive
+      - api: System.Net.Sockets.Socket::BeginReceiveFrom
+      - api: System.Net.Sockets.Socket::BeginReceiveMessageFrom
+      - api: System.Net.Sockets.Socket::EndReceive
+      - api: System.Net.Sockets.Socket::EndReceiveFrom
+      - api: System.Net.Sockets.Socket::EndReceiveMessageFrom

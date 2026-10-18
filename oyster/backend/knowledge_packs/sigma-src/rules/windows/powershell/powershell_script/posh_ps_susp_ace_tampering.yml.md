@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_susp_ace_tampering.yml -->
+title: Potential Persistence Via Security Descriptors - ScriptBlock
+id: 2f77047c-e6e9-4c11-b088-a3de399524cd
+status: test
+description: Detects usage of certain functions and keywords that are used to manipulate security descriptors in order to potentially set a backdoor. As seen used in the DAMP project.
+references:
+    - https://github.com/HarmJ0y/DAMP
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-01-05
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.defense-impairment
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection:
+        ScriptBlockText|contains|all:
+            - 'win32_Trustee'
+            - 'win32_Ace'
+            - '.AccessMask'
+            - '.AceType'
+            - '.SetSecurityDescriptor'
+        ScriptBlockText|contains:
+            - '\Lsa\JD'
+            - '\Lsa\Skew1'
+            - '\Lsa\Data'
+            - '\Lsa\GBG'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

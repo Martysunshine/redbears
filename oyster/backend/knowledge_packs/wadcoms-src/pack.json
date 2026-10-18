@@ -1,0 +1,638 @@
+{
+  "id": "wadcoms-src",
+  "name": "wadcoms-src",
+  "version": "31283f1532ff",
+  "title": "WADComs \u2014 Windows/AD offensive commands (upstream)",
+  "domain": "offensive",
+  "security_domain": "active-directory",
+  "description": "Imported from https://wadcoms.github.io/ at 31283f1532ff. 100 documents.",
+  "authority": "WADComs",
+  "publisher": "WADComs",
+  "trust_level": "community",
+  "licence": "GPL-3.0",
+  "attribution": "WADComs, licensed under GPL-3.0.",
+  "tags": [
+    "wadcoms",
+    "windows",
+    "active-directory",
+    "living-off-the-land"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "windows"
+  ],
+  "risk_classification": "medium",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "wadcoms-src",
+  "upstream_commit": "31283f1532ff1b1c9c8e524bacb0fbc6e251429b",
+  "source_urls": [
+    "https://wadcoms.github.io/",
+    "https://github.com/WADComs/WADComs.github.io"
+  ],
+  "docs": [
+    {
+      "file": "_wadcoms/ADCSEnumaration.md",
+      "source_title": "ADCSEnumaration.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/ADCSEnumaration.md",
+      "section": "ADCSEnumaration.md"
+    },
+    {
+      "file": "_wadcoms/BloodHound.py-Remote-Ingestion-Creds.md",
+      "source_title": "BloodHound.py-Remote-Ingestion-Creds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/BloodHound.py-Remote-Ingestion-Creds.md",
+      "section": "BloodHound.py-Remote-Ingestion-Creds.md"
+    },
+    {
+      "file": "_wadcoms/BloodHound.py-Remote-Ingestion.md",
+      "source_title": "BloodHound.py-Remote-Ingestion.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/BloodHound.py-Remote-Ingestion.md",
+      "section": "BloodHound.py-Remote-Ingestion.md"
+    },
+    {
+      "file": "_wadcoms/CredDumpWithoutMimilkatz.md",
+      "source_title": "CredDumpWithoutMimilkatz.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/CredDumpWithoutMimilkatz.md",
+      "section": "CredDumpWithoutMimilkatz.md"
+    },
+    {
+      "file": "_wadcoms/Dementor.md",
+      "source_title": "Dementor.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Dementor.md",
+      "section": "Dementor.md"
+    },
+    {
+      "file": "_wadcoms/Enum4Linux-Creds.md",
+      "source_title": "Enum4Linux-Creds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Enum4Linux-Creds.md",
+      "section": "Enum4Linux-Creds.md"
+    },
+    {
+      "file": "_wadcoms/Enum4Linux-NoCreds.md",
+      "source_title": "Enum4Linux-NoCreds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Enum4Linux-NoCreds.md",
+      "section": "Enum4Linux-NoCreds.md"
+    },
+    {
+      "file": "_wadcoms/Evil-WinRM-PTH.md",
+      "source_title": "Evil-WinRM-PTH.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Evil-WinRM-PTH.md",
+      "section": "Evil-WinRM-PTH.md"
+    },
+    {
+      "file": "_wadcoms/Evil-WinRM.md",
+      "source_title": "Evil-WinRM.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Evil-WinRM.md",
+      "section": "Evil-WinRM.md"
+    },
+    {
+      "file": "_wadcoms/Evil-Winrm-PKINIT.md",
+      "source_title": "Evil-Winrm-PKINIT.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Evil-Winrm-PKINIT.md",
+      "section": "Evil-Winrm-PKINIT.md"
+    },
+    {
+      "file": "_wadcoms/FindUncommonShares.md",
+      "source_title": "FindUncommonShares.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/FindUncommonShares.md",
+      "section": "FindUncommonShares.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-DCOMExec.md",
+      "source_title": "Impacket-DCOMExec.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-DCOMExec.md",
+      "section": "Impacket-DCOMExec.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-Get-GPPPassword.md",
+      "source_title": "Impacket-Get-GPPPassword.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-Get-GPPPassword.md",
+      "section": "Impacket-Get-GPPPassword.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-GetADUsers.md",
+      "source_title": "Impacket-GetADUsers.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-GetADUsers.md",
+      "section": "Impacket-GetADUsers.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-GetNPUsers.md",
+      "source_title": "Impacket-GetNPUsers.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-GetNPUsers.md",
+      "section": "Impacket-GetNPUsers.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-GetUserSPNs.md",
+      "source_title": "Impacket-GetUserSPNs.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-GetUserSPNs.md",
+      "section": "Impacket-GetUserSPNs.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-GoldenTicket.md",
+      "source_title": "Impacket-GoldenTicket.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-GoldenTicket.md",
+      "section": "Impacket-GoldenTicket.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-LookUpSID.md",
+      "source_title": "Impacket-LookUpSID.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-LookUpSID.md",
+      "section": "Impacket-LookUpSID.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-NTLMRelayX-Socks.md",
+      "source_title": "Impacket-NTLMRelayX-Socks.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-NTLMRelayX-Socks.md",
+      "section": "Impacket-NTLMRelayX-Socks.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-NTLMRelayX-WPAD.md",
+      "source_title": "Impacket-NTLMRelayX-WPAD.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-NTLMRelayX-WPAD.md",
+      "section": "Impacket-NTLMRelayX-WPAD.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-NTLMRelayX.md",
+      "source_title": "Impacket-NTLMRelayX.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-NTLMRelayX.md",
+      "section": "Impacket-NTLMRelayX.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-PsExec-PassTheTicket.md",
+      "source_title": "Impacket-PsExec-PassTheTicket.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-PsExec-PassTheTicket.md",
+      "section": "Impacket-PsExec-PassTheTicket.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-PsExec.md",
+      "source_title": "Impacket-PsExec.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-PsExec.md",
+      "section": "Impacket-PsExec.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-RBCD.md",
+      "source_title": "Impacket-RBCD.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-RBCD.md",
+      "section": "Impacket-RBCD.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-RPCDump.md",
+      "source_title": "Impacket-RPCDump.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-RPCDump.md",
+      "section": "Impacket-RPCDump.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-Reg.md",
+      "source_title": "Impacket-Reg.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-Reg.md",
+      "section": "Impacket-Reg.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SAMRDump.md",
+      "source_title": "Impacket-SAMRDump.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SAMRDump.md",
+      "section": "Impacket-SAMRDump.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SMBClient.md",
+      "source_title": "Impacket-SMBClient.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SMBClient.md",
+      "section": "Impacket-SMBClient.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SMBExec.md",
+      "source_title": "Impacket-SMBExec.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SMBExec.md",
+      "section": "Impacket-SMBExec.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SecretsDump-NTDS.md",
+      "source_title": "Impacket-SecretsDump-NTDS.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SecretsDump-NTDS.md",
+      "section": "Impacket-SecretsDump-NTDS.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SecretsDump.md",
+      "source_title": "Impacket-SecretsDump.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SecretsDump.md",
+      "section": "Impacket-SecretsDump.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-Services.md",
+      "source_title": "Impacket-Services.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-Services.md",
+      "section": "Impacket-Services.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-SilverTicket.md",
+      "source_title": "Impacket-SilverTicket.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-SilverTicket.md",
+      "section": "Impacket-SilverTicket.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-WMIExec.md",
+      "source_title": "Impacket-WMIExec.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-WMIExec.md",
+      "section": "Impacket-WMIExec.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-addcomputer-LDAPS.md",
+      "source_title": "Impacket-addcomputer-LDAPS.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-addcomputer-LDAPS.md",
+      "section": "Impacket-addcomputer-LDAPS.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-addcomputer-SMB.md",
+      "source_title": "Impacket-addcomputer-SMB.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-addcomputer-SMB.md",
+      "section": "Impacket-addcomputer-SMB.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-atexec-Creds.md",
+      "source_title": "Impacket-atexec-Creds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-atexec-Creds.md",
+      "section": "Impacket-atexec-Creds.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-atexec-Hash.md",
+      "source_title": "Impacket-atexec-Hash.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-atexec-Hash.md",
+      "section": "Impacket-atexec-Hash.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-getST-Creds.md",
+      "source_title": "Impacket-getST-Creds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-getST-Creds.md",
+      "section": "Impacket-getST-Creds.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-getST-Hash.md",
+      "source_title": "Impacket-getST-Hash.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-getST-Hash.md",
+      "section": "Impacket-getST-Hash.md"
+    },
+    {
+      "file": "_wadcoms/Impacket-getTGT.md",
+      "source_title": "Impacket-getTGT.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Impacket-getTGT.md",
+      "section": "Impacket-getTGT.md"
+    },
+    {
+      "file": "_wadcoms/Kerbrute-BruteForce.md",
+      "source_title": "Kerbrute-BruteForce.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Kerbrute-BruteForce.md",
+      "section": "Kerbrute-BruteForce.md"
+    },
+    {
+      "file": "_wadcoms/Kerbrute-BruteUser.md",
+      "source_title": "Kerbrute-BruteUser.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Kerbrute-BruteUser.md",
+      "section": "Kerbrute-BruteUser.md"
+    },
+    {
+      "file": "_wadcoms/Kerbrute-PasswordSpray.md",
+      "source_title": "Kerbrute-PasswordSpray.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Kerbrute-PasswordSpray.md",
+      "section": "Kerbrute-PasswordSpray.md"
+    },
+    {
+      "file": "_wadcoms/Kerbrute-UserEnum.md",
+      "source_title": "Kerbrute-UserEnum.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Kerbrute-UserEnum.md",
+      "section": "Kerbrute-UserEnum.md"
+    },
+    {
+      "file": "_wadcoms/LDAPSearch-Creds.md",
+      "source_title": "LDAPSearch-Creds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/LDAPSearch-Creds.md",
+      "section": "LDAPSearch-Creds.md"
+    },
+    {
+      "file": "_wadcoms/LDAPSearch-NoCreds.md",
+      "source_title": "LDAPSearch-NoCreds.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/LDAPSearch-NoCreds.md",
+      "section": "LDAPSearch-NoCreds.md"
+    },
+    {
+      "file": "_wadcoms/Mitm6.md",
+      "source_title": "Mitm6.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Mitm6.md",
+      "section": "Mitm6.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Creds-coerce_plus.md",
+      "source_title": "NetExec-Creds-coerce_plus.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Creds-coerce_plus.md",
+      "section": "NetExec-Creds-coerce_plus.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Enum-LDAP.md",
+      "source_title": "NetExec-Enum-LDAP.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Enum-LDAP.md",
+      "section": "NetExec-Enum-LDAP.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Enum-SMB-Anonymous.md",
+      "source_title": "NetExec-Enum-SMB-Anonymous.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Enum-SMB-Anonymous.md",
+      "section": "NetExec-Enum-SMB-Anonymous.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Enum-SMB-Null.md",
+      "source_title": "NetExec-Enum-SMB-Null.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Enum-SMB-Null.md",
+      "section": "NetExec-Enum-SMB-Null.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Enum-SMB-Relay-List.md",
+      "source_title": "NetExec-Enum-SMB-Relay-List.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Enum-SMB-Relay-List.md",
+      "section": "NetExec-Enum-SMB-Relay-List.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Enum-SMB.md",
+      "source_title": "NetExec-Enum-SMB.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Enum-SMB.md",
+      "section": "NetExec-Enum-SMB.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-Exec-SMB.md",
+      "source_title": "NetExec-Exec-SMB.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-Exec-SMB.md",
+      "section": "NetExec-Exec-SMB.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-LDAP-ASREPRoasting.md",
+      "source_title": "NetExec-LDAP-ASREPRoasting.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-LDAP-ASREPRoasting.md",
+      "section": "NetExec-LDAP-ASREPRoasting.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-LDAP-Kerberoasting.md",
+      "source_title": "NetExec-LDAP-Kerberoasting.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-LDAP-Kerberoasting.md",
+      "section": "NetExec-LDAP-Kerberoasting.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-SMB-Password-Spray.md",
+      "source_title": "NetExec-SMB-Password-Spray.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-SMB-Password-Spray.md",
+      "section": "NetExec-SMB-Password-Spray.md"
+    },
+    {
+      "file": "_wadcoms/NetExec-SMB-Timeroasting.md",
+      "source_title": "NetExec-SMB-Timeroasting.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/NetExec-SMB-Timeroasting.md",
+      "section": "NetExec-SMB-Timeroasting.md"
+    },
+    {
+      "file": "_wadcoms/Nmap-Krb5-Enum-Users.md",
+      "source_title": "Nmap-Krb5-Enum-Users.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Nmap-Krb5-Enum-Users.md",
+      "section": "Nmap-Krb5-Enum-Users.md"
+    },
+    {
+      "file": "_wadcoms/PKINIT-getnthash.md",
+      "source_title": "PKINIT-getnthash.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PKINIT-getnthash.md",
+      "section": "PKINIT-getnthash.md"
+    },
+    {
+      "file": "_wadcoms/PKINIT-gettgtpkinit.md",
+      "source_title": "PKINIT-gettgtpkinit.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PKINIT-gettgtpkinit.md",
+      "section": "PKINIT-gettgtpkinit.md"
+    },
+    {
+      "file": "_wadcoms/PSADmodule-Kerbaroasting.md",
+      "source_title": "PSADmodule-Kerbaroasting.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PSADmodule-Kerbaroasting.md",
+      "section": "PSADmodule-Kerbaroasting.md"
+    },
+    {
+      "file": "_wadcoms/PetitPotam.md",
+      "source_title": "PetitPotam.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PetitPotam.md",
+      "section": "PetitPotam.md"
+    },
+    {
+      "file": "_wadcoms/Powershell-ADModule-enum.md",
+      "source_title": "Powershell-ADModule-enum.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Powershell-ADModule-enum.md",
+      "section": "Powershell-ADModule-enum.md"
+    },
+    {
+      "file": "_wadcoms/PwshADmodule-DelegationAttack-Enum.md",
+      "source_title": "PwshADmodule-DelegationAttack-Enum.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PwshADmodule-DelegationAttack-Enum.md",
+      "section": "PwshADmodule-DelegationAttack-Enum.md"
+    },
+    {
+      "file": "_wadcoms/PwshADmodule-Initial-Enum.md",
+      "source_title": "PwshADmodule-Initial-Enum.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PwshADmodule-Initial-Enum.md",
+      "section": "PwshADmodule-Initial-Enum.md"
+    },
+    {
+      "file": "_wadcoms/PyLDAPmonitor.md",
+      "source_title": "PyLDAPmonitor.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PyLDAPmonitor.md",
+      "section": "PyLDAPmonitor.md"
+    },
+    {
+      "file": "_wadcoms/PyWhisker.md",
+      "source_title": "PyWhisker.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/PyWhisker.md",
+      "section": "PyWhisker.md"
+    },
+    {
+      "file": "_wadcoms/RPCClient-Anonymous.md",
+      "source_title": "RPCClient-Anonymous.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/RPCClient-Anonymous.md",
+      "section": "RPCClient-Anonymous.md"
+    },
+    {
+      "file": "_wadcoms/Regexe-Persistence.md",
+      "source_title": "Regexe-Persistence.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Regexe-Persistence.md",
+      "section": "Regexe-Persistence.md"
+    },
+    {
+      "file": "_wadcoms/Responder-Analyze.md",
+      "source_title": "Responder-Analyze.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Responder-Analyze.md",
+      "section": "Responder-Analyze.md"
+    },
+    {
+      "file": "_wadcoms/Rubeus-ASREPRoast.md",
+      "source_title": "Rubeus-ASREPRoast.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Rubeus-ASREPRoast.md",
+      "section": "Rubeus-ASREPRoast.md"
+    },
+    {
+      "file": "_wadcoms/Rubeus-AskTGT.md",
+      "source_title": "Rubeus-AskTGT.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Rubeus-AskTGT.md",
+      "section": "Rubeus-AskTGT.md"
+    },
+    {
+      "file": "_wadcoms/Rubeus-Brute.md",
+      "source_title": "Rubeus-Brute.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Rubeus-Brute.md",
+      "section": "Rubeus-Brute.md"
+    },
+    {
+      "file": "_wadcoms/Rubeus-Kerberoast.md",
+      "source_title": "Rubeus-Kerberoast.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Rubeus-Kerberoast.md",
+      "section": "Rubeus-Kerberoast.md"
+    },
+    {
+      "file": "_wadcoms/Rubeus-s4u.md",
+      "source_title": "Rubeus-s4u.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Rubeus-s4u.md",
+      "section": "Rubeus-s4u.md"
+    },
+    {
+      "file": "_wadcoms/SMBClient-Enum-Share-Anonymous.md",
+      "source_title": "SMBClient-Enum-Share-Anonymous.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBClient-Enum-Share-Anonymous.md",
+      "section": "SMBClient-Enum-Share-Anonymous.md"
+    },
+    {
+      "file": "_wadcoms/SMBClient-Enum-Share.md",
+      "source_title": "SMBClient-Enum-Share.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBClient-Enum-Share.md",
+      "section": "SMBClient-Enum-Share.md"
+    },
+    {
+      "file": "_wadcoms/SMBClient-List-Share-PTH.md",
+      "source_title": "SMBClient-List-Share-PTH.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBClient-List-Share-PTH.md",
+      "section": "SMBClient-List-Share-PTH.md"
+    },
+    {
+      "file": "_wadcoms/SMBClient-List-Shares-Anonymous.md",
+      "source_title": "SMBClient-List-Shares-Anonymous.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBClient-List-Shares-Anonymous.md",
+      "section": "SMBClient-List-Shares-Anonymous.md"
+    },
+    {
+      "file": "_wadcoms/SMBClient-List-Shares.md",
+      "source_title": "SMBClient-List-Shares.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBClient-List-Shares.md",
+      "section": "SMBClient-List-Shares.md"
+    },
+    {
+      "file": "_wadcoms/SMBMap-Enum-File.md",
+      "source_title": "SMBMap-Enum-File.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBMap-Enum-File.md",
+      "section": "SMBMap-Enum-File.md"
+    },
+    {
+      "file": "_wadcoms/SMBMap-Enum-Share-Anonymous.md",
+      "source_title": "SMBMap-Enum-Share-Anonymous.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBMap-Enum-Share-Anonymous.md",
+      "section": "SMBMap-Enum-Share-Anonymous.md"
+    },
+    {
+      "file": "_wadcoms/SMBMap-Enum-Share.md",
+      "source_title": "SMBMap-Enum-Share.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SMBMap-Enum-Share.md",
+      "section": "SMBMap-Enum-Share.md"
+    },
+    {
+      "file": "_wadcoms/SafetyKatz.md",
+      "source_title": "SafetyKatz.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SafetyKatz.md",
+      "section": "SafetyKatz.md"
+    },
+    {
+      "file": "_wadcoms/Seatbelt.md",
+      "source_title": "Seatbelt.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Seatbelt.md",
+      "section": "Seatbelt.md"
+    },
+    {
+      "file": "_wadcoms/SharpDump.md",
+      "source_title": "SharpDump.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpDump.md",
+      "section": "SharpDump.md"
+    },
+    {
+      "file": "_wadcoms/SharpHound-LDAP.md",
+      "source_title": "SharpHound-LDAP.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpHound-LDAP.md",
+      "section": "SharpHound-LDAP.md"
+    },
+    {
+      "file": "_wadcoms/SharpHound.md",
+      "source_title": "SharpHound.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpHound.md",
+      "section": "SharpHound.md"
+    },
+    {
+      "file": "_wadcoms/SharpLDAPmonitor.md",
+      "source_title": "SharpLDAPmonitor.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpLDAPmonitor.md",
+      "section": "SharpLDAPmonitor.md"
+    },
+    {
+      "file": "_wadcoms/SharpUp.md",
+      "source_title": "SharpUp.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpUp.md",
+      "section": "SharpUp.md"
+    },
+    {
+      "file": "_wadcoms/SharpWMI.md",
+      "source_title": "SharpWMI.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/SharpWMI.md",
+      "section": "SharpWMI.md"
+    },
+    {
+      "file": "_wadcoms/Snaffler.md",
+      "source_title": "Snaffler.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Snaffler.md",
+      "section": "Snaffler.md"
+    },
+    {
+      "file": "_wadcoms/Windapsearch.md",
+      "source_title": "Windapsearch.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/Windapsearch.md",
+      "section": "Windapsearch.md"
+    },
+    {
+      "file": "_wadcoms/bloodyAD-Wite-Properties.md",
+      "source_title": "bloodyAD-Wite-Properties.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/bloodyAD-Wite-Properties.md",
+      "section": "bloodyAD-Wite-Properties.md"
+    },
+    {
+      "file": "_wadcoms/enum4linux-ng.md",
+      "source_title": "enum4linux-ng.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/enum4linux-ng.md",
+      "section": "enum4linux-ng.md"
+    },
+    {
+      "file": "_wadcoms/lsassy-credsdump.md",
+      "source_title": "lsassy-credsdump.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/lsassy-credsdump.md",
+      "section": "lsassy-credsdump.md"
+    },
+    {
+      "file": "_wadcoms/targetedKerberoast.md",
+      "source_title": "targetedKerberoast.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/targetedKerberoast.md",
+      "section": "targetedKerberoast.md"
+    },
+    {
+      "file": "_wadcoms/winPEAS.md",
+      "source_title": "winPEAS.md",
+      "source_url": "https://github.com/WADComs/WADComs.github.io/blob/31283f1532ff1b1c9c8e524bacb0fbc6e251429b/_wadcoms/winPEAS.md",
+      "section": "winPEAS.md"
+    }
+  ]
+}

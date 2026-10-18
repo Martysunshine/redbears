@@ -1,0 +1,31 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/driver/disable-driver-code-integrity.yml -->
+rule:
+  meta:
+    name: disable driver code integrity
+    namespace: host-interaction/driver
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Impair Defenses::Disable or Modify Tools [T1562.001]
+    mbc:
+      - Defense Evasion::Disable or Evade Security Tools::Disable Code Integrity [F0004.009]
+    references:
+      - https://www.fuzzysecurity.com/tutorials/28.html
+      - https://j00ru.vexillium.org/2010/06/insight-into-the-driver-signature-enforcement/
+    examples:
+      - 31CEE4F66CF3B537E3D2D37A71F339F4:0x140004070
+  features:
+    - and:
+      - or:
+        - string: "CiInitialize"
+          description: exported symbol name used to resolve code integrity configuration
+        - substring: "g_CiEnabled"
+          description: non-exported name for code integrity flag
+        - substring: "g_CiOptions"
+          description: non-exported name for code integrity settings
+      - optional:
+        - string: /CI\.dll/i
+          description: code integrity implementation DLL

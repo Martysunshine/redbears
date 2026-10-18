@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270PowershellSep2022.yaml -->
+id: 2850f994-0815-4b67-814c-c6281099b861
+name: Dev-0270 Malicious Powershell usage
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dev%200270%20Detection%20and%20Hunting/Analytic%20Rules/Dev-0270PowershellSep2022.yaml'
+version: 1.0.0

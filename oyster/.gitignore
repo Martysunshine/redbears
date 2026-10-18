@@ -1,0 +1,81 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# OS
+.DS_Store
+
+# Runtime state is NOT tracked. It was, briefly, by an explicit operator
+# decision (781ee79) — that is reverted, for two reasons that outweigh the
+# convenience:
+#
+#   1. DATA LOSS. The production VPS runs from a clone of this repo, so the
+#      live memory.db was a tracked file with local modifications. One
+#      `git checkout .`, `git reset --hard`, or a conflicting pull would have
+#      replaced every user's conversations and consent records with a July
+#      snapshot. That is a single careless command, on a box we deploy to by
+#      running git pull.
+#   2. SECRETS. data/.memory_key is the key that decrypts user memories, and
+#      it sat in the repo next to the database it decrypts, which defeats the
+#      encryption entirely for anyone with repo access. That key has been
+#      rotated; the committed one is dead.
+#
+# If you need a copy of production data, take a backup off the server — do not
+# put it back in git.
+data/
+backend/data/
+security_kb/data/
+# ...but `frontend/src/data/` is SOURCE, not runtime state: static reference
+# tables that components import at build time (e.g. ShieldPanel imports
+# `@/data/shield`). The broad `data/` rule above silently swallowed it, which
+# does not fail locally — the file is on disk — and instead fails the Vercel
+# build with "Module not found: @/data/shield", because the file never reached
+# the repo.
+!frontend/src/data/
+# Audit/tool/agent logs are runtime state too, and they record real user
+# activity. Same reasoning as above.
+backend/logs/*
+!backend/logs/.gitkeep
+
+# Keys / certs
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.crt
+
+# Cache
+.cache/
+
+# Compiled Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# The vendored SOC Copilot workbench (backend/socmat/) keeps its reference
+# MITRE catalogue under a `data/` dir, which the broad `data/` rule above would
+# otherwise hide. Ship the catalogue; keep the runtime per-owner DBs + uploads
+# out (those actually live under backend/data/socmat via SOCMAT_DB_DIR anyway,
+# so they're already covered by `backend/data/`).
+!backend/socmat/data/
+backend/socmat/data/*
+!backend/socmat/data/mitre_mapping.json
+backend/socmat/soc_copilot.db
+backend/socmat/uploads/
+
+# Claude Code local (personal) settings
+.claude/settings.local.json
+
+
+# Real environment files never enter git (only *.env.example placeholders)
+.env
+.env.*
+!.env.example
+*.pem
+*.key

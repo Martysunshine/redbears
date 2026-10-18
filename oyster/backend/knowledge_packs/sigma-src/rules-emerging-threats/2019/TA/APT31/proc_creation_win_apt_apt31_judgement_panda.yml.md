@@ -1,0 +1,40 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2019/TA/APT31/proc_creation_win_apt_apt31_judgement_panda.yml -->
+title: APT31 Judgement Panda Activity
+id: 03e2746e-2b31-42f1-ab7a-eb39365b2422
+status: test
+description: Detects APT31 Judgement Panda activity as described in the Crowdstrike 2019 Global Threat Report
+references:
+    - https://www.documentcloud.org/documents/5743766-Global-Threat-Report-2019.html
+author: Florian Roth (Nextron Systems)
+date: 2019-02-21
+modified: 2023-03-10
+tags:
+    - attack.collection
+    - attack.lateral-movement
+    - attack.credential-access
+    - attack.g0128
+    - attack.t1003.001
+    - attack.t1560.001
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_ldifde:
+        CommandLine|contains|all:
+            - 'ldifde'
+            - '-f -n'
+            - 'eprod.ldf'
+    selection_lateral_movement:
+        CommandLine|contains|all:
+            - 'copy \\\\'
+            - 'c$'
+        CommandLine|contains:
+            - '\aaaa\procdump64.exe'
+            - '\aaaa\netsess.exe'
+            - '\aaaa\7za.exe'
+            - '\c$\aaaa\'
+    condition: 1 of selection_*
+falsepositives:
+    - Unlikely
+level: critical

@@ -1,0 +1,12 @@
+{
+  "id": "vuln-management",
+  "version": "1.0.0",
+  "title": "Vulnerability Management",
+  "domain": "defensive",
+  "description": "Turning scanner noise into decisions: normalization, dedup, false-positive suppression, risk prioritization with CVSS + EPSS + CISA KEV + business context, SLAs, and retesting.",
+  "tags": ["vuln-management", "cvss", "epss", "kev", "cwe", "prioritization"],
+  "authority": "FIRST / CISA / NIST",
+  "docs": [
+    {"file": "prioritization.md", "source_title": "FIRST EPSS", "source_url": "https://www.first.org/epss/"}
+  ]
+}

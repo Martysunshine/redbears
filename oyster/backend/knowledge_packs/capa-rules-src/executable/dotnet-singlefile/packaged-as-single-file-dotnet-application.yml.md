@@ -1,0 +1,22 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/executable/dotnet-singlefile/packaged-as-single-file-dotnet-application.yml -->
+rule:
+  meta:
+    name: packaged as single-file .NET application
+    namespace: executable/dotnet-singlefile
+    authors:
+      - michael.hunhoff@mandiant.com
+    description: Single binary containing target .NET application and all application-dependent files
+    scopes:
+      static: file
+      dynamic: file
+    references:
+      - https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/overview?tabs=cli
+    examples:
+      - a6e9d94e286984b9e44c58df5eeb20cf5c08b9acff4af341ddecdfbe3ea9249d
+  features:
+    - and:
+      # the installer portion of a single-file application is native code (in the samples I have seen) so format(dotnet) does not apply here.
+      - string: "Failure processing application bundle; possible file corruption."
+      - string: "Failure processing application bundle."
+      - string: "Bundle header version compatibility check failed"
+      - string: "A fatal error was encountered. Could not extract contents of the bundle"

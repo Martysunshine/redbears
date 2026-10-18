@@ -1,0 +1,98 @@
+{
+  "id": "owasp-k8s-top10-src",
+  "name": "owasp-k8s-top10-src",
+  "version": "f362c7ad0152",
+  "title": "OWASP Kubernetes Top 10 (upstream)",
+  "domain": "defensive",
+  "security_domain": "container-orchestration-security",
+  "description": "Imported from https://owasp.org/www-project-kubernetes-top-ten/ at f362c7ad0152. 10 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP Kubernetes Top 10, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "kubernetes",
+    "k8s",
+    "top10"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "kubernetes"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track OWASP Kubernetes Top 10 editions.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "owasp-k8s-top10-src",
+  "upstream_commit": "f362c7ad0152d20a9b76b03587e5ec898dcd3768",
+  "source_urls": [
+    "https://owasp.org/www-project-kubernetes-top-ten/",
+    "https://github.com/OWASP/www-project-kubernetes-top-ten"
+  ],
+  "docs": [
+    {
+      "file": "2025/en/src/K01-Insecure-Workload-Configurations.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K01-Insecure-Workload-Configurations.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K02-Overly-Permissive-Authorization-Configurations.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K02-Overly-Permissive-Authorization-Configurations.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K03-Secrets-Management-Failures.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K03-Secrets-Management-Failures.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K04-Lack-Of-Cluster-Level-Policy-Enforcement.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K04-Lack-Of-Cluster-Level-Policy-Enforcement.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K05-Missing-Network-Segmentation-Controls.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K05-Missing-Network-Segmentation-Controls.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K06-Overly-Exposed-Kubernetes-Components.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K06-Overly-Exposed-Kubernetes-Components.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K07-Misconfigured-And-Vulnerable-Cluster-Components.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K07-Misconfigured-And-Vulnerable-Cluster-Components.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K08-Cluster-To-Cloud-Lateral-Movement.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K08-Cluster-To-Cloud-Lateral-Movement.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K09-Broken-Authentication-Mechanisms.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K09-Broken-Authentication-Mechanisms.md",
+      "section": "Overview"
+    },
+    {
+      "file": "2025/en/src/K10-Inadequate-Logging-And-Monitoring.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/OWASP/www-project-kubernetes-top-ten/blob/f362c7ad0152d20a9b76b03587e5ec898dcd3768/2025/en/src/K10-Inadequate-Logging-And-Monitoring.md",
+      "section": "Overview"
+    }
+  ]
+}

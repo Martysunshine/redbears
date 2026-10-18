@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/cisco/aaa/cisco_cli_dos.yml -->
+title: Cisco Denial of Service
+id: d94a35f0-7a29-45f6-90a0-80df6159967c
+status: test
+description: Detect a system being shutdown or put into different boot mode
+author: Austin Clark
+date: 2019-08-15
+modified: 2023-01-04
+tags:
+    - attack.impact
+    - attack.t1495
+    - attack.t1529
+    - attack.t1565.001
+logsource:
+    product: cisco
+    service: aaa
+detection:
+    keywords:
+        - 'shutdown'
+        - 'config-register 0x2100'
+        - 'config-register 0x2142'
+    condition: keywords
+falsepositives:
+    - Legitimate administrators may run these commands, though rarely.
+level: medium

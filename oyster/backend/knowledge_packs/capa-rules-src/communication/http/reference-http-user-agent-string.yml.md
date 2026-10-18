@@ -1,0 +1,33 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/http/reference-http-user-agent-string.yml -->
+# generated using capa explorer for IDA Pro
+rule:
+  meta:
+    name: reference HTTP User-Agent string
+    namespace: communication/http
+    authors:
+      - "@mr-tz"
+      - mehunhoff@google.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - Communication::HTTP Communication [C0002]
+    references:
+      - https://www.useragents.me/
+      - https://www.whatismybrowser.com/guides/the-latest-user-agent/
+    examples:
+      - 0796F1C1EA0A142FC1EB7109A44C86CB:0x4043F0
+  features:
+    - or:
+      - substring: "Mozilla/5.0"
+      - substring: "like Gecko"
+      - api: urlmon.ObtainUserAgentString
+      - property/read: System.Net.HttpWebRequest::UserAgent
+      - basic block:
+        - and:
+          - api: UrlMkGetSessionOption
+          - number: 0x10000001 = URLMON_OPTION_USERAGENT
+      - call:
+        - and:
+          - api: UrlMkGetSessionOption
+          - number: 0x10000001 = URLMON_OPTION_USERAGENT

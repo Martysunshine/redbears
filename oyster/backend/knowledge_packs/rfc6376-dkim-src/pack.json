@@ -1,0 +1,515 @@
+{
+  "id": "rfc6376-dkim-src",
+  "name": "rfc6376-dkim-src",
+  "version": "00ae1e26aa19",
+  "title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures",
+  "domain": "defensive",
+  "security_domain": "email-security",
+  "description": "Imported from https://www.rfc-editor.org/rfc/rfc6376 at 00ae1e26aa19. 80 documents.",
+  "authority": "IETF",
+  "publisher": "Internet Engineering Task Force",
+  "trust_level": "official",
+  "licence": "ietf-trust-tlp",
+  "attribution": "RFC 6376, DomainKeys Identified Mail (DKIM) Signatures, IETF \u2014 reproduced under the IETF Trust Legal Provisions.",
+  "tags": [
+    "dkim",
+    "rfc",
+    "email-authentication"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Stable standards-track RFC (2011).",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "rfc6376-dkim-src",
+  "upstream_commit": "00ae1e26aa19",
+  "source_urls": [
+    "https://www.rfc-editor.org/rfc/rfc6376",
+    "https://www.rfc-editor.org/rfc/rfc6376.txt"
+  ],
+  "docs": [
+    {
+      "file": "sections/1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1 Introduction",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1 Introduction"
+    },
+    {
+      "file": "sections/1-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1.1 DKIM Architecture Documents",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1.1 DKIM Architecture Documents"
+    },
+    {
+      "file": "sections/1-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1.2 Signing Identity",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1.2 Signing Identity"
+    },
+    {
+      "file": "sections/1-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1.3 Scalability",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1.3 Scalability"
+    },
+    {
+      "file": "sections/1-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1.4 Simple Key Management",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1.4 Simple Key Management"
+    },
+    {
+      "file": "sections/1-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 1.5 Data Integrity",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "1.5 Data Integrity"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2 Terminology and Definitions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2 Terminology and Definitions"
+    },
+    {
+      "file": "sections/2-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.1 Signers",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.1 Signers"
+    },
+    {
+      "file": "sections/2-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.2 Verifiers",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.2 Verifiers"
+    },
+    {
+      "file": "sections/2-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.3 Identity",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.3 Identity"
+    },
+    {
+      "file": "sections/2-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.5 Signing Domain Identifier (SDID)",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.5 Signing Domain Identifier (SDID)"
+    },
+    {
+      "file": "sections/2-6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.6 Agent or User Identifier (AUID)",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.6 Agent or User Identifier (AUID)"
+    },
+    {
+      "file": "sections/2-7.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.7 Identity Assessor",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.7 Identity Assessor"
+    },
+    {
+      "file": "sections/2-8.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.8 Whitespace",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.8 Whitespace"
+    },
+    {
+      "file": "sections/2-9.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.9 Imported ABNF Tokens",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.9 Imported ABNF Tokens"
+    },
+    {
+      "file": "sections/2-10.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.10 Common ABNF Tokens",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.10 Common ABNF Tokens"
+    },
+    {
+      "file": "sections/2-11.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 2.11 DKIM-Quoted-Printable",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "2.11 DKIM-Quoted-Printable"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3 Protocol Elements",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3 Protocol Elements"
+    },
+    {
+      "file": "sections/3-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.1 Selectors",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.1 Selectors"
+    },
+    {
+      "file": "sections/3-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.2 Tag=Value Lists",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.2 Tag=Value Lists"
+    },
+    {
+      "file": "sections/3-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.3 Signing and Verification Algorithms",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.3 Signing and Verification Algorithms"
+    },
+    {
+      "file": "sections/3-3-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.3.1 The rsa-sha1 Signing Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.3.1 The rsa-sha1 Signing Algorithm"
+    },
+    {
+      "file": "sections/3-3-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.3.2 The rsa-sha256 Signing Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.3.2 The rsa-sha256 Signing Algorithm"
+    },
+    {
+      "file": "sections/3-3-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.3.3 Key Sizes",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.3.3 Key Sizes"
+    },
+    {
+      "file": "sections/3-3-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.3.4 Other Algorithms",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.3.4 Other Algorithms"
+    },
+    {
+      "file": "sections/3-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4 Canonicalization",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4 Canonicalization"
+    },
+    {
+      "file": "sections/3-4-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4.1 The \"simple\" Header Canonicalization Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4.1 The \"simple\" Header Canonicalization Algorithm"
+    },
+    {
+      "file": "sections/3-4-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4.2 The \"relaxed\" Header Canonicalization Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4.2 The \"relaxed\" Header Canonicalization Algorithm"
+    },
+    {
+      "file": "sections/3-4-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4.3 The \"simple\" Body Canonicalization Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4.3 The \"simple\" Body Canonicalization Algorithm"
+    },
+    {
+      "file": "sections/3-4-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4.4 The \"relaxed\" Body Canonicalization Algorithm",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4.4 The \"relaxed\" Body Canonicalization Algorithm"
+    },
+    {
+      "file": "sections/3-4-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.4.5 Canonicalization Examples (INFORMATIVE)",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.4.5 Canonicalization Examples (INFORMATIVE)"
+    },
+    {
+      "file": "sections/3-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.5 The DKIM-Signature Header Field",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.5 The DKIM-Signature Header Field"
+    },
+    {
+      "file": "sections/3-6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.6 Key Management and Representation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.6 Key Management and Representation"
+    },
+    {
+      "file": "sections/3-6-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.6.1 Textual Representation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.6.1 Textual Representation"
+    },
+    {
+      "file": "sections/3-6-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.6.2 DNS Binding",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.6.2 DNS Binding"
+    },
+    {
+      "file": "sections/3-6-2-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.6.2.1 Namespace",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.6.2.1 Namespace"
+    },
+    {
+      "file": "sections/3-6-2-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.6.2.2 Resource Record Types for Key Storage",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.6.2.2 Resource Record Types for Key Storage"
+    },
+    {
+      "file": "sections/3-7.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.7 Computing the Message Hashes",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.7 Computing the Message Hashes"
+    },
+    {
+      "file": "sections/3-8.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.8 Input Requirements",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.8 Input Requirements"
+    },
+    {
+      "file": "sections/3-9.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.9 Output Requirements",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.9 Output Requirements"
+    },
+    {
+      "file": "sections/3-10.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.10 Signing by Parent Domains",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.10 Signing by Parent Domains"
+    },
+    {
+      "file": "sections/3-11.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 3.11 Relationship between SDID and AUID",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "3.11 Relationship between SDID and AUID"
+    },
+    {
+      "file": "sections/4-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 4.1 Example Scenarios",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "4.1 Example Scenarios"
+    },
+    {
+      "file": "sections/4-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 4.2 Interpretation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "4.2 Interpretation"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5 Signer Actions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5 Signer Actions"
+    },
+    {
+      "file": "sections/5-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.1 Determine Whether the Email Should Be Signed and by Whom",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.1 Determine Whether the Email Should Be Signed and by Whom"
+    },
+    {
+      "file": "sections/5-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.2 Select a Private Key and Corresponding Selector Information",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.2 Select a Private Key and Corresponding Selector Information"
+    },
+    {
+      "file": "sections/5-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.3 Normalize the Message to Prevent Transport Conversions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.3 Normalize the Message to Prevent Transport Conversions"
+    },
+    {
+      "file": "sections/5-3-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.3.1 Body Length Limits",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.3.1 Body Length Limits"
+    },
+    {
+      "file": "sections/5-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.4 Determine the Header Fields to Sign",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.4 Determine the Header Fields to Sign"
+    },
+    {
+      "file": "sections/5-4-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.4.1 Recommended Signature Content",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.4.1 Recommended Signature Content"
+    },
+    {
+      "file": "sections/5-4-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.4.2 Signatures Involving Multiple Instances of a Field",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.4.2 Signatures Involving Multiple Instances of a Field"
+    },
+    {
+      "file": "sections/5-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.5 Compute the Message Hash and Signature",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.5 Compute the Message Hash and Signature"
+    },
+    {
+      "file": "sections/5-6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 5.6 Insert the DKIM-Signature Header Field",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "5.6 Insert the DKIM-Signature Header Field"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6 Verifier Actions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6 Verifier Actions"
+    },
+    {
+      "file": "sections/6-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.1 Extract Signatures from the Message",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.1 Extract Signatures from the Message"
+    },
+    {
+      "file": "sections/6-1-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.1.1 Validate the Signature Header Field",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.1.1 Validate the Signature Header Field"
+    },
+    {
+      "file": "sections/6-1-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.1.2 Get the Public Key",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.1.2 Get the Public Key"
+    },
+    {
+      "file": "sections/6-1-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.1.3 Compute the Verification",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.1.3 Compute the Verification"
+    },
+    {
+      "file": "sections/6-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.2 Communicate Verification Results",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.2 Communicate Verification Results"
+    },
+    {
+      "file": "sections/6-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 6.3 Interpret Results/Apply Local Policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "6.3 Interpret Results/Apply Local Policy"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7 IANA Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7 IANA Considerations"
+    },
+    {
+      "file": "sections/7-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.1 Email Authentication Methods Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.1 Email Authentication Methods Registry"
+    },
+    {
+      "file": "sections/7-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.2 DKIM-Signature Tag Specifications",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.2 DKIM-Signature Tag Specifications"
+    },
+    {
+      "file": "sections/7-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.3 DKIM-Signature Query Method Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.3 DKIM-Signature Query Method Registry"
+    },
+    {
+      "file": "sections/7-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.4 DKIM-Signature Canonicalization Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.4 DKIM-Signature Canonicalization Registry"
+    },
+    {
+      "file": "sections/7-6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.6 DKIM Key Type Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.6 DKIM Key Type Registry"
+    },
+    {
+      "file": "sections/7-7.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.7 DKIM Hash Algorithms Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.7 DKIM Hash Algorithms Registry"
+    },
+    {
+      "file": "sections/7-8.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.8 DKIM Service Types Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.8 DKIM Service Types Registry"
+    },
+    {
+      "file": "sections/7-9.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.9 DKIM Selector Flags Registry",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.9 DKIM Selector Flags Registry"
+    },
+    {
+      "file": "sections/7-10.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 7.10 DKIM-Signature Header Field",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "7.10 DKIM-Signature Header Field"
+    },
+    {
+      "file": "sections/8.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8 Security Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8 Security Considerations"
+    },
+    {
+      "file": "sections/8-1.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.1 ASCII Art Attacks",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.1 ASCII Art Attacks"
+    },
+    {
+      "file": "sections/8-2.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.2 Misuse of Body Length Limits (\"l=\" Tag)",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.2 Misuse of Body Length Limits (\"l=\" Tag)"
+    },
+    {
+      "file": "sections/8-3.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.3 Misappropriated Private Key",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.3 Misappropriated Private Key"
+    },
+    {
+      "file": "sections/8-4.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.4 Key Server Denial-of-Service Attacks",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.4 Key Server Denial-of-Service Attacks"
+    },
+    {
+      "file": "sections/8-5.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.5 Attacks against the DNS",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.5 Attacks against the DNS"
+    },
+    {
+      "file": "sections/8-6.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.6 Replay/Spam Attacks",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.6 Replay/Spam Attacks"
+    },
+    {
+      "file": "sections/8-7.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.7 Limits on Revoking Keys",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.7 Limits on Revoking Keys"
+    },
+    {
+      "file": "sections/8-8.md",
+      "source_title": "RFC 6376 \u2014 DomainKeys Identified Mail (DKIM) Signatures \u2014 8.8 Intentionally Malformed Key Records",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "section": "8.8 Intentionally Malformed Key Records"
+    }
+  ]
+}

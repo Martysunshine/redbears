@@ -1,0 +1,19 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/crontab -->
+---
+functions:
+  command:
+  - code: |-
+      crontab -e
+    comment: |-
+      This spaws the default editor to edit the crontab file, commands can be scheduled to run using the [cron syntax](https://en.wikipedia.org/wiki/Cron).
+    contexts:
+      sudo:
+      unprivileged:
+  inherit:
+  - code: |-
+      crontab -e
+    contexts:
+      sudo:
+      unprivileged:
+    from: vi
+...

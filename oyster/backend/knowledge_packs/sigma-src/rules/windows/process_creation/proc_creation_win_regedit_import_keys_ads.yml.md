@@ -1,0 +1,39 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_regedit_import_keys_ads.yml -->
+title: Imports Registry Key From an ADS
+id: 0b80ade5-6997-4b1d-99a1-71701778ea61
+related:
+    - id: 73bba97f-a82d-42ce-b315-9182e76c57b1
+      type: similar
+status: test
+description: Detects the import of a alternate datastream to the registry with regedit.exe.
+references:
+    - https://lolbas-project.github.io/lolbas/Binaries/Regedit/
+    - https://gist.github.com/api0cradle/cdd2d0d0ec9abb686f0e89306e277b8f
+author: Oddvar Moe, Sander Wiebing, oscd.community
+date: 2020-10-12
+modified: 2024-03-13
+tags:
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1112
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\regedit.exe'
+        - OriginalFileName: 'REGEDIT.EXE'
+    selection_cli:
+        CommandLine|contains:
+            - ' /i '
+            - '.reg'
+        CommandLine|re: ':[^ \\]'
+    filter:
+        CommandLine|contains|windash:
+            - ' -e '
+            - ' -a '
+            - ' -c '
+    condition: all of selection_* and not filter
+falsepositives:
+    - Unknown
+level: high

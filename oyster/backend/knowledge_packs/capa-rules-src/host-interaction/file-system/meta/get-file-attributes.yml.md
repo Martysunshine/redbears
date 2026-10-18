@@ -1,0 +1,36 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/file-system/meta/get-file-attributes.yml -->
+rule:
+  meta:
+    name: get file attributes
+    namespace: host-interaction/file-system/meta
+    authors:
+      - michael.hunhoff@mandiant.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: call
+    mbc:
+      - File System::Get File Attributes [C0049]
+    examples:
+      - 03B236B23B1EC37C663527C1F53AF3FE:0x180019824
+      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x4028B6
+      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x4029E0
+  features:
+    - or:
+      - api: kernel32.GetFileAttributes
+      - api: ZwQueryDirectoryFile
+      - api: ZwQueryInformationFile
+      - api: NtQueryDirectoryFile
+      - api: NtQueryInformationFile
+      - api: System.IO.File::GetAttributes
+      - api: System.IO.File::GetCreationTime
+      - api: System.IO.File::GetCreationTimeUtc
+      - api: System.IO.File::GetLastAccessTime
+      - api: System.IO.File::GetLastAccessTimeUtc
+      - api: System.IO.File::GetLastWriteTime
+      - api: System.IO.File::GetLastWriteTimeUtc
+      - property/read: System.IO.FileSystemInfo::Attributes
+      - api: stat
+      - api: fstat
+      - api: lstat
+      - api: fstatat

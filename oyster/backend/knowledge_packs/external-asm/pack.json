@@ -1,0 +1,12 @@
+{
+  "id": "external-asm",
+  "version": "1.0.0",
+  "title": "External Attack Surface Management",
+  "domain": "offensive",
+  "description": "Passive/active discovery of internet-facing assets — domains, subdomains, certs, cloud, leaked secrets — plus the hard problem of ownership attribution and deduplication.",
+  "tags": ["osint", "recon", "subdomains", "attribution", "asm"],
+  "authority": "OWASP Amass / project docs",
+  "docs": [
+    {"file": "discovery-and-attribution.md", "source_title": "OWASP Amass", "source_url": "https://github.com/owasp-amass/amass"}
+  ]
+}

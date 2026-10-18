@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureWAF/AFD-Premium-WAF-SQLiDetection.yaml -->
+id: 490c00eb-f489-40f8-bf77-a18ae99033d5
+name: Front Door Premium WAF - SQLi Detection  
+description: | 
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Azure%20Web%20Application%20Firewall%20(WAF)/Analytic%20Rules/AFD-Premium-WAF-SQLiDetection.yaml'

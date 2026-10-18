@@ -1,0 +1,8 @@
+# Upstream model: huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF (Apache-2.0)
+# File: Huihui-Qwen3.8-27B-abliterated-UD-IQ4_XS.gguf  @ HF rev 1c69098e9c32db6dc06fc48f1d6cc75ad07da89e
+# No TEMPLATE/RENDERER line on purpose: the model's own chat template is used.
+# Create with:  scripts/install-huihui.sh   (substitutes the real FROM path)
+FROM @GGUF_PATH@
+PARAMETER num_ctx 4096
+PARAMETER temperature 0.6
+PARAMETER top_p 0.95

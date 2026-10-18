@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/execve/lnx_auditd_user_discovery.yml -->
+title: System Owner or User Discovery - Linux
+id: 9a0d8ca0-2385-4020-b6c6-cb6153ca56f3
+status: test
+description: |
+    Detects the execution of host or user discovery utilities such as "whoami", "hostname", "id", etc.
+    Adversaries may use the information from System Owner/User Discovery during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1033/T1033.md
+author: Timur Zinniatullin, oscd.community
+date: 2019-10-21
+modified: 2025-06-04
+tags:
+    - attack.discovery
+    - attack.t1033
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection:
+        type: 'EXECVE'
+        a0:
+            - 'hostname'
+            - 'id'
+            - 'last'
+            - 'uname'
+            - 'users'
+            - 'w'
+            - 'who'
+            - 'whoami'
+    condition: selection
+falsepositives:
+    - Admin activity
+level: low

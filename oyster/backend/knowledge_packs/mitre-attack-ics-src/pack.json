@@ -1,0 +1,623 @@
+{
+  "id": "mitre-attack-ics-src",
+  "name": "mitre-attack-ics-src",
+  "version": "6cda5ad8462c",
+  "title": "MITRE ATT&CK ICS (STIX, upstream)",
+  "domain": "defensive",
+  "security_domain": "attack-mapping",
+  "description": "Imported from https://attack.mitre.org/matrices/ics/ at 6cda5ad8462c. 97 documents.",
+  "authority": "MITRE",
+  "publisher": "The MITRE Corporation",
+  "trust_level": "official",
+  "licence": "mitre-attack-terms",
+  "attribution": "MITRE ATT&CK\u00ae, \u00a9 The MITRE Corporation. Used per the ATT&CK Terms of Use with attribution.",
+  "tags": [
+    "mitre",
+    "attack",
+    "ics",
+    "ot",
+    "scada",
+    "techniques"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "ics",
+    "ot"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track ATT&CK releases (~2\u00d7/year); update-check compares upstream commit.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "mitre-attack-ics-src",
+  "upstream_commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4",
+  "source_urls": [
+    "https://attack.mitre.org/matrices/ics/",
+    "https://github.com/mitre-attack/attack-stix-data"
+  ],
+  "docs": [
+    {
+      "file": "techniques/T0800.md",
+      "source_title": "T0800 \u2014 Activate Firmware Update Mode",
+      "source_url": "https://attack.mitre.org/techniques/T0800",
+      "section": "Activate Firmware Update Mode"
+    },
+    {
+      "file": "techniques/T0801.md",
+      "source_title": "T0801 \u2014 Monitor Process State",
+      "source_url": "https://attack.mitre.org/techniques/T0801",
+      "section": "Monitor Process State"
+    },
+    {
+      "file": "techniques/T0802.md",
+      "source_title": "T0802 \u2014 Automated Collection",
+      "source_url": "https://attack.mitre.org/techniques/T0802",
+      "section": "Automated Collection"
+    },
+    {
+      "file": "techniques/T0806.md",
+      "source_title": "T0806 \u2014 Brute Force I/O",
+      "source_url": "https://attack.mitre.org/techniques/T0806",
+      "section": "Brute Force I/O"
+    },
+    {
+      "file": "techniques/T0807.md",
+      "source_title": "T0807 \u2014 Command-Line Interface",
+      "source_url": "https://attack.mitre.org/techniques/T0807",
+      "section": "Command-Line Interface"
+    },
+    {
+      "file": "techniques/T0809.md",
+      "source_title": "T0809 \u2014 Data Destruction",
+      "source_url": "https://attack.mitre.org/techniques/T0809",
+      "section": "Data Destruction"
+    },
+    {
+      "file": "techniques/T0811.md",
+      "source_title": "T0811 \u2014 Data from Information Repositories",
+      "source_url": "https://attack.mitre.org/techniques/T0811",
+      "section": "Data from Information Repositories"
+    },
+    {
+      "file": "techniques/T0813.md",
+      "source_title": "T0813 \u2014 Denial of Control",
+      "source_url": "https://attack.mitre.org/techniques/T0813",
+      "section": "Denial of Control"
+    },
+    {
+      "file": "techniques/T0814.md",
+      "source_title": "T0814 \u2014 Denial of Service",
+      "source_url": "https://attack.mitre.org/techniques/T0814",
+      "section": "Denial of Service"
+    },
+    {
+      "file": "techniques/T0815.md",
+      "source_title": "T0815 \u2014 Denial of View",
+      "source_url": "https://attack.mitre.org/techniques/T0815",
+      "section": "Denial of View"
+    },
+    {
+      "file": "techniques/T0816.md",
+      "source_title": "T0816 \u2014 Device Restart/Shutdown",
+      "source_url": "https://attack.mitre.org/techniques/T0816",
+      "section": "Device Restart/Shutdown"
+    },
+    {
+      "file": "techniques/T0817.md",
+      "source_title": "T0817 \u2014 Drive-by Compromise",
+      "source_url": "https://attack.mitre.org/techniques/T0817",
+      "section": "Drive-by Compromise"
+    },
+    {
+      "file": "techniques/T0819.md",
+      "source_title": "T0819 \u2014 Exploit Public-Facing Application",
+      "source_url": "https://attack.mitre.org/techniques/T0819",
+      "section": "Exploit Public-Facing Application"
+    },
+    {
+      "file": "techniques/T0820.md",
+      "source_title": "T0820 \u2014 Exploitation for Evasion",
+      "source_url": "https://attack.mitre.org/techniques/T0820",
+      "section": "Exploitation for Evasion"
+    },
+    {
+      "file": "techniques/T0821.md",
+      "source_title": "T0821 \u2014 Modify Controller Tasking",
+      "source_url": "https://attack.mitre.org/techniques/T0821",
+      "section": "Modify Controller Tasking"
+    },
+    {
+      "file": "techniques/T0822.md",
+      "source_title": "T0822 \u2014 External Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T0822",
+      "section": "External Remote Services"
+    },
+    {
+      "file": "techniques/T0823.md",
+      "source_title": "T0823 \u2014 Graphical User Interface",
+      "source_url": "https://attack.mitre.org/techniques/T0823",
+      "section": "Graphical User Interface"
+    },
+    {
+      "file": "techniques/T0826.md",
+      "source_title": "T0826 \u2014 Loss of Availability",
+      "source_url": "https://attack.mitre.org/techniques/T0826",
+      "section": "Loss of Availability"
+    },
+    {
+      "file": "techniques/T0827.md",
+      "source_title": "T0827 \u2014 Loss of Control",
+      "source_url": "https://attack.mitre.org/techniques/T0827",
+      "section": "Loss of Control"
+    },
+    {
+      "file": "techniques/T0828.md",
+      "source_title": "T0828 \u2014 Loss of Productivity and Revenue",
+      "source_url": "https://attack.mitre.org/techniques/T0828",
+      "section": "Loss of Productivity and Revenue"
+    },
+    {
+      "file": "techniques/T0829.md",
+      "source_title": "T0829 \u2014 Loss of View",
+      "source_url": "https://attack.mitre.org/techniques/T0829",
+      "section": "Loss of View"
+    },
+    {
+      "file": "techniques/T0830.md",
+      "source_title": "T0830 \u2014 Adversary-in-the-Middle",
+      "source_url": "https://attack.mitre.org/techniques/T0830",
+      "section": "Adversary-in-the-Middle"
+    },
+    {
+      "file": "techniques/T0831.md",
+      "source_title": "T0831 \u2014 Manipulation of Control",
+      "source_url": "https://attack.mitre.org/techniques/T0831",
+      "section": "Manipulation of Control"
+    },
+    {
+      "file": "techniques/T0832.md",
+      "source_title": "T0832 \u2014 Manipulation of View",
+      "source_url": "https://attack.mitre.org/techniques/T0832",
+      "section": "Manipulation of View"
+    },
+    {
+      "file": "techniques/T0834.md",
+      "source_title": "T0834 \u2014 Native API",
+      "source_url": "https://attack.mitre.org/techniques/T0834",
+      "section": "Native API"
+    },
+    {
+      "file": "techniques/T0835.md",
+      "source_title": "T0835 \u2014 Manipulate I/O Image",
+      "source_url": "https://attack.mitre.org/techniques/T0835",
+      "section": "Manipulate I/O Image"
+    },
+    {
+      "file": "techniques/T0836.md",
+      "source_title": "T0836 \u2014 Modify Parameter",
+      "source_url": "https://attack.mitre.org/techniques/T0836",
+      "section": "Modify Parameter"
+    },
+    {
+      "file": "techniques/T0837.md",
+      "source_title": "T0837 \u2014 Loss of Protection",
+      "source_url": "https://attack.mitre.org/techniques/T0837",
+      "section": "Loss of Protection"
+    },
+    {
+      "file": "techniques/T0838.md",
+      "source_title": "T0838 \u2014 Modify Alarm Settings",
+      "source_url": "https://attack.mitre.org/techniques/T0838",
+      "section": "Modify Alarm Settings"
+    },
+    {
+      "file": "techniques/T0840.md",
+      "source_title": "T0840 \u2014 Network Connection Enumeration",
+      "source_url": "https://attack.mitre.org/techniques/T0840",
+      "section": "Network Connection Enumeration"
+    },
+    {
+      "file": "techniques/T0842.md",
+      "source_title": "T0842 \u2014 Network Sniffing",
+      "source_url": "https://attack.mitre.org/techniques/T0842",
+      "section": "Network Sniffing"
+    },
+    {
+      "file": "techniques/T0843.md",
+      "source_title": "T0843 \u2014 Program Download",
+      "source_url": "https://attack.mitre.org/techniques/T0843",
+      "section": "Program Download"
+    },
+    {
+      "file": "techniques/T0843.001.md",
+      "source_title": "T0843.001 \u2014 Download All",
+      "source_url": "https://attack.mitre.org/techniques/T0843/001",
+      "section": "Download All"
+    },
+    {
+      "file": "techniques/T0843.002.md",
+      "source_title": "T0843.002 \u2014 Online Edit",
+      "source_url": "https://attack.mitre.org/techniques/T0843/002",
+      "section": "Online Edit"
+    },
+    {
+      "file": "techniques/T0843.003.md",
+      "source_title": "T0843.003 \u2014 Program Append",
+      "source_url": "https://attack.mitre.org/techniques/T0843/003",
+      "section": "Program Append"
+    },
+    {
+      "file": "techniques/T0845.md",
+      "source_title": "T0845 \u2014 Program Upload",
+      "source_url": "https://attack.mitre.org/techniques/T0845",
+      "section": "Program Upload"
+    },
+    {
+      "file": "techniques/T0846.md",
+      "source_title": "T0846 \u2014 Remote System Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T0846",
+      "section": "Remote System Discovery"
+    },
+    {
+      "file": "techniques/T0846.001.md",
+      "source_title": "T0846.001 \u2014 Port Scan",
+      "source_url": "https://attack.mitre.org/techniques/T0846/001",
+      "section": "Port Scan"
+    },
+    {
+      "file": "techniques/T0846.002.md",
+      "source_title": "T0846.002 \u2014 Broadcast Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T0846/002",
+      "section": "Broadcast Discovery"
+    },
+    {
+      "file": "techniques/T0846.003.md",
+      "source_title": "T0846.003 \u2014 Multicast Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T0846/003",
+      "section": "Multicast Discovery"
+    },
+    {
+      "file": "techniques/T0847.md",
+      "source_title": "T0847 \u2014 Replication Through Removable Media",
+      "source_url": "https://attack.mitre.org/techniques/T0847",
+      "section": "Replication Through Removable Media"
+    },
+    {
+      "file": "techniques/T0848.md",
+      "source_title": "T0848 \u2014 Rogue Master",
+      "source_url": "https://attack.mitre.org/techniques/T0848",
+      "section": "Rogue Master"
+    },
+    {
+      "file": "techniques/T0849.md",
+      "source_title": "T0849 \u2014 Masquerading",
+      "source_url": "https://attack.mitre.org/techniques/T0849",
+      "section": "Masquerading"
+    },
+    {
+      "file": "techniques/T0851.md",
+      "source_title": "T0851 \u2014 Rootkit",
+      "source_url": "https://attack.mitre.org/techniques/T0851",
+      "section": "Rootkit"
+    },
+    {
+      "file": "techniques/T0852.md",
+      "source_title": "T0852 \u2014 Screen Capture",
+      "source_url": "https://attack.mitre.org/techniques/T0852",
+      "section": "Screen Capture"
+    },
+    {
+      "file": "techniques/T0853.md",
+      "source_title": "T0853 \u2014 Scripting",
+      "source_url": "https://attack.mitre.org/techniques/T0853",
+      "section": "Scripting"
+    },
+    {
+      "file": "techniques/T0858.md",
+      "source_title": "T0858 \u2014 Change Operating Mode",
+      "source_url": "https://attack.mitre.org/techniques/T0858",
+      "section": "Change Operating Mode"
+    },
+    {
+      "file": "techniques/T0859.md",
+      "source_title": "T0859 \u2014 Valid Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T0859",
+      "section": "Valid Accounts"
+    },
+    {
+      "file": "techniques/T0860.md",
+      "source_title": "T0860 \u2014 Wireless Compromise",
+      "source_url": "https://attack.mitre.org/techniques/T0860",
+      "section": "Wireless Compromise"
+    },
+    {
+      "file": "techniques/T0861.md",
+      "source_title": "T0861 \u2014 Point & Tag Identification",
+      "source_url": "https://attack.mitre.org/techniques/T0861",
+      "section": "Point & Tag Identification"
+    },
+    {
+      "file": "techniques/T0862.md",
+      "source_title": "T0862 \u2014 Supply Chain Compromise",
+      "source_url": "https://attack.mitre.org/techniques/T0862",
+      "section": "Supply Chain Compromise"
+    },
+    {
+      "file": "techniques/T0863.md",
+      "source_title": "T0863 \u2014 User Execution",
+      "source_url": "https://attack.mitre.org/techniques/T0863",
+      "section": "User Execution"
+    },
+    {
+      "file": "techniques/T0864.md",
+      "source_title": "T0864 \u2014 Transient Cyber Asset",
+      "source_url": "https://attack.mitre.org/techniques/T0864",
+      "section": "Transient Cyber Asset"
+    },
+    {
+      "file": "techniques/T0865.md",
+      "source_title": "T0865 \u2014 Spearphishing Attachment",
+      "source_url": "https://attack.mitre.org/techniques/T0865",
+      "section": "Spearphishing Attachment"
+    },
+    {
+      "file": "techniques/T0866.md",
+      "source_title": "T0866 \u2014 Exploitation of Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T0866",
+      "section": "Exploitation of Remote Services"
+    },
+    {
+      "file": "techniques/T0867.md",
+      "source_title": "T0867 \u2014 Lateral Tool Transfer",
+      "source_url": "https://attack.mitre.org/techniques/T0867",
+      "section": "Lateral Tool Transfer"
+    },
+    {
+      "file": "techniques/T0868.md",
+      "source_title": "T0868 \u2014 Detect Operating Mode",
+      "source_url": "https://attack.mitre.org/techniques/T0868",
+      "section": "Detect Operating Mode"
+    },
+    {
+      "file": "techniques/T0869.md",
+      "source_title": "T0869 \u2014 Standard Application Layer Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T0869",
+      "section": "Standard Application Layer Protocol"
+    },
+    {
+      "file": "techniques/T0871.md",
+      "source_title": "T0871 \u2014 Execution through API",
+      "source_url": "https://attack.mitre.org/techniques/T0871",
+      "section": "Execution through API"
+    },
+    {
+      "file": "techniques/T0872.md",
+      "source_title": "T0872 \u2014 Indicator Removal on Host",
+      "source_url": "https://attack.mitre.org/techniques/T0872",
+      "section": "Indicator Removal on Host"
+    },
+    {
+      "file": "techniques/T0873.md",
+      "source_title": "T0873 \u2014 Project File Infection",
+      "source_url": "https://attack.mitre.org/techniques/T0873",
+      "section": "Project File Infection"
+    },
+    {
+      "file": "techniques/T0873.001.md",
+      "source_title": "T0873.001 \u2014 Siemens Project File Format",
+      "source_url": "https://attack.mitre.org/techniques/T0873/001",
+      "section": "Siemens Project File Format"
+    },
+    {
+      "file": "techniques/T0874.md",
+      "source_title": "T0874 \u2014 Hooking",
+      "source_url": "https://attack.mitre.org/techniques/T0874",
+      "section": "Hooking"
+    },
+    {
+      "file": "techniques/T0877.md",
+      "source_title": "T0877 \u2014 I/O Image",
+      "source_url": "https://attack.mitre.org/techniques/T0877",
+      "section": "I/O Image"
+    },
+    {
+      "file": "techniques/T0878.md",
+      "source_title": "T0878 \u2014 Alarm Suppression",
+      "source_url": "https://attack.mitre.org/techniques/T0878",
+      "section": "Alarm Suppression"
+    },
+    {
+      "file": "techniques/T0879.md",
+      "source_title": "T0879 \u2014 Damage to Property",
+      "source_url": "https://attack.mitre.org/techniques/T0879",
+      "section": "Damage to Property"
+    },
+    {
+      "file": "techniques/T0880.md",
+      "source_title": "T0880 \u2014 Loss of Safety",
+      "source_url": "https://attack.mitre.org/techniques/T0880",
+      "section": "Loss of Safety"
+    },
+    {
+      "file": "techniques/T0881.md",
+      "source_title": "T0881 \u2014 Service Stop",
+      "source_url": "https://attack.mitre.org/techniques/T0881",
+      "section": "Service Stop"
+    },
+    {
+      "file": "techniques/T0882.md",
+      "source_title": "T0882 \u2014 Theft of Operational Information",
+      "source_url": "https://attack.mitre.org/techniques/T0882",
+      "section": "Theft of Operational Information"
+    },
+    {
+      "file": "techniques/T0883.md",
+      "source_title": "T0883 \u2014 Internet Accessible Device",
+      "source_url": "https://attack.mitre.org/techniques/T0883",
+      "section": "Internet Accessible Device"
+    },
+    {
+      "file": "techniques/T0884.md",
+      "source_title": "T0884 \u2014 Connection Proxy",
+      "source_url": "https://attack.mitre.org/techniques/T0884",
+      "section": "Connection Proxy"
+    },
+    {
+      "file": "techniques/T0885.md",
+      "source_title": "T0885 \u2014 Commonly Used Port",
+      "source_url": "https://attack.mitre.org/techniques/T0885",
+      "section": "Commonly Used Port"
+    },
+    {
+      "file": "techniques/T0886.md",
+      "source_title": "T0886 \u2014 Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T0886",
+      "section": "Remote Services"
+    },
+    {
+      "file": "techniques/T0887.md",
+      "source_title": "T0887 \u2014 Wireless Sniffing",
+      "source_url": "https://attack.mitre.org/techniques/T0887",
+      "section": "Wireless Sniffing"
+    },
+    {
+      "file": "techniques/T0888.md",
+      "source_title": "T0888 \u2014 Remote System Information Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T0888",
+      "section": "Remote System Information Discovery"
+    },
+    {
+      "file": "techniques/T0889.md",
+      "source_title": "T0889 \u2014 Modify Program",
+      "source_url": "https://attack.mitre.org/techniques/T0889",
+      "section": "Modify Program"
+    },
+    {
+      "file": "techniques/T0890.md",
+      "source_title": "T0890 \u2014 Exploitation for Privilege Escalation",
+      "source_url": "https://attack.mitre.org/techniques/T0890",
+      "section": "Exploitation for Privilege Escalation"
+    },
+    {
+      "file": "techniques/T0892.md",
+      "source_title": "T0892 \u2014 Change Credential",
+      "source_url": "https://attack.mitre.org/techniques/T0892",
+      "section": "Change Credential"
+    },
+    {
+      "file": "techniques/T0893.md",
+      "source_title": "T0893 \u2014 Data from Local System",
+      "source_url": "https://attack.mitre.org/techniques/T0893",
+      "section": "Data from Local System"
+    },
+    {
+      "file": "techniques/T0894.md",
+      "source_title": "T0894 \u2014 System Binary Proxy Execution",
+      "source_url": "https://attack.mitre.org/techniques/T0894",
+      "section": "System Binary Proxy Execution"
+    },
+    {
+      "file": "techniques/T0895.md",
+      "source_title": "T0895 \u2014 Autorun Image",
+      "source_url": "https://attack.mitre.org/techniques/T0895",
+      "section": "Autorun Image"
+    },
+    {
+      "file": "techniques/T1691.md",
+      "source_title": "T1691 \u2014 Block Operational Technology Message",
+      "source_url": "https://attack.mitre.org/techniques/T1691",
+      "section": "Block Operational Technology Message"
+    },
+    {
+      "file": "techniques/T1691.001.md",
+      "source_title": "T1691.001 \u2014 Command Message",
+      "source_url": "https://attack.mitre.org/techniques/T1691/001",
+      "section": "Command Message"
+    },
+    {
+      "file": "techniques/T1691.002.md",
+      "source_title": "T1691.002 \u2014 Reporting Message",
+      "source_url": "https://attack.mitre.org/techniques/T1691/002",
+      "section": "Reporting Message"
+    },
+    {
+      "file": "techniques/T1692.md",
+      "source_title": "T1692 \u2014 Unauthorized Message",
+      "source_url": "https://attack.mitre.org/techniques/T1692",
+      "section": "Unauthorized Message"
+    },
+    {
+      "file": "techniques/T1692.001.md",
+      "source_title": "T1692.001 \u2014 Command Message",
+      "source_url": "https://attack.mitre.org/techniques/T1692/001",
+      "section": "Command Message"
+    },
+    {
+      "file": "techniques/T1692.002.md",
+      "source_title": "T1692.002 \u2014 Reporting Message",
+      "source_url": "https://attack.mitre.org/techniques/T1692/002",
+      "section": "Reporting Message"
+    },
+    {
+      "file": "techniques/T1693.md",
+      "source_title": "T1693 \u2014 Modify Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1693",
+      "section": "Modify Firmware"
+    },
+    {
+      "file": "techniques/T1693.001.md",
+      "source_title": "T1693.001 \u2014 System Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1693/001",
+      "section": "System Firmware"
+    },
+    {
+      "file": "techniques/T1693.002.md",
+      "source_title": "T1693.002 \u2014 Module Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1693/002",
+      "section": "Module Firmware"
+    },
+    {
+      "file": "techniques/T1694.md",
+      "source_title": "T1694 \u2014 Insecure Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1694",
+      "section": "Insecure Credentials"
+    },
+    {
+      "file": "techniques/T1694.001.md",
+      "source_title": "T1694.001 \u2014 Default Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1694/001",
+      "section": "Default Credentials"
+    },
+    {
+      "file": "techniques/T1694.002.md",
+      "source_title": "T1694.002 \u2014 Hardcoded Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1694/002",
+      "section": "Hardcoded Credentials"
+    },
+    {
+      "file": "techniques/T1695.md",
+      "source_title": "T1695 \u2014 Block Communications",
+      "source_url": "https://attack.mitre.org/techniques/T1695",
+      "section": "Block Communications"
+    },
+    {
+      "file": "techniques/T1695.001.md",
+      "source_title": "T1695.001 \u2014 Serial COM",
+      "source_url": "https://attack.mitre.org/techniques/T1695/001",
+      "section": "Serial COM"
+    },
+    {
+      "file": "techniques/T1695.002.md",
+      "source_title": "T1695.002 \u2014 Ethernet",
+      "source_url": "https://attack.mitre.org/techniques/T1695/002",
+      "section": "Ethernet"
+    },
+    {
+      "file": "techniques/T1695.003.md",
+      "source_title": "T1695.003 \u2014 Wi-Fi",
+      "source_url": "https://attack.mitre.org/techniques/T1695/003",
+      "section": "Wi-Fi"
+    }
+  ]
+}

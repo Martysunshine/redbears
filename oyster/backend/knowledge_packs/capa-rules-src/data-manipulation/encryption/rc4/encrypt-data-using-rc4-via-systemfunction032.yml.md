@@ -1,0 +1,30 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/encryption/rc4/encrypt-data-using-rc4-via-systemfunction032.yml -->
+rule:
+  meta:
+    name: encrypt data using RC4 via SystemFunction032
+    namespace: data-manipulation/encryption/rc4
+    authors:
+      - richard.weiss@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+    mbc:
+      - Defense Evasion::Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]
+      - Cryptography::Encrypt Data::RC4 [C0027.009]
+    references:
+      - https://doxygen.reactos.org/df/d13/sysfunc_8c_source.html
+      - https://blog.gentilkiwi.com/tag/systemfunction032
+    examples:
+      - 3BBDF04C25FCD9876733EAA9163B3ED64D81396E7414619758D9376EDF4C103E:0x1000976C # api match
+  features:
+    - or:
+      - api: SystemFunction032
+      - basic block:
+        - and:
+          - match: link function at runtime on Windows
+          - string: "SystemFunction032"
+          - optional:
+            - string: /advapi32/i
+            - string: /cryptsp/i

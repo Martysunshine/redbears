@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/image_load/image_load_office_powershell_dll_load.yml -->
+title: PowerShell Core DLL Loaded Via Office Application
+id: bb2ba6fb-95d4-4a25-89fc-30bb736c021a
+status: test
+description: Detects PowerShell core DLL being loaded by an Office Product
+references:
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-06-01
+tags:
+    - attack.stealth
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        Image|endswith:
+            - '\excel.exe'
+            - '\mspub.exe'
+            - '\outlook.exe'
+            - '\onenote.exe'
+            - '\onenoteim.exe' # Just in case
+            - '\powerpnt.exe'
+            - '\winword.exe'
+        ImageLoaded|contains:
+            - '\System.Management.Automation.Dll'
+            - '\System.Management.Automation.ni.Dll'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

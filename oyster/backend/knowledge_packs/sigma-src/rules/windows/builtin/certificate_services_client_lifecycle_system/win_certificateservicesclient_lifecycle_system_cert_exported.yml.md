@@ -1,0 +1,22 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/certificate_services_client_lifecycle_system/win_certificateservicesclient_lifecycle_system_cert_exported.yml -->
+title: Certificate Exported From Local Certificate Store
+id: 58c0bff0-40a0-46e8-b5e8-b734b84d2017
+status: test
+description: Detects when an application exports a certificate (and potentially the private key as well) from the local Windows certificate store.
+references:
+    - https://www.splunk.com/en_us/blog/security/breaking-the-chain-defending-against-certificate-services-abuse.html
+author: Zach Mathis
+date: 2023-05-13
+tags:
+    - attack.credential-access
+    - attack.t1649
+logsource:
+    product: windows
+    service: certificateservicesclient-lifecycle-system
+detection:
+    selection:
+        EventID: 1007 # A certificate has been exported
+    condition: selection
+falsepositives:
+    - Legitimate application requesting certificate exports will trigger this. Apply additional filters as needed
+level: medium

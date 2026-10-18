@@ -1,0 +1,28 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/packer/upx/packed-with-upx.yml -->
+rule:
+  meta:
+    name: packed with UPX
+    namespace: anti-analysis/packer/upx
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: file
+      dynamic: file
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information::Software Packing [T1027.002]
+    mbc:
+      - Anti-Static Analysis::Software Packing::UPX [F0001.008]
+    examples:
+      - CD2CBA9E6313E8DF2C1273593E649682
+      - Practical Malware Analysis Lab 01-02.exe_:0x0401000
+  features:
+    - or:
+      - and:
+        - format: pe
+        - or:
+          - section: UPX0
+          - section: UPX1
+      - and:
+        - format: elf
+        - or:
+          - string: "UPX!"

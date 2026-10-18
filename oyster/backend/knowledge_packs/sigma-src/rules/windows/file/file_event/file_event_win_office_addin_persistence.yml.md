@@ -1,0 +1,38 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_office_addin_persistence.yml -->
+title: Potential Persistence Via Microsoft Office Add-In
+id: 8e1cb247-6cf6-42fa-b440-3f27d57e9936
+status: test
+description: Detects potential persistence activity via startup add-ins that load when Microsoft Office starts (.wll/.xll are simply .dll fit for Word or Excel).
+references:
+    - Internal Research
+    - https://labs.withsecure.com/publications/add-in-opportunities-for-office-persistence
+    - https://github.com/redcanaryco/atomic-red-team/blob/4ae9580a1a8772db87a1b6cdb0d03e5af231e966/atomics/T1137.006/T1137.006.md
+author: NVISO
+date: 2020-05-11
+modified: 2023-02-08
+tags:
+    - attack.persistence
+    - attack.t1137.006
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection_wlldropped:
+        TargetFilename|contains: '\Microsoft\Word\Startup\'
+        TargetFilename|endswith: '.wll'
+    selection_xlldropped:
+        TargetFilename|contains: '\Microsoft\Excel\Startup\'
+        TargetFilename|endswith: '.xll'
+    selection_xladropped:
+        TargetFilename|contains: 'Microsoft\Excel\XLSTART\'
+        TargetFilename|endswith: '.xlam'
+    selection_generic:
+        TargetFilename|contains: '\Microsoft\Addins\'
+        TargetFilename|endswith:
+            - '.xlam'
+            - '.xla'
+            - '.ppam'
+    condition: 1 of selection_*
+falsepositives:
+    - Legitimate add-ins
+level: high

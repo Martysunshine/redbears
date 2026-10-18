@@ -1,0 +1,1903 @@
+{
+  "id": "yara-reversinglabs-src",
+  "name": "yara-reversinglabs-src",
+  "version": "e0a0be54aa1e",
+  "title": "ReversingLabs YARA Rules (upstream)",
+  "domain": "defensive",
+  "security_domain": "malware-detection",
+  "description": "Imported from https://github.com/reversinglabs/reversinglabs-yara-rules at e0a0be54aa1e. 310 documents.",
+  "authority": "ReversingLabs",
+  "publisher": "ReversingLabs",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "ReversingLabs YARA Rules, \u00a9 ReversingLabs, MIT licence.",
+  "tags": [
+    "yara",
+    "malware",
+    "detection",
+    "signatures",
+    "reversing"
+  ],
+  "applicable_tools": [
+    "yara"
+  ],
+  "applicable_platforms": [
+    "windows",
+    "linux",
+    "macos"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "yara-reversinglabs-src",
+  "upstream_commit": "e0a0be54aa1e11ccfd6854e4f19e9476f328fd84",
+  "source_urls": [
+    "https://github.com/reversinglabs/reversinglabs-yara-rules",
+    "https://github.com/reversinglabs/reversinglabs-yara-rules"
+  ],
+  "docs": [
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.AgentRacoon.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.AgentRacoon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.AgentRacoon.yara",
+      "section": "ByteCode.MSIL.Backdoor.AgentRacoon.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.AsyncRAT.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.AsyncRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.AsyncRAT.yara",
+      "section": "ByteCode.MSIL.Backdoor.AsyncRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.LimeRAT.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.LimeRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.LimeRAT.yara",
+      "section": "ByteCode.MSIL.Backdoor.LimeRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.Menorah.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.Menorah.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.Menorah.yara",
+      "section": "ByteCode.MSIL.Backdoor.Menorah.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.NjRAT.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.NjRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.NjRAT.yara",
+      "section": "ByteCode.MSIL.Backdoor.NjRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.OrcusRAT.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.OrcusRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.OrcusRAT.yara",
+      "section": "ByteCode.MSIL.Backdoor.OrcusRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.ResolverRAT.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.ResolverRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.ResolverRAT.yara",
+      "section": "ByteCode.MSIL.Backdoor.ResolverRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/ByteCode.MSIL.Backdoor.Veaty.yara.md",
+      "source_title": "ByteCode.MSIL.Backdoor.Veaty.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/ByteCode.MSIL.Backdoor.Veaty.yara",
+      "section": "ByteCode.MSIL.Backdoor.Veaty.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.AutoColor.yara.md",
+      "source_title": "Linux.Backdoor.AutoColor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.AutoColor.yara",
+      "section": "Linux.Backdoor.AutoColor.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.BPFDoor.yara.md",
+      "source_title": "Linux.Backdoor.BPFDoor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.BPFDoor.yara",
+      "section": "Linux.Backdoor.BPFDoor.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.ChaosRAT.yara.md",
+      "source_title": "Linux.Backdoor.ChaosRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.ChaosRAT.yara",
+      "section": "Linux.Backdoor.ChaosRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.GTPDOOR.yara.md",
+      "source_title": "Linux.Backdoor.GTPDOOR.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.GTPDOOR.yara",
+      "section": "Linux.Backdoor.GTPDOOR.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.GobRAT.yara.md",
+      "source_title": "Linux.Backdoor.GobRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.GobRAT.yara",
+      "section": "Linux.Backdoor.GobRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.Krasue.yara.md",
+      "source_title": "Linux.Backdoor.Krasue.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.Krasue.yara",
+      "section": "Linux.Backdoor.Krasue.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.Linodas.yara.md",
+      "source_title": "Linux.Backdoor.Linodas.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.Linodas.yara",
+      "section": "Linux.Backdoor.Linodas.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.NoodRAT.yara.md",
+      "source_title": "Linux.Backdoor.NoodRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.NoodRAT.yara",
+      "section": "Linux.Backdoor.NoodRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.PondRAT.yara.md",
+      "source_title": "Linux.Backdoor.PondRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.PondRAT.yara",
+      "section": "Linux.Backdoor.PondRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.PygmyGoat.yara.md",
+      "source_title": "Linux.Backdoor.PygmyGoat.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.PygmyGoat.yara",
+      "section": "Linux.Backdoor.PygmyGoat.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.Sshdinjector.yara.md",
+      "source_title": "Linux.Backdoor.Sshdinjector.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.Sshdinjector.yara",
+      "section": "Linux.Backdoor.Sshdinjector.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Backdoor.WolfsBane.yara.md",
+      "source_title": "Linux.Backdoor.WolfsBane.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Backdoor.WolfsBane.yara",
+      "section": "Linux.Backdoor.WolfsBane.yara"
+    },
+    {
+      "file": "yara/backdoor/Linux.Trojan.ChinaZ.yara.md",
+      "source_title": "Linux.Trojan.ChinaZ.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Linux.Trojan.ChinaZ.yara",
+      "section": "Linux.Trojan.ChinaZ.yara"
+    },
+    {
+      "file": "yara/backdoor/Win32.Backdoor.Konni.yara.md",
+      "source_title": "Win32.Backdoor.Konni.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win32.Backdoor.Konni.yara",
+      "section": "Win32.Backdoor.Konni.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.BackConnect.yara.md",
+      "source_title": "Win64.Backdoor.BackConnect.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.BackConnect.yara",
+      "section": "Win64.Backdoor.BackConnect.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.EggStremeFuel.yara.md",
+      "source_title": "Win64.Backdoor.EggStremeFuel.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.EggStremeFuel.yara",
+      "section": "Win64.Backdoor.EggStremeFuel.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.Konni.yara.md",
+      "source_title": "Win64.Backdoor.Konni.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.Konni.yara",
+      "section": "Win64.Backdoor.Konni.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.Minodo.yara.md",
+      "source_title": "Win64.Backdoor.Minodo.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.Minodo.yara",
+      "section": "Win64.Backdoor.Minodo.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.MiyaRAT.yara.md",
+      "source_title": "Win64.Backdoor.MiyaRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.MiyaRAT.yara",
+      "section": "Win64.Backdoor.MiyaRAT.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.SideTwist.yara.md",
+      "source_title": "Win64.Backdoor.SideTwist.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.SideTwist.yara",
+      "section": "Win64.Backdoor.SideTwist.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.Voldemort.yara.md",
+      "source_title": "Win64.Backdoor.Voldemort.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.Voldemort.yara",
+      "section": "Win64.Backdoor.Voldemort.yara"
+    },
+    {
+      "file": "yara/backdoor/Win64.Backdoor.wmRAT.yara.md",
+      "source_title": "Win64.Backdoor.wmRAT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/backdoor/Win64.Backdoor.wmRAT.yara",
+      "section": "Win64.Backdoor.wmRAT.yara"
+    },
+    {
+      "file": "yara/certificate/blocklist.yara.md",
+      "source_title": "blocklist.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/certificate/blocklist.yara",
+      "section": "blocklist.yara"
+    },
+    {
+      "file": "yara/downloader/Win32.Downloader.dlMarlboro.yara.md",
+      "source_title": "Win32.Downloader.dlMarlboro.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/downloader/Win32.Downloader.dlMarlboro.yara",
+      "section": "Win32.Downloader.dlMarlboro.yara"
+    },
+    {
+      "file": "yara/exploit/Win32.Exploit.CVE20200601.yara.md",
+      "source_title": "Win32.Exploit.CVE20200601.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/exploit/Win32.Exploit.CVE20200601.yara",
+      "section": "Win32.Exploit.CVE20200601.yara"
+    },
+    {
+      "file": "yara/infostealer/ByteCode.MSIL.Infostealer.GomorrahStealer.yara.md",
+      "source_title": "ByteCode.MSIL.Infostealer.GomorrahStealer.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/ByteCode.MSIL.Infostealer.GomorrahStealer.yara",
+      "section": "ByteCode.MSIL.Infostealer.GomorrahStealer.yara"
+    },
+    {
+      "file": "yara/infostealer/Win32.Infostealer.LumarStealer.yara.md",
+      "source_title": "Win32.Infostealer.LumarStealer.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win32.Infostealer.LumarStealer.yara",
+      "section": "Win32.Infostealer.LumarStealer.yara"
+    },
+    {
+      "file": "yara/infostealer/Win32.Infostealer.MultigrainPOS.yara.md",
+      "source_title": "Win32.Infostealer.MultigrainPOS.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win32.Infostealer.MultigrainPOS.yara",
+      "section": "Win32.Infostealer.MultigrainPOS.yara"
+    },
+    {
+      "file": "yara/infostealer/Win32.Infostealer.ProjectHookPOS.yara.md",
+      "source_title": "Win32.Infostealer.ProjectHookPOS.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win32.Infostealer.ProjectHookPOS.yara",
+      "section": "Win32.Infostealer.ProjectHookPOS.yara"
+    },
+    {
+      "file": "yara/infostealer/Win32.Infostealer.StealC.yara.md",
+      "source_title": "Win32.Infostealer.StealC.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win32.Infostealer.StealC.yara",
+      "section": "Win32.Infostealer.StealC.yara"
+    },
+    {
+      "file": "yara/infostealer/Win64.Infostealer.Daolpu.yara.md",
+      "source_title": "Win64.Infostealer.Daolpu.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win64.Infostealer.Daolpu.yara",
+      "section": "Win64.Infostealer.Daolpu.yara"
+    },
+    {
+      "file": "yara/infostealer/Win64.Infostealer.Skuld.yara.md",
+      "source_title": "Win64.Infostealer.Skuld.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win64.Infostealer.Skuld.yara",
+      "section": "Win64.Infostealer.Skuld.yara"
+    },
+    {
+      "file": "yara/infostealer/Win64.Infostealer.WeaselStore.yara.md",
+      "source_title": "Win64.Infostealer.WeaselStore.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/infostealer/Win64.Infostealer.WeaselStore.yara",
+      "section": "Win64.Infostealer.WeaselStore.yara"
+    },
+    {
+      "file": "yara/pua/Win32.PUA.Domaiq.yara.md",
+      "source_title": "Win32.PUA.Domaiq.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/pua/Win32.PUA.Domaiq.yara",
+      "section": "Win32.PUA.Domaiq.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Apis.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Apis.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Apis.yara",
+      "section": "ByteCode.MSIL.Ransomware.Apis.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.ChupaCabra.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.ChupaCabra.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.ChupaCabra.yara",
+      "section": "ByteCode.MSIL.Ransomware.ChupaCabra.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Cring.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Cring.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Cring.yara",
+      "section": "ByteCode.MSIL.Ransomware.Cring.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Dusk.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Dusk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Dusk.yara",
+      "section": "ByteCode.MSIL.Ransomware.Dusk.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.EAF.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.EAF.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.EAF.yara",
+      "section": "ByteCode.MSIL.Ransomware.EAF.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Eternity.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Eternity.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Eternity.yara",
+      "section": "ByteCode.MSIL.Ransomware.Eternity.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Fantom.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Fantom.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Fantom.yara",
+      "section": "ByteCode.MSIL.Ransomware.Fantom.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.GhosTEncryptor.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.GhosTEncryptor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.GhosTEncryptor.yara",
+      "section": "ByteCode.MSIL.Ransomware.GhosTEncryptor.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Ghostbin.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Ghostbin.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Ghostbin.yara",
+      "section": "ByteCode.MSIL.Ransomware.Ghostbin.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.GoodWill.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.GoodWill.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.GoodWill.yara",
+      "section": "ByteCode.MSIL.Ransomware.GoodWill.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.HarpoonLocker.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.HarpoonLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.HarpoonLocker.yara",
+      "section": "ByteCode.MSIL.Ransomware.HarpoonLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Hog.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Hog.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Hog.yara",
+      "section": "ByteCode.MSIL.Ransomware.Hog.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Invert.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Invert.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Invert.yara",
+      "section": "ByteCode.MSIL.Ransomware.Invert.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Janelle.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Janelle.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Janelle.yara",
+      "section": "ByteCode.MSIL.Ransomware.Janelle.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Khonsari.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Khonsari.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Khonsari.yara",
+      "section": "ByteCode.MSIL.Ransomware.Khonsari.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.McBurglar.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.McBurglar.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.McBurglar.yara",
+      "section": "ByteCode.MSIL.Ransomware.McBurglar.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Moisha.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Moisha.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Moisha.yara",
+      "section": "ByteCode.MSIL.Ransomware.Moisha.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Namaste.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Namaste.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Namaste.yara",
+      "section": "ByteCode.MSIL.Ransomware.Namaste.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Oct.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Oct.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Oct.yara",
+      "section": "ByteCode.MSIL.Ransomware.Oct.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Pacman.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Pacman.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Pacman.yara",
+      "section": "ByteCode.MSIL.Ransomware.Pacman.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.PoliceRecords.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.PoliceRecords.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.PoliceRecords.yara",
+      "section": "ByteCode.MSIL.Ransomware.PoliceRecords.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Povlsomware.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Povlsomware.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Povlsomware.yara",
+      "section": "ByteCode.MSIL.Ransomware.Povlsomware.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Retis.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Retis.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Retis.yara",
+      "section": "ByteCode.MSIL.Ransomware.Retis.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.TaRRaK.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.TaRRaK.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.TaRRaK.yara",
+      "section": "ByteCode.MSIL.Ransomware.TaRRaK.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Thanos.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Thanos.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Thanos.yara",
+      "section": "ByteCode.MSIL.Ransomware.Thanos.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.TimeCrypt.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.TimeCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.TimeCrypt.yara",
+      "section": "ByteCode.MSIL.Ransomware.TimeCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.TimeTime.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.TimeTime.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.TimeTime.yara",
+      "section": "ByteCode.MSIL.Ransomware.TimeTime.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.Venom.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.Venom.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.Venom.yara",
+      "section": "ByteCode.MSIL.Ransomware.Venom.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.WildFire.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.WildFire.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.WildFire.yara",
+      "section": "ByteCode.MSIL.Ransomware.WildFire.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.WormLocker.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.WormLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.WormLocker.yara",
+      "section": "ByteCode.MSIL.Ransomware.WormLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/ByteCode.MSIL.Ransomware.ZeroLocker.yara.md",
+      "source_title": "ByteCode.MSIL.Ransomware.ZeroLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/ByteCode.MSIL.Ransomware.ZeroLocker.yara",
+      "section": "ByteCode.MSIL.Ransomware.ZeroLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Bytecode.MSIL.Ransomware.CobraLocker.yara.md",
+      "source_title": "Bytecode.MSIL.Ransomware.CobraLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Bytecode.MSIL.Ransomware.CobraLocker.yara",
+      "section": "Bytecode.MSIL.Ransomware.CobraLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Linux.Ransomware.GwisinLocker.yara.md",
+      "source_title": "Linux.Ransomware.GwisinLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Linux.Ransomware.GwisinLocker.yara",
+      "section": "Linux.Ransomware.GwisinLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Linux.Ransomware.Helldown.yara.md",
+      "source_title": "Linux.Ransomware.Helldown.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Linux.Ransomware.Helldown.yara",
+      "section": "Linux.Ransomware.Helldown.yara"
+    },
+    {
+      "file": "yara/ransomware/Linux.Ransomware.KillDisk.yara.md",
+      "source_title": "Linux.Ransomware.KillDisk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Linux.Ransomware.KillDisk.yara",
+      "section": "Linux.Ransomware.KillDisk.yara"
+    },
+    {
+      "file": "yara/ransomware/Linux.Ransomware.LuckyJoe.yara.md",
+      "source_title": "Linux.Ransomware.LuckyJoe.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Linux.Ransomware.LuckyJoe.yara",
+      "section": "Linux.Ransomware.LuckyJoe.yara"
+    },
+    {
+      "file": "yara/ransomware/Linux.Ransomware.RedAlert.yara.md",
+      "source_title": "Linux.Ransomware.RedAlert.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Linux.Ransomware.RedAlert.yara",
+      "section": "Linux.Ransomware.RedAlert.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.5ss5c.yara.md",
+      "source_title": "Win32.Ransomware.5ss5c.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.5ss5c.yara",
+      "section": "Win32.Ransomware.5ss5c.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.ASN1Encoder.yara.md",
+      "source_title": "Win32.Ransomware.ASN1Encoder.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.ASN1Encoder.yara",
+      "section": "Win32.Ransomware.ASN1Encoder.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Acepy.yara.md",
+      "source_title": "Win32.Ransomware.Acepy.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Acepy.yara",
+      "section": "Win32.Ransomware.Acepy.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Afrodita.yara.md",
+      "source_title": "Win32.Ransomware.Afrodita.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Afrodita.yara",
+      "section": "Win32.Ransomware.Afrodita.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ako.yara.md",
+      "source_title": "Win32.Ransomware.Ako.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ako.yara",
+      "section": "Win32.Ransomware.Ako.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Alcatraz.yara.md",
+      "source_title": "Win32.Ransomware.Alcatraz.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Alcatraz.yara",
+      "section": "Win32.Ransomware.Alcatraz.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.AnteFrigus.yara.md",
+      "source_title": "Win32.Ransomware.AnteFrigus.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.AnteFrigus.yara",
+      "section": "Win32.Ransomware.AnteFrigus.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Archiveus.yara.md",
+      "source_title": "Win32.Ransomware.Archiveus.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Archiveus.yara",
+      "section": "Win32.Ransomware.Archiveus.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Armage.yara.md",
+      "source_title": "Win32.Ransomware.Armage.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Armage.yara",
+      "section": "Win32.Ransomware.Armage.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Atlas.yara.md",
+      "source_title": "Win32.Ransomware.Atlas.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Atlas.yara",
+      "section": "Win32.Ransomware.Atlas.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Avaddon.yara.md",
+      "source_title": "Win32.Ransomware.Avaddon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Avaddon.yara",
+      "section": "Win32.Ransomware.Avaddon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.AvosLocker.yara.md",
+      "source_title": "Win32.Ransomware.AvosLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.AvosLocker.yara",
+      "section": "Win32.Ransomware.AvosLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BKRansomware.yara.md",
+      "source_title": "Win32.Ransomware.BKRansomware.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BKRansomware.yara",
+      "section": "Win32.Ransomware.BKRansomware.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Babuk.yara.md",
+      "source_title": "Win32.Ransomware.Babuk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Babuk.yara",
+      "section": "Win32.Ransomware.Babuk.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BadBlock.yara.md",
+      "source_title": "Win32.Ransomware.BadBlock.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BadBlock.yara",
+      "section": "Win32.Ransomware.BadBlock.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Badbeeteam.yara.md",
+      "source_title": "Win32.Ransomware.Badbeeteam.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Badbeeteam.yara",
+      "section": "Win32.Ransomware.Badbeeteam.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Balaclava.yara.md",
+      "source_title": "Win32.Ransomware.Balaclava.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Balaclava.yara",
+      "section": "Win32.Ransomware.Balaclava.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Bam2021.yara.md",
+      "source_title": "Win32.Ransomware.Bam2021.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Bam2021.yara",
+      "section": "Win32.Ransomware.Bam2021.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BananaCrypt.yara.md",
+      "source_title": "Win32.Ransomware.BananaCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BananaCrypt.yara",
+      "section": "Win32.Ransomware.BananaCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BandarChor.yara.md",
+      "source_title": "Win32.Ransomware.BandarChor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BandarChor.yara",
+      "section": "Win32.Ransomware.BandarChor.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BitCrypt.yara.md",
+      "source_title": "Win32.Ransomware.BitCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BitCrypt.yara",
+      "section": "Win32.Ransomware.BitCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BlackBasta.yara.md",
+      "source_title": "Win32.Ransomware.BlackBasta.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BlackBasta.yara",
+      "section": "Win32.Ransomware.BlackBasta.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BlackCat.yara.md",
+      "source_title": "Win32.Ransomware.BlackCat.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BlackCat.yara",
+      "section": "Win32.Ransomware.BlackCat.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BlackMoon.yara.md",
+      "source_title": "Win32.Ransomware.BlackMoon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BlackMoon.yara",
+      "section": "Win32.Ransomware.BlackMoon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Blitzkrieg.yara.md",
+      "source_title": "Win32.Ransomware.Blitzkrieg.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Blitzkrieg.yara",
+      "section": "Win32.Ransomware.Blitzkrieg.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BlueLocker.yara.md",
+      "source_title": "Win32.Ransomware.BlueLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BlueLocker.yara",
+      "section": "Win32.Ransomware.BlueLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.BrainCrypt.yara.md",
+      "source_title": "Win32.Ransomware.BrainCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.BrainCrypt.yara",
+      "section": "Win32.Ransomware.BrainCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Buran.yara.md",
+      "source_title": "Win32.Ransomware.Buran.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Buran.yara",
+      "section": "Win32.Ransomware.Buran.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.ChiChi.yara.md",
+      "source_title": "Win32.Ransomware.ChiChi.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.ChiChi.yara",
+      "section": "Win32.Ransomware.ChiChi.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Cicada3301.yara.md",
+      "source_title": "Win32.Ransomware.Cicada3301.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Cicada3301.yara",
+      "section": "Win32.Ransomware.Cicada3301.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Cincoo.yara.md",
+      "source_title": "Win32.Ransomware.Cincoo.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Cincoo.yara",
+      "section": "Win32.Ransomware.Cincoo.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Clop.yara.md",
+      "source_title": "Win32.Ransomware.Clop.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Clop.yara",
+      "section": "Win32.Ransomware.Clop.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Conti.yara.md",
+      "source_title": "Win32.Ransomware.Conti.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Conti.yara",
+      "section": "Win32.Ransomware.Conti.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Cryakl.yara.md",
+      "source_title": "Win32.Ransomware.Cryakl.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Cryakl.yara",
+      "section": "Win32.Ransomware.Cryakl.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Crypmic.yara.md",
+      "source_title": "Win32.Ransomware.Crypmic.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Crypmic.yara",
+      "section": "Win32.Ransomware.Crypmic.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Crypren.yara.md",
+      "source_title": "Win32.Ransomware.Crypren.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Crypren.yara",
+      "section": "Win32.Ransomware.Crypren.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CryptoBit.yara.md",
+      "source_title": "Win32.Ransomware.CryptoBit.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CryptoBit.yara",
+      "section": "Win32.Ransomware.CryptoBit.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CryptoFortress.yara.md",
+      "source_title": "Win32.Ransomware.CryptoFortress.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CryptoFortress.yara",
+      "section": "Win32.Ransomware.CryptoFortress.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CryptoJoker.yara.md",
+      "source_title": "Win32.Ransomware.CryptoJoker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CryptoJoker.yara",
+      "section": "Win32.Ransomware.CryptoJoker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CryptoLocker.yara.md",
+      "source_title": "Win32.Ransomware.CryptoLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CryptoLocker.yara",
+      "section": "Win32.Ransomware.CryptoLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CryptoWall.yara.md",
+      "source_title": "Win32.Ransomware.CryptoWall.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CryptoWall.yara",
+      "section": "Win32.Ransomware.CryptoWall.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Crysis.yara.md",
+      "source_title": "Win32.Ransomware.Crysis.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Crysis.yara",
+      "section": "Win32.Ransomware.Crysis.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Cuba.yara.md",
+      "source_title": "Win32.Ransomware.Cuba.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Cuba.yara",
+      "section": "Win32.Ransomware.Cuba.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.CyberVolk.yara.md",
+      "source_title": "Win32.Ransomware.CyberVolk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.CyberVolk.yara",
+      "section": "Win32.Ransomware.CyberVolk.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DMALocker.yara.md",
+      "source_title": "Win32.Ransomware.DMALocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DMALocker.yara",
+      "section": "Win32.Ransomware.DMALocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DMR.yara.md",
+      "source_title": "Win32.Ransomware.DMR.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DMR.yara",
+      "section": "Win32.Ransomware.DMR.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DarkSide.yara.md",
+      "source_title": "Win32.Ransomware.DarkSide.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DarkSide.yara",
+      "section": "Win32.Ransomware.DarkSide.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DearCry.yara.md",
+      "source_title": "Win32.Ransomware.DearCry.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DearCry.yara",
+      "section": "Win32.Ransomware.DearCry.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Defray.yara.md",
+      "source_title": "Win32.Ransomware.Defray.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Defray.yara",
+      "section": "Win32.Ransomware.Defray.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Delphimorix.yara.md",
+      "source_title": "Win32.Ransomware.Delphimorix.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Delphimorix.yara",
+      "section": "Win32.Ransomware.Delphimorix.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DenizKizi.yara.md",
+      "source_title": "Win32.Ransomware.DenizKizi.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DenizKizi.yara",
+      "section": "Win32.Ransomware.DenizKizi.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DesuCrypt.yara.md",
+      "source_title": "Win32.Ransomware.DesuCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DesuCrypt.yara",
+      "section": "Win32.Ransomware.DesuCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Dharma.yara.md",
+      "source_title": "Win32.Ransomware.Dharma.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Dharma.yara",
+      "section": "Win32.Ransomware.Dharma.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DirtyDecrypt.yara.md",
+      "source_title": "Win32.Ransomware.DirtyDecrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DirtyDecrypt.yara",
+      "section": "Win32.Ransomware.DirtyDecrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.District.yara.md",
+      "source_title": "Win32.Ransomware.District.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.District.yara",
+      "section": "Win32.Ransomware.District.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.DogeCrypt.yara.md",
+      "source_title": "Win32.Ransomware.DogeCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.DogeCrypt.yara",
+      "section": "Win32.Ransomware.DogeCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Dragon.yara.md",
+      "source_title": "Win32.Ransomware.Dragon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Dragon.yara",
+      "section": "Win32.Ransomware.Dragon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Dualshot.yara.md",
+      "source_title": "Win32.Ransomware.Dualshot.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Dualshot.yara",
+      "section": "Win32.Ransomware.Dualshot.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Elpaco.yara.md",
+      "source_title": "Win32.Ransomware.Elpaco.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Elpaco.yara",
+      "section": "Win32.Ransomware.Elpaco.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Encoded01.yara.md",
+      "source_title": "Win32.Ransomware.Encoded01.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Encoded01.yara",
+      "section": "Win32.Ransomware.Encoded01.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Erica.yara.md",
+      "source_title": "Win32.Ransomware.Erica.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Erica.yara",
+      "section": "Win32.Ransomware.Erica.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.FCT.yara.md",
+      "source_title": "Win32.Ransomware.FCT.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.FCT.yara",
+      "section": "Win32.Ransomware.FCT.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.FLKR.yara.md",
+      "source_title": "Win32.Ransomware.FLKR.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.FLKR.yara",
+      "section": "Win32.Ransomware.FLKR.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.FarAttack.yara.md",
+      "source_title": "Win32.Ransomware.FarAttack.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.FarAttack.yara",
+      "section": "Win32.Ransomware.FarAttack.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.FenixLocker.yara.md",
+      "source_title": "Win32.Ransomware.FenixLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.FenixLocker.yara",
+      "section": "Win32.Ransomware.FenixLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ferrlock.yara.md",
+      "source_title": "Win32.Ransomware.Ferrlock.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ferrlock.yara",
+      "section": "Win32.Ransomware.Ferrlock.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Flamingo.yara.md",
+      "source_title": "Win32.Ransomware.Flamingo.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Flamingo.yara",
+      "section": "Win32.Ransomware.Flamingo.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.FuxSocy.yara.md",
+      "source_title": "Win32.Ransomware.FuxSocy.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.FuxSocy.yara",
+      "section": "Win32.Ransomware.FuxSocy.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.GPGQwerty.yara.md",
+      "source_title": "Win32.Ransomware.GPGQwerty.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.GPGQwerty.yara",
+      "section": "Win32.Ransomware.GPGQwerty.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.GandCrab.yara.md",
+      "source_title": "Win32.Ransomware.GandCrab.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.GandCrab.yara",
+      "section": "Win32.Ransomware.GandCrab.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.GarrantyDecrypt.yara.md",
+      "source_title": "Win32.Ransomware.GarrantyDecrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.GarrantyDecrypt.yara",
+      "section": "Win32.Ransomware.GarrantyDecrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Gibon.yara.md",
+      "source_title": "Win32.Ransomware.Gibon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Gibon.yara",
+      "section": "Win32.Ransomware.Gibon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.GlobeImposter.yara.md",
+      "source_title": "Win32.Ransomware.GlobeImposter.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.GlobeImposter.yara",
+      "section": "Win32.Ransomware.GlobeImposter.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Gomer.yara.md",
+      "source_title": "Win32.Ransomware.Gomer.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Gomer.yara",
+      "section": "Win32.Ransomware.Gomer.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Good.yara.md",
+      "source_title": "Win32.Ransomware.Good.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Good.yara",
+      "section": "Win32.Ransomware.Good.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Gpcode.yara.md",
+      "source_title": "Win32.Ransomware.Gpcode.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Gpcode.yara",
+      "section": "Win32.Ransomware.Gpcode.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.GusCrypter.yara.md",
+      "source_title": "Win32.Ransomware.GusCrypter.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.GusCrypter.yara",
+      "section": "Win32.Ransomware.GusCrypter.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HDDCryptor.yara.md",
+      "source_title": "Win32.Ransomware.HDDCryptor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HDDCryptor.yara",
+      "section": "Win32.Ransomware.HDDCryptor.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HDMR.yara.md",
+      "source_title": "Win32.Ransomware.HDMR.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HDMR.yara",
+      "section": "Win32.Ransomware.HDMR.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HakunaMatata.yara.md",
+      "source_title": "Win32.Ransomware.HakunaMatata.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HakunaMatata.yara",
+      "section": "Win32.Ransomware.HakunaMatata.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Henry.yara.md",
+      "source_title": "Win32.Ransomware.Henry.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Henry.yara",
+      "section": "Win32.Ransomware.Henry.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HentaiOniichan.yara.md",
+      "source_title": "Win32.Ransomware.HentaiOniichan.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HentaiOniichan.yara",
+      "section": "Win32.Ransomware.HentaiOniichan.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Hermes.yara.md",
+      "source_title": "Win32.Ransomware.Hermes.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Hermes.yara",
+      "section": "Win32.Ransomware.Hermes.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Horsedeal.yara.md",
+      "source_title": "Win32.Ransomware.Horsedeal.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Horsedeal.yara",
+      "section": "Win32.Ransomware.Horsedeal.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HowAreYou.yara.md",
+      "source_title": "Win32.Ransomware.HowAreYou.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HowAreYou.yara",
+      "section": "Win32.Ransomware.HowAreYou.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.HydraCrypt.yara.md",
+      "source_title": "Win32.Ransomware.HydraCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.HydraCrypt.yara",
+      "section": "Win32.Ransomware.HydraCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.IFN643.yara.md",
+      "source_title": "Win32.Ransomware.IFN643.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.IFN643.yara",
+      "section": "Win32.Ransomware.IFN643.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.InfoDot.yara.md",
+      "source_title": "Win32.Ransomware.InfoDot.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.InfoDot.yara",
+      "section": "Win32.Ransomware.InfoDot.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.JSWorm.yara.md",
+      "source_title": "Win32.Ransomware.JSWorm.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.JSWorm.yara",
+      "section": "Win32.Ransomware.JSWorm.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Jamper.yara.md",
+      "source_title": "Win32.Ransomware.Jamper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Jamper.yara",
+      "section": "Win32.Ransomware.Jamper.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Jemd.yara.md",
+      "source_title": "Win32.Ransomware.Jemd.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Jemd.yara",
+      "section": "Win32.Ransomware.Jemd.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Jormungand.yara.md",
+      "source_title": "Win32.Ransomware.Jormungand.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Jormungand.yara",
+      "section": "Win32.Ransomware.Jormungand.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.JuicyLemon.yara.md",
+      "source_title": "Win32.Ransomware.JuicyLemon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.JuicyLemon.yara",
+      "section": "Win32.Ransomware.JuicyLemon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Kangaroo.yara.md",
+      "source_title": "Win32.Ransomware.Kangaroo.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Kangaroo.yara",
+      "section": "Win32.Ransomware.Kangaroo.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.KawaiiLocker.yara.md",
+      "source_title": "Win32.Ransomware.KawaiiLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.KawaiiLocker.yara",
+      "section": "Win32.Ransomware.KawaiiLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.KillDisk.yara.md",
+      "source_title": "Win32.Ransomware.KillDisk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.KillDisk.yara",
+      "section": "Win32.Ransomware.KillDisk.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Knot.yara.md",
+      "source_title": "Win32.Ransomware.Knot.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Knot.yara",
+      "section": "Win32.Ransomware.Knot.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Kovter.yara.md",
+      "source_title": "Win32.Ransomware.Kovter.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Kovter.yara",
+      "section": "Win32.Ransomware.Kovter.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Koxic.yara.md",
+      "source_title": "Win32.Ransomware.Koxic.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Koxic.yara",
+      "section": "Win32.Ransomware.Koxic.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Kraken.yara.md",
+      "source_title": "Win32.Ransomware.Kraken.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Kraken.yara",
+      "section": "Win32.Ransomware.Kraken.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ladon.yara.md",
+      "source_title": "Win32.Ransomware.Ladon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ladon.yara",
+      "section": "Win32.Ransomware.Ladon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.LeChiffre.yara.md",
+      "source_title": "Win32.Ransomware.LeChiffre.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.LeChiffre.yara",
+      "section": "Win32.Ransomware.LeChiffre.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.LockBit.yara.md",
+      "source_title": "Win32.Ransomware.LockBit.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.LockBit.yara",
+      "section": "Win32.Ransomware.LockBit.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Lolkek.yara.md",
+      "source_title": "Win32.Ransomware.Lolkek.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Lolkek.yara",
+      "section": "Win32.Ransomware.Lolkek.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.LooCipher.yara.md",
+      "source_title": "Win32.Ransomware.LooCipher.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.LooCipher.yara",
+      "section": "Win32.Ransomware.LooCipher.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Lorenz.yara.md",
+      "source_title": "Win32.Ransomware.Lorenz.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Lorenz.yara",
+      "section": "Win32.Ransomware.Lorenz.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.MRAC.yara.md",
+      "source_title": "Win32.Ransomware.MRAC.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.MRAC.yara",
+      "section": "Win32.Ransomware.MRAC.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.MZP.yara.md",
+      "source_title": "Win32.Ransomware.MZP.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.MZP.yara",
+      "section": "Win32.Ransomware.MZP.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Mafia.yara.md",
+      "source_title": "Win32.Ransomware.Mafia.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Mafia.yara",
+      "section": "Win32.Ransomware.Mafia.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Magniber.yara.md",
+      "source_title": "Win32.Ransomware.Magniber.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Magniber.yara",
+      "section": "Win32.Ransomware.Magniber.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Major.yara.md",
+      "source_title": "Win32.Ransomware.Major.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Major.yara",
+      "section": "Win32.Ransomware.Major.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Makop.yara.md",
+      "source_title": "Win32.Ransomware.Makop.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Makop.yara",
+      "section": "Win32.Ransomware.Makop.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Maktub.yara.md",
+      "source_title": "Win32.Ransomware.Maktub.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Maktub.yara",
+      "section": "Win32.Ransomware.Maktub.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Marlboro.yara.md",
+      "source_title": "Win32.Ransomware.Marlboro.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Marlboro.yara",
+      "section": "Win32.Ransomware.Marlboro.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.MarsJoke.yara.md",
+      "source_title": "Win32.Ransomware.MarsJoke.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.MarsJoke.yara",
+      "section": "Win32.Ransomware.MarsJoke.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Matsnu.yara.md",
+      "source_title": "Win32.Ransomware.Matsnu.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Matsnu.yara",
+      "section": "Win32.Ransomware.Matsnu.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.MedusaLocker.yara.md",
+      "source_title": "Win32.Ransomware.MedusaLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.MedusaLocker.yara",
+      "section": "Win32.Ransomware.MedusaLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Meow.yara.md",
+      "source_title": "Win32.Ransomware.Meow.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Meow.yara",
+      "section": "Win32.Ransomware.Meow.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Monalisa.yara.md",
+      "source_title": "Win32.Ransomware.Monalisa.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Monalisa.yara",
+      "section": "Win32.Ransomware.Monalisa.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Montserrat.yara.md",
+      "source_title": "Win32.Ransomware.Montserrat.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Montserrat.yara",
+      "section": "Win32.Ransomware.Montserrat.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Motocos.yara.md",
+      "source_title": "Win32.Ransomware.Motocos.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Motocos.yara",
+      "section": "Win32.Ransomware.Motocos.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.MountLocker.yara.md",
+      "source_title": "Win32.Ransomware.MountLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.MountLocker.yara",
+      "section": "Win32.Ransomware.MountLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.NB65.yara.md",
+      "source_title": "Win32.Ransomware.NB65.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.NB65.yara",
+      "section": "Win32.Ransomware.NB65.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.NanoLocker.yara.md",
+      "source_title": "Win32.Ransomware.NanoLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.NanoLocker.yara",
+      "section": "Win32.Ransomware.NanoLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Nefilim.yara.md",
+      "source_title": "Win32.Ransomware.Nefilim.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Nefilim.yara",
+      "section": "Win32.Ransomware.Nefilim.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Nemty.yara.md",
+      "source_title": "Win32.Ransomware.Nemty.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Nemty.yara",
+      "section": "Win32.Ransomware.Nemty.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Networm.yara.md",
+      "source_title": "Win32.Ransomware.Networm.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Networm.yara",
+      "section": "Win32.Ransomware.Networm.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.NotPetya.yara.md",
+      "source_title": "Win32.Ransomware.NotPetya.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.NotPetya.yara",
+      "section": "Win32.Ransomware.NotPetya.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Oni.yara.md",
+      "source_title": "Win32.Ransomware.Oni.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Oni.yara",
+      "section": "Win32.Ransomware.Oni.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.OphionLocker.yara.md",
+      "source_title": "Win32.Ransomware.OphionLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.OphionLocker.yara",
+      "section": "Win32.Ransomware.OphionLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ouroboros.yara.md",
+      "source_title": "Win32.Ransomware.Ouroboros.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ouroboros.yara",
+      "section": "Win32.Ransomware.Ouroboros.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Outsider.yara.md",
+      "source_title": "Win32.Ransomware.Outsider.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Outsider.yara",
+      "section": "Win32.Ransomware.Outsider.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.PXJ.yara.md",
+      "source_title": "Win32.Ransomware.PXJ.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.PXJ.yara",
+      "section": "Win32.Ransomware.PXJ.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Paradise.yara.md",
+      "source_title": "Win32.Ransomware.Paradise.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Paradise.yara",
+      "section": "Win32.Ransomware.Paradise.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Pay2Key.yara.md",
+      "source_title": "Win32.Ransomware.Pay2Key.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Pay2Key.yara",
+      "section": "Win32.Ransomware.Pay2Key.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Petya.yara.md",
+      "source_title": "Win32.Ransomware.Petya.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Petya.yara",
+      "section": "Win32.Ransomware.Petya.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Plague17.yara.md",
+      "source_title": "Win32.Ransomware.Plague17.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Plague17.yara",
+      "section": "Win32.Ransomware.Plague17.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.PrincessLocker.yara.md",
+      "source_title": "Win32.Ransomware.PrincessLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.PrincessLocker.yara",
+      "section": "Win32.Ransomware.PrincessLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Prometey.yara.md",
+      "source_title": "Win32.Ransomware.Prometey.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Prometey.yara",
+      "section": "Win32.Ransomware.Prometey.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.RagnarLocker.yara.md",
+      "source_title": "Win32.Ransomware.RagnarLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.RagnarLocker.yara",
+      "section": "Win32.Ransomware.RagnarLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ragnarok.yara.md",
+      "source_title": "Win32.Ransomware.Ragnarok.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ragnarok.yara",
+      "section": "Win32.Ransomware.Ragnarok.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ransoc.yara.md",
+      "source_title": "Win32.Ransomware.Ransoc.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ransoc.yara",
+      "section": "Win32.Ransomware.Ransoc.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.RansomPlus.yara.md",
+      "source_title": "Win32.Ransomware.RansomPlus.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.RansomPlus.yara",
+      "section": "Win32.Ransomware.RansomPlus.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ransomexx.yara.md",
+      "source_title": "Win32.Ransomware.Ransomexx.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ransomexx.yara",
+      "section": "Win32.Ransomware.Ransomexx.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Redeemer.yara.md",
+      "source_title": "Win32.Ransomware.Redeemer.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Redeemer.yara",
+      "section": "Win32.Ransomware.Redeemer.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.RegretLocker.yara.md",
+      "source_title": "Win32.Ransomware.RegretLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.RegretLocker.yara",
+      "section": "Win32.Ransomware.RegretLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.RetMyData.yara.md",
+      "source_title": "Win32.Ransomware.RetMyData.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.RetMyData.yara",
+      "section": "Win32.Ransomware.RetMyData.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Reveton.yara.md",
+      "source_title": "Win32.Ransomware.Reveton.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Reveton.yara",
+      "section": "Win32.Ransomware.Reveton.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Revil.yara.md",
+      "source_title": "Win32.Ransomware.Revil.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Revil.yara",
+      "section": "Win32.Ransomware.Revil.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Rokku.yara.md",
+      "source_title": "Win32.Ransomware.Rokku.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Rokku.yara",
+      "section": "Win32.Ransomware.Rokku.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Ryuk.yara.md",
+      "source_title": "Win32.Ransomware.Ryuk.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Ryuk.yara",
+      "section": "Win32.Ransomware.Ryuk.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sage.yara.md",
+      "source_title": "Win32.Ransomware.Sage.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sage.yara",
+      "section": "Win32.Ransomware.Sage.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sanwai.yara.md",
+      "source_title": "Win32.Ransomware.Sanwai.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sanwai.yara",
+      "section": "Win32.Ransomware.Sanwai.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sarbloh.yara.md",
+      "source_title": "Win32.Ransomware.Sarbloh.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sarbloh.yara",
+      "section": "Win32.Ransomware.Sarbloh.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Satan.yara.md",
+      "source_title": "Win32.Ransomware.Satan.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Satan.yara",
+      "section": "Win32.Ransomware.Satan.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Satana.yara.md",
+      "source_title": "Win32.Ransomware.Satana.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Satana.yara",
+      "section": "Win32.Ransomware.Satana.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Saturn.yara.md",
+      "source_title": "Win32.Ransomware.Saturn.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Saturn.yara",
+      "section": "Win32.Ransomware.Saturn.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sepsis.yara.md",
+      "source_title": "Win32.Ransomware.Sepsis.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sepsis.yara",
+      "section": "Win32.Ransomware.Sepsis.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Serpent.yara.md",
+      "source_title": "Win32.Ransomware.Serpent.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Serpent.yara",
+      "section": "Win32.Ransomware.Serpent.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.SevenSevenSeven.yara.md",
+      "source_title": "Win32.Ransomware.SevenSevenSeven.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.SevenSevenSeven.yara",
+      "section": "Win32.Ransomware.SevenSevenSeven.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.ShadowCryptor.yara.md",
+      "source_title": "Win32.Ransomware.ShadowCryptor.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.ShadowCryptor.yara",
+      "section": "Win32.Ransomware.ShadowCryptor.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sherminator.yara.md",
+      "source_title": "Win32.Ransomware.Sherminator.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sherminator.yara",
+      "section": "Win32.Ransomware.Sherminator.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sifrelendi.yara.md",
+      "source_title": "Win32.Ransomware.Sifrelendi.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sifrelendi.yara",
+      "section": "Win32.Ransomware.Sifrelendi.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sifreli.yara.md",
+      "source_title": "Win32.Ransomware.Sifreli.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sifreli.yara",
+      "section": "Win32.Ransomware.Sifreli.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Sigrun.yara.md",
+      "source_title": "Win32.Ransomware.Sigrun.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Sigrun.yara",
+      "section": "Win32.Ransomware.Sigrun.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Skystars.yara.md",
+      "source_title": "Win32.Ransomware.Skystars.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Skystars.yara",
+      "section": "Win32.Ransomware.Skystars.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Spora.yara.md",
+      "source_title": "Win32.Ransomware.Spora.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Spora.yara",
+      "section": "Win32.Ransomware.Spora.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.TBLocker.yara.md",
+      "source_title": "Win32.Ransomware.TBLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.TBLocker.yara",
+      "section": "Win32.Ransomware.TBLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.TargetCompany.yara.md",
+      "source_title": "Win32.Ransomware.TargetCompany.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.TargetCompany.yara",
+      "section": "Win32.Ransomware.TargetCompany.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.TechandStrat.yara.md",
+      "source_title": "Win32.Ransomware.TechandStrat.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.TechandStrat.yara",
+      "section": "Win32.Ransomware.TechandStrat.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.TeleCrypt.yara.md",
+      "source_title": "Win32.Ransomware.TeleCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.TeleCrypt.yara",
+      "section": "Win32.Ransomware.TeleCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Termite.yara.md",
+      "source_title": "Win32.Ransomware.Termite.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Termite.yara",
+      "section": "Win32.Ransomware.Termite.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Teslacrypt.yara.md",
+      "source_title": "Win32.Ransomware.Teslacrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Teslacrypt.yara",
+      "section": "Win32.Ransomware.Teslacrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Teslarvng.yara.md",
+      "source_title": "Win32.Ransomware.Teslarvng.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Teslarvng.yara",
+      "section": "Win32.Ransomware.Teslarvng.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Thanatos.yara.md",
+      "source_title": "Win32.Ransomware.Thanatos.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Thanatos.yara",
+      "section": "Win32.Ransomware.Thanatos.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.TorrentLocker.yara.md",
+      "source_title": "Win32.Ransomware.TorrentLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.TorrentLocker.yara",
+      "section": "Win32.Ransomware.TorrentLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.VHDLocker.yara.md",
+      "source_title": "Win32.Ransomware.VHDLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.VHDLocker.yara",
+      "section": "Win32.Ransomware.VHDLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.VanHelsing.yara.md",
+      "source_title": "Win32.Ransomware.VanHelsing.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.VanHelsing.yara",
+      "section": "Win32.Ransomware.VanHelsing.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.VegaLocker.yara.md",
+      "source_title": "Win32.Ransomware.VegaLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.VegaLocker.yara",
+      "section": "Win32.Ransomware.VegaLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Velso.yara.md",
+      "source_title": "Win32.Ransomware.Velso.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Velso.yara",
+      "section": "Win32.Ransomware.Velso.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.WannaCry.yara.md",
+      "source_title": "Win32.Ransomware.WannaCry.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.WannaCry.yara",
+      "section": "Win32.Ransomware.WannaCry.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.WaspLocker.yara.md",
+      "source_title": "Win32.Ransomware.WaspLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.WaspLocker.yara",
+      "section": "Win32.Ransomware.WaspLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Wastedlocker.yara.md",
+      "source_title": "Win32.Ransomware.Wastedlocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Wastedlocker.yara",
+      "section": "Win32.Ransomware.Wastedlocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.WinWord64.yara.md",
+      "source_title": "Win32.Ransomware.WinWord64.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.WinWord64.yara",
+      "section": "Win32.Ransomware.WinWord64.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.WsIR.yara.md",
+      "source_title": "Win32.Ransomware.WsIR.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.WsIR.yara",
+      "section": "Win32.Ransomware.WsIR.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Xorist.yara.md",
+      "source_title": "Win32.Ransomware.Xorist.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Xorist.yara",
+      "section": "Win32.Ransomware.Xorist.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Zeoticus.yara.md",
+      "source_title": "Win32.Ransomware.Zeoticus.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Zeoticus.yara",
+      "section": "Win32.Ransomware.Zeoticus.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Zeppelin.yara.md",
+      "source_title": "Win32.Ransomware.Zeppelin.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Zeppelin.yara",
+      "section": "Win32.Ransomware.Zeppelin.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.ZeroCrypt.yara.md",
+      "source_title": "Win32.Ransomware.ZeroCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.ZeroCrypt.yara",
+      "section": "Win32.Ransomware.ZeroCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Zhen.yara.md",
+      "source_title": "Win32.Ransomware.Zhen.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Zhen.yara",
+      "section": "Win32.Ransomware.Zhen.yara"
+    },
+    {
+      "file": "yara/ransomware/Win32.Ransomware.Zoldon.yara.md",
+      "source_title": "Win32.Ransomware.Zoldon.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win32.Ransomware.Zoldon.yara",
+      "section": "Win32.Ransomware.Zoldon.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Ako.yara.md",
+      "source_title": "Win64.Ransomware.Ako.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Ako.yara",
+      "section": "Win64.Ransomware.Ako.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Albabat.yara.md",
+      "source_title": "Win64.Ransomware.Albabat.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Albabat.yara",
+      "section": "Win64.Ransomware.Albabat.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.AntiWar.yara.md",
+      "source_title": "Win64.Ransomware.AntiWar.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.AntiWar.yara",
+      "section": "Win64.Ransomware.AntiWar.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.AwesomeScott.yara.md",
+      "source_title": "Win64.Ransomware.AwesomeScott.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.AwesomeScott.yara",
+      "section": "Win64.Ransomware.AwesomeScott.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.BlackBasta.yara.md",
+      "source_title": "Win64.Ransomware.BlackBasta.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.BlackBasta.yara",
+      "section": "Win64.Ransomware.BlackBasta.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Cactus.yara.md",
+      "source_title": "Win64.Ransomware.Cactus.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Cactus.yara",
+      "section": "Win64.Ransomware.Cactus.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Curator.yara.md",
+      "source_title": "Win64.Ransomware.Curator.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Curator.yara",
+      "section": "Win64.Ransomware.Curator.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.DST.yara.md",
+      "source_title": "Win64.Ransomware.DST.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.DST.yara",
+      "section": "Win64.Ransomware.DST.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.HermeticRansom.yara.md",
+      "source_title": "Win64.Ransomware.HermeticRansom.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.HermeticRansom.yara",
+      "section": "Win64.Ransomware.HermeticRansom.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.HotCoffee.yara.md",
+      "source_title": "Win64.Ransomware.HotCoffee.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.HotCoffee.yara",
+      "section": "Win64.Ransomware.HotCoffee.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Nokoyawa.yara.md",
+      "source_title": "Win64.Ransomware.Nokoyawa.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Nokoyawa.yara",
+      "section": "Win64.Ransomware.Nokoyawa.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Pandora.yara.md",
+      "source_title": "Win64.Ransomware.Pandora.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Pandora.yara",
+      "section": "Win64.Ransomware.Pandora.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.RedRoman.yara.md",
+      "source_title": "Win64.Ransomware.RedRoman.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.RedRoman.yara",
+      "section": "Win64.Ransomware.RedRoman.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Rook.yara.md",
+      "source_title": "Win64.Ransomware.Rook.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Rook.yara",
+      "section": "Win64.Ransomware.Rook.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.SeedLocker.yara.md",
+      "source_title": "Win64.Ransomware.SeedLocker.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.SeedLocker.yara",
+      "section": "Win64.Ransomware.SeedLocker.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Seth.yara.md",
+      "source_title": "Win64.Ransomware.Seth.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Seth.yara",
+      "section": "Win64.Ransomware.Seth.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Solaso.yara.md",
+      "source_title": "Win64.Ransomware.Solaso.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Solaso.yara",
+      "section": "Win64.Ransomware.Solaso.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Vovalex.yara.md",
+      "source_title": "Win64.Ransomware.Vovalex.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Vovalex.yara",
+      "section": "Win64.Ransomware.Vovalex.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Warlock.yara.md",
+      "source_title": "Win64.Ransomware.Warlock.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Warlock.yara",
+      "section": "Win64.Ransomware.Warlock.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.WhiteBlackCrypt.yara.md",
+      "source_title": "Win64.Ransomware.WhiteBlackCrypt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.WhiteBlackCrypt.yara",
+      "section": "Win64.Ransomware.WhiteBlackCrypt.yara"
+    },
+    {
+      "file": "yara/ransomware/Win64.Ransomware.Wintenzz.yara.md",
+      "source_title": "Win64.Ransomware.Wintenzz.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/ransomware/Win64.Ransomware.Wintenzz.yara",
+      "section": "Win64.Ransomware.Wintenzz.yara"
+    },
+    {
+      "file": "yara/rootkit/Linux.Rootkit.Pumakit.yara.md",
+      "source_title": "Linux.Rootkit.Pumakit.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/rootkit/Linux.Rootkit.Pumakit.yara",
+      "section": "Linux.Rootkit.Pumakit.yara"
+    },
+    {
+      "file": "yara/trojan/Linux.Trojan.AcidRain.yara.md",
+      "source_title": "Linux.Trojan.AcidRain.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Linux.Trojan.AcidRain.yara",
+      "section": "Linux.Trojan.AcidRain.yara"
+    },
+    {
+      "file": "yara/trojan/Linux.Trojan.BiBiWiper.yara.md",
+      "source_title": "Linux.Trojan.BiBiWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Linux.Trojan.BiBiWiper.yara",
+      "section": "Linux.Trojan.BiBiWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.BiBiWiper.yara.md",
+      "source_title": "Win32.Trojan.BiBiWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.BiBiWiper.yara",
+      "section": "Win32.Trojan.BiBiWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.CaddyWiper.yara.md",
+      "source_title": "Win32.Trojan.CaddyWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.CaddyWiper.yara",
+      "section": "Win32.Trojan.CaddyWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.Dridex.yara.md",
+      "source_title": "Win32.Trojan.Dridex.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.Dridex.yara",
+      "section": "Win32.Trojan.Dridex.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.Emotet.yara.md",
+      "source_title": "Win32.Trojan.Emotet.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.Emotet.yara",
+      "section": "Win32.Trojan.Emotet.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.HermeticWiper.yara.md",
+      "source_title": "Win32.Trojan.HermeticWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.HermeticWiper.yara",
+      "section": "Win32.Trojan.HermeticWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.IsaacWiper.yara.md",
+      "source_title": "Win32.Trojan.IsaacWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.IsaacWiper.yara",
+      "section": "Win32.Trojan.IsaacWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.PathWiper.yara.md",
+      "source_title": "Win32.Trojan.PathWiper.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.PathWiper.yara",
+      "section": "Win32.Trojan.PathWiper.yara"
+    },
+    {
+      "file": "yara/trojan/Win32.Trojan.TrickBot.yara.md",
+      "source_title": "Win32.Trojan.TrickBot.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/trojan/Win32.Trojan.TrickBot.yara",
+      "section": "Win32.Trojan.TrickBot.yara"
+    },
+    {
+      "file": "yara/virus/Linux.Virus.Vit.yara.md",
+      "source_title": "Linux.Virus.Vit.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Linux.Virus.Vit.yara",
+      "section": "Linux.Virus.Vit.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Awfull.yara.md",
+      "source_title": "Win32.Virus.Awfull.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Awfull.yara",
+      "section": "Win32.Virus.Awfull.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Cmay.yara.md",
+      "source_title": "Win32.Virus.Cmay.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Cmay.yara",
+      "section": "Win32.Virus.Cmay.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.DeadCode.yara.md",
+      "source_title": "Win32.Virus.DeadCode.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.DeadCode.yara",
+      "section": "Win32.Virus.DeadCode.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Elerad.yara.md",
+      "source_title": "Win32.Virus.Elerad.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Elerad.yara",
+      "section": "Win32.Virus.Elerad.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Greenp.yara.md",
+      "source_title": "Win32.Virus.Greenp.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Greenp.yara",
+      "section": "Win32.Virus.Greenp.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Mocket.yara.md",
+      "source_title": "Win32.Virus.Mocket.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Mocket.yara",
+      "section": "Win32.Virus.Mocket.yara"
+    },
+    {
+      "file": "yara/virus/Win32.Virus.Negt.yara.md",
+      "source_title": "Win32.Virus.Negt.yara",
+      "source_url": "https://github.com/reversinglabs/reversinglabs-yara-rules/blob/e0a0be54aa1e11ccfd6854e4f19e9476f328fd84/yara/virus/Win32.Virus.Negt.yara",
+      "section": "Win32.Virus.Negt.yara"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<!-- source: https://github.com/MicrosoftDocs/entra-docs/blob/3db172a622c96d9fccdca0143085ea28ec04ba41/docs/id-governance/review-recommendations-access-reviews.md -->
+---
+title: Review recommendations for Access reviews
+description: Learn how to review access of group members with review recommendations in Microsoft Entra access reviews.
+editor: markwahl-msft
+ms.subservice: access-reviews
+ms.topic: how-to
+ms.date: 03/12/2026
+ms.reviewer: mwahl
+#Customer Intent: As a reviewer, I want to understand review recommendations in access reviews so that I can make informed decisions about user access.
+---
+
+# Review recommendations for Access reviews 
+
+Decision makers who review users' access and perform access reviews can use system based recommendations to help them decide whether to continue their access or deny their access to resources. For more information about how to use review recommendations, see [Enable decision helpers](create-access-review.md#next-settings).
+
+## Prerequisites
+ 
+Creating a review with [user-to-group affiliation](#user-to-group-affiliation) recommendation requires a Microsoft Entra ID Governance license.
+ 
+For more information, see [License requirements](access-reviews-overview.md#license-requirements).
+
+## Inactive user recommendations
+
+A user is considered 'inactive' if they haven't signed into the tenant within the last 30 days. This behavior is adjusted for reviews of application assignments, which check each user's last activity in the app as opposed to the entire tenant. When inactive user recommendations are enabled for an access review, the last sign-in date for each user is evaluated once the review starts, and any user that hasn't signed in within 30 days is given a recommended action of Deny. Additionally, when these decision helpers are enabled, reviewers are able to see the last sign-in date for all users being reviewed. This sign-in date, and the resulting recommendation, is determined when the review begins and isn't updated while the review is in-progress.
+
+## User-to-Group Affiliation
+
+An easier and more accurate review experience empowers IT admins and reviewers to make more informed decisions. This Machine Learning based recommendation opens the journey to automate access reviews, which enable intelligent automation, and reduces access rights attestation fatigue.
+
+User-to-Group Affiliation is defined as two or more users who share similar characteristics in an organization's reporting structure.
+
+This recommendation detects user affiliation with other users within the group, based on organization's reporting-structure similarity. The recommendation relies on a scoring mechanism, which is calculated by computing the user’s average distance from the remaining users in the group. Users who are distant from all the other group members based on their organization's chart, are considered to have "low affiliation" within the group.
+
+If the creator of the access review enables the decision helper, reviewers can receive User-to-Group Affiliation recommendations for group access reviews.
+
+> [!NOTE]
+> This feature is only available for users in your directory. A user should have a manager attribute and should be a part of an organizational hierarchy for the User-to-Group Affiliation to work.
+>
+>Groups with more than 600 users aren't supported.
+
+The following image has an example of an organization's reporting structure in a cosmetics company: 
+
+:::image type="content" source="media/review-recommendations-group-access-reviews/org-chart-example.png" alt-text="Screenshot of an org example chart for access reviews." lightbox="media/review-recommendations-group-access-reviews/org-chart-example.png":::
+
+Based on the reporting structure in the example image, users who are a statistically significant distance away from other users within the group, would get a "*Deny*" recommendation by the system if the User-to-Group Affiliation recommendation was selected by the reviewer for group access reviews. 
+
+For example, Phil who works within the Personal care division is in a group with Debby, Irwin, and Emily who all work within the Cosmetics division. The group is called *Fresh Skin*. If an Access Review for the group Fresh Skin is performed, based on the reporting structure and distance away from the other group members, Phil would be considered to have low affiliation. The system creates a **Deny** recommendation in the group access review.
+
+## Next Steps
+- [Create an access review](create-access-review.md)
+- [Review access to groups or applications](perform-access-review.md)

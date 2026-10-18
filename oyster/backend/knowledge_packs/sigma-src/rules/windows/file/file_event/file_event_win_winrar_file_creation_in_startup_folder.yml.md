@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_winrar_file_creation_in_startup_folder.yml -->
+title: WinRAR Creating Files in Startup Locations
+id: 74a2b37d-fea4-41e0-9ac7-c9fbcf1f60cc
+status: experimental
+description: |
+    Detects WinRAR creating files in Windows startup locations, which may indicate an attempt to establish persistence by adding malicious files to the Startup folder.
+    This kind of behaviour has been associated with exploitation of WinRAR path traversal vulnerability CVE-2025-6218 or CVE-2025-8088.
+references:
+    - https://github.com/mulwareX/CVE-2025-6218-POC
+    - https://x.com/0x534c/status/1944694507787710685
+    - https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability/
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2025-07-16
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.t1547.001
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        Image|endswith:
+            - '\WinRAR.exe'
+            - '\Rar.exe'
+        TargetFilename|contains: '\Start Menu\Programs\Startup\'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

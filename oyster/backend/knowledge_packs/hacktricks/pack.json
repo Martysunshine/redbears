@@ -1,0 +1,30 @@
+{
+  "id": "hacktricks",
+  "name": "HackTricks Techniques (summarized)",
+  "version": "1.0.0",
+  "title": "HackTricks — Privilege Escalation & Post-Exploitation",
+  "domain": "offensive",
+  "security_domain": "offensive-techniques",
+  "description": "Original concise summaries of common technique areas popularized by HackTricks: Linux and Windows privilege escalation, Active Directory, containers, and cloud checks — as methodology, not payloads. Links back to the canonical HackTricks pages.",
+  "authority": "HackTricks (community)",
+  "publisher": "HackTricks / Carlos Polop",
+  "trust_level": "community",
+  "licence": "LICENSING NOTE: HackTricks content is under an upstream licence that has evolved (historically CC BY-NC; consult the current repository LICENSE before any reuse). This pack deliberately contains ONLY original, condensed methodology summaries authored for Oyster, with attribution and links to the canonical pages — it does not copy HackTricks text, payloads, or command corpora.",
+  "attribution": "Techniques popularized by HackTricks — https://book.hacktricks.wiki/ (Carlos Polop and contributors). Summaries are original; verify against the source.",
+  "tags": ["privesc", "linux", "windows", "active-directory", "containers", "cloud", "post-exploitation"],
+  "supported_tasks": ["privesc-checklist", "post-exploitation-planning", "technique-lookup"],
+  "intended_audience": ["red-team", "pentester"],
+  "applicable_platforms": ["linux", "windows", "active-directory", "kubernetes", "cloud"],
+  "risk_classification": "medium",
+  "active_execution_possible": true,
+  "approval_requirements": "Techniques here can be operationalized against a target. Any active use requires an in-scope, authorized target and the normal approval + audit path — this pack is read-only knowledge.",
+  "scope_requirements": "Target must be in the written engagement scope before any technique is executed by a tool.",
+  "freshness_policy": "Review quarterly; technique landscape shifts frequently.",
+  "retrieved_at": "2026-07-24",
+  "last_reviewed_at": "2026-07-24",
+  "source_urls": ["https://book.hacktricks.wiki/", "https://github.com/HackTricks-wiki/hacktricks"],
+  "docs": [
+    {"file": "linux-privesc.md", "source_title": "HackTricks — Linux Privilege Escalation", "source_url": "https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html", "section": "Linux PrivEsc", "risk_level": "medium"},
+    {"file": "windows-ad.md", "source_title": "HackTricks — Windows & Active Directory", "source_url": "https://book.hacktricks.wiki/en/windows-hardening/active-directory-methodology/index.html", "section": "Windows / AD", "risk_level": "medium"}
+  ]
+}

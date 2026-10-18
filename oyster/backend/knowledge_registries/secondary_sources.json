@@ -1,0 +1,37 @@
+{
+  "registry": "secondary_sources",
+  "version": "1.0.0",
+  "note": "Provider DEFINITIONS for large payload/wordlist repositories. These are NOT ingested blindly. Payload knowledge is separated from ordinary explanatory knowledge and carries high-risk metadata. Oyster indexes only the CATALOGUE/file metadata so it can recommend the correct list to an APPROVED tool — it does not embed millions of raw entries, and it never auto-executes a payload.",
+  "items": [
+    {
+      "id": "payloadsallthethings",
+      "name": "PayloadsAllTheThings",
+      "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+      "purpose": "Reference collection of payloads and bypass techniques per vulnerability class.",
+      "licence": "See upstream (mixed / MIT-style) — confirm before reuse.",
+      "ingest_strategy": "catalogue-and-metadata-only",
+      "authorized_lab_only": true,
+      "risk_level": "high",
+      "requires_target_scope": true,
+      "active_execution": "possible",
+      "approval_required": true,
+      "enabled": false
+    },
+    {
+      "id": "seclists",
+      "name": "SecLists",
+      "url": "https://github.com/danielmiessler/SecLists",
+      "purpose": "Collection of wordlists for discovery, fuzzing, and password testing.",
+      "licence": "MIT",
+      "ingest_strategy": "index-catalogue-and-file-metadata-only",
+      "catalogue_fields": ["path", "category", "approx_line_count", "intended_use"],
+      "authorized_lab_only": true,
+      "risk_level": "high",
+      "requires_target_scope": true,
+      "active_execution": "possible",
+      "approval_required": true,
+      "enabled": false,
+      "guidance": "Recommend the correct list (e.g. Discovery/Web-Content/common.txt for content discovery, a specific rockyou-derived list for password tests) to an approved tool; do not embed the list contents into retrieval."
+    }
+  ]
+}

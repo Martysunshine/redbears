@@ -1,0 +1,18 @@
+<!-- source: https://d3fend.mitre.org/technique/d3f:HomoglyphDetection/ -->
+# D3FEND — Homoglyph Detection
+
+**D3FEND tactic:** Detect
+**Acts on:** analyzes Email, analyzes URL
+
+## Counters ATT&CK techniques
+- **T0817** — Drive-by Compromise (sub-technique of Initial Access Technique; ATT&CK tactic: Initial Access)
+- **T0865** — Spearphishing Attachment (sub-technique of Initial Access Technique; ATT&CK tactic: Initial Access)
+- **T1114.001** — Local Email Collection (sub-technique of Email Collection; ATT&CK tactic: Collection)
+- **T1189** — Drive-by Compromise (sub-technique of Initial Access Technique; ATT&CK tactic: Initial Access)
+- **T1204.001** — Malicious Link (sub-technique of User Execution; ATT&CK tactic: Execution)
+- **T1534** — Internal Spearphishing (sub-technique of Lateral Movement Technique; ATT&CK tactic: Lateral Movement)
+- **T1566.001** — Spearphishing Attachment (sub-technique of Phishing; ATT&CK tactic: Initial Access)
+- **T1566.002** — Spearphishing Link (sub-technique of Phishing; ATT&CK tactic: Initial Access)
+- **T1566.003** — Spearphishing via Service (sub-technique of Phishing; ATT&CK tactic: Initial Access)
+
+Source: MITRE D3FEND official ontology mapping export (d3fend.mitre.org/api/ontology/inference/d3fend-full-mappings.csv).

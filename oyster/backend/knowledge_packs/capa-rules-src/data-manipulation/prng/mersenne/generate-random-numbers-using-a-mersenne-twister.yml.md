@@ -1,0 +1,23 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/prng/mersenne/generate-random-numbers-using-a-mersenne-twister.yml -->
+rule:
+  meta:
+    name: generate random numbers using a Mersenne Twister
+    namespace: data-manipulation/prng/mersenne
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - Cryptography::Generate Pseudo-random Sequence [C0021]
+    examples:
+      - D9630C174B8FF5C0AA26168DF523E63E:0x41A850
+  features:
+    - or:
+      - number: 0x6C078965
+      - number: 0x9908B0DF
+      - number: 0x9D2C5680
+      - number: 0xEFC60000
+      - number: 0xFF3A58AD
+      - number: 0xB5026F5AA96619E9
+      - number: 0x71D67FFFEDA60000

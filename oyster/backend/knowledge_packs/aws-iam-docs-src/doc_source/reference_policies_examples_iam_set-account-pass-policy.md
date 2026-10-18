@@ -1,0 +1,20 @@
+<!-- source: https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_set-account-pass-policy.md -->
+# IAM: Allows setting the account password requirements programmatically and in the console<a name="reference_policies_examples_iam_set-account-pass-policy"></a>
+
+This example shows how you might create an identity\-based policy that allows a user to view and update their account's password requirements\. The password requirements specify the complexity requirements and mandatory rotation periods for the account members' passwords\. This policy defines permissions for programmatic and console access\.
+
+To learn how to set the account password requirements policy for your account, see [Setting an account password policy for IAM users](id_credentials_passwords_account-policy.md)\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Effect": "Allow",
+        "Action": [
+            "iam:GetAccountPasswordPolicy",
+            "iam:UpdateAccountPasswordPolicy"
+        ],
+        "Resource": "*"
+    }
+}
+```

@@ -1,0 +1,15 @@
+<!-- source: https://github.com/OWASP/mastg/blob/0e88142b5d7aad8f052b4e75199a8aad9b89d5b5/tools/generic/MASTG-TOOL-0106.md -->
+---
+title: Fridump
+platform: generic
+source: https://github.com/Nightbringer21/fridump
+hosts: [windows, linux, macOS]
+---
+
+Fridump is an open source memory dumping tool, primarily aimed to penetration testers and developers. Fridump is using the Frida framework to dump accessible memory addresses from any platform supported.
+
+More information:
+
+- [Introduction to Fridump](https://pentestcorner.com/introduction-to-fridump/)
+- [iOS Examples](https://pentestcorner.com/fridump-ios-examples/)
+- [Android Examples](https://pentestcorner.com/fridump-android-examples/)

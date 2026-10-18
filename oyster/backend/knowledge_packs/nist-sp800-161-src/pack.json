@@ -1,0 +1,650 @@
+{
+  "id": "nist-sp800-161-src",
+  "name": "nist-sp800-161-src",
+  "version": "c8250b1ea542",
+  "title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management",
+  "domain": "defensive",
+  "security_domain": "supply-chain-security",
+  "description": "Imported from https://doi.org/10.6028/NIST.SP.800-161r1 at c8250b1ea542. 102 documents.",
+  "authority": "NIST",
+  "publisher": "National Institute of Standards and Technology",
+  "trust_level": "official",
+  "licence": "public-domain",
+  "attribution": "NIST Special Publication 800-161 Revision 1, Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations \u2014 a U.S. Government work, not subject to copyright in the United States.",
+  "tags": [
+    "nist",
+    "supply-chain",
+    "c-scrm",
+    "risk-management"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "general"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Stable final publication (May 2022); re-check for superseding revision.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "nist-sp800-161-src",
+  "upstream_commit": "c8250b1ea542",
+  "source_urls": [
+    "https://doi.org/10.6028/NIST.SP.800-161r1",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1.pdf"
+  ],
+  "docs": [
+    {
+      "file": "sections/1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.6 Methodology for Building C-SCRM Guidance Using NIST SP 800-39; NIST SP 800-",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.6 Methodology for Building C-SCRM Guidance Using NIST SP 800-39; NIST SP 800-"
+    },
+    {
+      "file": "sections/1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1 Purpose",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1 Purpose"
+    },
+    {
+      "file": "sections/1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.2 Target Audience",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.2 Target Audience"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4 Refer to Section 3.4 of this publication.",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4 Refer to Section 3.4 of this publication."
+    },
+    {
+      "file": "sections/1-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.3 Guidance for Cloud Service Providers",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.3 Guidance for Cloud Service Providers"
+    },
+    {
+      "file": "sections/1-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4 Audience Profiles and Document Use Guidance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4 Audience Profiles and Document Use Guidance"
+    },
+    {
+      "file": "sections/1-4-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4.1 Enterprise Risk Management and C-SCRM Owners and Operators",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4.1 Enterprise Risk Management and C-SCRM Owners and Operators"
+    },
+    {
+      "file": "sections/1-4-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4.2 Enterprise, Agency, and Mission and Business Process Owners and Operators",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4.2 Enterprise, Agency, and Mission and Business Process Owners and Operators"
+    },
+    {
+      "file": "sections/1-4-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4.3 Acquisition and Procurement Owners and Operators",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4.3 Acquisition and Procurement Owners and Operators"
+    },
+    {
+      "file": "sections/1-4-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4.4 Information Security, Privacy, or Cybersecurity Operators",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4.4 Information Security, Privacy, or Cybersecurity Operators"
+    },
+    {
+      "file": "sections/1-4-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.4.5 System Development, System Engineering, and System Implementation Personnel",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.4.5 System Development, System Engineering, and System Implementation Personnel"
+    },
+    {
+      "file": "sections/1-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.5 Background",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.5 Background"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 These dimensions are layers of consideration for enterprises as they approach C-SCRM and",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 These dimensions are layers of consideration for enterprises as they approach C-SCRM and"
+    },
+    {
+      "file": "sections/8.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 8 NIST SP 800-160 Vol.2",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "8 NIST SP 800-160 Vol.2"
+    },
+    {
+      "file": "sections/1-5-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.5.1 Enterprise\u2019s Supply Chain",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.5.1 Enterprise\u2019s Supply Chain"
+    },
+    {
+      "file": "sections/10.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 10 NIST SP 800-37, Rev. 2 defines Operational Technology as:",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "10 NIST SP 800-37, Rev. 2 defines Operational Technology as:"
+    },
+    {
+      "file": "sections/1-5-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.5.2 Supplier Relationships Within Enterprises",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.5.2 Supplier Relationships Within Enterprises"
+    },
+    {
+      "file": "sections/1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.6 Methodology for Building C-SCRM Guidance Using NIST SP 800-39; NIST SP 800-",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.6 Methodology for Building C-SCRM Guidance Using NIST SP 800-39; NIST SP 800-"
+    },
+    {
+      "file": "sections/1-7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.7 Relationship to Other Publications and Publication Summary",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.7 Relationship to Other Publications and Publication Summary"
+    },
+    {
+      "file": "sections/2-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1 The Business Case for C-SCRM",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1 The Business Case for C-SCRM"
+    },
+    {
+      "file": "sections/2-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.2 Cybersecurity Risks Throughout Supply Chains",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.2 Cybersecurity Risks Throughout Supply Chains"
+    },
+    {
+      "file": "sections/16.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 16 SECURE Technology Act - Public Law 115-390: https://www.govinfo.gov/app/details/COMPS-15413",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "16 SECURE Technology Act - Public Law 115-390: https://www.govinfo.gov/app/details/COMPS-15413"
+    },
+    {
+      "file": "sections/2-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.3 Multilevel Risk Management18",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.3 Multilevel Risk Management18"
+    },
+    {
+      "file": "sections/2-3-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.3.1 Roles and Responsibilities Across the Three Levels",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.3.1 Roles and Responsibilities Across the Three Levels"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 Enterprise  Executive Leadership:",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 Enterprise  Executive Leadership:"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 Mission and",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 Mission and"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3 Operational Systems Management:",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3 Operational Systems Management:"
+    },
+    {
+      "file": "sections/2-3-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.3.2 Level 1 \u2013 Enterprise",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.3.2 Level 1 \u2013 Enterprise"
+    },
+    {
+      "file": "sections/2-3-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.3.3 Level 2 \u2013 Mission and Business Process",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.3.3 Level 2 \u2013 Mission and Business Process"
+    },
+    {
+      "file": "sections/2-3-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.3.4 Level 3 \u2013 Operational",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.3.4 Level 3 \u2013 Operational"
+    },
+    {
+      "file": "sections/3-1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.1 Acquisition in the C-SCRM Strategy and Implementation Plan",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.1 Acquisition in the C-SCRM Strategy and Implementation Plan"
+    },
+    {
+      "file": "sections/3-1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.2 The Role of C-SCRM in the Acquisition Process",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.2 The Role of C-SCRM in the Acquisition Process"
+    },
+    {
+      "file": "sections/3-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.2 Supply Chain Information Sharing",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.2 Supply Chain Information Sharing"
+    },
+    {
+      "file": "sections/3-4-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.4.1 Foundational Practices",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.4.1 Foundational Practices"
+    },
+    {
+      "file": "sections/3-4-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.4.2 Sustaining Practices",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.4.2 Sustaining Practices"
+    },
+    {
+      "file": "sections/3-4-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.4.3 Enhancing Practices",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.4.3 Enhancing Practices"
+    },
+    {
+      "file": "sections/3-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.5 Capability Implementation Measurement and C-SCRM Measures",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.5 Capability Implementation Measurement and C-SCRM Measures"
+    },
+    {
+      "file": "sections/3-5-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.5.1 Measuring C-SCRM Through Performance Measures",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.5.1 Measuring C-SCRM Through Performance Measures"
+    },
+    {
+      "file": "sections/3-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.6 Dedicated Resources",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.6 Dedicated Resources"
+    },
+    {
+      "file": "sections/1-0.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.0 Available at https://cyberriskinstitute.org/the-profile/",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.0 Available at https://cyberriskinstitute.org/the-profile/"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 Analyze these controls to determine how they apply to C-SCRM.",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 Analyze these controls to determine how they apply to C-SCRM."
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 7 Develop C-SCRM-specific supplemental guidance for each C-SCRM control.",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "7 Develop C-SCRM-specific supplemental guidance for each C-SCRM control."
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 Enterprises should:",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 Enterprises should:"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 7 Review and confirm sustained compliance with the terms and conditions of the agreement on an",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "7 Review and confirm sustained compliance with the terms and conditions of the agreement on an"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 Accurately and minimally reflects the organization\u2019s tier one suppliers that may present a",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 Accurately and minimally reflects the organization\u2019s tier one suppliers that may present a"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 To translate the often disconnected information garnered from a risk assessment, as",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 To translate the often disconnected information garnered from a risk assessment, as"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 To determine the impact that a successful exercise of a specific vulnerability would have",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 To determine the impact that a successful exercise of a specific vulnerability would have"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3 The inadequacy of the modifications is undetected, and the routers are installed in the",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3 The inadequacy of the modifications is undetected, and the routers are installed in the"
+    },
+    {
+      "file": "sections/1-1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.1 Purpose",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.1 Purpose"
+    },
+    {
+      "file": "sections/1-1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.2 Authority and Compliance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.2 Authority and Compliance"
+    },
+    {
+      "file": "sections/1-1-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.3 Strategic Objectives",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.3 Strategic Objectives"
+    },
+    {
+      "file": "sections/1-1-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.4 Implementation Plan and Progress Tracking",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.4 Implementation Plan and Progress Tracking"
+    },
+    {
+      "file": "sections/1-1-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.5 Roles and Responsibilities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.5 Roles and Responsibilities"
+    },
+    {
+      "file": "sections/1-1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.6 Definitions",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.6 Definitions"
+    },
+    {
+      "file": "sections/1-1-7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1.1.7 Revision and Maintenance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1.1.7 Revision and Maintenance"
+    },
+    {
+      "file": "sections/2-1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.1 Authority and Compliance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.1 Authority and Compliance"
+    },
+    {
+      "file": "sections/2-1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.2 Description",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.2 Description"
+    },
+    {
+      "file": "sections/2-1-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.3 Policy",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.3 Policy"
+    },
+    {
+      "file": "sections/2-1-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.4 Roles and Responsibilities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.4 Roles and Responsibilities"
+    },
+    {
+      "file": "sections/2-1-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.5 Definitions",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.5 Definitions"
+    },
+    {
+      "file": "sections/2-1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2.1.6 Revision and Maintenance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2.1.6 Revision and Maintenance"
+    },
+    {
+      "file": "sections/3-1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.1 System Name and Identifier",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.1 System Name and Identifier"
+    },
+    {
+      "file": "sections/3-1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.2 System Description",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.2 System Description"
+    },
+    {
+      "file": "sections/3-1-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.3 System Information Type and Categorization",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.3 System Information Type and Categorization"
+    },
+    {
+      "file": "sections/3-1-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.4 System Operational Status",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.4 System Operational Status"
+    },
+    {
+      "file": "sections/3-1-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.5 System/Network Diagrams, Inventory, and Life Cycle Activities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.5 System/Network Diagrams, Inventory, and Life Cycle Activities"
+    },
+    {
+      "file": "sections/3-1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.6 Information Exchange and System Connections",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.6 Information Exchange and System Connections"
+    },
+    {
+      "file": "sections/3-1-7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.7 Security Control Details",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.7 Security Control Details"
+    },
+    {
+      "file": "sections/3-1-8.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.8 Role Identification",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.8 Role Identification"
+    },
+    {
+      "file": "sections/3-1-9.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.9 Contingencies and Emergencies",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.9 Contingencies and Emergencies"
+    },
+    {
+      "file": "sections/3-1-10.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.10 Related Laws, Regulations, and Policies",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.10 Related Laws, Regulations, and Policies"
+    },
+    {
+      "file": "sections/3-1-11.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.11 Revision and Maintenance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.11 Revision and Maintenance"
+    },
+    {
+      "file": "sections/3-1-13.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.13 Acronym List",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.13 Acronym List"
+    },
+    {
+      "file": "sections/3-1-14.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3.1.14 Attachments",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3.1.14 Attachments"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4 CYBERSECURITY SUPPLY CHAIN RISK ASSESSMENT TEMPLATE",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4 CYBERSECURITY SUPPLY CHAIN RISK ASSESSMENT TEMPLATE"
+    },
+    {
+      "file": "sections/4-1-1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.1 Authority and Compliance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.1 Authority and Compliance"
+    },
+    {
+      "file": "sections/4-1-2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.2 Description",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.2 Description"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 5 Risk Response Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "5 Risk Response Analysis"
+    },
+    {
+      "file": "sections/4-1-3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.3 Information Gathering and Scoping Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.3 Information Gathering and Scoping Analysis"
+    },
+    {
+      "file": "sections/4-1-4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.4 Threat Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.4 Threat Analysis"
+    },
+    {
+      "file": "sections/4-1-5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.5 Vulnerability Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.5 Vulnerability Analysis"
+    },
+    {
+      "file": "sections/4-1-6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.6 Impact Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.6 Impact Analysis"
+    },
+    {
+      "file": "sections/4-1-7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.7 Risk Response Analysis",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.7 Risk Response Analysis"
+    },
+    {
+      "file": "sections/4-1-8.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.8 Roles and Responsibilities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.8 Roles and Responsibilities"
+    },
+    {
+      "file": "sections/4-1-9.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.9 Definitions",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.9 Definitions"
+    },
+    {
+      "file": "sections/4-1-10.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4.1.10 Revision and Maintenance",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4.1.10 Revision and Maintenance"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 The Specially Designated Nationals (SDN) and Blocked Persons List: The Treasury",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 The Specially Designated Nationals (SDN) and Blocked Persons List: The Treasury"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 The Sectoral Sanctions Identifications (SSI) List: The sectoral sanctions imposed on",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 The Sectoral Sanctions Identifications (SSI) List: The sectoral sanctions imposed on"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3 The Foreign Sanctions Evaders (FSE) List: OFAC publishes a list of foreign individuals",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3 The Foreign Sanctions Evaders (FSE) List: OFAC publishes a list of foreign individuals"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4 The System for Award Management (SAM) Exclusions: The SAM contains the",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4 The System for Award Management (SAM) Exclusions: The SAM contains the"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 5 The List of Foreign Financial Institutions Subject to Correspondent Account",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "5 The List of Foreign Financial Institutions Subject to Correspondent Account"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 6 The Persons Identified as Blocked: Pursuant to 31 CFR 560 and 31 CFR 560.304,",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "6 The Persons Identified as Blocked: Pursuant to 31 CFR 560 and 31 CFR 560.304,"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 7 The BIS Unverified List: Parties listed on the Unverified List (UVL) are ineligible to",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "7 The BIS Unverified List: Parties listed on the Unverified List (UVL) are ineligible to"
+    },
+    {
+      "file": "sections/8.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 8 The 2019 National Defense Authorization Act, Section 889: Unless a waiver is granted,",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "8 The 2019 National Defense Authorization Act, Section 889: Unless a waiver is granted,"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 5 Urgent National Security",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "5 Urgent National Security"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 4 National Security Interest",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "4 National Security Interest"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 Agency High Risk Non-adversarial-related \u201chigh\u201d risk associated with an",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 Agency High Risk Non-adversarial-related \u201chigh\u201d risk associated with an"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 Agency Low or Moderate",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 Agency Low or Moderate"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 Supply chain-specific constraints",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 Supply chain-specific constraints"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 3 Utilizing a mix of separate and integrated documents based on agency needs and",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "3 Utilizing a mix of separate and integrated documents based on agency needs and"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 1 The likelihood that one or more elements within the supply chain itself is compromised.",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "1 The likelihood that one or more elements within the supply chain itself is compromised."
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-161r1 \u2014 Cybersecurity Supply Chain Risk Management \u2014 2 The likelihood of the system or component within the supply chain being compromised,",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-161r1",
+      "section": "2 The likelihood of the system or component within the supply chain being compromised,"
+    }
+  ]
+}

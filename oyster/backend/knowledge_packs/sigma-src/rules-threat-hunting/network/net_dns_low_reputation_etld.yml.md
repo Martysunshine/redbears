@@ -1,0 +1,43 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/network/net_dns_low_reputation_etld.yml -->
+title: Low Reputation Effective Top-Level Domain (eTLD)
+id: cf5ee356-65c4-4556-8d11-6977fcdfed4b
+status: experimental
+description: Detects DNS queries to domains within known low reputation eTLDs. This rule uses AlphaSOC's threat intelligence data and is updated on a monthly basis.
+references:
+    - https://feeds.alphasoc.net/bad-etlds.txt
+author: Norbert Jaśniewicz (AlphaSOC)
+date: 2025-08-04
+tags:
+    - attack.command-and-control
+    - attack.t1071.004
+    - attack.initial-access
+    - detection.threat-hunting
+logsource:
+    category: dns
+detection:
+    selection:
+        query|endswith:
+            - '.duckdns.org'
+            - '.top'
+            - '.ddns.net'
+            - '.gl.at.ply.gg'
+            - '.portmap.io'
+            - '.icu'
+            - '.zapto.org'
+            - '.live'
+            - '.hopto.org'
+            - '.portmap.host'
+            - '.sbs'
+            - '.sytes.net'
+            - '.click'
+            - '.ydns.eu'
+            - '.site'
+            - '.cloud'
+            - '.no-ip.org'
+            - '.kozow.com'
+            - '.lat'
+            - '.pro'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

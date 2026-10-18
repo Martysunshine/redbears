@@ -1,0 +1,31 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/file-system/read/read-file-on-windows.yml -->
+rule:
+  meta:
+    name: read file on Windows
+    namespace: host-interaction/file-system/read
+    authors:
+      - moritz.raabe@mandiant.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - File System::Read File [C0051]
+    examples:
+      - BFB9B5391A13D0AFD787E87AB90F14F5:0x1314567B
+  features:
+    - or:
+      - and:
+        - os: windows
+        - optional:
+          - and:
+            - number: 0x80000000 = GENERIC_READ
+            - match: create or open file
+        - or:
+          - api: kernel32.ReadFile
+          - api: ReadFileEx
+          - api: NtReadFile
+          - api: ZwReadFile
+          - api: LZRead
+          - api: _read
+          - api: fread

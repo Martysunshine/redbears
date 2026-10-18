@@ -1,0 +1,48 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/lnx_auditd_system_info_discovery.yml -->
+title: System Information Discovery - Auditd
+id: f34047d9-20d3-4e8b-8672-0a35cc50dc71
+status: test
+description: Detects System Information Discovery commands
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f296668303c29d3f4c07e42bdd2b28d8dd6625f9/atomics/T1082/T1082.md
+author: Pawel Mazur
+date: 2021-09-03
+modified: 2023-03-06
+tags:
+    - attack.discovery
+    - attack.t1082
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection_1:
+        type: PATH
+        name:
+            - /etc/lsb-release
+            - /etc/redhat-release
+            - /etc/issue
+    selection_2:
+        type: EXECVE
+        a0:
+            - uname
+            - uptime
+            - lsmod
+            - hostname
+            - env
+    selection_3:
+        type: EXECVE
+        a0: grep
+        a1|contains:
+            - vbox
+            - vm
+            - xen
+            - virtio
+            - hv
+    selection_4:
+        type: EXECVE
+        a0: kmod
+        a1: list
+    condition: 1 of selection_*
+falsepositives:
+    - Likely
+level: low

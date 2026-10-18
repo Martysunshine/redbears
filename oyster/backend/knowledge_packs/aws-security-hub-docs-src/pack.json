@@ -1,0 +1,1199 @@
+{
+  "id": "aws-security-hub-docs-src",
+  "name": "aws-security-hub-docs-src",
+  "version": "47bfe2f1de2e",
+  "title": "AWS Security Hub User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/securityhub/ at 47bfe2f1de2e. 193 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "AWS Security Hub User Guide, Amazon.com, Inc., CC BY-SA 4.0.",
+  "tags": [
+    "aws",
+    "security-hub",
+    "cloud",
+    "posture-management"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'master' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-security-hub-docs-src",
+  "upstream_commit": "47bfe2f1de2e486914543113d2e751f3e2ed8868",
+  "source_urls": [
+    "https://docs.aws.amazon.com/securityhub/",
+    "https://github.com/awsdocs/aws-security-hub-user-guide"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/account-controls.md",
+      "source_title": "AWS account controls<a name=\"account-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/account-controls.md",
+      "section": "AWS account controls<a name=\"account-controls\"></a>"
+    },
+    {
+      "file": "doc_source/account-management-manual.md",
+      "source_title": "Managing member accounts by invitation<a name=\"account-management-manual\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/account-management-manual.md",
+      "section": "Managing member accounts by invitation<a name=\"account-management-manual\"></a>"
+    },
+    {
+      "file": "doc_source/accounts-admin-member-relationship.md",
+      "source_title": "Effects of an administrator\\-member relationship<a name=\"accounts-admin-member-relationship\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/accounts-admin-member-relationship.md",
+      "section": "Effects of an administrator\\-member relationship<a name=\"accounts-admin-member-relationship\"></a>"
+    },
+    {
+      "file": "doc_source/accounts-orgs-auto-enable.md",
+      "source_title": "Automatically enabling new organization accounts<a name=\"accounts-orgs-auto-enable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/accounts-orgs-auto-enable.md",
+      "section": "Automatically enabling new organization accounts<a name=\"accounts-orgs-auto-enable\"></a>"
+    },
+    {
+      "file": "doc_source/accounts-orgs-disassociate.md",
+      "source_title": "Disassociating member accounts from your organization<a name=\"accounts-orgs-disassociate\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/accounts-orgs-disassociate.md",
+      "section": "Disassociating member accounts from your organization<a name=\"accounts-orgs-disassociate\"></a>"
+    },
+    {
+      "file": "doc_source/accounts-transition-to-orgs.md",
+      "source_title": "Making the transition to AWS Organizations for account management<a name=\"accounts-transition-to-orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/accounts-transition-to-orgs.md",
+      "section": "Making the transition to AWS Organizations for account management<a name=\"accounts-transition-to-orgs\"></a>"
+    },
+    {
+      "file": "doc_source/acm-controls.md",
+      "source_title": "AWS Certificate Manager controls<a name=\"acm-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/acm-controls.md",
+      "section": "AWS Certificate Manager controls<a name=\"acm-controls\"></a>"
+    },
+    {
+      "file": "doc_source/apigateway-controls.md",
+      "source_title": "Amazon API Gateway controls<a name=\"apigateway-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/apigateway-controls.md",
+      "section": "Amazon API Gateway controls<a name=\"apigateway-controls\"></a>"
+    },
+    {
+      "file": "doc_source/asff-changes-consolidation.md",
+      "source_title": "Impact of consolidation on ASFF fields and values<a name=\"asff-changes-consolidation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-changes-consolidation.md",
+      "section": "Impact of consolidation on ASFF fields and values<a name=\"asff-changes-consolidation\"></a>"
+    },
+    {
+      "file": "doc_source/asff-required-attributes.md",
+      "source_title": "Required attributes<a name=\"asff-required-attributes\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-required-attributes.md",
+      "section": "Required attributes<a name=\"asff-required-attributes\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsapigateway.md",
+      "source_title": "AwsApiGateway<a name=\"asff-resourcedetails-awsapigateway\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsapigateway.md",
+      "section": "AwsApiGateway<a name=\"asff-resourcedetails-awsapigateway\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsautoscaling.md",
+      "source_title": "AwsAutoScaling<a name=\"asff-resourcedetails-awsautoscaling\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsautoscaling.md",
+      "section": "AwsAutoScaling<a name=\"asff-resourcedetails-awsautoscaling\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsbackup.md",
+      "source_title": "AwsBackup<a name=\"asff-resourcedetails-awsbackup\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsbackup.md",
+      "section": "AwsBackup<a name=\"asff-resourcedetails-awsbackup\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscertificatemanager.md",
+      "source_title": "AwsCertificateManager<a name=\"asff-resourcedetails-awscertificatemanager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscertificatemanager.md",
+      "section": "AwsCertificateManager<a name=\"asff-resourcedetails-awscertificatemanager\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscloudformation.md",
+      "source_title": "AwsCloudFormation<a name=\"asff-resourcedetails-awscloudformation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscloudformation.md",
+      "section": "AwsCloudFormation<a name=\"asff-resourcedetails-awscloudformation\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscloudfront.md",
+      "source_title": "AwsCloudFront<a name=\"asff-resourcedetails-awscloudfront\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscloudfront.md",
+      "section": "AwsCloudFront<a name=\"asff-resourcedetails-awscloudfront\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscloudtrail.md",
+      "source_title": "AwsCloudTrail<a name=\"asff-resourcedetails-awscloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscloudtrail.md",
+      "section": "AwsCloudTrail<a name=\"asff-resourcedetails-awscloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscloudwatch.md",
+      "source_title": "AwsCloudWatch<a name=\"asff-resourcedetails-awscloudwatch\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscloudwatch.md",
+      "section": "AwsCloudWatch<a name=\"asff-resourcedetails-awscloudwatch\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awscodebuild.md",
+      "source_title": "AwsCodeBuild<a name=\"asff-resourcedetails-awscodebuild\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awscodebuild.md",
+      "section": "AwsCodeBuild<a name=\"asff-resourcedetails-awscodebuild\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsdynamodb.md",
+      "source_title": "AwsDynamoDB<a name=\"asff-resourcedetails-awsdynamodb\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsdynamodb.md",
+      "section": "AwsDynamoDB<a name=\"asff-resourcedetails-awsdynamodb\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsec2.md",
+      "source_title": "AwsEc2<a name=\"asff-resourcedetails-awsec2\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsec2.md",
+      "section": "AwsEc2<a name=\"asff-resourcedetails-awsec2\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsecr.md",
+      "source_title": "AwsEcr<a name=\"asff-resourcedetails-awsecr\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsecr.md",
+      "section": "AwsEcr<a name=\"asff-resourcedetails-awsecr\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsecs.md",
+      "source_title": "AwsEcs<a name=\"asff-resourcedetails-awsecs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsecs.md",
+      "section": "AwsEcs<a name=\"asff-resourcedetails-awsecs\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsefs.md",
+      "source_title": "AwsEfs<a name=\"asff-resourcedetails-awsefs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsefs.md",
+      "section": "AwsEfs<a name=\"asff-resourcedetails-awsefs\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awseks.md",
+      "source_title": "AwsEks<a name=\"asff-resourcedetails-awseks\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awseks.md",
+      "section": "AwsEks<a name=\"asff-resourcedetails-awseks\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awselasticbeanstalk.md",
+      "source_title": "AwsElasticBeanstalk<a name=\"asff-resourcedetails-awselasticbeanstalk\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awselasticbeanstalk.md",
+      "section": "AwsElasticBeanstalk<a name=\"asff-resourcedetails-awselasticbeanstalk\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awselasticsearch.md",
+      "source_title": "AwsElasticSearch<a name=\"asff-resourcedetails-awselasticsearch\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awselasticsearch.md",
+      "section": "AwsElasticSearch<a name=\"asff-resourcedetails-awselasticsearch\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awselb.md",
+      "source_title": "AwsElb<a name=\"asff-resourcedetails-awselb\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awselb.md",
+      "section": "AwsElb<a name=\"asff-resourcedetails-awselb\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsiam.md",
+      "source_title": "AwsIam<a name=\"asff-resourcedetails-awsiam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsiam.md",
+      "section": "AwsIam<a name=\"asff-resourcedetails-awsiam\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awskinesis.md",
+      "source_title": "AwsKinesis<a name=\"asff-resourcedetails-awskinesis\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awskinesis.md",
+      "section": "AwsKinesis<a name=\"asff-resourcedetails-awskinesis\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awskms.md",
+      "source_title": "AwsKms<a name=\"asff-resourcedetails-awskms\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awskms.md",
+      "section": "AwsKms<a name=\"asff-resourcedetails-awskms\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awslambda.md",
+      "source_title": "AwsLambda<a name=\"asff-resourcedetails-awslambda\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awslambda.md",
+      "section": "AwsLambda<a name=\"asff-resourcedetails-awslambda\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsnetworkfirewall.md",
+      "source_title": "AwsNetworkFirewall<a name=\"asff-resourcedetails-awsnetworkfirewall\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsnetworkfirewall.md",
+      "section": "AwsNetworkFirewall<a name=\"asff-resourcedetails-awsnetworkfirewall\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsopensearchservice.md",
+      "source_title": "AwsOpenSearchService<a name=\"asff-resourcedetails-awsopensearchservice\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsopensearchservice.md",
+      "section": "AwsOpenSearchService<a name=\"asff-resourcedetails-awsopensearchservice\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsrds.md",
+      "source_title": "AwsRds<a name=\"asff-resourcedetails-awsrds\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsrds.md",
+      "section": "AwsRds<a name=\"asff-resourcedetails-awsrds\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsredshift.md",
+      "source_title": "AwsRedshift<a name=\"asff-resourcedetails-awsredshift\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsredshift.md",
+      "section": "AwsRedshift<a name=\"asff-resourcedetails-awsredshift\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awss3.md",
+      "source_title": "AwsS3<a name=\"asff-resourcedetails-awss3\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awss3.md",
+      "section": "AwsS3<a name=\"asff-resourcedetails-awss3\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awssagemaker.md",
+      "source_title": "AwsSageMaker<a name=\"asff-resourcedetails-awssagemaker\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awssagemaker.md",
+      "section": "AwsSageMaker<a name=\"asff-resourcedetails-awssagemaker\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awssecretsmanager.md",
+      "source_title": "AwsSecretsManager<a name=\"asff-resourcedetails-awssecretsmanager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awssecretsmanager.md",
+      "section": "AwsSecretsManager<a name=\"asff-resourcedetails-awssecretsmanager\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awssns.md",
+      "source_title": "AwsSns<a name=\"asff-resourcedetails-awssns\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awssns.md",
+      "section": "AwsSns<a name=\"asff-resourcedetails-awssns\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awssqs.md",
+      "source_title": "AwsSqs<a name=\"asff-resourcedetails-awssqs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awssqs.md",
+      "section": "AwsSqs<a name=\"asff-resourcedetails-awssqs\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsssm.md",
+      "source_title": "AwsSsm<a name=\"asff-resourcedetails-awsssm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsssm.md",
+      "section": "AwsSsm<a name=\"asff-resourcedetails-awsssm\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awswaf.md",
+      "source_title": "AwsWaf<a name=\"asff-resourcedetails-awswaf\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awswaf.md",
+      "section": "AwsWaf<a name=\"asff-resourcedetails-awswaf\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-awsxray.md",
+      "source_title": "AwsXray<a name=\"asff-resourcedetails-awsxray\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-awsxray.md",
+      "section": "AwsXray<a name=\"asff-resourcedetails-awsxray\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-container.md",
+      "source_title": "Container<a name=\"asff-resourcedetails-container\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-container.md",
+      "section": "Container<a name=\"asff-resourcedetails-container\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resourcedetails-other.md",
+      "source_title": "Other<a name=\"asff-resourcedetails-other\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resourcedetails-other.md",
+      "section": "Other<a name=\"asff-resourcedetails-other\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resources-attributes.md",
+      "source_title": "Resource attributes<a name=\"asff-resources-attributes\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resources-attributes.md",
+      "section": "Resource attributes<a name=\"asff-resources-attributes\"></a>"
+    },
+    {
+      "file": "doc_source/asff-resources.md",
+      "source_title": "Resources<a name=\"asff-resources\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-resources.md",
+      "section": "Resources<a name=\"asff-resources\"></a>"
+    },
+    {
+      "file": "doc_source/asff-top-level-attributes.md",
+      "source_title": "Optional top\\-level attributes<a name=\"asff-top-level-attributes\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/asff-top-level-attributes.md",
+      "section": "Optional top\\-level attributes<a name=\"asff-top-level-attributes\"></a>"
+    },
+    {
+      "file": "doc_source/autoscaling-controls.md",
+      "source_title": "Amazon EC2 Auto Scaling controls<a name=\"autoscaling-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/autoscaling-controls.md",
+      "section": "Amazon EC2 Auto Scaling controls<a name=\"autoscaling-controls\"></a>"
+    },
+    {
+      "file": "doc_source/cis-aws-foundations-benchmark.md",
+      "source_title": "Center for Internet Security \\(CIS\\) AWS Foundations Benchmark v1\\.2\\.0 and v1\\.4\\.0<a name=\"cis-aws-foundations-benchmark\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/cis-aws-foundations-benchmark.md",
+      "section": "Center for Internet Security \\(CIS\\) AWS Foundations Benchmark v1\\.2\\.0 and v1\\.4\\.0<a name=\"cis-aws-foundations-benchmark\"></a>"
+    },
+    {
+      "file": "doc_source/cloudformation-controls.md",
+      "source_title": "AWS CloudFormation controls<a name=\"cloudformation-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/cloudformation-controls.md",
+      "section": "AWS CloudFormation controls<a name=\"cloudformation-controls\"></a>"
+    },
+    {
+      "file": "doc_source/cloudfront-controls.md",
+      "source_title": "Amazon CloudFront controls<a name=\"cloudfront-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/cloudfront-controls.md",
+      "section": "Amazon CloudFront controls<a name=\"cloudfront-controls\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-controls.md",
+      "source_title": "AWS CloudTrail controls<a name=\"cloudtrail-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/cloudtrail-controls.md",
+      "section": "AWS CloudTrail controls<a name=\"cloudtrail-controls\"></a>"
+    },
+    {
+      "file": "doc_source/cloudwatch-controls.md",
+      "source_title": "Amazon CloudWatch controls<a name=\"cloudwatch-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/cloudwatch-controls.md",
+      "section": "Amazon CloudWatch controls<a name=\"cloudwatch-controls\"></a>"
+    },
+    {
+      "file": "doc_source/codebuild-controls.md",
+      "source_title": "AWS CodeBuild controls<a name=\"codebuild-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/codebuild-controls.md",
+      "section": "AWS CodeBuild controls<a name=\"codebuild-controls\"></a>"
+    },
+    {
+      "file": "doc_source/config-controls.md",
+      "source_title": "AWS Config controls<a name=\"config-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/config-controls.md",
+      "section": "AWS Config controls<a name=\"config-controls\"></a>"
+    },
+    {
+      "file": "doc_source/control-categories.md",
+      "source_title": "Control categories<a name=\"control-categories\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/control-categories.md",
+      "section": "Control categories<a name=\"control-categories\"></a>"
+    },
+    {
+      "file": "doc_source/control-finding-list.md",
+      "source_title": "Filtering, sorting, and downloading control findings<a name=\"control-finding-list\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/control-finding-list.md",
+      "section": "Filtering, sorting, and downloading control findings<a name=\"control-finding-list\"></a>"
+    },
+    {
+      "file": "doc_source/control-finding-resource-details.md",
+      "source_title": "Viewing details about a control finding and finding resource<a name=\"control-finding-resource-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/control-finding-resource-details.md",
+      "section": "Viewing details about a control finding and finding resource<a name=\"control-finding-resource-details\"></a>"
+    },
+    {
+      "file": "doc_source/control-finding-take-action.md",
+      "source_title": "Taking action on control findings<a name=\"control-finding-take-action\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/control-finding-take-action.md",
+      "section": "Taking action on control findings<a name=\"control-finding-take-action\"></a>"
+    },
+    {
+      "file": "doc_source/controls-auto-enable.md",
+      "source_title": "Enabling new controls in enabled standards automatically<a name=\"controls-auto-enable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-auto-enable.md",
+      "section": "Enabling new controls in enabled standards automatically<a name=\"controls-auto-enable\"></a>"
+    },
+    {
+      "file": "doc_source/controls-config-resources.md",
+      "source_title": "AWS Config resources required to generate control findings<a name=\"controls-config-resources\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-config-resources.md",
+      "section": "AWS Config resources required to generate control findings<a name=\"controls-config-resources\"></a>"
+    },
+    {
+      "file": "doc_source/controls-configure.md",
+      "source_title": "Enabling and disabling controls in specific standards<a name=\"controls-configure\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-configure.md",
+      "section": "Enabling and disabling controls in specific standards<a name=\"controls-configure\"></a>"
+    },
+    {
+      "file": "doc_source/controls-filter-sort.md",
+      "source_title": "Filtering and sorting the list of controls<a name=\"controls-filter-sort\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-filter-sort.md",
+      "section": "Filtering and sorting the list of controls<a name=\"controls-filter-sort\"></a>"
+    },
+    {
+      "file": "doc_source/controls-findings-create-update.md",
+      "source_title": "Generating and updating control findings<a name=\"controls-findings-create-update\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-findings-create-update.md",
+      "section": "Generating and updating control findings<a name=\"controls-findings-create-update\"></a>"
+    },
+    {
+      "file": "doc_source/controls-overall-status.md",
+      "source_title": "Determining the overall status of a control from its findings<a name=\"controls-overall-status\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-overall-status.md",
+      "section": "Determining the overall status of a control from its findings<a name=\"controls-overall-status\"></a>"
+    },
+    {
+      "file": "doc_source/controls-to-disable.md",
+      "source_title": "Security Hub controls that you might want to disable<a name=\"controls-to-disable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-to-disable.md",
+      "section": "Security Hub controls that you might want to disable<a name=\"controls-to-disable\"></a>"
+    },
+    {
+      "file": "doc_source/controls-view-manage.md",
+      "source_title": "Viewing and managing security controls<a name=\"controls-view-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/controls-view-manage.md",
+      "section": "Viewing and managing security controls<a name=\"controls-view-manage\"></a>"
+    },
+    {
+      "file": "doc_source/data-protection.md",
+      "source_title": "Data protection in AWS Security Hub<a name=\"data-protection\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/data-protection.md",
+      "section": "Data protection in AWS Security Hub<a name=\"data-protection\"></a>"
+    },
+    {
+      "file": "doc_source/designate-orgs-admin-account.md",
+      "source_title": "Designating a Security Hub administrator account<a name=\"designate-orgs-admin-account\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/designate-orgs-admin-account.md",
+      "section": "Designating a Security Hub administrator account<a name=\"designate-orgs-admin-account\"></a>"
+    },
+    {
+      "file": "doc_source/dms-controls.md",
+      "source_title": "AWS Database Migration Service controls<a name=\"dms-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/dms-controls.md",
+      "section": "AWS Database Migration Service controls<a name=\"dms-controls\"></a>"
+    },
+    {
+      "file": "doc_source/doc-history.md",
+      "source_title": "Document history for the AWS Security Hub User Guide<a name=\"doc-history\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/doc-history.md",
+      "section": "Document history for the AWS Security Hub User Guide<a name=\"doc-history\"></a>"
+    },
+    {
+      "file": "doc_source/dynamodb-controls.md",
+      "source_title": "Amazon DynamoDB controls<a name=\"dynamodb-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/dynamodb-controls.md",
+      "section": "Amazon DynamoDB controls<a name=\"dynamodb-controls\"></a>"
+    },
+    {
+      "file": "doc_source/ec2-controls.md",
+      "source_title": "Amazon Elastic Compute Cloud controls<a name=\"ec2-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/ec2-controls.md",
+      "section": "Amazon Elastic Compute Cloud controls<a name=\"ec2-controls\"></a>"
+    },
+    {
+      "file": "doc_source/ecr-controls.md",
+      "source_title": "Amazon Elastic Container Registry controls<a name=\"ecr-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/ecr-controls.md",
+      "section": "Amazon Elastic Container Registry controls<a name=\"ecr-controls\"></a>"
+    },
+    {
+      "file": "doc_source/ecs-controls.md",
+      "source_title": "Amazon ECS controls<a name=\"ecs-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/ecs-controls.md",
+      "section": "Amazon ECS controls<a name=\"ecs-controls\"></a>"
+    },
+    {
+      "file": "doc_source/efs-controls.md",
+      "source_title": "Amazon Elastic File System controls<a name=\"efs-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/efs-controls.md",
+      "section": "Amazon Elastic File System controls<a name=\"efs-controls\"></a>"
+    },
+    {
+      "file": "doc_source/eks-controls.md",
+      "source_title": "Amazon Elastic Kubernetes Service controls<a name=\"eks-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/eks-controls.md",
+      "section": "Amazon Elastic Kubernetes Service controls<a name=\"eks-controls\"></a>"
+    },
+    {
+      "file": "doc_source/elasticache-controls.md",
+      "source_title": "Amazon ElastiCache controls<a name=\"elasticache-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/elasticache-controls.md",
+      "section": "Amazon ElastiCache controls<a name=\"elasticache-controls\"></a>"
+    },
+    {
+      "file": "doc_source/elasticbeanstalk-controls.md",
+      "source_title": "AWS Elastic Beanstalk controls<a name=\"elasticbeanstalk-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/elasticbeanstalk-controls.md",
+      "section": "AWS Elastic Beanstalk controls<a name=\"elasticbeanstalk-controls\"></a>"
+    },
+    {
+      "file": "doc_source/elb-controls.md",
+      "source_title": "Elastic Load Balancing controls<a name=\"elb-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/elb-controls.md",
+      "section": "Elastic Load Balancing controls<a name=\"elb-controls\"></a>"
+    },
+    {
+      "file": "doc_source/emr-controls.md",
+      "source_title": "Amazon EMR controls<a name=\"emr-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/emr-controls.md",
+      "section": "Amazon EMR controls<a name=\"emr-controls\"></a>"
+    },
+    {
+      "file": "doc_source/es-controls.md",
+      "source_title": "Elasticsearch controls<a name=\"es-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/es-controls.md",
+      "section": "Elasticsearch controls<a name=\"es-controls\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation-enable.md",
+      "source_title": "Enabling cross\\-Region aggregation<a name=\"finding-aggregation-enable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation-enable.md",
+      "section": "Enabling cross\\-Region aggregation<a name=\"finding-aggregation-enable\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation-overview.md",
+      "source_title": "How cross\\-Region aggregation works<a name=\"finding-aggregation-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation-overview.md",
+      "section": "How cross\\-Region aggregation works<a name=\"finding-aggregation-overview\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation-stop.md",
+      "source_title": "Stopping cross\\-Region aggregation<a name=\"finding-aggregation-stop\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation-stop.md",
+      "section": "Stopping cross\\-Region aggregation<a name=\"finding-aggregation-stop\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation-update.md",
+      "source_title": "Updating the cross\\-Region aggregation configuration<a name=\"finding-aggregation-update\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation-update.md",
+      "section": "Updating the cross\\-Region aggregation configuration<a name=\"finding-aggregation-update\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation-view-config.md",
+      "source_title": "Viewing the current cross\\-Region aggregation configuration<a name=\"finding-aggregation-view-config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation-view-config.md",
+      "section": "Viewing the current cross\\-Region aggregation configuration<a name=\"finding-aggregation-view-config\"></a>"
+    },
+    {
+      "file": "doc_source/finding-aggregation.md",
+      "source_title": "Cross\\-Region aggregation<a name=\"finding-aggregation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-aggregation.md",
+      "section": "Cross\\-Region aggregation<a name=\"finding-aggregation\"></a>"
+    },
+    {
+      "file": "doc_source/finding-send-to-custom-action.md",
+      "source_title": "Sending findings to a custom action<a name=\"finding-send-to-custom-action\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-send-to-custom-action.md",
+      "section": "Sending findings to a custom action<a name=\"finding-send-to-custom-action\"></a>"
+    },
+    {
+      "file": "doc_source/finding-update-batchimportfindings.md",
+      "source_title": "Using BatchImportFindings to create and update findings<a name=\"finding-update-batchimportfindings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-update-batchimportfindings.md",
+      "section": "Using BatchImportFindings to create and update findings<a name=\"finding-update-batchimportfindings\"></a>"
+    },
+    {
+      "file": "doc_source/finding-update-batchupdatefindings.md",
+      "source_title": "Using BatchUpdateFindings to update a finding<a name=\"finding-update-batchupdatefindings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-update-batchupdatefindings.md",
+      "section": "Using BatchUpdateFindings to update a finding<a name=\"finding-update-batchupdatefindings\"></a>"
+    },
+    {
+      "file": "doc_source/finding-view-details.md",
+      "source_title": "Viewing finding details<a name=\"finding-view-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-view-details.md",
+      "section": "Viewing finding details<a name=\"finding-view-details\"></a>"
+    },
+    {
+      "file": "doc_source/finding-workflow-status.md",
+      "source_title": "Setting the workflow status for findings<a name=\"finding-workflow-status\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/finding-workflow-status.md",
+      "section": "Setting the workflow status for findings<a name=\"finding-workflow-status\"></a>"
+    },
+    {
+      "file": "doc_source/findings-filtering-grouping.md",
+      "source_title": "Filtering and grouping findings \\(console\\)<a name=\"findings-filtering-grouping\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/findings-filtering-grouping.md",
+      "section": "Filtering and grouping findings \\(console\\)<a name=\"findings-filtering-grouping\"></a>"
+    },
+    {
+      "file": "doc_source/findings-view-summary.md",
+      "source_title": "Viewing a cross\\-Region summary of findings by severity<a name=\"findings-view-summary\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/findings-view-summary.md",
+      "section": "Viewing a cross\\-Region summary of findings by severity<a name=\"findings-view-summary\"></a>"
+    },
+    {
+      "file": "doc_source/fsbp-standard.md",
+      "source_title": "AWS Foundational Security Best Practices \\(FSBP\\) standard<a name=\"fsbp-standard\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/fsbp-standard.md",
+      "section": "AWS Foundational Security Best Practices \\(FSBP\\) standard<a name=\"fsbp-standard\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty-controls.md",
+      "source_title": "Amazon GuardDuty controls<a name=\"guardduty-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/guardduty-controls.md",
+      "section": "Amazon GuardDuty controls<a name=\"guardduty-controls\"></a>"
+    },
+    {
+      "file": "doc_source/iam-controls.md",
+      "source_title": "AWS Identity and Access Management controls<a name=\"iam-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/iam-controls.md",
+      "section": "AWS Identity and Access Management controls<a name=\"iam-controls\"></a>"
+    },
+    {
+      "file": "doc_source/iam-permissions-controls-standards.md",
+      "source_title": "Prerequisite: IAM permissions<a name=\"iam-permissions-controls-standards\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/iam-permissions-controls-standards.md",
+      "section": "Prerequisite: IAM permissions<a name=\"iam-permissions-controls-standards\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "AWS Security Hub User Guide",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/index.md",
+      "section": "AWS Security Hub User Guide"
+    },
+    {
+      "file": "doc_source/infrastructure-security.md",
+      "source_title": "Infrastructure security in AWS Security Hub<a name=\"infrastructure-security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/infrastructure-security.md",
+      "section": "Infrastructure security in AWS Security Hub<a name=\"infrastructure-security\"></a>"
+    },
+    {
+      "file": "doc_source/insights-list.md",
+      "source_title": "Viewing and filtering the list of insights<a name=\"insights-list\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/insights-list.md",
+      "section": "Viewing and filtering the list of insights<a name=\"insights-list\"></a>"
+    },
+    {
+      "file": "doc_source/kinesis-controls.md",
+      "source_title": "Amazon Kinesis controls<a name=\"kinesis-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/kinesis-controls.md",
+      "section": "Amazon Kinesis controls<a name=\"kinesis-controls\"></a>"
+    },
+    {
+      "file": "doc_source/kms-controls.md",
+      "source_title": "AWS Key Management Service controls<a name=\"kms-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/kms-controls.md",
+      "section": "AWS Key Management Service controls<a name=\"kms-controls\"></a>"
+    },
+    {
+      "file": "doc_source/lambda-controls.md",
+      "source_title": "AWS Lambda controls<a name=\"lambda-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/lambda-controls.md",
+      "section": "AWS Lambda controls<a name=\"lambda-controls\"></a>"
+    },
+    {
+      "file": "doc_source/networkfirewall-controls.md",
+      "source_title": "AWS Network Firewall controls<a name=\"networkfirewall-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/networkfirewall-controls.md",
+      "section": "AWS Network Firewall controls<a name=\"networkfirewall-controls\"></a>"
+    },
+    {
+      "file": "doc_source/nist-standard.md",
+      "source_title": "National Institute of Standards and Technology \\(NIST\\) SP 800\\-53 Rev\\. 5<a name=\"nist-standard\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/nist-standard.md",
+      "section": "National Institute of Standards and Technology \\(NIST\\) SP 800\\-53 Rev\\. 5<a name=\"nist-standard\"></a>"
+    },
+    {
+      "file": "doc_source/opensearch-controls.md",
+      "source_title": "Amazon OpenSearch Service controls<a name=\"opensearch-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/opensearch-controls.md",
+      "section": "Amazon OpenSearch Service controls<a name=\"opensearch-controls\"></a>"
+    },
+    {
+      "file": "doc_source/orgs-accounts-enable.md",
+      "source_title": "Enabling member accounts from your organization<a name=\"orgs-accounts-enable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/orgs-accounts-enable.md",
+      "section": "Enabling member accounts from your organization<a name=\"orgs-accounts-enable\"></a>"
+    },
+    {
+      "file": "doc_source/pci-standard.md",
+      "source_title": "Payment Card Industry Data Security Standard \\(PCI DSS\\)<a name=\"pci-standard\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/pci-standard.md",
+      "section": "Payment Card Industry Data Security Standard \\(PCI DSS\\)<a name=\"pci-standard\"></a>"
+    },
+    {
+      "file": "doc_source/rds-controls.md",
+      "source_title": "Amazon Relational Database Service controls<a name=\"rds-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/rds-controls.md",
+      "section": "Amazon Relational Database Service controls<a name=\"rds-controls\"></a>"
+    },
+    {
+      "file": "doc_source/redshift-controls.md",
+      "source_title": "Amazon Redshift controls<a name=\"redshift-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/redshift-controls.md",
+      "section": "Amazon Redshift controls<a name=\"redshift-controls\"></a>"
+    },
+    {
+      "file": "doc_source/s3-controls.md",
+      "source_title": "Amazon Simple Storage Service controls<a name=\"s3-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/s3-controls.md",
+      "section": "Amazon Simple Storage Service controls<a name=\"s3-controls\"></a>"
+    },
+    {
+      "file": "doc_source/sagemaker-controls.md",
+      "source_title": "Amazon SageMaker controls<a name=\"sagemaker-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/sagemaker-controls.md",
+      "section": "Amazon SageMaker controls<a name=\"sagemaker-controls\"></a>"
+    },
+    {
+      "file": "doc_source/sample-control-findings.md",
+      "source_title": "Sample control findings<a name=\"sample-control-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/sample-control-findings.md",
+      "section": "Sample control findings<a name=\"sample-control-findings\"></a>"
+    },
+    {
+      "file": "doc_source/sdk-general-information-section.md",
+      "source_title": "Using Security Hub with an AWS SDK<a name=\"sdk-general-information-section\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/sdk-general-information-section.md",
+      "section": "Using Security Hub with an AWS SDK<a name=\"sdk-general-information-section\"></a>"
+    },
+    {
+      "file": "doc_source/secretsmanager-controls.md",
+      "source_title": "AWS Secrets Manager controls<a name=\"secretsmanager-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/secretsmanager-controls.md",
+      "section": "AWS Secrets Manager controls<a name=\"secretsmanager-controls\"></a>"
+    },
+    {
+      "file": "doc_source/security-hub-enable-slr.md",
+      "source_title": "Service\\-linked role assigned to Security Hub<a name=\"security-hub-enable-slr\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security-hub-enable-slr.md",
+      "section": "Service\\-linked role assigned to Security Hub<a name=\"security-hub-enable-slr\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam-awsmanpol.md",
+      "source_title": "AWS managed policies for AWS Security Hub<a name=\"security-iam-awsmanpol\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security-iam-awsmanpol.md",
+      "section": "AWS managed policies for AWS Security Hub<a name=\"security-iam-awsmanpol\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam.md",
+      "source_title": "AWS Identity and Access Management for AWS Security Hub<a name=\"security-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security-iam.md",
+      "section": "AWS Identity and Access Management for AWS Security Hub<a name=\"security-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security-vpc-endpoints.md",
+      "source_title": "AWS Security Hub and interface VPC endpoints \\(AWS PrivateLink\\)<a name=\"security-vpc-endpoints\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security-vpc-endpoints.md",
+      "section": "AWS Security Hub and interface VPC endpoints \\(AWS PrivateLink\\)<a name=\"security-vpc-endpoints\"></a>"
+    },
+    {
+      "file": "doc_source/security.md",
+      "source_title": "Security in AWS Security Hub<a name=\"security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security.md",
+      "section": "Security in AWS Security Hub<a name=\"security\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_service-with-iam.md",
+      "source_title": "How AWS Security Hub works with IAM<a name=\"security_iam_service-with-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/security_iam_service-with-iam.md",
+      "section": "How AWS Security Hub works with IAM<a name=\"security_iam_service-with-iam\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-account-restrictions-recommendations.md",
+      "source_title": "Restrictions and recommendations<a name=\"securityhub-account-restrictions-recommendations\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-account-restrictions-recommendations.md",
+      "section": "Restrictions and recommendations<a name=\"securityhub-account-restrictions-recommendations\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-accounts-add-invite.md",
+      "source_title": "Adding and inviting member accounts<a name=\"securityhub-accounts-add-invite\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-accounts-add-invite.md",
+      "section": "Adding and inviting member accounts<a name=\"securityhub-accounts-add-invite\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-accounts-allowed-actions.md",
+      "source_title": "Allowed actions for accounts<a name=\"securityhub-accounts-allowed-actions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-accounts-allowed-actions.md",
+      "section": "Allowed actions for accounts<a name=\"securityhub-accounts-allowed-actions\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-accounts-orgs.md",
+      "source_title": "Managing member accounts that belong to an organization<a name=\"securityhub-accounts-orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-accounts-orgs.md",
+      "section": "Managing member accounts that belong to an organization<a name=\"securityhub-accounts-orgs\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-accounts.md",
+      "source_title": "Managing administrator and member accounts<a name=\"securityhub-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-accounts.md",
+      "section": "Managing administrator and member accounts<a name=\"securityhub-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-announcements.md",
+      "source_title": "Subscribing to Security Hub announcements with Amazon Simple Notification Service<a name=\"securityhub-announcements\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-announcements.md",
+      "section": "Subscribing to Security Hub announcements with Amazon Simple Notification Service<a name=\"securityhub-announcements\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-benefits.md",
+      "source_title": "Benefits of AWS Security Hub<a name=\"securityhub-benefits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-benefits.md",
+      "section": "Benefits of AWS Security Hub<a name=\"securityhub-benefits\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-cloudwatch-events.md",
+      "source_title": "Automated response and remediation<a name=\"securityhub-cloudwatch-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-cloudwatch-events.md",
+      "section": "Automated response and remediation<a name=\"securityhub-cloudwatch-events\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-compliance.md",
+      "source_title": "Compliance validation for AWS Security Hub<a name=\"securityhub-compliance\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-compliance.md",
+      "section": "Compliance validation for AWS Security Hub<a name=\"securityhub-compliance\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-concepts.md",
+      "source_title": "Terminology and concepts<a name=\"securityhub-concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-concepts.md",
+      "section": "Terminology and concepts<a name=\"securityhub-concepts\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-control-manage-findings.md",
+      "source_title": "Viewing and taking action on control findings<a name=\"securityhub-control-manage-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-control-manage-findings.md",
+      "section": "Viewing and taking action on control findings<a name=\"securityhub-control-manage-findings\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-controls-finding-generation.md",
+      "source_title": "How AWS Security Hub runs and uses security checks<a name=\"securityhub-controls-finding-generation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-controls-finding-generation.md",
+      "section": "How AWS Security Hub runs and uses security checks<a name=\"securityhub-controls-finding-generation\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-controls-reference.md",
+      "source_title": "Security Hub controls reference<a name=\"securityhub-controls-reference\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-controls-reference.md",
+      "section": "Security Hub controls reference<a name=\"securityhub-controls-reference\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-ct.md",
+      "source_title": "Logging AWS Security Hub API calls with AWS CloudTrail<a name=\"securityhub-ct\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-ct.md",
+      "section": "Logging AWS Security Hub API calls with AWS CloudTrail<a name=\"securityhub-ct\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-custom-insights.md",
+      "source_title": "Custom insights<a name=\"securityhub-custom-insights\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-custom-insights.md",
+      "section": "Custom insights<a name=\"securityhub-custom-insights\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-custom-providers.md",
+      "source_title": "Using custom product integrations to send findings to AWS Security Hub<a name=\"securityhub-custom-providers\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-custom-providers.md",
+      "section": "Using custom product integrations to send findings to AWS Security Hub<a name=\"securityhub-custom-providers\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-cwe-all-findings.md",
+      "source_title": "Configuring an EventBridge rule for automatically sent findings<a name=\"securityhub-cwe-all-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-cwe-all-findings.md",
+      "section": "Configuring an EventBridge rule for automatically sent findings<a name=\"securityhub-cwe-all-findings\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-cwe-custom-actions.md",
+      "source_title": "Using custom actions to send findings and insight results to EventBridge<a name=\"securityhub-cwe-custom-actions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-cwe-custom-actions.md",
+      "section": "Using custom actions to send findings and insight results to EventBridge<a name=\"securityhub-cwe-custom-actions\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-cwe-event-formats.md",
+      "source_title": "EventBridge event formats for Security Hub<a name=\"securityhub-cwe-event-formats\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-cwe-event-formats.md",
+      "section": "EventBridge event formats for Security Hub<a name=\"securityhub-cwe-event-formats\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-cwe-integration-types.md",
+      "source_title": "Types of Security Hub integration with EventBridge<a name=\"securityhub-cwe-integration-types\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-cwe-integration-types.md",
+      "section": "Types of Security Hub integration with EventBridge<a name=\"securityhub-cwe-integration-types\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-data-retention.md",
+      "source_title": "Effect of account actions on Security Hub data<a name=\"securityhub-data-retention\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-data-retention.md",
+      "section": "Effect of account actions on Security Hub data<a name=\"securityhub-data-retention\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-delete-member-accounts.md",
+      "source_title": "Deleting member accounts<a name=\"securityhub-delete-member-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-delete-member-accounts.md",
+      "section": "Deleting member accounts<a name=\"securityhub-delete-member-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-disable.md",
+      "source_title": "Disabling Security Hub<a name=\"securityhub-disable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-disable.md",
+      "section": "Disabling Security Hub<a name=\"securityhub-disable\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-disassociate-from-admin.md",
+      "source_title": "Disassociating from your administrator account<a name=\"securityhub-disassociate-from-admin\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-disassociate-from-admin.md",
+      "section": "Disassociating from your administrator account<a name=\"securityhub-disassociate-from-admin\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-disassociate-members.md",
+      "source_title": "Disassociating member accounts<a name=\"securityhub-disassociate-members\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-disassociate-members.md",
+      "section": "Disassociating member accounts<a name=\"securityhub-disassociate-members\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-enable.md",
+      "source_title": "Enabling Security Hub manually<a name=\"securityhub-enable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-enable.md",
+      "section": "Enabling Security Hub manually<a name=\"securityhub-enable\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-format-attributes.md",
+      "source_title": "ASFF examples<a name=\"securityhub-findings-format-attributes\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-format-attributes.md",
+      "section": "ASFF examples<a name=\"securityhub-findings-format-attributes\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-format-syntax.md",
+      "source_title": "AWS Security Finding Format \\(ASFF\\) syntax<a name=\"securityhub-findings-format-syntax\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-format-syntax.md",
+      "section": "AWS Security Finding Format \\(ASFF\\) syntax<a name=\"securityhub-findings-format-syntax\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-format-type-taxonomy.md",
+      "source_title": "Types taxonomy for ASFF<a name=\"securityhub-findings-format-type-taxonomy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-format-type-taxonomy.md",
+      "section": "Types taxonomy for ASFF<a name=\"securityhub-findings-format-type-taxonomy\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-format.md",
+      "source_title": "AWS Security Finding Format \\(ASFF\\)<a name=\"securityhub-findings-format\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-format.md",
+      "section": "AWS Security Finding Format \\(ASFF\\)<a name=\"securityhub-findings-format\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-providers.md",
+      "source_title": "Product integrations in AWS Security Hub<a name=\"securityhub-findings-providers\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-providers.md",
+      "section": "Product integrations in AWS Security Hub<a name=\"securityhub-findings-providers\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-taking-action.md",
+      "source_title": "Taking action on findings in AWS Security Hub<a name=\"securityhub-findings-taking-action\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-taking-action.md",
+      "section": "Taking action on findings in AWS Security Hub<a name=\"securityhub-findings-taking-action\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-update-types.md",
+      "source_title": "Creating and updating findings in AWS Security Hub<a name=\"securityhub-findings-update-types\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-update-types.md",
+      "section": "Creating and updating findings in AWS Security Hub<a name=\"securityhub-findings-update-types\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings-viewing.md",
+      "source_title": "Viewing finding lists and details in AWS Security Hub<a name=\"securityhub-findings-viewing\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings-viewing.md",
+      "section": "Viewing finding lists and details in AWS Security Hub<a name=\"securityhub-findings-viewing\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-findings.md",
+      "source_title": "Findings in AWS Security Hub<a name=\"securityhub-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-findings.md",
+      "section": "Findings in AWS Security Hub<a name=\"securityhub-findings\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-free-trial.md",
+      "source_title": "AWS Security Hub free trial, usage, and pricing<a name=\"securityhub-free-trial\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-free-trial.md",
+      "section": "AWS Security Hub free trial, usage, and pricing<a name=\"securityhub-free-trial\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-get-started.md",
+      "source_title": "How Security Hub works<a name=\"securityhub-get-started\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-get-started.md",
+      "section": "How Security Hub works<a name=\"securityhub-get-started\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-insights-view-take-action.md",
+      "source_title": "Viewing and taking action on insight results and findings<a name=\"securityhub-insights-view-take-action\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-insights-view-take-action.md",
+      "section": "Viewing and taking action on insight results and findings<a name=\"securityhub-insights-view-take-action\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-insights.md",
+      "source_title": "Insights in AWS Security Hub<a name=\"securityhub-insights\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-insights.md",
+      "section": "Insights in AWS Security Hub<a name=\"securityhub-insights\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-integrations-managing.md",
+      "source_title": "Managing product integrations<a name=\"securityhub-integrations-managing\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-integrations-managing.md",
+      "section": "Managing product integrations<a name=\"securityhub-integrations-managing\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-internal-providers.md",
+      "source_title": "Available AWS service integrations<a name=\"securityhub-internal-providers\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-internal-providers.md",
+      "section": "Available AWS service integrations<a name=\"securityhub-internal-providers\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-invitation-respond.md",
+      "source_title": "Responding to an invitation to be a member account<a name=\"securityhub-invitation-respond\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-invitation-respond.md",
+      "section": "Responding to an invitation to be a member account<a name=\"securityhub-invitation-respond\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-managed-insights.md",
+      "source_title": "Managed insights<a name=\"securityhub-managed-insights\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-managed-insights.md",
+      "section": "Managed insights<a name=\"securityhub-managed-insights\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-partner-providers.md",
+      "source_title": "Available third\\-party partner product integrations<a name=\"securityhub-partner-providers\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-partner-providers.md",
+      "section": "Available third\\-party partner product integrations<a name=\"securityhub-partner-providers\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-prereq-config.md",
+      "source_title": "Enabling and configuring AWS Config<a name=\"securityhub-prereq-config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-prereq-config.md",
+      "section": "Enabling and configuring AWS Config<a name=\"securityhub-prereq-config\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-prereq-orgs.md",
+      "source_title": "Using AWS Organizations to manage accounts<a name=\"securityhub-prereq-orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-prereq-orgs.md",
+      "section": "Using AWS Organizations to manage accounts<a name=\"securityhub-prereq-orgs\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-regions.md",
+      "source_title": "Regional limits<a name=\"securityhub-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-regions.md",
+      "section": "Regional limits<a name=\"securityhub-regions\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-settingup.md",
+      "source_title": "Setting up AWS Security Hub<a name=\"securityhub-settingup\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-settingup.md",
+      "section": "Setting up AWS Security Hub<a name=\"securityhub-settingup\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-setup-prereqs.md",
+      "source_title": "Prerequisites and recommendations<a name=\"securityhub-setup-prereqs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-setup-prereqs.md",
+      "section": "Prerequisites and recommendations<a name=\"securityhub-setup-prereqs\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-awsconfigrules.md",
+      "source_title": "How Security Hub uses AWS Config rules to run security checks<a name=\"securityhub-standards-awsconfigrules\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-awsconfigrules.md",
+      "section": "How Security Hub uses AWS Config rules to run security checks<a name=\"securityhub-standards-awsconfigrules\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-control-details.md",
+      "source_title": "Viewing details for a control<a name=\"securityhub-standards-control-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-control-details.md",
+      "section": "Viewing details for a control<a name=\"securityhub-standards-control-details\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-enable-disable-controls.md",
+      "source_title": "Enabling and disabling controls in all standards<a name=\"securityhub-standards-enable-disable-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-enable-disable-controls.md",
+      "section": "Enabling and disabling controls in all standards<a name=\"securityhub-standards-enable-disable-controls\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-enable-disable.md",
+      "source_title": "Enabling and disabling security standards<a name=\"securityhub-standards-enable-disable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-enable-disable.md",
+      "section": "Enabling and disabling security standards<a name=\"securityhub-standards-enable-disable\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-schedule.md",
+      "source_title": "Schedule for running security checks<a name=\"securityhub-standards-schedule\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-schedule.md",
+      "section": "Schedule for running security checks<a name=\"securityhub-standards-schedule\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards-view-controls.md",
+      "source_title": "Viewing details for a standard<a name=\"securityhub-standards-view-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards-view-controls.md",
+      "section": "Viewing details for a standard<a name=\"securityhub-standards-view-controls\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-standards.md",
+      "source_title": "Security controls and standards in AWS Security Hub<a name=\"securityhub-standards\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub-standards.md",
+      "section": "Security controls and standards in AWS Security Hub<a name=\"securityhub-standards\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub_limits.md",
+      "source_title": "Security Hub quotas<a name=\"securityhub_limits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/securityhub_limits.md",
+      "section": "Security Hub quotas<a name=\"securityhub_limits\"></a>"
+    },
+    {
+      "file": "doc_source/service-managed-standard-aws-control-tower.md",
+      "source_title": "Service\\-Managed Standard: AWS Control Tower<a name=\"service-managed-standard-aws-control-tower\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/service-managed-standard-aws-control-tower.md",
+      "section": "Service\\-Managed Standard: AWS Control Tower<a name=\"service-managed-standard-aws-control-tower\"></a>"
+    },
+    {
+      "file": "doc_source/service-managed-standards.md",
+      "source_title": "Service\\-managed standards<a name=\"service-managed-standards\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/service-managed-standards.md",
+      "section": "Service\\-managed standards<a name=\"service-managed-standards\"></a>"
+    },
+    {
+      "file": "doc_source/sns-controls.md",
+      "source_title": "Amazon Simple Notification Service controls<a name=\"sns-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/sns-controls.md",
+      "section": "Amazon Simple Notification Service controls<a name=\"sns-controls\"></a>"
+    },
+    {
+      "file": "doc_source/sqs-controls.md",
+      "source_title": "Amazon Simple Queue Service controls<a name=\"sqs-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/sqs-controls.md",
+      "section": "Amazon Simple Queue Service controls<a name=\"sqs-controls\"></a>"
+    },
+    {
+      "file": "doc_source/ssm-controls.md",
+      "source_title": "Amazon EC2 Systems Manager controls<a name=\"ssm-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/ssm-controls.md",
+      "section": "Amazon EC2 Systems Manager controls<a name=\"ssm-controls\"></a>"
+    },
+    {
+      "file": "doc_source/standards-reference.md",
+      "source_title": "Security Hub standards reference<a name=\"standards-reference\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/standards-reference.md",
+      "section": "Security Hub standards reference<a name=\"standards-reference\"></a>"
+    },
+    {
+      "file": "doc_source/standards-security-score.md",
+      "source_title": "Determining the security score for a security standard<a name=\"standards-security-score\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/standards-security-score.md",
+      "section": "Determining the security score for a security standard<a name=\"standards-security-score\"></a>"
+    },
+    {
+      "file": "doc_source/standards-view-manage.md",
+      "source_title": "Viewing and managing security standards<a name=\"standards-view-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/standards-view-manage.md",
+      "section": "Viewing and managing security standards<a name=\"standards-view-manage\"></a>"
+    },
+    {
+      "file": "doc_source/using-service-linked-roles.md",
+      "source_title": "Using service\\-linked roles for AWS Security Hub<a name=\"using-service-linked-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/using-service-linked-roles.md",
+      "section": "Using service\\-linked roles for AWS Security Hub<a name=\"using-service-linked-roles\"></a>"
+    },
+    {
+      "file": "doc_source/waf-controls.md",
+      "source_title": "AWS WAF controls<a name=\"waf-controls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/waf-controls.md",
+      "section": "AWS WAF controls<a name=\"waf-controls\"></a>"
+    },
+    {
+      "file": "doc_source/what-is-securityhub.md",
+      "source_title": "What is AWS Security Hub?<a name=\"what-is-securityhub\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-security-hub-user-guide/blob/47bfe2f1de2e486914543113d2e751f3e2ed8868/doc_source/what-is-securityhub.md",
+      "section": "What is AWS Security Hub?<a name=\"what-is-securityhub\"></a>"
+    }
+  ]
+}

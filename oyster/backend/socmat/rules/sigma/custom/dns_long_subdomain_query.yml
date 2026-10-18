@@ -1,0 +1,30 @@
+title: Suspiciously Long DNS Query (Possible DNS Tunneling)
+id: 3e7b0d5a-8c2f-4e1b-a9d3-5f0c2e4b7a1d
+status: experimental
+description: >
+  Detects DNS queries with unusually long subdomains, which may indicate DNS
+  tunneling activity used for covert data exfiltration or command-and-control
+  communication. Legitimate queries rarely exceed 50 characters in the hostname.
+references:
+  - https://attack.mitre.org/techniques/T1071/004/
+  - https://attack.mitre.org/techniques/T1048/
+author: SOC Copilot Workbench
+date: 2024/01/15
+modified: 2024/03/01
+tags:
+  - attack.command_and_control
+  - attack.exfiltration
+  - attack.t1071.004
+  - attack.t1048
+logsource:
+  category: dns
+  product: windows
+detection:
+  selection:
+    QueryName|re: '^[a-zA-Z0-9\-]{50,}\.'
+  condition: selection
+falsepositives:
+  - CDN providers that use long subdomains for load balancing
+  - Some cloud services with auto-generated hostnames
+  - TLS certificate validation domains
+level: medium

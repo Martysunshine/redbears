@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_service_principal_created.yml -->
+title: Azure Service Principal Created
+id: 0ddcff6d-d262-40b0-804b-80eb592de8e3
+status: test
+description: Identifies when a service principal is created in Azure.
+references:
+    - https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-audit-activities#core-directory
+    - https://analyticsrules.exchange/analyticrules/79566f41-df67-4e10-a703-c38a6213afd8/
+author: Austin Songer @austinsonger
+date: 2021-09-02
+modified: 2026-04-30
+tags:
+    - attack.stealth
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        operationName: 'Add service principal'
+    condition: selection
+falsepositives:
+    - Service principal being created may be performed by a system administrator.
+    - Verify whether the user identity, user agent, and/or hostname should be making changes in your environment.
+    - Service principal created from unfamiliar users should be investigated. If known behavior is causing false positives, it can be exempted from the rule.
+level: medium

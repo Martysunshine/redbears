@@ -1,0 +1,35 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/process_creation/proc_creation_lnx_susp_process_reading_sudoers.yml -->
+title: Access of Sudoers File Content
+id: 0f79c4d2-4e1f-4683-9c36-b5469a665e06
+status: test
+description: Detects the execution of a text-based file access or inspection utilities to read the content of /etc/sudoers in order to potentially list all users that have sudo rights.
+references:
+    - https://github.com/sleventyeleven/linuxprivchecker/
+author: Florian Roth (Nextron Systems)
+date: 2022-06-20
+modified: 2025-06-04
+tags:
+    - attack.reconnaissance
+    - attack.t1592.004
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    selection:
+        Image|endswith:
+            - '/cat'
+            - '/ed'
+            - '/egrep'
+            - '/emacs'
+            - '/fgrep'
+            - '/grep'
+            - '/head'
+            - '/less'
+            - '/more'
+            - '/nano'
+            - '/tail'
+        CommandLine|contains: ' /etc/sudoers'
+    condition: selection
+falsepositives:
+    - Legitimate administration activities
+level: medium

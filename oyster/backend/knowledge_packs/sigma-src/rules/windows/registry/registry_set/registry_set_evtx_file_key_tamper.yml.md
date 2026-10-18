@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_evtx_file_key_tamper.yml -->
+title: Potential EventLog File Location Tampering
+id: 0cb8d736-995d-4ce7-a31e-1e8d452a1459
+status: test
+description: Detects tampering with EventLog service "file" key. In order to change the default location of an Evtx file. This technique is used to tamper with log collection and alerting
+references:
+    - https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key
+author: D3F7A5105
+date: 2023-01-02
+modified: 2023-08-17
+tags:
+    - attack.defense-impairment
+    - attack.t1685.001
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: '\SYSTEM\CurrentControlSet\Services\EventLog\'
+        TargetObject|endswith: '\File'
+    filter:
+        Details|contains: '\System32\Winevt\Logs\'
+    condition: selection and not filter
+falsepositives:
+    - Unknown
+level: high

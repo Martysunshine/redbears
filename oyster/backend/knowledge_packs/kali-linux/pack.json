@@ -1,0 +1,31 @@
+{
+  "id": "kali-linux",
+  "name": "Kali Linux Official Documentation",
+  "version": "1.0.0",
+  "title": "Kali Linux Operations",
+  "domain": "offensive",
+  "security_domain": "tooling-platform",
+  "description": "Kali Linux installation, configuration, package management, and deployment across VMs, Docker, WSL, and ARM. Concise operator summaries with links back to the official Kali documentation.",
+  "authority": "Kali (Offensive Security)",
+  "publisher": "OffSec / Kali Linux",
+  "trust_level": "official",
+  "licence": "Kali docs are published by OffSec; this pack contains original concise summaries with attribution and links to the canonical kali.org/docs pages, not copied documentation.",
+  "attribution": "Kali Linux Documentation — https://www.kali.org/docs/ (OffSec).",
+  "tags": ["kali", "linux", "install", "docker", "wsl", "arm", "vm", "apt", "tooling"],
+  "supported_tasks": ["environment-setup", "tool-selection", "platform-troubleshooting"],
+  "intended_audience": ["pentester", "red-team", "student"],
+  "applicable_platforms": ["kali-linux", "debian", "wsl", "docker", "arm"],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Review each Kali point release (rolling; ~quarterly).",
+  "retrieved_at": "2026-07-24",
+  "last_reviewed_at": "2026-07-24",
+  "source_urls": [
+    "https://www.kali.org/docs/",
+    "https://gitlab.com/kalilinux/documentation/kali-docs"
+  ],
+  "docs": [
+    {"file": "install-and-platforms.md", "source_title": "Kali Linux Installation & Platforms", "source_url": "https://www.kali.org/docs/installation/", "section": "Installation / VM / Docker / WSL / ARM"},
+    {"file": "package-management.md", "source_title": "Kali Linux Package Management", "source_url": "https://www.kali.org/docs/general-use/metapackages/", "section": "APT & metapackages"}
+  ]
+}

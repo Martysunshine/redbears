@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/dns/net_dns_susp_txt_exec_strings.yml -->
+title: DNS TXT Answer with Possible Execution Strings
+id: 8ae51330-899c-4641-8125-e39f2e07da72
+status: test
+description: Detects strings used in command execution in DNS TXT Answer
+references:
+    - https://twitter.com/stvemillertime/status/1024707932447854592
+    - https://github.com/samratashok/nishang/blob/414ee1104526d7057f9adaeee196d91ae447283e/Backdoors/DNS_TXT_Pwnage.ps1
+author: Markus Neis
+date: 2018-08-08
+modified: 2021-11-27
+tags:
+    - attack.command-and-control
+    - attack.t1071.004
+logsource:
+    category: dns
+detection:
+    selection:
+        record_type: 'TXT'
+        answer|contains:
+            - 'IEX'
+            - 'Invoke-Expression'
+            - 'cmd.exe'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

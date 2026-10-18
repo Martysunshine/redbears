@@ -1,0 +1,21 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-vm/vm-detection/check-for-unmoving-mouse-cursor.yml -->
+rule:
+  meta:
+    name: check for unmoving mouse cursor
+    namespace: anti-analysis/anti-vm/vm-detection
+    authors:
+      - BitsOfBinary
+    scopes:
+      static: function
+      dynamic: unsupported  # too broad using thread scope, see #941
+    att&ck:
+      - Defense Evasion::Virtualization/Sandbox Evasion::User Activity Based Checks [T1497.002]
+    mbc:
+      - Anti-Behavioral Analysis::Virtual Machine Detection::Human User Check [B0009.012]
+    references:
+      - https://www.joesecurity.org/blog/5852460122427342172
+    examples:
+      - d7ff81ff775d4ab50d31ac1e962c8c4dea7ff9f280aa2b42ddd06760a5665002:0x401118
+  features:
+    - and:
+      - count(api(user32.GetCursorPos)): 2 or more

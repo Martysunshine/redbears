@@ -1,0 +1,39 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OSLibraries/Zipfldr.yml -->
+---
+Name: Zipfldr.dll
+Description: Compressed Folder library
+Author: LOLBAS Team
+Created: 2018-05-25
+Commands:
+  - Command: rundll32.exe zipfldr.dll,RouteTheCall {PATH:.exe}
+    Description: Launch an executable payload by calling RouteTheCall.
+    Usecase: Launch an executable.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218.011
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
+  - Command: rundll32.exe zipfldr.dll,RouteTheCall file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e
+    Description: Launch an executable payload by calling RouteTheCall (obfuscated).
+    Usecase: Launch an executable.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218.011
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
+Full_Path:
+  - Path: c:\windows\system32\zipfldr.dll
+  - Path: c:\windows\syswow64\zipfldr.dll
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/62d4fd26b05f4d81973e7c8e80d7c1a0c6a29d0e/rules/windows/process_creation/proc_creation_win_rundll32_susp_activity.yml
+Resources:
+  - Link: https://twitter.com/moriarty_meng/status/977848311603380224
+  - Link: https://twitter.com/bohops/status/997896811904929792
+  - Link: https://windows10dll.nirsoft.net/zipfldr_dll.html
+Acknowledgement:
+  - Person: Moriarty (Execution)
+    Handle: '@moriarty_meng'
+  - Person: r0lan (Obfuscation)
+    Handle: '@r0lan'

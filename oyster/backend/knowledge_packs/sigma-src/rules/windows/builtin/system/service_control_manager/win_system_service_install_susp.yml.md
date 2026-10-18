@@ -1,0 +1,41 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_service_install_susp.yml -->
+title: Suspicious Service Installation
+id: 1d61f71d-59d2-479e-9562-4ff5f4ead16b
+related:
+    - id: ca83e9f3-657a-45d0-88d6-c1ac280caf53
+      type: obsolete
+    - id: 26481afe-db26-4228-b264-25a29fe6efc7
+      type: similar
+status: test
+description: Detects suspicious service installation commands
+references:
+    - Internal Research
+author: pH-T (Nextron Systems), Florian Roth (Nextron Systems)
+date: 2022-03-18
+modified: 2023-12-04
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - car.2013-09-005
+    - attack.t1543.003
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+        ImagePath|contains:
+            - ' -nop '
+            - ' -sta '
+            - ' -w hidden '
+            - ':\Temp\'
+            - '.downloadfile(' # PowerShell download command
+            - '.downloadstring(' # PowerShell download command
+            - '\ADMIN$\'
+            - '\Perflogs\'
+            - '&&'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

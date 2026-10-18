@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/persistence/create-shortcut-via-ishelllink.yml -->
+rule:
+  meta:
+    name: create shortcut via IShellLink
+    namespace: persistence
+    authors:
+      - matthew.williams@mandiant.com
+    scopes:
+      static: function
+      dynamic: unsupported  # requires offset, bytes features
+    att&ck:
+      - Persistence::Boot or Logon Autostart Execution::Shortcut Modification [T1547.009]
+    references:
+      - https://docs.microsoft.com/en-us/windows/win32/shell/links#creating-a-shortcut-and-a-folder-shortcut-to-a-file
+    examples:
+      - 7f403f7d643d90c7cbadf3ccfc68bd1badf06f89a35af5fc7811920e820bbcc9:0x10001380
+  features:
+    - and:
+      - bytes: 01 14 02 00 00 00 00 00 C0 00 00 00 00 00 00 46 = CLSID_ShellLink
+      - or:
+        - bytes: EE 14 02 00 00 00 00 00 C0 00 00 00 00 00 00 46 = IID_IShellLinkA
+        - bytes: F9 14 02 00 00 00 00 00 C0 00 00 00 00 00 00 46 = IID_IShellLinkW
+      - bytes: 0B 01 00 00 00 00 00 00 C0 00 00 00 00 00 00 46 = IID_IPersistFile
+      - offset: 0x50 = psl->SetPath
+      - offset: 0x18 = ppf->Save
+      - api: ole32.CoCreateInstance

@@ -1,0 +1,14 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/iptables-save -->
+---
+functions:
+  file-write:
+  - binary: false
+    code: |-
+      iptables -A INPUT -i lo -j ACCEPT -m comment --comment DATA
+      iptables -S
+      iptables-save -f /path/to/output-file
+    comment: |-
+      The content is written along with a number of `iptables` rules.
+    contexts:
+      sudo:
+...

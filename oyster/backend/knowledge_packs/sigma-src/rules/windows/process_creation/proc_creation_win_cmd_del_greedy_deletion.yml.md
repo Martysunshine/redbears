@@ -1,0 +1,37 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_cmd_del_greedy_deletion.yml -->
+title: Greedy File Deletion Using Del
+id: 204b17ae-4007-471b-917b-b917b315c5db
+status: test
+description: Detects execution of the "del" builtin command to remove files using greedy/wildcard expression. This is often used by malware to delete content of folders that perhaps contains the initial malware infection or to delete evidence.
+references:
+    - https://www.joesandbox.com/analysis/509330/0/html#1044F3BDBE3BB6F734E357235F4D5898582D
+    - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/erase
+author: frack113 , X__Junior (Nextron Systems)
+date: 2021-12-02
+modified: 2023-09-11
+tags:
+    - attack.stealth
+    - attack.t1070.004
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    # Example:
+    #   del C:\ProgramData\*.dll & exit
+    selection_img:
+        - Image|endswith: '\cmd.exe'
+        - OriginalFileName: 'Cmd.Exe'
+    selection_del:
+        CommandLine|contains:
+            - 'del '
+            - 'erase '
+    selection_extensions:
+        CommandLine|contains:
+            - '\\\*.au3'
+            - '\\\*.dll'
+            - '\\\*.exe'
+            - '\\\*.js'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: medium

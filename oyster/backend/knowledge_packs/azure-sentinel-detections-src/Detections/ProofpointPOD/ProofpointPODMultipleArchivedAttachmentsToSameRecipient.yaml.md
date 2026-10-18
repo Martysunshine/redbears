@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml -->
+id: e3a396c8-2c78-43b3-9650-15bf226b2a67
+name: ProofpointPOD - Multiple archived attachments to the same recipient
+description: 'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand(POD)%20Email%20Security/Analytic%20Rules/ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml'
+version: 1.0.3

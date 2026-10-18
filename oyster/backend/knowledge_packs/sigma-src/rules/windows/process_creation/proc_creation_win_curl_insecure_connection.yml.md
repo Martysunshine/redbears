@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_curl_insecure_connection.yml -->
+title: Insecure Transfer Via Curl.EXE
+id: cb9cc1d1-e84e-4bdc-b7ad-c31b1b7908ec
+status: test
+description: Detects execution of "curl.exe" with the "--insecure" flag.
+references:
+    - https://curl.se/docs/manpage.html
+author: X__Junior (Nextron Systems)
+date: 2023-06-30
+tags:
+    - attack.execution
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_img:
+        - Image|endswith: '\curl.exe'
+        - OriginalFileName: 'curl.exe'
+    selection_cli:
+        - CommandLine|re: '\s-k\s'
+        - CommandLine|contains: '--insecure'
+    condition: all of selection_*
+falsepositives:
+    - Access to badly maintained internal or development systems
+level: medium
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_curl_insecure_connection/info.yml

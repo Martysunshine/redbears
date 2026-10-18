@@ -1,0 +1,84 @@
+{
+  "suite_id": "retrieval-grounding-v1",
+  "title": "Knowledge retrieval grounding — core security topics",
+  "description": "Locally-authored cases (not a scraped dataset). Each case asserts that a security query retrieves content from an expected source pack with a grounding citation. Measures retrieval quality of the installed Knowledge Service.",
+  "governance": {
+    "training": "disabled",
+    "purpose": "retrieval-quality-eval",
+    "content_stored_as_knowledge": false,
+    "authored_locally": true
+  },
+  "default_top_k": 8,
+  "cases": [
+    {
+      "id": "lsass-cred-dump",
+      "query": "dump LSASS process memory to extract credentials on Windows",
+      "expect_any_pack": ["mitre-attack-src", "atomic-red-team-src", "sigma-src"],
+      "expect_source_substring": ["T1003.001", "LSASS"],
+      "min_results": 1
+    },
+    {
+      "id": "kerberoasting",
+      "query": "kerberoast a service account and crack the TGS ticket offline",
+      "expect_any_pack": ["mitre-attack-src", "atomic-red-team-src", "wadcoms-src"],
+      "expect_source_substring": ["T1558", "eroast"],
+      "min_results": 1
+    },
+    {
+      "id": "sql-injection-testing",
+      "query": "how to test a web application for SQL injection vulnerabilities",
+      "expect_any_pack": ["owasp-wstg-src"],
+      "expect_source_substring": ["SQL", "Injection"],
+      "min_results": 1
+    },
+    {
+      "id": "api-bola",
+      "query": "broken object level authorization in REST APIs",
+      "expect_any_pack": ["owasp-api-security-src", "owasp-asvs-src"],
+      "expect_source_substring": ["object level", "authorization", "BOLA", "API1"],
+      "min_results": 1
+    },
+    {
+      "id": "gtfobins-privesc",
+      "query": "abuse a SUID binary to escalate privileges on Linux using find",
+      "expect_any_pack": ["gtfobins-src"],
+      "expect_source_substring": ["find", "suid", "GTFOBins"],
+      "min_results": 1
+    },
+    {
+      "id": "lolbas-download",
+      "query": "living off the land Windows binary to download a file with certutil",
+      "expect_any_pack": ["lolbas-src"],
+      "expect_source_substring": ["certutil", "Download"],
+      "min_results": 1
+    },
+    {
+      "id": "sigma-powershell",
+      "query": "detection rule for suspicious base64 encoded PowerShell command",
+      "expect_any_pack": ["sigma-src"],
+      "expect_source_substring": ["powershell", "encoded", "SigmaHQ"],
+      "min_results": 1
+    },
+    {
+      "id": "yara-ransomware",
+      "query": "YARA signature to detect ransomware by encryption strings",
+      "expect_any_pack": ["yara-reversinglabs-src"],
+      "expect_source_substring": ["Ransomware", "rule ", "yara"],
+      "min_results": 1
+    },
+    {
+      "id": "mobile-android-testing",
+      "query": "testing Android application for insecure data storage",
+      "expect_any_pack": ["owasp-mastg-src", "mitre-attack-mobile-src"],
+      "expect_source_substring": ["Android", "storage", "MASTG"],
+      "min_results": 1
+    },
+    {
+      "id": "ics-attack",
+      "query": "ICS attack technique sending unauthorized command message to a PLC",
+      "expect_any_pack": ["mitre-attack-ics-src"],
+      "expect_source_substring": ["T0", "Command", "attack.mitre.org"],
+      "min_results": 1
+    }
+  ]
+}

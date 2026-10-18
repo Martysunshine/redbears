@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_DnsEvents.yaml -->
+id: 7569d97b-6166-4d7c-82a4-73fb2a53c0ed
+name: TI map IP entity to DnsEvents
+description: |
+    'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/IPEntity_DnsEvents.yaml'
+version: 1.0.1

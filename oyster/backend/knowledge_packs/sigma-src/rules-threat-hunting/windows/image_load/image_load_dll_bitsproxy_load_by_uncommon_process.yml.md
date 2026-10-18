@@ -1,0 +1,43 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/image_load/image_load_dll_bitsproxy_load_by_uncommon_process.yml -->
+title: BITS Client BitsProxy DLL Loaded By Uncommon Process
+id: e700ff14-1bff-4d1d-9438-738dff5f0466
+status: experimental
+description: |
+    Detects an uncommon process loading the "BitsProxy.dll". This DLL is used when the BITS COM instance or API is used.
+    This detection can be used to hunt for uncommon processes loading this DLL in your environment. Which may indicate potential suspicious activity occurring.
+references:
+    - https://unicornofhunt.com/2025/05/22/When-Unicorns-Go-Quiet-BITS-Jobs-and-the-Art-of-Stealthy-Transfers/
+author: UnicornOfHunt
+date: 2025-06-04
+tags:
+    - attack.persistence
+    - attack.execution
+    - attack.stealth
+    - attack.t1197
+    - detection.threat-hunting
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith: '\BitsProxy.dll'
+    filter_main_system:
+        Image:
+            - 'C:\Windows\System32\aitstatic.exe'
+            - 'C:\Windows\System32\bitsadmin.exe'
+            - 'C:\Windows\System32\desktopimgdownldr.exe'
+            - 'C:\Windows\System32\DeviceEnroller.exe'
+            - 'C:\Windows\System32\MDMAppInstaller.exe'
+            - 'C:\Windows\System32\ofdeploy.exe'
+            - 'C:\Windows\System32\RecoveryDrive.exe'
+            - 'C:\Windows\System32\Speech_OneCore\common\SpeechModelDownload.exe'
+            # - 'C:\Windows\System32\svchost.exe' # BITS Service - If you collect CommandLine info. Apply a filter for the specific BITS service.
+            - 'C:\Windows\SysWOW64\bitsadmin.exe'
+            - 'C:\Windows\SysWOW64\OneDriveSetup.exe'
+            - 'C:\Windows\SysWOW64\Speech_OneCore\Common\SpeechModelDownload.exe'
+    filter_optional_chrome:
+        Image: 'C:\Program Files\Google\Chrome\Application\chrome.exe'
+    condition: selection and not 1 of filter_main_* and not 1 of filter_optional_*
+falsepositives:
+    - Allowed binaries in the environment that do BITS Jobs
+level: low

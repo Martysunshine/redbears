@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_susp_write_eventlog.yml -->
+title: PowerShell Write-EventLog Usage
+id: 35f41cd7-c98e-469f-8a02-ec4ba0cc7a7e
+status: test
+description: Detects usage of the "Write-EventLog" cmdlet with 'RawData' flag. The cmdlet can be levreage to write malicious payloads to the EventLog and then retrieve them later for later use
+references:
+    - https://www.blackhillsinfosec.com/windows-event-logs-for-red-teams/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-08-16
+tags:
+    - attack.defense-impairment
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection:
+        ScriptBlockText|contains|all:
+            - 'Write-EventLog'
+            - '-RawData '
+    condition: selection
+falsepositives:
+    - Legitimate applications writing events via this cmdlet. Investigate alerts to determine if the action is benign
+level: medium

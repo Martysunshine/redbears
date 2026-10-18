@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/encoding/base64/reference-base64-string.yml -->
+rule:
+  meta:
+    name: reference Base64 string
+    namespace: data-manipulation/encoding/base64
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: file
+      dynamic: file
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+    mbc:
+      - Data::Encode Data::Base64 [C0026.001]
+      - Data::Check String [C0019]
+    examples:
+      - B766CC43D649D30E9F27AFF8F7EE7DE0
+      - BFB9B5391A13D0AFD787E87AB90F14F5
+      - 074072B261FC27B65C72671F13510C05
+      - 5DB2D2BE20D59AA0BE6709A6850F1775
+  features:
+    - or:
+      - string: /ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\+\//
+        description: standard Base64 alphabet
+      - string: /ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_/
+        description: URL-safe Base64 alphabet

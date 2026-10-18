@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/compression/extract-cabinet-on-windows.yml -->
+rule:
+  meta:
+    name: extract Cabinet on Windows
+    namespace: data-manipulation/compression
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Deobfuscate/Decode Files or Information [T1140]
+    mbc:
+      - Data::Decompress Data [C0025]
+    references:
+      - https://learn.microsoft.com/en-us/windows/win32/devnotes/extracting-files-from-a-cabinet
+    examples:
+      - 44bad2e2a9e387b86870f009d01833ea4618d2a7cda5f64fa84a19f3bdf4efaf:0x1400028E0
+  features:
+    - and:
+      - match: create File Decompression Interface context on Windows
+      - or:
+        - api: cabinet.FDICopy
+        - api: cabinet.FDIDestroy

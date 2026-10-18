@@ -1,0 +1,25 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OSScripts/CL_LoadAssembly.yml -->
+---
+Name: CL_LoadAssembly.ps1
+Description: PowerShell Diagnostic Script
+Author: Jimmy (@bohops)
+Created: 2021-09-26
+Commands:
+  - Command: 'powershell.exe -ep bypass -command "set-location -path C:\Windows\diagnostics\system\Audio; import-module .\CL_LoadAssembly.ps1; LoadAssemblyFromPath ..\..\..\..\testing\fun.dll;[Program]::Fun()"'
+    Description: Proxy execute Managed DLL with PowerShell
+    Usecase: Execute proxied payload with Microsoft signed binary
+    Category: Execute
+    Privileges: User
+    MitreID: T1216
+    OperatingSystem: Windows 10 21H1 (likely other versions as well), Windows 11
+    Tags:
+      - Execute: DLL (.NET)
+Full_Path:
+  - Path: C:\Windows\diagnostics\system\Audio\CL_LoadAssembly.ps1
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/ff6c54ded6b52f379cec11fe17c1ccb956faa660/rules/windows/process_creation/proc_creation_win_lolbas_cl_loadassembly.yml
+Resources:
+  - Link: https://bohops.com/2018/01/07/executing-commands-and-bypassing-applocker-with-powershell-diagnostic-scripts/
+Acknowledgement:
+  - Person: Jimmy
+    Handle: '@bohops'

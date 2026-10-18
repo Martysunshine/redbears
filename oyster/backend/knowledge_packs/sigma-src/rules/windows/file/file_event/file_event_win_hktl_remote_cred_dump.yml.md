@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_hktl_remote_cred_dump.yml -->
+title: HackTool - Potential Remote Credential Dumping Activity Via CrackMapExec Or Impacket-Secretsdump
+id: 6e2a900a-ced9-4e4a-a9c2-13e706f9518a
+status: test
+description: Detects default filenames output from the execution of CrackMapExec and Impacket-secretsdump against an endpoint.
+references:
+    - https://github.com/Porchetta-Industries/CrackMapExec
+    - https://github.com/fortra/impacket/blob/ff8c200fd040b04d3b5ff05449646737f836235d/examples/secretsdump.py
+author: SecurityAura
+date: 2022-11-16
+modified: 2024-06-27
+tags:
+    - attack.credential-access
+    - attack.t1003
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        Image|endswith: '\svchost.exe'
+        # CommandLine|contains: 'RemoteRegistry' # Uncomment this line if you collect CommandLine data for files events from more accuracy
+        TargetFilename|re: '\\Windows\\System32\\[a-zA-Z0-9]{8}\.tmp$'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_powershell_enablescripts_enabled.yml -->
+title: PowerShell Script Execution Policy Enabled
+id: 8218c875-90b9-42e2-b60d-0b0069816d10
+related:
+    - id: fad91067-08c5-4d1a-8d8c-d96a21b37814
+      type: derived
+status: test
+description: Detects the enabling of the PowerShell script execution policy. Once enabled, this policy allows scripts to be executed.
+references:
+    - https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.PowerShell::EnableScripts
+author: Nasreddine Bencherchali (Nextron Systems), Thurein Oo
+date: 2023-10-18
+tags:
+    - attack.execution
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|endswith: '\Policies\Microsoft\Windows\PowerShell\EnableScripts'
+        Details: 'DWORD (0x00000001)'
+    condition: selection
+falsepositives:
+    - Likely
+level: low

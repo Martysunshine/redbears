@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/http/set-http-header.yml -->
+rule:
+  meta:
+    name: set HTTP header
+    namespace: communication/http
+    authors:
+      - mehunhoff@google.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - Communication::HTTP Communication::Set Header [C0002.013]
+    examples:
+      - 6A352C3E55E8AE5ED39DC1BE7FB964B1:0x1000E230
+  features:
+    - or:
+      - api: winhttp.WinHttpAddRequestHeaders
+      - api: System.Net.WebSockets.ClientWebSocketOptions::SetRequestHeader
+      - property/write: System.Net.WebClient::Headers
+      - and:
+        - or:
+          - property/read: System.Net.WebClient::Headers
+          - property/read: System.Net.WebRequest::Headers
+          - property/read: System.Net.HttpWebRequest::Headers
+        - api: System.Collections.Specialized.NameValueCollection::Add

@@ -1,0 +1,96 @@
+{
+  "id": "owasp-cicd-top10-src",
+  "name": "owasp-cicd-top10-src",
+  "version": "74b2c790d551",
+  "title": "OWASP Top 10 CI/CD Security Risks (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://owasp.org/www-project-top-10-ci-cd-security-risks/ at 74b2c790d551. 10 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP Top 10 CI/CD Security Risks, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "ci-cd",
+    "pipeline-security",
+    "supply-chain"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track OWASP CI/CD Top 10 editions.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "owasp-cicd-top10-src",
+  "upstream_commit": "74b2c790d5512998f232480dde61d4d42fa692ae",
+  "source_urls": [
+    "https://owasp.org/www-project-top-10-ci-cd-security-risks/",
+    "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks"
+  ],
+  "docs": [
+    {
+      "file": "CICD-SEC-01-Insufficient-Flow-Control-Mechanisms.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-01-Insufficient-Flow-Control-Mechanisms.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-02-Inadequate-Identity-And-Access-Management.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-02-Inadequate-Identity-And-Access-Management.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-03-Dependency-Chain-Abuse.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-03-Dependency-Chain-Abuse.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-04-Poisoned-Pipeline-Execution.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-04-Poisoned-Pipeline-Execution.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-05-Insufficient-PBAC.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-05-Insufficient-PBAC.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-06-Insufficient-Credential-Hygiene.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-06-Insufficient-Credential-Hygiene.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-07-Insecure-System-Configuration.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-07-Insecure-System-Configuration.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-08-Ungoverned-Usage-of-3rd-Party-Services.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-08-Ungoverned-Usage-of-3rd-Party-Services.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-09-Improper-Artifact-Integrity-Validation.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-09-Improper-Artifact-Integrity-Validation.md",
+      "section": "Definition"
+    },
+    {
+      "file": "CICD-SEC-10-Insufficient-Logging-And-Visibility.md",
+      "source_title": "Definition",
+      "source_url": "https://github.com/OWASP/www-project-top-10-ci-cd-security-risks/blob/74b2c790d5512998f232480dde61d4d42fa692ae/CICD-SEC-10-Insufficient-Logging-And-Visibility.md",
+      "section": "Definition"
+    }
+  ]
+}

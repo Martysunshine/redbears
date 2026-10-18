@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/identity_protection/azure_identity_protection_suspicious_browser.yml -->
+title: Suspicious Browser Activity
+id: 944f6adb-7a99-4c69-80c1-b712579e93e6
+status: test
+description: Indicates anomalous behavior based on suspicious sign-in activity across multiple tenants from different countries in the same browser
+references:
+    - https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks#suspicious-browser
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-user-accounts#unusual-sign-ins
+author: Mark Morowczynski '@markmorow', Gloria Lee, '@gleeiamglo'
+date: 2023-09-03
+tags:
+    - attack.stealth
+    - attack.t1078
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.initial-access
+logsource:
+    product: azure
+    service: riskdetection
+detection:
+    selection:
+        riskEventType: 'suspiciousBrowser'
+    condition: selection
+falsepositives:
+    - We recommend investigating the sessions flagged by this detection in the context of other sign-ins from the user.
+level: high

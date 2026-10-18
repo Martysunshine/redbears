@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/cisco/aaa/cisco_cli_local_accounts.yml -->
+title: Cisco Local Accounts
+id: 6d844f0f-1c18-41af-8f19-33e7654edfc3
+status: test
+description: Find local accounts being created or modified as well as remote authentication configurations
+author: Austin Clark
+date: 2019-08-12
+modified: 2023-01-04
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.t1136.001
+    - attack.t1098
+logsource:
+    product: cisco
+    service: aaa
+detection:
+    keywords:
+        - 'username'
+        - 'aaa'
+    condition: keywords
+falsepositives:
+    - When remote authentication is in place, this should not change often
+level: high

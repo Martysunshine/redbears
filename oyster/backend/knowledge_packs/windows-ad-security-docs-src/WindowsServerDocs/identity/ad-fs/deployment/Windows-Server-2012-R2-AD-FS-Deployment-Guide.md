@@ -1,0 +1,19 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/deployment/Windows-Server-2012-R2-AD-FS-Deployment-Guide.md -->
+---
+description: Learn how to build a federated identity management solution with Active Directory Federation Services. Extend distributed identification, authentication, and authorization services to Web-based applications across organization and platform boundaries.
+title: Windows Server AD FS Deployment Guide
+ms.date: 01/20/2023
+ms.topic: install-set-up-deploy
+---
+
+# Windows Server AD FS deployment guide
+
+Use Active Directory Federation Services (AD FS) with Windows Server to build a federated identity management solution. With AD FS you can extend distributed identification, authentication, and authorization services to web-based applications across organization and platform boundaries. By deploying AD FS, you can extend your organization's existing identity management capabilities beyond your network.
+
+- [Deploying a Federation Server Farm](Deploying-a-Federation-Server-Farm.md)
+- [Deploying Federation Server Proxies](Deploying-Federation-Server-Proxies.md)
+
+## See also
+
+- [AD FS Deployment](../../ad-fs/AD-FS-Deployment.md)
+- [Integrating your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity)

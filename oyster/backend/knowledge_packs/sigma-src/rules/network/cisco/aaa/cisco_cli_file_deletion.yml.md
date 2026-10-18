@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/network/cisco/aaa/cisco_cli_file_deletion.yml -->
+title: Cisco File Deletion
+id: 71d65515-c436-43c0-841b-236b1f32c21e
+status: test
+description: See what files are being deleted from flash file systems
+author: Austin Clark
+date: 2019-08-12
+modified: 2023-01-04
+tags:
+    - attack.impact
+    - attack.stealth
+    - attack.t1070.004
+    - attack.t1561.001
+    - attack.t1561.002
+logsource:
+    product: cisco
+    service: aaa
+detection:
+    keywords:
+        - 'erase'
+        - 'delete'
+        - 'format'
+    condition: keywords
+falsepositives:
+    - Will be used sometimes by admins to clean up local flash space
+level: medium

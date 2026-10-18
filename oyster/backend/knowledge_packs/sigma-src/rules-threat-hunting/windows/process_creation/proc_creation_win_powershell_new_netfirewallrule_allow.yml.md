@@ -1,0 +1,40 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/process_creation/proc_creation_win_powershell_new_netfirewallrule_allow.yml -->
+title: New Windows Firewall Rule Added Via New-NetFirewallRule Cmdlet
+id: 51483085-0cba-46a8-837e-4416496d6971
+related:
+    - id: 8d31dd2e-b582-48ca-826e-dcaa2c1ca264
+      type: similar
+status: test
+description: |
+    Detects calls to the "New-NetFirewallRule" cmdlet from PowerShell in order to add a new firewall rule with an "Allow" action.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1562.004/T1562.004.md#atomic-test-24---set-a-firewall-rule-using-new-netfirewallrule
+    - https://malware.news/t/the-rhysida-ransomware-activity-analysis-and-ties-to-vice-society/72170
+    - https://cybersecuritynews.com/rhysida-ransomware-attacking-windows/
+author: frack113
+date: 2024-05-03
+tags:
+    - attack.defense-impairment
+    - attack.t1686.003
+    - detection.threat-hunting
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_name:
+        - Image|endswith:
+              - '\powershell.exe'
+              - '\pwsh.exe'
+              - '\powershell_ise.exe'
+        - OriginalFileName:
+              - 'PowerShell.EXE'
+              - 'pwsh.dll'
+    selection_args:
+        CommandLine|contains|all:
+            - 'New-NetFirewallRule '
+            - ' -Action '
+            - 'allow'
+    condition: all of selection_*
+falsepositives:
+    - Administrator script
+level: low

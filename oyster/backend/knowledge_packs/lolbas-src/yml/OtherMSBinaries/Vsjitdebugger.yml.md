@@ -1,0 +1,25 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Vsjitdebugger.yml -->
+---
+Name: vsjitdebugger.exe
+Description: Just-In-Time (JIT) debugger included with Visual Studio
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: Vsjitdebugger.exe {PATH:.exe}
+    Description: Executes specified executable as a subprocess of Vsjitdebugger.exe.
+    Usecase: Execution of local PE file as a subprocess of Vsjitdebugger.exe.
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: EXE
+Full_Path:
+  - Path: c:\windows\system32\vsjitdebugger.exe
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_susp_use_of_vsjitdebugger_bin.yml
+Resources:
+  - Link: https://twitter.com/pabraeken/status/990758590020452353
+Acknowledgement:
+  - Person: Pierre-Alexandre Braeken
+    Handle: '@pabraeken'

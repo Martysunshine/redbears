@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/builtin/clamav/lnx_clamav_relevant_message.yml -->
+title: Relevant ClamAV Message
+id: 36aa86ca-fd9d-4456-814e-d3b1b8e1e0bb
+status: stable
+description: Detects relevant ClamAV messages
+references:
+    - https://github.com/ossec/ossec-hids/blob/1ecffb1b884607cb12e619f9ab3c04f530801083/etc/rules/clam_av_rules.xml
+author: Florian Roth (Nextron Systems)
+date: 2017-03-01
+tags:
+    - attack.resource-development
+    - attack.t1588.001
+logsource:
+    product: linux
+    service: clamav
+detection:
+    keywords:
+        - 'Trojan*FOUND'
+        - 'VirTool*FOUND'
+        - 'Webshell*FOUND'
+        - 'Rootkit*FOUND'
+        - 'Htran*FOUND'
+    condition: keywords
+falsepositives:
+    - Unknown
+level: high

@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_systeminfo_execution.yml -->
+title: Suspicious Execution of Systeminfo
+id: 0ef56343-059e-4cb6-adc1-4c3c967c5e46
+status: test
+description: Detects usage of the "systeminfo" command to retrieve information
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1082/T1082.md#atomic-test-1---system-information-discovery
+    - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/systeminfo
+author: frack113
+date: 2022-01-01
+modified: 2022-07-14
+tags:
+    - attack.discovery
+    - attack.t1082
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        - Image|endswith: '\systeminfo.exe'
+        - OriginalFileName: 'sysinfo.exe'
+    condition: selection
+falsepositives:
+    - Unknown
+level: low

@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2023/TA/Mustang-Panda-Australia-Campaign/proc_creation_win_apt_mustang_panda_indicators.yml -->
+title: Potential APT Mustang Panda Activity Against Australian Gov
+id: 7806bb49-f653-48d3-a915-5115c1a85234
+status: test
+description: Detects specific command line execution used by Mustang Panda in a targeted attack against the Australian government as reported by Lab52
+references:
+    - https://lab52.io/blog/new-mustang-pandas-campaing-against-australia/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-05-15
+tags:
+    - attack.execution
+    - attack.g0129
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_1:
+        CommandLine|contains|all:
+            - 'copy SolidPDFCreator.dll'
+            - 'C:\Users\Public\Libraries\PhotoTvRHD\SolidPDFCreator.dll'
+    selection_2:
+        CommandLine|contains|all:
+            - 'reg '
+            - '\Windows\CurrentVersion\Run'
+            - 'SolidPDF'
+            - 'C:\Users\Public\Libraries\PhotoTvRHD\'
+    condition: 1 of selection_*
+falsepositives:
+    - Unlikely
+level: high

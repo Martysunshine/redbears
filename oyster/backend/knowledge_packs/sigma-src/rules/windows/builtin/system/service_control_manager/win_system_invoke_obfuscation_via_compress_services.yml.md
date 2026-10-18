@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_invoke_obfuscation_via_compress_services.yml -->
+title: Invoke-Obfuscation COMPRESS OBFUSCATION - System
+id: 175997c5-803c-4b08-8bb0-70b099f47595
+status: test
+description: Detects Obfuscated Powershell via COMPRESS OBFUSCATION
+references:
+    - https://github.com/SigmaHQ/sigma/issues/1009 # (Task 19)
+author: Timur Zinniatullin, oscd.community
+date: 2020-10-18
+modified: 2022-11-29
+tags:
+    - attack.stealth
+    - attack.t1027
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+        ImagePath|contains|all:
+            - 'new-object'
+            - 'text.encoding]::ascii'
+            - 'readtoend'
+        ImagePath|contains:
+            - ':system.io.compression.deflatestream'
+            - 'system.io.streamreader'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

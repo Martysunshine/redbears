@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/internal/limitation/static/internal-autoit-file-limitation.yml -->
+rule:
+  meta:
+    name: (internal) autoit file limitation
+    # capa will detect dozens of capabilities for AutoIt samples,
+    # but these are due to the AutoIt runtime, not the payload script.
+    # so, don't confuse the user with FP matches - bail instead
+    namespace: internal/limitation/static
+    authors:
+      - william.ballenthin@mandiant.com
+    description: |
+      This sample appears to be compiled with AutoIt.
+
+      AutoIt is a freeware BASIC-like scripting language designed for automating the Windows GUI.
+      capa cannot handle AutoIt scripts. This means that the results will be misleading or incomplete.
+      You may have to analyze the file manually, using a tool like the AutoIt decompiler MyAut2Exe.
+    scopes:
+      static: file
+      dynamic: file
+    examples:
+      - 55D77AB16377A8A314982F723FCC6FAE
+  features:
+    - or:
+      - match: compiler/autoit

@@ -1,0 +1,26 @@
+<!-- source: https://github.com/OISF/suricata/blob/9a2b7004716b750f390ee52cf6053c97398d7af3/doc/userguide/partials/options-unittests.rst -->
+.. Options for developers - unittests.
+
+.. option:: -u
+
+   Run the unit tests and exit. Requires that Suricata be configured
+   with *--enable-unittests*.
+
+.. option:: -U, --unittest-filter=REGEX
+
+   With the -U option you can select which of the unit tests you want
+   to run. This option uses REGEX. Example of use: suricata -u -U
+   http
+
+.. option:: --list-unittests
+
+   Lists available unit tests.
+
+.. option:: --fatal-unittests
+
+   Enables fatal failure on a unit test error. Suricata will exit
+   instead of continuing more tests.
+
+.. option:: --unittests-coverage
+
+   Display unit test coverage report.

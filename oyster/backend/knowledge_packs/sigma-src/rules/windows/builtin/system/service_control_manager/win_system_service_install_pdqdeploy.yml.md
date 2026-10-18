@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_service_install_pdqdeploy.yml -->
+title: New PDQDeploy Service - Server Side
+id: ee9ca27c-9bd7-4cee-9b01-6e906be7cae3
+status: test
+description: |
+    Detects a PDQDeploy service installation which indicates that PDQDeploy was installed on the machines.
+    PDQDeploy can be abused by attackers to remotely install packages or execute commands on target machines
+references:
+    - https://documentation.pdq.com/PDQDeploy/13.0.3.0/index.html?windows-services.htm
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-07-22
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.t1543.003
+logsource:
+    product: windows
+    service: system
+detection:
+    selection_root:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+    selection_service:
+        - ImagePath|contains: 'PDQDeployService.exe'
+        - ServiceName:
+              - 'PDQDeploy'
+              - 'PDQ Deploy'
+    condition: all of selection_*
+falsepositives:
+    - Legitimate use of the tool
+level: medium

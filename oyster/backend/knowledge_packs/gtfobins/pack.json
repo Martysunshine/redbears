@@ -1,0 +1,29 @@
+{
+  "id": "gtfobins",
+  "name": "GTFOBins (structured summaries)",
+  "version": "1.0.0",
+  "title": "GTFOBins — Unix Binary Abuse",
+  "domain": "offensive",
+  "security_domain": "privilege-escalation",
+  "description": "Structured summaries of how common Unix binaries can be abused (SUID/sudo/capabilities) to break out of restricted contexts or escalate. Each entry records binary, function, prerequisite, example intent, risk, detection and mitigation, with a link to the canonical GTFOBins page.",
+  "authority": "GTFOBins",
+  "publisher": "GTFOBins",
+  "trust_level": "community",
+  "licence": "GTFOBins is published under its own licence (see the upstream repository, historically GPL/CC-style). This pack contains original structured summaries and detection/mitigation guidance authored for Oyster with attribution and links, not a copy of the GTFOBins dataset.",
+  "attribution": "GTFOBins — https://gtfobins.github.io/ (Emilio Pinna, Andrea Cardaci, contributors).",
+  "tags": ["gtfobins", "privesc", "suid", "sudo", "capabilities", "linux", "unix"],
+  "supported_tasks": ["privesc-lookup", "detection-authoring", "hardening"],
+  "intended_audience": ["red-team", "blue-team", "pentester"],
+  "applicable_platforms": ["linux", "unix"],
+  "risk_classification": "medium",
+  "active_execution_possible": true,
+  "approval_requirements": "Describes local escalation primitives. Any active use requires an authorized, in-scope host and approval; the knowledge itself is read-only and pairs with detection + mitigation.",
+  "scope_requirements": "Authorized target host required before any technique is executed.",
+  "freshness_policy": "Review semi-annually against the GTFOBins catalogue.",
+  "retrieved_at": "2026-07-24",
+  "last_reviewed_at": "2026-07-24",
+  "source_urls": ["https://gtfobins.github.io/", "https://github.com/GTFOBins/GTFOBins.github.io"],
+  "docs": [
+    {"file": "gtfobins-entries.md", "source_title": "GTFOBins — structured entries", "source_url": "https://gtfobins.github.io/", "section": "Binary abuse entries", "risk_level": "medium"}
+  ]
+}

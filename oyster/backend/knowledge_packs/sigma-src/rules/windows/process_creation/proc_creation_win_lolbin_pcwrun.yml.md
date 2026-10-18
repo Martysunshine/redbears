@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_lolbin_pcwrun.yml -->
+title: Indirect Command Execution By Program Compatibility Wizard
+id: b97cd4b1-30b8-4a9d-bd72-6293928d52bc
+status: test
+description: Detect indirect command execution via Program Compatibility Assistant pcwrun.exe
+references:
+    - https://twitter.com/pabraeken/status/991335019833708544
+    - https://lolbas-project.github.io/lolbas/Binaries/Pcwrun/
+author: A. Sungurov , oscd.community
+date: 2020-10-12
+modified: 2021-11-27
+tags:
+    - attack.stealth
+    - attack.t1218
+    - attack.execution
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        ParentImage|endswith: '\pcwrun.exe'
+    condition: selection
+falsepositives:
+    - Need to use extra processing with 'unique_count' / 'filter' to focus on outliers as opposed to commonly seen artifacts
+    - Legit usage of scripts
+level: low

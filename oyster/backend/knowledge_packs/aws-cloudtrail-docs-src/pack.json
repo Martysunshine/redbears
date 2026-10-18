@@ -1,0 +1,900 @@
+{
+  "id": "aws-cloudtrail-docs-src",
+  "name": "aws-cloudtrail-docs-src",
+  "version": "56f54d99dfee",
+  "title": "AWS CloudTrail User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/cloudtrail/ at 56f54d99dfee. 143 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "AWS CloudTrail User Guide, Amazon.com, Inc., CC BY-SA 4.0.",
+  "tags": [
+    "aws",
+    "cloudtrail",
+    "cloud",
+    "logging",
+    "audit"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'master' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-cloudtrail-docs-src",
+  "upstream_commit": "56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a",
+  "source_urls": [
+    "https://docs.aws.amazon.com/cloudtrail/",
+    "https://github.com/awsdocs/aws-cloudtrail-user-guide"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/CloudTrail-compliance.md",
+      "source_title": "Compliance validation for AWS CloudTrail<a name=\"CloudTrail-compliance\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/CloudTrail-compliance.md",
+      "section": "Compliance validation for AWS CloudTrail<a name=\"CloudTrail-compliance\"></a>"
+    },
+    {
+      "file": "doc_source/KMS-key-naming-requirements.md",
+      "source_title": "AWS KMS alias naming requirements<a name=\"KMS-key-naming-requirements\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/KMS-key-naming-requirements.md",
+      "section": "AWS KMS alias naming requirements<a name=\"KMS-key-naming-requirements\"></a>"
+    },
+    {
+      "file": "doc_source/WhatIsCloudTrail-Limits.md",
+      "source_title": "Quotas in AWS CloudTrail<a name=\"WhatIsCloudTrail-Limits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/WhatIsCloudTrail-Limits.md",
+      "section": "Quotas in AWS CloudTrail<a name=\"WhatIsCloudTrail-Limits\"></a>"
+    },
+    {
+      "file": "doc_source/WhatIsCloudTrail-Security.md",
+      "source_title": "Security in AWS CloudTrail<a name=\"WhatIsCloudTrail-Security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/WhatIsCloudTrail-Security.md",
+      "section": "Security in AWS CloudTrail<a name=\"WhatIsCloudTrail-Security\"></a>"
+    },
+    {
+      "file": "doc_source/best-practices-security.md",
+      "source_title": "Security best practices in AWS CloudTrail<a name=\"best-practices-security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/best-practices-security.md",
+      "section": "Security best practices in AWS CloudTrail<a name=\"best-practices-security\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-add-delegated-administrator.md",
+      "source_title": "Add a CloudTrail delegated administrator<a name=\"cloudtrail-add-delegated-administrator\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-add-delegated-administrator.md",
+      "section": "Add a CloudTrail delegated administrator<a name=\"cloudtrail-add-delegated-administrator\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-additional-cli-commands.md",
+      "source_title": "Managing trails with the AWS CLI<a name=\"cloudtrail-additional-cli-commands\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-additional-cli-commands.md",
+      "section": "Managing trails with the AWS CLI<a name=\"cloudtrail-additional-cli-commands\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-and-interface-VPC.md",
+      "source_title": "Using AWS CloudTrail with interface VPC endpoints<a name=\"cloudtrail-and-interface-VPC\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-and-interface-VPC.md",
+      "section": "Using AWS CloudTrail with interface VPC endpoints<a name=\"cloudtrail-and-interface-VPC\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-aws-service-specific-topics.md",
+      "source_title": "CloudTrail supported services and integrations<a name=\"cloudtrail-aws-service-specific-topics\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-aws-service-specific-topics.md",
+      "section": "CloudTrail supported services and integrations<a name=\"cloudtrail-aws-service-specific-topics\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-concepts-trails-managing-and-using.md",
+      "source_title": "Tips for managing trails<a name=\"cloudtrail-concepts-trails-managing-and-using\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-concepts-trails-managing-and-using.md",
+      "section": "Tips for managing trails<a name=\"cloudtrail-concepts-trails-managing-and-using\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-concepts.md",
+      "source_title": "CloudTrail concepts<a name=\"cloudtrail-concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-concepts.md",
+      "section": "CloudTrail concepts<a name=\"cloudtrail-concepts\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-copy-trail-to-lake-eds.md",
+      "source_title": "Copy trail events to an event data store<a name=\"cloudtrail-copy-trail-to-lake-eds\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-copy-trail-to-lake-eds.md",
+      "section": "Copy trail events to an event data store<a name=\"cloudtrail-copy-trail-to-lake-eds\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-copy-trail-to-lake.md",
+      "source_title": "Copying trail events to CloudTrail Lake<a name=\"cloudtrail-copy-trail-to-lake\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-copy-trail-to-lake.md",
+      "section": "Copying trail events to CloudTrail Lake<a name=\"cloudtrail-copy-trail-to-lake\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-a-trail-using-the-console-first-time.md",
+      "source_title": "Creating a trail<a name=\"cloudtrail-create-a-trail-using-the-console-first-time\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-a-trail-using-the-console-first-time.md",
+      "section": "Creating a trail<a name=\"cloudtrail-create-a-trail-using-the-console-first-time\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-create-trail.md",
+      "source_title": "Using create\\-trail<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-create-trail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-create-trail.md",
+      "section": "Using create\\-trail<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-create-trail\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-update-trail.md",
+      "source_title": "Using update\\-trail<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-update-trail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-update-trail.md",
+      "section": "Using update\\-trail<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-update-trail\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli.md",
+      "source_title": "Creating, updating, and managing trails with the AWS Command Line Interface<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli.md",
+      "section": "Creating, updating, and managing trails with the AWS Command Line Interface<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-aws-cli\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-a-trail-by-using-the-console.md",
+      "source_title": "Creating and updating a trail with the console<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-a-trail-by-using-the-console.md",
+      "section": "Creating and updating a trail with the console<a name=\"cloudtrail-create-and-update-a-trail-by-using-the-console\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-a-trail.md",
+      "source_title": "Creating a trail for your AWS account<a name=\"cloudtrail-create-and-update-a-trail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-a-trail.md",
+      "section": "Creating a trail for your AWS account<a name=\"cloudtrail-create-and-update-a-trail\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-create-and-update-an-organizational-trail-by-using-the-aws-cli.md",
+      "source_title": "Creating a trail for an organization with the AWS Command Line Interface<a name=\"cloudtrail-create-and-update-an-organizational-trail-by-using-the-aws-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-create-and-update-an-organizational-trail-by-using-the-aws-cli.md",
+      "section": "Creating a trail for an organization with the AWS Command Line Interface<a name=\"cloudtrail-create-and-update-an-organizational-trail-by-using-the-aws-cli\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-data-consistency.md",
+      "source_title": "Managing data consistency in CloudTrail<a name=\"cloudtrail-data-consistency\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-data-consistency.md",
+      "section": "Managing data consistency in CloudTrail<a name=\"cloudtrail-data-consistency\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-delegated-administrator-permissions.md",
+      "source_title": "Required permissions to assign a delegated administrator<a name=\"cloudtrail-delegated-administrator-permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-delegated-administrator-permissions.md",
+      "section": "Required permissions to assign a delegated administrator<a name=\"cloudtrail-delegated-administrator-permissions\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-delegated-administrator.md",
+      "source_title": "Organization delegated administrator<a name=\"cloudtrail-delegated-administrator\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-delegated-administrator.md",
+      "section": "Organization delegated administrator<a name=\"cloudtrail-delegated-administrator\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-delete-trails-console.md",
+      "source_title": "Deleting a trail<a name=\"cloudtrail-delete-trails-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-delete-trails-console.md",
+      "section": "Deleting a trail<a name=\"cloudtrail-delete-trails-console\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-document-history.md",
+      "source_title": "Document history<a name=\"cloudtrail-document-history\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-document-history.md",
+      "section": "Document history<a name=\"cloudtrail-document-history\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-download-lake-query-results.md",
+      "source_title": "Download your CloudTrail Lake saved query results<a name=\"cloudtrail-download-lake-query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-download-lake-query-results.md",
+      "section": "Download your CloudTrail Lake saved query results<a name=\"cloudtrail-download-lake-query-results\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-event-reference-aws-console-sign-in-events.md",
+      "source_title": "AWS Management Console sign\\-in events<a name=\"cloudtrail-event-reference-aws-console-sign-in-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-event-reference-aws-console-sign-in-events.md",
+      "section": "AWS Management Console sign\\-in events<a name=\"cloudtrail-event-reference-aws-console-sign-in-events\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-event-reference-insight-details.md",
+      "source_title": "CloudTrail Insights `insightDetails` element<a name=\"cloudtrail-event-reference-insight-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-event-reference-insight-details.md",
+      "section": "CloudTrail Insights `insightDetails` element<a name=\"cloudtrail-event-reference-insight-details\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-event-reference-record-contents.md",
+      "source_title": "CloudTrail record contents<a name=\"cloudtrail-event-reference-record-contents\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-event-reference-record-contents.md",
+      "section": "CloudTrail record contents<a name=\"cloudtrail-event-reference-record-contents\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-event-reference-user-identity.md",
+      "source_title": "CloudTrail userIdentity element<a name=\"cloudtrail-event-reference-user-identity\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-event-reference-user-identity.md",
+      "section": "CloudTrail userIdentity element<a name=\"cloudtrail-event-reference-user-identity\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-event-reference.md",
+      "source_title": "CloudTrail log event reference<a name=\"cloudtrail-event-reference\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-event-reference.md",
+      "section": "CloudTrail log event reference<a name=\"cloudtrail-event-reference\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-find-lake-query-results.md",
+      "source_title": "Find your CloudTrail Lake saved query results<a name=\"cloudtrail-find-lake-query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-find-lake-query-results.md",
+      "section": "Find your CloudTrail Lake saved query results<a name=\"cloudtrail-find-lake-query-results\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-find-log-files.md",
+      "source_title": "Finding your CloudTrail log files<a name=\"cloudtrail-find-log-files\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-find-log-files.md",
+      "section": "Finding your CloudTrail log files<a name=\"cloudtrail-find-log-files\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-getting-started.md",
+      "source_title": "Working with CloudTrail<a name=\"cloudtrail-getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-getting-started.md",
+      "section": "Working with CloudTrail<a name=\"cloudtrail-getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-lake-cloudwatch-metrics.md",
+      "source_title": "Supported CloudWatch metrics<a name=\"cloudtrail-lake-cloudwatch-metrics\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-lake-cloudwatch-metrics.md",
+      "section": "Supported CloudWatch metrics<a name=\"cloudtrail-lake-cloudwatch-metrics\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-lake-supported-regions.md",
+      "source_title": "CloudTrail Lake supported Regions<a name=\"cloudtrail-lake-supported-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-lake-supported-regions.md",
+      "section": "CloudTrail Lake supported Regions<a name=\"cloudtrail-lake-supported-regions\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-lake.md",
+      "source_title": "Working with AWS CloudTrail Lake<a name=\"cloudtrail-lake\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-lake.md",
+      "section": "Working with AWS CloudTrail Lake<a name=\"cloudtrail-lake\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-custom-validation.md",
+      "source_title": "Custom implementations of CloudTrail log file integrity validation<a name=\"cloudtrail-log-file-custom-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-custom-validation.md",
+      "section": "Custom implementations of CloudTrail log file integrity validation<a name=\"cloudtrail-log-file-custom-validation\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-encryption-cli.md",
+      "source_title": "Enabling and disabling CloudTrail log file encryption with the AWS CLI<a name=\"cloudtrail-log-file-encryption-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-encryption-cli.md",
+      "section": "Enabling and disabling CloudTrail log file encryption with the AWS CLI<a name=\"cloudtrail-log-file-encryption-cli\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-examples.md",
+      "source_title": "CloudTrail log file examples<a name=\"cloudtrail-log-file-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-examples.md",
+      "section": "CloudTrail log file examples<a name=\"cloudtrail-log-file-examples\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-validation-cli.md",
+      "source_title": "Validating CloudTrail log file integrity with the AWS CLI<a name=\"cloudtrail-log-file-validation-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-validation-cli.md",
+      "section": "Validating CloudTrail log file integrity with the AWS CLI<a name=\"cloudtrail-log-file-validation-cli\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-validation-digest-file-structure.md",
+      "source_title": "CloudTrail digest file structure<a name=\"cloudtrail-log-file-validation-digest-file-structure\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-validation-digest-file-structure.md",
+      "section": "CloudTrail digest file structure<a name=\"cloudtrail-log-file-validation-digest-file-structure\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-validation-enabling.md",
+      "source_title": "Enabling log file integrity validation for CloudTrail<a name=\"cloudtrail-log-file-validation-enabling\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-validation-enabling.md",
+      "section": "Enabling log file integrity validation for CloudTrail<a name=\"cloudtrail-log-file-validation-enabling\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-log-file-validation-intro.md",
+      "source_title": "Validating CloudTrail log file integrity<a name=\"cloudtrail-log-file-validation-intro\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-log-file-validation-intro.md",
+      "section": "Validating CloudTrail log file integrity<a name=\"cloudtrail-log-file-validation-intro\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-non-api-events.md",
+      "source_title": "Non\\-API events captured by CloudTrail<a name=\"cloudtrail-non-api-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-non-api-events.md",
+      "section": "Non\\-API events captured by CloudTrail<a name=\"cloudtrail-non-api-events\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-permissions-for-sns-notifications.md",
+      "source_title": "Amazon SNS topic policy for CloudTrail<a name=\"cloudtrail-permissions-for-sns-notifications\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-permissions-for-sns-notifications.md",
+      "section": "Amazon SNS topic policy for CloudTrail<a name=\"cloudtrail-permissions-for-sns-notifications\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-query-results-validation-cli.md",
+      "source_title": "Validate query results with the command line<a name=\"cloudtrail-query-results-validation-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-query-results-validation-cli.md",
+      "section": "Validate query results with the command line<a name=\"cloudtrail-query-results-validation-cli\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-query-results-validation-intro.md",
+      "source_title": "Validate saved query results<a name=\"cloudtrail-query-results-validation-intro\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-query-results-validation-intro.md",
+      "section": "Validate saved query results<a name=\"cloudtrail-query-results-validation-intro\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-read-log-files.md",
+      "source_title": "Downloading your CloudTrail log files<a name=\"cloudtrail-read-log-files\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-read-log-files.md",
+      "section": "Downloading your CloudTrail log files<a name=\"cloudtrail-read-log-files\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-receive-logs-from-multiple-accounts.md",
+      "source_title": "Receiving CloudTrail log files from multiple accounts<a name=\"cloudtrail-receive-logs-from-multiple-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-receive-logs-from-multiple-accounts.md",
+      "section": "Receiving CloudTrail log files from multiple accounts<a name=\"cloudtrail-receive-logs-from-multiple-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-remove-delegated-administrator.md",
+      "source_title": "Remove a CloudTrail delegated administrator<a name=\"cloudtrail-remove-delegated-administrator\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-remove-delegated-administrator.md",
+      "section": "Remove a CloudTrail delegated administrator<a name=\"cloudtrail-remove-delegated-administrator\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-required-policy-for-cloudwatch-logs.md",
+      "source_title": "Role policy document for CloudTrail to use CloudWatch Logs for monitoring<a name=\"cloudtrail-required-policy-for-cloudwatch-logs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-required-policy-for-cloudwatch-logs.md",
+      "section": "Role policy document for CloudTrail to use CloudWatch Logs for monitoring<a name=\"cloudtrail-required-policy-for-cloudwatch-logs\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-results-file-custom-validation.md",
+      "source_title": "Custom implementations of CloudTrail query result file integrity validation<a name=\"cloudtrail-results-file-custom-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-results-file-custom-validation.md",
+      "section": "Custom implementations of CloudTrail query result file integrity validation<a name=\"cloudtrail-results-file-custom-validation\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-results-file-validation-sign-file-structure.md",
+      "source_title": "CloudTrail sign file structure<a name=\"cloudtrail-results-file-validation-sign-file-structure\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-results-file-validation-sign-file-structure.md",
+      "section": "CloudTrail sign file structure<a name=\"cloudtrail-results-file-validation-sign-file-structure\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-s3-bucket-naming-requirements.md",
+      "source_title": "Amazon S3 bucket naming requirements<a name=\"cloudtrail-s3-bucket-naming-requirements\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-s3-bucket-naming-requirements.md",
+      "section": "Amazon S3 bucket naming requirements<a name=\"cloudtrail-s3-bucket-naming-requirements\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-set-bucket-policy-for-multiple-accounts.md",
+      "source_title": "Setting bucket policy for multiple accounts<a name=\"cloudtrail-set-bucket-policy-for-multiple-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-set-bucket-policy-for-multiple-accounts.md",
+      "section": "Setting bucket policy for multiple accounts<a name=\"cloudtrail-set-bucket-policy-for-multiple-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-settings.md",
+      "source_title": "Settings<a name=\"cloudtrail-settings\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-settings.md",
+      "section": "Settings<a name=\"cloudtrail-settings\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs-assume-role.md",
+      "source_title": "Assuming a role<a name=\"cloudtrail-sharing-logs-assume-role\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs-assume-role.md",
+      "section": "Assuming a role<a name=\"cloudtrail-sharing-logs-assume-role\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs-create-role.md",
+      "source_title": "Creating a role<a name=\"cloudtrail-sharing-logs-create-role\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs-create-role.md",
+      "section": "Creating a role<a name=\"cloudtrail-sharing-logs-create-role\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs-stop-sharing.md",
+      "source_title": "Stop sharing CloudTrail log files between AWS accounts<a name=\"cloudtrail-sharing-logs-stop-sharing\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs-stop-sharing.md",
+      "section": "Stop sharing CloudTrail log files between AWS accounts<a name=\"cloudtrail-sharing-logs-stop-sharing\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs-third-party.md",
+      "source_title": "Creating an access policy to grant access to a third party<a name=\"cloudtrail-sharing-logs-third-party\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs-third-party.md",
+      "section": "Creating an access policy to grant access to a third party<a name=\"cloudtrail-sharing-logs-third-party\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs-your-accounts.md",
+      "source_title": "Creating an access policy to grant access to accounts you own<a name=\"cloudtrail-sharing-logs-your-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs-your-accounts.md",
+      "section": "Creating an access policy to grant access to accounts you own<a name=\"cloudtrail-sharing-logs-your-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-sharing-logs.md",
+      "source_title": "Sharing CloudTrail log files between AWS accounts<a name=\"cloudtrail-sharing-logs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-sharing-logs.md",
+      "section": "Sharing CloudTrail log files between AWS accounts<a name=\"cloudtrail-sharing-logs\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-supported-regions.md",
+      "source_title": "CloudTrail supported Regions<a name=\"cloudtrail-supported-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-supported-regions.md",
+      "section": "CloudTrail supported Regions<a name=\"cloudtrail-supported-regions\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-supported-tls-details.md",
+      "source_title": "Services that support TLS details in CloudTrail<a name=\"cloudtrail-supported-tls-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-supported-tls-details.md",
+      "section": "Services that support TLS details in CloudTrail<a name=\"cloudtrail-supported-tls-details\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-trail-manage-costs.md",
+      "source_title": "Managing CloudTrail costs<a name=\"cloudtrail-trail-manage-costs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-trail-manage-costs.md",
+      "section": "Managing CloudTrail costs<a name=\"cloudtrail-trail-manage-costs\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-trail-naming-requirements.md",
+      "source_title": "CloudTrail naming requirements<a name=\"cloudtrail-trail-naming-requirements\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-trail-naming-requirements.md",
+      "section": "CloudTrail naming requirements<a name=\"cloudtrail-trail-naming-requirements\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-turning-off-logging.md",
+      "source_title": "Turning off logging for a trail<a name=\"cloudtrail-turning-off-logging\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-turning-off-logging.md",
+      "section": "Turning off logging for a trail<a name=\"cloudtrail-turning-off-logging\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-tutorial.md",
+      "source_title": "Getting started with AWS CloudTrail tutorial<a name=\"cloudtrail-tutorial\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-tutorial.md",
+      "section": "Getting started with AWS CloudTrail tutorial<a name=\"cloudtrail-tutorial\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-unsupported-aws-services.md",
+      "source_title": "CloudTrail unsupported services<a name=\"cloudtrail-unsupported-aws-services\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-unsupported-aws-services.md",
+      "section": "CloudTrail unsupported services<a name=\"cloudtrail-unsupported-aws-services\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-update-a-trail-console.md",
+      "source_title": "Updating a trail<a name=\"cloudtrail-update-a-trail-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-update-a-trail-console.md",
+      "section": "Updating a trail<a name=\"cloudtrail-update-a-trail-console\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-user-guide.md",
+      "source_title": "What Is AWS CloudTrail?<a name=\"cloudtrail-user-guide\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-user-guide.md",
+      "section": "What Is AWS CloudTrail?<a name=\"cloudtrail-user-guide\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-workflow.md",
+      "source_title": "CloudTrail workflow<a name=\"cloudtrail-workflow\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-workflow.md",
+      "section": "CloudTrail workflow<a name=\"cloudtrail-workflow\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-working-with-log-files.md",
+      "source_title": "Working with CloudTrail log files<a name=\"cloudtrail-working-with-log-files\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudtrail-working-with-log-files.md",
+      "section": "Working with CloudTrail log files<a name=\"cloudtrail-working-with-log-files\"></a>"
+    },
+    {
+      "file": "doc_source/cloudwatch-alarms-for-cloudtrail.md",
+      "source_title": "Creating CloudWatch alarms for CloudTrail events: examples<a name=\"cloudwatch-alarms-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudwatch-alarms-for-cloudtrail.md",
+      "section": "Creating CloudWatch alarms for CloudTrail events: examples<a name=\"cloudwatch-alarms-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/cloudwatch-log-group-log-stream-naming-for-cloudtrail.md",
+      "source_title": "CloudWatch log group and log stream naming for CloudTrail<a name=\"cloudwatch-log-group-log-stream-naming-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cloudwatch-log-group-log-stream-naming-for-cloudtrail.md",
+      "section": "CloudWatch log group and log stream naming for CloudTrail<a name=\"cloudwatch-log-group-log-stream-naming-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/configure-sns-notifications-for-cloudtrail.md",
+      "source_title": "Configuring Amazon SNS notifications for CloudTrail<a name=\"configure-sns-notifications-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/configure-sns-notifications-for-cloudtrail.md",
+      "section": "Configuring Amazon SNS notifications for CloudTrail<a name=\"configure-sns-notifications-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/control-user-permissions-for-cloudtrail.md",
+      "source_title": "Controlling user permissions for CloudTrail<a name=\"control-user-permissions-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/control-user-permissions-for-cloudtrail.md",
+      "section": "Controlling user permissions for CloudTrail<a name=\"control-user-permissions-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/copy-trail-details.md",
+      "source_title": "Event copy details<a name=\"copy-trail-details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/copy-trail-details.md",
+      "section": "Event copy details<a name=\"copy-trail-details\"></a>"
+    },
+    {
+      "file": "doc_source/create-kms-key-policy-for-cloudtrail-update-trail.md",
+      "source_title": "Updating a resource to use your KMS key<a name=\"create-kms-key-policy-for-cloudtrail-update-trail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/create-kms-key-policy-for-cloudtrail-update-trail.md",
+      "section": "Updating a resource to use your KMS key<a name=\"create-kms-key-policy-for-cloudtrail-update-trail\"></a>"
+    },
+    {
+      "file": "doc_source/create-kms-key-policy-for-cloudtrail.md",
+      "source_title": "Configure AWS KMS key policies for CloudTrail<a name=\"create-kms-key-policy-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/create-kms-key-policy-for-cloudtrail.md",
+      "section": "Configure AWS KMS key policies for CloudTrail<a name=\"create-kms-key-policy-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/create-multiple-trails.md",
+      "source_title": "Create multiple trails<a name=\"create-multiple-trails\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/create-multiple-trails.md",
+      "section": "Create multiple trails<a name=\"create-multiple-trails\"></a>"
+    },
+    {
+      "file": "doc_source/create-s3-bucket-policy-for-cloudtrail.md",
+      "source_title": "Amazon S3 bucket policy for CloudTrail<a name=\"create-s3-bucket-policy-for-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/create-s3-bucket-policy-for-cloudtrail.md",
+      "section": "Amazon S3 bucket policy for CloudTrail<a name=\"create-s3-bucket-policy-for-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/creating-an-organizational-trail-best-practice.md",
+      "source_title": "Best practices for moving from member account trails to organization trails<a name=\"creating-an-organizational-trail-best-practice\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/creating-an-organizational-trail-best-practice.md",
+      "section": "Best practices for moving from member account trails to organization trails<a name=\"creating-an-organizational-trail-best-practice\"></a>"
+    },
+    {
+      "file": "doc_source/creating-an-organizational-trail-event-history.md",
+      "source_title": "Event history and organization trails<a name=\"creating-an-organizational-trail-event-history\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/creating-an-organizational-trail-event-history.md",
+      "section": "Event history and organization trails<a name=\"creating-an-organizational-trail-event-history\"></a>"
+    },
+    {
+      "file": "doc_source/creating-an-organizational-trail-in-the-console.md",
+      "source_title": "Creating a trail for your organization in the console<a name=\"creating-an-organizational-trail-in-the-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/creating-an-organizational-trail-in-the-console.md",
+      "section": "Creating a trail for your organization in the console<a name=\"creating-an-organizational-trail-in-the-console\"></a>"
+    },
+    {
+      "file": "doc_source/creating-an-organizational-trail-prepare.md",
+      "source_title": "Prepare for creating a trail for your organization<a name=\"creating-an-organizational-trail-prepare\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/creating-an-organizational-trail-prepare.md",
+      "section": "Prepare for creating a trail for your organization<a name=\"creating-an-organizational-trail-prepare\"></a>"
+    },
+    {
+      "file": "doc_source/creating-trail-organization.md",
+      "source_title": "Creating a trail for an organization<a name=\"creating-trail-organization\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/creating-trail-organization.md",
+      "section": "Creating a trail for an organization<a name=\"creating-trail-organization\"></a>"
+    },
+    {
+      "file": "doc_source/cross-service-confused-deputy-prevention.md",
+      "source_title": "Cross\\-service confused deputy prevention<a name=\"cross-service-confused-deputy-prevention\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/cross-service-confused-deputy-prevention.md",
+      "section": "Cross\\-service confused deputy prevention<a name=\"cross-service-confused-deputy-prevention\"></a>"
+    },
+    {
+      "file": "doc_source/data-protection.md",
+      "source_title": "Data protection in AWS CloudTrail<a name=\"data-protection\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/data-protection.md",
+      "section": "Data protection in AWS CloudTrail<a name=\"data-protection\"></a>"
+    },
+    {
+      "file": "doc_source/default-kms-key-policy.md",
+      "source_title": "Default KMS key policy created in CloudTrail console<a name=\"default-kms-key-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/default-kms-key-policy.md",
+      "section": "Default KMS key policy created in CloudTrail console<a name=\"default-kms-key-policy\"></a>"
+    },
+    {
+      "file": "doc_source/disaster-recovery-resiliency.md",
+      "source_title": "Resilience in AWS CloudTrail<a name=\"disaster-recovery-resiliency\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/disaster-recovery-resiliency.md",
+      "section": "Resilience in AWS CloudTrail<a name=\"disaster-recovery-resiliency\"></a>"
+    },
+    {
+      "file": "doc_source/encrypting-cloudtrail-log-files-with-aws-kms.md",
+      "source_title": "Encrypting CloudTrail log files with AWS KMS keys \\(SSE\\-KMS\\)<a name=\"encrypting-cloudtrail-log-files-with-aws-kms\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/encrypting-cloudtrail-log-files-with-aws-kms.md",
+      "section": "Encrypting CloudTrail log files with AWS KMS keys \\(SSE\\-KMS\\)<a name=\"encrypting-cloudtrail-log-files-with-aws-kms\"></a>"
+    },
+    {
+      "file": "doc_source/event-data-store-integration-events.md",
+      "source_title": "Create an event data store for events outside of AWS<a name=\"event-data-store-integration-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/event-data-store-integration-events.md",
+      "section": "Create an event data store for events outside of AWS<a name=\"event-data-store-integration-events\"></a>"
+    },
+    {
+      "file": "doc_source/get-and-view-cloudtrail-log-files.md",
+      "source_title": "Getting and viewing your CloudTrail log files<a name=\"get-and-view-cloudtrail-log-files\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/get-and-view-cloudtrail-log-files.md",
+      "section": "Getting and viewing your CloudTrail log files<a name=\"get-and-view-cloudtrail-log-files\"></a>"
+    },
+    {
+      "file": "doc_source/glossary.md",
+      "source_title": "AWS glossary<a name=\"glossary\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/glossary.md",
+      "section": "AWS glossary<a name=\"glossary\"></a>"
+    },
+    {
+      "file": "doc_source/granting-kms-permissions.md",
+      "source_title": "Granting permissions to create a KMS key<a name=\"granting-kms-permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/granting-kms-permissions.md",
+      "section": "Granting permissions to create a KMS key<a name=\"granting-kms-permissions\"></a>"
+    },
+    {
+      "file": "doc_source/how-cloudtrail-works.md",
+      "source_title": "How CloudTrail works<a name=\"how-cloudtrail-works\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/how-cloudtrail-works.md",
+      "section": "How CloudTrail works<a name=\"how-cloudtrail-works\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "AWS CloudTrail User Guide",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/index.md",
+      "section": "AWS CloudTrail User Guide"
+    },
+    {
+      "file": "doc_source/infrastructure-security.md",
+      "source_title": "Infrastructure security in AWS CloudTrail<a name=\"infrastructure-security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/infrastructure-security.md",
+      "section": "Infrastructure security in AWS CloudTrail<a name=\"infrastructure-security\"></a>"
+    },
+    {
+      "file": "doc_source/lake-learning-resources.md",
+      "source_title": "Learning resources<a name=\"lake-learning-resources\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/lake-learning-resources.md",
+      "section": "Learning resources<a name=\"lake-learning-resources\"></a>"
+    },
+    {
+      "file": "doc_source/logging-data-events-with-cloudtrail.md",
+      "source_title": "Logging data events<a name=\"logging-data-events-with-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/logging-data-events-with-cloudtrail.md",
+      "section": "Logging data events<a name=\"logging-data-events-with-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/logging-insights-events-with-cloudtrail.md",
+      "source_title": "Logging Insights events for trails<a name=\"logging-insights-events-with-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/logging-insights-events-with-cloudtrail.md",
+      "section": "Logging Insights events for trails<a name=\"logging-insights-events-with-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/logging-management-events-with-cloudtrail.md",
+      "source_title": "Logging management events<a name=\"logging-management-events-with-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/logging-management-events-with-cloudtrail.md",
+      "section": "Logging management events<a name=\"logging-management-events-with-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/monitor-cloudtrail-log-files-with-cloudwatch-logs.md",
+      "source_title": "Monitoring CloudTrail Log Files with Amazon CloudWatch Logs<a name=\"monitor-cloudtrail-log-files-with-cloudwatch-logs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/monitor-cloudtrail-log-files-with-cloudwatch-logs.md",
+      "section": "Monitoring CloudTrail Log Files with Amazon CloudWatch Logs<a name=\"monitor-cloudtrail-log-files-with-cloudwatch-logs\"></a>"
+    },
+    {
+      "file": "doc_source/non-api-aws-service-events.md",
+      "source_title": "AWS service events<a name=\"non-api-aws-service-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/non-api-aws-service-events.md",
+      "section": "AWS service events<a name=\"non-api-aws-service-events\"></a>"
+    },
+    {
+      "file": "doc_source/query-create-edit-query.md",
+      "source_title": "Create or edit a query<a name=\"query-create-edit-query\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-create-edit-query.md",
+      "section": "Create or edit a query<a name=\"query-create-edit-query\"></a>"
+    },
+    {
+      "file": "doc_source/query-eds-disable-termination.md",
+      "source_title": "Manage event data store lifecycles<a name=\"query-eds-disable-termination\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-eds-disable-termination.md",
+      "section": "Manage event data store lifecycles<a name=\"query-eds-disable-termination\"></a>"
+    },
+    {
+      "file": "doc_source/query-event-data-store-cloudtrail.md",
+      "source_title": "Create an event data store for CloudTrail events<a name=\"query-event-data-store-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-event-data-store-cloudtrail.md",
+      "section": "Create an event data store for CloudTrail events<a name=\"query-event-data-store-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/query-event-data-store-config-schema.md",
+      "source_title": "Configuration item schema<a name=\"query-event-data-store-config-schema\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-event-data-store-config-schema.md",
+      "section": "Configuration item schema<a name=\"query-event-data-store-config-schema\"></a>"
+    },
+    {
+      "file": "doc_source/query-event-data-store-config.md",
+      "source_title": "Create an event data store for AWS Config configuration items<a name=\"query-event-data-store-config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-event-data-store-config.md",
+      "section": "Create an event data store for AWS Config configuration items<a name=\"query-event-data-store-config\"></a>"
+    },
+    {
+      "file": "doc_source/query-event-data-store-integration.md",
+      "source_title": "Create an integration with an event source outside of AWS<a name=\"query-event-data-store-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-event-data-store-integration.md",
+      "section": "Create an integration with an event source outside of AWS<a name=\"query-event-data-store-integration\"></a>"
+    },
+    {
+      "file": "doc_source/query-event-data-store.md",
+      "source_title": "Create an event data store<a name=\"query-event-data-store\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-event-data-store.md",
+      "section": "Create an event data store<a name=\"query-event-data-store\"></a>"
+    },
+    {
+      "file": "doc_source/query-integration-event-schema.md",
+      "source_title": "CloudTrail Lake integrations event schema<a name=\"query-integration-event-schema\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-integration-event-schema.md",
+      "section": "CloudTrail Lake integrations event schema<a name=\"query-integration-event-schema\"></a>"
+    },
+    {
+      "file": "doc_source/query-lake-cli.md",
+      "source_title": "Managing CloudTrail Lake by using the AWS CLI<a name=\"query-lake-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-lake-cli.md",
+      "section": "Managing CloudTrail Lake by using the AWS CLI<a name=\"query-lake-cli\"></a>"
+    },
+    {
+      "file": "doc_source/query-lake-examples.md",
+      "source_title": "Example queries<a name=\"query-lake-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-lake-examples.md",
+      "section": "Example queries<a name=\"query-lake-examples\"></a>"
+    },
+    {
+      "file": "doc_source/query-limitations.md",
+      "source_title": "CloudTrail Lake SQL constraints<a name=\"query-limitations\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-limitations.md",
+      "section": "CloudTrail Lake SQL constraints<a name=\"query-limitations\"></a>"
+    },
+    {
+      "file": "doc_source/query-results.md",
+      "source_title": "View query results<a name=\"query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-results.md",
+      "section": "View query results<a name=\"query-results\"></a>"
+    },
+    {
+      "file": "doc_source/query-run-query.md",
+      "source_title": "Run a query and save query results<a name=\"query-run-query\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/query-run-query.md",
+      "section": "Run a query and save query results<a name=\"query-run-query\"></a>"
+    },
+    {
+      "file": "doc_source/receive-cloudtrail-log-files-from-multiple-regions.md",
+      "source_title": "Receiving CloudTrail log files from multiple regions<a name=\"receive-cloudtrail-log-files-from-multiple-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/receive-cloudtrail-log-files-from-multiple-regions.md",
+      "section": "Receiving CloudTrail log files from multiple regions<a name=\"receive-cloudtrail-log-files-from-multiple-regions\"></a>"
+    },
+    {
+      "file": "doc_source/s3-bucket-policy-lake-query-results.md",
+      "source_title": "Amazon S3 bucket policy for CloudTrail Lake query results<a name=\"s3-bucket-policy-lake-query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/s3-bucket-policy-lake-query-results.md",
+      "section": "Amazon S3 bucket policy for CloudTrail Lake query results<a name=\"s3-bucket-policy-lake-query-results\"></a>"
+    },
+    {
+      "file": "doc_source/save-query-results.md",
+      "source_title": "Additional information about saved query results<a name=\"save-query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/save-query-results.md",
+      "section": "Additional information about saved query results<a name=\"save-query-results\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam-awsmanpol.md",
+      "source_title": "AWS managed policies for AWS CloudTrail<a name=\"security-iam-awsmanpol\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security-iam-awsmanpol.md",
+      "section": "AWS managed policies for AWS CloudTrail<a name=\"security-iam-awsmanpol\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam.md",
+      "source_title": "Identity and Access Management for AWS CloudTrail<a name=\"security-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security-iam.md",
+      "section": "Identity and Access Management for AWS CloudTrail<a name=\"security-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_id-based-policy-examples.md",
+      "source_title": "Identity\\-based policy examples for AWS CloudTrail<a name=\"security_iam_id-based-policy-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security_iam_id-based-policy-examples.md",
+      "section": "Identity\\-based policy examples for AWS CloudTrail<a name=\"security_iam_id-based-policy-examples\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_resource-based-policy-examples.md",
+      "source_title": "AWS CloudTrail resource\\-based policy examples<a name=\"security_iam_resource-based-policy-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security_iam_resource-based-policy-examples.md",
+      "section": "AWS CloudTrail resource\\-based policy examples<a name=\"security_iam_resource-based-policy-examples\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_service-with-iam.md",
+      "source_title": "How AWS CloudTrail works with IAM<a name=\"security_iam_service-with-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security_iam_service-with-iam.md",
+      "section": "How AWS CloudTrail works with IAM<a name=\"security_iam_service-with-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_troubleshoot.md",
+      "source_title": "Troubleshooting AWS CloudTrail identity and access<a name=\"security_iam_troubleshoot\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/security_iam_troubleshoot.md",
+      "section": "Troubleshooting AWS CloudTrail identity and access<a name=\"security_iam_troubleshoot\"></a>"
+    },
+    {
+      "file": "doc_source/send-cloudtrail-events-to-cloudwatch-logs.md",
+      "source_title": "Sending events to CloudWatch Logs<a name=\"send-cloudtrail-events-to-cloudwatch-logs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/send-cloudtrail-events-to-cloudwatch-logs.md",
+      "section": "Sending events to CloudWatch Logs<a name=\"send-cloudtrail-events-to-cloudwatch-logs\"></a>"
+    },
+    {
+      "file": "doc_source/shared-event-ID.md",
+      "source_title": "Example sharedEventID<a name=\"shared-event-ID\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/shared-event-ID.md",
+      "section": "Example sharedEventID<a name=\"shared-event-ID\"></a>"
+    },
+    {
+      "file": "doc_source/stop-cloudtrail-from-sending-events-to-cloudwatch-logs.md",
+      "source_title": "Stopping CloudTrail from sending events to CloudWatch Logs<a name=\"stop-cloudtrail-from-sending-events-to-cloudwatch-logs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/stop-cloudtrail-from-sending-events-to-cloudwatch-logs.md",
+      "section": "Stopping CloudTrail from sending events to CloudWatch Logs<a name=\"stop-cloudtrail-from-sending-events-to-cloudwatch-logs\"></a>"
+    },
+    {
+      "file": "doc_source/turn-on-cloudtrail-in-additional-accounts.md",
+      "source_title": "Turning on CloudTrail in additional accounts<a name=\"turn-on-cloudtrail-in-additional-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/turn-on-cloudtrail-in-additional-accounts.md",
+      "section": "Turning on CloudTrail in additional accounts<a name=\"turn-on-cloudtrail-in-additional-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/use-cloudformation-template-to-create-cloudwatch-alarms.md",
+      "source_title": "Creating CloudWatch alarms with an AWS CloudFormation template<a name=\"use-cloudformation-template-to-create-cloudwatch-alarms\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/use-cloudformation-template-to-create-cloudwatch-alarms.md",
+      "section": "Creating CloudWatch alarms with an AWS CloudFormation template<a name=\"use-cloudformation-template-to-create-cloudwatch-alarms\"></a>"
+    },
+    {
+      "file": "doc_source/use-the-cloudtrail-processing-library.md",
+      "source_title": "Using the CloudTrail Processing Library<a name=\"use-the-cloudtrail-processing-library\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/use-the-cloudtrail-processing-library.md",
+      "section": "Using the CloudTrail Processing Library<a name=\"use-the-cloudtrail-processing-library\"></a>"
+    },
+    {
+      "file": "doc_source/using-service-linked-roles.md",
+      "source_title": "Using service\\-linked roles for AWS CloudTrail<a name=\"using-service-linked-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/using-service-linked-roles.md",
+      "section": "Using service\\-linked roles for AWS CloudTrail<a name=\"using-service-linked-roles\"></a>"
+    },
+    {
+      "file": "doc_source/view-cloudtrail-events-cli.md",
+      "source_title": "Viewing CloudTrail events with the AWS CLI<a name=\"view-cloudtrail-events-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-cloudtrail-events-cli.md",
+      "section": "Viewing CloudTrail events with the AWS CLI<a name=\"view-cloudtrail-events-cli\"></a>"
+    },
+    {
+      "file": "doc_source/view-cloudtrail-events-console.md",
+      "source_title": "Viewing CloudTrail events in the CloudTrail console<a name=\"view-cloudtrail-events-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-cloudtrail-events-console.md",
+      "section": "Viewing CloudTrail events in the CloudTrail console<a name=\"view-cloudtrail-events-console\"></a>"
+    },
+    {
+      "file": "doc_source/view-cloudtrail-events.md",
+      "source_title": "Viewing events with CloudTrail Event history<a name=\"view-cloudtrail-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-cloudtrail-events.md",
+      "section": "Viewing events with CloudTrail Event history<a name=\"view-cloudtrail-events\"></a>"
+    },
+    {
+      "file": "doc_source/view-download-cloudtrail-lake-query-results.md",
+      "source_title": "Get and download saved query results<a name=\"view-download-cloudtrail-lake-query-results\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-download-cloudtrail-lake-query-results.md",
+      "section": "Get and download saved query results<a name=\"view-download-cloudtrail-lake-query-results\"></a>"
+    },
+    {
+      "file": "doc_source/view-insights-events-cli.md",
+      "source_title": "Viewing CloudTrail Insights events with the AWS CLI<a name=\"view-insights-events-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-insights-events-cli.md",
+      "section": "Viewing CloudTrail Insights events with the AWS CLI<a name=\"view-insights-events-cli\"></a>"
+    },
+    {
+      "file": "doc_source/view-insights-events-console.md",
+      "source_title": "Viewing CloudTrail Insights events in the CloudTrail console<a name=\"view-insights-events-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-insights-events-console.md",
+      "section": "Viewing CloudTrail Insights events in the CloudTrail console<a name=\"view-insights-events-console\"></a>"
+    },
+    {
+      "file": "doc_source/view-insights-events.md",
+      "source_title": "Viewing CloudTrail Insights events<a name=\"view-insights-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/view-insights-events.md",
+      "section": "Viewing CloudTrail Insights events<a name=\"view-insights-events\"></a>"
+    },
+    {
+      "file": "doc_source/viewing-service-linked-channels.md",
+      "source_title": "Viewing service\\-linked channels for CloudTrail by using the AWS CLI<a name=\"viewing-service-linked-channels\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-cloudtrail-user-guide/blob/56f54d99dfee0c3faf3d4a2b87bb572ad9edf58a/doc_source/viewing-service-linked-channels.md",
+      "section": "Viewing service\\-linked channels for CloudTrail by using the AWS CLI<a name=\"viewing-service-linked-channels\"></a>"
+    }
+  ]
+}

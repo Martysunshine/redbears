@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CiscoASA-AvgAttackDetectRateIncrease.yaml -->
+id: c030bc9a-406f-4906-8315-8b53ee9c1a00
+name: Cisco ASA - average attack detection rate increase
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Analytic%20Rules/CiscoASA-AvgAttackDetectRateIncrease.yaml'
+version: 1.0.0

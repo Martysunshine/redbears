@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2023/TA/Diamond-Sleet/win_security_apt_diamond_sleet_scheduled_task.yml -->
+title: Diamond Sleet APT Scheduled Task Creation
+id: 3b8e5084-4de9-449a-a40d-0e11014f2e2d
+status: test
+description: |
+    Detects registry event related to the creation of a scheduled task used by Diamond Sleet APT during exploitation of Team City CVE-2023-42793 vulnerability
+references:
+    - https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-10-24
+tags:
+    - attack.execution
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.t1053.005
+    - detection.emerging-threats
+logsource:
+    product: windows
+    service: security
+    definition: 'The Advanced Audit Policy setting Object Access > Audit Other Object Access Events has to be configured to allow this detection. We also recommend extracting the Command field from the embedded XML in the event data.'
+detection:
+    selection:
+        EventID: 4698
+        TaskName: '\Windows TeamCity Settings User Interface'
+        TaskContent|contains: 'uTYNkfKxHiZrx3KJ'
+    condition: selection
+falsepositives:
+    - Unknown
+level: critical

@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/process_creation/proc_creation_win_curl_useragent.yml -->
+title: Curl.EXE Execution With Custom UserAgent
+id: 3286d37a-00fd-41c2-a624-a672dcd34e60
+status: test
+description: Detects execution of curl.exe with custom useragent options
+references:
+    - https://curl.se/docs/manpage.html
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1071.001/T1071.001.md#atomic-test-2---malicious-user-agents---cmd
+author: frack113
+date: 2022-01-23
+modified: 2023-02-21
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+    - detection.threat-hunting
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_curl:
+        - Image|endswith: '\curl.exe'
+        - Product: 'The curl executable'
+    selection_opt:
+        CommandLine|contains:
+            - ' -A '
+            - ' --user-agent '
+    condition: all of selection_*
+falsepositives:
+    - Scripts created by developers and admins
+    - Administrative activity
+level: medium

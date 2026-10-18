@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+torch
+transformers>=4.44
+huggingface_hub

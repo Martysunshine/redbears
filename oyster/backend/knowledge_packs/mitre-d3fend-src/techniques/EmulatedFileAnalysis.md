@@ -1,0 +1,52 @@
+<!-- source: https://d3fend.mitre.org/technique/d3f:EmulatedFileAnalysis/ -->
+# D3FEND — Emulated File Analysis
+
+**D3FEND tactic:** Detect
+**Acts on:** analyzes Document File, analyzes Executable File
+
+## Counters ATT&CK techniques
+- **T0853** — Scripting (sub-technique of Execution Technique; ATT&CK tactic: Execution)
+- **T0865** — Spearphishing Attachment (sub-technique of Initial Access Technique; ATT&CK tactic: Initial Access)
+- **T0871** — Execution through API (sub-technique of Execution Technique; ATT&CK tactic: Execution)
+- **T0894** — System Binary Proxy Execution (sub-technique of Evasion Technique; ATT&CK tactic: Evasion)
+- **T0895** — Autorun Image (sub-technique of Execution Technique; ATT&CK tactic: Execution)
+- **T1016** — System Network Configuration Discovery (sub-technique of Discovery Technique; ATT&CK tactic: Discovery)
+- **T1027.001** — Binary Padding (sub-technique of Obfuscated Files or Information; ATT&CK tactic: Stealth)
+- **T1027.002** — Software Packing (sub-technique of Obfuscated Files or Information; ATT&CK tactic: Stealth)
+- **T1027.004** — Compile After Delivery (sub-technique of Obfuscated Files or Information; ATT&CK tactic: Stealth)
+- **T1036.001** — Invalid Code Signature (sub-technique of Masquerading; ATT&CK tactic: Stealth)
+- **T1036.003** — Rename Legitimate Utilities (sub-technique of Masquerading; ATT&CK tactic: Stealth)
+- **T1037.001** — Logon Script (Windows) (sub-technique of Boot or Logon Initialization Scripts; ATT&CK tactic: Privilege Escalation)
+- **T1037.002** — Login Hook (sub-technique of Boot or Logon Initialization Scripts; ATT&CK tactic: Privilege Escalation)
+- **T1037.003** — Network Logon Script (sub-technique of Boot or Logon Initialization Scripts; ATT&CK tactic: Privilege Escalation)
+- **T1037.004** — RC Scripts (sub-technique of Boot or Logon Initialization Scripts; ATT&CK tactic: Persistence)
+- **T1055.003** — Thread Execution Hijacking (sub-technique of Process Injection; ATT&CK tactic: Privilege Escalation)
+- **T1059** — Command and Scripting Interpreter (sub-technique of Execution Technique; ATT&CK tactic: Execution)
+- **T1114.001** — Local Email Collection (sub-technique of Email Collection; ATT&CK tactic: Collection)
+- **T1137.001** — Office Template Macros (sub-technique of Office Application Startup; ATT&CK tactic: Persistence)
+- **T1137.003** — Outlook Forms (sub-technique of Office Application Startup; ATT&CK tactic: Persistence)
+- **T1140** — Deobfuscate/Decode Files or Information (sub-technique of Stealth Technique; ATT&CK tactic: Stealth)
+- **T1204.002** — Malicious File (sub-technique of User Execution; ATT&CK tactic: Execution)
+- **T1218.005** — Mshta (sub-technique of System Binary Proxy Execution; ATT&CK tactic: Stealth)
+- **T1220** — XSL Script Processing (sub-technique of Stealth Technique; ATT&CK tactic: Stealth)
+- **T1505.003** — Web Shell (sub-technique of Server Software Component; ATT&CK tactic: Persistence)
+- **T1534** — Internal Spearphishing (sub-technique of Lateral Movement Technique; ATT&CK tactic: Lateral Movement)
+- **T1546.002** — Screensaver (sub-technique of Event Triggered Execution; ATT&CK tactic: Privilege Escalation)
+- **T1546.005** — Trap (sub-technique of Event Triggered Execution; ATT&CK tactic: Persistence)
+- **T1546.006** — LC_LOAD_DYLIB Addition (sub-technique of Event Triggered Execution; ATT&CK tactic: Privilege Escalation)
+- **T1546.008** — Accessibility Features (sub-technique of Event Triggered Execution; ATT&CK tactic: Persistence)
+- **T1546.013** — PowerShell Profile (sub-technique of Event Triggered Execution; ATT&CK tactic: Privilege Escalation)
+- **T1546.015** — Component Object Model Hijacking (sub-technique of Event Triggered Execution; ATT&CK tactic: Privilege Escalation)
+- **T1547.001** — Registry Run Keys / Startup Folder (sub-technique of Boot or Logon Autostart Execution; ATT&CK tactic: Privilege Escalation)
+- **T1547.009** — Shortcut Modification (sub-technique of Boot or Logon Autostart Execution; ATT&CK tactic: Privilege Escalation)
+- **T1548.002** — Bypass User Account Control (sub-technique of Abuse Elevation Control Mechanism; ATT&CK tactic: Privilege Escalation)
+- **T1562.003** — Impair Command History Logging (sub-technique of Impair Defenses; ATT&CK tactic: Stealth)
+- **T1564.007** — VBA Stomping (sub-technique of Hide Artifacts; ATT&CK tactic: Stealth)
+- **T1565.003** — Runtime Data Manipulation (sub-technique of Data Manipulation; ATT&CK tactic: Impact)
+- **T1566.001** — Spearphishing Attachment (sub-technique of Phishing; ATT&CK tactic: Initial Access)
+- **T1566.002** — Spearphishing Link (sub-technique of Phishing; ATT&CK tactic: Initial Access)
+- **T1574.007** — Path Interception by PATH Environment Variable (sub-technique of Hijack Execution Flow; ATT&CK tactic: Stealth)
+- **T1574.008** — Path Interception by Search Order Hijacking (sub-technique of Hijack Execution Flow; ATT&CK tactic: Stealth)
+- **T1574.009** — Path Interception by Unquoted Path (sub-technique of Hijack Execution Flow; ATT&CK tactic: Stealth)
+
+Source: MITRE D3FEND official ontology mapping export (d3fend.mitre.org/api/ontology/inference/d3fend-full-mappings.csv).

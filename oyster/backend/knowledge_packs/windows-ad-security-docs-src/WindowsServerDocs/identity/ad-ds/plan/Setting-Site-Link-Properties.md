@@ -1,0 +1,32 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-ds/plan/Setting-Site-Link-Properties.md -->
+---
+description: "Learn more about: Setting Site Link Properties"
+title: Setting Site Link Properties
+author: robinharwood
+ms.author: roharwoo
+ms.date: 05/12/2025
+ms.topic: concept-article
+---
+
+# Setting Site Link Properties
+
+Intersite replication occurs according to the properties of the connection objects. When the Knowledge Consistency Checker (KCC) creates connection objects, it derives the replication schedule from properties of the site link objects. Each site link object represents the wide area network (WAN) connection between two or more sites.
+
+Setting site link object properties includes the following steps:
+
+-   Determining the cost that is associated with that replication path. The KCC uses cost to determine the least expensive route for replication between two sites that replicate the same directory partition.
+
+-   Determining the schedule that defines the times during which intersite replication can occur.
+
+-   Determining the replication interval that defines how frequently replication should occur during the times when replication is allowed, as defined in the schedule.
+
+## In this guide
+
+-   [Determining the Cost](../../ad-ds/plan/Determining-the-Cost.md)
+
+-   [Determining the Schedule](../../ad-ds/plan/Determining-the-Schedule.md)
+
+-   [Determining the Interval](../../ad-ds/plan/Determining-the-Interval.md)
+
+
+

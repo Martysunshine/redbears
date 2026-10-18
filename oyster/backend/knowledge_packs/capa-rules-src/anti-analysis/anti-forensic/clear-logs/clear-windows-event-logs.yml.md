@@ -1,0 +1,35 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-forensic/clear-logs/clear-windows-event-logs.yml -->
+rule:
+  meta:
+    name: clear Windows event logs
+    namespace: anti-analysis/anti-forensic/clear-logs
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Indicator Removal::Clear Windows Event Logs [T1070.001]
+    examples:
+      - 82BF6347ACF15E5D883715DC289D8A2B:0x14005E0C0
+      - mimikatz.exe_:0x45228B
+  features:
+    - and:
+      - os: windows
+      - or:
+        - and:
+          - or:
+            - api: advapi32.ElfClearEventLogFile
+            - api: advapi32.ClearEventLog
+            - api: wevtapi.EvtClearLog
+          - optional:
+            - api: advapi32.OpenEventLog
+            - api: advapi32.GetNumberOfEventLogRecords
+            - api: wevtapi.EvtOpenLog
+            - api: wevtapi.EvtOpenSession
+        - basic block:
+          - and:
+            - string: /wevtutil(\.exe)?\s+(clear-log|cl)/i
+        - call:
+          - and:
+            - string: /wevtutil(\.exe)?\s+(clear-log|cl)/i

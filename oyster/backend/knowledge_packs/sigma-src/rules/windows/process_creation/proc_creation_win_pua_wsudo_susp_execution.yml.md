@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_pua_wsudo_susp_execution.yml -->
+title: PUA - Wsudo Suspicious Execution
+id: bdeeabc9-ff2a-4a51-be59-bb253aac7891
+status: test
+description: Detects usage of wsudo (Windows Sudo Utility). Which is a tool that let the user execute programs with different permissions (System, Trusted Installer, Administrator...etc)
+references:
+    - https://github.com/M2Team/Privexec/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-12-02
+modified: 2023-02-14
+tags:
+    - attack.execution
+    - attack.privilege-escalation
+    - attack.t1059
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_metadata:
+        - Image|endswith: '\wsudo.exe'
+        - OriginalFileName: 'wsudo.exe'
+        - Description: 'Windows sudo utility'
+        - ParentImage|endswith: '\wsudo-bridge.exe'
+    selection_cli:
+        CommandLine|contains:
+            - '-u System'
+            - '-uSystem'
+            - '-u TrustedInstaller'
+            - '-uTrustedInstaller'
+            - ' --ti '
+    condition: 1 of selection_*
+falsepositives:
+    - Unknown
+level: high

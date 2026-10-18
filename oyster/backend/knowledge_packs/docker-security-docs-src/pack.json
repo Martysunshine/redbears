@@ -1,0 +1,152 @@
+{
+  "id": "docker-security-docs-src",
+  "name": "docker-security-docs-src",
+  "version": "07ce908fcf44",
+  "title": "Docker official security documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "container-security",
+  "description": "Imported from https://docs.docker.com/engine/security/ at 07ce908fcf44. 19 documents.",
+  "authority": "Docker",
+  "publisher": "Docker Inc.",
+  "trust_level": "official",
+  "licence": "Apache-2.0",
+  "attribution": "Docker documentation, Docker Inc., Apache License 2.0.",
+  "tags": [
+    "docker",
+    "containers",
+    "hardening"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "docker",
+    "linux"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "docker-security-docs-src",
+  "upstream_commit": "07ce908fcf44e06abe320b08a93fc01f57b25ec1",
+  "source_urls": [
+    "https://docs.docker.com/engine/security/",
+    "https://github.com/docker/docs"
+  ],
+  "docs": [
+    {
+      "file": "content/manuals/engine/security/_index.md",
+      "source_title": "Kernel namespaces",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/_index.md",
+      "section": "Kernel namespaces"
+    },
+    {
+      "file": "content/manuals/engine/security/antivirus.md",
+      "source_title": "antivirus.md",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/antivirus.md",
+      "section": "antivirus.md"
+    },
+    {
+      "file": "content/manuals/engine/security/apparmor.md",
+      "source_title": "Understand the policies",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/apparmor.md",
+      "section": "Understand the policies"
+    },
+    {
+      "file": "content/manuals/engine/security/certificates.md",
+      "source_title": "Understand the configuration",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/certificates.md",
+      "section": "Understand the configuration"
+    },
+    {
+      "file": "content/manuals/engine/security/https/README.md",
+      "source_title": "README.md",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/https/README.md",
+      "section": "README.md"
+    },
+    {
+      "file": "content/manuals/engine/security/non-events.md",
+      "source_title": "non-events.md",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/non-events.md",
+      "section": "non-events.md"
+    },
+    {
+      "file": "content/manuals/engine/security/protect-access.md",
+      "source_title": "Use SSH to protect the Docker daemon socket",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/protect-access.md",
+      "section": "Use SSH to protect the Docker daemon socket"
+    },
+    {
+      "file": "content/manuals/engine/security/rootless/_index.md",
+      "source_title": "How it works",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/rootless/_index.md",
+      "section": "How it works"
+    },
+    {
+      "file": "content/manuals/engine/security/rootless/tips.md",
+      "source_title": "Advanced usage",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/rootless/tips.md",
+      "section": "Advanced usage"
+    },
+    {
+      "file": "content/manuals/engine/security/rootless/troubleshoot.md",
+      "source_title": "Distribution-specific hint",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/rootless/troubleshoot.md",
+      "section": "Distribution-specific hint"
+    },
+    {
+      "file": "content/manuals/engine/security/rootless/uid-gid-mapping.md",
+      "source_title": "uid-gid-mapping.md",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/rootless/uid-gid-mapping.md",
+      "section": "uid-gid-mapping.md"
+    },
+    {
+      "file": "content/manuals/engine/security/seccomp.md",
+      "source_title": "Pass a profile for a container",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/seccomp.md",
+      "section": "Pass a profile for a container"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/_index.md",
+      "source_title": "About Docker Content Trust (DCT)",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/_index.md",
+      "section": "About Docker Content Trust (DCT)"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/deploying_notary.md",
+      "source_title": "If you want to use Notary in production",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/deploying_notary.md",
+      "section": "If you want to use Notary in production"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/trust_automation.md",
+      "source_title": "Add a delegation private key",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/trust_automation.md",
+      "section": "Add a delegation private key"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/trust_delegation.md",
+      "source_title": "Configuring the Docker client",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/trust_delegation.md",
+      "section": "Configuring the Docker client"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/trust_key_mng.md",
+      "source_title": "Choose a passphrase",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/trust_key_mng.md",
+      "section": "Choose a passphrase"
+    },
+    {
+      "file": "content/manuals/engine/security/trust/trust_sandbox.md",
+      "source_title": "Prerequisites",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/trust/trust_sandbox.md",
+      "section": "Prerequisites"
+    },
+    {
+      "file": "content/manuals/engine/security/userns-remap.md",
+      "source_title": "About remapping and subordinate user and group IDs",
+      "source_url": "https://github.com/docker/docs/blob/07ce908fcf44e06abe320b08a93fc01f57b25ec1/content/manuals/engine/security/userns-remap.md",
+      "section": "About remapping and subordinate user and group IDs"
+    }
+  ]
+}

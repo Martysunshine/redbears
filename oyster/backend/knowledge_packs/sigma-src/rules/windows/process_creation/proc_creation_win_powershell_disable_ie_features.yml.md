@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_powershell_disable_ie_features.yml -->
+title: Disabled IE Security Features
+id: fb50eb7a-5ab1-43ae-bcc9-091818cb8424
+status: test
+description: Detects command lines that indicate unwanted modifications to registry keys that disable important Internet Explorer security features
+references:
+    - https://unit42.paloaltonetworks.com/operation-ke3chang-resurfaces-with-new-tidepool-malware/
+author: Florian Roth (Nextron Systems)
+date: 2020-06-19
+modified: 2021-11-27
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection1:
+        CommandLine|contains|all:
+            - ' -name IEHarden '
+            - ' -value 0 '
+    selection2:
+        CommandLine|contains|all:
+            - ' -name DEPOff '
+            - ' -value 1 '
+    selection3:
+        CommandLine|contains|all:
+            - ' -name DisableFirstRunCustomize '
+            - ' -value 2 '
+    condition: 1 of selection*
+falsepositives:
+    - Unknown
+level: high

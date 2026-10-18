@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/External User added to Team and immediately uploads file.yaml -->
+id: e027ec78-39eb-4cdc-8fda-ed41c8cd3d4f
+name: Accessed files shared by temporary external user
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365/Analytic%20Rules/External User added to Team and immediately uploads file.yaml'
+version: 1.0.1

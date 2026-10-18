@@ -1,0 +1,22 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/file-system/bypass-mark-of-the-web.yml -->
+rule:
+  meta:
+    name: bypass Mark of the Web
+    namespace: host-interaction/file-system
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Subvert Trust Controls::Mark-of-the-Web Bypass [T1553.005]
+    examples:
+      - 48c7ad2d9d482cb11898f2719638ceed:0x405B10
+  features:
+    - and:
+      - api: DeleteFile
+      - or:
+        - string: ":Zone.Identifier"
+          description: NTFS ADS name recognized by Windows Defender SmartScreen
+        - string: "%s:Zone.Identifier"
+          description: NTFS ADS name recognized by Windows Defender SmartScreen

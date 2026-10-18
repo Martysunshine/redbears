@@ -1,0 +1,35 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_install_root_or_ca_certificat.yml -->
+title: New Root or CA or AuthRoot Certificate to Store
+id: d223b46b-5621-4037-88fe-fda32eead684
+status: test
+description: Detects the addition of new root, CA or AuthRoot certificates to the Windows registry
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1553.004/T1553.004.md#atomic-test-6---add-root-certificate-to-currentuser-certificate-store
+    - https://posts.specterops.io/code-signing-certificate-cloning-attacks-and-defenses-6f98657fc6ec
+author: frack113
+date: 2022-04-04
+modified: 2023-08-17
+tags:
+    - attack.impact
+    - attack.t1490
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains:
+            - '\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\'
+            - '\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\'
+            - '\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\'
+            - '\SOFTWARE\Microsoft\SystemCertificates\CA\Certificates\'
+            - '\SOFTWARE\Policies\Microsoft\SystemCertificates\CA\Certificates\'
+            - '\SOFTWARE\Microsoft\EnterpriseCertificates\CA\Certificates\'
+            - '\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates\'
+            - '\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\Certificates\'
+            - '\SOFTWARE\Microsoft\EnterpriseCertificates\AuthRoot\Certificates\'
+        TargetObject|endswith: '\Blob'
+        Details: 'Binary Data'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

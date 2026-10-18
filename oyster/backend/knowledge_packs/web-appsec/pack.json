@@ -1,0 +1,13 @@
+{
+  "id": "web-appsec",
+  "version": "1.0.0",
+  "title": "Web Application Security",
+  "domain": "offensive",
+  "description": "OWASP Top 10, the web assessment lifecycle (WSTG), and the tools used to map, test authentication/authorization, and validate injection, SSRF, and access-control flaws.",
+  "tags": ["owasp", "web", "burp", "xss", "sqli", "ssrf", "wstg"],
+  "authority": "OWASP",
+  "docs": [
+    {"file": "owasp-top-10.md", "source_title": "OWASP Top 10:2021", "source_url": "https://owasp.org/www-project-top-ten/"},
+    {"file": "web-testing-lifecycle.md", "source_title": "OWASP Web Security Testing Guide (WSTG)", "source_url": "https://owasp.org/www-project-web-security-testing-guide/"}
+  ]
+}

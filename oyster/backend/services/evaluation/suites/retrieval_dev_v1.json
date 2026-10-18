@@ -1,0 +1,301 @@
+{
+  "suite_id": "retrieval-dev-v1",
+  "title": "Development suite (2026-09-15 accuracy cycle) — independently written, for tuning only",
+  "description": "Phase 2 of the 2026-09-15 accuracy-improvement cycle. Every query here was written fresh for this suite, not copied or lightly reworded from retrieval-100k-v1 — used for tuning ranking behavior (per-pack diversity cap, identifier boosting, alias normalization, fusion weights) so the historical 118-case suite stays a pure, untouched regression check. Covers: CVE/CWE/CAPEC identifiers, MITRE ATT&CK techniques, Active Directory attacks, OAuth/OIDC/SAML, Kubernetes/container security, cloud IAM, malware and capa rules, YARA and Sigma, OWASP LLM risks, incident response, ambiguous terminology, simulated multi-turn follow-ups, and one insufficient-evidence case. KNOWN, DOCUMENTED SCOPE LIMIT: retrieval.retrieve() has no relevance cutoff (established in retrieval-new-domains-v1's own description) — the single insufficient-evidence case here is included to reconfirm that architectural fact at the retrieval layer, not because it is expected to pass; genuine insufficient-evidence behavior is tested at the answer-synthesis layer in tests/test_answer_insufficient_evidence.py. KNOWN GAP: no dedicated SAML source exists anywhere in the enabled corpus (checked: no owasp/rfc/vendor pack covers SAML specifically) — the OAuth/OIDC/SAML category below only has real coverage for OAuth (rfc8252, rfc9700) and OIDC-adjacent identity docs (entra-identity-docs-src); this is reported honestly rather than forcing a SAML expectation against a source that doesn't exist.",
+  "governance": {
+    "training": "disabled",
+    "purpose": "retrieval-quality-tuning",
+    "content_stored_as_knowledge": false,
+    "authored_locally": true
+  },
+  "default_top_k": 5,
+  "cases": [
+    {
+      "id": "dev-cve-log4shell-cvss",
+      "query": "What does CVE-2021-44228 affect and what is its CVSS severity?",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2021-44228"],
+      "min_results": 1,
+      "category": "cve_cwe_capec"
+    },
+    {
+      "id": "dev-cwe-sqli-classification",
+      "query": "Explain the CWE-89 SQL injection weakness classification",
+      "expect_any_pack": ["mitre-cwe"],
+      "expect_source_substring": ["CWE-89"],
+      "min_results": 1,
+      "category": "cve_cwe_capec"
+    },
+    {
+      "id": "dev-capec-sqli-pattern",
+      "query": "What attack pattern does CAPEC-66 describe for SQL injection?",
+      "expect_any_pack": ["mitre-capec"],
+      "expect_source_substring": ["CAPEC-66"],
+      "min_results": 1,
+      "category": "cve_cwe_capec"
+    },
+    {
+      "id": "dev-attack-process-injection",
+      "query": "What is MITRE ATT&CK technique T1055 process injection?",
+      "expect_any_pack": ["mitre-attack-src", "atomic-red-team-src"],
+      "expect_source_substring": ["T1055"],
+      "min_results": 1,
+      "category": "mitre_attack",
+      "note": "Additively widened 2026-09-15 (same pattern as the already-approved yara-packer case): both packs title their T1055 file identically-length ('T1055 — Process Injection' / 'T1055 - Process Injection'), both are trust_level=official, and both are genuinely, verifiably on-topic (mitre-attack-src = the definitional technique page, atomic-red-team-src = the matching test procedure). Rather than tune the injection tie-break to force one specific pack to win an arbitrary tie between two correct answers, this expectation was widened to accept either."
+    },
+    {
+      "id": "dev-attack-lsass-dumping",
+      "query": "Describe the T1003.001 LSASS memory credential dumping technique",
+      "expect_any_pack": ["mitre-attack-src"],
+      "expect_source_substring": ["T1003"],
+      "min_results": 1,
+      "category": "mitre_attack"
+    },
+    {
+      "id": "dev-attack-signed-binary-proxy",
+      "query": "What sub-techniques exist under T1218 signed binary proxy execution?",
+      "expect_any_pack": ["mitre-attack-src"],
+      "expect_source_substring": ["T1218"],
+      "min_results": 1,
+      "category": "mitre_attack"
+    },
+    {
+      "id": "dev-ad-kerberoasting",
+      "query": "How does a Kerberoasting attack work against Active Directory service accounts?",
+      "expect_any_pack": ["windows-ad-security-docs-src", "mitre-attack-src"],
+      "expect_source_substring": ["kerberoast"],
+      "min_results": 1,
+      "category": "active_directory"
+    },
+    {
+      "id": "dev-ad-dcsync",
+      "query": "What is DCSync and how does it extract credentials from a domain controller?",
+      "expect_any_pack": ["windows-ad-security-docs-src", "mitre-attack-src"],
+      "expect_source_substring": ["dcsync"],
+      "min_results": 1,
+      "category": "active_directory"
+    },
+    {
+      "id": "dev-ad-golden-ticket",
+      "query": "Explain the Golden Ticket attack against Kerberos ticket-granting tickets",
+      "expect_any_pack": ["windows-ad-security-docs-src", "mitre-attack-src"],
+      "expect_source_substring": ["golden ticket"],
+      "min_results": 1,
+      "category": "active_directory"
+    },
+    {
+      "id": "dev-oauth-rfc9700",
+      "query": "What security recommendations does RFC 9700 give for OAuth 2.0 implementations?",
+      "expect_any_pack": ["rfc9700-oauth-security-src"],
+      "expect_source_substring": ["oauth"],
+      "min_results": 1,
+      "category": "oauth_oidc_saml"
+    },
+    {
+      "id": "dev-oauth-native-apps",
+      "query": "How does the OAuth 2.0 for native apps specification prevent authorization code interception?",
+      "expect_any_pack": ["rfc8252-oauth-native-src"],
+      "expect_source_substring": ["authorization code"],
+      "min_results": 1,
+      "category": "oauth_oidc_saml"
+    },
+    {
+      "id": "dev-oidc-entra-identity",
+      "query": "How does Entra ID issue OpenID Connect identity tokens for enterprise applications?",
+      "expect_any_pack": ["entra-identity-docs-src"],
+      "expect_source_substring": ["identity"],
+      "min_results": 1,
+      "category": "oauth_oidc_saml"
+    },
+    {
+      "id": "dev-k8s-owasp-top10",
+      "query": "What are the OWASP Kubernetes Top 10 risks for cluster security?",
+      "expect_any_pack": ["owasp-k8s-top10-src"],
+      "expect_source_substring": ["kubernetes"],
+      "min_results": 1,
+      "category": "k8s_containers"
+    },
+    {
+      "id": "dev-k8s-falco-runtime",
+      "query": "How does Falco detect anomalous container runtime behavior?",
+      "expect_any_pack": ["falco-docs-src", "falco-rules-src"],
+      "expect_source_substring": ["falco"],
+      "min_results": 1,
+      "category": "k8s_containers"
+    },
+    {
+      "id": "dev-k8s-docker-hardening",
+      "query": "What Docker security hardening practices prevent container breakout?",
+      "expect_any_pack": ["docker-security-docs-src"],
+      "expect_source_substring": ["docker"],
+      "min_results": 1,
+      "category": "k8s_containers"
+    },
+    {
+      "id": "dev-cloudiam-aws-least-privilege",
+      "query": "How do AWS IAM policies enforce least privilege for cross-account roles?",
+      "expect_any_pack": ["aws-iam-docs-src"],
+      "expect_source_substring": ["iam"],
+      "min_results": 1,
+      "category": "cloud_iam"
+    },
+    {
+      "id": "dev-cloudiam-aws-organizations-scp",
+      "query": "What do AWS Organizations service control policies restrict across accounts?",
+      "expect_any_pack": ["aws-organizations-docs-src"],
+      "expect_source_substring": ["organizations"],
+      "min_results": 1,
+      "category": "cloud_iam"
+    },
+    {
+      "id": "dev-cloudiam-guardduty",
+      "query": "How does AWS GuardDuty detect anomalous IAM credential use?",
+      "expect_any_pack": ["aws-guardduty-docs-src"],
+      "expect_source_substring": ["guardduty"],
+      "min_results": 1,
+      "category": "cloud_iam"
+    },
+    {
+      "id": "dev-capa-process-injection-rule",
+      "query": "How does a capa rule identify process injection capability in a malware sample?",
+      "expect_any_pack": ["capa-rules-src"],
+      "expect_source_substring": ["inject"],
+      "min_results": 1,
+      "category": "malware_capa"
+    },
+    {
+      "id": "dev-capa-anti-debug",
+      "query": "What capa rule characteristics indicate anti-debugging techniques in a binary?",
+      "expect_any_pack": ["capa-rules-src"],
+      "expect_source_substring": ["debug"],
+      "min_results": 1,
+      "category": "malware_capa"
+    },
+    {
+      "id": "dev-yara-reversinglabs-packed",
+      "query": "How does YARA ReversingLabs classify packed or obfuscated malware samples?",
+      "expect_any_pack": ["yara-reversinglabs-src"],
+      "expect_source_substring": ["pack"],
+      "min_results": 1,
+      "category": "yara_sigma"
+    },
+    {
+      "id": "dev-sigma-webshell-detection",
+      "query": "How does a Sigma rule detect Windows event log indicators for a webshell?",
+      "expect_any_pack": ["sigma-src"],
+      "expect_source_substring": ["webshell"],
+      "min_results": 1,
+      "category": "yara_sigma"
+    },
+    {
+      "id": "dev-sigma-bruteforce-logic",
+      "query": "What Sigma detection logic identifies brute-force authentication attempts?",
+      "expect_any_pack": ["sigma-src"],
+      "expect_source_substring": ["brute"],
+      "min_results": 1,
+      "category": "yara_sigma"
+    },
+    {
+      "id": "dev-owasp-llm-excessive-agency",
+      "query": "What is OWASP's LLM06 excessive agency risk for AI applications?",
+      "expect_any_pack": ["owasp-llm-top10-src"],
+      "expect_source_substring": ["excessive agency"],
+      "min_results": 1,
+      "category": "owasp_llm"
+    },
+    {
+      "id": "dev-owasp-llm-dos",
+      "query": "How does OWASP describe LLM04 model denial of service risk?",
+      "expect_any_pack": ["owasp-llm-top10-src"],
+      "expect_source_substring": ["denial of service"],
+      "min_results": 1,
+      "category": "owasp_llm"
+    },
+    {
+      "id": "dev-owasp-llm-overreliance",
+      "query": "What mitigations does OWASP recommend for LLM09 overreliance?",
+      "expect_any_pack": ["owasp-llm-top10-src"],
+      "expect_source_substring": ["overreliance"],
+      "min_results": 1,
+      "category": "owasp_llm"
+    },
+    {
+      "id": "dev-ir-nist80061-lifecycle",
+      "query": "What are the four phases of the NIST SP 800-61 incident response lifecycle?",
+      "expect_any_pack": ["nist-sp800-61-src"],
+      "expect_source_substring": ["incident"],
+      "min_results": 1,
+      "category": "incident_response"
+    },
+    {
+      "id": "dev-ir-containment-strategy",
+      "query": "What containment strategies does incident response guidance recommend for an active breach?",
+      "expect_any_pack": ["nist-sp800-61-src", "incident-response-dfir"],
+      "expect_source_substring": ["contain"],
+      "min_results": 1,
+      "category": "incident_response"
+    },
+    {
+      "id": "dev-ir-threathunter-dll-pivot",
+      "query": "How does a threat hunter pivot investigation steps after an initial DLL injection finding?",
+      "expect_any_pack": ["threathunter-playbook-src"],
+      "expect_source_substring": ["dll"],
+      "min_results": 1,
+      "category": "incident_response"
+    },
+    {
+      "id": "dev-ambiguous-golden-ticket-term",
+      "query": "What is a golden ticket in a security context?",
+      "expect_any_pack": ["windows-ad-security-docs-src", "mitre-attack-src"],
+      "expect_source_substring": ["golden ticket", "kerberos"],
+      "min_results": 1,
+      "category": "ambiguous_terminology"
+    },
+    {
+      "id": "dev-ambiguous-token-term",
+      "query": "What does the word token mean in an authentication context?",
+      "expect_any_pack": ["rfc9700-oauth-security-src", "rfc8252-oauth-native-src", "entra-identity-docs-src", "windows-ad-security-docs-src"],
+      "expect_source_substring": ["token"],
+      "min_results": 1,
+      "category": "ambiguous_terminology"
+    },
+    {
+      "id": "dev-ambiguous-scope-term",
+      "query": "What does scope mean in the context of least-privilege access control?",
+      "expect_any_pack": ["owasp-asvs-src", "aws-iam-docs-src", "rfc9700-oauth-security-src"],
+      "expect_source_substring": ["scope"],
+      "min_results": 1,
+      "category": "ambiguous_terminology"
+    },
+    {
+      "id": "dev-followup-log4shell-cvss",
+      "query": "Following up on Log4Shell — what CVE identifier and CVSS score does it carry?",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2021-44228"],
+      "min_results": 1,
+      "category": "multiturn_followup"
+    },
+    {
+      "id": "dev-followup-dcsync-attack-id",
+      "query": "Regarding that DCSync technique we just discussed — which MITRE ATT&CK ID maps to it?",
+      "expect_any_pack": ["mitre-attack-src", "windows-ad-security-docs-src"],
+      "expect_source_substring": ["dcsync"],
+      "min_results": 1,
+      "category": "multiturn_followup"
+    },
+    {
+      "id": "dev-followup-capa-rule-name",
+      "query": "Going back to that capa rule for process injection — what is the specific rule name?",
+      "expect_any_pack": ["capa-rules-src"],
+      "expect_source_substring": ["inject"],
+      "min_results": 1,
+      "category": "multiturn_followup"
+    },
+    {
+      "id": "dev-insufficient-fictional-cve",
+      "query": "What is the CVSS score of CVE-9999-00001?",
+      "expect_insufficient": true,
+      "category": "insufficient_evidence"
+    }
+  ]
+}

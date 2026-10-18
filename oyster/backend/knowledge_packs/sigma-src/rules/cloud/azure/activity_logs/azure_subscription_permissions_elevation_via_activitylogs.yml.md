@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/activity_logs/azure_subscription_permissions_elevation_via_activitylogs.yml -->
+title: Azure Subscription Permission Elevation Via ActivityLogs
+id: 09438caa-07b1-4870-8405-1dbafe3dad95
+status: test
+description: |
+    Detects when a user has been elevated to manage all Azure Subscriptions.
+    This change should be investigated immediately if it isn't planned.
+    This setting could allow an attacker access to Azure subscriptions in your environment.
+references:
+    - https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations#microsoftauthorization
+author: Austin Songer @austinsonger
+date: 2021-11-26
+modified: 2022-08-23
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.initial-access
+    - attack.stealth
+    - attack.t1078.004
+logsource:
+    product: azure
+    service: activitylogs
+detection:
+    selection:
+        operationName: MICROSOFT.AUTHORIZATION/ELEVATEACCESS/ACTION
+    condition: selection
+falsepositives:
+    - If this was approved by System Administrator.
+level: high

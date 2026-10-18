@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/WindowsEvents/ChiaCryptoMining_WindowsEvent.yaml -->
+id: 7916a17d-d1d1-4ede-af52-46de56a4c467
+name: Chia_Crypto_Mining - Domain, Process, Hash and IP IOCs - June 2021
+description: | 
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events/Analytic%20Rules/ChiaCryptoMining_WindowsEvent.yaml'
+version: 1.0.3

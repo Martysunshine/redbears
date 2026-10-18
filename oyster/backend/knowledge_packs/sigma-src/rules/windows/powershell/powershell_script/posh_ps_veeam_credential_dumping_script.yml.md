@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_veeam_credential_dumping_script.yml -->
+title: Veeam Backup Servers Credential Dumping Script Execution
+id: 976d6e6f-a04b-4900-9713-0134a353e38b
+status: test
+description: Detects execution of a PowerShell script that contains calls to the "Veeam.Backup" class, in order to dump stored credentials.
+references:
+    - https://www.pwndefend.com/2021/02/15/retrieving-passwords-from-veeam-backup-servers/
+    - https://labs.withsecure.com/publications/fin7-target-veeam-servers
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-05-04
+tags:
+    - attack.credential-access
+logsource:
+    product: windows
+    category: ps_script
+    definition: bade5735-5ab0-4aa7-a642-a11be0e40872
+detection:
+    selection:
+        ScriptBlockText|contains|all:
+            - '[Credentials]'
+            - '[Veeam.Backup.Common.ProtectedStorage]::GetLocalString'
+            - 'Invoke-Sqlcmd'
+            - 'Veeam Backup and Replication'
+    condition: selection
+falsepositives:
+    - Administrators backup scripts (must be investigated)
+level: high

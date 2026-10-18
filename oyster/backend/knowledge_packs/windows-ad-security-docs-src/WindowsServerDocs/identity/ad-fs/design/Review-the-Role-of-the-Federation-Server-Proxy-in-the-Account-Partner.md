@@ -1,0 +1,26 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/design/Review-the-Role-of-the-Federation-Server-Proxy-in-the-Account-Partner.md -->
+---
+description: "Learn more about: Review the Role of the Federation Server Proxy in the Account Partner"
+title: Review the Role of the Federation Server Proxy in the Account Partner
+ms.date: 04/08/2025
+ms.topic: concept-article
+---
+
+# Review the Role of the Federation Server Proxy in the Account Partner
+
+The primary role of the federation server proxy in the perimeter network of the account partner organization in Active Directory Federation Services \(AD FS\) is to collect authentication credentials from a client computer that logs on over the Internet and to pass those credentials to the federation server, which is located inside the corporate network of the account partner organization. The account for the client computer is stored in the account partner's attribute store.
+
+A federation server proxy can also function in one or more of the following roles, depending on how you configure it to meet the needs of the account partner organization:
+
+-   Relay Security Tokens—The federation server issues a security token to the federation server proxy, which then relays the token to the client computer. The security token is used to provide access for that client computer to a specific relying party.
+
+-   Collect Credentials—The federation server proxy uses a default client logon Web form \(clientlogon.aspx\) to collect password\-based credentials through forms\-based authentication. However, you can customize this form to accept other supported types of authentication, such as Secure Sockets Layer \(SSL\) client authentication. For more information about how to customize this page, see Customizing Client Logon and Home Realm Discovery Pages \([http:\/\/go.microsoft.com\/fwlink\/?LinkId\=104275](/previous-versions/windows/desktop/legacy/bb625464(v=vs.85))\). A federation server proxy does not accept credentials through Windows Integrated Authentication.
+
+To summarize, a federation server proxy in the account partner acts as a proxy for client logons to a federation server that is located in the corporate network. The federation server proxy also facilitates the distribution of security tokens to Internet clients that are destined for relying parties.
+
+> [!CAUTION]
+> Exposing a federation server proxy on the account partner extranet will the client logon Web form accessible by anyone with Internet access. This can potentially leave your organization vulnerable to some password\-based attacks, such as dictionary attacks or brute force attacks that can trigger account lockouts for user accounts that are stored in the corporate Active Directory Domain Services \(AD DS\).
+
+
+## See Also
+[AD FS Design Guide in Windows Server 2012](AD-FS-Design-Guide-in-Windows-Server-2012.md)

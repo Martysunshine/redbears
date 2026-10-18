@@ -1,0 +1,31 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/c2/shell/execute-shell-command-and-capture-output.yml -->
+rule:
+  meta:
+    name: execute shell command and capture output
+    namespace: communication/c2/shell
+    authors:
+      - matthew.williams@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Execution::Command and Scripting Interpreter::Windows Command Shell [T1059.003]
+    references:
+      - https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa
+    examples:
+      - Practical Malware Analysis Lab 14-02.exe_:0x4011C0
+  features:
+    - and:
+      - match: create a process with modified I/O handles and window
+      - match: create pipe
+      - or:
+        - match: get COMSPEC environment variable
+        - string: "\\cmd.exe"
+        - string: "cmd.exe"
+        - string: "cmd.exe /c "
+        - string: "C:\\Windows\\system32\\cmd.exe"
+      - optional:
+        - api: kernel32.GetSystemDirectory
+        - api: kernel32.SetCurrentDirectory
+        - match: create thread
+        - match: read pipe

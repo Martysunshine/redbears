@@ -1,0 +1,33 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-av/block-operations-on-executable-memory-pages-using-arbitrary-code-guard.yml -->
+rule:
+  meta:
+    name: block operations on executable memory pages using Arbitrary Code Guard
+    namespace: anti-analysis/anti-av
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Impair Defenses::Disable or Modify Tools [T1562.001]
+    mbc:
+      - Defense Evasion::Disable or Evade Security Tools::Modify Policy [F0004.005]
+    references:
+      - https://blog.xpnsec.com/protecting-your-malware/
+      - https://blogs.windows.com/msedgedev/2017/02/23/mitigating-arbitrary-native-code-execution/
+    examples:
+      - 2ebadd04f0ada89c36c1409b6e96423a68dd77b513db8db3da203c36d3753e5f:0x140002120
+  features:
+    - or:
+      - and:
+        - api: SetProcessMitigationPolicy
+        - number: 4 = sizeof(PROCESS_MITIGATION_DYNAMIC_CODE_POLICY)
+        - number: 1 = set policy.ProhibitDynamicCode to 1
+        - number: 2 = ProcessDynamicCodePolicy
+      - and:
+        - api: SetProcessMitigationPolicy
+        - number: 4 = sizeof(PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY)
+        - number: 1 = set policy.MicrosoftSignedOnly to 1
+        - or:
+          - number: 8 = ProcessSignaturePolicy
+          - offset: 4 = lea ecx, [r8+4] ; with r8 equal to 4

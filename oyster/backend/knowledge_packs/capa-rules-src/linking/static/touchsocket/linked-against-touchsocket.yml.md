@@ -1,0 +1,28 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/linking/static/touchsocket/linked-against-touchsocket.yml -->
+rule:
+  meta:
+    name: linked against TouchSocket
+    namespace: linking/static/touchsocket
+    authors:
+      - still@teamt5.org
+    description: TouchSocket is a .NET networking library, supporting a wide variety of protocol types such as WebSocket, RPC, DMTP, Modbus, and more.
+    scopes:
+      static: file
+      dynamic: file
+    references:
+      - https://github.com/RRQM/TouchSocket/
+      - https://www.trendmicro.com/en_us/research/24/i/earth-preta-new-malware-and-strategies.html
+    examples:
+      - 684cc28e6a7fbd12f23dbc563f06306555ebb870bd727ad60839d4ff26e7f3b2
+  features:
+    - and:
+      - or:
+        - match: compiled to the .NET platform
+        - match: compiled with .NET AoT
+      - 3 or more:
+        - substring: "TouchSocket"
+        - substring: "TouchSocket.Core"
+        - substring: "TouchSocket.Dmtp"
+        - substring: "TouchSocket.Modbus"
+        - substring: "BinarySerialize"
+        - substring: "BinaryDeserialize"

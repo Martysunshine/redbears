@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_owner_removed_from_application_or_service_principal.yml -->
+title: Azure Owner Removed From Application or Service Principal
+id: 636e30d5-3736-42ea-96b1-e6e2f8429fd6
+status: test
+description: Identifies when a owner is was removed from a application or service principal in Azure.
+references:
+    - https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-audit-activities#core-directory
+author: Austin Songer @austinsonger
+date: 2021-09-03
+modified: 2026-04-30
+tags:
+    - attack.stealth
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        operationName:
+            - 'Remove owner from service principal'
+            - 'Remove owner from application'
+    condition: selection
+falsepositives:
+    - Owner being removed may be performed by a system administrator.
+    - Verify whether the user identity, user agent, and/or hostname should be making changes in your environment.
+    - Owner removed from unfamiliar users should be investigated. If known behavior is causing false positives, it can be exempted from the rule.
+level: medium

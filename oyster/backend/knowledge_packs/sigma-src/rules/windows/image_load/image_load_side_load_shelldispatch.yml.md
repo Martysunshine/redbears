@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/image_load/image_load_side_load_shelldispatch.yml -->
+title: Potential ShellDispatch.DLL Sideloading
+id: 844f8eb2-610b-42c8-89a4-47596e089663
+status: test
+description: Detects potential DLL sideloading of "ShellDispatch.dll"
+references:
+    - https://www.hexacorn.com/blog/2023/06/07/this-lolbin-doesnt-exist/
+author: X__Junior (Nextron Systems)
+date: 2023-06-20
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.001
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith: '\ShellDispatch.dll'
+    filter_main_legit_path:
+        - ImageLoaded|contains|all:
+              - ':\Users\'
+              - '\AppData\Local\Temp\'
+        - ImageLoaded|contains: ':\Windows\Temp\'
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - Some installers may trigger some false positives
+level: medium

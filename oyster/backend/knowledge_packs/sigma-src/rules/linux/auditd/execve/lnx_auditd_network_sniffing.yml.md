@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/execve/lnx_auditd_network_sniffing.yml -->
+title: Network Sniffing - Linux
+id: f4d3748a-65d1-4806-bd23-e25728081d01
+status: test
+description: |
+  Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection.
+  An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1040/T1040.md
+author: Timur Zinniatullin, oscd.community
+date: 2019-10-21
+modified: 2022-12-18
+tags:
+    - attack.credential-access
+    - attack.discovery
+    - attack.t1040
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection_1:
+        type: 'execve'
+        a0: 'tcpdump'
+        a1: '-c'
+        a3|contains: '-i'
+    selection_2:
+        type: 'execve'
+        a0: 'tshark'
+        a1: '-c'
+        a3: '-i'
+    condition: 1 of selection_*
+falsepositives:
+    - Legitimate administrator or user uses network sniffing tool for legitimate reasons.
+level: low

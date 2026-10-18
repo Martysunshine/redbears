@@ -1,0 +1,28 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/linking/static/wolfssl/linked-against-wolfssl.yml -->
+rule:
+  meta:
+    name: linked against wolfSSL
+    namespace: linking/static/wolfssl
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: file
+      dynamic: file
+    mbc:
+      - Cryptography::Crypto Library [C0059]
+    references:
+      - https://www.wolfssl.com/
+      - https://github.com/wolfSSL/wolfssl/blob/2841b5c93b87311dadcf2278151df7453e56db96/wolfssl/internal.h#L4646
+    examples:
+      - 5789181cba467fa940cdce809b88b9bf7e0e9d4e079e32a68d2b911a8cc47da9
+  features:
+    - or:
+      - string: "SSLeay wolfSSL compatibility"
+      - string: "wolfSSL_Init"
+      - string: "Please supply a buffer for error string"
+      - 3 or more:
+        - substring: "CLNTSRVR"
+        - substring: "server finished"
+        - substring: "client finished"
+        - substring: "DOGNGRD"
+        - substring: "DOWNGRD"

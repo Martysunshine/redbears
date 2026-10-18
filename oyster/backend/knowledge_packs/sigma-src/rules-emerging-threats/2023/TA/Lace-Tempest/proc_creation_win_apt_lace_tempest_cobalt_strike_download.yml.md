@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2023/TA/Lace-Tempest/proc_creation_win_apt_lace_tempest_cobalt_strike_download.yml -->
+title: Lace Tempest Cobalt Strike Download
+id: aa5b0a40-ed88-46aa-9fdc-0337b379ca9d
+status: test
+description: Detects specific command line execution used by Lace Tempest to download Cobalt Strike as reported by SysAid Team
+references:
+    - https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-11-09
+tags:
+    - attack.execution
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        CommandLine|contains|all:
+            - -nop -w hidden -c IEX ((new-object net.webclient).downloadstring(
+            - /a')
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

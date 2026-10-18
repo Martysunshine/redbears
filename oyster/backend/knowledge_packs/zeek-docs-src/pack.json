@@ -1,0 +1,161 @@
+{
+  "id": "zeek-docs-src",
+  "name": "zeek-docs-src",
+  "version": "a30a11fb6da6",
+  "title": "Zeek Documentation \u2014 Frameworks (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://docs.zeek.org/ at a30a11fb6da6. 20 documents.",
+  "authority": "The Zeek Project",
+  "publisher": "The Zeek Project",
+  "trust_level": "official",
+  "licence": "cc-by-4.0",
+  "attribution": "Zeek Documentation, The Zeek Project, CC BY 4.0 (verified via the repo's own LICENSE file; GitHub's licence detector misreports it as unlicensed).",
+  "tags": [
+    "zeek",
+    "nsm",
+    "network-monitoring",
+    "detection"
+  ],
+  "applicable_tools": [
+    "zeek"
+  ],
+  "applicable_platforms": [
+    "linux",
+    "network"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "zeek-docs-src",
+  "upstream_commit": "a30a11fb6da620d61a8722d57a7f4ae8a73566f8",
+  "source_urls": [
+    "https://docs.zeek.org/",
+    "https://github.com/zeek/zeek-docs"
+  ],
+  "docs": [
+    {
+      "file": "components/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/components/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "frameworks/broker.rst.md",
+      "source_title": "broker.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/broker.rst",
+      "section": "broker.rst"
+    },
+    {
+      "file": "frameworks/cluster.rst.md",
+      "source_title": "cluster.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/cluster.rst",
+      "section": "cluster.rst"
+    },
+    {
+      "file": "frameworks/configuration.rst.md",
+      "source_title": "configuration.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/configuration.rst",
+      "section": "configuration.rst"
+    },
+    {
+      "file": "frameworks/file-analysis.rst.md",
+      "source_title": "file-analysis.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/file-analysis.rst",
+      "section": "file-analysis.rst"
+    },
+    {
+      "file": "frameworks/index.rst.md",
+      "source_title": "index.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/index.rst",
+      "section": "index.rst"
+    },
+    {
+      "file": "frameworks/input.rst.md",
+      "source_title": "input.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/input.rst",
+      "section": "input.rst"
+    },
+    {
+      "file": "frameworks/intel.rst.md",
+      "source_title": "intel.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/intel.rst",
+      "section": "intel.rst"
+    },
+    {
+      "file": "frameworks/logging-input-sqlite.rst.md",
+      "source_title": "logging-input-sqlite.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/logging-input-sqlite.rst",
+      "section": "logging-input-sqlite.rst"
+    },
+    {
+      "file": "frameworks/logging.rst.md",
+      "source_title": "logging.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/logging.rst",
+      "section": "logging.rst"
+    },
+    {
+      "file": "frameworks/management.rst.md",
+      "source_title": "management.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/management.rst",
+      "section": "management.rst"
+    },
+    {
+      "file": "frameworks/netcontrol.rst.md",
+      "source_title": "netcontrol.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/netcontrol.rst",
+      "section": "netcontrol.rst"
+    },
+    {
+      "file": "frameworks/notice.rst.md",
+      "source_title": "notice.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/notice.rst",
+      "section": "notice.rst"
+    },
+    {
+      "file": "frameworks/packet-analysis.rst.md",
+      "source_title": "packet-analysis.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/packet-analysis.rst",
+      "section": "packet-analysis.rst"
+    },
+    {
+      "file": "frameworks/signatures.rst.md",
+      "source_title": "signatures.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/signatures.rst",
+      "section": "signatures.rst"
+    },
+    {
+      "file": "frameworks/storage.rst.md",
+      "source_title": "storage.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/storage.rst",
+      "section": "storage.rst"
+    },
+    {
+      "file": "frameworks/sumstats.rst.md",
+      "source_title": "sumstats.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/sumstats.rst",
+      "section": "sumstats.rst"
+    },
+    {
+      "file": "frameworks/supervisor.rst.md",
+      "source_title": "supervisor.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/supervisor.rst",
+      "section": "supervisor.rst"
+    },
+    {
+      "file": "frameworks/telemetry.rst.md",
+      "source_title": "telemetry.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/telemetry.rst",
+      "section": "telemetry.rst"
+    },
+    {
+      "file": "frameworks/tls-decryption.rst.md",
+      "source_title": "tls-decryption.rst",
+      "source_url": "https://github.com/zeek/zeek-docs/blob/a30a11fb6da620d61a8722d57a7f4ae8a73566f8/frameworks/tls-decryption.rst",
+      "section": "tls-decryption.rst"
+    }
+  ]
+}

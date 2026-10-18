@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/identity_protection/azure_identity_protection_malicious_ip_address.yml -->
+title: Malicious IP Address Sign-In Failure Rate
+id: a3f55ebd-0c01-4ed6-adc0-8fb76d8cd3cd
+status: test
+description: Indicates sign-in from a malicious IP address based on high failure rates.
+references:
+    - https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks#malicious-ip-address
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-user-accounts#unusual-sign-ins
+author: Mark Morowczynski '@markmorow', Gloria Lee, '@gleeiamglo'
+date: 2023-09-07
+tags:
+    - attack.t1090
+    - attack.command-and-control
+logsource:
+    product: azure
+    service: riskdetection
+detection:
+    selection:
+        riskEventType: 'maliciousIPAddress'
+    condition: selection
+falsepositives:
+    - We recommend investigating the sessions flagged by this detection in the context of other sign-ins from the user.
+level: high

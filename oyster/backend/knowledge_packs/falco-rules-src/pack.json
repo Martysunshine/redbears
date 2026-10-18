@@ -1,0 +1,59 @@
+{
+  "id": "falco-rules-src",
+  "name": "falco-rules-src",
+  "version": "72945ab934b4",
+  "title": "Falco Detection Rules (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://falco.org/ at 72945ab934b4. 3 documents.",
+  "authority": "Falco / CNCF",
+  "publisher": "The Falco Authors",
+  "trust_level": "official",
+  "licence": "apache-2.0",
+  "attribution": "Falco Rules, The Falco Authors (CNCF), Apache License 2.0.",
+  "tags": [
+    "falco",
+    "runtime-security",
+    "kubernetes",
+    "detection"
+  ],
+  "applicable_tools": [
+    "falco"
+  ],
+  "applicable_platforms": [
+    "linux",
+    "kubernetes"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "falco-rules-src",
+  "upstream_commit": "72945ab934b4449a2bc4befe9e9fcdfe6e106090",
+  "source_urls": [
+    "https://falco.org/",
+    "https://github.com/falcosecurity/rules"
+  ],
+  "docs": [
+    {
+      "file": "rules/falco-incubating_rules.yaml.md",
+      "source_title": "SPDX-License-Identifier: Apache-2.0",
+      "source_url": "https://github.com/falcosecurity/rules/blob/72945ab934b4449a2bc4befe9e9fcdfe6e106090/rules/falco-incubating_rules.yaml",
+      "section": "SPDX-License-Identifier: Apache-2.0"
+    },
+    {
+      "file": "rules/falco-sandbox_rules.yaml.md",
+      "source_title": "SPDX-License-Identifier: Apache-2.0",
+      "source_url": "https://github.com/falcosecurity/rules/blob/72945ab934b4449a2bc4befe9e9fcdfe6e106090/rules/falco-sandbox_rules.yaml",
+      "section": "SPDX-License-Identifier: Apache-2.0"
+    },
+    {
+      "file": "rules/falco_rules.yaml.md",
+      "source_title": "SPDX-License-Identifier: Apache-2.0",
+      "source_url": "https://github.com/falcosecurity/rules/blob/72945ab934b4449a2bc4befe9e9fcdfe6e106090/rules/falco_rules.yaml",
+      "section": "SPDX-License-Identifier: Apache-2.0"
+    }
+  ]
+}

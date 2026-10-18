@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_hktl_quarkspw_filedump.yml -->
+title: HackTool - QuarksPwDump Dump File
+id: 847def9e-924d-4e90-b7c4-5f581395a2b4
+status: test
+description: Detects a dump file written by QuarksPwDump password dumper
+references:
+    - https://jpcertcc.github.io/ToolAnalysisResultSheet/details/QuarksPWDump.htm
+author: Florian Roth (Nextron Systems)
+date: 2018-02-10
+modified: 2024-06-27
+tags:
+    - attack.credential-access
+    - attack.t1003.002
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|contains|all:
+            - '\AppData\Local\Temp\SAM-'
+            - '.dmp'
+    condition: selection
+falsepositives:
+    - Unknown
+level: critical

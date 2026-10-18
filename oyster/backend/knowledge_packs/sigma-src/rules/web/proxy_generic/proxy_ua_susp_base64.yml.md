@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/proxy_generic/proxy_ua_susp_base64.yml -->
+title: Potential Base64 Encoded User-Agent
+id: 894a8613-cf12-48b3-8e57-9085f54aa0c3
+related:
+    - id: d443095b-a221-4957-a2c4-cd1756c9b747
+      type: derived
+status: test
+description: Detects User Agent strings that end with an equal sign, which can be a sign of base64 encoding.
+references:
+    - https://blogs.jpcert.or.jp/en/2022/07/yamabot.html
+    - https://deviceatlas.com/blog/list-of-user-agent-strings#desktop
+author: Florian Roth (Nextron Systems), Brian Ingram (update)
+date: 2022-07-08
+modified: 2023-05-04
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+logsource:
+    category: proxy
+detection:
+    selection:
+        c-useragent|endswith: '='
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

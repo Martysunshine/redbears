@@ -1,0 +1,32 @@
+title: cmd.exe Spawning PowerShell
+id: 2b8c5e1a-4f7d-4b2e-9c3a-1e5f8d2b6c0a
+status: experimental
+description: >
+  Detects cmd.exe spawning PowerShell as a child process. This is a common
+  pattern in malware and post-exploitation frameworks where cmd.exe is used
+  as an initial command executor to launch PowerShell for further operations.
+references:
+  - https://attack.mitre.org/techniques/T1059/003/
+  - https://attack.mitre.org/techniques/T1059/001/
+author: SOC Copilot Workbench
+date: 2024/01/15
+modified: 2024/03/01
+tags:
+  - attack.execution
+  - attack.t1059.003
+  - attack.t1059.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    ParentImage|endswith: '\cmd.exe'
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+  condition: selection
+falsepositives:
+  - Legitimate admin scripts that chain cmd.exe and PowerShell
+  - Some software installers or update mechanisms
+  - Developer tools and build pipelines
+level: medium

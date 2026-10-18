@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_event/registry_event_redmimicry_winnti_reg.yml -->
+title: RedMimicry Winnti Playbook Registry Manipulation
+id: 5b175490-b652-4b02-b1de-5b5b4083c5f8
+status: test
+description: Detects actions caused by the RedMimicry Winnti playbook
+references:
+    - https://redmimicry.com
+author: Alexander Rausch
+date: 2020-06-24
+modified: 2021-11-27
+tags:
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1112
+logsource:
+    product: windows
+    category: registry_event
+detection:
+    selection:
+        TargetObject|contains: HKLM\SOFTWARE\Microsoft\HTMLHelp\data
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

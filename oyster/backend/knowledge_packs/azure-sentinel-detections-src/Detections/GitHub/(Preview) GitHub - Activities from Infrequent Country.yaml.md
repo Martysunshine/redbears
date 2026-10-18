@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/(Preview) GitHub - Activities from Infrequent Country.yaml -->
+id: 90b13e59-63fc-47e5-a19f-fbd9eaadab69
+name: GitHub Activites from a New Country
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Analytic%20Rules/(Preview)%20GitHub%20-%20Activities%20from%20Infrequent%20 Country.yaml'
+version: 1.0.0

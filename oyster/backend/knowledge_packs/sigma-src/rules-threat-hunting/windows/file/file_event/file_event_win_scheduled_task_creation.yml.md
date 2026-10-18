@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/file/file_event/file_event_win_scheduled_task_creation.yml -->
+title: Scheduled Task Created - FileCreation
+id: a762e74f-4dce-477c-b023-4ed81df600f9
+status: test
+description: Detects the creation of a scheduled task via file creation.
+references:
+    - https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/analytics/task_scheduling/
+    - https://posts.specterops.io/abstracting-scheduled-tasks-3b6451f6a1c5
+author: Center for Threat Informed Defense (CTID) Summiting the Pyramid Team
+date: 2023-09-27
+tags:
+    - attack.execution
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.t1053.005
+    - attack.s0111
+    - car.2013-08-001
+    - detection.threat-hunting
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        TargetFilename|contains:
+            - ':\Windows\System32\Tasks\'
+            - ':\Windows\SysWOW64\Tasks\'
+            - ':\Windows\Tasks\'
+    condition: selection
+falsepositives:
+    - Normal behaviour on Windows
+level: low

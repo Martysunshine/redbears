@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/application/kubernetes/audit/kubernetes_audit_deployment_deleted.yml -->
+title: Deployment Deleted From Kubernetes Cluster
+id: 40967487-139b-4811-81d9-c9767a92aa5a
+status: test
+description: |
+    Detects the removal of a deployment from a Kubernetes cluster.
+    This could indicate disruptive activity aiming to impact business operations.
+references:
+    - https://microsoft.github.io/Threat-Matrix-for-Kubernetes/techniques/Data%20destruction/
+author: Leo Tsaousis (@laripping)
+date: 2024-03-26
+tags:
+    - attack.t1498
+    - attack.impact
+logsource:
+    category: application
+    product: kubernetes
+    service: audit
+detection:
+    selection:
+        verb: 'delete'
+        objectRef.resource: 'deployments'
+    condition: selection
+falsepositives:
+    - Unknown
+level: low

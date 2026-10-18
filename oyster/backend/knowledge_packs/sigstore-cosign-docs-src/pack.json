@@ -1,0 +1,307 @@
+{
+  "id": "sigstore-cosign-docs-src",
+  "name": "sigstore-cosign-docs-src",
+  "version": "8b8c87b68a75",
+  "title": "Sigstore cosign documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://docs.sigstore.dev/cosign/overview/ at 8b8c87b68a75. 45 documents.",
+  "authority": "Sigstore",
+  "publisher": "Sigstore / OpenSSF",
+  "trust_level": "official",
+  "licence": "Apache-2.0",
+  "attribution": "Sigstore cosign documentation, \u00a9 Sigstore Authors, Apache License 2.0.",
+  "tags": [
+    "sigstore",
+    "cosign",
+    "code-signing",
+    "supply-chain",
+    "attestation"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "sigstore-cosign-docs-src",
+  "upstream_commit": "8b8c87b68a75f70c12e1adf25f9bb87f24abea7e",
+  "source_urls": [
+    "https://docs.sigstore.dev/cosign/overview/",
+    "https://github.com/sigstore/cosign"
+  ],
+  "docs": [
+    {
+      "file": "doc/cosign.md",
+      "source_title": "cosign",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign.md",
+      "section": "cosign"
+    },
+    {
+      "file": "doc/cosign_attest-blob.md",
+      "source_title": "cosign attest-blob",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_attest-blob.md",
+      "section": "cosign attest-blob"
+    },
+    {
+      "file": "doc/cosign_attest.md",
+      "source_title": "cosign attest",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_attest.md",
+      "section": "cosign attest"
+    },
+    {
+      "file": "doc/cosign_bundle.md",
+      "source_title": "cosign bundle",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_bundle.md",
+      "section": "cosign bundle"
+    },
+    {
+      "file": "doc/cosign_bundle_create.md",
+      "source_title": "cosign bundle create",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_bundle_create.md",
+      "section": "cosign bundle create"
+    },
+    {
+      "file": "doc/cosign_bundle_inspect.md",
+      "source_title": "cosign bundle inspect",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_bundle_inspect.md",
+      "section": "cosign bundle inspect"
+    },
+    {
+      "file": "doc/cosign_bundle_upgrade.md",
+      "source_title": "cosign bundle upgrade",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_bundle_upgrade.md",
+      "section": "cosign bundle upgrade"
+    },
+    {
+      "file": "doc/cosign_clean.md",
+      "source_title": "cosign clean",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_clean.md",
+      "section": "cosign clean"
+    },
+    {
+      "file": "doc/cosign_completion.md",
+      "source_title": "cosign completion",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_completion.md",
+      "section": "cosign completion"
+    },
+    {
+      "file": "doc/cosign_download.md",
+      "source_title": "cosign download",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_download.md",
+      "section": "cosign download"
+    },
+    {
+      "file": "doc/cosign_download_attestation.md",
+      "source_title": "cosign download attestation",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_download_attestation.md",
+      "section": "cosign download attestation"
+    },
+    {
+      "file": "doc/cosign_download_sbom.md",
+      "source_title": "cosign download sbom",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_download_sbom.md",
+      "section": "cosign download sbom"
+    },
+    {
+      "file": "doc/cosign_download_signature.md",
+      "source_title": "cosign download signature",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_download_signature.md",
+      "section": "cosign download signature"
+    },
+    {
+      "file": "doc/cosign_env.md",
+      "source_title": "cosign env",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_env.md",
+      "section": "cosign env"
+    },
+    {
+      "file": "doc/cosign_exit_codes.md",
+      "source_title": "Exit codes for cosign CLI",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_exit_codes.md",
+      "section": "Exit codes for cosign CLI"
+    },
+    {
+      "file": "doc/cosign_generate-key-pair.md",
+      "source_title": "cosign generate-key-pair",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_generate-key-pair.md",
+      "section": "cosign generate-key-pair"
+    },
+    {
+      "file": "doc/cosign_import-key-pair.md",
+      "source_title": "cosign import-key-pair",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_import-key-pair.md",
+      "section": "cosign import-key-pair"
+    },
+    {
+      "file": "doc/cosign_initialize.md",
+      "source_title": "cosign initialize",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_initialize.md",
+      "section": "cosign initialize"
+    },
+    {
+      "file": "doc/cosign_load.md",
+      "source_title": "cosign load",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_load.md",
+      "section": "cosign load"
+    },
+    {
+      "file": "doc/cosign_login.md",
+      "source_title": "cosign login",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_login.md",
+      "section": "cosign login"
+    },
+    {
+      "file": "doc/cosign_piv-tool.md",
+      "source_title": "cosign piv-tool",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool.md",
+      "section": "cosign piv-tool"
+    },
+    {
+      "file": "doc/cosign_piv-tool_attestation.md",
+      "source_title": "cosign piv-tool attestation",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_attestation.md",
+      "section": "cosign piv-tool attestation"
+    },
+    {
+      "file": "doc/cosign_piv-tool_generate-key.md",
+      "source_title": "cosign piv-tool generate-key",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_generate-key.md",
+      "section": "cosign piv-tool generate-key"
+    },
+    {
+      "file": "doc/cosign_piv-tool_reset.md",
+      "source_title": "cosign piv-tool reset",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_reset.md",
+      "section": "cosign piv-tool reset"
+    },
+    {
+      "file": "doc/cosign_piv-tool_set-management-key.md",
+      "source_title": "cosign piv-tool set-management-key",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_set-management-key.md",
+      "section": "cosign piv-tool set-management-key"
+    },
+    {
+      "file": "doc/cosign_piv-tool_set-pin.md",
+      "source_title": "cosign piv-tool set-pin",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_set-pin.md",
+      "section": "cosign piv-tool set-pin"
+    },
+    {
+      "file": "doc/cosign_piv-tool_set-puk.md",
+      "source_title": "cosign piv-tool set-puk",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_set-puk.md",
+      "section": "cosign piv-tool set-puk"
+    },
+    {
+      "file": "doc/cosign_piv-tool_unblock.md",
+      "source_title": "cosign piv-tool unblock",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_piv-tool_unblock.md",
+      "section": "cosign piv-tool unblock"
+    },
+    {
+      "file": "doc/cosign_pkcs11-tool.md",
+      "source_title": "cosign pkcs11-tool",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_pkcs11-tool.md",
+      "section": "cosign pkcs11-tool"
+    },
+    {
+      "file": "doc/cosign_pkcs11-tool_list-keys-uris.md",
+      "source_title": "cosign pkcs11-tool list-keys-uris",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_pkcs11-tool_list-keys-uris.md",
+      "section": "cosign pkcs11-tool list-keys-uris"
+    },
+    {
+      "file": "doc/cosign_pkcs11-tool_list-tokens.md",
+      "source_title": "cosign pkcs11-tool list-tokens",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_pkcs11-tool_list-tokens.md",
+      "section": "cosign pkcs11-tool list-tokens"
+    },
+    {
+      "file": "doc/cosign_public-key.md",
+      "source_title": "cosign public-key",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_public-key.md",
+      "section": "cosign public-key"
+    },
+    {
+      "file": "doc/cosign_save.md",
+      "source_title": "cosign save",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_save.md",
+      "section": "cosign save"
+    },
+    {
+      "file": "doc/cosign_sign-blob.md",
+      "source_title": "cosign sign-blob",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_sign-blob.md",
+      "section": "cosign sign-blob"
+    },
+    {
+      "file": "doc/cosign_sign.md",
+      "source_title": "cosign sign",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_sign.md",
+      "section": "cosign sign"
+    },
+    {
+      "file": "doc/cosign_signing-config.md",
+      "source_title": "cosign signing-config",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_signing-config.md",
+      "section": "cosign signing-config"
+    },
+    {
+      "file": "doc/cosign_signing-config_create.md",
+      "source_title": "cosign signing-config create",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_signing-config_create.md",
+      "section": "cosign signing-config create"
+    },
+    {
+      "file": "doc/cosign_tree.md",
+      "source_title": "cosign tree",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_tree.md",
+      "section": "cosign tree"
+    },
+    {
+      "file": "doc/cosign_trusted-root.md",
+      "source_title": "cosign trusted-root",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_trusted-root.md",
+      "section": "cosign trusted-root"
+    },
+    {
+      "file": "doc/cosign_trusted-root_create.md",
+      "source_title": "cosign trusted-root create",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_trusted-root_create.md",
+      "section": "cosign trusted-root create"
+    },
+    {
+      "file": "doc/cosign_verify-attestation.md",
+      "source_title": "cosign verify-attestation",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_verify-attestation.md",
+      "section": "cosign verify-attestation"
+    },
+    {
+      "file": "doc/cosign_verify-blob-attestation.md",
+      "source_title": "cosign verify-blob-attestation",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_verify-blob-attestation.md",
+      "section": "cosign verify-blob-attestation"
+    },
+    {
+      "file": "doc/cosign_verify-blob.md",
+      "source_title": "cosign verify-blob",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_verify-blob.md",
+      "section": "cosign verify-blob"
+    },
+    {
+      "file": "doc/cosign_verify.md",
+      "source_title": "cosign verify",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_verify.md",
+      "section": "cosign verify"
+    },
+    {
+      "file": "doc/cosign_version.md",
+      "source_title": "cosign version",
+      "source_url": "https://github.com/sigstore/cosign/blob/8b8c87b68a75f70c12e1adf25f9bb87f24abea7e/doc/cosign_version.md",
+      "section": "cosign version"
+    }
+  ]
+}

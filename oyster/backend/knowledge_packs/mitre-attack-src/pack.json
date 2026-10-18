@@ -1,0 +1,4224 @@
+{
+  "id": "mitre-attack-src",
+  "name": "mitre-attack-src",
+  "version": "6cda5ad8462c",
+  "title": "MITRE ATT&CK Enterprise (STIX, upstream)",
+  "domain": "defensive",
+  "security_domain": "attack-mapping",
+  "description": "Imported from https://attack.mitre.org/ at 6cda5ad8462c. 697 documents.",
+  "authority": "MITRE",
+  "publisher": "The MITRE Corporation",
+  "trust_level": "official",
+  "licence": "mitre-attack-terms",
+  "attribution": "MITRE ATT&CK\u00ae, \u00a9 The MITRE Corporation. Used per the ATT&CK Terms of Use with attribution.",
+  "tags": [
+    "mitre",
+    "attack",
+    "ttp",
+    "techniques",
+    "detection"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "windows",
+    "linux",
+    "macos",
+    "cloud"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track ATT&CK releases (~2\u00d7/year); update-check compares upstream commit.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "mitre-attack-src",
+  "upstream_commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4",
+  "source_urls": [
+    "https://attack.mitre.org/",
+    "https://github.com/mitre-attack/attack-stix-data"
+  ],
+  "docs": [
+    {
+      "file": "techniques/T1001.md",
+      "source_title": "T1001 \u2014 Data Obfuscation",
+      "source_url": "https://attack.mitre.org/techniques/T1001",
+      "section": "Data Obfuscation"
+    },
+    {
+      "file": "techniques/T1001.001.md",
+      "source_title": "T1001.001 \u2014 Junk Data",
+      "source_url": "https://attack.mitre.org/techniques/T1001/001",
+      "section": "Junk Data"
+    },
+    {
+      "file": "techniques/T1001.002.md",
+      "source_title": "T1001.002 \u2014 Steganography",
+      "source_url": "https://attack.mitre.org/techniques/T1001/002",
+      "section": "Steganography"
+    },
+    {
+      "file": "techniques/T1001.003.md",
+      "source_title": "T1001.003 \u2014 Protocol or Service Impersonation",
+      "source_url": "https://attack.mitre.org/techniques/T1001/003",
+      "section": "Protocol or Service Impersonation"
+    },
+    {
+      "file": "techniques/T1003.md",
+      "source_title": "T1003 \u2014 OS Credential Dumping",
+      "source_url": "https://attack.mitre.org/techniques/T1003",
+      "section": "OS Credential Dumping"
+    },
+    {
+      "file": "techniques/T1003.001.md",
+      "source_title": "T1003.001 \u2014 LSASS Memory",
+      "source_url": "https://attack.mitre.org/techniques/T1003/001",
+      "section": "LSASS Memory"
+    },
+    {
+      "file": "techniques/T1003.002.md",
+      "source_title": "T1003.002 \u2014 Security Account Manager",
+      "source_url": "https://attack.mitre.org/techniques/T1003/002",
+      "section": "Security Account Manager"
+    },
+    {
+      "file": "techniques/T1003.003.md",
+      "source_title": "T1003.003 \u2014 NTDS",
+      "source_url": "https://attack.mitre.org/techniques/T1003/003",
+      "section": "NTDS"
+    },
+    {
+      "file": "techniques/T1003.004.md",
+      "source_title": "T1003.004 \u2014 LSA Secrets",
+      "source_url": "https://attack.mitre.org/techniques/T1003/004",
+      "section": "LSA Secrets"
+    },
+    {
+      "file": "techniques/T1003.005.md",
+      "source_title": "T1003.005 \u2014 Cached Domain Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1003/005",
+      "section": "Cached Domain Credentials"
+    },
+    {
+      "file": "techniques/T1003.006.md",
+      "source_title": "T1003.006 \u2014 DCSync",
+      "source_url": "https://attack.mitre.org/techniques/T1003/006",
+      "section": "DCSync"
+    },
+    {
+      "file": "techniques/T1003.007.md",
+      "source_title": "T1003.007 \u2014 Proc Filesystem",
+      "source_url": "https://attack.mitre.org/techniques/T1003/007",
+      "section": "Proc Filesystem"
+    },
+    {
+      "file": "techniques/T1003.008.md",
+      "source_title": "T1003.008 \u2014 /etc/passwd and /etc/shadow",
+      "source_url": "https://attack.mitre.org/techniques/T1003/008",
+      "section": "/etc/passwd and /etc/shadow"
+    },
+    {
+      "file": "techniques/T1005.md",
+      "source_title": "T1005 \u2014 Data from Local System",
+      "source_url": "https://attack.mitre.org/techniques/T1005",
+      "section": "Data from Local System"
+    },
+    {
+      "file": "techniques/T1006.md",
+      "source_title": "T1006 \u2014 Direct Volume Access",
+      "source_url": "https://attack.mitre.org/techniques/T1006",
+      "section": "Direct Volume Access"
+    },
+    {
+      "file": "techniques/T1007.md",
+      "source_title": "T1007 \u2014 System Service Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1007",
+      "section": "System Service Discovery"
+    },
+    {
+      "file": "techniques/T1008.md",
+      "source_title": "T1008 \u2014 Fallback Channels",
+      "source_url": "https://attack.mitre.org/techniques/T1008",
+      "section": "Fallback Channels"
+    },
+    {
+      "file": "techniques/T1010.md",
+      "source_title": "T1010 \u2014 Application Window Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1010",
+      "section": "Application Window Discovery"
+    },
+    {
+      "file": "techniques/T1011.md",
+      "source_title": "T1011 \u2014 Exfiltration Over Other Network Medium",
+      "source_url": "https://attack.mitre.org/techniques/T1011",
+      "section": "Exfiltration Over Other Network Medium"
+    },
+    {
+      "file": "techniques/T1011.001.md",
+      "source_title": "T1011.001 \u2014 Exfiltration Over Bluetooth",
+      "source_url": "https://attack.mitre.org/techniques/T1011/001",
+      "section": "Exfiltration Over Bluetooth"
+    },
+    {
+      "file": "techniques/T1012.md",
+      "source_title": "T1012 \u2014 Query Registry",
+      "source_url": "https://attack.mitre.org/techniques/T1012",
+      "section": "Query Registry"
+    },
+    {
+      "file": "techniques/T1014.md",
+      "source_title": "T1014 \u2014 Rootkit",
+      "source_url": "https://attack.mitre.org/techniques/T1014",
+      "section": "Rootkit"
+    },
+    {
+      "file": "techniques/T1016.md",
+      "source_title": "T1016 \u2014 System Network Configuration Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1016",
+      "section": "System Network Configuration Discovery"
+    },
+    {
+      "file": "techniques/T1016.001.md",
+      "source_title": "T1016.001 \u2014 Internet Connection Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1016/001",
+      "section": "Internet Connection Discovery"
+    },
+    {
+      "file": "techniques/T1016.002.md",
+      "source_title": "T1016.002 \u2014 Wi-Fi Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1016/002",
+      "section": "Wi-Fi Discovery"
+    },
+    {
+      "file": "techniques/T1018.md",
+      "source_title": "T1018 \u2014 Remote System Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1018",
+      "section": "Remote System Discovery"
+    },
+    {
+      "file": "techniques/T1020.md",
+      "source_title": "T1020 \u2014 Automated Exfiltration",
+      "source_url": "https://attack.mitre.org/techniques/T1020",
+      "section": "Automated Exfiltration"
+    },
+    {
+      "file": "techniques/T1020.001.md",
+      "source_title": "T1020.001 \u2014 Traffic Duplication",
+      "source_url": "https://attack.mitre.org/techniques/T1020/001",
+      "section": "Traffic Duplication"
+    },
+    {
+      "file": "techniques/T1021.md",
+      "source_title": "T1021 \u2014 Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T1021",
+      "section": "Remote Services"
+    },
+    {
+      "file": "techniques/T1021.001.md",
+      "source_title": "T1021.001 \u2014 Remote Desktop Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1021/001",
+      "section": "Remote Desktop Protocol"
+    },
+    {
+      "file": "techniques/T1021.002.md",
+      "source_title": "T1021.002 \u2014 SMB/Windows Admin Shares",
+      "source_url": "https://attack.mitre.org/techniques/T1021/002",
+      "section": "SMB/Windows Admin Shares"
+    },
+    {
+      "file": "techniques/T1021.003.md",
+      "source_title": "T1021.003 \u2014 Distributed Component Object Model",
+      "source_url": "https://attack.mitre.org/techniques/T1021/003",
+      "section": "Distributed Component Object Model"
+    },
+    {
+      "file": "techniques/T1021.004.md",
+      "source_title": "T1021.004 \u2014 SSH",
+      "source_url": "https://attack.mitre.org/techniques/T1021/004",
+      "section": "SSH"
+    },
+    {
+      "file": "techniques/T1021.005.md",
+      "source_title": "T1021.005 \u2014 VNC",
+      "source_url": "https://attack.mitre.org/techniques/T1021/005",
+      "section": "VNC"
+    },
+    {
+      "file": "techniques/T1021.006.md",
+      "source_title": "T1021.006 \u2014 Windows Remote Management",
+      "source_url": "https://attack.mitre.org/techniques/T1021/006",
+      "section": "Windows Remote Management"
+    },
+    {
+      "file": "techniques/T1021.007.md",
+      "source_title": "T1021.007 \u2014 Cloud Services",
+      "source_url": "https://attack.mitre.org/techniques/T1021/007",
+      "section": "Cloud Services"
+    },
+    {
+      "file": "techniques/T1021.008.md",
+      "source_title": "T1021.008 \u2014 Direct Cloud VM Connections",
+      "source_url": "https://attack.mitre.org/techniques/T1021/008",
+      "section": "Direct Cloud VM Connections"
+    },
+    {
+      "file": "techniques/T1025.md",
+      "source_title": "T1025 \u2014 Data from Removable Media",
+      "source_url": "https://attack.mitre.org/techniques/T1025",
+      "section": "Data from Removable Media"
+    },
+    {
+      "file": "techniques/T1027.md",
+      "source_title": "T1027 \u2014 Obfuscated Files or Information",
+      "source_url": "https://attack.mitre.org/techniques/T1027",
+      "section": "Obfuscated Files or Information"
+    },
+    {
+      "file": "techniques/T1027.001.md",
+      "source_title": "T1027.001 \u2014 Binary Padding",
+      "source_url": "https://attack.mitre.org/techniques/T1027/001",
+      "section": "Binary Padding"
+    },
+    {
+      "file": "techniques/T1027.002.md",
+      "source_title": "T1027.002 \u2014 Software Packing",
+      "source_url": "https://attack.mitre.org/techniques/T1027/002",
+      "section": "Software Packing"
+    },
+    {
+      "file": "techniques/T1027.003.md",
+      "source_title": "T1027.003 \u2014 Steganography",
+      "source_url": "https://attack.mitre.org/techniques/T1027/003",
+      "section": "Steganography"
+    },
+    {
+      "file": "techniques/T1027.004.md",
+      "source_title": "T1027.004 \u2014 Compile After Delivery",
+      "source_url": "https://attack.mitre.org/techniques/T1027/004",
+      "section": "Compile After Delivery"
+    },
+    {
+      "file": "techniques/T1027.005.md",
+      "source_title": "T1027.005 \u2014 Indicator Removal from Tools",
+      "source_url": "https://attack.mitre.org/techniques/T1027/005",
+      "section": "Indicator Removal from Tools"
+    },
+    {
+      "file": "techniques/T1027.006.md",
+      "source_title": "T1027.006 \u2014 HTML Smuggling",
+      "source_url": "https://attack.mitre.org/techniques/T1027/006",
+      "section": "HTML Smuggling"
+    },
+    {
+      "file": "techniques/T1027.007.md",
+      "source_title": "T1027.007 \u2014 Dynamic API Resolution",
+      "source_url": "https://attack.mitre.org/techniques/T1027/007",
+      "section": "Dynamic API Resolution"
+    },
+    {
+      "file": "techniques/T1027.008.md",
+      "source_title": "T1027.008 \u2014 Stripped Payloads",
+      "source_url": "https://attack.mitre.org/techniques/T1027/008",
+      "section": "Stripped Payloads"
+    },
+    {
+      "file": "techniques/T1027.009.md",
+      "source_title": "T1027.009 \u2014 Embedded Payloads",
+      "source_url": "https://attack.mitre.org/techniques/T1027/009",
+      "section": "Embedded Payloads"
+    },
+    {
+      "file": "techniques/T1027.010.md",
+      "source_title": "T1027.010 \u2014 Command Obfuscation",
+      "source_url": "https://attack.mitre.org/techniques/T1027/010",
+      "section": "Command Obfuscation"
+    },
+    {
+      "file": "techniques/T1027.011.md",
+      "source_title": "T1027.011 \u2014 Fileless Storage",
+      "source_url": "https://attack.mitre.org/techniques/T1027/011",
+      "section": "Fileless Storage"
+    },
+    {
+      "file": "techniques/T1027.012.md",
+      "source_title": "T1027.012 \u2014 LNK Icon Smuggling",
+      "source_url": "https://attack.mitre.org/techniques/T1027/012",
+      "section": "LNK Icon Smuggling"
+    },
+    {
+      "file": "techniques/T1027.013.md",
+      "source_title": "T1027.013 \u2014 Encrypted/Encoded File",
+      "source_url": "https://attack.mitre.org/techniques/T1027/013",
+      "section": "Encrypted/Encoded File"
+    },
+    {
+      "file": "techniques/T1027.014.md",
+      "source_title": "T1027.014 \u2014 Polymorphic Code",
+      "source_url": "https://attack.mitre.org/techniques/T1027/014",
+      "section": "Polymorphic Code"
+    },
+    {
+      "file": "techniques/T1027.015.md",
+      "source_title": "T1027.015 \u2014 Compression",
+      "source_url": "https://attack.mitre.org/techniques/T1027/015",
+      "section": "Compression"
+    },
+    {
+      "file": "techniques/T1027.016.md",
+      "source_title": "T1027.016 \u2014 Junk Code Insertion",
+      "source_url": "https://attack.mitre.org/techniques/T1027/016",
+      "section": "Junk Code Insertion"
+    },
+    {
+      "file": "techniques/T1027.017.md",
+      "source_title": "T1027.017 \u2014 SVG Smuggling",
+      "source_url": "https://attack.mitre.org/techniques/T1027/017",
+      "section": "SVG Smuggling"
+    },
+    {
+      "file": "techniques/T1027.018.md",
+      "source_title": "T1027.018 \u2014 Invisible Unicode",
+      "source_url": "https://attack.mitre.org/techniques/T1027/018",
+      "section": "Invisible Unicode"
+    },
+    {
+      "file": "techniques/T1029.md",
+      "source_title": "T1029 \u2014 Scheduled Transfer",
+      "source_url": "https://attack.mitre.org/techniques/T1029",
+      "section": "Scheduled Transfer"
+    },
+    {
+      "file": "techniques/T1030.md",
+      "source_title": "T1030 \u2014 Data Transfer Size Limits",
+      "source_url": "https://attack.mitre.org/techniques/T1030",
+      "section": "Data Transfer Size Limits"
+    },
+    {
+      "file": "techniques/T1033.md",
+      "source_title": "T1033 \u2014 System Owner/User Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1033",
+      "section": "System Owner/User Discovery"
+    },
+    {
+      "file": "techniques/T1036.md",
+      "source_title": "T1036 \u2014 Masquerading",
+      "source_url": "https://attack.mitre.org/techniques/T1036",
+      "section": "Masquerading"
+    },
+    {
+      "file": "techniques/T1036.001.md",
+      "source_title": "T1036.001 \u2014 Invalid Code Signature",
+      "source_url": "https://attack.mitre.org/techniques/T1036/001",
+      "section": "Invalid Code Signature"
+    },
+    {
+      "file": "techniques/T1036.002.md",
+      "source_title": "T1036.002 \u2014 Right-to-Left Override",
+      "source_url": "https://attack.mitre.org/techniques/T1036/002",
+      "section": "Right-to-Left Override"
+    },
+    {
+      "file": "techniques/T1036.003.md",
+      "source_title": "T1036.003 \u2014 Rename Legitimate Utilities",
+      "source_url": "https://attack.mitre.org/techniques/T1036/003",
+      "section": "Rename Legitimate Utilities"
+    },
+    {
+      "file": "techniques/T1036.004.md",
+      "source_title": "T1036.004 \u2014 Masquerade Task or Service",
+      "source_url": "https://attack.mitre.org/techniques/T1036/004",
+      "section": "Masquerade Task or Service"
+    },
+    {
+      "file": "techniques/T1036.005.md",
+      "source_title": "T1036.005 \u2014 Match Legitimate Resource Name or Location",
+      "source_url": "https://attack.mitre.org/techniques/T1036/005",
+      "section": "Match Legitimate Resource Name or Location"
+    },
+    {
+      "file": "techniques/T1036.006.md",
+      "source_title": "T1036.006 \u2014 Space after Filename",
+      "source_url": "https://attack.mitre.org/techniques/T1036/006",
+      "section": "Space after Filename"
+    },
+    {
+      "file": "techniques/T1036.007.md",
+      "source_title": "T1036.007 \u2014 Double File Extension",
+      "source_url": "https://attack.mitre.org/techniques/T1036/007",
+      "section": "Double File Extension"
+    },
+    {
+      "file": "techniques/T1036.008.md",
+      "source_title": "T1036.008 \u2014 Masquerade File Type",
+      "source_url": "https://attack.mitre.org/techniques/T1036/008",
+      "section": "Masquerade File Type"
+    },
+    {
+      "file": "techniques/T1036.009.md",
+      "source_title": "T1036.009 \u2014 Break Process Trees",
+      "source_url": "https://attack.mitre.org/techniques/T1036/009",
+      "section": "Break Process Trees"
+    },
+    {
+      "file": "techniques/T1036.010.md",
+      "source_title": "T1036.010 \u2014 Masquerade Account Name",
+      "source_url": "https://attack.mitre.org/techniques/T1036/010",
+      "section": "Masquerade Account Name"
+    },
+    {
+      "file": "techniques/T1036.011.md",
+      "source_title": "T1036.011 \u2014 Overwrite Process Arguments",
+      "source_url": "https://attack.mitre.org/techniques/T1036/011",
+      "section": "Overwrite Process Arguments"
+    },
+    {
+      "file": "techniques/T1036.012.md",
+      "source_title": "T1036.012 \u2014 Browser Fingerprint",
+      "source_url": "https://attack.mitre.org/techniques/T1036/012",
+      "section": "Browser Fingerprint"
+    },
+    {
+      "file": "techniques/T1037.md",
+      "source_title": "T1037 \u2014 Boot or Logon Initialization Scripts",
+      "source_url": "https://attack.mitre.org/techniques/T1037",
+      "section": "Boot or Logon Initialization Scripts"
+    },
+    {
+      "file": "techniques/T1037.001.md",
+      "source_title": "T1037.001 \u2014 Logon Script (Windows)",
+      "source_url": "https://attack.mitre.org/techniques/T1037/001",
+      "section": "Logon Script (Windows)"
+    },
+    {
+      "file": "techniques/T1037.002.md",
+      "source_title": "T1037.002 \u2014 Login Hook",
+      "source_url": "https://attack.mitre.org/techniques/T1037/002",
+      "section": "Login Hook"
+    },
+    {
+      "file": "techniques/T1037.003.md",
+      "source_title": "T1037.003 \u2014 Network Logon Script",
+      "source_url": "https://attack.mitre.org/techniques/T1037/003",
+      "section": "Network Logon Script"
+    },
+    {
+      "file": "techniques/T1037.004.md",
+      "source_title": "T1037.004 \u2014 RC Scripts",
+      "source_url": "https://attack.mitre.org/techniques/T1037/004",
+      "section": "RC Scripts"
+    },
+    {
+      "file": "techniques/T1037.005.md",
+      "source_title": "T1037.005 \u2014 Startup Items",
+      "source_url": "https://attack.mitre.org/techniques/T1037/005",
+      "section": "Startup Items"
+    },
+    {
+      "file": "techniques/T1039.md",
+      "source_title": "T1039 \u2014 Data from Network Shared Drive",
+      "source_url": "https://attack.mitre.org/techniques/T1039",
+      "section": "Data from Network Shared Drive"
+    },
+    {
+      "file": "techniques/T1040.md",
+      "source_title": "T1040 \u2014 Network Sniffing",
+      "source_url": "https://attack.mitre.org/techniques/T1040",
+      "section": "Network Sniffing"
+    },
+    {
+      "file": "techniques/T1041.md",
+      "source_title": "T1041 \u2014 Exfiltration Over C2 Channel",
+      "source_url": "https://attack.mitre.org/techniques/T1041",
+      "section": "Exfiltration Over C2 Channel"
+    },
+    {
+      "file": "techniques/T1046.md",
+      "source_title": "T1046 \u2014 Network Service Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1046",
+      "section": "Network Service Discovery"
+    },
+    {
+      "file": "techniques/T1047.md",
+      "source_title": "T1047 \u2014 Windows Management Instrumentation",
+      "source_url": "https://attack.mitre.org/techniques/T1047",
+      "section": "Windows Management Instrumentation"
+    },
+    {
+      "file": "techniques/T1048.md",
+      "source_title": "T1048 \u2014 Exfiltration Over Alternative Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1048",
+      "section": "Exfiltration Over Alternative Protocol"
+    },
+    {
+      "file": "techniques/T1048.001.md",
+      "source_title": "T1048.001 \u2014 Exfiltration Over Symmetric Encrypted Non-C2 Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1048/001",
+      "section": "Exfiltration Over Symmetric Encrypted Non-C2 Protocol"
+    },
+    {
+      "file": "techniques/T1048.002.md",
+      "source_title": "T1048.002 \u2014 Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1048/002",
+      "section": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol"
+    },
+    {
+      "file": "techniques/T1048.003.md",
+      "source_title": "T1048.003 \u2014 Exfiltration Over Unencrypted Non-C2 Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1048/003",
+      "section": "Exfiltration Over Unencrypted Non-C2 Protocol"
+    },
+    {
+      "file": "techniques/T1049.md",
+      "source_title": "T1049 \u2014 System Network Connections Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1049",
+      "section": "System Network Connections Discovery"
+    },
+    {
+      "file": "techniques/T1052.md",
+      "source_title": "T1052 \u2014 Exfiltration Over Physical Medium",
+      "source_url": "https://attack.mitre.org/techniques/T1052",
+      "section": "Exfiltration Over Physical Medium"
+    },
+    {
+      "file": "techniques/T1052.001.md",
+      "source_title": "T1052.001 \u2014 Exfiltration over USB",
+      "source_url": "https://attack.mitre.org/techniques/T1052/001",
+      "section": "Exfiltration over USB"
+    },
+    {
+      "file": "techniques/T1053.md",
+      "source_title": "T1053 \u2014 Scheduled Task/Job",
+      "source_url": "https://attack.mitre.org/techniques/T1053",
+      "section": "Scheduled Task/Job"
+    },
+    {
+      "file": "techniques/T1053.002.md",
+      "source_title": "T1053.002 \u2014 At",
+      "source_url": "https://attack.mitre.org/techniques/T1053/002",
+      "section": "At"
+    },
+    {
+      "file": "techniques/T1053.003.md",
+      "source_title": "T1053.003 \u2014 Cron",
+      "source_url": "https://attack.mitre.org/techniques/T1053/003",
+      "section": "Cron"
+    },
+    {
+      "file": "techniques/T1053.005.md",
+      "source_title": "T1053.005 \u2014 Scheduled Task",
+      "source_url": "https://attack.mitre.org/techniques/T1053/005",
+      "section": "Scheduled Task"
+    },
+    {
+      "file": "techniques/T1053.006.md",
+      "source_title": "T1053.006 \u2014 Systemd Timers",
+      "source_url": "https://attack.mitre.org/techniques/T1053/006",
+      "section": "Systemd Timers"
+    },
+    {
+      "file": "techniques/T1053.007.md",
+      "source_title": "T1053.007 \u2014 Container Orchestration Job",
+      "source_url": "https://attack.mitre.org/techniques/T1053/007",
+      "section": "Container Orchestration Job"
+    },
+    {
+      "file": "techniques/T1055.md",
+      "source_title": "T1055 \u2014 Process Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1055",
+      "section": "Process Injection"
+    },
+    {
+      "file": "techniques/T1055.001.md",
+      "source_title": "T1055.001 \u2014 Dynamic-link Library Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1055/001",
+      "section": "Dynamic-link Library Injection"
+    },
+    {
+      "file": "techniques/T1055.002.md",
+      "source_title": "T1055.002 \u2014 Portable Executable Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1055/002",
+      "section": "Portable Executable Injection"
+    },
+    {
+      "file": "techniques/T1055.003.md",
+      "source_title": "T1055.003 \u2014 Thread Execution Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1055/003",
+      "section": "Thread Execution Hijacking"
+    },
+    {
+      "file": "techniques/T1055.004.md",
+      "source_title": "T1055.004 \u2014 Asynchronous Procedure Call",
+      "source_url": "https://attack.mitre.org/techniques/T1055/004",
+      "section": "Asynchronous Procedure Call"
+    },
+    {
+      "file": "techniques/T1055.005.md",
+      "source_title": "T1055.005 \u2014 Thread Local Storage",
+      "source_url": "https://attack.mitre.org/techniques/T1055/005",
+      "section": "Thread Local Storage"
+    },
+    {
+      "file": "techniques/T1055.008.md",
+      "source_title": "T1055.008 \u2014 Ptrace System Calls",
+      "source_url": "https://attack.mitre.org/techniques/T1055/008",
+      "section": "Ptrace System Calls"
+    },
+    {
+      "file": "techniques/T1055.009.md",
+      "source_title": "T1055.009 \u2014 Proc Memory",
+      "source_url": "https://attack.mitre.org/techniques/T1055/009",
+      "section": "Proc Memory"
+    },
+    {
+      "file": "techniques/T1055.011.md",
+      "source_title": "T1055.011 \u2014 Extra Window Memory Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1055/011",
+      "section": "Extra Window Memory Injection"
+    },
+    {
+      "file": "techniques/T1055.012.md",
+      "source_title": "T1055.012 \u2014 Process Hollowing",
+      "source_url": "https://attack.mitre.org/techniques/T1055/012",
+      "section": "Process Hollowing"
+    },
+    {
+      "file": "techniques/T1055.013.md",
+      "source_title": "T1055.013 \u2014 Process Doppelg\u00e4nging",
+      "source_url": "https://attack.mitre.org/techniques/T1055/013",
+      "section": "Process Doppelg\u00e4nging"
+    },
+    {
+      "file": "techniques/T1055.014.md",
+      "source_title": "T1055.014 \u2014 VDSO Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1055/014",
+      "section": "VDSO Hijacking"
+    },
+    {
+      "file": "techniques/T1055.015.md",
+      "source_title": "T1055.015 \u2014 ListPlanting",
+      "source_url": "https://attack.mitre.org/techniques/T1055/015",
+      "section": "ListPlanting"
+    },
+    {
+      "file": "techniques/T1056.md",
+      "source_title": "T1056 \u2014 Input Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1056",
+      "section": "Input Capture"
+    },
+    {
+      "file": "techniques/T1056.001.md",
+      "source_title": "T1056.001 \u2014 Keylogging",
+      "source_url": "https://attack.mitre.org/techniques/T1056/001",
+      "section": "Keylogging"
+    },
+    {
+      "file": "techniques/T1056.002.md",
+      "source_title": "T1056.002 \u2014 GUI Input Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1056/002",
+      "section": "GUI Input Capture"
+    },
+    {
+      "file": "techniques/T1056.003.md",
+      "source_title": "T1056.003 \u2014 Web Portal Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1056/003",
+      "section": "Web Portal Capture"
+    },
+    {
+      "file": "techniques/T1056.004.md",
+      "source_title": "T1056.004 \u2014 Credential API Hooking",
+      "source_url": "https://attack.mitre.org/techniques/T1056/004",
+      "section": "Credential API Hooking"
+    },
+    {
+      "file": "techniques/T1057.md",
+      "source_title": "T1057 \u2014 Process Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1057",
+      "section": "Process Discovery"
+    },
+    {
+      "file": "techniques/T1059.md",
+      "source_title": "T1059 \u2014 Command and Scripting Interpreter",
+      "source_url": "https://attack.mitre.org/techniques/T1059",
+      "section": "Command and Scripting Interpreter"
+    },
+    {
+      "file": "techniques/T1059.001.md",
+      "source_title": "T1059.001 \u2014 PowerShell",
+      "source_url": "https://attack.mitre.org/techniques/T1059/001",
+      "section": "PowerShell"
+    },
+    {
+      "file": "techniques/T1059.002.md",
+      "source_title": "T1059.002 \u2014 AppleScript",
+      "source_url": "https://attack.mitre.org/techniques/T1059/002",
+      "section": "AppleScript"
+    },
+    {
+      "file": "techniques/T1059.003.md",
+      "source_title": "T1059.003 \u2014 Windows Command Shell",
+      "source_url": "https://attack.mitre.org/techniques/T1059/003",
+      "section": "Windows Command Shell"
+    },
+    {
+      "file": "techniques/T1059.004.md",
+      "source_title": "T1059.004 \u2014 Unix Shell",
+      "source_url": "https://attack.mitre.org/techniques/T1059/004",
+      "section": "Unix Shell"
+    },
+    {
+      "file": "techniques/T1059.005.md",
+      "source_title": "T1059.005 \u2014 Visual Basic",
+      "source_url": "https://attack.mitre.org/techniques/T1059/005",
+      "section": "Visual Basic"
+    },
+    {
+      "file": "techniques/T1059.006.md",
+      "source_title": "T1059.006 \u2014 Python",
+      "source_url": "https://attack.mitre.org/techniques/T1059/006",
+      "section": "Python"
+    },
+    {
+      "file": "techniques/T1059.007.md",
+      "source_title": "T1059.007 \u2014 JavaScript",
+      "source_url": "https://attack.mitre.org/techniques/T1059/007",
+      "section": "JavaScript"
+    },
+    {
+      "file": "techniques/T1059.008.md",
+      "source_title": "T1059.008 \u2014 Network Device CLI",
+      "source_url": "https://attack.mitre.org/techniques/T1059/008",
+      "section": "Network Device CLI"
+    },
+    {
+      "file": "techniques/T1059.009.md",
+      "source_title": "T1059.009 \u2014 Cloud API",
+      "source_url": "https://attack.mitre.org/techniques/T1059/009",
+      "section": "Cloud API"
+    },
+    {
+      "file": "techniques/T1059.010.md",
+      "source_title": "T1059.010 \u2014 AutoHotKey & AutoIT",
+      "source_url": "https://attack.mitre.org/techniques/T1059/010",
+      "section": "AutoHotKey & AutoIT"
+    },
+    {
+      "file": "techniques/T1059.011.md",
+      "source_title": "T1059.011 \u2014 Lua",
+      "source_url": "https://attack.mitre.org/techniques/T1059/011",
+      "section": "Lua"
+    },
+    {
+      "file": "techniques/T1059.012.md",
+      "source_title": "T1059.012 \u2014 Hypervisor CLI",
+      "source_url": "https://attack.mitre.org/techniques/T1059/012",
+      "section": "Hypervisor CLI"
+    },
+    {
+      "file": "techniques/T1059.013.md",
+      "source_title": "T1059.013 \u2014 Container CLI/API",
+      "source_url": "https://attack.mitre.org/techniques/T1059/013",
+      "section": "Container CLI/API"
+    },
+    {
+      "file": "techniques/T1068.md",
+      "source_title": "T1068 \u2014 Exploitation for Privilege Escalation",
+      "source_url": "https://attack.mitre.org/techniques/T1068",
+      "section": "Exploitation for Privilege Escalation"
+    },
+    {
+      "file": "techniques/T1069.md",
+      "source_title": "T1069 \u2014 Permission Groups Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1069",
+      "section": "Permission Groups Discovery"
+    },
+    {
+      "file": "techniques/T1069.001.md",
+      "source_title": "T1069.001 \u2014 Local Groups",
+      "source_url": "https://attack.mitre.org/techniques/T1069/001",
+      "section": "Local Groups"
+    },
+    {
+      "file": "techniques/T1069.002.md",
+      "source_title": "T1069.002 \u2014 Domain Groups",
+      "source_url": "https://attack.mitre.org/techniques/T1069/002",
+      "section": "Domain Groups"
+    },
+    {
+      "file": "techniques/T1069.003.md",
+      "source_title": "T1069.003 \u2014 Cloud Groups",
+      "source_url": "https://attack.mitre.org/techniques/T1069/003",
+      "section": "Cloud Groups"
+    },
+    {
+      "file": "techniques/T1070.md",
+      "source_title": "T1070 \u2014 Indicator Removal",
+      "source_url": "https://attack.mitre.org/techniques/T1070",
+      "section": "Indicator Removal"
+    },
+    {
+      "file": "techniques/T1070.003.md",
+      "source_title": "T1070.003 \u2014 Clear Command History",
+      "source_url": "https://attack.mitre.org/techniques/T1070/003",
+      "section": "Clear Command History"
+    },
+    {
+      "file": "techniques/T1070.004.md",
+      "source_title": "T1070.004 \u2014 File Deletion",
+      "source_url": "https://attack.mitre.org/techniques/T1070/004",
+      "section": "File Deletion"
+    },
+    {
+      "file": "techniques/T1070.005.md",
+      "source_title": "T1070.005 \u2014 Network Share Connection Removal",
+      "source_url": "https://attack.mitre.org/techniques/T1070/005",
+      "section": "Network Share Connection Removal"
+    },
+    {
+      "file": "techniques/T1070.006.md",
+      "source_title": "T1070.006 \u2014 Timestomp",
+      "source_url": "https://attack.mitre.org/techniques/T1070/006",
+      "section": "Timestomp"
+    },
+    {
+      "file": "techniques/T1070.007.md",
+      "source_title": "T1070.007 \u2014 Clear Network Connection History and Configurations",
+      "source_url": "https://attack.mitre.org/techniques/T1070/007",
+      "section": "Clear Network Connection History and Configurations"
+    },
+    {
+      "file": "techniques/T1070.008.md",
+      "source_title": "T1070.008 \u2014 Clear Mailbox Data",
+      "source_url": "https://attack.mitre.org/techniques/T1070/008",
+      "section": "Clear Mailbox Data"
+    },
+    {
+      "file": "techniques/T1070.009.md",
+      "source_title": "T1070.009 \u2014 Clear Persistence",
+      "source_url": "https://attack.mitre.org/techniques/T1070/009",
+      "section": "Clear Persistence"
+    },
+    {
+      "file": "techniques/T1070.010.md",
+      "source_title": "T1070.010 \u2014 Relocate Malware",
+      "source_url": "https://attack.mitre.org/techniques/T1070/010",
+      "section": "Relocate Malware"
+    },
+    {
+      "file": "techniques/T1071.md",
+      "source_title": "T1071 \u2014 Application Layer Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1071",
+      "section": "Application Layer Protocol"
+    },
+    {
+      "file": "techniques/T1071.001.md",
+      "source_title": "T1071.001 \u2014 Web Protocols",
+      "source_url": "https://attack.mitre.org/techniques/T1071/001",
+      "section": "Web Protocols"
+    },
+    {
+      "file": "techniques/T1071.002.md",
+      "source_title": "T1071.002 \u2014 File Transfer Protocols",
+      "source_url": "https://attack.mitre.org/techniques/T1071/002",
+      "section": "File Transfer Protocols"
+    },
+    {
+      "file": "techniques/T1071.003.md",
+      "source_title": "T1071.003 \u2014 Mail Protocols",
+      "source_url": "https://attack.mitre.org/techniques/T1071/003",
+      "section": "Mail Protocols"
+    },
+    {
+      "file": "techniques/T1071.004.md",
+      "source_title": "T1071.004 \u2014 DNS",
+      "source_url": "https://attack.mitre.org/techniques/T1071/004",
+      "section": "DNS"
+    },
+    {
+      "file": "techniques/T1071.005.md",
+      "source_title": "T1071.005 \u2014 Publish/Subscribe Protocols",
+      "source_url": "https://attack.mitre.org/techniques/T1071/005",
+      "section": "Publish/Subscribe Protocols"
+    },
+    {
+      "file": "techniques/T1072.md",
+      "source_title": "T1072 \u2014 Software Deployment Tools",
+      "source_url": "https://attack.mitre.org/techniques/T1072",
+      "section": "Software Deployment Tools"
+    },
+    {
+      "file": "techniques/T1074.md",
+      "source_title": "T1074 \u2014 Data Staged",
+      "source_url": "https://attack.mitre.org/techniques/T1074",
+      "section": "Data Staged"
+    },
+    {
+      "file": "techniques/T1074.001.md",
+      "source_title": "T1074.001 \u2014 Local Data Staging",
+      "source_url": "https://attack.mitre.org/techniques/T1074/001",
+      "section": "Local Data Staging"
+    },
+    {
+      "file": "techniques/T1074.002.md",
+      "source_title": "T1074.002 \u2014 Remote Data Staging",
+      "source_url": "https://attack.mitre.org/techniques/T1074/002",
+      "section": "Remote Data Staging"
+    },
+    {
+      "file": "techniques/T1078.md",
+      "source_title": "T1078 \u2014 Valid Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1078",
+      "section": "Valid Accounts"
+    },
+    {
+      "file": "techniques/T1078.001.md",
+      "source_title": "T1078.001 \u2014 Default Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1078/001",
+      "section": "Default Accounts"
+    },
+    {
+      "file": "techniques/T1078.002.md",
+      "source_title": "T1078.002 \u2014 Domain Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1078/002",
+      "section": "Domain Accounts"
+    },
+    {
+      "file": "techniques/T1078.003.md",
+      "source_title": "T1078.003 \u2014 Local Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1078/003",
+      "section": "Local Accounts"
+    },
+    {
+      "file": "techniques/T1078.004.md",
+      "source_title": "T1078.004 \u2014 Cloud Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1078/004",
+      "section": "Cloud Accounts"
+    },
+    {
+      "file": "techniques/T1080.md",
+      "source_title": "T1080 \u2014 Taint Shared Content",
+      "source_url": "https://attack.mitre.org/techniques/T1080",
+      "section": "Taint Shared Content"
+    },
+    {
+      "file": "techniques/T1082.md",
+      "source_title": "T1082 \u2014 System Information Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1082",
+      "section": "System Information Discovery"
+    },
+    {
+      "file": "techniques/T1083.md",
+      "source_title": "T1083 \u2014 File and Directory Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1083",
+      "section": "File and Directory Discovery"
+    },
+    {
+      "file": "techniques/T1087.md",
+      "source_title": "T1087 \u2014 Account Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1087",
+      "section": "Account Discovery"
+    },
+    {
+      "file": "techniques/T1087.001.md",
+      "source_title": "T1087.001 \u2014 Local Account",
+      "source_url": "https://attack.mitre.org/techniques/T1087/001",
+      "section": "Local Account"
+    },
+    {
+      "file": "techniques/T1087.002.md",
+      "source_title": "T1087.002 \u2014 Domain Account",
+      "source_url": "https://attack.mitre.org/techniques/T1087/002",
+      "section": "Domain Account"
+    },
+    {
+      "file": "techniques/T1087.003.md",
+      "source_title": "T1087.003 \u2014 Email Account",
+      "source_url": "https://attack.mitre.org/techniques/T1087/003",
+      "section": "Email Account"
+    },
+    {
+      "file": "techniques/T1087.004.md",
+      "source_title": "T1087.004 \u2014 Cloud Account",
+      "source_url": "https://attack.mitre.org/techniques/T1087/004",
+      "section": "Cloud Account"
+    },
+    {
+      "file": "techniques/T1090.md",
+      "source_title": "T1090 \u2014 Proxy",
+      "source_url": "https://attack.mitre.org/techniques/T1090",
+      "section": "Proxy"
+    },
+    {
+      "file": "techniques/T1090.001.md",
+      "source_title": "T1090.001 \u2014 Internal Proxy",
+      "source_url": "https://attack.mitre.org/techniques/T1090/001",
+      "section": "Internal Proxy"
+    },
+    {
+      "file": "techniques/T1090.002.md",
+      "source_title": "T1090.002 \u2014 External Proxy",
+      "source_url": "https://attack.mitre.org/techniques/T1090/002",
+      "section": "External Proxy"
+    },
+    {
+      "file": "techniques/T1090.003.md",
+      "source_title": "T1090.003 \u2014 Multi-hop Proxy",
+      "source_url": "https://attack.mitre.org/techniques/T1090/003",
+      "section": "Multi-hop Proxy"
+    },
+    {
+      "file": "techniques/T1090.004.md",
+      "source_title": "T1090.004 \u2014 Domain Fronting",
+      "source_url": "https://attack.mitre.org/techniques/T1090/004",
+      "section": "Domain Fronting"
+    },
+    {
+      "file": "techniques/T1091.md",
+      "source_title": "T1091 \u2014 Replication Through Removable Media",
+      "source_url": "https://attack.mitre.org/techniques/T1091",
+      "section": "Replication Through Removable Media"
+    },
+    {
+      "file": "techniques/T1092.md",
+      "source_title": "T1092 \u2014 Communication Through Removable Media",
+      "source_url": "https://attack.mitre.org/techniques/T1092",
+      "section": "Communication Through Removable Media"
+    },
+    {
+      "file": "techniques/T1095.md",
+      "source_title": "T1095 \u2014 Non-Application Layer Protocol",
+      "source_url": "https://attack.mitre.org/techniques/T1095",
+      "section": "Non-Application Layer Protocol"
+    },
+    {
+      "file": "techniques/T1098.md",
+      "source_title": "T1098 \u2014 Account Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1098",
+      "section": "Account Manipulation"
+    },
+    {
+      "file": "techniques/T1098.001.md",
+      "source_title": "T1098.001 \u2014 Additional Cloud Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1098/001",
+      "section": "Additional Cloud Credentials"
+    },
+    {
+      "file": "techniques/T1098.002.md",
+      "source_title": "T1098.002 \u2014 Additional Email Delegate Permissions",
+      "source_url": "https://attack.mitre.org/techniques/T1098/002",
+      "section": "Additional Email Delegate Permissions"
+    },
+    {
+      "file": "techniques/T1098.003.md",
+      "source_title": "T1098.003 \u2014 Additional Cloud Roles",
+      "source_url": "https://attack.mitre.org/techniques/T1098/003",
+      "section": "Additional Cloud Roles"
+    },
+    {
+      "file": "techniques/T1098.004.md",
+      "source_title": "T1098.004 \u2014 SSH Authorized Keys",
+      "source_url": "https://attack.mitre.org/techniques/T1098/004",
+      "section": "SSH Authorized Keys"
+    },
+    {
+      "file": "techniques/T1098.005.md",
+      "source_title": "T1098.005 \u2014 Device Registration",
+      "source_url": "https://attack.mitre.org/techniques/T1098/005",
+      "section": "Device Registration"
+    },
+    {
+      "file": "techniques/T1098.006.md",
+      "source_title": "T1098.006 \u2014 Additional Container Cluster Roles",
+      "source_url": "https://attack.mitre.org/techniques/T1098/006",
+      "section": "Additional Container Cluster Roles"
+    },
+    {
+      "file": "techniques/T1098.007.md",
+      "source_title": "T1098.007 \u2014 Additional Local or Domain Groups",
+      "source_url": "https://attack.mitre.org/techniques/T1098/007",
+      "section": "Additional Local or Domain Groups"
+    },
+    {
+      "file": "techniques/T1102.md",
+      "source_title": "T1102 \u2014 Web Service",
+      "source_url": "https://attack.mitre.org/techniques/T1102",
+      "section": "Web Service"
+    },
+    {
+      "file": "techniques/T1102.001.md",
+      "source_title": "T1102.001 \u2014 Dead Drop Resolver",
+      "source_url": "https://attack.mitre.org/techniques/T1102/001",
+      "section": "Dead Drop Resolver"
+    },
+    {
+      "file": "techniques/T1102.002.md",
+      "source_title": "T1102.002 \u2014 Bidirectional Communication",
+      "source_url": "https://attack.mitre.org/techniques/T1102/002",
+      "section": "Bidirectional Communication"
+    },
+    {
+      "file": "techniques/T1102.003.md",
+      "source_title": "T1102.003 \u2014 One-Way Communication",
+      "source_url": "https://attack.mitre.org/techniques/T1102/003",
+      "section": "One-Way Communication"
+    },
+    {
+      "file": "techniques/T1104.md",
+      "source_title": "T1104 \u2014 Multi-Stage Channels",
+      "source_url": "https://attack.mitre.org/techniques/T1104",
+      "section": "Multi-Stage Channels"
+    },
+    {
+      "file": "techniques/T1105.md",
+      "source_title": "T1105 \u2014 Ingress Tool Transfer",
+      "source_url": "https://attack.mitre.org/techniques/T1105",
+      "section": "Ingress Tool Transfer"
+    },
+    {
+      "file": "techniques/T1106.md",
+      "source_title": "T1106 \u2014 Native API",
+      "source_url": "https://attack.mitre.org/techniques/T1106",
+      "section": "Native API"
+    },
+    {
+      "file": "techniques/T1110.md",
+      "source_title": "T1110 \u2014 Brute Force",
+      "source_url": "https://attack.mitre.org/techniques/T1110",
+      "section": "Brute Force"
+    },
+    {
+      "file": "techniques/T1110.001.md",
+      "source_title": "T1110.001 \u2014 Password Guessing",
+      "source_url": "https://attack.mitre.org/techniques/T1110/001",
+      "section": "Password Guessing"
+    },
+    {
+      "file": "techniques/T1110.002.md",
+      "source_title": "T1110.002 \u2014 Password Cracking",
+      "source_url": "https://attack.mitre.org/techniques/T1110/002",
+      "section": "Password Cracking"
+    },
+    {
+      "file": "techniques/T1110.003.md",
+      "source_title": "T1110.003 \u2014 Password Spraying",
+      "source_url": "https://attack.mitre.org/techniques/T1110/003",
+      "section": "Password Spraying"
+    },
+    {
+      "file": "techniques/T1110.004.md",
+      "source_title": "T1110.004 \u2014 Credential Stuffing",
+      "source_url": "https://attack.mitre.org/techniques/T1110/004",
+      "section": "Credential Stuffing"
+    },
+    {
+      "file": "techniques/T1111.md",
+      "source_title": "T1111 \u2014 Multi-Factor Authentication Interception",
+      "source_url": "https://attack.mitre.org/techniques/T1111",
+      "section": "Multi-Factor Authentication Interception"
+    },
+    {
+      "file": "techniques/T1112.md",
+      "source_title": "T1112 \u2014 Modify Registry",
+      "source_url": "https://attack.mitre.org/techniques/T1112",
+      "section": "Modify Registry"
+    },
+    {
+      "file": "techniques/T1113.md",
+      "source_title": "T1113 \u2014 Screen Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1113",
+      "section": "Screen Capture"
+    },
+    {
+      "file": "techniques/T1114.md",
+      "source_title": "T1114 \u2014 Email Collection",
+      "source_url": "https://attack.mitre.org/techniques/T1114",
+      "section": "Email Collection"
+    },
+    {
+      "file": "techniques/T1114.001.md",
+      "source_title": "T1114.001 \u2014 Local Email Collection",
+      "source_url": "https://attack.mitre.org/techniques/T1114/001",
+      "section": "Local Email Collection"
+    },
+    {
+      "file": "techniques/T1114.002.md",
+      "source_title": "T1114.002 \u2014 Remote Email Collection",
+      "source_url": "https://attack.mitre.org/techniques/T1114/002",
+      "section": "Remote Email Collection"
+    },
+    {
+      "file": "techniques/T1114.003.md",
+      "source_title": "T1114.003 \u2014 Email Forwarding Rule",
+      "source_url": "https://attack.mitre.org/techniques/T1114/003",
+      "section": "Email Forwarding Rule"
+    },
+    {
+      "file": "techniques/T1115.md",
+      "source_title": "T1115 \u2014 Clipboard Data",
+      "source_url": "https://attack.mitre.org/techniques/T1115",
+      "section": "Clipboard Data"
+    },
+    {
+      "file": "techniques/T1119.md",
+      "source_title": "T1119 \u2014 Automated Collection",
+      "source_url": "https://attack.mitre.org/techniques/T1119",
+      "section": "Automated Collection"
+    },
+    {
+      "file": "techniques/T1120.md",
+      "source_title": "T1120 \u2014 Peripheral Device Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1120",
+      "section": "Peripheral Device Discovery"
+    },
+    {
+      "file": "techniques/T1123.md",
+      "source_title": "T1123 \u2014 Audio Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1123",
+      "section": "Audio Capture"
+    },
+    {
+      "file": "techniques/T1124.md",
+      "source_title": "T1124 \u2014 System Time Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1124",
+      "section": "System Time Discovery"
+    },
+    {
+      "file": "techniques/T1125.md",
+      "source_title": "T1125 \u2014 Video Capture",
+      "source_url": "https://attack.mitre.org/techniques/T1125",
+      "section": "Video Capture"
+    },
+    {
+      "file": "techniques/T1127.md",
+      "source_title": "T1127 \u2014 Trusted Developer Utilities Proxy Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1127",
+      "section": "Trusted Developer Utilities Proxy Execution"
+    },
+    {
+      "file": "techniques/T1127.001.md",
+      "source_title": "T1127.001 \u2014 MSBuild",
+      "source_url": "https://attack.mitre.org/techniques/T1127/001",
+      "section": "MSBuild"
+    },
+    {
+      "file": "techniques/T1127.002.md",
+      "source_title": "T1127.002 \u2014 ClickOnce",
+      "source_url": "https://attack.mitre.org/techniques/T1127/002",
+      "section": "ClickOnce"
+    },
+    {
+      "file": "techniques/T1127.003.md",
+      "source_title": "T1127.003 \u2014 JamPlus",
+      "source_url": "https://attack.mitre.org/techniques/T1127/003",
+      "section": "JamPlus"
+    },
+    {
+      "file": "techniques/T1129.md",
+      "source_title": "T1129 \u2014 Shared Modules",
+      "source_url": "https://attack.mitre.org/techniques/T1129",
+      "section": "Shared Modules"
+    },
+    {
+      "file": "techniques/T1132.md",
+      "source_title": "T1132 \u2014 Data Encoding",
+      "source_url": "https://attack.mitre.org/techniques/T1132",
+      "section": "Data Encoding"
+    },
+    {
+      "file": "techniques/T1132.001.md",
+      "source_title": "T1132.001 \u2014 Standard Encoding",
+      "source_url": "https://attack.mitre.org/techniques/T1132/001",
+      "section": "Standard Encoding"
+    },
+    {
+      "file": "techniques/T1132.002.md",
+      "source_title": "T1132.002 \u2014 Non-Standard Encoding",
+      "source_url": "https://attack.mitre.org/techniques/T1132/002",
+      "section": "Non-Standard Encoding"
+    },
+    {
+      "file": "techniques/T1133.md",
+      "source_title": "T1133 \u2014 External Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T1133",
+      "section": "External Remote Services"
+    },
+    {
+      "file": "techniques/T1134.md",
+      "source_title": "T1134 \u2014 Access Token Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1134",
+      "section": "Access Token Manipulation"
+    },
+    {
+      "file": "techniques/T1134.001.md",
+      "source_title": "T1134.001 \u2014 Token Impersonation/Theft",
+      "source_url": "https://attack.mitre.org/techniques/T1134/001",
+      "section": "Token Impersonation/Theft"
+    },
+    {
+      "file": "techniques/T1134.002.md",
+      "source_title": "T1134.002 \u2014 Create Process with Token",
+      "source_url": "https://attack.mitre.org/techniques/T1134/002",
+      "section": "Create Process with Token"
+    },
+    {
+      "file": "techniques/T1134.003.md",
+      "source_title": "T1134.003 \u2014 Make and Impersonate Token",
+      "source_url": "https://attack.mitre.org/techniques/T1134/003",
+      "section": "Make and Impersonate Token"
+    },
+    {
+      "file": "techniques/T1134.004.md",
+      "source_title": "T1134.004 \u2014 Parent PID Spoofing",
+      "source_url": "https://attack.mitre.org/techniques/T1134/004",
+      "section": "Parent PID Spoofing"
+    },
+    {
+      "file": "techniques/T1134.005.md",
+      "source_title": "T1134.005 \u2014 SID-History Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1134/005",
+      "section": "SID-History Injection"
+    },
+    {
+      "file": "techniques/T1135.md",
+      "source_title": "T1135 \u2014 Network Share Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1135",
+      "section": "Network Share Discovery"
+    },
+    {
+      "file": "techniques/T1136.md",
+      "source_title": "T1136 \u2014 Create Account",
+      "source_url": "https://attack.mitre.org/techniques/T1136",
+      "section": "Create Account"
+    },
+    {
+      "file": "techniques/T1136.001.md",
+      "source_title": "T1136.001 \u2014 Local Account",
+      "source_url": "https://attack.mitre.org/techniques/T1136/001",
+      "section": "Local Account"
+    },
+    {
+      "file": "techniques/T1136.002.md",
+      "source_title": "T1136.002 \u2014 Domain Account",
+      "source_url": "https://attack.mitre.org/techniques/T1136/002",
+      "section": "Domain Account"
+    },
+    {
+      "file": "techniques/T1136.003.md",
+      "source_title": "T1136.003 \u2014 Cloud Account",
+      "source_url": "https://attack.mitre.org/techniques/T1136/003",
+      "section": "Cloud Account"
+    },
+    {
+      "file": "techniques/T1137.md",
+      "source_title": "T1137 \u2014 Office Application Startup",
+      "source_url": "https://attack.mitre.org/techniques/T1137",
+      "section": "Office Application Startup"
+    },
+    {
+      "file": "techniques/T1137.001.md",
+      "source_title": "T1137.001 \u2014 Office Template Macros",
+      "source_url": "https://attack.mitre.org/techniques/T1137/001",
+      "section": "Office Template Macros"
+    },
+    {
+      "file": "techniques/T1137.002.md",
+      "source_title": "T1137.002 \u2014 Office Test",
+      "source_url": "https://attack.mitre.org/techniques/T1137/002",
+      "section": "Office Test"
+    },
+    {
+      "file": "techniques/T1137.003.md",
+      "source_title": "T1137.003 \u2014 Outlook Forms",
+      "source_url": "https://attack.mitre.org/techniques/T1137/003",
+      "section": "Outlook Forms"
+    },
+    {
+      "file": "techniques/T1137.004.md",
+      "source_title": "T1137.004 \u2014 Outlook Home Page",
+      "source_url": "https://attack.mitre.org/techniques/T1137/004",
+      "section": "Outlook Home Page"
+    },
+    {
+      "file": "techniques/T1137.005.md",
+      "source_title": "T1137.005 \u2014 Outlook Rules",
+      "source_url": "https://attack.mitre.org/techniques/T1137/005",
+      "section": "Outlook Rules"
+    },
+    {
+      "file": "techniques/T1137.006.md",
+      "source_title": "T1137.006 \u2014 Add-ins",
+      "source_url": "https://attack.mitre.org/techniques/T1137/006",
+      "section": "Add-ins"
+    },
+    {
+      "file": "techniques/T1140.md",
+      "source_title": "T1140 \u2014 Deobfuscate/Decode Files or Information",
+      "source_url": "https://attack.mitre.org/techniques/T1140",
+      "section": "Deobfuscate/Decode Files or Information"
+    },
+    {
+      "file": "techniques/T1176.md",
+      "source_title": "T1176 \u2014 Software Extensions",
+      "source_url": "https://attack.mitre.org/techniques/T1176",
+      "section": "Software Extensions"
+    },
+    {
+      "file": "techniques/T1176.001.md",
+      "source_title": "T1176.001 \u2014 Browser Extensions",
+      "source_url": "https://attack.mitre.org/techniques/T1176/001",
+      "section": "Browser Extensions"
+    },
+    {
+      "file": "techniques/T1176.002.md",
+      "source_title": "T1176.002 \u2014 IDE Extensions",
+      "source_url": "https://attack.mitre.org/techniques/T1176/002",
+      "section": "IDE Extensions"
+    },
+    {
+      "file": "techniques/T1185.md",
+      "source_title": "T1185 \u2014 Browser Session Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1185",
+      "section": "Browser Session Hijacking"
+    },
+    {
+      "file": "techniques/T1187.md",
+      "source_title": "T1187 \u2014 Forced Authentication",
+      "source_url": "https://attack.mitre.org/techniques/T1187",
+      "section": "Forced Authentication"
+    },
+    {
+      "file": "techniques/T1189.md",
+      "source_title": "T1189 \u2014 Drive-by Compromise",
+      "source_url": "https://attack.mitre.org/techniques/T1189",
+      "section": "Drive-by Compromise"
+    },
+    {
+      "file": "techniques/T1190.md",
+      "source_title": "T1190 \u2014 Exploit Public-Facing Application",
+      "source_url": "https://attack.mitre.org/techniques/T1190",
+      "section": "Exploit Public-Facing Application"
+    },
+    {
+      "file": "techniques/T1195.md",
+      "source_title": "T1195 \u2014 Supply Chain Compromise",
+      "source_url": "https://attack.mitre.org/techniques/T1195",
+      "section": "Supply Chain Compromise"
+    },
+    {
+      "file": "techniques/T1195.001.md",
+      "source_title": "T1195.001 \u2014 Compromise Software Dependencies and Development Tools",
+      "source_url": "https://attack.mitre.org/techniques/T1195/001",
+      "section": "Compromise Software Dependencies and Development Tools"
+    },
+    {
+      "file": "techniques/T1195.002.md",
+      "source_title": "T1195.002 \u2014 Compromise Software Supply Chain",
+      "source_url": "https://attack.mitre.org/techniques/T1195/002",
+      "section": "Compromise Software Supply Chain"
+    },
+    {
+      "file": "techniques/T1195.003.md",
+      "source_title": "T1195.003 \u2014 Compromise Hardware Supply Chain",
+      "source_url": "https://attack.mitre.org/techniques/T1195/003",
+      "section": "Compromise Hardware Supply Chain"
+    },
+    {
+      "file": "techniques/T1197.md",
+      "source_title": "T1197 \u2014 BITS Jobs",
+      "source_url": "https://attack.mitre.org/techniques/T1197",
+      "section": "BITS Jobs"
+    },
+    {
+      "file": "techniques/T1199.md",
+      "source_title": "T1199 \u2014 Trusted Relationship",
+      "source_url": "https://attack.mitre.org/techniques/T1199",
+      "section": "Trusted Relationship"
+    },
+    {
+      "file": "techniques/T1200.md",
+      "source_title": "T1200 \u2014 Hardware Additions",
+      "source_url": "https://attack.mitre.org/techniques/T1200",
+      "section": "Hardware Additions"
+    },
+    {
+      "file": "techniques/T1201.md",
+      "source_title": "T1201 \u2014 Password Policy Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1201",
+      "section": "Password Policy Discovery"
+    },
+    {
+      "file": "techniques/T1202.md",
+      "source_title": "T1202 \u2014 Indirect Command Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1202",
+      "section": "Indirect Command Execution"
+    },
+    {
+      "file": "techniques/T1203.md",
+      "source_title": "T1203 \u2014 Exploitation for Client Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1203",
+      "section": "Exploitation for Client Execution"
+    },
+    {
+      "file": "techniques/T1204.md",
+      "source_title": "T1204 \u2014 User Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1204",
+      "section": "User Execution"
+    },
+    {
+      "file": "techniques/T1204.001.md",
+      "source_title": "T1204.001 \u2014 Malicious Link",
+      "source_url": "https://attack.mitre.org/techniques/T1204/001",
+      "section": "Malicious Link"
+    },
+    {
+      "file": "techniques/T1204.002.md",
+      "source_title": "T1204.002 \u2014 Malicious File",
+      "source_url": "https://attack.mitre.org/techniques/T1204/002",
+      "section": "Malicious File"
+    },
+    {
+      "file": "techniques/T1204.003.md",
+      "source_title": "T1204.003 \u2014 Malicious Image",
+      "source_url": "https://attack.mitre.org/techniques/T1204/003",
+      "section": "Malicious Image"
+    },
+    {
+      "file": "techniques/T1204.004.md",
+      "source_title": "T1204.004 \u2014 Malicious Copy and Paste",
+      "source_url": "https://attack.mitre.org/techniques/T1204/004",
+      "section": "Malicious Copy and Paste"
+    },
+    {
+      "file": "techniques/T1204.005.md",
+      "source_title": "T1204.005 \u2014 Malicious Library",
+      "source_url": "https://attack.mitre.org/techniques/T1204/005",
+      "section": "Malicious Library"
+    },
+    {
+      "file": "techniques/T1205.md",
+      "source_title": "T1205 \u2014 Traffic Signaling",
+      "source_url": "https://attack.mitre.org/techniques/T1205",
+      "section": "Traffic Signaling"
+    },
+    {
+      "file": "techniques/T1205.001.md",
+      "source_title": "T1205.001 \u2014 Port Knocking",
+      "source_url": "https://attack.mitre.org/techniques/T1205/001",
+      "section": "Port Knocking"
+    },
+    {
+      "file": "techniques/T1205.002.md",
+      "source_title": "T1205.002 \u2014 Socket Filters",
+      "source_url": "https://attack.mitre.org/techniques/T1205/002",
+      "section": "Socket Filters"
+    },
+    {
+      "file": "techniques/T1207.md",
+      "source_title": "T1207 \u2014 Rogue Domain Controller",
+      "source_url": "https://attack.mitre.org/techniques/T1207",
+      "section": "Rogue Domain Controller"
+    },
+    {
+      "file": "techniques/T1210.md",
+      "source_title": "T1210 \u2014 Exploitation of Remote Services",
+      "source_url": "https://attack.mitre.org/techniques/T1210",
+      "section": "Exploitation of Remote Services"
+    },
+    {
+      "file": "techniques/T1211.md",
+      "source_title": "T1211 \u2014 Exploitation for Stealth",
+      "source_url": "https://attack.mitre.org/techniques/T1211",
+      "section": "Exploitation for Stealth"
+    },
+    {
+      "file": "techniques/T1212.md",
+      "source_title": "T1212 \u2014 Exploitation for Credential Access",
+      "source_url": "https://attack.mitre.org/techniques/T1212",
+      "section": "Exploitation for Credential Access"
+    },
+    {
+      "file": "techniques/T1213.md",
+      "source_title": "T1213 \u2014 Data from Information Repositories",
+      "source_url": "https://attack.mitre.org/techniques/T1213",
+      "section": "Data from Information Repositories"
+    },
+    {
+      "file": "techniques/T1213.001.md",
+      "source_title": "T1213.001 \u2014 Confluence",
+      "source_url": "https://attack.mitre.org/techniques/T1213/001",
+      "section": "Confluence"
+    },
+    {
+      "file": "techniques/T1213.002.md",
+      "source_title": "T1213.002 \u2014 Sharepoint",
+      "source_url": "https://attack.mitre.org/techniques/T1213/002",
+      "section": "Sharepoint"
+    },
+    {
+      "file": "techniques/T1213.003.md",
+      "source_title": "T1213.003 \u2014 Code Repositories",
+      "source_url": "https://attack.mitre.org/techniques/T1213/003",
+      "section": "Code Repositories"
+    },
+    {
+      "file": "techniques/T1213.004.md",
+      "source_title": "T1213.004 \u2014 Customer Relationship Management Software",
+      "source_url": "https://attack.mitre.org/techniques/T1213/004",
+      "section": "Customer Relationship Management Software"
+    },
+    {
+      "file": "techniques/T1213.005.md",
+      "source_title": "T1213.005 \u2014 Messaging Applications",
+      "source_url": "https://attack.mitre.org/techniques/T1213/005",
+      "section": "Messaging Applications"
+    },
+    {
+      "file": "techniques/T1213.006.md",
+      "source_title": "T1213.006 \u2014 Databases",
+      "source_url": "https://attack.mitre.org/techniques/T1213/006",
+      "section": "Databases"
+    },
+    {
+      "file": "techniques/T1216.md",
+      "source_title": "T1216 \u2014 System Script Proxy Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1216",
+      "section": "System Script Proxy Execution"
+    },
+    {
+      "file": "techniques/T1216.001.md",
+      "source_title": "T1216.001 \u2014 PubPrn",
+      "source_url": "https://attack.mitre.org/techniques/T1216/001",
+      "section": "PubPrn"
+    },
+    {
+      "file": "techniques/T1216.002.md",
+      "source_title": "T1216.002 \u2014 SyncAppvPublishingServer",
+      "source_url": "https://attack.mitre.org/techniques/T1216/002",
+      "section": "SyncAppvPublishingServer"
+    },
+    {
+      "file": "techniques/T1217.md",
+      "source_title": "T1217 \u2014 Browser Information Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1217",
+      "section": "Browser Information Discovery"
+    },
+    {
+      "file": "techniques/T1218.md",
+      "source_title": "T1218 \u2014 System Binary Proxy Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1218",
+      "section": "System Binary Proxy Execution"
+    },
+    {
+      "file": "techniques/T1218.001.md",
+      "source_title": "T1218.001 \u2014 Compiled HTML File",
+      "source_url": "https://attack.mitre.org/techniques/T1218/001",
+      "section": "Compiled HTML File"
+    },
+    {
+      "file": "techniques/T1218.002.md",
+      "source_title": "T1218.002 \u2014 Control Panel",
+      "source_url": "https://attack.mitre.org/techniques/T1218/002",
+      "section": "Control Panel"
+    },
+    {
+      "file": "techniques/T1218.003.md",
+      "source_title": "T1218.003 \u2014 CMSTP",
+      "source_url": "https://attack.mitre.org/techniques/T1218/003",
+      "section": "CMSTP"
+    },
+    {
+      "file": "techniques/T1218.004.md",
+      "source_title": "T1218.004 \u2014 InstallUtil",
+      "source_url": "https://attack.mitre.org/techniques/T1218/004",
+      "section": "InstallUtil"
+    },
+    {
+      "file": "techniques/T1218.005.md",
+      "source_title": "T1218.005 \u2014 Mshta",
+      "source_url": "https://attack.mitre.org/techniques/T1218/005",
+      "section": "Mshta"
+    },
+    {
+      "file": "techniques/T1218.007.md",
+      "source_title": "T1218.007 \u2014 Msiexec",
+      "source_url": "https://attack.mitre.org/techniques/T1218/007",
+      "section": "Msiexec"
+    },
+    {
+      "file": "techniques/T1218.008.md",
+      "source_title": "T1218.008 \u2014 Odbcconf",
+      "source_url": "https://attack.mitre.org/techniques/T1218/008",
+      "section": "Odbcconf"
+    },
+    {
+      "file": "techniques/T1218.009.md",
+      "source_title": "T1218.009 \u2014 Regsvcs/Regasm",
+      "source_url": "https://attack.mitre.org/techniques/T1218/009",
+      "section": "Regsvcs/Regasm"
+    },
+    {
+      "file": "techniques/T1218.010.md",
+      "source_title": "T1218.010 \u2014 Regsvr32",
+      "source_url": "https://attack.mitre.org/techniques/T1218/010",
+      "section": "Regsvr32"
+    },
+    {
+      "file": "techniques/T1218.011.md",
+      "source_title": "T1218.011 \u2014 Rundll32",
+      "source_url": "https://attack.mitre.org/techniques/T1218/011",
+      "section": "Rundll32"
+    },
+    {
+      "file": "techniques/T1218.012.md",
+      "source_title": "T1218.012 \u2014 Verclsid",
+      "source_url": "https://attack.mitre.org/techniques/T1218/012",
+      "section": "Verclsid"
+    },
+    {
+      "file": "techniques/T1218.013.md",
+      "source_title": "T1218.013 \u2014 Mavinject",
+      "source_url": "https://attack.mitre.org/techniques/T1218/013",
+      "section": "Mavinject"
+    },
+    {
+      "file": "techniques/T1218.014.md",
+      "source_title": "T1218.014 \u2014 MMC",
+      "source_url": "https://attack.mitre.org/techniques/T1218/014",
+      "section": "MMC"
+    },
+    {
+      "file": "techniques/T1218.015.md",
+      "source_title": "T1218.015 \u2014 Electron Applications",
+      "source_url": "https://attack.mitre.org/techniques/T1218/015",
+      "section": "Electron Applications"
+    },
+    {
+      "file": "techniques/T1219.md",
+      "source_title": "T1219 \u2014 Remote Access Tools",
+      "source_url": "https://attack.mitre.org/techniques/T1219",
+      "section": "Remote Access Tools"
+    },
+    {
+      "file": "techniques/T1219.001.md",
+      "source_title": "T1219.001 \u2014 IDE Tunneling",
+      "source_url": "https://attack.mitre.org/techniques/T1219/001",
+      "section": "IDE Tunneling"
+    },
+    {
+      "file": "techniques/T1219.002.md",
+      "source_title": "T1219.002 \u2014 Remote Desktop Software",
+      "source_url": "https://attack.mitre.org/techniques/T1219/002",
+      "section": "Remote Desktop Software"
+    },
+    {
+      "file": "techniques/T1219.003.md",
+      "source_title": "T1219.003 \u2014 Remote Access Hardware",
+      "source_url": "https://attack.mitre.org/techniques/T1219/003",
+      "section": "Remote Access Hardware"
+    },
+    {
+      "file": "techniques/T1220.md",
+      "source_title": "T1220 \u2014 XSL Script Processing",
+      "source_url": "https://attack.mitre.org/techniques/T1220",
+      "section": "XSL Script Processing"
+    },
+    {
+      "file": "techniques/T1221.md",
+      "source_title": "T1221 \u2014 Template Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1221",
+      "section": "Template Injection"
+    },
+    {
+      "file": "techniques/T1222.md",
+      "source_title": "T1222 \u2014 File and Directory Permissions Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1222",
+      "section": "File and Directory Permissions Modification"
+    },
+    {
+      "file": "techniques/T1222.001.md",
+      "source_title": "T1222.001 \u2014 Windows Permissions",
+      "source_url": "https://attack.mitre.org/techniques/T1222/001",
+      "section": "Windows Permissions"
+    },
+    {
+      "file": "techniques/T1222.002.md",
+      "source_title": "T1222.002 \u2014 Linux and Mac Permissions",
+      "source_url": "https://attack.mitre.org/techniques/T1222/002",
+      "section": "Linux and Mac Permissions"
+    },
+    {
+      "file": "techniques/T1480.md",
+      "source_title": "T1480 \u2014 Execution Guardrails",
+      "source_url": "https://attack.mitre.org/techniques/T1480",
+      "section": "Execution Guardrails"
+    },
+    {
+      "file": "techniques/T1480.001.md",
+      "source_title": "T1480.001 \u2014 Environmental Keying",
+      "source_url": "https://attack.mitre.org/techniques/T1480/001",
+      "section": "Environmental Keying"
+    },
+    {
+      "file": "techniques/T1480.002.md",
+      "source_title": "T1480.002 \u2014 Mutual Exclusion",
+      "source_url": "https://attack.mitre.org/techniques/T1480/002",
+      "section": "Mutual Exclusion"
+    },
+    {
+      "file": "techniques/T1482.md",
+      "source_title": "T1482 \u2014 Domain Trust Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1482",
+      "section": "Domain Trust Discovery"
+    },
+    {
+      "file": "techniques/T1484.md",
+      "source_title": "T1484 \u2014 Domain or Tenant Policy Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1484",
+      "section": "Domain or Tenant Policy Modification"
+    },
+    {
+      "file": "techniques/T1484.001.md",
+      "source_title": "T1484.001 \u2014 Group Policy Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1484/001",
+      "section": "Group Policy Modification"
+    },
+    {
+      "file": "techniques/T1484.002.md",
+      "source_title": "T1484.002 \u2014 Trust Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1484/002",
+      "section": "Trust Modification"
+    },
+    {
+      "file": "techniques/T1485.md",
+      "source_title": "T1485 \u2014 Data Destruction",
+      "source_url": "https://attack.mitre.org/techniques/T1485",
+      "section": "Data Destruction"
+    },
+    {
+      "file": "techniques/T1485.001.md",
+      "source_title": "T1485.001 \u2014 Lifecycle-Triggered Deletion",
+      "source_url": "https://attack.mitre.org/techniques/T1485/001",
+      "section": "Lifecycle-Triggered Deletion"
+    },
+    {
+      "file": "techniques/T1486.md",
+      "source_title": "T1486 \u2014 Data Encrypted for Impact",
+      "source_url": "https://attack.mitre.org/techniques/T1486",
+      "section": "Data Encrypted for Impact"
+    },
+    {
+      "file": "techniques/T1489.md",
+      "source_title": "T1489 \u2014 Service Stop",
+      "source_url": "https://attack.mitre.org/techniques/T1489",
+      "section": "Service Stop"
+    },
+    {
+      "file": "techniques/T1490.md",
+      "source_title": "T1490 \u2014 Inhibit System Recovery",
+      "source_url": "https://attack.mitre.org/techniques/T1490",
+      "section": "Inhibit System Recovery"
+    },
+    {
+      "file": "techniques/T1491.md",
+      "source_title": "T1491 \u2014 Defacement",
+      "source_url": "https://attack.mitre.org/techniques/T1491",
+      "section": "Defacement"
+    },
+    {
+      "file": "techniques/T1491.001.md",
+      "source_title": "T1491.001 \u2014 Internal Defacement",
+      "source_url": "https://attack.mitre.org/techniques/T1491/001",
+      "section": "Internal Defacement"
+    },
+    {
+      "file": "techniques/T1491.002.md",
+      "source_title": "T1491.002 \u2014 External Defacement",
+      "source_url": "https://attack.mitre.org/techniques/T1491/002",
+      "section": "External Defacement"
+    },
+    {
+      "file": "techniques/T1495.md",
+      "source_title": "T1495 \u2014 Firmware Corruption",
+      "source_url": "https://attack.mitre.org/techniques/T1495",
+      "section": "Firmware Corruption"
+    },
+    {
+      "file": "techniques/T1496.md",
+      "source_title": "T1496 \u2014 Resource Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1496",
+      "section": "Resource Hijacking"
+    },
+    {
+      "file": "techniques/T1496.001.md",
+      "source_title": "T1496.001 \u2014 Compute Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1496/001",
+      "section": "Compute Hijacking"
+    },
+    {
+      "file": "techniques/T1496.002.md",
+      "source_title": "T1496.002 \u2014 Bandwidth Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1496/002",
+      "section": "Bandwidth Hijacking"
+    },
+    {
+      "file": "techniques/T1496.003.md",
+      "source_title": "T1496.003 \u2014 SMS Pumping",
+      "source_url": "https://attack.mitre.org/techniques/T1496/003",
+      "section": "SMS Pumping"
+    },
+    {
+      "file": "techniques/T1496.004.md",
+      "source_title": "T1496.004 \u2014 Cloud Service Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1496/004",
+      "section": "Cloud Service Hijacking"
+    },
+    {
+      "file": "techniques/T1497.md",
+      "source_title": "T1497 \u2014 Virtualization/Sandbox Evasion",
+      "source_url": "https://attack.mitre.org/techniques/T1497",
+      "section": "Virtualization/Sandbox Evasion"
+    },
+    {
+      "file": "techniques/T1497.001.md",
+      "source_title": "T1497.001 \u2014 System Checks",
+      "source_url": "https://attack.mitre.org/techniques/T1497/001",
+      "section": "System Checks"
+    },
+    {
+      "file": "techniques/T1497.002.md",
+      "source_title": "T1497.002 \u2014 User Activity Based Checks",
+      "source_url": "https://attack.mitre.org/techniques/T1497/002",
+      "section": "User Activity Based Checks"
+    },
+    {
+      "file": "techniques/T1497.003.md",
+      "source_title": "T1497.003 \u2014 Time Based Checks",
+      "source_url": "https://attack.mitre.org/techniques/T1497/003",
+      "section": "Time Based Checks"
+    },
+    {
+      "file": "techniques/T1498.md",
+      "source_title": "T1498 \u2014 Network Denial of Service",
+      "source_url": "https://attack.mitre.org/techniques/T1498",
+      "section": "Network Denial of Service"
+    },
+    {
+      "file": "techniques/T1498.001.md",
+      "source_title": "T1498.001 \u2014 Direct Network Flood",
+      "source_url": "https://attack.mitre.org/techniques/T1498/001",
+      "section": "Direct Network Flood"
+    },
+    {
+      "file": "techniques/T1498.002.md",
+      "source_title": "T1498.002 \u2014 Reflection Amplification",
+      "source_url": "https://attack.mitre.org/techniques/T1498/002",
+      "section": "Reflection Amplification"
+    },
+    {
+      "file": "techniques/T1499.md",
+      "source_title": "T1499 \u2014 Endpoint Denial of Service",
+      "source_url": "https://attack.mitre.org/techniques/T1499",
+      "section": "Endpoint Denial of Service"
+    },
+    {
+      "file": "techniques/T1499.001.md",
+      "source_title": "T1499.001 \u2014 OS Exhaustion Flood",
+      "source_url": "https://attack.mitre.org/techniques/T1499/001",
+      "section": "OS Exhaustion Flood"
+    },
+    {
+      "file": "techniques/T1499.002.md",
+      "source_title": "T1499.002 \u2014 Service Exhaustion Flood",
+      "source_url": "https://attack.mitre.org/techniques/T1499/002",
+      "section": "Service Exhaustion Flood"
+    },
+    {
+      "file": "techniques/T1499.003.md",
+      "source_title": "T1499.003 \u2014 Application Exhaustion Flood",
+      "source_url": "https://attack.mitre.org/techniques/T1499/003",
+      "section": "Application Exhaustion Flood"
+    },
+    {
+      "file": "techniques/T1499.004.md",
+      "source_title": "T1499.004 \u2014 Application or System Exploitation",
+      "source_url": "https://attack.mitre.org/techniques/T1499/004",
+      "section": "Application or System Exploitation"
+    },
+    {
+      "file": "techniques/T1505.md",
+      "source_title": "T1505 \u2014 Server Software Component",
+      "source_url": "https://attack.mitre.org/techniques/T1505",
+      "section": "Server Software Component"
+    },
+    {
+      "file": "techniques/T1505.001.md",
+      "source_title": "T1505.001 \u2014 SQL Stored Procedures",
+      "source_url": "https://attack.mitre.org/techniques/T1505/001",
+      "section": "SQL Stored Procedures"
+    },
+    {
+      "file": "techniques/T1505.002.md",
+      "source_title": "T1505.002 \u2014 Transport Agent",
+      "source_url": "https://attack.mitre.org/techniques/T1505/002",
+      "section": "Transport Agent"
+    },
+    {
+      "file": "techniques/T1505.003.md",
+      "source_title": "T1505.003 \u2014 Web Shell",
+      "source_url": "https://attack.mitre.org/techniques/T1505/003",
+      "section": "Web Shell"
+    },
+    {
+      "file": "techniques/T1505.004.md",
+      "source_title": "T1505.004 \u2014 IIS Components",
+      "source_url": "https://attack.mitre.org/techniques/T1505/004",
+      "section": "IIS Components"
+    },
+    {
+      "file": "techniques/T1505.005.md",
+      "source_title": "T1505.005 \u2014 Terminal Services DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1505/005",
+      "section": "Terminal Services DLL"
+    },
+    {
+      "file": "techniques/T1505.006.md",
+      "source_title": "T1505.006 \u2014 vSphere Installation Bundles",
+      "source_url": "https://attack.mitre.org/techniques/T1505/006",
+      "section": "vSphere Installation Bundles"
+    },
+    {
+      "file": "techniques/T1518.md",
+      "source_title": "T1518 \u2014 Software Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1518",
+      "section": "Software Discovery"
+    },
+    {
+      "file": "techniques/T1518.001.md",
+      "source_title": "T1518.001 \u2014 Security Software Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1518/001",
+      "section": "Security Software Discovery"
+    },
+    {
+      "file": "techniques/T1518.002.md",
+      "source_title": "T1518.002 \u2014 Backup Software Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1518/002",
+      "section": "Backup Software Discovery"
+    },
+    {
+      "file": "techniques/T1525.md",
+      "source_title": "T1525 \u2014 Implant Internal Image",
+      "source_url": "https://attack.mitre.org/techniques/T1525",
+      "section": "Implant Internal Image"
+    },
+    {
+      "file": "techniques/T1526.md",
+      "source_title": "T1526 \u2014 Cloud Service Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1526",
+      "section": "Cloud Service Discovery"
+    },
+    {
+      "file": "techniques/T1528.md",
+      "source_title": "T1528 \u2014 Steal Application Access Token",
+      "source_url": "https://attack.mitre.org/techniques/T1528",
+      "section": "Steal Application Access Token"
+    },
+    {
+      "file": "techniques/T1529.md",
+      "source_title": "T1529 \u2014 System Shutdown/Reboot",
+      "source_url": "https://attack.mitre.org/techniques/T1529",
+      "section": "System Shutdown/Reboot"
+    },
+    {
+      "file": "techniques/T1530.md",
+      "source_title": "T1530 \u2014 Data from Cloud Storage",
+      "source_url": "https://attack.mitre.org/techniques/T1530",
+      "section": "Data from Cloud Storage"
+    },
+    {
+      "file": "techniques/T1531.md",
+      "source_title": "T1531 \u2014 Account Access Removal",
+      "source_url": "https://attack.mitre.org/techniques/T1531",
+      "section": "Account Access Removal"
+    },
+    {
+      "file": "techniques/T1534.md",
+      "source_title": "T1534 \u2014 Internal Spearphishing",
+      "source_url": "https://attack.mitre.org/techniques/T1534",
+      "section": "Internal Spearphishing"
+    },
+    {
+      "file": "techniques/T1535.md",
+      "source_title": "T1535 \u2014 Unused/Unsupported Cloud Regions",
+      "source_url": "https://attack.mitre.org/techniques/T1535",
+      "section": "Unused/Unsupported Cloud Regions"
+    },
+    {
+      "file": "techniques/T1537.md",
+      "source_title": "T1537 \u2014 Transfer Data to Cloud Account",
+      "source_url": "https://attack.mitre.org/techniques/T1537",
+      "section": "Transfer Data to Cloud Account"
+    },
+    {
+      "file": "techniques/T1538.md",
+      "source_title": "T1538 \u2014 Cloud Service Dashboard",
+      "source_url": "https://attack.mitre.org/techniques/T1538",
+      "section": "Cloud Service Dashboard"
+    },
+    {
+      "file": "techniques/T1539.md",
+      "source_title": "T1539 \u2014 Steal Web Session Cookie",
+      "source_url": "https://attack.mitre.org/techniques/T1539",
+      "section": "Steal Web Session Cookie"
+    },
+    {
+      "file": "techniques/T1542.md",
+      "source_title": "T1542 \u2014 Pre-OS Boot",
+      "source_url": "https://attack.mitre.org/techniques/T1542",
+      "section": "Pre-OS Boot"
+    },
+    {
+      "file": "techniques/T1542.001.md",
+      "source_title": "T1542.001 \u2014 System Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1542/001",
+      "section": "System Firmware"
+    },
+    {
+      "file": "techniques/T1542.002.md",
+      "source_title": "T1542.002 \u2014 Component Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1542/002",
+      "section": "Component Firmware"
+    },
+    {
+      "file": "techniques/T1542.003.md",
+      "source_title": "T1542.003 \u2014 Bootkit",
+      "source_url": "https://attack.mitre.org/techniques/T1542/003",
+      "section": "Bootkit"
+    },
+    {
+      "file": "techniques/T1542.004.md",
+      "source_title": "T1542.004 \u2014 ROMMONkit",
+      "source_url": "https://attack.mitre.org/techniques/T1542/004",
+      "section": "ROMMONkit"
+    },
+    {
+      "file": "techniques/T1542.005.md",
+      "source_title": "T1542.005 \u2014 TFTP Boot",
+      "source_url": "https://attack.mitre.org/techniques/T1542/005",
+      "section": "TFTP Boot"
+    },
+    {
+      "file": "techniques/T1543.md",
+      "source_title": "T1543 \u2014 Create or Modify System Process",
+      "source_url": "https://attack.mitre.org/techniques/T1543",
+      "section": "Create or Modify System Process"
+    },
+    {
+      "file": "techniques/T1543.001.md",
+      "source_title": "T1543.001 \u2014 Launch Agent",
+      "source_url": "https://attack.mitre.org/techniques/T1543/001",
+      "section": "Launch Agent"
+    },
+    {
+      "file": "techniques/T1543.002.md",
+      "source_title": "T1543.002 \u2014 Systemd Service",
+      "source_url": "https://attack.mitre.org/techniques/T1543/002",
+      "section": "Systemd Service"
+    },
+    {
+      "file": "techniques/T1543.003.md",
+      "source_title": "T1543.003 \u2014 Windows Service",
+      "source_url": "https://attack.mitre.org/techniques/T1543/003",
+      "section": "Windows Service"
+    },
+    {
+      "file": "techniques/T1543.004.md",
+      "source_title": "T1543.004 \u2014 Launch Daemon",
+      "source_url": "https://attack.mitre.org/techniques/T1543/004",
+      "section": "Launch Daemon"
+    },
+    {
+      "file": "techniques/T1543.005.md",
+      "source_title": "T1543.005 \u2014 Container Service",
+      "source_url": "https://attack.mitre.org/techniques/T1543/005",
+      "section": "Container Service"
+    },
+    {
+      "file": "techniques/T1546.md",
+      "source_title": "T1546 \u2014 Event Triggered Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1546",
+      "section": "Event Triggered Execution"
+    },
+    {
+      "file": "techniques/T1546.001.md",
+      "source_title": "T1546.001 \u2014 Change Default File Association",
+      "source_url": "https://attack.mitre.org/techniques/T1546/001",
+      "section": "Change Default File Association"
+    },
+    {
+      "file": "techniques/T1546.002.md",
+      "source_title": "T1546.002 \u2014 Screensaver",
+      "source_url": "https://attack.mitre.org/techniques/T1546/002",
+      "section": "Screensaver"
+    },
+    {
+      "file": "techniques/T1546.003.md",
+      "source_title": "T1546.003 \u2014 Windows Management Instrumentation Event Subscription",
+      "source_url": "https://attack.mitre.org/techniques/T1546/003",
+      "section": "Windows Management Instrumentation Event Subscription"
+    },
+    {
+      "file": "techniques/T1546.004.md",
+      "source_title": "T1546.004 \u2014 Unix Shell Configuration Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1546/004",
+      "section": "Unix Shell Configuration Modification"
+    },
+    {
+      "file": "techniques/T1546.005.md",
+      "source_title": "T1546.005 \u2014 Trap",
+      "source_url": "https://attack.mitre.org/techniques/T1546/005",
+      "section": "Trap"
+    },
+    {
+      "file": "techniques/T1546.006.md",
+      "source_title": "T1546.006 \u2014 LC_LOAD_DYLIB Addition",
+      "source_url": "https://attack.mitre.org/techniques/T1546/006",
+      "section": "LC_LOAD_DYLIB Addition"
+    },
+    {
+      "file": "techniques/T1546.007.md",
+      "source_title": "T1546.007 \u2014 Netsh Helper DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1546/007",
+      "section": "Netsh Helper DLL"
+    },
+    {
+      "file": "techniques/T1546.008.md",
+      "source_title": "T1546.008 \u2014 Accessibility Features",
+      "source_url": "https://attack.mitre.org/techniques/T1546/008",
+      "section": "Accessibility Features"
+    },
+    {
+      "file": "techniques/T1546.009.md",
+      "source_title": "T1546.009 \u2014 AppCert DLLs",
+      "source_url": "https://attack.mitre.org/techniques/T1546/009",
+      "section": "AppCert DLLs"
+    },
+    {
+      "file": "techniques/T1546.010.md",
+      "source_title": "T1546.010 \u2014 AppInit DLLs",
+      "source_url": "https://attack.mitre.org/techniques/T1546/010",
+      "section": "AppInit DLLs"
+    },
+    {
+      "file": "techniques/T1546.011.md",
+      "source_title": "T1546.011 \u2014 Application Shimming",
+      "source_url": "https://attack.mitre.org/techniques/T1546/011",
+      "section": "Application Shimming"
+    },
+    {
+      "file": "techniques/T1546.012.md",
+      "source_title": "T1546.012 \u2014 Image File Execution Options Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1546/012",
+      "section": "Image File Execution Options Injection"
+    },
+    {
+      "file": "techniques/T1546.013.md",
+      "source_title": "T1546.013 \u2014 PowerShell Profile",
+      "source_url": "https://attack.mitre.org/techniques/T1546/013",
+      "section": "PowerShell Profile"
+    },
+    {
+      "file": "techniques/T1546.014.md",
+      "source_title": "T1546.014 \u2014 Emond",
+      "source_url": "https://attack.mitre.org/techniques/T1546/014",
+      "section": "Emond"
+    },
+    {
+      "file": "techniques/T1546.015.md",
+      "source_title": "T1546.015 \u2014 Component Object Model Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1546/015",
+      "section": "Component Object Model Hijacking"
+    },
+    {
+      "file": "techniques/T1546.016.md",
+      "source_title": "T1546.016 \u2014 Installer Packages",
+      "source_url": "https://attack.mitre.org/techniques/T1546/016",
+      "section": "Installer Packages"
+    },
+    {
+      "file": "techniques/T1546.017.md",
+      "source_title": "T1546.017 \u2014 Udev Rules",
+      "source_url": "https://attack.mitre.org/techniques/T1546/017",
+      "section": "Udev Rules"
+    },
+    {
+      "file": "techniques/T1546.018.md",
+      "source_title": "T1546.018 \u2014 Python Startup Hooks",
+      "source_url": "https://attack.mitre.org/techniques/T1546/018",
+      "section": "Python Startup Hooks"
+    },
+    {
+      "file": "techniques/T1547.md",
+      "source_title": "T1547 \u2014 Boot or Logon Autostart Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1547",
+      "section": "Boot or Logon Autostart Execution"
+    },
+    {
+      "file": "techniques/T1547.001.md",
+      "source_title": "T1547.001 \u2014 Registry Run Keys / Startup Folder",
+      "source_url": "https://attack.mitre.org/techniques/T1547/001",
+      "section": "Registry Run Keys / Startup Folder"
+    },
+    {
+      "file": "techniques/T1547.002.md",
+      "source_title": "T1547.002 \u2014 Authentication Package",
+      "source_url": "https://attack.mitre.org/techniques/T1547/002",
+      "section": "Authentication Package"
+    },
+    {
+      "file": "techniques/T1547.003.md",
+      "source_title": "T1547.003 \u2014 Time Providers",
+      "source_url": "https://attack.mitre.org/techniques/T1547/003",
+      "section": "Time Providers"
+    },
+    {
+      "file": "techniques/T1547.004.md",
+      "source_title": "T1547.004 \u2014 Winlogon Helper DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1547/004",
+      "section": "Winlogon Helper DLL"
+    },
+    {
+      "file": "techniques/T1547.005.md",
+      "source_title": "T1547.005 \u2014 Security Support Provider",
+      "source_url": "https://attack.mitre.org/techniques/T1547/005",
+      "section": "Security Support Provider"
+    },
+    {
+      "file": "techniques/T1547.006.md",
+      "source_title": "T1547.006 \u2014 Kernel Modules and Extensions",
+      "source_url": "https://attack.mitre.org/techniques/T1547/006",
+      "section": "Kernel Modules and Extensions"
+    },
+    {
+      "file": "techniques/T1547.007.md",
+      "source_title": "T1547.007 \u2014 Re-opened Applications",
+      "source_url": "https://attack.mitre.org/techniques/T1547/007",
+      "section": "Re-opened Applications"
+    },
+    {
+      "file": "techniques/T1547.008.md",
+      "source_title": "T1547.008 \u2014 LSASS Driver",
+      "source_url": "https://attack.mitre.org/techniques/T1547/008",
+      "section": "LSASS Driver"
+    },
+    {
+      "file": "techniques/T1547.009.md",
+      "source_title": "T1547.009 \u2014 Shortcut Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1547/009",
+      "section": "Shortcut Modification"
+    },
+    {
+      "file": "techniques/T1547.010.md",
+      "source_title": "T1547.010 \u2014 Port Monitors",
+      "source_url": "https://attack.mitre.org/techniques/T1547/010",
+      "section": "Port Monitors"
+    },
+    {
+      "file": "techniques/T1547.012.md",
+      "source_title": "T1547.012 \u2014 Print Processors",
+      "source_url": "https://attack.mitre.org/techniques/T1547/012",
+      "section": "Print Processors"
+    },
+    {
+      "file": "techniques/T1547.013.md",
+      "source_title": "T1547.013 \u2014 XDG Autostart Entries",
+      "source_url": "https://attack.mitre.org/techniques/T1547/013",
+      "section": "XDG Autostart Entries"
+    },
+    {
+      "file": "techniques/T1547.014.md",
+      "source_title": "T1547.014 \u2014 Active Setup",
+      "source_url": "https://attack.mitre.org/techniques/T1547/014",
+      "section": "Active Setup"
+    },
+    {
+      "file": "techniques/T1547.015.md",
+      "source_title": "T1547.015 \u2014 Login Items",
+      "source_url": "https://attack.mitre.org/techniques/T1547/015",
+      "section": "Login Items"
+    },
+    {
+      "file": "techniques/T1548.md",
+      "source_title": "T1548 \u2014 Abuse Elevation Control Mechanism",
+      "source_url": "https://attack.mitre.org/techniques/T1548",
+      "section": "Abuse Elevation Control Mechanism"
+    },
+    {
+      "file": "techniques/T1548.001.md",
+      "source_title": "T1548.001 \u2014 Setuid and Setgid",
+      "source_url": "https://attack.mitre.org/techniques/T1548/001",
+      "section": "Setuid and Setgid"
+    },
+    {
+      "file": "techniques/T1548.002.md",
+      "source_title": "T1548.002 \u2014 Bypass User Account Control",
+      "source_url": "https://attack.mitre.org/techniques/T1548/002",
+      "section": "Bypass User Account Control"
+    },
+    {
+      "file": "techniques/T1548.003.md",
+      "source_title": "T1548.003 \u2014 Sudo and Sudo Caching",
+      "source_url": "https://attack.mitre.org/techniques/T1548/003",
+      "section": "Sudo and Sudo Caching"
+    },
+    {
+      "file": "techniques/T1548.004.md",
+      "source_title": "T1548.004 \u2014 Elevated Execution with Prompt",
+      "source_url": "https://attack.mitre.org/techniques/T1548/004",
+      "section": "Elevated Execution with Prompt"
+    },
+    {
+      "file": "techniques/T1548.005.md",
+      "source_title": "T1548.005 \u2014 Temporary Elevated Cloud Access",
+      "source_url": "https://attack.mitre.org/techniques/T1548/005",
+      "section": "Temporary Elevated Cloud Access"
+    },
+    {
+      "file": "techniques/T1548.006.md",
+      "source_title": "T1548.006 \u2014 TCC Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1548/006",
+      "section": "TCC Manipulation"
+    },
+    {
+      "file": "techniques/T1550.md",
+      "source_title": "T1550 \u2014 Use Alternate Authentication Material",
+      "source_url": "https://attack.mitre.org/techniques/T1550",
+      "section": "Use Alternate Authentication Material"
+    },
+    {
+      "file": "techniques/T1550.001.md",
+      "source_title": "T1550.001 \u2014 Application Access Token",
+      "source_url": "https://attack.mitre.org/techniques/T1550/001",
+      "section": "Application Access Token"
+    },
+    {
+      "file": "techniques/T1550.002.md",
+      "source_title": "T1550.002 \u2014 Pass the Hash",
+      "source_url": "https://attack.mitre.org/techniques/T1550/002",
+      "section": "Pass the Hash"
+    },
+    {
+      "file": "techniques/T1550.003.md",
+      "source_title": "T1550.003 \u2014 Pass the Ticket",
+      "source_url": "https://attack.mitre.org/techniques/T1550/003",
+      "section": "Pass the Ticket"
+    },
+    {
+      "file": "techniques/T1550.004.md",
+      "source_title": "T1550.004 \u2014 Web Session Cookie",
+      "source_url": "https://attack.mitre.org/techniques/T1550/004",
+      "section": "Web Session Cookie"
+    },
+    {
+      "file": "techniques/T1552.md",
+      "source_title": "T1552 \u2014 Unsecured Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1552",
+      "section": "Unsecured Credentials"
+    },
+    {
+      "file": "techniques/T1552.001.md",
+      "source_title": "T1552.001 \u2014 Credentials In Files",
+      "source_url": "https://attack.mitre.org/techniques/T1552/001",
+      "section": "Credentials In Files"
+    },
+    {
+      "file": "techniques/T1552.002.md",
+      "source_title": "T1552.002 \u2014 Credentials in Registry",
+      "source_url": "https://attack.mitre.org/techniques/T1552/002",
+      "section": "Credentials in Registry"
+    },
+    {
+      "file": "techniques/T1552.003.md",
+      "source_title": "T1552.003 \u2014 Shell History",
+      "source_url": "https://attack.mitre.org/techniques/T1552/003",
+      "section": "Shell History"
+    },
+    {
+      "file": "techniques/T1552.004.md",
+      "source_title": "T1552.004 \u2014 Private Keys",
+      "source_url": "https://attack.mitre.org/techniques/T1552/004",
+      "section": "Private Keys"
+    },
+    {
+      "file": "techniques/T1552.005.md",
+      "source_title": "T1552.005 \u2014 Cloud Instance Metadata API",
+      "source_url": "https://attack.mitre.org/techniques/T1552/005",
+      "section": "Cloud Instance Metadata API"
+    },
+    {
+      "file": "techniques/T1552.006.md",
+      "source_title": "T1552.006 \u2014 Group Policy Preferences",
+      "source_url": "https://attack.mitre.org/techniques/T1552/006",
+      "section": "Group Policy Preferences"
+    },
+    {
+      "file": "techniques/T1552.007.md",
+      "source_title": "T1552.007 \u2014 Container API",
+      "source_url": "https://attack.mitre.org/techniques/T1552/007",
+      "section": "Container API"
+    },
+    {
+      "file": "techniques/T1552.008.md",
+      "source_title": "T1552.008 \u2014 Chat Messages",
+      "source_url": "https://attack.mitre.org/techniques/T1552/008",
+      "section": "Chat Messages"
+    },
+    {
+      "file": "techniques/T1553.md",
+      "source_title": "T1553 \u2014 Subvert Trust Controls",
+      "source_url": "https://attack.mitre.org/techniques/T1553",
+      "section": "Subvert Trust Controls"
+    },
+    {
+      "file": "techniques/T1553.001.md",
+      "source_title": "T1553.001 \u2014 Gatekeeper Bypass",
+      "source_url": "https://attack.mitre.org/techniques/T1553/001",
+      "section": "Gatekeeper Bypass"
+    },
+    {
+      "file": "techniques/T1553.002.md",
+      "source_title": "T1553.002 \u2014 Code Signing",
+      "source_url": "https://attack.mitre.org/techniques/T1553/002",
+      "section": "Code Signing"
+    },
+    {
+      "file": "techniques/T1553.003.md",
+      "source_title": "T1553.003 \u2014 SIP and Trust Provider Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1553/003",
+      "section": "SIP and Trust Provider Hijacking"
+    },
+    {
+      "file": "techniques/T1553.004.md",
+      "source_title": "T1553.004 \u2014 Install Root Certificate",
+      "source_url": "https://attack.mitre.org/techniques/T1553/004",
+      "section": "Install Root Certificate"
+    },
+    {
+      "file": "techniques/T1553.005.md",
+      "source_title": "T1553.005 \u2014 Mark-of-the-Web Bypass",
+      "source_url": "https://attack.mitre.org/techniques/T1553/005",
+      "section": "Mark-of-the-Web Bypass"
+    },
+    {
+      "file": "techniques/T1553.006.md",
+      "source_title": "T1553.006 \u2014 Code Signing Policy Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1553/006",
+      "section": "Code Signing Policy Modification"
+    },
+    {
+      "file": "techniques/T1554.md",
+      "source_title": "T1554 \u2014 Compromise Host Software Binary",
+      "source_url": "https://attack.mitre.org/techniques/T1554",
+      "section": "Compromise Host Software Binary"
+    },
+    {
+      "file": "techniques/T1555.md",
+      "source_title": "T1555 \u2014 Credentials from Password Stores",
+      "source_url": "https://attack.mitre.org/techniques/T1555",
+      "section": "Credentials from Password Stores"
+    },
+    {
+      "file": "techniques/T1555.001.md",
+      "source_title": "T1555.001 \u2014 Keychain",
+      "source_url": "https://attack.mitre.org/techniques/T1555/001",
+      "section": "Keychain"
+    },
+    {
+      "file": "techniques/T1555.002.md",
+      "source_title": "T1555.002 \u2014 Securityd Memory",
+      "source_url": "https://attack.mitre.org/techniques/T1555/002",
+      "section": "Securityd Memory"
+    },
+    {
+      "file": "techniques/T1555.003.md",
+      "source_title": "T1555.003 \u2014 Credentials from Web Browsers",
+      "source_url": "https://attack.mitre.org/techniques/T1555/003",
+      "section": "Credentials from Web Browsers"
+    },
+    {
+      "file": "techniques/T1555.004.md",
+      "source_title": "T1555.004 \u2014 Windows Credential Manager",
+      "source_url": "https://attack.mitre.org/techniques/T1555/004",
+      "section": "Windows Credential Manager"
+    },
+    {
+      "file": "techniques/T1555.005.md",
+      "source_title": "T1555.005 \u2014 Password Managers",
+      "source_url": "https://attack.mitre.org/techniques/T1555/005",
+      "section": "Password Managers"
+    },
+    {
+      "file": "techniques/T1555.006.md",
+      "source_title": "T1555.006 \u2014 Cloud Secrets Management Stores",
+      "source_url": "https://attack.mitre.org/techniques/T1555/006",
+      "section": "Cloud Secrets Management Stores"
+    },
+    {
+      "file": "techniques/T1556.md",
+      "source_title": "T1556 \u2014 Modify Authentication Process",
+      "source_url": "https://attack.mitre.org/techniques/T1556",
+      "section": "Modify Authentication Process"
+    },
+    {
+      "file": "techniques/T1556.001.md",
+      "source_title": "T1556.001 \u2014 Domain Controller Authentication",
+      "source_url": "https://attack.mitre.org/techniques/T1556/001",
+      "section": "Domain Controller Authentication"
+    },
+    {
+      "file": "techniques/T1556.002.md",
+      "source_title": "T1556.002 \u2014 Password Filter DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1556/002",
+      "section": "Password Filter DLL"
+    },
+    {
+      "file": "techniques/T1556.003.md",
+      "source_title": "T1556.003 \u2014 Pluggable Authentication Modules",
+      "source_url": "https://attack.mitre.org/techniques/T1556/003",
+      "section": "Pluggable Authentication Modules"
+    },
+    {
+      "file": "techniques/T1556.004.md",
+      "source_title": "T1556.004 \u2014 Network Device Authentication",
+      "source_url": "https://attack.mitre.org/techniques/T1556/004",
+      "section": "Network Device Authentication"
+    },
+    {
+      "file": "techniques/T1556.005.md",
+      "source_title": "T1556.005 \u2014 Reversible Encryption",
+      "source_url": "https://attack.mitre.org/techniques/T1556/005",
+      "section": "Reversible Encryption"
+    },
+    {
+      "file": "techniques/T1556.006.md",
+      "source_title": "T1556.006 \u2014 Multi-Factor Authentication",
+      "source_url": "https://attack.mitre.org/techniques/T1556/006",
+      "section": "Multi-Factor Authentication"
+    },
+    {
+      "file": "techniques/T1556.007.md",
+      "source_title": "T1556.007 \u2014 Hybrid Identity",
+      "source_url": "https://attack.mitre.org/techniques/T1556/007",
+      "section": "Hybrid Identity"
+    },
+    {
+      "file": "techniques/T1556.008.md",
+      "source_title": "T1556.008 \u2014 Network Provider DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1556/008",
+      "section": "Network Provider DLL"
+    },
+    {
+      "file": "techniques/T1556.009.md",
+      "source_title": "T1556.009 \u2014 Conditional Access Policies",
+      "source_url": "https://attack.mitre.org/techniques/T1556/009",
+      "section": "Conditional Access Policies"
+    },
+    {
+      "file": "techniques/T1557.md",
+      "source_title": "T1557 \u2014 Adversary-in-the-Middle",
+      "source_url": "https://attack.mitre.org/techniques/T1557",
+      "section": "Adversary-in-the-Middle"
+    },
+    {
+      "file": "techniques/T1557.001.md",
+      "source_title": "T1557.001 \u2014 Name Resolution Poisoning and SMB Relay",
+      "source_url": "https://attack.mitre.org/techniques/T1557/001",
+      "section": "Name Resolution Poisoning and SMB Relay"
+    },
+    {
+      "file": "techniques/T1557.002.md",
+      "source_title": "T1557.002 \u2014 ARP Cache Poisoning",
+      "source_url": "https://attack.mitre.org/techniques/T1557/002",
+      "section": "ARP Cache Poisoning"
+    },
+    {
+      "file": "techniques/T1557.003.md",
+      "source_title": "T1557.003 \u2014 DHCP Spoofing",
+      "source_url": "https://attack.mitre.org/techniques/T1557/003",
+      "section": "DHCP Spoofing"
+    },
+    {
+      "file": "techniques/T1557.004.md",
+      "source_title": "T1557.004 \u2014 Evil Twin",
+      "source_url": "https://attack.mitre.org/techniques/T1557/004",
+      "section": "Evil Twin"
+    },
+    {
+      "file": "techniques/T1558.md",
+      "source_title": "T1558 \u2014 Steal or Forge Kerberos Tickets",
+      "source_url": "https://attack.mitre.org/techniques/T1558",
+      "section": "Steal or Forge Kerberos Tickets"
+    },
+    {
+      "file": "techniques/T1558.001.md",
+      "source_title": "T1558.001 \u2014 Golden Ticket",
+      "source_url": "https://attack.mitre.org/techniques/T1558/001",
+      "section": "Golden Ticket"
+    },
+    {
+      "file": "techniques/T1558.002.md",
+      "source_title": "T1558.002 \u2014 Silver Ticket",
+      "source_url": "https://attack.mitre.org/techniques/T1558/002",
+      "section": "Silver Ticket"
+    },
+    {
+      "file": "techniques/T1558.003.md",
+      "source_title": "T1558.003 \u2014 Kerberoasting",
+      "source_url": "https://attack.mitre.org/techniques/T1558/003",
+      "section": "Kerberoasting"
+    },
+    {
+      "file": "techniques/T1558.004.md",
+      "source_title": "T1558.004 \u2014 AS-REP Roasting",
+      "source_url": "https://attack.mitre.org/techniques/T1558/004",
+      "section": "AS-REP Roasting"
+    },
+    {
+      "file": "techniques/T1558.005.md",
+      "source_title": "T1558.005 \u2014 Ccache Files",
+      "source_url": "https://attack.mitre.org/techniques/T1558/005",
+      "section": "Ccache Files"
+    },
+    {
+      "file": "techniques/T1559.md",
+      "source_title": "T1559 \u2014 Inter-Process Communication",
+      "source_url": "https://attack.mitre.org/techniques/T1559",
+      "section": "Inter-Process Communication"
+    },
+    {
+      "file": "techniques/T1559.001.md",
+      "source_title": "T1559.001 \u2014 Component Object Model",
+      "source_url": "https://attack.mitre.org/techniques/T1559/001",
+      "section": "Component Object Model"
+    },
+    {
+      "file": "techniques/T1559.002.md",
+      "source_title": "T1559.002 \u2014 Dynamic Data Exchange",
+      "source_url": "https://attack.mitre.org/techniques/T1559/002",
+      "section": "Dynamic Data Exchange"
+    },
+    {
+      "file": "techniques/T1559.003.md",
+      "source_title": "T1559.003 \u2014 XPC Services",
+      "source_url": "https://attack.mitre.org/techniques/T1559/003",
+      "section": "XPC Services"
+    },
+    {
+      "file": "techniques/T1560.md",
+      "source_title": "T1560 \u2014 Archive Collected Data",
+      "source_url": "https://attack.mitre.org/techniques/T1560",
+      "section": "Archive Collected Data"
+    },
+    {
+      "file": "techniques/T1560.001.md",
+      "source_title": "T1560.001 \u2014 Archive via Utility",
+      "source_url": "https://attack.mitre.org/techniques/T1560/001",
+      "section": "Archive via Utility"
+    },
+    {
+      "file": "techniques/T1560.002.md",
+      "source_title": "T1560.002 \u2014 Archive via Library",
+      "source_url": "https://attack.mitre.org/techniques/T1560/002",
+      "section": "Archive via Library"
+    },
+    {
+      "file": "techniques/T1560.003.md",
+      "source_title": "T1560.003 \u2014 Archive via Custom Method",
+      "source_url": "https://attack.mitre.org/techniques/T1560/003",
+      "section": "Archive via Custom Method"
+    },
+    {
+      "file": "techniques/T1561.md",
+      "source_title": "T1561 \u2014 Disk Wipe",
+      "source_url": "https://attack.mitre.org/techniques/T1561",
+      "section": "Disk Wipe"
+    },
+    {
+      "file": "techniques/T1561.001.md",
+      "source_title": "T1561.001 \u2014 Disk Content Wipe",
+      "source_url": "https://attack.mitre.org/techniques/T1561/001",
+      "section": "Disk Content Wipe"
+    },
+    {
+      "file": "techniques/T1561.002.md",
+      "source_title": "T1561.002 \u2014 Disk Structure Wipe",
+      "source_url": "https://attack.mitre.org/techniques/T1561/002",
+      "section": "Disk Structure Wipe"
+    },
+    {
+      "file": "techniques/T1563.md",
+      "source_title": "T1563 \u2014 Remote Service Session Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1563",
+      "section": "Remote Service Session Hijacking"
+    },
+    {
+      "file": "techniques/T1563.001.md",
+      "source_title": "T1563.001 \u2014 SSH Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1563/001",
+      "section": "SSH Hijacking"
+    },
+    {
+      "file": "techniques/T1563.002.md",
+      "source_title": "T1563.002 \u2014 RDP Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1563/002",
+      "section": "RDP Hijacking"
+    },
+    {
+      "file": "techniques/T1564.md",
+      "source_title": "T1564 \u2014 Hide Artifacts",
+      "source_url": "https://attack.mitre.org/techniques/T1564",
+      "section": "Hide Artifacts"
+    },
+    {
+      "file": "techniques/T1564.001.md",
+      "source_title": "T1564.001 \u2014 Hidden Files and Directories",
+      "source_url": "https://attack.mitre.org/techniques/T1564/001",
+      "section": "Hidden Files and Directories"
+    },
+    {
+      "file": "techniques/T1564.002.md",
+      "source_title": "T1564.002 \u2014 Hidden Users",
+      "source_url": "https://attack.mitre.org/techniques/T1564/002",
+      "section": "Hidden Users"
+    },
+    {
+      "file": "techniques/T1564.003.md",
+      "source_title": "T1564.003 \u2014 Hidden Window",
+      "source_url": "https://attack.mitre.org/techniques/T1564/003",
+      "section": "Hidden Window"
+    },
+    {
+      "file": "techniques/T1564.004.md",
+      "source_title": "T1564.004 \u2014 NTFS File Attributes",
+      "source_url": "https://attack.mitre.org/techniques/T1564/004",
+      "section": "NTFS File Attributes"
+    },
+    {
+      "file": "techniques/T1564.005.md",
+      "source_title": "T1564.005 \u2014 Hidden File System",
+      "source_url": "https://attack.mitre.org/techniques/T1564/005",
+      "section": "Hidden File System"
+    },
+    {
+      "file": "techniques/T1564.006.md",
+      "source_title": "T1564.006 \u2014 Run Virtual Instance",
+      "source_url": "https://attack.mitre.org/techniques/T1564/006",
+      "section": "Run Virtual Instance"
+    },
+    {
+      "file": "techniques/T1564.007.md",
+      "source_title": "T1564.007 \u2014 VBA Stomping",
+      "source_url": "https://attack.mitre.org/techniques/T1564/007",
+      "section": "VBA Stomping"
+    },
+    {
+      "file": "techniques/T1564.008.md",
+      "source_title": "T1564.008 \u2014 Email Hiding Rules",
+      "source_url": "https://attack.mitre.org/techniques/T1564/008",
+      "section": "Email Hiding Rules"
+    },
+    {
+      "file": "techniques/T1564.009.md",
+      "source_title": "T1564.009 \u2014 Resource Forking",
+      "source_url": "https://attack.mitre.org/techniques/T1564/009",
+      "section": "Resource Forking"
+    },
+    {
+      "file": "techniques/T1564.010.md",
+      "source_title": "T1564.010 \u2014 Process Argument Spoofing",
+      "source_url": "https://attack.mitre.org/techniques/T1564/010",
+      "section": "Process Argument Spoofing"
+    },
+    {
+      "file": "techniques/T1564.011.md",
+      "source_title": "T1564.011 \u2014 Ignore Process Interrupts",
+      "source_url": "https://attack.mitre.org/techniques/T1564/011",
+      "section": "Ignore Process Interrupts"
+    },
+    {
+      "file": "techniques/T1564.012.md",
+      "source_title": "T1564.012 \u2014 File/Path Exclusions",
+      "source_url": "https://attack.mitre.org/techniques/T1564/012",
+      "section": "File/Path Exclusions"
+    },
+    {
+      "file": "techniques/T1564.013.md",
+      "source_title": "T1564.013 \u2014 Bind Mounts",
+      "source_url": "https://attack.mitre.org/techniques/T1564/013",
+      "section": "Bind Mounts"
+    },
+    {
+      "file": "techniques/T1564.014.md",
+      "source_title": "T1564.014 \u2014 Extended Attributes",
+      "source_url": "https://attack.mitre.org/techniques/T1564/014",
+      "section": "Extended Attributes"
+    },
+    {
+      "file": "techniques/T1565.md",
+      "source_title": "T1565 \u2014 Data Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1565",
+      "section": "Data Manipulation"
+    },
+    {
+      "file": "techniques/T1565.001.md",
+      "source_title": "T1565.001 \u2014 Stored Data Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1565/001",
+      "section": "Stored Data Manipulation"
+    },
+    {
+      "file": "techniques/T1565.002.md",
+      "source_title": "T1565.002 \u2014 Transmitted Data Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1565/002",
+      "section": "Transmitted Data Manipulation"
+    },
+    {
+      "file": "techniques/T1565.003.md",
+      "source_title": "T1565.003 \u2014 Runtime Data Manipulation",
+      "source_url": "https://attack.mitre.org/techniques/T1565/003",
+      "section": "Runtime Data Manipulation"
+    },
+    {
+      "file": "techniques/T1566.md",
+      "source_title": "T1566 \u2014 Phishing",
+      "source_url": "https://attack.mitre.org/techniques/T1566",
+      "section": "Phishing"
+    },
+    {
+      "file": "techniques/T1566.001.md",
+      "source_title": "T1566.001 \u2014 Spearphishing Attachment",
+      "source_url": "https://attack.mitre.org/techniques/T1566/001",
+      "section": "Spearphishing Attachment"
+    },
+    {
+      "file": "techniques/T1566.002.md",
+      "source_title": "T1566.002 \u2014 Spearphishing Link",
+      "source_url": "https://attack.mitre.org/techniques/T1566/002",
+      "section": "Spearphishing Link"
+    },
+    {
+      "file": "techniques/T1566.003.md",
+      "source_title": "T1566.003 \u2014 Spearphishing via Service",
+      "source_url": "https://attack.mitre.org/techniques/T1566/003",
+      "section": "Spearphishing via Service"
+    },
+    {
+      "file": "techniques/T1566.004.md",
+      "source_title": "T1566.004 \u2014 Spearphishing Voice",
+      "source_url": "https://attack.mitre.org/techniques/T1566/004",
+      "section": "Spearphishing Voice"
+    },
+    {
+      "file": "techniques/T1567.md",
+      "source_title": "T1567 \u2014 Exfiltration Over Web Service",
+      "source_url": "https://attack.mitre.org/techniques/T1567",
+      "section": "Exfiltration Over Web Service"
+    },
+    {
+      "file": "techniques/T1567.001.md",
+      "source_title": "T1567.001 \u2014 Exfiltration to Code Repository",
+      "source_url": "https://attack.mitre.org/techniques/T1567/001",
+      "section": "Exfiltration to Code Repository"
+    },
+    {
+      "file": "techniques/T1567.002.md",
+      "source_title": "T1567.002 \u2014 Exfiltration to Cloud Storage",
+      "source_url": "https://attack.mitre.org/techniques/T1567/002",
+      "section": "Exfiltration to Cloud Storage"
+    },
+    {
+      "file": "techniques/T1567.003.md",
+      "source_title": "T1567.003 \u2014 Exfiltration to Text Storage Sites",
+      "source_url": "https://attack.mitre.org/techniques/T1567/003",
+      "section": "Exfiltration to Text Storage Sites"
+    },
+    {
+      "file": "techniques/T1567.004.md",
+      "source_title": "T1567.004 \u2014 Exfiltration Over Webhook",
+      "source_url": "https://attack.mitre.org/techniques/T1567/004",
+      "section": "Exfiltration Over Webhook"
+    },
+    {
+      "file": "techniques/T1568.md",
+      "source_title": "T1568 \u2014 Dynamic Resolution",
+      "source_url": "https://attack.mitre.org/techniques/T1568",
+      "section": "Dynamic Resolution"
+    },
+    {
+      "file": "techniques/T1568.001.md",
+      "source_title": "T1568.001 \u2014 Fast Flux DNS",
+      "source_url": "https://attack.mitre.org/techniques/T1568/001",
+      "section": "Fast Flux DNS"
+    },
+    {
+      "file": "techniques/T1568.002.md",
+      "source_title": "T1568.002 \u2014 Domain Generation Algorithms",
+      "source_url": "https://attack.mitre.org/techniques/T1568/002",
+      "section": "Domain Generation Algorithms"
+    },
+    {
+      "file": "techniques/T1568.003.md",
+      "source_title": "T1568.003 \u2014 DNS Calculation",
+      "source_url": "https://attack.mitre.org/techniques/T1568/003",
+      "section": "DNS Calculation"
+    },
+    {
+      "file": "techniques/T1569.md",
+      "source_title": "T1569 \u2014 System Services",
+      "source_url": "https://attack.mitre.org/techniques/T1569",
+      "section": "System Services"
+    },
+    {
+      "file": "techniques/T1569.001.md",
+      "source_title": "T1569.001 \u2014 Launchctl",
+      "source_url": "https://attack.mitre.org/techniques/T1569/001",
+      "section": "Launchctl"
+    },
+    {
+      "file": "techniques/T1569.002.md",
+      "source_title": "T1569.002 \u2014 Service Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1569/002",
+      "section": "Service Execution"
+    },
+    {
+      "file": "techniques/T1569.003.md",
+      "source_title": "T1569.003 \u2014 Systemctl",
+      "source_url": "https://attack.mitre.org/techniques/T1569/003",
+      "section": "Systemctl"
+    },
+    {
+      "file": "techniques/T1570.md",
+      "source_title": "T1570 \u2014 Lateral Tool Transfer",
+      "source_url": "https://attack.mitre.org/techniques/T1570",
+      "section": "Lateral Tool Transfer"
+    },
+    {
+      "file": "techniques/T1571.md",
+      "source_title": "T1571 \u2014 Non-Standard Port",
+      "source_url": "https://attack.mitre.org/techniques/T1571",
+      "section": "Non-Standard Port"
+    },
+    {
+      "file": "techniques/T1572.md",
+      "source_title": "T1572 \u2014 Protocol Tunneling",
+      "source_url": "https://attack.mitre.org/techniques/T1572",
+      "section": "Protocol Tunneling"
+    },
+    {
+      "file": "techniques/T1573.md",
+      "source_title": "T1573 \u2014 Encrypted Channel",
+      "source_url": "https://attack.mitre.org/techniques/T1573",
+      "section": "Encrypted Channel"
+    },
+    {
+      "file": "techniques/T1573.001.md",
+      "source_title": "T1573.001 \u2014 Symmetric Cryptography",
+      "source_url": "https://attack.mitre.org/techniques/T1573/001",
+      "section": "Symmetric Cryptography"
+    },
+    {
+      "file": "techniques/T1573.002.md",
+      "source_title": "T1573.002 \u2014 Asymmetric Cryptography",
+      "source_url": "https://attack.mitre.org/techniques/T1573/002",
+      "section": "Asymmetric Cryptography"
+    },
+    {
+      "file": "techniques/T1574.md",
+      "source_title": "T1574 \u2014 Hijack Execution Flow",
+      "source_url": "https://attack.mitre.org/techniques/T1574",
+      "section": "Hijack Execution Flow"
+    },
+    {
+      "file": "techniques/T1574.001.md",
+      "source_title": "T1574.001 \u2014 DLL",
+      "source_url": "https://attack.mitre.org/techniques/T1574/001",
+      "section": "DLL"
+    },
+    {
+      "file": "techniques/T1574.004.md",
+      "source_title": "T1574.004 \u2014 Dylib Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1574/004",
+      "section": "Dylib Hijacking"
+    },
+    {
+      "file": "techniques/T1574.005.md",
+      "source_title": "T1574.005 \u2014 Executable Installer File Permissions Weakness",
+      "source_url": "https://attack.mitre.org/techniques/T1574/005",
+      "section": "Executable Installer File Permissions Weakness"
+    },
+    {
+      "file": "techniques/T1574.006.md",
+      "source_title": "T1574.006 \u2014 Dynamic Linker Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1574/006",
+      "section": "Dynamic Linker Hijacking"
+    },
+    {
+      "file": "techniques/T1574.007.md",
+      "source_title": "T1574.007 \u2014 Path Interception by PATH Environment Variable",
+      "source_url": "https://attack.mitre.org/techniques/T1574/007",
+      "section": "Path Interception by PATH Environment Variable"
+    },
+    {
+      "file": "techniques/T1574.008.md",
+      "source_title": "T1574.008 \u2014 Path Interception by Search Order Hijacking",
+      "source_url": "https://attack.mitre.org/techniques/T1574/008",
+      "section": "Path Interception by Search Order Hijacking"
+    },
+    {
+      "file": "techniques/T1574.009.md",
+      "source_title": "T1574.009 \u2014 Path Interception by Unquoted Path",
+      "source_url": "https://attack.mitre.org/techniques/T1574/009",
+      "section": "Path Interception by Unquoted Path"
+    },
+    {
+      "file": "techniques/T1574.010.md",
+      "source_title": "T1574.010 \u2014 Services File Permissions Weakness",
+      "source_url": "https://attack.mitre.org/techniques/T1574/010",
+      "section": "Services File Permissions Weakness"
+    },
+    {
+      "file": "techniques/T1574.011.md",
+      "source_title": "T1574.011 \u2014 Services Registry Permissions Weakness",
+      "source_url": "https://attack.mitre.org/techniques/T1574/011",
+      "section": "Services Registry Permissions Weakness"
+    },
+    {
+      "file": "techniques/T1574.012.md",
+      "source_title": "T1574.012 \u2014 COR_PROFILER",
+      "source_url": "https://attack.mitre.org/techniques/T1574/012",
+      "section": "COR_PROFILER"
+    },
+    {
+      "file": "techniques/T1574.013.md",
+      "source_title": "T1574.013 \u2014 KernelCallbackTable",
+      "source_url": "https://attack.mitre.org/techniques/T1574/013",
+      "section": "KernelCallbackTable"
+    },
+    {
+      "file": "techniques/T1574.014.md",
+      "source_title": "T1574.014 \u2014 AppDomainManager",
+      "source_url": "https://attack.mitre.org/techniques/T1574/014",
+      "section": "AppDomainManager"
+    },
+    {
+      "file": "techniques/T1578.md",
+      "source_title": "T1578 \u2014 Modify Cloud Compute Infrastructure",
+      "source_url": "https://attack.mitre.org/techniques/T1578",
+      "section": "Modify Cloud Compute Infrastructure"
+    },
+    {
+      "file": "techniques/T1578.001.md",
+      "source_title": "T1578.001 \u2014 Create Snapshot",
+      "source_url": "https://attack.mitre.org/techniques/T1578/001",
+      "section": "Create Snapshot"
+    },
+    {
+      "file": "techniques/T1578.002.md",
+      "source_title": "T1578.002 \u2014 Create Cloud Instance",
+      "source_url": "https://attack.mitre.org/techniques/T1578/002",
+      "section": "Create Cloud Instance"
+    },
+    {
+      "file": "techniques/T1578.003.md",
+      "source_title": "T1578.003 \u2014 Delete Cloud Instance",
+      "source_url": "https://attack.mitre.org/techniques/T1578/003",
+      "section": "Delete Cloud Instance"
+    },
+    {
+      "file": "techniques/T1578.004.md",
+      "source_title": "T1578.004 \u2014 Revert Cloud Instance",
+      "source_url": "https://attack.mitre.org/techniques/T1578/004",
+      "section": "Revert Cloud Instance"
+    },
+    {
+      "file": "techniques/T1578.005.md",
+      "source_title": "T1578.005 \u2014 Modify Cloud Compute Configurations",
+      "source_url": "https://attack.mitre.org/techniques/T1578/005",
+      "section": "Modify Cloud Compute Configurations"
+    },
+    {
+      "file": "techniques/T1580.md",
+      "source_title": "T1580 \u2014 Cloud Infrastructure Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1580",
+      "section": "Cloud Infrastructure Discovery"
+    },
+    {
+      "file": "techniques/T1583.md",
+      "source_title": "T1583 \u2014 Acquire Infrastructure",
+      "source_url": "https://attack.mitre.org/techniques/T1583",
+      "section": "Acquire Infrastructure"
+    },
+    {
+      "file": "techniques/T1583.001.md",
+      "source_title": "T1583.001 \u2014 Domains",
+      "source_url": "https://attack.mitre.org/techniques/T1583/001",
+      "section": "Domains"
+    },
+    {
+      "file": "techniques/T1583.002.md",
+      "source_title": "T1583.002 \u2014 DNS Server",
+      "source_url": "https://attack.mitre.org/techniques/T1583/002",
+      "section": "DNS Server"
+    },
+    {
+      "file": "techniques/T1583.003.md",
+      "source_title": "T1583.003 \u2014 Virtual Private Server",
+      "source_url": "https://attack.mitre.org/techniques/T1583/003",
+      "section": "Virtual Private Server"
+    },
+    {
+      "file": "techniques/T1583.004.md",
+      "source_title": "T1583.004 \u2014 Server",
+      "source_url": "https://attack.mitre.org/techniques/T1583/004",
+      "section": "Server"
+    },
+    {
+      "file": "techniques/T1583.005.md",
+      "source_title": "T1583.005 \u2014 Botnet",
+      "source_url": "https://attack.mitre.org/techniques/T1583/005",
+      "section": "Botnet"
+    },
+    {
+      "file": "techniques/T1583.006.md",
+      "source_title": "T1583.006 \u2014 Web Services",
+      "source_url": "https://attack.mitre.org/techniques/T1583/006",
+      "section": "Web Services"
+    },
+    {
+      "file": "techniques/T1583.007.md",
+      "source_title": "T1583.007 \u2014 Serverless",
+      "source_url": "https://attack.mitre.org/techniques/T1583/007",
+      "section": "Serverless"
+    },
+    {
+      "file": "techniques/T1583.008.md",
+      "source_title": "T1583.008 \u2014 Malvertising",
+      "source_url": "https://attack.mitre.org/techniques/T1583/008",
+      "section": "Malvertising"
+    },
+    {
+      "file": "techniques/T1584.md",
+      "source_title": "T1584 \u2014 Compromise Infrastructure",
+      "source_url": "https://attack.mitre.org/techniques/T1584",
+      "section": "Compromise Infrastructure"
+    },
+    {
+      "file": "techniques/T1584.001.md",
+      "source_title": "T1584.001 \u2014 Domains",
+      "source_url": "https://attack.mitre.org/techniques/T1584/001",
+      "section": "Domains"
+    },
+    {
+      "file": "techniques/T1584.002.md",
+      "source_title": "T1584.002 \u2014 DNS Server",
+      "source_url": "https://attack.mitre.org/techniques/T1584/002",
+      "section": "DNS Server"
+    },
+    {
+      "file": "techniques/T1584.003.md",
+      "source_title": "T1584.003 \u2014 Virtual Private Server",
+      "source_url": "https://attack.mitre.org/techniques/T1584/003",
+      "section": "Virtual Private Server"
+    },
+    {
+      "file": "techniques/T1584.004.md",
+      "source_title": "T1584.004 \u2014 Server",
+      "source_url": "https://attack.mitre.org/techniques/T1584/004",
+      "section": "Server"
+    },
+    {
+      "file": "techniques/T1584.005.md",
+      "source_title": "T1584.005 \u2014 Botnet",
+      "source_url": "https://attack.mitre.org/techniques/T1584/005",
+      "section": "Botnet"
+    },
+    {
+      "file": "techniques/T1584.006.md",
+      "source_title": "T1584.006 \u2014 Web Services",
+      "source_url": "https://attack.mitre.org/techniques/T1584/006",
+      "section": "Web Services"
+    },
+    {
+      "file": "techniques/T1584.007.md",
+      "source_title": "T1584.007 \u2014 Serverless",
+      "source_url": "https://attack.mitre.org/techniques/T1584/007",
+      "section": "Serverless"
+    },
+    {
+      "file": "techniques/T1584.008.md",
+      "source_title": "T1584.008 \u2014 Network Devices",
+      "source_url": "https://attack.mitre.org/techniques/T1584/008",
+      "section": "Network Devices"
+    },
+    {
+      "file": "techniques/T1585.md",
+      "source_title": "T1585 \u2014 Establish Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1585",
+      "section": "Establish Accounts"
+    },
+    {
+      "file": "techniques/T1585.001.md",
+      "source_title": "T1585.001 \u2014 Social Media Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1585/001",
+      "section": "Social Media Accounts"
+    },
+    {
+      "file": "techniques/T1585.002.md",
+      "source_title": "T1585.002 \u2014 Email Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1585/002",
+      "section": "Email Accounts"
+    },
+    {
+      "file": "techniques/T1585.003.md",
+      "source_title": "T1585.003 \u2014 Cloud Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1585/003",
+      "section": "Cloud Accounts"
+    },
+    {
+      "file": "techniques/T1586.md",
+      "source_title": "T1586 \u2014 Compromise Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1586",
+      "section": "Compromise Accounts"
+    },
+    {
+      "file": "techniques/T1586.001.md",
+      "source_title": "T1586.001 \u2014 Social Media Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1586/001",
+      "section": "Social Media Accounts"
+    },
+    {
+      "file": "techniques/T1586.002.md",
+      "source_title": "T1586.002 \u2014 Email Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1586/002",
+      "section": "Email Accounts"
+    },
+    {
+      "file": "techniques/T1586.003.md",
+      "source_title": "T1586.003 \u2014 Cloud Accounts",
+      "source_url": "https://attack.mitre.org/techniques/T1586/003",
+      "section": "Cloud Accounts"
+    },
+    {
+      "file": "techniques/T1587.md",
+      "source_title": "T1587 \u2014 Develop Capabilities",
+      "source_url": "https://attack.mitre.org/techniques/T1587",
+      "section": "Develop Capabilities"
+    },
+    {
+      "file": "techniques/T1587.001.md",
+      "source_title": "T1587.001 \u2014 Malware",
+      "source_url": "https://attack.mitre.org/techniques/T1587/001",
+      "section": "Malware"
+    },
+    {
+      "file": "techniques/T1587.002.md",
+      "source_title": "T1587.002 \u2014 Code Signing Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1587/002",
+      "section": "Code Signing Certificates"
+    },
+    {
+      "file": "techniques/T1587.003.md",
+      "source_title": "T1587.003 \u2014 Digital Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1587/003",
+      "section": "Digital Certificates"
+    },
+    {
+      "file": "techniques/T1587.004.md",
+      "source_title": "T1587.004 \u2014 Exploits",
+      "source_url": "https://attack.mitre.org/techniques/T1587/004",
+      "section": "Exploits"
+    },
+    {
+      "file": "techniques/T1588.md",
+      "source_title": "T1588 \u2014 Obtain Capabilities",
+      "source_url": "https://attack.mitre.org/techniques/T1588",
+      "section": "Obtain Capabilities"
+    },
+    {
+      "file": "techniques/T1588.001.md",
+      "source_title": "T1588.001 \u2014 Malware",
+      "source_url": "https://attack.mitre.org/techniques/T1588/001",
+      "section": "Malware"
+    },
+    {
+      "file": "techniques/T1588.002.md",
+      "source_title": "T1588.002 \u2014 Tool",
+      "source_url": "https://attack.mitre.org/techniques/T1588/002",
+      "section": "Tool"
+    },
+    {
+      "file": "techniques/T1588.003.md",
+      "source_title": "T1588.003 \u2014 Code Signing Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1588/003",
+      "section": "Code Signing Certificates"
+    },
+    {
+      "file": "techniques/T1588.004.md",
+      "source_title": "T1588.004 \u2014 Digital Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1588/004",
+      "section": "Digital Certificates"
+    },
+    {
+      "file": "techniques/T1588.005.md",
+      "source_title": "T1588.005 \u2014 Exploits",
+      "source_url": "https://attack.mitre.org/techniques/T1588/005",
+      "section": "Exploits"
+    },
+    {
+      "file": "techniques/T1588.006.md",
+      "source_title": "T1588.006 \u2014 Vulnerabilities",
+      "source_url": "https://attack.mitre.org/techniques/T1588/006",
+      "section": "Vulnerabilities"
+    },
+    {
+      "file": "techniques/T1588.007.md",
+      "source_title": "T1588.007 \u2014 Artificial Intelligence",
+      "source_url": "https://attack.mitre.org/techniques/T1588/007",
+      "section": "Artificial Intelligence"
+    },
+    {
+      "file": "techniques/T1589.md",
+      "source_title": "T1589 \u2014 Gather Victim Identity Information",
+      "source_url": "https://attack.mitre.org/techniques/T1589",
+      "section": "Gather Victim Identity Information"
+    },
+    {
+      "file": "techniques/T1589.001.md",
+      "source_title": "T1589.001 \u2014 Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1589/001",
+      "section": "Credentials"
+    },
+    {
+      "file": "techniques/T1589.002.md",
+      "source_title": "T1589.002 \u2014 Email Addresses",
+      "source_url": "https://attack.mitre.org/techniques/T1589/002",
+      "section": "Email Addresses"
+    },
+    {
+      "file": "techniques/T1589.003.md",
+      "source_title": "T1589.003 \u2014 Employee Names",
+      "source_url": "https://attack.mitre.org/techniques/T1589/003",
+      "section": "Employee Names"
+    },
+    {
+      "file": "techniques/T1590.md",
+      "source_title": "T1590 \u2014 Gather Victim Network Information",
+      "source_url": "https://attack.mitre.org/techniques/T1590",
+      "section": "Gather Victim Network Information"
+    },
+    {
+      "file": "techniques/T1590.001.md",
+      "source_title": "T1590.001 \u2014 Domain Properties",
+      "source_url": "https://attack.mitre.org/techniques/T1590/001",
+      "section": "Domain Properties"
+    },
+    {
+      "file": "techniques/T1590.002.md",
+      "source_title": "T1590.002 \u2014 DNS",
+      "source_url": "https://attack.mitre.org/techniques/T1590/002",
+      "section": "DNS"
+    },
+    {
+      "file": "techniques/T1590.003.md",
+      "source_title": "T1590.003 \u2014 Network Trust Dependencies",
+      "source_url": "https://attack.mitre.org/techniques/T1590/003",
+      "section": "Network Trust Dependencies"
+    },
+    {
+      "file": "techniques/T1590.004.md",
+      "source_title": "T1590.004 \u2014 Network Topology",
+      "source_url": "https://attack.mitre.org/techniques/T1590/004",
+      "section": "Network Topology"
+    },
+    {
+      "file": "techniques/T1590.005.md",
+      "source_title": "T1590.005 \u2014 IP Addresses",
+      "source_url": "https://attack.mitre.org/techniques/T1590/005",
+      "section": "IP Addresses"
+    },
+    {
+      "file": "techniques/T1590.006.md",
+      "source_title": "T1590.006 \u2014 Network Security Appliances",
+      "source_url": "https://attack.mitre.org/techniques/T1590/006",
+      "section": "Network Security Appliances"
+    },
+    {
+      "file": "techniques/T1591.md",
+      "source_title": "T1591 \u2014 Gather Victim Org Information",
+      "source_url": "https://attack.mitre.org/techniques/T1591",
+      "section": "Gather Victim Org Information"
+    },
+    {
+      "file": "techniques/T1591.001.md",
+      "source_title": "T1591.001 \u2014 Determine Physical Locations",
+      "source_url": "https://attack.mitre.org/techniques/T1591/001",
+      "section": "Determine Physical Locations"
+    },
+    {
+      "file": "techniques/T1591.002.md",
+      "source_title": "T1591.002 \u2014 Business Relationships",
+      "source_url": "https://attack.mitre.org/techniques/T1591/002",
+      "section": "Business Relationships"
+    },
+    {
+      "file": "techniques/T1591.003.md",
+      "source_title": "T1591.003 \u2014 Identify Business Tempo",
+      "source_url": "https://attack.mitre.org/techniques/T1591/003",
+      "section": "Identify Business Tempo"
+    },
+    {
+      "file": "techniques/T1591.004.md",
+      "source_title": "T1591.004 \u2014 Identify Roles",
+      "source_url": "https://attack.mitre.org/techniques/T1591/004",
+      "section": "Identify Roles"
+    },
+    {
+      "file": "techniques/T1592.md",
+      "source_title": "T1592 \u2014 Gather Victim Host Information",
+      "source_url": "https://attack.mitre.org/techniques/T1592",
+      "section": "Gather Victim Host Information"
+    },
+    {
+      "file": "techniques/T1592.001.md",
+      "source_title": "T1592.001 \u2014 Hardware",
+      "source_url": "https://attack.mitre.org/techniques/T1592/001",
+      "section": "Hardware"
+    },
+    {
+      "file": "techniques/T1592.002.md",
+      "source_title": "T1592.002 \u2014 Software",
+      "source_url": "https://attack.mitre.org/techniques/T1592/002",
+      "section": "Software"
+    },
+    {
+      "file": "techniques/T1592.003.md",
+      "source_title": "T1592.003 \u2014 Firmware",
+      "source_url": "https://attack.mitre.org/techniques/T1592/003",
+      "section": "Firmware"
+    },
+    {
+      "file": "techniques/T1592.004.md",
+      "source_title": "T1592.004 \u2014 Client Configurations",
+      "source_url": "https://attack.mitre.org/techniques/T1592/004",
+      "section": "Client Configurations"
+    },
+    {
+      "file": "techniques/T1593.md",
+      "source_title": "T1593 \u2014 Search Open Websites/Domains",
+      "source_url": "https://attack.mitre.org/techniques/T1593",
+      "section": "Search Open Websites/Domains"
+    },
+    {
+      "file": "techniques/T1593.001.md",
+      "source_title": "T1593.001 \u2014 Social Media",
+      "source_url": "https://attack.mitre.org/techniques/T1593/001",
+      "section": "Social Media"
+    },
+    {
+      "file": "techniques/T1593.002.md",
+      "source_title": "T1593.002 \u2014 Search Engines",
+      "source_url": "https://attack.mitre.org/techniques/T1593/002",
+      "section": "Search Engines"
+    },
+    {
+      "file": "techniques/T1593.003.md",
+      "source_title": "T1593.003 \u2014 Code Repositories",
+      "source_url": "https://attack.mitre.org/techniques/T1593/003",
+      "section": "Code Repositories"
+    },
+    {
+      "file": "techniques/T1594.md",
+      "source_title": "T1594 \u2014 Search Victim-Owned Websites",
+      "source_url": "https://attack.mitre.org/techniques/T1594",
+      "section": "Search Victim-Owned Websites"
+    },
+    {
+      "file": "techniques/T1595.md",
+      "source_title": "T1595 \u2014 Active Scanning",
+      "source_url": "https://attack.mitre.org/techniques/T1595",
+      "section": "Active Scanning"
+    },
+    {
+      "file": "techniques/T1595.001.md",
+      "source_title": "T1595.001 \u2014 Scanning IP Blocks",
+      "source_url": "https://attack.mitre.org/techniques/T1595/001",
+      "section": "Scanning IP Blocks"
+    },
+    {
+      "file": "techniques/T1595.002.md",
+      "source_title": "T1595.002 \u2014 Vulnerability Scanning",
+      "source_url": "https://attack.mitre.org/techniques/T1595/002",
+      "section": "Vulnerability Scanning"
+    },
+    {
+      "file": "techniques/T1595.003.md",
+      "source_title": "T1595.003 \u2014 Wordlist Scanning",
+      "source_url": "https://attack.mitre.org/techniques/T1595/003",
+      "section": "Wordlist Scanning"
+    },
+    {
+      "file": "techniques/T1596.md",
+      "source_title": "T1596 \u2014 Search Open Technical Databases",
+      "source_url": "https://attack.mitre.org/techniques/T1596",
+      "section": "Search Open Technical Databases"
+    },
+    {
+      "file": "techniques/T1596.001.md",
+      "source_title": "T1596.001 \u2014 DNS/Passive DNS",
+      "source_url": "https://attack.mitre.org/techniques/T1596/001",
+      "section": "DNS/Passive DNS"
+    },
+    {
+      "file": "techniques/T1596.002.md",
+      "source_title": "T1596.002 \u2014 WHOIS",
+      "source_url": "https://attack.mitre.org/techniques/T1596/002",
+      "section": "WHOIS"
+    },
+    {
+      "file": "techniques/T1596.003.md",
+      "source_title": "T1596.003 \u2014 Digital Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1596/003",
+      "section": "Digital Certificates"
+    },
+    {
+      "file": "techniques/T1596.004.md",
+      "source_title": "T1596.004 \u2014 CDNs",
+      "source_url": "https://attack.mitre.org/techniques/T1596/004",
+      "section": "CDNs"
+    },
+    {
+      "file": "techniques/T1596.005.md",
+      "source_title": "T1596.005 \u2014 Scan Databases",
+      "source_url": "https://attack.mitre.org/techniques/T1596/005",
+      "section": "Scan Databases"
+    },
+    {
+      "file": "techniques/T1597.md",
+      "source_title": "T1597 \u2014 Search Closed Sources",
+      "source_url": "https://attack.mitre.org/techniques/T1597",
+      "section": "Search Closed Sources"
+    },
+    {
+      "file": "techniques/T1597.001.md",
+      "source_title": "T1597.001 \u2014 Threat Intel Vendors",
+      "source_url": "https://attack.mitre.org/techniques/T1597/001",
+      "section": "Threat Intel Vendors"
+    },
+    {
+      "file": "techniques/T1597.002.md",
+      "source_title": "T1597.002 \u2014 Purchase Technical Data",
+      "source_url": "https://attack.mitre.org/techniques/T1597/002",
+      "section": "Purchase Technical Data"
+    },
+    {
+      "file": "techniques/T1598.md",
+      "source_title": "T1598 \u2014 Phishing for Information",
+      "source_url": "https://attack.mitre.org/techniques/T1598",
+      "section": "Phishing for Information"
+    },
+    {
+      "file": "techniques/T1598.001.md",
+      "source_title": "T1598.001 \u2014 Spearphishing Service",
+      "source_url": "https://attack.mitre.org/techniques/T1598/001",
+      "section": "Spearphishing Service"
+    },
+    {
+      "file": "techniques/T1598.002.md",
+      "source_title": "T1598.002 \u2014 Spearphishing Attachment",
+      "source_url": "https://attack.mitre.org/techniques/T1598/002",
+      "section": "Spearphishing Attachment"
+    },
+    {
+      "file": "techniques/T1598.003.md",
+      "source_title": "T1598.003 \u2014 Spearphishing Link",
+      "source_url": "https://attack.mitre.org/techniques/T1598/003",
+      "section": "Spearphishing Link"
+    },
+    {
+      "file": "techniques/T1598.004.md",
+      "source_title": "T1598.004 \u2014 Spearphishing Voice",
+      "source_url": "https://attack.mitre.org/techniques/T1598/004",
+      "section": "Spearphishing Voice"
+    },
+    {
+      "file": "techniques/T1599.md",
+      "source_title": "T1599 \u2014 Network Boundary Bridging",
+      "source_url": "https://attack.mitre.org/techniques/T1599",
+      "section": "Network Boundary Bridging"
+    },
+    {
+      "file": "techniques/T1599.001.md",
+      "source_title": "T1599.001 \u2014 Network Address Translation Traversal",
+      "source_url": "https://attack.mitre.org/techniques/T1599/001",
+      "section": "Network Address Translation Traversal"
+    },
+    {
+      "file": "techniques/T1600.md",
+      "source_title": "T1600 \u2014 Weaken Encryption",
+      "source_url": "https://attack.mitre.org/techniques/T1600",
+      "section": "Weaken Encryption"
+    },
+    {
+      "file": "techniques/T1600.001.md",
+      "source_title": "T1600.001 \u2014 Reduce Key Space",
+      "source_url": "https://attack.mitre.org/techniques/T1600/001",
+      "section": "Reduce Key Space"
+    },
+    {
+      "file": "techniques/T1600.002.md",
+      "source_title": "T1600.002 \u2014 Disable Crypto Hardware",
+      "source_url": "https://attack.mitre.org/techniques/T1600/002",
+      "section": "Disable Crypto Hardware"
+    },
+    {
+      "file": "techniques/T1601.md",
+      "source_title": "T1601 \u2014 Modify System Image",
+      "source_url": "https://attack.mitre.org/techniques/T1601",
+      "section": "Modify System Image"
+    },
+    {
+      "file": "techniques/T1601.001.md",
+      "source_title": "T1601.001 \u2014 Patch System Image",
+      "source_url": "https://attack.mitre.org/techniques/T1601/001",
+      "section": "Patch System Image"
+    },
+    {
+      "file": "techniques/T1601.002.md",
+      "source_title": "T1601.002 \u2014 Downgrade System Image",
+      "source_url": "https://attack.mitre.org/techniques/T1601/002",
+      "section": "Downgrade System Image"
+    },
+    {
+      "file": "techniques/T1602.md",
+      "source_title": "T1602 \u2014 Data from Configuration Repository",
+      "source_url": "https://attack.mitre.org/techniques/T1602",
+      "section": "Data from Configuration Repository"
+    },
+    {
+      "file": "techniques/T1602.001.md",
+      "source_title": "T1602.001 \u2014 SNMP (MIB Dump)",
+      "source_url": "https://attack.mitre.org/techniques/T1602/001",
+      "section": "SNMP (MIB Dump)"
+    },
+    {
+      "file": "techniques/T1602.002.md",
+      "source_title": "T1602.002 \u2014 Network Device Configuration Dump",
+      "source_url": "https://attack.mitre.org/techniques/T1602/002",
+      "section": "Network Device Configuration Dump"
+    },
+    {
+      "file": "techniques/T1606.md",
+      "source_title": "T1606 \u2014 Forge Web Credentials",
+      "source_url": "https://attack.mitre.org/techniques/T1606",
+      "section": "Forge Web Credentials"
+    },
+    {
+      "file": "techniques/T1606.001.md",
+      "source_title": "T1606.001 \u2014 Web Cookies",
+      "source_url": "https://attack.mitre.org/techniques/T1606/001",
+      "section": "Web Cookies"
+    },
+    {
+      "file": "techniques/T1606.002.md",
+      "source_title": "T1606.002 \u2014 SAML Tokens",
+      "source_url": "https://attack.mitre.org/techniques/T1606/002",
+      "section": "SAML Tokens"
+    },
+    {
+      "file": "techniques/T1608.md",
+      "source_title": "T1608 \u2014 Stage Capabilities",
+      "source_url": "https://attack.mitre.org/techniques/T1608",
+      "section": "Stage Capabilities"
+    },
+    {
+      "file": "techniques/T1608.001.md",
+      "source_title": "T1608.001 \u2014 Upload Malware",
+      "source_url": "https://attack.mitre.org/techniques/T1608/001",
+      "section": "Upload Malware"
+    },
+    {
+      "file": "techniques/T1608.002.md",
+      "source_title": "T1608.002 \u2014 Upload Tool",
+      "source_url": "https://attack.mitre.org/techniques/T1608/002",
+      "section": "Upload Tool"
+    },
+    {
+      "file": "techniques/T1608.003.md",
+      "source_title": "T1608.003 \u2014 Install Digital Certificate",
+      "source_url": "https://attack.mitre.org/techniques/T1608/003",
+      "section": "Install Digital Certificate"
+    },
+    {
+      "file": "techniques/T1608.004.md",
+      "source_title": "T1608.004 \u2014 Drive-by Target",
+      "source_url": "https://attack.mitre.org/techniques/T1608/004",
+      "section": "Drive-by Target"
+    },
+    {
+      "file": "techniques/T1608.005.md",
+      "source_title": "T1608.005 \u2014 Link Target",
+      "source_url": "https://attack.mitre.org/techniques/T1608/005",
+      "section": "Link Target"
+    },
+    {
+      "file": "techniques/T1608.006.md",
+      "source_title": "T1608.006 \u2014 SEO Poisoning",
+      "source_url": "https://attack.mitre.org/techniques/T1608/006",
+      "section": "SEO Poisoning"
+    },
+    {
+      "file": "techniques/T1609.md",
+      "source_title": "T1609 \u2014 Container Administration Command",
+      "source_url": "https://attack.mitre.org/techniques/T1609",
+      "section": "Container Administration Command"
+    },
+    {
+      "file": "techniques/T1610.md",
+      "source_title": "T1610 \u2014 Deploy Container",
+      "source_url": "https://attack.mitre.org/techniques/T1610",
+      "section": "Deploy Container"
+    },
+    {
+      "file": "techniques/T1611.md",
+      "source_title": "T1611 \u2014 Escape to Host",
+      "source_url": "https://attack.mitre.org/techniques/T1611",
+      "section": "Escape to Host"
+    },
+    {
+      "file": "techniques/T1612.md",
+      "source_title": "T1612 \u2014 Build Image on Host",
+      "source_url": "https://attack.mitre.org/techniques/T1612",
+      "section": "Build Image on Host"
+    },
+    {
+      "file": "techniques/T1613.md",
+      "source_title": "T1613 \u2014 Container and Resource Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1613",
+      "section": "Container and Resource Discovery"
+    },
+    {
+      "file": "techniques/T1614.md",
+      "source_title": "T1614 \u2014 System Location Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1614",
+      "section": "System Location Discovery"
+    },
+    {
+      "file": "techniques/T1614.001.md",
+      "source_title": "T1614.001 \u2014 System Language Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1614/001",
+      "section": "System Language Discovery"
+    },
+    {
+      "file": "techniques/T1615.md",
+      "source_title": "T1615 \u2014 Group Policy Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1615",
+      "section": "Group Policy Discovery"
+    },
+    {
+      "file": "techniques/T1619.md",
+      "source_title": "T1619 \u2014 Cloud Storage Object Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1619",
+      "section": "Cloud Storage Object Discovery"
+    },
+    {
+      "file": "techniques/T1620.md",
+      "source_title": "T1620 \u2014 Reflective Code Loading",
+      "source_url": "https://attack.mitre.org/techniques/T1620",
+      "section": "Reflective Code Loading"
+    },
+    {
+      "file": "techniques/T1621.md",
+      "source_title": "T1621 \u2014 Multi-Factor Authentication Request Generation",
+      "source_url": "https://attack.mitre.org/techniques/T1621",
+      "section": "Multi-Factor Authentication Request Generation"
+    },
+    {
+      "file": "techniques/T1622.md",
+      "source_title": "T1622 \u2014 Debugger Evasion",
+      "source_url": "https://attack.mitre.org/techniques/T1622",
+      "section": "Debugger Evasion"
+    },
+    {
+      "file": "techniques/T1647.md",
+      "source_title": "T1647 \u2014 Plist File Modification",
+      "source_url": "https://attack.mitre.org/techniques/T1647",
+      "section": "Plist File Modification"
+    },
+    {
+      "file": "techniques/T1648.md",
+      "source_title": "T1648 \u2014 Serverless Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1648",
+      "section": "Serverless Execution"
+    },
+    {
+      "file": "techniques/T1649.md",
+      "source_title": "T1649 \u2014 Steal or Forge Authentication Certificates",
+      "source_url": "https://attack.mitre.org/techniques/T1649",
+      "section": "Steal or Forge Authentication Certificates"
+    },
+    {
+      "file": "techniques/T1650.md",
+      "source_title": "T1650 \u2014 Acquire Access",
+      "source_url": "https://attack.mitre.org/techniques/T1650",
+      "section": "Acquire Access"
+    },
+    {
+      "file": "techniques/T1651.md",
+      "source_title": "T1651 \u2014 Cloud Administration Command",
+      "source_url": "https://attack.mitre.org/techniques/T1651",
+      "section": "Cloud Administration Command"
+    },
+    {
+      "file": "techniques/T1652.md",
+      "source_title": "T1652 \u2014 Device Driver Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1652",
+      "section": "Device Driver Discovery"
+    },
+    {
+      "file": "techniques/T1653.md",
+      "source_title": "T1653 \u2014 Power Settings",
+      "source_url": "https://attack.mitre.org/techniques/T1653",
+      "section": "Power Settings"
+    },
+    {
+      "file": "techniques/T1654.md",
+      "source_title": "T1654 \u2014 Log Enumeration",
+      "source_url": "https://attack.mitre.org/techniques/T1654",
+      "section": "Log Enumeration"
+    },
+    {
+      "file": "techniques/T1657.md",
+      "source_title": "T1657 \u2014 Financial Theft",
+      "source_url": "https://attack.mitre.org/techniques/T1657",
+      "section": "Financial Theft"
+    },
+    {
+      "file": "techniques/T1659.md",
+      "source_title": "T1659 \u2014 Content Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1659",
+      "section": "Content Injection"
+    },
+    {
+      "file": "techniques/T1665.md",
+      "source_title": "T1665 \u2014 Hide Infrastructure",
+      "source_url": "https://attack.mitre.org/techniques/T1665",
+      "section": "Hide Infrastructure"
+    },
+    {
+      "file": "techniques/T1666.md",
+      "source_title": "T1666 \u2014 Modify Cloud Resource Hierarchy",
+      "source_url": "https://attack.mitre.org/techniques/T1666",
+      "section": "Modify Cloud Resource Hierarchy"
+    },
+    {
+      "file": "techniques/T1667.md",
+      "source_title": "T1667 \u2014 Email Bombing",
+      "source_url": "https://attack.mitre.org/techniques/T1667",
+      "section": "Email Bombing"
+    },
+    {
+      "file": "techniques/T1668.md",
+      "source_title": "T1668 \u2014 Exclusive Control",
+      "source_url": "https://attack.mitre.org/techniques/T1668",
+      "section": "Exclusive Control"
+    },
+    {
+      "file": "techniques/T1669.md",
+      "source_title": "T1669 \u2014 Wi-Fi Networks",
+      "source_url": "https://attack.mitre.org/techniques/T1669",
+      "section": "Wi-Fi Networks"
+    },
+    {
+      "file": "techniques/T1671.md",
+      "source_title": "T1671 \u2014 Cloud Application Integration",
+      "source_url": "https://attack.mitre.org/techniques/T1671",
+      "section": "Cloud Application Integration"
+    },
+    {
+      "file": "techniques/T1673.md",
+      "source_title": "T1673 \u2014 Virtual Machine Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1673",
+      "section": "Virtual Machine Discovery"
+    },
+    {
+      "file": "techniques/T1674.md",
+      "source_title": "T1674 \u2014 Input Injection",
+      "source_url": "https://attack.mitre.org/techniques/T1674",
+      "section": "Input Injection"
+    },
+    {
+      "file": "techniques/T1675.md",
+      "source_title": "T1675 \u2014 ESXi Administration Command",
+      "source_url": "https://attack.mitre.org/techniques/T1675",
+      "section": "ESXi Administration Command"
+    },
+    {
+      "file": "techniques/T1677.md",
+      "source_title": "T1677 \u2014 Poisoned Pipeline Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1677",
+      "section": "Poisoned Pipeline Execution"
+    },
+    {
+      "file": "techniques/T1678.md",
+      "source_title": "T1678 \u2014 Delay Execution",
+      "source_url": "https://attack.mitre.org/techniques/T1678",
+      "section": "Delay Execution"
+    },
+    {
+      "file": "techniques/T1679.md",
+      "source_title": "T1679 \u2014 Selective Exclusion",
+      "source_url": "https://attack.mitre.org/techniques/T1679",
+      "section": "Selective Exclusion"
+    },
+    {
+      "file": "techniques/T1680.md",
+      "source_title": "T1680 \u2014 Local Storage Discovery",
+      "source_url": "https://attack.mitre.org/techniques/T1680",
+      "section": "Local Storage Discovery"
+    },
+    {
+      "file": "techniques/T1681.md",
+      "source_title": "T1681 \u2014 Search Threat Vendor Data",
+      "source_url": "https://attack.mitre.org/techniques/T1681",
+      "section": "Search Threat Vendor Data"
+    },
+    {
+      "file": "techniques/T1682.md",
+      "source_title": "T1682 \u2014 Query Public AI Services",
+      "source_url": "https://attack.mitre.org/techniques/T1682",
+      "section": "Query Public AI Services"
+    },
+    {
+      "file": "techniques/T1683.md",
+      "source_title": "T1683 \u2014 Generate Content",
+      "source_url": "https://attack.mitre.org/techniques/T1683",
+      "section": "Generate Content"
+    },
+    {
+      "file": "techniques/T1683.001.md",
+      "source_title": "T1683.001 \u2014 Written Content",
+      "source_url": "https://attack.mitre.org/techniques/T1683/001",
+      "section": "Written Content"
+    },
+    {
+      "file": "techniques/T1683.002.md",
+      "source_title": "T1683.002 \u2014 Audio-Visual Content",
+      "source_url": "https://attack.mitre.org/techniques/T1683/002",
+      "section": "Audio-Visual Content"
+    },
+    {
+      "file": "techniques/T1684.md",
+      "source_title": "T1684 \u2014 Social Engineering",
+      "source_url": "https://attack.mitre.org/techniques/T1684",
+      "section": "Social Engineering"
+    },
+    {
+      "file": "techniques/T1684.001.md",
+      "source_title": "T1684.001 \u2014 Impersonation",
+      "source_url": "https://attack.mitre.org/techniques/T1684/001",
+      "section": "Impersonation"
+    },
+    {
+      "file": "techniques/T1684.002.md",
+      "source_title": "T1684.002 \u2014 Email Spoofing",
+      "source_url": "https://attack.mitre.org/techniques/T1684/002",
+      "section": "Email Spoofing"
+    },
+    {
+      "file": "techniques/T1685.md",
+      "source_title": "T1685 \u2014 Disable or Modify Tools",
+      "source_url": "https://attack.mitre.org/techniques/T1685",
+      "section": "Disable or Modify Tools"
+    },
+    {
+      "file": "techniques/T1685.001.md",
+      "source_title": "T1685.001 \u2014 Disable or Modify Windows Event Log",
+      "source_url": "https://attack.mitre.org/techniques/T1685/001",
+      "section": "Disable or Modify Windows Event Log"
+    },
+    {
+      "file": "techniques/T1685.002.md",
+      "source_title": "T1685.002 \u2014 Disable or Modify Cloud Log",
+      "source_url": "https://attack.mitre.org/techniques/T1685/002",
+      "section": "Disable or Modify Cloud Log"
+    },
+    {
+      "file": "techniques/T1685.003.md",
+      "source_title": "T1685.003 \u2014 Modify or Spoof Tool UI",
+      "source_url": "https://attack.mitre.org/techniques/T1685/003",
+      "section": "Modify or Spoof Tool UI"
+    },
+    {
+      "file": "techniques/T1685.004.md",
+      "source_title": "T1685.004 \u2014 Disable or Modify Linux Audit System Log",
+      "source_url": "https://attack.mitre.org/techniques/T1685/004",
+      "section": "Disable or Modify Linux Audit System Log"
+    },
+    {
+      "file": "techniques/T1685.005.md",
+      "source_title": "T1685.005 \u2014 Clear Windows Event Logs",
+      "source_url": "https://attack.mitre.org/techniques/T1685/005",
+      "section": "Clear Windows Event Logs"
+    },
+    {
+      "file": "techniques/T1685.006.md",
+      "source_title": "T1685.006 \u2014 Clear Linux or Mac System Logs",
+      "source_url": "https://attack.mitre.org/techniques/T1685/006",
+      "section": "Clear Linux or Mac System Logs"
+    },
+    {
+      "file": "techniques/T1686.md",
+      "source_title": "T1686 \u2014 Disable or Modify System Firewall",
+      "source_url": "https://attack.mitre.org/techniques/T1686",
+      "section": "Disable or Modify System Firewall"
+    },
+    {
+      "file": "techniques/T1686.001.md",
+      "source_title": "T1686.001 \u2014 Cloud Firewall",
+      "source_url": "https://attack.mitre.org/techniques/T1686/001",
+      "section": "Cloud Firewall"
+    },
+    {
+      "file": "techniques/T1686.002.md",
+      "source_title": "T1686.002 \u2014 Network Device Firewall",
+      "source_url": "https://attack.mitre.org/techniques/T1686/002",
+      "section": "Network Device Firewall"
+    },
+    {
+      "file": "techniques/T1686.003.md",
+      "source_title": "T1686.003 \u2014 Windows Host Firewall",
+      "source_url": "https://attack.mitre.org/techniques/T1686/003",
+      "section": "Windows Host Firewall"
+    },
+    {
+      "file": "techniques/T1687.md",
+      "source_title": "T1687 \u2014 Exploitation for Defense Impairment",
+      "source_url": "https://attack.mitre.org/techniques/T1687",
+      "section": "Exploitation for Defense Impairment"
+    },
+    {
+      "file": "techniques/T1688.md",
+      "source_title": "T1688 \u2014 Safe Mode Boot",
+      "source_url": "https://attack.mitre.org/techniques/T1688",
+      "section": "Safe Mode Boot"
+    },
+    {
+      "file": "techniques/T1689.md",
+      "source_title": "T1689 \u2014 Downgrade Attack",
+      "source_url": "https://attack.mitre.org/techniques/T1689",
+      "section": "Downgrade Attack"
+    },
+    {
+      "file": "techniques/T1690.md",
+      "source_title": "T1690 \u2014 Prevent Command History Logging",
+      "source_url": "https://attack.mitre.org/techniques/T1690",
+      "section": "Prevent Command History Logging"
+    }
+  ]
+}

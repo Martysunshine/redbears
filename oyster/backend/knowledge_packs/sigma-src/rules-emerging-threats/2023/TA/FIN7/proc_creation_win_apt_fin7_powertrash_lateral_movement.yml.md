@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2023/TA/FIN7/proc_creation_win_apt_fin7_powertrash_lateral_movement.yml -->
+title: Potential APT FIN7 Reconnaissance/POWERTRASH Related Activity
+id: 911389c7-5ae3-43ea-bab3-a947ebdeb85e
+status: test
+description: Detects specific command line execution used by FIN7 as reported by WithSecureLabs for reconnaissance and POWERTRASH execution
+references:
+    - https://labs.withsecure.com/publications/fin7-target-veeam-servers
+    - https://labs.withsecure.com/publications/fin7-target-veeam-servers/jcr:content/root/responsivegrid/responsivegrid/responsivegrid/image_253944286.img.png/1682500394900.png
+    - https://github.com/WithSecureLabs/iocs/blob/344203de742bb7e68bd56618f66d34be95a9f9fc/FIN7VEEAM/iocs.csv
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-05-04
+tags:
+    - attack.execution
+    - attack.g0046
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_1:
+        CommandLine|contains|all:
+            - '-noni -nop -exe bypass -f \\\\'
+            - 'ADMIN$'
+    selection_2:
+        CommandLine|contains|all:
+            - '-ex bypass -noprof -nolog -nonint -f'
+            - 'C:\Windows\Temp\'
+    condition: 1 of selection_*
+falsepositives:
+    - Unlikely
+level: high

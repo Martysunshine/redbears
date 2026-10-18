@@ -1,0 +1,27 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/obfuscation/obfuscated-with-vs-obfuscation.yml -->
+rule:
+  meta:
+    name: obfuscated with vs-obfuscation
+    namespace: anti-analysis/obfuscation
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: file
+      dynamic: file
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+    mbc:
+      - Anti-Static Analysis::Executable Code Obfuscation [B0032]
+    references:
+      - https://github.com/Tai7sy/vs-obfuscation
+    examples:
+      - efd1a86330cecba5d8d038fba65ac8e76955ed724986aa87cd6ca9f72f6941c7
+  features:
+    - or:
+      - string: "DefWindowProcW1222_test"
+      - and:
+        - string: "Module: %s"
+        - string: "Find function HeapAlloc"
+        - string: "Function: %s"
+        - string: "Hash: %u"
+        - string: "Can't find function"

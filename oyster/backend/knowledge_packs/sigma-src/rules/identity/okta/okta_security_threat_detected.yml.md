@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/identity/okta/okta_security_threat_detected.yml -->
+title: Okta Security Threat Detected
+id: 5c82f0b9-3c6d-477f-a318-0e14a1df73e0
+status: test
+description: Detects when an security threat is detected in Okta.
+references:
+    - https://okta.github.io/okta-help/en/prod/Content/Topics/Security/threat-insight/configure-threatinsight-system-log.htm
+    - https://developer.okta.com/docs/reference/api/system-log/
+    - https://developer.okta.com/docs/reference/api/event-types/
+author: Austin Songer @austinsonger
+date: 2021-09-12
+modified: 2026-04-27
+tags:
+    - attack.command-and-control
+logsource:
+    product: okta
+    service: okta
+detection:
+    selection:
+        eventType: security.threat.detected
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

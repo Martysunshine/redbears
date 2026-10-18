@@ -1,0 +1,42 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Procdump.yml -->
+---
+Name: Procdump.exe
+Description: SysInternals Memory Dump Tool
+Aliases:
+  - Alias: Procdump64.exe
+Author: 'Alfie Champion (@ajpc500)'
+Created: 2020-10-14
+Commands:
+  - Command: procdump.exe -md {PATH:.dll} explorer.exe
+    Description: Loads the specified DLL where DLL is configured with a 'MiniDumpCallbackRoutine' exported function. Valid process must be provided as dump still created.
+    Usecase: Performs execution of unsigned DLL.
+    Category: Execute
+    Privileges: User
+    MitreID: T1202
+    OperatingSystem: Windows 8.1 and higher, Windows Server 2012 and higher
+    Tags:
+      - Execute: DLL
+  - Command: procdump.exe -md {PATH:.dll} foobar
+    Description: Loads the specified DLL where configured with DLL_PROCESS_ATTACH execution, process argument can be arbitrary.
+    Usecase: Performs execution of unsigned DLL.
+    Category: Execute
+    Privileges: User
+    MitreID: T1202
+    OperatingSystem: Windows 8.1 and higher, Windows Server 2012 and higher
+    Tags:
+      - Execute: DLL
+Full_Path:
+  - Path: no default
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/6312dd1d44d309608552105c334948f793e89f48/rules/windows/process_creation/proc_creation_win_renamed_sysinternals_procdump.yml
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_sysinternals_procdump.yml
+  - Splunk: https://github.com/splunk/security_content/blob/86a5b644a44240f01274c8b74d19a435c7dae66e/detections/endpoint/dump_lsass_via_procdump.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/5bdf70e72c6cd4547624c521108189af994af449/rules/windows/credential_access_cmdline_dump_tool.toml
+  - IOC: Process creation with given '-md' parameter
+  - IOC: Anomalous child processes of procdump
+  - IOC: Unsigned DLL load via procdump.exe or procdump64.exe
+Resources:
+  - Link: https://twitter.com/ajpc500/status/1448588362382778372?s=20
+Acknowledgement:
+  - Person: Alfie Champion
+    Handle: '@ajpc500'

@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_curl_insecure_proxy_or_doh.yml -->
+title: Insecure Proxy/DOH Transfer Via Curl.EXE
+id: 2c1486f5-02e8-4f86-9099-b97f2da4ed77
+status: test
+description: Detects execution of "curl.exe" with the "insecure" flag over proxy or DOH.
+references:
+    - https://curl.se/docs/manpage.html
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-07-27
+tags:
+    - attack.execution
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_img:
+        - Image|endswith: '\curl.exe'
+        - OriginalFileName: 'curl.exe'
+    selection_cli:
+        CommandLine|contains:
+            - '--doh-insecure'
+            - '--proxy-insecure'
+    condition: all of selection_*
+falsepositives:
+    - Access to badly maintained internal or development systems
+level: medium
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_curl_insecure_proxy_or_doh/info.yml

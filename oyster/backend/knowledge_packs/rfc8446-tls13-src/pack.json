@@ -1,0 +1,528 @@
+{
+  "id": "rfc8446-tls13-src",
+  "name": "rfc8446-tls13-src",
+  "version": "47871bc8820a",
+  "title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3",
+  "domain": "defensive",
+  "security_domain": "network-security",
+  "description": "Imported from https://www.rfc-editor.org/rfc/rfc8446 at 47871bc8820a. 82 documents.",
+  "authority": "IETF",
+  "publisher": "Internet Engineering Task Force",
+  "trust_level": "official",
+  "licence": "ietf-trust-tlp",
+  "attribution": "RFC 8446, The Transport Layer Security (TLS) Protocol Version 1.3, IETF \u2014 reproduced under the IETF Trust Legal Provisions.",
+  "tags": [
+    "tls",
+    "rfc",
+    "encryption",
+    "network-security"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Stable standards-track RFC (2018).",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "rfc8446-tls13-src",
+  "upstream_commit": "47871bc8820a",
+  "source_urls": [
+    "https://www.rfc-editor.org/rfc/rfc8446",
+    "https://www.rfc-editor.org/rfc/rfc8446.txt"
+  ],
+  "docs": [
+    {
+      "file": "sections/1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 1 Introduction",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "1 Introduction"
+    },
+    {
+      "file": "sections/1-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 1.1 Conventions and Terminology",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "1.1 Conventions and Terminology"
+    },
+    {
+      "file": "sections/1-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 1.2 Major Differences from TLS 1.2",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "1.2 Major Differences from TLS 1.2"
+    },
+    {
+      "file": "sections/1-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 1.3 Updates Affecting TLS 1.2",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "1.3 Updates Affecting TLS 1.2"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 2 Protocol Overview",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "2 Protocol Overview"
+    },
+    {
+      "file": "sections/2-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 2.1 Incorrect DHE Share",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "2.1 Incorrect DHE Share"
+    },
+    {
+      "file": "sections/2-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 2.2 Resumption and Pre-Shared Key (PSK)",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "2.2 Resumption and Pre-Shared Key (PSK)"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3 Presentation Language",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3 Presentation Language"
+    },
+    {
+      "file": "sections/3-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.1 Basic Block Size",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.1 Basic Block Size"
+    },
+    {
+      "file": "sections/3-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.2 Miscellaneous",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.2 Miscellaneous"
+    },
+    {
+      "file": "sections/3-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.3 Numbers",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.3 Numbers"
+    },
+    {
+      "file": "sections/3-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.4 Vectors",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.4 Vectors"
+    },
+    {
+      "file": "sections/3-5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.5 Enumerateds",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.5 Enumerateds"
+    },
+    {
+      "file": "sections/3-6.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.6 Constructed Types",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.6 Constructed Types"
+    },
+    {
+      "file": "sections/3-7.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.7 Constants",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.7 Constants"
+    },
+    {
+      "file": "sections/3-8.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 3.8 Variants",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "3.8 Variants"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4 Handshake Protocol",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4 Handshake Protocol"
+    },
+    {
+      "file": "sections/4-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.1 Key Exchange Messages",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.1 Key Exchange Messages"
+    },
+    {
+      "file": "sections/4-1-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.1.1 Cryptographic Negotiation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.1.1 Cryptographic Negotiation"
+    },
+    {
+      "file": "sections/4-1-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.1.2 Client Hello",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.1.2 Client Hello"
+    },
+    {
+      "file": "sections/4-1-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.1.3 Server Hello",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.1.3 Server Hello"
+    },
+    {
+      "file": "sections/4-1-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.1.4 Hello Retry Request",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.1.4 Hello Retry Request"
+    },
+    {
+      "file": "sections/4-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2 Extensions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2 Extensions"
+    },
+    {
+      "file": "sections/4-2-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.1 Supported Versions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.1 Supported Versions"
+    },
+    {
+      "file": "sections/4-2-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.2 Cookie",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.2 Cookie"
+    },
+    {
+      "file": "sections/4-2-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.3 Signature Algorithms",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.3 Signature Algorithms"
+    },
+    {
+      "file": "sections/4-2-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.4 Certificate Authorities",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.4 Certificate Authorities"
+    },
+    {
+      "file": "sections/4-2-5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.5 OID Filters",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.5 OID Filters"
+    },
+    {
+      "file": "sections/4-2-6.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.6 Post-Handshake Client Authentication",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.6 Post-Handshake Client Authentication"
+    },
+    {
+      "file": "sections/4-2-7.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.7 Supported Groups",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.7 Supported Groups"
+    },
+    {
+      "file": "sections/4-2-8.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.8 Key Share",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.8 Key Share"
+    },
+    {
+      "file": "sections/4-2-8-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.8.1 Diffie-Hellman Parameters",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.8.1 Diffie-Hellman Parameters"
+    },
+    {
+      "file": "sections/4-2-8-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.8.2 ECDHE Parameters",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.8.2 ECDHE Parameters"
+    },
+    {
+      "file": "sections/4-2-9.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.9 Pre-Shared Key Exchange Modes",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.9 Pre-Shared Key Exchange Modes"
+    },
+    {
+      "file": "sections/4-2-10.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.10 Early Data Indication",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.10 Early Data Indication"
+    },
+    {
+      "file": "sections/4-2-11.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.11 Pre-Shared Key Extension",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.11 Pre-Shared Key Extension"
+    },
+    {
+      "file": "sections/4-2-11-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.11.1 Ticket Age",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.11.1 Ticket Age"
+    },
+    {
+      "file": "sections/4-2-11-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.11.2 PSK Binder",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.11.2 PSK Binder"
+    },
+    {
+      "file": "sections/4-2-11-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.2.11.3 Processing Order",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.2.11.3 Processing Order"
+    },
+    {
+      "file": "sections/4-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.3 Server Parameters",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.3 Server Parameters"
+    },
+    {
+      "file": "sections/4-3-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.3.1 Encrypted Extensions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.3.1 Encrypted Extensions"
+    },
+    {
+      "file": "sections/4-3-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.3.2 Certificate Request",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.3.2 Certificate Request"
+    },
+    {
+      "file": "sections/4-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4 Authentication Messages",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4 Authentication Messages"
+    },
+    {
+      "file": "sections/4-4-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.1 The Transcript Hash",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.1 The Transcript Hash"
+    },
+    {
+      "file": "sections/4-4-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.2 Certificate",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.2 Certificate"
+    },
+    {
+      "file": "sections/4-4-2-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.2.1 OCSP Status and SCT Extensions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.2.1 OCSP Status and SCT Extensions"
+    },
+    {
+      "file": "sections/4-4-2-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.2.2 Server Certificate Selection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.2.2 Server Certificate Selection"
+    },
+    {
+      "file": "sections/4-4-2-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.2.3 Client Certificate Selection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.2.3 Client Certificate Selection"
+    },
+    {
+      "file": "sections/4-4-2-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.2.4 Receiving a Certificate Message",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.2.4 Receiving a Certificate Message"
+    },
+    {
+      "file": "sections/4-4-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.3 Certificate Verify",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.3 Certificate Verify"
+    },
+    {
+      "file": "sections/4-4-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.4.4 Finished",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.4.4 Finished"
+    },
+    {
+      "file": "sections/4-5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.5 End of Early Data",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.5 End of Early Data"
+    },
+    {
+      "file": "sections/4-6.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.6 Post-Handshake Messages",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.6 Post-Handshake Messages"
+    },
+    {
+      "file": "sections/4-6-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.6.1 New Session Ticket Message",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.6.1 New Session Ticket Message"
+    },
+    {
+      "file": "sections/4-6-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.6.2 Post-Handshake Authentication",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.6.2 Post-Handshake Authentication"
+    },
+    {
+      "file": "sections/4-6-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 4.6.3 Key and Initialization Vector Update",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "4.6.3 Key and Initialization Vector Update"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5 Record Protocol",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5 Record Protocol"
+    },
+    {
+      "file": "sections/5-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5.1 Record Layer",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5.1 Record Layer"
+    },
+    {
+      "file": "sections/5-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5.2 Record Payload Protection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5.2 Record Payload Protection"
+    },
+    {
+      "file": "sections/5-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5.3 Per-Record Nonce",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5.3 Per-Record Nonce"
+    },
+    {
+      "file": "sections/5-4.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5.4 Record Padding",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5.4 Record Padding"
+    },
+    {
+      "file": "sections/5-5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 5.5 Limits on Key Usage",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "5.5 Limits on Key Usage"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 6 Alert Protocol",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "6 Alert Protocol"
+    },
+    {
+      "file": "sections/6-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 6.1 Closure Alerts",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "6.1 Closure Alerts"
+    },
+    {
+      "file": "sections/6-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 6.2 Error Alerts",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "6.2 Error Alerts"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7 Cryptographic Computations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7 Cryptographic Computations"
+    },
+    {
+      "file": "sections/7-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.1 Key Schedule",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.1 Key Schedule"
+    },
+    {
+      "file": "sections/7-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.2 Updating Traffic Secrets",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.2 Updating Traffic Secrets"
+    },
+    {
+      "file": "sections/7-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.3 Traffic Key Calculation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.3 Traffic Key Calculation"
+    },
+    {
+      "file": "sections/7-4-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.4.1 Finite Field Diffie-Hellman",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.4.1 Finite Field Diffie-Hellman"
+    },
+    {
+      "file": "sections/7-4-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.4.2 Elliptic Curve Diffie-Hellman",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.4.2 Elliptic Curve Diffie-Hellman"
+    },
+    {
+      "file": "sections/7-5.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 7.5 Exporters",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "7.5 Exporters"
+    },
+    {
+      "file": "sections/8-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 8.1 Single-Use Tickets",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "8.1 Single-Use Tickets"
+    },
+    {
+      "file": "sections/8-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 8.2 Client Hello Recording",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "8.2 Client Hello Recording"
+    },
+    {
+      "file": "sections/8-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 8.3 Freshness Checks",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "8.3 Freshness Checks"
+    },
+    {
+      "file": "sections/9-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 9.1 Mandatory-to-Implement Cipher Suites",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "9.1 Mandatory-to-Implement Cipher Suites"
+    },
+    {
+      "file": "sections/9-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 9.2 Mandatory-to-Implement Extensions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "9.2 Mandatory-to-Implement Extensions"
+    },
+    {
+      "file": "sections/9-3.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 9.3 Protocol Invariants",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "9.3 Protocol Invariants"
+    },
+    {
+      "file": "sections/10.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 10 Security Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "10 Security Considerations"
+    },
+    {
+      "file": "sections/11.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 11 IANA Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "11 IANA Considerations"
+    },
+    {
+      "file": "sections/12-1.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 12.1 Normative References",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "12.1 Normative References"
+    },
+    {
+      "file": "sections/12-2.md",
+      "source_title": "RFC 8446 \u2014 The Transport Layer Security (TLS) Protocol Version 1.3 \u2014 12.2 Informative References",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "section": "12.2 Informative References"
+    }
+  ]
+}

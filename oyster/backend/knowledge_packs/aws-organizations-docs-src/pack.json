@@ -1,0 +1,791 @@
+{
+  "id": "aws-organizations-docs-src",
+  "name": "aws-organizations-docs-src",
+  "version": "8df18e7aeb80",
+  "title": "AWS Organizations User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/organizations/ at 8df18e7aeb80. 125 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "AWS Organizations User Guide, Amazon.com, Inc., CC BY-SA 4.0.",
+  "tags": [
+    "aws",
+    "organizations",
+    "cloud",
+    "governance"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'main' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-organizations-docs-src",
+  "upstream_commit": "8df18e7aeb8068515cd8ab22e852ad25a052edbd",
+  "source_urls": [
+    "https://docs.aws.amazon.com/organizations/",
+    "https://github.com/awsdocs/aws-organizations-docs"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/attach-tag-policy.md",
+      "source_title": "Attaching and detaching tag policies<a name=\"attach-tag-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/attach-tag-policy.md",
+      "section": "Attaching and detaching tag policies<a name=\"attach-tag-policy\"></a>"
+    },
+    {
+      "file": "doc_source/best-practices_member-acct.md",
+      "source_title": "Best practices for member accounts<a name=\"best-practices_member-acct\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/best-practices_member-acct.md",
+      "section": "Best practices for member accounts<a name=\"best-practices_member-acct\"></a>"
+    },
+    {
+      "file": "doc_source/document-history.md",
+      "source_title": "Document history for AWS Organizations<a name=\"document-history\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/document-history.md",
+      "section": "Document history for AWS Organizations<a name=\"document-history\"></a>"
+    },
+    {
+      "file": "doc_source/glossary.md",
+      "source_title": "AWS glossary<a name=\"glossary\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/glossary.md",
+      "section": "AWS glossary<a name=\"glossary\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "AWS Organizations User Guide",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/index.md",
+      "section": "AWS Organizations User Guide"
+    },
+    {
+      "file": "doc_source/org_troubleshoot_policies.md",
+      "source_title": "Troubleshooting AWS Organizations policies<a name=\"org_troubleshoot_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/org_troubleshoot_policies.md",
+      "section": "Troubleshooting AWS Organizations policies<a name=\"org_troubleshoot_policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_best-practices.md",
+      "source_title": "Best practices for AWS Organizations<a name=\"orgs_best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_best-practices.md",
+      "section": "Best practices for AWS Organizations<a name=\"orgs_best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_best-practices_mgmt-acct.md",
+      "source_title": "Best practices for the management account<a name=\"orgs_best-practices_mgmt-acct\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_best-practices_mgmt-acct.md",
+      "section": "Best practices for the management account<a name=\"orgs_best-practices_mgmt-acct\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_delegate_policies.md",
+      "source_title": "Delegated administrator for AWS Organizations<a name=\"orgs_delegate_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_delegate_policies.md",
+      "section": "Delegated administrator for AWS Organizations<a name=\"orgs_delegate_policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_delegate_policies_example_consolidate_permissions.md",
+      "source_title": "Example: Consolidated permissions to manage an organization's backup policies<a name=\"orgs_delegate_policies_example_consolidate_permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_delegate_policies_example_consolidate_permissions.md",
+      "section": "Example: Consolidated permissions to manage an organization's backup policies<a name=\"orgs_delegate_policies_example_consolidate_permissions\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_delegate_policies_example_view_accts_orgs.md",
+      "source_title": "Example: View organization, OUs, accounts, and policies<a name=\"orgs_delegate_policies_example_view_accts_orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_delegate_policies_example_view_accts_orgs.md",
+      "section": "Example: View organization, OUs, accounts, and policies<a name=\"orgs_delegate_policies_example_view_accts_orgs\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_getting-started.md",
+      "source_title": "Getting started with AWS Organizations<a name=\"orgs_getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_getting-started.md",
+      "section": "Getting started with AWS Organizations<a name=\"orgs_getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_getting-started_concepts.md",
+      "source_title": "AWS Organizations terminology and concepts<a name=\"orgs_getting-started_concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_getting-started_concepts.md",
+      "section": "AWS Organizations terminology and concepts<a name=\"orgs_getting-started_concepts\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_integrate_services.md",
+      "source_title": "Using AWS Organizations with other AWS services<a name=\"orgs_integrate_services\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_integrate_services.md",
+      "section": "Using AWS Organizations with other AWS services<a name=\"orgs_integrate_services\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_integrate_services_list.md",
+      "source_title": "AWS services that you can use with AWS Organizations<a name=\"orgs_integrate_services_list\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_integrate_services_list.md",
+      "section": "AWS services that you can use with AWS Organizations<a name=\"orgs_integrate_services_list\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_introduction.md",
+      "source_title": "What is AWS Organizations?<a name=\"orgs_introduction\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_introduction.md",
+      "section": "What is AWS Organizations?<a name=\"orgs_introduction\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts.md",
+      "source_title": "Managing the AWS accounts in your organization<a name=\"orgs_manage_accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts.md",
+      "section": "Managing the AWS accounts in your organization<a name=\"orgs_manage_accounts\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_access.md",
+      "source_title": "Accessing and administering the member accounts in your organization<a name=\"orgs_manage_accounts_access\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_access.md",
+      "section": "Accessing and administering the member accounts in your organization<a name=\"orgs_manage_accounts_access\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_close.md",
+      "source_title": "Closing an AWS account<a name=\"orgs_manage_accounts_close\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_close.md",
+      "section": "Closing an AWS account<a name=\"orgs_manage_accounts_close\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_create.md",
+      "source_title": "Creating an AWS account in your organization<a name=\"orgs_manage_accounts_create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_create.md",
+      "section": "Creating an AWS account in your organization<a name=\"orgs_manage_accounts_create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_export.md",
+      "source_title": "Exporting all AWS account details for your organization<a name=\"orgs_manage_accounts_export\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_export.md",
+      "section": "Exporting all AWS account details for your organization<a name=\"orgs_manage_accounts_export\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_invites.md",
+      "source_title": "Inviting an AWS account to join your organization<a name=\"orgs_manage_accounts_invites\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_invites.md",
+      "section": "Inviting an AWS account to join your organization<a name=\"orgs_manage_accounts_invites\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_remove.md",
+      "source_title": "Removing a member account from your organization<a name=\"orgs_manage_accounts_remove\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_remove.md",
+      "section": "Removing a member account from your organization<a name=\"orgs_manage_accounts_remove\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_update_contacts.md",
+      "source_title": "Updating alternate contacts in your organization<a name=\"orgs_manage_accounts_update_contacts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_update_contacts.md",
+      "section": "Updating alternate contacts in your organization<a name=\"orgs_manage_accounts_update_contacts\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_accounts_update_contacts_primary.md",
+      "source_title": "Updating primary contact information in your organization<a name=\"orgs_manage_accounts_update_contacts_primary\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_accounts_update_contacts_primary.md",
+      "section": "Updating primary contact information in your organization<a name=\"orgs_manage_accounts_update_contacts_primary\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_org.md",
+      "source_title": "Creating and managing an organization<a name=\"orgs_manage_org\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_org.md",
+      "section": "Creating and managing an organization<a name=\"orgs_manage_org\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_org_create.md",
+      "source_title": "Creating an organization<a name=\"orgs_manage_org_create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_org_create.md",
+      "section": "Creating an organization<a name=\"orgs_manage_org_create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_org_delete.md",
+      "source_title": "Deleting the organization by removing the management account<a name=\"orgs_manage_org_delete\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_org_delete.md",
+      "section": "Deleting the organization by removing the management account<a name=\"orgs_manage_org_delete\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_org_details.md",
+      "source_title": "Viewing details about your organization<a name=\"orgs_manage_org_details\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_org_details.md",
+      "section": "Viewing details about your organization<a name=\"orgs_manage_org_details\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_org_support-all-features.md",
+      "source_title": "Enabling all features in your organization<a name=\"orgs_manage_org_support-all-features\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_org_support-all-features.md",
+      "section": "Enabling all features in your organization<a name=\"orgs_manage_org_support-all-features\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_ous.md",
+      "source_title": "Managing organizational units \\(OUs\\)<a name=\"orgs_manage_ous\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_ous.md",
+      "section": "Managing organizational units \\(OUs\\)<a name=\"orgs_manage_ous\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies.md",
+      "source_title": "Managing AWS Organizations policies<a name=\"orgs_manage_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies.md",
+      "section": "Managing AWS Organizations policies<a name=\"orgs_manage_policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_ai-opt-out.md",
+      "source_title": "AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_ai-opt-out.md",
+      "section": "AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_ai-opt-out_attach.md",
+      "source_title": "Attaching and detaching AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_attach\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_ai-opt-out_attach.md",
+      "section": "Attaching and detaching AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_attach\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_ai-opt-out_create.md",
+      "source_title": "Creating, updating, and deleting AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_ai-opt-out_create.md",
+      "section": "Creating, updating, and deleting AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_ai-opt-out_effective.md",
+      "source_title": "Viewing effective AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_effective\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_ai-opt-out_effective.md",
+      "section": "Viewing effective AI services opt\\-out policies<a name=\"orgs_manage_policies_ai-opt-out_effective\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_ai-opt-out_syntax.md",
+      "source_title": "AI services opt\\-out policy syntax and examples<a name=\"orgs_manage_policies_ai-opt-out_syntax\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_ai-opt-out_syntax.md",
+      "section": "AI services opt\\-out policy syntax and examples<a name=\"orgs_manage_policies_ai-opt-out_syntax\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup.md",
+      "source_title": "Backup policies<a name=\"orgs_manage_policies_backup\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup.md",
+      "section": "Backup policies<a name=\"orgs_manage_policies_backup\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_attach-detach.md",
+      "source_title": "Attaching and detaching backup policies<a name=\"orgs_manage_policies_backup_attach-detach\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_attach-detach.md",
+      "section": "Attaching and detaching backup policies<a name=\"orgs_manage_policies_backup_attach-detach\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_best-practices.md",
+      "source_title": "Best practices for using backup policies<a name=\"orgs_manage_policies_backup_best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_best-practices.md",
+      "section": "Best practices for using backup policies<a name=\"orgs_manage_policies_backup_best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_create.md",
+      "source_title": "Creating, updating, and deleting backup policies<a name=\"orgs_manage_policies_backup_create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_create.md",
+      "section": "Creating, updating, and deleting backup policies<a name=\"orgs_manage_policies_backup_create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_effective.md",
+      "source_title": "Viewing effective backup policies<a name=\"orgs_manage_policies_backup_effective\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_effective.md",
+      "section": "Viewing effective backup policies<a name=\"orgs_manage_policies_backup_effective\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_prereqs.md",
+      "source_title": "Prerequisites and permissions for managing backup policies<a name=\"orgs_manage_policies_backup_prereqs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_prereqs.md",
+      "section": "Prerequisites and permissions for managing backup policies<a name=\"orgs_manage_policies_backup_prereqs\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_backup_syntax.md",
+      "source_title": "Backup policy syntax and examples<a name=\"orgs_manage_policies_backup_syntax\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_backup_syntax.md",
+      "section": "Backup policy syntax and examples<a name=\"orgs_manage_policies_backup_syntax\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_delegate_examples.md",
+      "source_title": "Example resource\\-based delegation policies<a name=\"orgs_manage_policies_delegate_examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_delegate_examples.md",
+      "section": "Example resource\\-based delegation policies<a name=\"orgs_manage_policies_delegate_examples\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_enable-disable.md",
+      "source_title": "Enabling and disabling policy types<a name=\"orgs_manage_policies_enable-disable\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_enable-disable.md",
+      "section": "Enabling and disabling policy types<a name=\"orgs_manage_policies_enable-disable\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_example-tag-policies.md",
+      "source_title": "Tag policy syntax and examples<a name=\"orgs_manage_policies_example-tag-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_example-tag-policies.md",
+      "section": "Tag policy syntax and examples<a name=\"orgs_manage_policies_example-tag-policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_info-operations.md",
+      "source_title": "Getting information about your organization's policies<a name=\"orgs_manage_policies_info-operations\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_info-operations.md",
+      "section": "Getting information about your organization's policies<a name=\"orgs_manage_policies_info-operations\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_inheritance.md",
+      "source_title": "Understanding policy inheritance<a name=\"orgs_manage_policies_inheritance\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_inheritance.md",
+      "section": "Understanding policy inheritance<a name=\"orgs_manage_policies_inheritance\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_inheritance_auth.md",
+      "source_title": "Inheritance for service control policies<a name=\"orgs_manage_policies_inheritance_auth\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_inheritance_auth.md",
+      "section": "Inheritance for service control policies<a name=\"orgs_manage_policies_inheritance_auth\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_inheritance_mgmt.md",
+      "source_title": "Policy syntax and inheritance for management policy types<a name=\"orgs_manage_policies_inheritance_mgmt\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_inheritance_mgmt.md",
+      "section": "Policy syntax and inheritance for management policy types<a name=\"orgs_manage_policies_inheritance_mgmt\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps.md",
+      "source_title": "Service control policies \\(SCPs\\)<a name=\"orgs_manage_policies_scps\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps.md",
+      "section": "Service control policies \\(SCPs\\)<a name=\"orgs_manage_policies_scps\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_attach.md",
+      "source_title": "Attaching and detaching service control policies<a name=\"orgs_manage_policies_scps_attach\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_attach.md",
+      "section": "Attaching and detaching service control policies<a name=\"orgs_manage_policies_scps_attach\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_create.md",
+      "source_title": "Creating, updating, and deleting service control policies<a name=\"orgs_manage_policies_scps_create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_create.md",
+      "section": "Creating, updating, and deleting service control policies<a name=\"orgs_manage_policies_scps_create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples.md",
+      "source_title": "Example service control policies<a name=\"orgs_manage_policies_scps_examples\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples.md",
+      "section": "Example service control policies<a name=\"orgs_manage_policies_scps_examples\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_cloudwatch.md",
+      "source_title": "Example SCPs for Amazon CloudWatch<a name=\"orgs_manage_policies_scps_examples_cloudwatch\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_cloudwatch.md",
+      "section": "Example SCPs for Amazon CloudWatch<a name=\"orgs_manage_policies_scps_examples_cloudwatch\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_config.md",
+      "source_title": "Example SCPs for AWS Config<a name=\"orgs_manage_policies_scps_examples_config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_config.md",
+      "section": "Example SCPs for AWS Config<a name=\"orgs_manage_policies_scps_examples_config\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_ec2.md",
+      "source_title": "Example SCPs for Amazon Elastic Compute Cloud \\(Amazon EC2\\)<a name=\"orgs_manage_policies_scps_examples_ec2\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_ec2.md",
+      "section": "Example SCPs for Amazon Elastic Compute Cloud \\(Amazon EC2\\)<a name=\"orgs_manage_policies_scps_examples_ec2\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_general.md",
+      "source_title": "General examples<a name=\"orgs_manage_policies_scps_examples_general\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_general.md",
+      "section": "General examples<a name=\"orgs_manage_policies_scps_examples_general\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_guardduty.md",
+      "source_title": "Example SCPs for Amazon GuardDuty<a name=\"orgs_manage_policies_scps_examples_guardduty\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_guardduty.md",
+      "section": "Example SCPs for Amazon GuardDuty<a name=\"orgs_manage_policies_scps_examples_guardduty\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_ram.md",
+      "source_title": "Example SCPs for AWS Resource Access Manager<a name=\"orgs_manage_policies_scps_examples_ram\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_ram.md",
+      "section": "Example SCPs for AWS Resource Access Manager<a name=\"orgs_manage_policies_scps_examples_ram\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_tagging.md",
+      "source_title": "Example SCPs for tagging resources<a name=\"orgs_manage_policies_scps_examples_tagging\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_tagging.md",
+      "section": "Example SCPs for tagging resources<a name=\"orgs_manage_policies_scps_examples_tagging\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_examples_vpc.md",
+      "source_title": "Example SCPs for Amazon Virtual Private Cloud \\(Amazon VPC\\)<a name=\"orgs_manage_policies_scps_examples_vpc\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_examples_vpc.md",
+      "section": "Example SCPs for Amazon Virtual Private Cloud \\(Amazon VPC\\)<a name=\"orgs_manage_policies_scps_examples_vpc\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_strategies.md",
+      "source_title": "Strategies for using SCPs<a name=\"orgs_manage_policies_scps_strategies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_strategies.md",
+      "section": "Strategies for using SCPs<a name=\"orgs_manage_policies_scps_strategies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_scps_syntax.md",
+      "source_title": "SCP syntax<a name=\"orgs_manage_policies_scps_syntax\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_scps_syntax.md",
+      "section": "SCP syntax<a name=\"orgs_manage_policies_scps_syntax\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_supported-resources-enforcement.md",
+      "source_title": "Services and resource types that support enforcement<a name=\"orgs_manage_policies_supported-resources-enforcement\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_supported-resources-enforcement.md",
+      "section": "Services and resource types that support enforcement<a name=\"orgs_manage_policies_supported-resources-enforcement\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-best-practices.md",
+      "source_title": "Best practices for using tag policies<a name=\"orgs_manage_policies_tag-policies-best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-best-practices.md",
+      "section": "Best practices for using tag policies<a name=\"orgs_manage_policies_tag-policies-best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-create.md",
+      "source_title": "Creating, updating, and deleting tag policies<a name=\"orgs_manage_policies_tag-policies-create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-create.md",
+      "section": "Creating, updating, and deleting tag policies<a name=\"orgs_manage_policies_tag-policies-create\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-cwe.md",
+      "source_title": "Using CloudWatch Events to monitor noncompliant tags<a name=\"orgs_manage_policies_tag-policies-cwe\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-cwe.md",
+      "section": "Using CloudWatch Events to monitor noncompliant tags<a name=\"orgs_manage_policies_tag-policies-cwe\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-effective.md",
+      "source_title": "Viewing effective tag policies<a name=\"orgs_manage_policies_tag-policies-effective\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-effective.md",
+      "section": "Viewing effective tag policies<a name=\"orgs_manage_policies_tag-policies-effective\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-enforcement.md",
+      "source_title": "Understanding enforcement<a name=\"orgs_manage_policies_tag-policies-enforcement\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-enforcement.md",
+      "section": "Understanding enforcement<a name=\"orgs_manage_policies_tag-policies-enforcement\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-getting-started.md",
+      "source_title": "Getting started with tag policies<a name=\"orgs_manage_policies_tag-policies-getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-getting-started.md",
+      "section": "Getting started with tag policies<a name=\"orgs_manage_policies_tag-policies-getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-prereqs.md",
+      "source_title": "Prerequisites and permissions for managing tag policies<a name=\"orgs_manage_policies_tag-policies-prereqs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-prereqs.md",
+      "section": "Prerequisites and permissions for managing tag policies<a name=\"orgs_manage_policies_tag-policies-prereqs\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies-supported-regions.md",
+      "source_title": "Supported Regions<a name=\"orgs_manage_policies_tag-policies-supported-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies-supported-regions.md",
+      "section": "Supported Regions<a name=\"orgs_manage_policies_tag-policies-supported-regions\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_manage_policies_tag-policies.md",
+      "source_title": "Tag policies<a name=\"orgs_manage_policies_tag-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_manage_policies_tag-policies.md",
+      "section": "Tag policies<a name=\"orgs_manage_policies_tag-policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_permissions_iam-policies.md",
+      "source_title": "Using identity\\-based policies \\(IAM policies\\) for AWS Organizations<a name=\"orgs_permissions_iam-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_permissions_iam-policies.md",
+      "section": "Using identity\\-based policies \\(IAM policies\\) for AWS Organizations<a name=\"orgs_permissions_iam-policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_permissions_overview.md",
+      "source_title": "Managing access permissions for your AWS organization<a name=\"orgs_permissions_overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_permissions_overview.md",
+      "section": "Managing access permissions for your AWS organization<a name=\"orgs_permissions_overview\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_query-requests.md",
+      "source_title": "Calling the API by making HTTP Query requests<a name=\"orgs_query-requests\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_query-requests.md",
+      "section": "Calling the API by making HTTP Query requests<a name=\"orgs_query-requests\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_reference.md",
+      "source_title": "AWS Organizations reference<a name=\"orgs_reference\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_reference.md",
+      "section": "AWS Organizations reference<a name=\"orgs_reference\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_reference_available-policies.md",
+      "source_title": "AWS managed policies available for use with AWS Organizations<a name=\"orgs_reference_available-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_reference_available-policies.md",
+      "section": "AWS managed policies available for use with AWS Organizations<a name=\"orgs_reference_available-policies\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_reference_limits.md",
+      "source_title": "Quotas for AWS Organizations<a name=\"orgs_reference_limits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_reference_limits.md",
+      "section": "Quotas for AWS Organizations<a name=\"orgs_reference_limits\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_security_compliance-validation.md",
+      "source_title": "Compliance validation for AWS Organizations<a name=\"orgs_security_compliance-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_security_compliance-validation.md",
+      "section": "Compliance validation for AWS Organizations<a name=\"orgs_security_compliance-validation\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_security_disaster-recovery-resiliency.md",
+      "source_title": "Resilience in AWS Organizations<a name=\"orgs_security_disaster-recovery-resiliency\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_security_disaster-recovery-resiliency.md",
+      "section": "Resilience in AWS Organizations<a name=\"orgs_security_disaster-recovery-resiliency\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_security_iam.md",
+      "source_title": "AWS Identity and Access Management and AWS Organizations<a name=\"orgs_security_iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_security_iam.md",
+      "section": "AWS Identity and Access Management and AWS Organizations<a name=\"orgs_security_iam\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_security_incident-response.md",
+      "source_title": "Logging and monitoring in AWS Organizations<a name=\"orgs_security_incident-response\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_security_incident-response.md",
+      "section": "Logging and monitoring in AWS Organizations<a name=\"orgs_security_incident-response\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_security_infrastructure.md",
+      "source_title": "Infrastructure security in AWS Organizations<a name=\"orgs_security_infrastructure\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_security_infrastructure.md",
+      "section": "Infrastructure security in AWS Organizations<a name=\"orgs_security_infrastructure\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_tagging.md",
+      "source_title": "Tagging AWS Organizations resources<a name=\"orgs_tagging\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_tagging.md",
+      "section": "Tagging AWS Organizations resources<a name=\"orgs_tagging\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_tagging_abac.md",
+      "source_title": "Attribute\\-based access control with tags and AWS Organizations<a name=\"orgs_tagging_abac\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_tagging_abac.md",
+      "section": "Attribute\\-based access control with tags and AWS Organizations<a name=\"orgs_tagging_abac\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_troubleshoot.md",
+      "source_title": "Troubleshooting AWS Organizations<a name=\"orgs_troubleshoot\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_troubleshoot.md",
+      "section": "Troubleshooting AWS Organizations<a name=\"orgs_troubleshoot\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_troubleshoot_general.md",
+      "source_title": "Troubleshooting general issues<a name=\"orgs_troubleshoot_general\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_troubleshoot_general.md",
+      "section": "Troubleshooting general issues<a name=\"orgs_troubleshoot_general\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_tutorials.md",
+      "source_title": "AWS Organizations tutorials<a name=\"orgs_tutorials\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_tutorials.md",
+      "section": "AWS Organizations tutorials<a name=\"orgs_tutorials\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_tutorials_basic.md",
+      "source_title": "Tutorial: Creating and configuring an organization<a name=\"orgs_tutorials_basic\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_tutorials_basic.md",
+      "section": "Tutorial: Creating and configuring an organization<a name=\"orgs_tutorials_basic\"></a>"
+    },
+    {
+      "file": "doc_source/orgs_tutorials_cwe.md",
+      "source_title": "Tutorial: Monitor important changes to your organization with CloudWatch Events<a name=\"orgs_tutorials_cwe\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/orgs_tutorials_cwe.md",
+      "section": "Tutorial: Monitor important changes to your organization with CloudWatch Events<a name=\"orgs_tutorials_cwe\"></a>"
+    },
+    {
+      "file": "doc_source/security.md",
+      "source_title": "Security in AWS Organizations<a name=\"security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/security.md",
+      "section": "Security in AWS Organizations<a name=\"security\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-CTower.md",
+      "source_title": "AWS Control Tower and AWS Organizations<a name=\"services-that-can-integrate-CTower\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-CTower.md",
+      "section": "AWS Control Tower and AWS Organizations<a name=\"services-that-can-integrate-CTower\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-account.md",
+      "source_title": "AWS Account Management and AWS Organizations<a name=\"services-that-can-integrate-account\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-account.md",
+      "section": "AWS Account Management and AWS Organizations<a name=\"services-that-can-integrate-account\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-artifact.md",
+      "source_title": "AWS Artifact and AWS Organizations<a name=\"services-that-can-integrate-artifact\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-artifact.md",
+      "section": "AWS Artifact and AWS Organizations<a name=\"services-that-can-integrate-artifact\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-audit-manager.md",
+      "source_title": "AWS Audit Manager and AWS Organizations<a name=\"services-that-can-integrate-audit-manager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-audit-manager.md",
+      "section": "AWS Audit Manager and AWS Organizations<a name=\"services-that-can-integrate-audit-manager\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-backup.md",
+      "source_title": "AWS Backup and AWS Organizations<a name=\"services-that-can-integrate-backup\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-backup.md",
+      "section": "AWS Backup and AWS Organizations<a name=\"services-that-can-integrate-backup\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-cloudformation.md",
+      "source_title": "AWS CloudFormation StackSets and AWS Organizations<a name=\"services-that-can-integrate-cloudformation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-cloudformation.md",
+      "section": "AWS CloudFormation StackSets and AWS Organizations<a name=\"services-that-can-integrate-cloudformation\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-cloudtrail.md",
+      "source_title": "AWS CloudTrail and AWS Organizations<a name=\"services-that-can-integrate-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-cloudtrail.md",
+      "section": "AWS CloudTrail and AWS Organizations<a name=\"services-that-can-integrate-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-compute-optimizer.md",
+      "source_title": "AWS Compute Optimizer and AWS Organizations<a name=\"services-that-can-integrate-compute-optimizer\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-compute-optimizer.md",
+      "section": "AWS Compute Optimizer and AWS Organizations<a name=\"services-that-can-integrate-compute-optimizer\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-config.md",
+      "source_title": "AWS Config and AWS Organizations<a name=\"services-that-can-integrate-config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-config.md",
+      "section": "AWS Config and AWS Organizations<a name=\"services-that-can-integrate-config\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-detective.md",
+      "source_title": "Amazon Detective and AWS Organizations<a name=\"services-that-can-integrate-detective\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-detective.md",
+      "section": "Amazon Detective and AWS Organizations<a name=\"services-that-can-integrate-detective\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-devops.md",
+      "source_title": "Amazon DevOps\u00a0Guru and AWS Organizations<a name=\"services-that-can-integrate-devops\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-devops.md",
+      "section": "Amazon DevOps\u00a0Guru and AWS Organizations<a name=\"services-that-can-integrate-devops\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-directory-service.md",
+      "source_title": "AWS Directory Service and AWS Organizations<a name=\"services-that-can-integrate-directory-service\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-directory-service.md",
+      "section": "AWS Directory Service and AWS Organizations<a name=\"services-that-can-integrate-directory-service\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-fms.md",
+      "source_title": "AWS Firewall Manager and AWS Organizations<a name=\"services-that-can-integrate-fms\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-fms.md",
+      "section": "AWS Firewall Manager and AWS Organizations<a name=\"services-that-can-integrate-fms\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-guardduty.md",
+      "source_title": "Amazon GuardDuty and AWS Organizations<a name=\"services-that-can-integrate-guardduty\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-guardduty.md",
+      "section": "Amazon GuardDuty and AWS Organizations<a name=\"services-that-can-integrate-guardduty\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-health.md",
+      "source_title": "AWS Health and AWS Organizations<a name=\"services-that-can-integrate-health\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-health.md",
+      "section": "AWS Health and AWS Organizations<a name=\"services-that-can-integrate-health\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-inspector2.md",
+      "source_title": "Amazon Inspector and AWS Organizations<a name=\"services-that-can-integrate-inspector2\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-inspector2.md",
+      "section": "Amazon Inspector and AWS Organizations<a name=\"services-that-can-integrate-inspector2\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-ipam.md",
+      "source_title": "Amazon VPC IP Address Manager \\(IPAM\\) and AWS Organizations<a name=\"services-that-can-integrate-ipam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-ipam.md",
+      "section": "Amazon VPC IP Address Manager \\(IPAM\\) and AWS Organizations<a name=\"services-that-can-integrate-ipam\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-license-manager.md",
+      "source_title": "AWS License Manager and AWS Organizations<a name=\"services-that-can-integrate-license-manager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-license-manager.md",
+      "section": "AWS License Manager and AWS Organizations<a name=\"services-that-can-integrate-license-manager\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-macie.md",
+      "source_title": "Amazon Macie and AWS Organizations<a name=\"services-that-can-integrate-macie\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-macie.md",
+      "section": "Amazon Macie and AWS Organizations<a name=\"services-that-can-integrate-macie\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-marketplace.md",
+      "source_title": "AWS Marketplace and AWS Organizations<a name=\"services-that-can-integrate-marketplace\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-marketplace.md",
+      "section": "AWS Marketplace and AWS Organizations<a name=\"services-that-can-integrate-marketplace\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-network-manager.md",
+      "source_title": "AWS Network Manager and AWS Organizations<a name=\"services-that-can-integrate-network-manager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-network-manager.md",
+      "section": "AWS Network Manager and AWS Organizations<a name=\"services-that-can-integrate-network-manager\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-ram.md",
+      "source_title": "AWS Resource Access Manager and AWS Organizations<a name=\"services-that-can-integrate-ram\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-ram.md",
+      "section": "AWS Resource Access Manager and AWS Organizations<a name=\"services-that-can-integrate-ram\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-s3lens.md",
+      "source_title": "Amazon S3 Storage Lens and AWS Organizations<a name=\"services-that-can-integrate-s3lens\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-s3lens.md",
+      "section": "Amazon S3 Storage Lens and AWS Organizations<a name=\"services-that-can-integrate-s3lens\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-securityhub.md",
+      "source_title": "AWS Security Hub and AWS Organizations<a name=\"services-that-can-integrate-securityhub\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-securityhub.md",
+      "section": "AWS Security Hub and AWS Organizations<a name=\"services-that-can-integrate-securityhub\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-servicecatalog.md",
+      "source_title": "AWS Service Catalog and AWS Organizations<a name=\"services-that-can-integrate-servicecatalog\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-servicecatalog.md",
+      "section": "AWS Service Catalog and AWS Organizations<a name=\"services-that-can-integrate-servicecatalog\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-servicequotas.md",
+      "source_title": "Service Quotas and AWS Organizations<a name=\"services-that-can-integrate-servicequotas\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-servicequotas.md",
+      "section": "Service Quotas and AWS Organizations<a name=\"services-that-can-integrate-servicequotas\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-ssm.md",
+      "source_title": "AWS Systems Manager and AWS Organizations<a name=\"services-that-can-integrate-ssm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-ssm.md",
+      "section": "AWS Systems Manager and AWS Organizations<a name=\"services-that-can-integrate-ssm\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-sso.md",
+      "source_title": "AWS IAM Identity Center \\(successor to AWS Single Sign\\-On\\) and AWS Organizations<a name=\"services-that-can-integrate-sso\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-sso.md",
+      "section": "AWS IAM Identity Center \\(successor to AWS Single Sign\\-On\\) and AWS Organizations<a name=\"services-that-can-integrate-sso\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-ta.md",
+      "source_title": "AWS Trusted Advisor and AWS Organizations<a name=\"services-that-can-integrate-ta\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-ta.md",
+      "section": "AWS Trusted Advisor and AWS Organizations<a name=\"services-that-can-integrate-ta\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-tag-policies.md",
+      "source_title": "Tag policies and AWS Organizations<a name=\"services-that-can-integrate-tag-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-tag-policies.md",
+      "section": "Tag policies and AWS Organizations<a name=\"services-that-can-integrate-tag-policies\"></a>"
+    },
+    {
+      "file": "doc_source/services-that-can-integrate-wat.md",
+      "source_title": "AWS Well\\-Architected Tool and AWS Organizations<a name=\"services-that-can-integrate-wat\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-organizations-docs/blob/8df18e7aeb8068515cd8ab22e852ad25a052edbd/doc_source/services-that-can-integrate-wat.md",
+      "section": "AWS Well\\-Architected Tool and AWS Organizations<a name=\"services-that-can-integrate-wat\"></a>"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "id": "rfc8252-oauth-native-src",
+  "name": "rfc8252-oauth-native-src",
+  "version": "4233c0650ec7",
+  "title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps",
+  "domain": "defensive",
+  "security_domain": "identity-and-access",
+  "description": "Imported from https://www.rfc-editor.org/rfc/rfc8252 at 4233c0650ec7. 26 documents.",
+  "authority": "IETF",
+  "publisher": "Internet Engineering Task Force",
+  "trust_level": "official",
+  "licence": "ietf-trust-tlp",
+  "attribution": "RFC 8252, OAuth 2.0 for Native Apps, IETF \u2014 reproduced under the IETF Trust Legal Provisions.",
+  "tags": [
+    "oauth",
+    "rfc",
+    "identity",
+    "mobile"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Stable BCP (2017).",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "rfc8252-oauth-native-src",
+  "upstream_commit": "4233c0650ec7",
+  "source_urls": [
+    "https://www.rfc-editor.org/rfc/rfc8252",
+    "https://www.rfc-editor.org/rfc/rfc8252.txt"
+  ],
+  "docs": [
+    {
+      "file": "sections/1.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 1 Introduction",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "1 Introduction"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 2 Notational Conventions",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "2 Notational Conventions"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 3 Terminology",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "3 Terminology"
+    },
+    {
+      "file": "sections/4.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 4 Overview",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "4 Overview"
+    },
+    {
+      "file": "sections/4-1.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 4.1 Authorization Flow for Native Apps Using the Browser",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "4.1 Authorization Flow for Native Apps Using the Browser"
+    },
+    {
+      "file": "sections/5.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 5 Using Inter-App URI Communication for OAuth",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "5 Using Inter-App URI Communication for OAuth"
+    },
+    {
+      "file": "sections/6.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 6 Initiating the Authorization Request from a Native App",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "6 Initiating the Authorization Request from a Native App"
+    },
+    {
+      "file": "sections/7.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 7 Receiving the Authorization Response in a Native App",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "7 Receiving the Authorization Response in a Native App"
+    },
+    {
+      "file": "sections/7-1.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 7.1 Private-Use URI Scheme Redirection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "7.1 Private-Use URI Scheme Redirection"
+    },
+    {
+      "file": "sections/7-2.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 7.2 Claimed \"https\" Scheme URI Redirection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "7.2 Claimed \"https\" Scheme URI Redirection"
+    },
+    {
+      "file": "sections/7-3.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 7.3 Loopback Interface Redirection",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "7.3 Loopback Interface Redirection"
+    },
+    {
+      "file": "sections/8-1.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.1 Protecting the Authorization Code",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.1 Protecting the Authorization Code"
+    },
+    {
+      "file": "sections/8-2.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.2 OAuth Implicit Grant Authorization Flow",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.2 OAuth Implicit Grant Authorization Flow"
+    },
+    {
+      "file": "sections/8-3.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.3 Loopback Redirect Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.3 Loopback Redirect Considerations"
+    },
+    {
+      "file": "sections/8-4.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.4 Registration of Native App Clients",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.4 Registration of Native App Clients"
+    },
+    {
+      "file": "sections/8-5.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.5 Client Authentication",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.5 Client Authentication"
+    },
+    {
+      "file": "sections/8-6.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.6 Client Impersonation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.6 Client Impersonation"
+    },
+    {
+      "file": "sections/8-7.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.7 Fake External User-Agents",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.7 Fake External User-Agents"
+    },
+    {
+      "file": "sections/8-8.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.8 Malicious External User-Agents",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.8 Malicious External User-Agents"
+    },
+    {
+      "file": "sections/8-9.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.9 Cross-App Request Forgery Protections",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.9 Cross-App Request Forgery Protections"
+    },
+    {
+      "file": "sections/8-10.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.10 Authorization Server Mix-Up Mitigation",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.10 Authorization Server Mix-Up Mitigation"
+    },
+    {
+      "file": "sections/8-11.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.11 Non-Browser External User-Agents",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.11 Non-Browser External User-Agents"
+    },
+    {
+      "file": "sections/8-12.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 8.12 Embedded User-Agents",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "8.12 Embedded User-Agents"
+    },
+    {
+      "file": "sections/9.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 9 IANA Considerations",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "9 IANA Considerations"
+    },
+    {
+      "file": "sections/10-1.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 10.1 Normative References",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "10.1 Normative References"
+    },
+    {
+      "file": "sections/10-2.md",
+      "source_title": "RFC 8252 \u2014 OAuth 2.0 for Native Apps \u2014 10.2 Informative References",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8252",
+      "section": "10.2 Informative References"
+    }
+  ]
+}

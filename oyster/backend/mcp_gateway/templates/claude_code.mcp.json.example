@@ -1,0 +1,13 @@
+{
+  "//": "Oyster MCP gateway — Claude Code (stdio). Copy to .mcp.json (project scope) or your Claude Code user config. Replace ABSOLUTE_PATH_TO_OYSTER with the real path, or run backend/scripts/mcp_setup.py to generate this with resolved paths. Never commit real paths, tokens, or emails.",
+  "mcpServers": {
+    "oyster-security": {
+      "command": "ABSOLUTE_PATH_TO_OYSTER/backend/venv/bin/python",
+      "args": ["-m", "mcp_gateway.stdio_main"],
+      "cwd": "ABSOLUTE_PATH_TO_OYSTER/backend",
+      "env": {
+        "OYSTER_MCP_LOCAL_EMAIL": "you@example.com"
+      }
+    }
+  }
+}

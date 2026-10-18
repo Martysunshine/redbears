@@ -1,0 +1,74 @@
+{
+  "registry": "adversarial_fixtures",
+  "version": "1.0.0",
+  "note": "Recognition fixtures for obfuscated/encoded content. Purpose is to RECOGNIZE and safely explain, never to execute. The safe workflow is always: (1) normalize, (2) identify the encoding, (3) decode WITHOUT executing, (4) explain likely behaviour, (5) produce detection opportunities, (6) refuse deployment against real systems without authorization. No live payloads or malware are stored here — only pattern descriptions.",
+  "safe_workflow": ["normalize", "identify-encoding", "decode-without-execution", "explain-behaviour", "produce-detections", "refuse-unauthorized-deployment"],
+  "items": [
+    {
+      "id": "emoji-shellcoding",
+      "name": "Emoji shellcoding patterns",
+      "reference_url": "https://github.com/RischardV/emoji-shellcoding",
+      "description": "Bytes/instructions smuggled inside emoji or their variation-selector tails; recognize as suspicious encoding, decode statically, never run.",
+      "detection_opportunity": "High density of emoji + variation selectors in code/command context; non-text bytes in a text field.",
+      "enabled": false
+    },
+    {
+      "id": "tomatotools-encodings",
+      "name": "TomatoTools encoding/cipher recognition set",
+      "reference_url": "https://github.com/ht0Ruial/TomatoTools",
+      "licence": "GPL-2.0 (tool). Recognition/decoding reference only — the tool itself is NOT bundled or executed.",
+      "description": "Catalogue of encodings a CTF-style deobfuscation reference covers (emoji, Base family, JSFuck, Brainfuck, shellcode representations) so Oyster can RECOGNIZE and statically decode them, never execute.",
+      "detection_opportunity": "Encoded/cipher-shaped blobs; identify encoding family, decode without execution, explain behaviour, produce detections.",
+      "enabled": false
+    },
+    {
+      "id": "unicode-variation-selectors",
+      "name": "Unicode variation selectors / tag characters",
+      "description": "U+FE00–FE0F and U+E0000-block tag chars used to hide data or instructions in seemingly plain text.",
+      "detection_opportunity": "Presence of variation-selector / tag codepoints in user or retrieved content; normalize (NFKC) and diff.",
+      "enabled": false
+    },
+    {
+      "id": "invisible-characters",
+      "name": "Invisible / zero-width characters",
+      "description": "Zero-width space/joiner, bidi controls, and homoglyphs used for hiding text or prompt-injection smuggling.",
+      "detection_opportunity": "Strip/flag zero-width and bidi control codepoints; alert on their presence in retrieved documents.",
+      "enabled": false
+    },
+    {
+      "id": "encoded-ctf",
+      "name": "Encoded CTF material",
+      "description": "Layered encodings (base64/hex/rot) common in CTF; decode statically and explain, do not execute resulting artifacts.",
+      "detection_opportunity": "Long high-entropy tokens; repeated decode layers.",
+      "enabled": false
+    },
+    {
+      "id": "jsfuck",
+      "name": "JSFuck",
+      "description": "JavaScript written with only []()!+ ; recognize as obfuscated JS, analyze statically, never eval.",
+      "detection_opportunity": "Source composed almost entirely of []()!+ characters.",
+      "enabled": false
+    },
+    {
+      "id": "brainfuck",
+      "name": "Brainfuck",
+      "description": "Esoteric language using only ><+-.,[] ; recognize and describe, do not run untrusted interpreters on it.",
+      "detection_opportunity": "Content dominated by ><+-.,[] tokens.",
+      "enabled": false
+    },
+    {
+      "id": "base-encodings",
+      "name": "Base encodings (base64/base32/base85)",
+      "description": "Common transport encodings that may wrap payloads; decode statically to inspect, not to execute.",
+      "detection_opportunity": "Charset + padding signatures; decode and re-scan the plaintext.",
+      "enabled": false
+    },
+    {
+      "id": "suspicious-shellcode",
+      "name": "Suspicious shellcode representations",
+      "description": "\\x-escaped byte arrays, NOP sleds, and egg hunters; treat as static samples for analysis only.",
+      "detection_opportunity": "Long \\x?? byte sequences, 0x90 sleds, syscall stubs in a data field.",
+      "enabled": false
+    }
+  ]
+}

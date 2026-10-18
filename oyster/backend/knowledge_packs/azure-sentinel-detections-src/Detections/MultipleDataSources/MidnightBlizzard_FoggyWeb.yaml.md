@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MidnightBlizzard_FoggyWeb.yaml -->
+id: 18119187-a22f-4042-8941-ffcaf62b730f
+name: Midnight Blizzard IOCs related to FoggyWeb backdoor
+description: |
+   'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Deprecated%20Analytic%20Rules/MidnightBlizzard_FoggyWeb.yaml'
+version: 2.1.5

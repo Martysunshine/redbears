@@ -1,0 +1,25 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/filter/enumerate-minifilter-drivers.yml -->
+rule:
+  meta:
+    name: enumerate minifilter drivers
+    namespace: host-interaction/filter
+    authors:
+      - aseel.kayal@mandiant.com
+      - jakubjozwiak@google.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    references:
+      - https://posts.specterops.io/mimidrv-in-depth-4d273d19e148
+      - https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/filter-manager-concepts
+      - https://github.com/gentilkiwi/mimikatz/blob/2.2.0-20220919/mimikatz/modules/kuhl_m_misc.c#L944
+    examples:
+      - 3E528207CA374123F63789195A4AEDDE:0x12F49
+  features:
+    - or:
+      - and:
+        - api: fltmgr.FltEnumerateFilters
+        - api: fltmgr.FltGetFilterInformation
+      - and:
+        - api: fltlib.FilterFindFirst
+        - api: fltlib.FilterFindNext

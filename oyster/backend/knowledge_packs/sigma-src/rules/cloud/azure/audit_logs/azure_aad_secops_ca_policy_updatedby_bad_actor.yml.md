@@ -1,0 +1,28 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_aad_secops_ca_policy_updatedby_bad_actor.yml -->
+title: CA Policy Updated by Non Approved Actor
+id: 50a3c7aa-ec29-44a4-92c1-fce229eef6fc
+status: test
+description: Monitor and alert on conditional access changes. Is Initiated by (actor) approved to make changes? Review Modified Properties and compare "old" vs "new" value.
+references:
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-infrastructure#conditional-access
+author: Corissa Koopmans, '@corissalea'
+date: 2022-07-19
+modified: 2024-05-28
+tags:
+    - attack.privilege-escalation
+    - attack.credential-access
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1548
+    - attack.t1556
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        properties.message: Update conditional access policy
+    condition: selection
+falsepositives:
+    - Misconfigured role permissions
+    - Verify whether the user identity, user agent, and/or hostname should be making changes in your environment.
+level: medium

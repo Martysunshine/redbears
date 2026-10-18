@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_guest_invite_failure.yml -->
+title: Guest User Invited By Non Approved Inviters
+id: 0b4b72e3-4c53-4d5b-b198-2c58cfef39a9
+status: test
+description: Detects when a user that doesn't have permissions to invite a guest user attempts to invite one.
+references:
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-privileged-accounts#things-to-monitor
+author: Mark Morowczynski '@markmorow', Yochana Henderson, '@Yochana-H'
+date: 2022-08-10
+tags:
+    - attack.privilege-escalation
+    - attack.initial-access
+    - attack.persistence
+    - attack.stealth
+    - attack.t1078.004
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        properties.message: Invite external user
+        Status: failure
+    condition: selection
+falsepositives:
+    - A non malicious user is unaware of the proper process
+level: medium

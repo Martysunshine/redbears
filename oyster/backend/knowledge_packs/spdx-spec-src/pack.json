@@ -1,0 +1,132 @@
+{
+  "id": "spdx-spec-src",
+  "name": "spdx-spec-src",
+  "version": "a1cacf2de9e6",
+  "title": "SPDX Specification (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://spdx.dev/ at a1cacf2de9e6. 16 documents.",
+  "authority": "Linux Foundation",
+  "publisher": "SPDX Working Group",
+  "trust_level": "official",
+  "licence": "community-specification-1.0",
+  "attribution": "SPDX Specification, \u00a9 Linux Foundation / SPDX Working Group, Community Specification License 1.0 (with legacy portions under CC-BY-3.0).",
+  "tags": [
+    "spdx",
+    "sbom",
+    "supply-chain",
+    "licensing"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track SPDX spec releases.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "spdx-spec-src",
+  "upstream_commit": "a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7",
+  "source_urls": [
+    "https://spdx.dev/",
+    "https://github.com/spdx/spdx-spec"
+  ],
+  "docs": [
+    {
+      "file": "docs/annexes/license-matching-guidelines-and-templates.md",
+      "source_title": "SPDX License List matching guidelines and templates (Normative)",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/annexes/license-matching-guidelines-and-templates.md",
+      "section": "SPDX License List matching guidelines and templates (Normative)"
+    },
+    {
+      "file": "docs/annexes/pkg-url-specification.md",
+      "source_title": "Package URL specification v1 (Normative)",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/annexes/pkg-url-specification.md",
+      "section": "Package URL specification v1 (Normative)"
+    },
+    {
+      "file": "docs/annexes/rdf-model.md",
+      "source_title": "RDF model definition and diagrams (Informative)",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/annexes/rdf-model.md",
+      "section": "RDF model definition and diagrams (Informative)"
+    },
+    {
+      "file": "docs/annexes/spdx-license-expressions.md",
+      "source_title": "SPDX license expressions (Normative)",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/annexes/spdx-license-expressions.md",
+      "section": "SPDX license expressions (Normative)"
+    },
+    {
+      "file": "docs/annexes/spdx-lite.md",
+      "source_title": "SPDX Lite (Normative)",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/annexes/spdx-lite.md",
+      "section": "SPDX Lite (Normative)"
+    },
+    {
+      "file": "docs/conformance.md",
+      "source_title": "Conformance",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/conformance.md",
+      "section": "Conformance"
+    },
+    {
+      "file": "docs/front/copyright.md",
+      "source_title": "Use of Specification - Terms, Conditions & Notices",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/front/copyright.md",
+      "section": "Use of Specification - Terms, Conditions & Notices"
+    },
+    {
+      "file": "docs/front/introduction.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/front/introduction.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "docs/index.md",
+      "source_title": "The System Package Data Exchange\u00ae (SPDX\u00ae) Specification Version 3.0.1",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/index.md",
+      "section": "The System Package Data Exchange\u00ae (SPDX\u00ae) Specification Version 3.0.1"
+    },
+    {
+      "file": "docs/licenses/CC-BY-3.0.md",
+      "source_title": "Creative Commons Attribution License 3.0 Unported",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/licenses/CC-BY-3.0.md",
+      "section": "Creative Commons Attribution License 3.0 Unported"
+    },
+    {
+      "file": "docs/licenses/Community-Spec-1.0.md",
+      "source_title": "Community Specification License 1.0",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/licenses/Community-Spec-1.0.md",
+      "section": "Community Specification License 1.0"
+    },
+    {
+      "file": "docs/references.md",
+      "source_title": "References",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/references.md",
+      "section": "References"
+    },
+    {
+      "file": "docs/scope.md",
+      "source_title": "Scope",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/scope.md",
+      "section": "Scope"
+    },
+    {
+      "file": "docs/serializations.md",
+      "source_title": "Model and serializations",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/serializations.md",
+      "section": "Model and serializations"
+    },
+    {
+      "file": "docs/symbols.md",
+      "source_title": "Symbols",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/symbols.md",
+      "section": "Symbols"
+    },
+    {
+      "file": "docs/terms-and-definitions.md",
+      "source_title": "Terms and definitions",
+      "source_url": "https://github.com/spdx/spdx-spec/blob/a1cacf2de9e6b4768ec96cda3a25bd9bef3a86f7/docs/terms-and-definitions.md",
+      "section": "Terms and definitions"
+    }
+  ]
+}

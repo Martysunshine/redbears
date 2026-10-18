@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_powershell_drop_powershell.yml -->
+title: PowerShell Script Dropped Via PowerShell.EXE
+id: 576426ad-0131-4001-ae01-be175da0c108
+status: test
+description: Detects PowerShell creating a PowerShell file (.ps1). While often times this behavior is benign, sometimes it can be a sign of a dropper script trying to achieve persistence.
+references:
+    - https://www.zscaler.com/blogs/security-research/onenote-growing-threat-malware-distribution
+author: frack113
+date: 2023-05-09
+tags:
+    - attack.persistence
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+        TargetFilename|endswith: '.ps1'
+    filter_main_psscriptpolicytest:
+        TargetFilename|contains: '__PSScriptPolicyTest_'
+    filter_main_appdata:
+        TargetFilename|startswith: 'C:\Users\'
+        TargetFilename|contains: '\AppData\Local\Temp\'
+    filter_main_windows_temp:
+        TargetFilename|startswith: 'C:\Windows\Temp\'
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - False positives will differ depending on the environment and scripts used. Apply additional filters accordingly.
+level: low

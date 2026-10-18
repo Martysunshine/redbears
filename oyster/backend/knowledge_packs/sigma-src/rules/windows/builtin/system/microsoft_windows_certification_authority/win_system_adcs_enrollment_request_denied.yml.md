@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/microsoft_windows_certification_authority/win_system_adcs_enrollment_request_denied.yml -->
+title: Active Directory Certificate Services Denied Certificate Enrollment Request
+id: 994bfd6d-0a2e-481e-a861-934069fcf5f5
+status: test
+description: |
+    Detects denied requests by Active Directory Certificate Services.
+    Example of these requests denial include issues with permissions on the certificate template or invalid signatures.
+references:
+    - https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd299871(v=ws.10)
+    - https://www.gradenegger.eu/en/details-of-the-event-with-id-53-of-the-source-microsoft-windows-certificationauthority/
+author: '@SerkinValery'
+date: 2024-03-07
+tags:
+    - attack.credential-access
+    - attack.defense-impairment
+    - attack.t1553.004
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: 'Microsoft-Windows-CertificationAuthority'
+        EventID: 53
+    condition: selection
+falsepositives:
+    - Unknown
+level: low

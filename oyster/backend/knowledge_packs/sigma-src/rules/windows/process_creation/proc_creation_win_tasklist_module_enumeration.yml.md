@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_tasklist_module_enumeration.yml -->
+title: Loaded Module Enumeration Via Tasklist.EXE
+id: 34275eb8-fa19-436b-b959-3d9ecd53fa1f
+status: test
+description: |
+    Detects the enumeration of a specific DLL or EXE being used by a binary via "tasklist.exe".
+    This is often used by attackers in order to find the specific process identifier (PID) that is using the DLL in question.
+    In order to dump the process memory or perform other nefarious actions.
+references:
+    - https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/
+    - https://pentestlab.blog/tag/svchost/
+author: Swachchhanda Shrawan Poudel
+date: 2024-02-12
+modified: 2024-03-13
+tags:
+    - attack.t1003
+    - attack.credential-access
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_img:
+        - Image|endswith: '\tasklist.exe'
+        - OriginalFileName: 'tasklist.exe'
+    selection_flags:
+        CommandLine|contains|windash: '-m'
+    selection_module:
+        # Note: add other interesting modules or binaries
+        CommandLine|contains: 'rdpcorets.dll'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: medium

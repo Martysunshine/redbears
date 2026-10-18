@@ -1,0 +1,27 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/design/Deploying-AD-FS-in-the-Resource-Partner-Organization.md -->
+---
+description: "Learn more about: Deploying Legacy AD FS in the Resource Partner Organization"
+title: Deploying Legacy AD FS in the Resource Partner Organization
+ms.date: 02/13/2024
+ms.topic: concept-article
+---
+
+# Deploying Legacy AD FS in the Resource Partner Organization
+
+The resource partner organization in Active Directory Federation Services \(AD FS\) represents the organization whose Web servers may be protected by a resource\-side federation server. The federation server at the resource partner uses the security tokens that are produced by the account partner to provide claims to the Web servers that are located in the resource partner.
+
+In scenarios in which you need to provide access to federated services or applications to many different users—when some users reside in different organizations—you can configure the resource federation server so that you can deploy multiple account partners.
+
+For more information about how to set up and configure a resource partner organization, see [Checklist: Configuring the Resource Partner Organization](../../ad-fs/deployment/Checklist--Configuring-the-Resource-Partner-Organization.md).
+
+## In this section
+
+-   [Review the Role of the Federation Server in the Resource Partner](Review-the-Role-of-the-Federation-Server-in-the-Resource-Partner.md)
+
+-   [Review the Role of the Federation Server Proxy in the Resource Partner](Review-the-Role-of-the-Federation-Server-Proxy-in-the-Resource-Partner.md)
+
+-   [Determine Your Federated Application Strategy in the Resource Partner](Determine-Your-Federated-Application-Strategy-in-the-Resource-Partner.md)
+
+
+## See Also
+[AD FS Design Guide in Windows Server 2012](AD-FS-Design-Guide-in-Windows-Server-2012.md)

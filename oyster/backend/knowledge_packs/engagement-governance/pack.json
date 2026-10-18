@@ -1,0 +1,13 @@
+{
+  "id": "engagement-governance",
+  "version": "1.0.0",
+  "title": "Engagement Planning & Governance",
+  "domain": "governance",
+  "description": "Authorization, rules of engagement, scope, evidence handling, cleanup, retesting, and reporting for authorized security assessments.",
+  "tags": ["roe", "authorization", "scope", "reporting", "nist"],
+  "authority": "NIST / PTES / CISA",
+  "docs": [
+    {"file": "rules-of-engagement.md", "source_title": "NIST SP 800-115 — Technical Guide to Information Security Testing", "source_url": "https://csrc.nist.gov/pubs/sp/800/115/final"},
+    {"file": "reporting-and-cleanup.md", "source_title": "PTES — Reporting", "source_url": "http://www.pentest-standard.org/index.php/Reporting"}
+  ]
+}

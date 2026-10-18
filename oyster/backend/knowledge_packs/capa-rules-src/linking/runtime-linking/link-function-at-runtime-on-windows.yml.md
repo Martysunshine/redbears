@@ -1,0 +1,25 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/linking/runtime-linking/link-function-at-runtime-on-windows.yml -->
+rule:
+  meta:
+    name: link function at runtime on Windows
+    namespace: linking/runtime-linking
+    authors:
+      - moritz.raabe@mandiant.com
+      - mehunhoff@google.com
+    scopes:
+      static: instruction
+      dynamic: call
+    att&ck:
+      - Execution::Shared Modules [T1129]
+    examples:
+      - 9324D1A8AE37A36AE560C37448C9705A:0x404130
+      - Practical Malware Analysis Lab 01-04.exe_:0x401350
+  features:
+    - and:
+      - os: windows
+      - or:
+        - api: kernel32.GetProcAddress
+        - api: ntdll.LdrGetProcedureAddress
+        - api: ntdll.LdrGetProcedureAddressEx
+        - api: ntdll.LdrGetProcedureAddressForCaller
+        - api: MmGetSystemRoutineAddress

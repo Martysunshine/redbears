@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_access/proc_access_win_uac_bypass_wow64_logger.yml -->
+title: UAC Bypass Using WOW64 Logger DLL Hijack
+id: 4f6c43e2-f989-4ea5-bcd8-843b49a0317c
+status: test
+description: Detects the pattern of UAC Bypass using a WoW64 logger DLL hijack (UACMe 30)
+references:
+    - https://github.com/hfiref0x/UACME
+author: Christian Burkard (Nextron Systems)
+date: 2021-08-23
+modified: 2022-10-09
+tags:
+    - attack.privilege-escalation
+    - attack.t1548.002
+logsource:
+    category: process_access
+    product: windows
+detection:
+    selection:
+        SourceImage|contains: ':\Windows\SysWOW64\'
+        GrantedAccess: '0x1fffff'
+        CallTrace|startswith: 'UNKNOWN(0000000000000000)|UNKNOWN(0000000000000000)|'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

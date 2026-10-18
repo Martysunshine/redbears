@@ -1,0 +1,402 @@
+{
+  "id": "openssf-best-practices-src",
+  "name": "openssf-best-practices-src",
+  "version": "2a9478f85b9c",
+  "title": "OpenSSF Best Practices Badge documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://www.bestpractices.dev/ at 2a9478f85b9c. 61 documents.",
+  "authority": "OpenSSF",
+  "publisher": "Open Source Security Foundation",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "OpenSSF Best Practices Badge documentation, \u00a9 OpenSSF, MIT / CC-BY-3.0+.",
+  "tags": [
+    "openssf",
+    "best-practices",
+    "floss",
+    "supply-chain"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "openssf-best-practices-src",
+  "upstream_commit": "2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16",
+  "source_urls": [
+    "https://www.bestpractices.dev/",
+    "https://github.com/ossf/best-practices-badge"
+  ],
+  "docs": [
+    {
+      "file": "docs/INSTALL.md",
+      "source_title": "Installation and quick start instructions",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/INSTALL.md",
+      "section": "Installation and quick start instructions"
+    },
+    {
+      "file": "docs/TSC.md",
+      "source_title": "Technical Steering Committee (TSC) Members",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/TSC.md",
+      "section": "Technical Steering Committee (TSC) Members"
+    },
+    {
+      "file": "docs/admin.md",
+      "source_title": "Instructions for Web Application Administrators",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/admin.md",
+      "section": "Instructions for Web Application Administrators"
+    },
+    {
+      "file": "docs/api.md",
+      "source_title": "Application Programming Interface (API)",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/api.md",
+      "section": "Application Programming Interface (API)"
+    },
+    {
+      "file": "docs/as_test.md",
+      "source_title": "Quick demo of as=badge and as=entry",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/as_test.md",
+      "section": "Quick demo of as=badge and as=entry"
+    },
+    {
+      "file": "docs/assurance-case.md",
+      "source_title": "BadgeApp Security: Its Assurance Case",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/assurance-case.md",
+      "section": "BadgeApp Security: Its Assurance Case"
+    },
+    {
+      "file": "docs/automation-approach.md",
+      "source_title": "Automation Approach",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/automation-approach.md",
+      "section": "Automation Approach"
+    },
+    {
+      "file": "docs/automation-proposals.md",
+      "source_title": "Automation Proposals",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/automation-proposals.md",
+      "section": "Automation Proposals"
+    },
+    {
+      "file": "docs/background.md",
+      "source_title": "Background on Best Practices Criteria for Free/Libre and Open Source Software (OSS)",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/background.md",
+      "section": "Background on Best Practices Criteria for Free/Libre and Open Source Software (OSS)"
+    },
+    {
+      "file": "docs/badge-vs-scorecards.md",
+      "source_title": "Best Practices Badge vs. Scorecards",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/badge-vs-scorecards.md",
+      "section": "Best Practices Badge vs. Scorecards"
+    },
+    {
+      "file": "docs/baseline_automation.md",
+      "source_title": "Baseline Criteria Automation",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/baseline_automation.md",
+      "section": "Baseline Criteria Automation"
+    },
+    {
+      "file": "docs/baseline_details.md",
+      "source_title": "Baseline Implementation - Detailed Plan",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/baseline_details.md",
+      "section": "Baseline Implementation - Detailed Plan"
+    },
+    {
+      "file": "docs/baseline_plan.md",
+      "source_title": "Baseline plan",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/baseline_plan.md",
+      "section": "Baseline plan"
+    },
+    {
+      "file": "docs/baseline_update.md",
+      "source_title": "Updating the Baseline Criteria",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/baseline_update.md",
+      "section": "Updating the Baseline Criteria"
+    },
+    {
+      "file": "docs/bestpractices-json.md",
+      "source_title": "bestpractices.json",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/bestpractices-json.md",
+      "section": "bestpractices.json"
+    },
+    {
+      "file": "docs/build-environment-staleness.md",
+      "source_title": "Build environment staleness",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/build-environment-staleness.md",
+      "section": "Build environment staleness"
+    },
+    {
+      "file": "docs/case.md",
+      "source_title": "BadgeApp Security: Its Assurance Case",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/case.md",
+      "section": "BadgeApp Security: Its Assurance Case"
+    },
+    {
+      "file": "docs/cdn-cache-not-logged-in.md",
+      "source_title": "CDN Caching for Anonymous Traffic",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/cdn-cache-not-logged-in.md",
+      "section": "CDN Caching for Anonymous Traffic"
+    },
+    {
+      "file": "docs/criteria.md",
+      "source_title": "Best Practices Criteria for Free/Libre and Open Source Software (FLOSS)",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/criteria.md",
+      "section": "Best Practices Criteria for Free/Libre and Open Source Software (FLOSS)"
+    },
+    {
+      "file": "docs/dawnscanner.md",
+      "source_title": "Dawnscanner",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/dawnscanner.md",
+      "section": "Dawnscanner"
+    },
+    {
+      "file": "docs/design.md",
+      "source_title": "Design",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/design.md",
+      "section": "Design"
+    },
+    {
+      "file": "docs/email-spam.md",
+      "source_title": "Email Spam Investigation 2026-05-14",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/email-spam.md",
+      "section": "Email Spam Investigation 2026-05-14"
+    },
+    {
+      "file": "docs/empty-justification-string-as-null.md",
+      "source_title": "Implementing \"NULL for blank string\" optimization for justifications",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/empty-justification-string-as-null.md",
+      "section": "Implementing \"NULL for blank string\" optimization for justifications"
+    },
+    {
+      "file": "docs/enum-optimization.md",
+      "source_title": "Converting `NAME_status` Fields to Raw Integers for Memory Optimization",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/enum-optimization.md",
+      "section": "Converting `NAME_status` Fields to Raw Integers for Memory Optimization"
+    },
+    {
+      "file": "docs/gemini-2026-06-12.md",
+      "source_title": "Security Audit Report - 2026-06-12",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/gemini-2026-06-12.md",
+      "section": "Security Audit Report - 2026-06-12"
+    },
+    {
+      "file": "docs/gemini-2026-06-15.md",
+      "source_title": "Security and Privacy Audit Report - 2026-06-15",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/gemini-2026-06-15.md",
+      "section": "Security and Privacy Audit Report - 2026-06-15"
+    },
+    {
+      "file": "docs/gemini-2026-06-16.md",
+      "source_title": "Full-Project Security and Privacy Audit Report - 2026-06-16",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/gemini-2026-06-16.md",
+      "section": "Full-Project Security and Privacy Audit Report - 2026-06-16"
+    },
+    {
+      "file": "docs/gemini-security-audit-2026-05-11.md",
+      "source_title": "Security Audit Report: OpenSSF Best Practices Badge",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/gemini-security-audit-2026-05-11.md",
+      "section": "Security Audit Report: OpenSSF Best Practices Badge"
+    },
+    {
+      "file": "docs/gemini-security-audit-2026-05-14.md",
+      "source_title": "Gemini Security Audit Report - 2026-05-14",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/gemini-security-audit-2026-05-14.md",
+      "section": "Gemini Security Audit Report - 2026-05-14"
+    },
+    {
+      "file": "docs/github-org-move.md",
+      "source_title": "Plan: Moving GitHub Organization from coreinfrastructure to ossf",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/github-org-move.md",
+      "section": "Plan: Moving GitHub Organization from coreinfrastructure to ossf"
+    },
+    {
+      "file": "docs/governance.md",
+      "source_title": "Governance",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/governance.md",
+      "section": "Governance"
+    },
+    {
+      "file": "docs/hackerbot-claw-analysis.md",
+      "source_title": "Security Review: hackerbot-claw Attack Campaign",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/hackerbot-claw-analysis.md",
+      "section": "Security Review: hackerbot-claw Attack Campaign"
+    },
+    {
+      "file": "docs/httparty-analysis.md",
+      "source_title": "HTTParty SSRF Vulnerability Security Analysis Report",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/httparty-analysis.md",
+      "section": "HTTParty SSRF Vulnerability Security Analysis Report"
+    },
+    {
+      "file": "docs/implementation.md",
+      "source_title": "Implementation",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/implementation.md",
+      "section": "Implementation"
+    },
+    {
+      "file": "docs/improve-scorecard.md",
+      "source_title": "Improving our OpenSSF Scorecard results",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/improve-scorecard.md",
+      "section": "Improving our OpenSSF Scorecard results"
+    },
+    {
+      "file": "docs/machine-translations.md",
+      "source_title": "Machine Translations",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/machine-translations.md",
+      "section": "Machine Translations"
+    },
+    {
+      "file": "docs/memory-growth.md",
+      "source_title": "Memory Growth Investigation Tools",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/memory-growth.md",
+      "section": "Memory Growth Investigation Tools"
+    },
+    {
+      "file": "docs/mermaid-extended-test.md",
+      "source_title": "Mermaid v11.3.0+ Feature Support Test",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/mermaid-extended-test.md",
+      "section": "Mermaid v11.3.0+ Feature Support Test"
+    },
+    {
+      "file": "docs/mimalloc.md",
+      "source_title": "Mimalloc",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/mimalloc.md",
+      "section": "Mimalloc"
+    },
+    {
+      "file": "docs/nyc-2016.md",
+      "source_title": "NYC 2016 Brainstorming session",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/nyc-2016.md",
+      "section": "NYC 2016 Brainstorming session"
+    },
+    {
+      "file": "docs/omg-sacm-comment.md",
+      "source_title": "Issue: ArgumentReasoning Connection to AssertedInference is Underspecified in SACM v2.3",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/omg-sacm-comment.md",
+      "section": "Issue: ArgumentReasoning Connection to AssertedInference is Underspecified in SACM v2.3"
+    },
+    {
+      "file": "docs/optimize-2025-12.md",
+      "source_title": "Optimizations of 2025-12",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/optimize-2025-12.md",
+      "section": "Optimizations of 2025-12"
+    },
+    {
+      "file": "docs/other.md",
+      "source_title": "Other criteria for higher-level badges",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/other.md",
+      "section": "Other criteria for higher-level badges"
+    },
+    {
+      "file": "docs/pagy-43.md",
+      "source_title": "Upgrading Pagy 9 to Pagy 43",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/pagy-43.md",
+      "section": "Upgrading Pagy 9 to Pagy 43"
+    },
+    {
+      "file": "docs/report-2026-06-03.md",
+      "source_title": "Security Audit Report - 2026-06-03",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/report-2026-06-03.md",
+      "section": "Security Audit Report - 2026-06-03"
+    },
+    {
+      "file": "docs/requirements.md",
+      "source_title": "Requirements",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/requirements.md",
+      "section": "Requirements"
+    },
+    {
+      "file": "docs/roadmap.md",
+      "source_title": "Roadmap",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/roadmap.md",
+      "section": "Roadmap"
+    },
+    {
+      "file": "docs/routes-consolidation-plan.md",
+      "source_title": "Route Consolidation Plan",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/routes-consolidation-plan.md",
+      "section": "Route Consolidation Plan"
+    },
+    {
+      "file": "docs/sacm-mermaid.md",
+      "source_title": "SACM in mermaid",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/sacm-mermaid.md",
+      "section": "SACM in mermaid"
+    },
+    {
+      "file": "docs/sbom.md",
+      "source_title": "Getting a Software Bill of Materials (SBOM)",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/sbom.md",
+      "section": "Getting a Software Bill of Materials (SBOM)"
+    },
+    {
+      "file": "docs/scorecard-map.md",
+      "source_title": "Scorecard Map to Best Practices Badge",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/scorecard-map.md",
+      "section": "Scorecard Map to Best Practices Badge"
+    },
+    {
+      "file": "docs/secrets-policy.md",
+      "source_title": "Secrets and Credentials Management Policy and Processes",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/secrets-policy.md",
+      "section": "Secrets and Credentials Management Policy and Processes"
+    },
+    {
+      "file": "docs/test-coverage-criteria.md",
+      "source_title": "Test coverage",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/test-coverage-criteria.md",
+      "section": "Test coverage"
+    },
+    {
+      "file": "docs/test-markdown.md",
+      "source_title": "Markdown test",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/test-markdown.md",
+      "section": "Markdown test"
+    },
+    {
+      "file": "docs/testing.md",
+      "source_title": "Testing",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/testing.md",
+      "section": "Testing"
+    },
+    {
+      "file": "docs/topological_sort.md",
+      "source_title": "Topological Sort Analysis",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/topological_sort.md",
+      "section": "Topological Sort Analysis"
+    },
+    {
+      "file": "docs/translations.md",
+      "source_title": "Translations",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/translations.md",
+      "section": "Translations"
+    },
+    {
+      "file": "docs/translators.md",
+      "source_title": "Information for Translators",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/translators.md",
+      "section": "Information for Translators"
+    },
+    {
+      "file": "docs/unsubscribe-security.md",
+      "source_title": "Unsubscribe Feature Security Documentation",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/unsubscribe-security.md",
+      "section": "Unsubscribe Feature Security Documentation"
+    },
+    {
+      "file": "docs/vetting.md",
+      "source_title": "Vetting of Best Practices badges",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/vetting.md",
+      "section": "Vetting of Best Practices badges"
+    },
+    {
+      "file": "docs/warning_failures.md",
+      "source_title": "Badge warning and loss notification failures",
+      "source_url": "https://github.com/ossf/best-practices-badge/blob/2a9478f85b9cbcc404ac15cb1d0ccd75ed43cc16/docs/warning_failures.md",
+      "section": "Badge warning and loss notification failures"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/encryption/dpapi/encrypt-data-using-dpapi.yml -->
+rule:
+  meta:
+    name: encrypt data using DPAPI
+    namespace: data-manipulation/encryption/dpapi
+    authors:
+      - william.ballenthin@mandiant.com
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+    mbc:
+      - Cryptography::Encrypt Data [C0027]
+    examples:
+      - 6cc148363200798a12091b97a17181a1:0x1400CE9A0
+  features:
+    - or:
+      - api: CryptProtectMemory
+      - api: CryptUnprotectMemory
+      - api: crypt32.CryptProtectData
+      - api: crypt32.CryptUnprotectData
+      - api: System.Security.Cryptography.ProtectedData::Unprotect
+      - api: System.Security.Cryptography.ProtectedData::Protect
+      - api: SystemFunction040
+      - api: SystemFunction041
+      - basic block:
+        - and:
+          - match: link function at runtime on Windows
+          - or:
+            # RtlEncryptMemory is available as SystemFunction040 export in Advapi32.dll
+            # CryptProtectMemory is a wrapper function for SystemFunction040
+            - string: "SystemFunction040"
+            # RtlDecryptMemory is available as SystemFunction041 export in Advapi32.dll
+            # CryptUnprotectMemory is a wrapper function for SystemFunction041
+            - string: "SystemFunction041"

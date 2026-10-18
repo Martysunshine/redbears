@@ -1,0 +1,314 @@
+{
+  "id": "owasp-api-security-src",
+  "name": "owasp-api-security-src",
+  "version": "e85ddfa5a936",
+  "title": "OWASP API Security Top 10 (upstream)",
+  "domain": "offensive",
+  "security_domain": "api-security",
+  "description": "Imported from https://owasp.org/API-Security/ at e85ddfa5a936. 46 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP API Security Project, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "api",
+    "top10"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "web",
+    "api"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track OWASP API Security Top 10 editions.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "owasp-api-security-src",
+  "upstream_commit": "e85ddfa5a936d4656840ac250c039c7057e66b0d",
+  "source_urls": [
+    "https://owasp.org/API-Security/",
+    "https://github.com/OWASP/API-Security"
+  ],
+  "docs": [
+    {
+      "file": "editions/2019/en/0x00-header.md",
+      "source_title": "OWASP API Security Top 10 2019",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x00-header.md",
+      "section": "OWASP API Security Top 10 2019"
+    },
+    {
+      "file": "editions/2019/en/0x00-notice.md",
+      "source_title": "Notice",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x00-notice.md",
+      "section": "Notice"
+    },
+    {
+      "file": "editions/2019/en/0x00-toc.md",
+      "source_title": "Table of Contents",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x00-toc.md",
+      "section": "Table of Contents"
+    },
+    {
+      "file": "editions/2019/en/0x01-about-owasp.md",
+      "source_title": "About OWASP",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x01-about-owasp.md",
+      "section": "About OWASP"
+    },
+    {
+      "file": "editions/2019/en/0x02-foreword.md",
+      "source_title": "Foreword",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x02-foreword.md",
+      "section": "Foreword"
+    },
+    {
+      "file": "editions/2019/en/0x03-introduction.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x03-introduction.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "editions/2019/en/0x04-release-notes.md",
+      "source_title": "Release Notes",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x04-release-notes.md",
+      "section": "Release Notes"
+    },
+    {
+      "file": "editions/2019/en/0x10-api-security-risks.md",
+      "source_title": "API Security Risks",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x10-api-security-risks.md",
+      "section": "API Security Risks"
+    },
+    {
+      "file": "editions/2019/en/0x11-t10.md",
+      "source_title": "OWASP Top 10 API Security Risks \u2013 2019",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0x11-t10.md",
+      "section": "OWASP Top 10 API Security Risks \u2013 2019"
+    },
+    {
+      "file": "editions/2019/en/0xa1-broken-object-level-authorization.md",
+      "source_title": "API1:2019 Broken Object Level Authorization",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa1-broken-object-level-authorization.md",
+      "section": "API1:2019 Broken Object Level Authorization"
+    },
+    {
+      "file": "editions/2019/en/0xa2-broken-user-authentication.md",
+      "source_title": "API2:2019 Broken User Authentication",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa2-broken-user-authentication.md",
+      "section": "API2:2019 Broken User Authentication"
+    },
+    {
+      "file": "editions/2019/en/0xa3-excessive-data-exposure.md",
+      "source_title": "API3:2019 Excessive Data Exposure",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa3-excessive-data-exposure.md",
+      "section": "API3:2019 Excessive Data Exposure"
+    },
+    {
+      "file": "editions/2019/en/0xa4-lack-of-resources-and-rate-limiting.md",
+      "source_title": "API4:2019 Lack of Resources & Rate Limiting",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa4-lack-of-resources-and-rate-limiting.md",
+      "section": "API4:2019 Lack of Resources & Rate Limiting"
+    },
+    {
+      "file": "editions/2019/en/0xa5-broken-function-level-authorization.md",
+      "source_title": "API5:2019 Broken Function Level Authorization",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa5-broken-function-level-authorization.md",
+      "section": "API5:2019 Broken Function Level Authorization"
+    },
+    {
+      "file": "editions/2019/en/0xa6-mass-assignment.md",
+      "source_title": "API6:2019 - Mass Assignment",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa6-mass-assignment.md",
+      "section": "API6:2019 - Mass Assignment"
+    },
+    {
+      "file": "editions/2019/en/0xa7-security-misconfiguration.md",
+      "source_title": "API7:2019 Security Misconfiguration",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa7-security-misconfiguration.md",
+      "section": "API7:2019 Security Misconfiguration"
+    },
+    {
+      "file": "editions/2019/en/0xa8-injection.md",
+      "source_title": "API8:2019 Injection",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa8-injection.md",
+      "section": "API8:2019 Injection"
+    },
+    {
+      "file": "editions/2019/en/0xa9-improper-assets-management.md",
+      "source_title": "API9:2019 Improper Assets Management",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xa9-improper-assets-management.md",
+      "section": "API9:2019 Improper Assets Management"
+    },
+    {
+      "file": "editions/2019/en/0xaa-insufficient-logging-monitoring.md",
+      "source_title": "API10:2019 Insufficient Logging & Monitoring",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xaa-insufficient-logging-monitoring.md",
+      "section": "API10:2019 Insufficient Logging & Monitoring"
+    },
+    {
+      "file": "editions/2019/en/0xb0-next-devs.md",
+      "source_title": "What's Next For Developers",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xb0-next-devs.md",
+      "section": "What's Next For Developers"
+    },
+    {
+      "file": "editions/2019/en/0xb1-next-devsecops.md",
+      "source_title": "What's Next For DevSecOps",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xb1-next-devsecops.md",
+      "section": "What's Next For DevSecOps"
+    },
+    {
+      "file": "editions/2019/en/0xd0-about-data.md",
+      "source_title": "Methodology and Data",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xd0-about-data.md",
+      "section": "Methodology and Data"
+    },
+    {
+      "file": "editions/2019/en/0xd1-acknowledgments.md",
+      "source_title": "Acknowledgments",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2019/en/0xd1-acknowledgments.md",
+      "section": "Acknowledgments"
+    },
+    {
+      "file": "editions/2023/en/0x00-header.md",
+      "source_title": "0x00-header.md",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x00-header.md",
+      "section": "0x00-header.md"
+    },
+    {
+      "file": "editions/2023/en/0x00-notice.md",
+      "source_title": "Notice",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x00-notice.md",
+      "section": "Notice"
+    },
+    {
+      "file": "editions/2023/en/0x00-toc.md",
+      "source_title": "Table of Contents",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x00-toc.md",
+      "section": "Table of Contents"
+    },
+    {
+      "file": "editions/2023/en/0x01-about-owasp.md",
+      "source_title": "About OWASP",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x01-about-owasp.md",
+      "section": "About OWASP"
+    },
+    {
+      "file": "editions/2023/en/0x02-foreword.md",
+      "source_title": "Foreword",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x02-foreword.md",
+      "section": "Foreword"
+    },
+    {
+      "file": "editions/2023/en/0x03-introduction.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x03-introduction.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "editions/2023/en/0x04-release-notes.md",
+      "source_title": "Release Notes",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x04-release-notes.md",
+      "section": "Release Notes"
+    },
+    {
+      "file": "editions/2023/en/0x10-api-security-risks.md",
+      "source_title": "API Security Risks",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x10-api-security-risks.md",
+      "section": "API Security Risks"
+    },
+    {
+      "file": "editions/2023/en/0x11-t10.md",
+      "source_title": "OWASP Top 10 API Security Risks \u2013 2023",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0x11-t10.md",
+      "section": "OWASP Top 10 API Security Risks \u2013 2023"
+    },
+    {
+      "file": "editions/2023/en/0xa1-broken-object-level-authorization.md",
+      "source_title": "API1:2023 Broken Object Level Authorization",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa1-broken-object-level-authorization.md",
+      "section": "API1:2023 Broken Object Level Authorization"
+    },
+    {
+      "file": "editions/2023/en/0xa2-broken-authentication.md",
+      "source_title": "API2:2023 Broken Authentication",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa2-broken-authentication.md",
+      "section": "API2:2023 Broken Authentication"
+    },
+    {
+      "file": "editions/2023/en/0xa3-broken-object-property-level-authorization.md",
+      "source_title": "API3:2023 Broken Object Property Level Authorization",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa3-broken-object-property-level-authorization.md",
+      "section": "API3:2023 Broken Object Property Level Authorization"
+    },
+    {
+      "file": "editions/2023/en/0xa4-unrestricted-resource-consumption.md",
+      "source_title": "API4:2023 Unrestricted Resource Consumption",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa4-unrestricted-resource-consumption.md",
+      "section": "API4:2023 Unrestricted Resource Consumption"
+    },
+    {
+      "file": "editions/2023/en/0xa5-broken-function-level-authorization.md",
+      "source_title": "API5:2023 Broken Function Level Authorization",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa5-broken-function-level-authorization.md",
+      "section": "API5:2023 Broken Function Level Authorization"
+    },
+    {
+      "file": "editions/2023/en/0xa6-unrestricted-access-to-sensitive-business-flows.md",
+      "source_title": "API6:2023 Unrestricted Access to Sensitive Business Flows",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa6-unrestricted-access-to-sensitive-business-flows.md",
+      "section": "API6:2023 Unrestricted Access to Sensitive Business Flows"
+    },
+    {
+      "file": "editions/2023/en/0xa7-server-side-request-forgery.md",
+      "source_title": "API7:2023 Server Side Request Forgery",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa7-server-side-request-forgery.md",
+      "section": "API7:2023 Server Side Request Forgery"
+    },
+    {
+      "file": "editions/2023/en/0xa8-security-misconfiguration.md",
+      "source_title": "API8:2023 Security Misconfiguration",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa8-security-misconfiguration.md",
+      "section": "API8:2023 Security Misconfiguration"
+    },
+    {
+      "file": "editions/2023/en/0xa9-improper-inventory-management.md",
+      "source_title": "API9:2023 Improper Inventory Management",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xa9-improper-inventory-management.md",
+      "section": "API9:2023 Improper Inventory Management"
+    },
+    {
+      "file": "editions/2023/en/0xaa-unsafe-consumption-of-apis.md",
+      "source_title": "API10:2023 Unsafe Consumption of APIs",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xaa-unsafe-consumption-of-apis.md",
+      "section": "API10:2023 Unsafe Consumption of APIs"
+    },
+    {
+      "file": "editions/2023/en/0xb0-next-devs.md",
+      "source_title": "What's Next For Developers",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xb0-next-devs.md",
+      "section": "What's Next For Developers"
+    },
+    {
+      "file": "editions/2023/en/0xb1-next-devsecops.md",
+      "source_title": "What's Next For DevSecOps",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xb1-next-devsecops.md",
+      "section": "What's Next For DevSecOps"
+    },
+    {
+      "file": "editions/2023/en/0xd0-about-data.md",
+      "source_title": "Methodology and Data",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xd0-about-data.md",
+      "section": "Methodology and Data"
+    },
+    {
+      "file": "editions/2023/en/0xd1-acknowledgments.md",
+      "source_title": "Acknowledgments",
+      "source_url": "https://github.com/OWASP/API-Security/blob/e85ddfa5a936d4656840ac250c039c7057e66b0d/editions/2023/en/0xd1-acknowledgments.md",
+      "section": "Acknowledgments"
+    }
+  ]
+}

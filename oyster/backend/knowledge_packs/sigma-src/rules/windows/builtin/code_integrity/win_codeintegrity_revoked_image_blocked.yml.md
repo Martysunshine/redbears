@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/code_integrity/win_codeintegrity_revoked_image_blocked.yml -->
+title: CodeIntegrity - Blocked Image Load With Revoked Certificate
+id: 6f156c48-3894-4952-baf0-16193e9067d2
+status: test
+description: Detects blocked image load events with revoked certificates by code integrity.
+references:
+    - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/operations/event-id-explanations
+    - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/operations/event-tag-explanations
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-06-06
+tags:
+    - attack.privilege-escalation
+logsource:
+    product: windows
+    service: codeintegrity-operational
+detection:
+    selection:
+        EventID: 3036 # Windows is unable to verify the integrity of the file %2 because the signing certificate has been revoked.  Check with the publisher to see if a new signed version of the kernel module is available.
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

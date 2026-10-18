@@ -1,0 +1,35 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/deployment/Configuring-Claim-Rules.md -->
+---
+description: "Learn more about: Configuring Claim Rules"
+title: Configuring Claim Rules
+ms.date: 02/13/2024
+ms.topic: checklist
+---
+
+# Configuring Claim Rules
+
+In a claims\-based identity model, the function of Active Directory Federation Services \(AD FS\) as federation services is to issue a token that contains a set of claims. Claims rules govern the decision in regard of claims that AD FS issues. Claim rules and all server configuration data are stored in the AD FS configuration database.
+
+AD FS makes issuance decisions that are based on identity information that is provided to it in the form of claims and other contextual information. At a high level, AD FS operates as a rules processor by taking one set of claims as input, performs a number of transformations, and then returns a different set of claims as output.
+
+-   [Create a Rule to Pass Through or Filter an Incoming Claim](../../ad-fs/operations/Create-a-Rule-to-Pass-Through-or-Filter-an-Incoming-Claim.md)
+
+-   [Create a Rule to Permit All Users](../../ad-fs/operations/Create-a-Rule-to-Permit-All-Users.md)
+
+-   [Create a Rule to Send an AD FS 1.x Compatible Claim](../../ad-fs/operations/Create-a-Rule-to-Send-an-AD-FS-1x-Compatible-Claim.md)
+
+-   [Create a Rule to Permit or Deny Users Based on an Incoming Claim](../../ad-fs/operations/Create-a-Rule-to-Permit-or-Deny-Users-Based-on-an-Incoming-Claim.md)
+
+-   [Create a Rule to Send LDAP Attributes as Claims](../../ad-fs/operations/Create-a-Rule-to-Send-LDAP-Attributes-as-Claims.md)
+
+-   [Create a Rule to Send Group Membership as a Claim](../../ad-fs/operations/Create-a-Rule-to-Send-Group-Membership-as-a-Claim.md)
+
+-   [Create a Rule to Transform an Incoming Claim](../../ad-fs/operations/Create-a-Rule-to-Transform-an-Incoming-Claim.md)
+
+-   [Create a Rule to Send an Authentication Method Claim](../../ad-fs/operations/Create-a-Rule-to-Send-an-Authentication-Method-Claim.md)
+
+-   [Create a Rule to Send Claims Using a Custom Rule](../../ad-fs/operations/Create-a-Rule-to-Send-Claims-Using-a-Custom-Rule.md)
+
+## Additional references
+
+[AD FS Operations](../ad-fs-operations.md)

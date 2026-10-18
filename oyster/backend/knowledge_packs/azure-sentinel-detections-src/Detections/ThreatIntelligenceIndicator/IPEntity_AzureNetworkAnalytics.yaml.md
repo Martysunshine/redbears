@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureNetworkAnalytics.yaml -->
+id: a5bc4f1d-a51a-4882-bb1b-a0fd11fb156a
+name: TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)
+description: |
+    'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/IPEntity_AzureNetworkAnalytics.yaml'
+version: 1.0.1

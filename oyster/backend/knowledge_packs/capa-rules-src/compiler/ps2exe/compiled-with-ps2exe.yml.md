@@ -1,0 +1,34 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/compiler/ps2exe/compiled-with-ps2exe.yml -->
+rule:
+  meta:
+    name: compiled with ps2exe
+    namespace: compiler/ps2exe
+    authors:
+      - "@_re_fox"
+      - jakub.jozwiak@mandiant.com
+      - "@shreethaar"
+    scopes:
+      static: file
+      dynamic: file
+    references:
+      - https://github.com/ikarstein/ps2exe
+      - https://github.com/MScholtes/PS2EXE
+    examples:
+      - 8775ed26068788279726e08ff9665aab
+      - 805f79e57e4ce24b95a04541e4ea55dd2ce9ba314ab2c43491328204bc25d017
+      - 9df11356c5ac61d2aa7b5425e6322fc016b0ed5790dacb201396500b3eee03f7
+  features:
+    - and:
+      - match: compiled to the .NET platform
+      - or:
+        - and:
+          - string: "PS2EXEApp"
+          - string: "PS2EXE"
+          - string: "PS2EXE_Host"
+        - and:
+          - string: "If you spzzcify thzz -zzxtract option you nzzed to add a filzz for zzxtraction in this way"
+          - string: "   -zzxtract:\"<filzznamzz>\""
+        - and:
+          - string: "ModuleNameSpace"
+          - string: "MainAppInterface"
+          - string: "ConsoleColorProxy"

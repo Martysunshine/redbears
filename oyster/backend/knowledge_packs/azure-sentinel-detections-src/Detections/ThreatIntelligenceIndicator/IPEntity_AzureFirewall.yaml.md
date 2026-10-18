@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureFirewall.yaml -->
+id: 299e2855-1197-47ef-9684-e65037b7d200
+name: TI map IP entity to AzureFirewall
+description: |
+    'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/IPEntity_AzureFirewall.yaml'
+version: 1.0.1

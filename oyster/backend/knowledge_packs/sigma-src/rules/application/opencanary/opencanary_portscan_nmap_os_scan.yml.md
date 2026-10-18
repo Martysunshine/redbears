@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/application/opencanary/opencanary_portscan_nmap_os_scan.yml -->
+title: OpenCanary - NMAP OS Scan
+id: e8a677fd-248c-4eab-94df-de2f6f645884
+status: experimental
+description: Detects instances where an OpenCanary node has been targeted by a NMAP OS Scan
+references:
+    - https://opencanary.readthedocs.io/en/latest/starting/configuration.html#services-configuration
+    - https://github.com/thinkst/opencanary/blob/a0896adfcaf0328cfd5829fe10d2878c7445138e/opencanary/logger.py#L52
+author: Marco Pedrinazzi (@pedrinazziM)
+date: 2026-01-06
+tags:
+    - attack.discovery
+    - attack.t1046
+logsource:
+    category: application
+    product: opencanary
+detection:
+    selection:
+        logtype: 5002
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

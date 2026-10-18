@@ -1,0 +1,121 @@
+{
+  "id": "ocsf-docs-src",
+  "name": "ocsf-docs-src",
+  "version": "d87421b62ce9",
+  "title": "Open Cybersecurity Schema Framework (OCSF) documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://schema.ocsf.io/ at d87421b62ce9. 14 documents.",
+  "authority": "OCSF",
+  "publisher": "OCSF Community (AWS/Splunk/others)",
+  "trust_level": "official",
+  "licence": "Apache-2.0",
+  "attribution": "Open Cybersecurity Schema Framework documentation, \u00a9 OCSF contributors, Apache License 2.0.",
+  "tags": [
+    "ocsf",
+    "schema",
+    "normalization",
+    "detection",
+    "logging"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "ocsf-docs-src",
+  "upstream_commit": "d87421b62ce9d70ebf3d837b93408c65921e1595",
+  "source_urls": [
+    "https://schema.ocsf.io/",
+    "https://github.com/ocsf/ocsf-docs"
+  ],
+  "docs": [
+    {
+      "file": "Contributors.md",
+      "source_title": "Contributors",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/Contributors.md",
+      "section": "Contributors"
+    },
+    {
+      "file": "README.md",
+      "source_title": "OCSF Documentation",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/README.md",
+      "section": "OCSF Documentation"
+    },
+    {
+      "file": "archive/README.md",
+      "source_title": "OCSF Archive",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/archive/README.md",
+      "section": "OCSF Archive"
+    },
+    {
+      "file": "articles/OCSF-Storage-Strategies.md",
+      "source_title": "OCSF \u2013 Iceberg Storage Strategies",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/OCSF-Storage-Strategies.md",
+      "section": "OCSF \u2013 Iceberg Storage Strategies"
+    },
+    {
+      "file": "articles/README.md",
+      "source_title": "OCSF Technical Articles",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/README.md",
+      "section": "OCSF Technical Articles"
+    },
+    {
+      "file": "articles/defining-and-using-observables.md",
+      "source_title": "Defining and Using Observables",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/defining-and-using-observables.md",
+      "section": "Defining and Using Observables"
+    },
+    {
+      "file": "articles/modeling-alerts.md",
+      "source_title": "How to Model Alerts with OCSF",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/modeling-alerts.md",
+      "section": "How to Model Alerts with OCSF"
+    },
+    {
+      "file": "articles/patching-core-using-extensions.md",
+      "source_title": "Patching the Core Schema With Extensions",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/patching-core-using-extensions.md",
+      "section": "Patching the Core Schema With Extensions"
+    },
+    {
+      "file": "articles/profiles-are-powerful.md",
+      "source_title": "Profiles are Powerful",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/profiles-are-powerful.md",
+      "section": "Profiles are Powerful"
+    },
+    {
+      "file": "articles/representing-process-parentage.md",
+      "source_title": "Representing Process Parentage",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/articles/representing-process-parentage.md",
+      "section": "Representing Process Parentage"
+    },
+    {
+      "file": "faqs/README.md",
+      "source_title": "Frequently Asked Questions",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/faqs/README.md",
+      "section": "Frequently Asked Questions"
+    },
+    {
+      "file": "faqs/schema-faq.md",
+      "source_title": "Schema FAQ",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/faqs/schema-faq.md",
+      "section": "Schema FAQ"
+    },
+    {
+      "file": "overview/README.md",
+      "source_title": "OCSF Overview",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/overview/README.md",
+      "section": "OCSF Overview"
+    },
+    {
+      "file": "overview/understanding-ocsf.md",
+      "source_title": "Understanding the Open Cybersecurity Schema Framework",
+      "source_url": "https://github.com/ocsf/ocsf-docs/blob/d87421b62ce9d70ebf3d837b93408c65921e1595/overview/understanding-ocsf.md",
+      "section": "Understanding the Open Cybersecurity Schema Framework"
+    }
+  ]
+}

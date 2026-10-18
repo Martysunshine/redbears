@@ -1,0 +1,40 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_windows_firewall_profile_disabled.yml -->
+title: Windows Firewall Profile Disabled
+id: 488b44e7-3781-4a71-888d-c95abfacf44d
+related:
+    - id: 12f6b752-042d-483e-bf9c-915a6d06ad75
+      type: similar
+status: test
+description: Detects when a user disables the Windows Firewall via a Profile to help evade defense.
+references:
+    - https://learn.microsoft.com/en-us/powershell/module/netsecurity/set-netfirewallprofile?view=windowsserver2022-ps
+    - https://www.tutorialspoint.com/how-to-get-windows-firewall-profile-settings-using-powershell
+    - https://web.archive.org/web/20230929023836/http://powershellhelp.space/commands/set-netfirewallrule-psv5.php
+    - http://woshub.com/manage-windows-firewall-powershell/
+    - https://www.elastic.co/guide/en/security/current/windows-firewall-disabled-via-powershell.html
+author: Austin Songer @austinsonger
+date: 2021-10-12
+modified: 2022-12-30
+tags:
+    - attack.defense-impairment
+    - attack.t1686.003
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection_args:
+        ScriptBlockText|contains|all:
+            - 'Set-NetFirewallProfile '
+            - ' -Enabled '
+            - ' False'
+    selection_opt:
+        ScriptBlockText|contains:
+            - ' -All '
+            - 'Public'
+            - 'Domain'
+            - 'Private'
+    condition: all of selection*
+falsepositives:
+    - Unknown
+level: medium

@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/process_creation/proc_creation_lnx_capsh_shell_invocation.yml -->
+title: Capsh Shell Invocation - Linux
+id: db1ac3be-f606-4e3a-89e0-9607cbe6b98a
+status: test
+description: |
+    Detects the use of the "capsh" utility to invoke a shell.
+references:
+    - https://gtfobins.github.io/gtfobins/capsh/#shell
+    - https://www.elastic.co/guide/en/security/current/linux-restricted-shell-breakout-via-linux-binary-s.html
+author: Li Ling, Andy Parkidomo, Robert Rakowski, Blake Hartstein (Bloomberg L.P.)
+date: 2024-09-02
+tags:
+    - attack.execution
+    - attack.t1059
+logsource:
+    category: process_creation
+    product: linux
+detection:
+    selection:
+        Image|endswith: '/capsh'
+        CommandLine|endswith: ' --'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

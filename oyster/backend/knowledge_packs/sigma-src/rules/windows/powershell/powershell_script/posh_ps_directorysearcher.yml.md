@@ -1,0 +1,28 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_directorysearcher.yml -->
+title: DirectorySearcher Powershell Exploitation
+id: 1f6399cf-2c80-4924-ace1-6fcff3393480
+status: test
+description: Enumerates Active Directory to determine computers that are joined to the domain
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1018/T1018.md#atomic-test-15---enumerate-domain-computers-within-active-directory-using-directorysearcher
+author: frack113
+date: 2022-02-12
+tags:
+    - attack.discovery
+    - attack.t1018
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection:
+        ScriptBlockText|contains|all:
+            - 'New-Object '
+            - 'System.DirectoryServices.DirectorySearcher'
+            - '.PropertiesToLoad.Add'
+            - '.findall()'
+            - 'Properties.name'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

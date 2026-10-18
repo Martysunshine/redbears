@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/compiler/perl2exe/compiled-with-perl2exe.yml -->
+rule:
+  meta:
+    name: compiled with perl2exe
+    namespace: compiler/perl2exe
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: span of calls
+    examples:
+      - 873275ce8bf88ef66e9fa0c74b5c2a1e:0x4011C9
+  features:
+    - and:
+      - api: LoadLibrary
+      - api: FreeLibrary
+      - string: /^p2x[a-z0-9]{1,10}\.dll/i
+      - or:
+        - basic block:
+          - and:
+            - api: GetProcAddress
+            - string: "RunPerl"
+        - call:
+          - and:
+            - api: GetProcAddress
+            - string: "RunPerl"

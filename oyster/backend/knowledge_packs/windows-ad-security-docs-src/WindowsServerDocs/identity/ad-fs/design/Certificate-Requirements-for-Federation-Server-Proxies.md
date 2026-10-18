@@ -1,0 +1,27 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/design/Certificate-Requirements-for-Federation-Server-Proxies.md -->
+---
+description: "Learn more about: Certificate Requirements for Federation Server Proxies"
+title: Certificate Requirements for Federation Server Proxies
+ms.date: 04/08/2025
+ms.topic: concept-article
+---
+
+# Certificate Requirements for Federation Server Proxies
+
+Servers that are running in the federation server proxy role in Active Directory Federation Services \(AD FS\) are required to use Secure Sockets Layer \(SSL\) server authentication certificates. Federation server proxies use SSL server authentication certificates to secure Web server traffic communication with Web clients.
+
+Federation server proxies are usually exposed to computers on the Internet that are not included in your enterprise public key infrastructure \(PKI\). Therefore, use a server authentication certificate that is issued by a public \(third\-party\) certification authority \(CA\), for example, VeriSign.
+
+When you have a federation server proxy farm, all federation server proxy computers must use the same server authentication certificate. For more information, see [When to Create a Federation Server Proxy Farm](When-to-Create-a-Federation-Server-Proxy-Farm.md).
+
+It is important to verify that the subject name in the server authentication certificate matches the Federation Service name value that is specified in the AD FS Management snap\-in. To locate this value, open the snap\-in, right\-click **Service**, click **Edit Federation Service Properties**, and then find the value in **Federation Service name** text box.
+
+For general information about using SSL certificates, see Configuring Secure Sockets Layer in IIS 7.0 \([http:\/\/go.microsoft.com\/fwlink\/?LinkID\=108544](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771438(v=ws.10))\) and Configuring Server Certificates in IIS 7.0 \([http:\/\/go.microsoft.com\/fwlink\/?LinkID\=108545](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732230(v=ws.10))\).
+
+> [!NOTE]
+> Client authentication certificates are not required for AD FS federation server proxies.
+
+If any certificate that you use has certificate revocation lists \(CRLs\), the server with the configured certificate must be able to contact the server that distributes the CRLs. The type of CRL determines what ports are used.
+
+## See Also
+[AD FS Design Guide in Windows Server 2012](AD-FS-Design-Guide-in-Windows-Server-2012.md)

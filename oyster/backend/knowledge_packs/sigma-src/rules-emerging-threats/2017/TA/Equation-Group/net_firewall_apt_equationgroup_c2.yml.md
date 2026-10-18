@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2017/TA/Equation-Group/net_firewall_apt_equationgroup_c2.yml -->
+title: Equation Group C2 Communication
+id: 881834a4-6659-4773-821e-1c151789d873
+status: test
+description: Detects communication to C2 servers mentioned in the operational notes of the ShadowBroker leak of EquationGroup C2 tools
+references:
+    - https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation
+    - https://medium.com/@msuiche/the-nsa-compromised-swift-network-50ec3000b195
+author: Florian Roth (Nextron Systems)
+date: 2017-04-15
+modified: 2021-11-27
+tags:
+    - attack.exfiltration
+    - attack.command-and-control
+    - attack.g0020
+    - attack.t1041
+    - detection.emerging-threats
+logsource:
+    category: firewall
+detection:
+    selection:
+        - dst_ip:
+              - '69.42.98.86'
+              - '89.185.234.145'
+        - src_ip:
+              - '69.42.98.86'
+              - '89.185.234.145'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

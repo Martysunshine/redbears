@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/identity/okta/okta_user_session_start_via_anonymised_proxy.yml -->
+title: Okta User Session Start Via An Anonymising Proxy Service
+id: bde30855-5c53-4c18-ae90-1ff79ebc9578
+status: test
+description: Detects when an Okta user session starts where the user is behind an anonymising proxy service.
+references:
+    - https://developer.okta.com/docs/reference/api/system-log/
+    - https://sec.okta.com/articles/2023/08/cross-tenant-impersonation-prevention-and-detection
+author: kelnage
+date: 2023-09-07
+modified: 2026-04-27
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: okta
+    service: okta
+detection:
+    selection:
+        eventType: 'user.session.start'
+        securityContext.isProxy: 'true'
+    condition: selection
+falsepositives:
+    - If a user requires an anonymising proxy due to valid justifications.
+level: high

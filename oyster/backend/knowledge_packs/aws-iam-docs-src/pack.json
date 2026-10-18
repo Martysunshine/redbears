@@ -1,0 +1,2441 @@
+{
+  "id": "aws-iam-docs-src",
+  "name": "aws-iam-docs-src",
+  "version": "e2b8637a825b",
+  "title": "AWS Identity and Access Management User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/IAM/ at e2b8637a825b. 400 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "AWS Identity and Access Management User Guide, Amazon.com, Inc., MIT License.",
+  "tags": [
+    "aws",
+    "iam",
+    "cloud",
+    "identity"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'main' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-iam-docs-src",
+  "upstream_commit": "e2b8637a825b9f292bb04af61277d067dfcc5676",
+  "source_urls": [
+    "https://docs.aws.amazon.com/IAM/",
+    "https://github.com/awsdocs/iam-user-guide"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/._reference_policies_condition-keys.md",
+      "source_title": "._reference_policies_condition-keys.md",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/._reference_policies_condition-keys.md",
+      "section": "._reference_policies_condition-keys.md"
+    },
+    {
+      "file": "doc_source/IAMBestPracticesAndUseCases.md",
+      "source_title": "Security best practices and use cases in AWS Identity and Access Management<a name=\"IAMBestPracticesAndUseCases\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/IAMBestPracticesAndUseCases.md",
+      "section": "Security best practices and use cases in AWS Identity and Access Management<a name=\"IAMBestPracticesAndUseCases\"></a>"
+    },
+    {
+      "file": "doc_source/IAM_UseCases.md",
+      "source_title": "Business use cases for IAM<a name=\"IAM_UseCases\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/IAM_UseCases.md",
+      "section": "Business use cases for IAM<a name=\"IAM_UseCases\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-access-preview.md",
+      "source_title": "Preview access<a name=\"access-analyzer-access-preview\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-access-preview.md",
+      "section": "Preview access<a name=\"access-analyzer-access-preview\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-archive-rules.md",
+      "source_title": "Archive rules<a name=\"access-analyzer-archive-rules\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-archive-rules.md",
+      "section": "Archive rules<a name=\"access-analyzer-archive-rules\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-concepts.md",
+      "source_title": "How IAM Access Analyzer findings work<a name=\"access-analyzer-concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-concepts.md",
+      "section": "How IAM Access Analyzer findings work<a name=\"access-analyzer-concepts\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-eventbridge.md",
+      "source_title": "Monitoring AWS Identity and Access Management Access Analyzer with Amazon EventBridge<a name=\"access-analyzer-eventbridge\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-eventbridge.md",
+      "section": "Monitoring AWS Identity and Access Management Access Analyzer with Amazon EventBridge<a name=\"access-analyzer-eventbridge\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-findings-archive.md",
+      "source_title": "Archiving findings<a name=\"access-analyzer-findings-archive\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-findings-archive.md",
+      "section": "Archiving findings<a name=\"access-analyzer-findings-archive\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-findings-filter.md",
+      "source_title": "Filtering findings<a name=\"access-analyzer-findings-filter\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-findings-filter.md",
+      "section": "Filtering findings<a name=\"access-analyzer-findings-filter\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-findings-remediate.md",
+      "source_title": "Resolving findings<a name=\"access-analyzer-findings-remediate\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-findings-remediate.md",
+      "section": "Resolving findings<a name=\"access-analyzer-findings-remediate\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-findings-view.md",
+      "source_title": "Reviewing findings<a name=\"access-analyzer-findings-view\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-findings-view.md",
+      "section": "Reviewing findings<a name=\"access-analyzer-findings-view\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-findings.md",
+      "source_title": "Findings for public and cross\\-account access<a name=\"access-analyzer-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-findings.md",
+      "section": "Findings for public and cross\\-account access<a name=\"access-analyzer-findings\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-getting-started.md",
+      "source_title": "Getting started with AWS Identity and Access Management Access Analyzer findings<a name=\"access-analyzer-getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-getting-started.md",
+      "section": "Getting started with AWS Identity and Access Management Access Analyzer findings<a name=\"access-analyzer-getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-policy-generation-action-last-accessed-support.md",
+      "source_title": "IAM Access Analyzer policy generation and IAM action last accessed support<a name=\"access-analyzer-policy-generation-action-last-accessed-support\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-policy-generation-action-last-accessed-support.md",
+      "section": "IAM Access Analyzer policy generation and IAM action last accessed support<a name=\"access-analyzer-policy-generation-action-last-accessed-support\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-policy-generation.md",
+      "source_title": "IAM Access Analyzer policy generation<a name=\"access-analyzer-policy-generation\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-policy-generation.md",
+      "section": "IAM Access Analyzer policy generation<a name=\"access-analyzer-policy-generation\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-policy-validation.md",
+      "source_title": "IAM Access Analyzer policy validation<a name=\"access-analyzer-policy-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-policy-validation.md",
+      "section": "IAM Access Analyzer policy validation<a name=\"access-analyzer-policy-validation\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-preview-access-apis.md",
+      "source_title": "Previewing access with IAM Access Analyzer APIs<a name=\"access-analyzer-preview-access-apis\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-preview-access-apis.md",
+      "section": "Previewing access with IAM Access Analyzer APIs<a name=\"access-analyzer-preview-access-apis\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-preview-access-s3-console.md",
+      "source_title": "Previewing access in Amazon S3 console<a name=\"access-analyzer-preview-access-s3-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-preview-access-s3-console.md",
+      "section": "Previewing access in Amazon S3 console<a name=\"access-analyzer-preview-access-s3-console\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-quotas.md",
+      "source_title": "IAM Access Analyzer quotas<a name=\"access-analyzer-quotas\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-quotas.md",
+      "section": "IAM Access Analyzer quotas<a name=\"access-analyzer-quotas\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-reference-filter-keys.md",
+      "source_title": "IAM Access Analyzer filter keys<a name=\"access-analyzer-reference-filter-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-reference-filter-keys.md",
+      "section": "IAM Access Analyzer filter keys<a name=\"access-analyzer-reference-filter-keys\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-reference-policy-checks.md",
+      "source_title": "Access Analyzer policy check reference<a name=\"access-analyzer-reference-policy-checks\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-reference-policy-checks.md",
+      "section": "Access Analyzer policy check reference<a name=\"access-analyzer-reference-policy-checks\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-resources.md",
+      "source_title": "IAM Access Analyzer resource types<a name=\"access-analyzer-resources\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-resources.md",
+      "section": "IAM Access Analyzer resource types<a name=\"access-analyzer-resources\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-securityhub-integration.md",
+      "source_title": "Integration with AWS Security Hub<a name=\"access-analyzer-securityhub-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-securityhub-integration.md",
+      "section": "Integration with AWS Security Hub<a name=\"access-analyzer-securityhub-integration\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-settings.md",
+      "source_title": "Settings for IAM Access Analyzer<a name=\"access-analyzer-settings\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-settings.md",
+      "section": "Settings for IAM Access Analyzer<a name=\"access-analyzer-settings\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-using-service-linked-roles.md",
+      "source_title": "Using service\\-linked roles for AWS Identity and Access Management Access Analyzer<a name=\"access-analyzer-using-service-linked-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-using-service-linked-roles.md",
+      "section": "Using service\\-linked roles for AWS Identity and Access Management Access Analyzer<a name=\"access-analyzer-using-service-linked-roles\"></a>"
+    },
+    {
+      "file": "doc_source/access-analyzer-work-with-findings.md",
+      "source_title": "Working with findings<a name=\"access-analyzer-work-with-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access-analyzer-work-with-findings.md",
+      "section": "Working with findings<a name=\"access-analyzer-work-with-findings\"></a>"
+    },
+    {
+      "file": "doc_source/access.md",
+      "source_title": "Access management for AWS resources<a name=\"access\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access.md",
+      "section": "Access management for AWS resources<a name=\"access\"></a>"
+    },
+    {
+      "file": "doc_source/access_controlling.md",
+      "source_title": "Controlling access to AWS resources using policies<a name=\"access_controlling\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_controlling.md",
+      "section": "Controlling access to AWS resources using policies<a name=\"access_controlling\"></a>"
+    },
+    {
+      "file": "doc_source/access_iam-tags.md",
+      "source_title": "Controlling access to and for IAM users and roles using tags<a name=\"access_iam-tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_iam-tags.md",
+      "section": "Controlling access to and for IAM users and roles using tags<a name=\"access_iam-tags\"></a>"
+    },
+    {
+      "file": "doc_source/access_permissions-required.md",
+      "source_title": "Permissions required to access IAM resources<a name=\"access_permissions-required\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_permissions-required.md",
+      "section": "Permissions required to access IAM resources<a name=\"access_permissions-required\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies-choosing-managed-or-inline.md",
+      "source_title": "Choosing between managed policies and inline policies<a name=\"access_policies-choosing-managed-or-inline\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies-choosing-managed-or-inline.md",
+      "section": "Choosing between managed policies and inline policies<a name=\"access_policies-choosing-managed-or-inline\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies-convert-inline-to-managed.md",
+      "source_title": "Converting an inline policy to a managed policy<a name=\"access_policies-convert-inline-to-managed\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies-convert-inline-to-managed.md",
+      "section": "Converting an inline policy to a managed policy<a name=\"access_policies-convert-inline-to-managed\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies-getting-started-managed.md",
+      "source_title": "Getting started with managed policies<a name=\"access_policies-getting-started-managed\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies-getting-started-managed.md",
+      "section": "Getting started with managed policies<a name=\"access_policies-getting-started-managed\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies.md",
+      "source_title": "Policies and permissions in IAM<a name=\"access_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies.md",
+      "section": "Policies and permissions in IAM<a name=\"access_policies\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_access-advisor-example-scenarios.md",
+      "source_title": "Example scenarios for using last accessed information<a name=\"access_policies_access-advisor-example-scenarios\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_access-advisor-example-scenarios.md",
+      "section": "Example scenarios for using last accessed information<a name=\"access_policies_access-advisor-example-scenarios\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_access-advisor-view-data-orgs.md",
+      "source_title": "Viewing last accessed information for Organizations<a name=\"access_policies_access-advisor-view-data-orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_access-advisor-view-data-orgs.md",
+      "section": "Viewing last accessed information for Organizations<a name=\"access_policies_access-advisor-view-data-orgs\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_access-advisor-view-data.md",
+      "source_title": "Viewing last accessed information for IAM<a name=\"access_policies_access-advisor-view-data\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_access-advisor-view-data.md",
+      "section": "Viewing last accessed information for IAM<a name=\"access_policies_access-advisor-view-data\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_access-advisor.md",
+      "source_title": "Refining permissions in AWS using last accessed information<a name=\"access_policies_access-advisor\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_access-advisor.md",
+      "section": "Refining permissions in AWS using last accessed information<a name=\"access_policies_access-advisor\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_boundaries.md",
+      "source_title": "Permissions boundaries for IAM entities<a name=\"access_policies_boundaries\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_boundaries.md",
+      "section": "Permissions boundaries for IAM entities<a name=\"access_policies_boundaries\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_create-api.md",
+      "source_title": "Creating IAM policies \\(AWS API\\)<a name=\"access_policies_create-api\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_create-api.md",
+      "section": "Creating IAM policies \\(AWS API\\)<a name=\"access_policies_create-api\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_create-cli.md",
+      "source_title": "Creating IAM policies \\(AWS CLI\\)<a name=\"access_policies_create-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_create-cli.md",
+      "section": "Creating IAM policies \\(AWS CLI\\)<a name=\"access_policies_create-cli\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_create-console.md",
+      "source_title": "Creating IAM policies \\(console\\)<a name=\"access_policies_create-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_create-console.md",
+      "section": "Creating IAM policies \\(console\\)<a name=\"access_policies_create-console\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_create.md",
+      "source_title": "Creating IAM policies<a name=\"access_policies_create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_create.md",
+      "section": "Creating IAM policies<a name=\"access_policies_create\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_examples.md",
+      "source_title": "Example IAM identity\\-based policies<a name=\"access_policies_examples\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_examples.md",
+      "section": "Example IAM identity\\-based policies<a name=\"access_policies_examples\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_generate-policy.md",
+      "source_title": "Generate policies based on access activity<a name=\"access_policies_generate-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_generate-policy.md",
+      "section": "Generate policies based on access activity<a name=\"access_policies_generate-policy\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_identity-vs-resource.md",
+      "source_title": "Identity\\-based policies and resource\\-based policies<a name=\"access_policies_identity-vs-resource\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_identity-vs-resource.md",
+      "section": "Identity\\-based policies and resource\\-based policies<a name=\"access_policies_identity-vs-resource\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_job-functions.md",
+      "source_title": "AWS managed policies for job functions<a name=\"access_policies_job-functions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_job-functions.md",
+      "section": "AWS managed policies for job functions<a name=\"access_policies_job-functions\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_job-functions_create-policies.md",
+      "source_title": "Creating roles and attaching policies \\(console\\)<a name=\"access_policies_job-functions_create-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_job-functions_create-policies.md",
+      "section": "Creating roles and attaching policies \\(console\\)<a name=\"access_policies_job-functions_create-policies\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_manage-attach-detach.md",
+      "source_title": "Adding and removing IAM identity permissions<a name=\"access_policies_manage-attach-detach\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_manage-attach-detach.md",
+      "section": "Adding and removing IAM identity permissions<a name=\"access_policies_manage-attach-detach\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_manage-delete.md",
+      "source_title": "Deleting IAM policies<a name=\"access_policies_manage-delete\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_manage-delete.md",
+      "section": "Deleting IAM policies<a name=\"access_policies_manage-delete\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_manage-edit.md",
+      "source_title": "Editing IAM policies<a name=\"access_policies_manage-edit\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_manage-edit.md",
+      "section": "Editing IAM policies<a name=\"access_policies_manage-edit\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_manage.md",
+      "source_title": "Managing IAM policies<a name=\"access_policies_manage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_manage.md",
+      "section": "Managing IAM policies<a name=\"access_policies_manage\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_managed-deprecated.md",
+      "source_title": "Deprecated AWS managed policies<a name=\"access_policies_managed-deprecated\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_managed-deprecated.md",
+      "section": "Deprecated AWS managed policies<a name=\"access_policies_managed-deprecated\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_managed-versioning.md",
+      "source_title": "Versioning IAM policies<a name=\"access_policies_managed-versioning\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_managed-versioning.md",
+      "section": "Versioning IAM policies<a name=\"access_policies_managed-versioning\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_managed-vs-inline.md",
+      "source_title": "Managed policies and inline policies<a name=\"access_policies_managed-vs-inline\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_managed-vs-inline.md",
+      "section": "Managed policies and inline policies<a name=\"access_policies_managed-vs-inline\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_policy-summary-examples.md",
+      "source_title": "Examples of policy summaries<a name=\"access_policies_policy-summary-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_policy-summary-examples.md",
+      "section": "Examples of policy summaries<a name=\"access_policies_policy-summary-examples\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_policy-validator.md",
+      "source_title": "Validating IAM policies<a name=\"access_policies_policy-validator\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_policy-validator.md",
+      "section": "Validating IAM policies<a name=\"access_policies_policy-validator\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_testing-policies.md",
+      "source_title": "Testing IAM policies with the IAM policy simulator<a name=\"access_policies_testing-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_testing-policies.md",
+      "section": "Testing IAM policies with the IAM policy simulator<a name=\"access_policies_testing-policies\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_understand-action-summary.md",
+      "source_title": "Action summary \\(list of resources\\)<a name=\"access_policies_understand-action-summary\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_understand-action-summary.md",
+      "section": "Action summary \\(list of resources\\)<a name=\"access_policies_understand-action-summary\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_understand-policy-summary-access-level-summaries.md",
+      "source_title": "Understanding access level summaries within policy summaries<a name=\"access_policies_understand-policy-summary-access-level-summaries\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_understand-policy-summary-access-level-summaries.md",
+      "section": "Understanding access level summaries within policy summaries<a name=\"access_policies_understand-policy-summary-access-level-summaries\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_understand-policy-summary.md",
+      "source_title": "Policy summary \\(list of services\\)<a name=\"access_policies_understand-policy-summary\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_understand-policy-summary.md",
+      "section": "Policy summary \\(list of services\\)<a name=\"access_policies_understand-policy-summary\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_understand-service-summary.md",
+      "source_title": "Service summary \\(list of actions\\)<a name=\"access_policies_understand-service-summary\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_understand-service-summary.md",
+      "section": "Service summary \\(list of actions\\)<a name=\"access_policies_understand-service-summary\"></a>"
+    },
+    {
+      "file": "doc_source/access_policies_understand.md",
+      "source_title": "Understanding permissions granted by a policy<a name=\"access_policies_understand\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_policies_understand.md",
+      "section": "Understanding permissions granted by a policy<a name=\"access_policies_understand\"></a>"
+    },
+    {
+      "file": "doc_source/access_tags.md",
+      "source_title": "Controlling access to AWS resources using tags<a name=\"access_tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/access_tags.md",
+      "section": "Controlling access to AWS resources using tags<a name=\"access_tags\"></a>"
+    },
+    {
+      "file": "doc_source/best-practices.md",
+      "source_title": "Security best practices in IAM<a name=\"best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/best-practices.md",
+      "section": "Security best practices in IAM<a name=\"best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/cloudtrail-integration.md",
+      "source_title": "Logging IAM and AWS STS API calls with AWS CloudTrail<a name=\"cloudtrail-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/cloudtrail-integration.md",
+      "section": "Logging IAM and AWS STS API calls with AWS CloudTrail<a name=\"cloudtrail-integration\"></a>"
+    },
+    {
+      "file": "doc_source/configuration-and-vulnerability-analysis.md",
+      "source_title": "Configuration and vulnerability analysis in AWS Identity and Access Management<a name=\"configuration-and-vulnerability-analysis\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/configuration-and-vulnerability-analysis.md",
+      "section": "Configuration and vulnerability analysis in AWS Identity and Access Management<a name=\"configuration-and-vulnerability-analysis\"></a>"
+    },
+    {
+      "file": "doc_source/confused-deputy.md",
+      "source_title": "The confused deputy problem<a name=\"confused-deputy\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/confused-deputy.md",
+      "section": "The confused deputy problem<a name=\"confused-deputy\"></a>"
+    },
+    {
+      "file": "doc_source/console_controlling-access.md",
+      "source_title": "Controlling IAM users access to the AWS Management Console<a name=\"console_controlling-access\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/console_controlling-access.md",
+      "section": "Controlling IAM users access to the AWS Management Console<a name=\"console_controlling-access\"></a>"
+    },
+    {
+      "file": "doc_source/console_search.md",
+      "source_title": "IAM console search<a name=\"console_search\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/console_search.md",
+      "section": "IAM console search<a name=\"console_search\"></a>"
+    },
+    {
+      "file": "doc_source/console_sign-in-mfa.md",
+      "source_title": "Using MFA devices with your IAM sign\\-in page<a name=\"console_sign-in-mfa\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/console_sign-in-mfa.md",
+      "section": "Using MFA devices with your IAM sign\\-in page<a name=\"console_sign-in-mfa\"></a>"
+    },
+    {
+      "file": "doc_source/create-signed-request.md",
+      "source_title": "Create a signed AWS API request<a name=\"create-signed-request\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/create-signed-request.md",
+      "section": "Create a signed AWS API request<a name=\"create-signed-request\"></a>"
+    },
+    {
+      "file": "doc_source/data-protection.md",
+      "source_title": "Data protection in AWS Identity and Access Management<a name=\"data-protection\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/data-protection.md",
+      "section": "Data protection in AWS Identity and Access Management<a name=\"data-protection\"></a>"
+    },
+    {
+      "file": "doc_source/disaster-recovery-resiliency.md",
+      "source_title": "Resilience in AWS Identity and Access Management<a name=\"disaster-recovery-resiliency\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/disaster-recovery-resiliency.md",
+      "section": "Resilience in AWS Identity and Access Management<a name=\"disaster-recovery-resiliency\"></a>"
+    },
+    {
+      "file": "doc_source/document-history.md",
+      "source_title": "Document history for IAM<a name=\"document-history\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/document-history.md",
+      "section": "Document history for IAM<a name=\"document-history\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_AddUserToGroup_section.md",
+      "source_title": "Add an IAM user to a group using an AWS SDK<a name=\"example_iam_AddUserToGroup_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_AddUserToGroup_section.md",
+      "section": "Add an IAM user to a group using an AWS SDK<a name=\"example_iam_AddUserToGroup_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_AttachRolePolicy_section.md",
+      "source_title": "Attach an IAM policy to a role using an AWS SDK<a name=\"example_iam_AttachRolePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_AttachRolePolicy_section.md",
+      "section": "Attach an IAM policy to a role using an AWS SDK<a name=\"example_iam_AttachRolePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_AttachUserPolicy_section.md",
+      "source_title": "Attach an IAM policy to a user using an AWS SDK<a name=\"example_iam_AttachUserPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_AttachUserPolicy_section.md",
+      "section": "Attach an IAM policy to a user using an AWS SDK<a name=\"example_iam_AttachUserPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateAccessKey_section.md",
+      "source_title": "Create an IAM access key using an AWS SDK<a name=\"example_iam_CreateAccessKey_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateAccessKey_section.md",
+      "section": "Create an IAM access key using an AWS SDK<a name=\"example_iam_CreateAccessKey_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateAccountAlias_section.md",
+      "source_title": "Create an alias for an IAM account using an AWS SDK<a name=\"example_iam_CreateAccountAlias_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateAccountAlias_section.md",
+      "section": "Create an alias for an IAM account using an AWS SDK<a name=\"example_iam_CreateAccountAlias_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateGroup_section.md",
+      "source_title": "Create an IAM group using an AWS SDK<a name=\"example_iam_CreateGroup_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateGroup_section.md",
+      "section": "Create an IAM group using an AWS SDK<a name=\"example_iam_CreateGroup_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreatePolicyVersion_section.md",
+      "source_title": "Create an IAM policy version using an AWS SDK<a name=\"example_iam_CreatePolicyVersion_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreatePolicyVersion_section.md",
+      "section": "Create an IAM policy version using an AWS SDK<a name=\"example_iam_CreatePolicyVersion_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreatePolicy_section.md",
+      "source_title": "Create an IAM policy using an AWS SDK<a name=\"example_iam_CreatePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreatePolicy_section.md",
+      "section": "Create an IAM policy using an AWS SDK<a name=\"example_iam_CreatePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateRole_section.md",
+      "source_title": "Create an IAM role using an AWS SDK<a name=\"example_iam_CreateRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateRole_section.md",
+      "section": "Create an IAM role using an AWS SDK<a name=\"example_iam_CreateRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateSAMLProvider_section.md",
+      "source_title": "Create an IAM SAML provider using an AWS SDK<a name=\"example_iam_CreateSAMLProvider_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateSAMLProvider_section.md",
+      "section": "Create an IAM SAML provider using an AWS SDK<a name=\"example_iam_CreateSAMLProvider_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateServiceLinkedRole_section.md",
+      "source_title": "Create an IAM service\\-linked role using an AWS SDK<a name=\"example_iam_CreateServiceLinkedRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateServiceLinkedRole_section.md",
+      "section": "Create an IAM service\\-linked role using an AWS SDK<a name=\"example_iam_CreateServiceLinkedRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_CreateUser_section.md",
+      "source_title": "Create an IAM user using an AWS SDK<a name=\"example_iam_CreateUser_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_CreateUser_section.md",
+      "section": "Create an IAM user using an AWS SDK<a name=\"example_iam_CreateUser_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteAccessKey_section.md",
+      "source_title": "Delete an IAM access key using an AWS SDK<a name=\"example_iam_DeleteAccessKey_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteAccessKey_section.md",
+      "section": "Delete an IAM access key using an AWS SDK<a name=\"example_iam_DeleteAccessKey_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteAccountAlias_section.md",
+      "source_title": "Delete an IAM account alias using an AWS SDK<a name=\"example_iam_DeleteAccountAlias_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteAccountAlias_section.md",
+      "section": "Delete an IAM account alias using an AWS SDK<a name=\"example_iam_DeleteAccountAlias_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteGroupPolicy_section.md",
+      "source_title": "Delete an IAM group policy using an AWS SDK<a name=\"example_iam_DeleteGroupPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteGroupPolicy_section.md",
+      "section": "Delete an IAM group policy using an AWS SDK<a name=\"example_iam_DeleteGroupPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteGroup_section.md",
+      "source_title": "Delete an IAM group using an AWS SDK<a name=\"example_iam_DeleteGroup_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteGroup_section.md",
+      "section": "Delete an IAM group using an AWS SDK<a name=\"example_iam_DeleteGroup_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeletePolicy_section.md",
+      "source_title": "Delete an IAM policy using an AWS SDK<a name=\"example_iam_DeletePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeletePolicy_section.md",
+      "section": "Delete an IAM policy using an AWS SDK<a name=\"example_iam_DeletePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteRolePolicy_section.md",
+      "source_title": "Delete an IAM role policy using an AWS SDK<a name=\"example_iam_DeleteRolePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteRolePolicy_section.md",
+      "section": "Delete an IAM role policy using an AWS SDK<a name=\"example_iam_DeleteRolePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteRole_section.md",
+      "source_title": "Delete an IAM role using an AWS SDK<a name=\"example_iam_DeleteRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteRole_section.md",
+      "section": "Delete an IAM role using an AWS SDK<a name=\"example_iam_DeleteRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteSAMLProvider_section.md",
+      "source_title": "Delete an IAM SAML provider using an AWS SDK<a name=\"example_iam_DeleteSAMLProvider_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteSAMLProvider_section.md",
+      "section": "Delete an IAM SAML provider using an AWS SDK<a name=\"example_iam_DeleteSAMLProvider_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteServerCertificate_section.md",
+      "source_title": "Delete an IAM server certificate using an AWS SDK<a name=\"example_iam_DeleteServerCertificate_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteServerCertificate_section.md",
+      "section": "Delete an IAM server certificate using an AWS SDK<a name=\"example_iam_DeleteServerCertificate_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteServiceLinkedRole_section.md",
+      "source_title": "Delete an IAM service\\-linked role using an AWS SDK<a name=\"example_iam_DeleteServiceLinkedRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteServiceLinkedRole_section.md",
+      "section": "Delete an IAM service\\-linked role using an AWS SDK<a name=\"example_iam_DeleteServiceLinkedRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteUserPolicy_section.md",
+      "source_title": "Delete an inline IAM policy from a user using an AWS SDK<a name=\"example_iam_DeleteUserPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteUserPolicy_section.md",
+      "section": "Delete an inline IAM policy from a user using an AWS SDK<a name=\"example_iam_DeleteUserPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DeleteUser_section.md",
+      "source_title": "Delete an IAM user using an AWS SDK<a name=\"example_iam_DeleteUser_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DeleteUser_section.md",
+      "section": "Delete an IAM user using an AWS SDK<a name=\"example_iam_DeleteUser_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DetachRolePolicy_section.md",
+      "source_title": "Detach an IAM policy from a role using an AWS SDK<a name=\"example_iam_DetachRolePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DetachRolePolicy_section.md",
+      "section": "Detach an IAM policy from a role using an AWS SDK<a name=\"example_iam_DetachRolePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_DetachUserPolicy_section.md",
+      "source_title": "Detach an IAM policy from a user using an AWS SDK<a name=\"example_iam_DetachUserPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_DetachUserPolicy_section.md",
+      "section": "Detach an IAM policy from a user using an AWS SDK<a name=\"example_iam_DetachUserPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GenerateCredentialReport_section.md",
+      "source_title": "Generate a credential report from IAM using an AWS SDK<a name=\"example_iam_GenerateCredentialReport_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GenerateCredentialReport_section.md",
+      "section": "Generate a credential report from IAM using an AWS SDK<a name=\"example_iam_GenerateCredentialReport_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetAccessKeyLastUsed_section.md",
+      "source_title": "Get data about the last use of an IAM access key using an AWS SDK<a name=\"example_iam_GetAccessKeyLastUsed_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetAccessKeyLastUsed_section.md",
+      "section": "Get data about the last use of an IAM access key using an AWS SDK<a name=\"example_iam_GetAccessKeyLastUsed_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetAccountAuthorizationDetails_section.md",
+      "source_title": "Get a detailed IAM authorization report for your account using an AWS SDK<a name=\"example_iam_GetAccountAuthorizationDetails_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetAccountAuthorizationDetails_section.md",
+      "section": "Get a detailed IAM authorization report for your account using an AWS SDK<a name=\"example_iam_GetAccountAuthorizationDetails_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetAccountPasswordPolicy_section.md",
+      "source_title": "Get the IAM account password policy using an AWS SDK<a name=\"example_iam_GetAccountPasswordPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetAccountPasswordPolicy_section.md",
+      "section": "Get the IAM account password policy using an AWS SDK<a name=\"example_iam_GetAccountPasswordPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetAccountSummary_section.md",
+      "source_title": "Get a summary of account usage from IAM using an AWS SDK<a name=\"example_iam_GetAccountSummary_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetAccountSummary_section.md",
+      "section": "Get a summary of account usage from IAM using an AWS SDK<a name=\"example_iam_GetAccountSummary_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetCredentialReport_section.md",
+      "source_title": "Get a credential report from IAM using an AWS SDK<a name=\"example_iam_GetCredentialReport_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetCredentialReport_section.md",
+      "section": "Get a credential report from IAM using an AWS SDK<a name=\"example_iam_GetCredentialReport_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetPolicyVersion_section.md",
+      "source_title": "Get an IAM policy version using an AWS SDK<a name=\"example_iam_GetPolicyVersion_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetPolicyVersion_section.md",
+      "section": "Get an IAM policy version using an AWS SDK<a name=\"example_iam_GetPolicyVersion_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetPolicy_section.md",
+      "source_title": "Get an IAM policy using an AWS SDK<a name=\"example_iam_GetPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetPolicy_section.md",
+      "section": "Get an IAM policy using an AWS SDK<a name=\"example_iam_GetPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetRole_section.md",
+      "source_title": "Get an IAM role using an AWS SDK<a name=\"example_iam_GetRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetRole_section.md",
+      "section": "Get an IAM role using an AWS SDK<a name=\"example_iam_GetRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetServerCertificate_section.md",
+      "source_title": "Get an IAM server certificate using an AWS SDK<a name=\"example_iam_GetServerCertificate_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetServerCertificate_section.md",
+      "section": "Get an IAM server certificate using an AWS SDK<a name=\"example_iam_GetServerCertificate_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetServiceLinkedRoleDeletionStatus_section.md",
+      "source_title": "Get an IAM service\\-linked role's deletion status using an AWS SDK<a name=\"example_iam_GetServiceLinkedRoleDeletionStatus_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetServiceLinkedRoleDeletionStatus_section.md",
+      "section": "Get an IAM service\\-linked role's deletion status using an AWS SDK<a name=\"example_iam_GetServiceLinkedRoleDeletionStatus_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_GetUser_section.md",
+      "source_title": "Get an IAM user using an AWS SDK<a name=\"example_iam_GetUser_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_GetUser_section.md",
+      "section": "Get an IAM user using an AWS SDK<a name=\"example_iam_GetUser_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListAccessKeys_section.md",
+      "source_title": "List a user's IAM access keys using an AWS SDK<a name=\"example_iam_ListAccessKeys_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListAccessKeys_section.md",
+      "section": "List a user's IAM access keys using an AWS SDK<a name=\"example_iam_ListAccessKeys_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListAccountAliases_section.md",
+      "source_title": "List IAM account aliases using an AWS SDK<a name=\"example_iam_ListAccountAliases_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListAccountAliases_section.md",
+      "section": "List IAM account aliases using an AWS SDK<a name=\"example_iam_ListAccountAliases_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListAttachedRolePolicies_section.md",
+      "source_title": "List policies attached to an IAM role using an AWS SDK<a name=\"example_iam_ListAttachedRolePolicies_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListAttachedRolePolicies_section.md",
+      "section": "List policies attached to an IAM role using an AWS SDK<a name=\"example_iam_ListAttachedRolePolicies_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListGroups_section.md",
+      "source_title": "List IAM groups using an AWS SDK<a name=\"example_iam_ListGroups_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListGroups_section.md",
+      "section": "List IAM groups using an AWS SDK<a name=\"example_iam_ListGroups_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListPolicies_section.md",
+      "source_title": "List IAM policies using an AWS SDK<a name=\"example_iam_ListPolicies_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListPolicies_section.md",
+      "section": "List IAM policies using an AWS SDK<a name=\"example_iam_ListPolicies_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListRolePolicies_section.md",
+      "source_title": "List inline policies for an IAM role using an AWS SDK<a name=\"example_iam_ListRolePolicies_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListRolePolicies_section.md",
+      "section": "List inline policies for an IAM role using an AWS SDK<a name=\"example_iam_ListRolePolicies_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListRoles_section.md",
+      "source_title": "List IAM roles using an AWS SDK<a name=\"example_iam_ListRoles_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListRoles_section.md",
+      "section": "List IAM roles using an AWS SDK<a name=\"example_iam_ListRoles_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListSAMLProviders_section.md",
+      "source_title": "List SAML providers for IAM using an AWS SDK<a name=\"example_iam_ListSAMLProviders_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListSAMLProviders_section.md",
+      "section": "List SAML providers for IAM using an AWS SDK<a name=\"example_iam_ListSAMLProviders_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListServerCertificates_section.md",
+      "source_title": "List IAM server certificates using an AWS SDK<a name=\"example_iam_ListServerCertificates_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListServerCertificates_section.md",
+      "section": "List IAM server certificates using an AWS SDK<a name=\"example_iam_ListServerCertificates_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListUserPolicies_section.md",
+      "source_title": "List inline IAM policies for a user using an AWS SDK<a name=\"example_iam_ListUserPolicies_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListUserPolicies_section.md",
+      "section": "List inline IAM policies for a user using an AWS SDK<a name=\"example_iam_ListUserPolicies_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_ListUsers_section.md",
+      "source_title": "List IAM users using an AWS SDK<a name=\"example_iam_ListUsers_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_ListUsers_section.md",
+      "section": "List IAM users using an AWS SDK<a name=\"example_iam_ListUsers_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_PutGroupPolicy_section.md",
+      "source_title": "Create an inline IAM policy for a group using an AWS SDK<a name=\"example_iam_PutGroupPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_PutGroupPolicy_section.md",
+      "section": "Create an inline IAM policy for a group using an AWS SDK<a name=\"example_iam_PutGroupPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_PutRolePolicy_section.md",
+      "source_title": "Attach an inline policy to an IAM role using an AWS SDK<a name=\"example_iam_PutRolePolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_PutRolePolicy_section.md",
+      "section": "Attach an inline policy to an IAM role using an AWS SDK<a name=\"example_iam_PutRolePolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_PutUserPolicy_section.md",
+      "source_title": "Create an inline IAM policy for a user using an AWS SDK<a name=\"example_iam_PutUserPolicy_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_PutUserPolicy_section.md",
+      "section": "Create an inline IAM policy for a user using an AWS SDK<a name=\"example_iam_PutUserPolicy_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_RemoveUserFromGroup_section.md",
+      "source_title": "Remove an IAM user from a group using an AWS SDK<a name=\"example_iam_RemoveUserFromGroup_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_RemoveUserFromGroup_section.md",
+      "section": "Remove an IAM user from a group using an AWS SDK<a name=\"example_iam_RemoveUserFromGroup_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_AccountManagement_section.md",
+      "source_title": "Manage your IAM account using an AWS SDK<a name=\"example_iam_Scenario_AccountManagement_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_AccountManagement_section.md",
+      "section": "Manage your IAM account using an AWS SDK<a name=\"example_iam_Scenario_AccountManagement_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_CreateUserAssumeRole_section.md",
+      "source_title": "Create an IAM user and assume a role with AWS STS using an AWS SDK<a name=\"example_iam_Scenario_CreateUserAssumeRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_CreateUserAssumeRole_section.md",
+      "section": "Create an IAM user and assume a role with AWS STS using an AWS SDK<a name=\"example_iam_Scenario_CreateUserAssumeRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_GroupBasics_section.md",
+      "source_title": "Create an IAM group and add a user to the group using an AWS SDK<a name=\"example_iam_Scenario_GroupBasics_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_GroupBasics_section.md",
+      "section": "Create an IAM group and add a user to the group using an AWS SDK<a name=\"example_iam_Scenario_GroupBasics_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_ManageAccessKeys_section.md",
+      "source_title": "Manage IAM access keys using an AWS SDK<a name=\"example_iam_Scenario_ManageAccessKeys_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_ManageAccessKeys_section.md",
+      "section": "Manage IAM access keys using an AWS SDK<a name=\"example_iam_Scenario_ManageAccessKeys_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_PolicyManagement_section.md",
+      "source_title": "Manage IAM policies using an AWS SDK<a name=\"example_iam_Scenario_PolicyManagement_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_PolicyManagement_section.md",
+      "section": "Manage IAM policies using an AWS SDK<a name=\"example_iam_Scenario_PolicyManagement_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_RoleManagement_section.md",
+      "source_title": "Manage IAM roles using an AWS SDK<a name=\"example_iam_Scenario_RoleManagement_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_RoleManagement_section.md",
+      "section": "Manage IAM roles using an AWS SDK<a name=\"example_iam_Scenario_RoleManagement_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_RollbackPolicyVersion_section.md",
+      "source_title": "Roll back an IAM policy version using an AWS SDK<a name=\"example_iam_Scenario_RollbackPolicyVersion_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_RollbackPolicyVersion_section.md",
+      "section": "Roll back an IAM policy version using an AWS SDK<a name=\"example_iam_Scenario_RollbackPolicyVersion_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_Scenario_UserPolicies_section.md",
+      "source_title": "Create read\\-only and read\\-write IAM users using an AWS SDK<a name=\"example_iam_Scenario_UserPolicies_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_Scenario_UserPolicies_section.md",
+      "section": "Create read\\-only and read\\-write IAM users using an AWS SDK<a name=\"example_iam_Scenario_UserPolicies_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_UpdateAccessKey_section.md",
+      "source_title": "Update an IAM access key using an AWS SDK<a name=\"example_iam_UpdateAccessKey_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_UpdateAccessKey_section.md",
+      "section": "Update an IAM access key using an AWS SDK<a name=\"example_iam_UpdateAccessKey_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_UpdateServerCertificate_section.md",
+      "source_title": "Update an IAM server certificate using an AWS SDK<a name=\"example_iam_UpdateServerCertificate_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_UpdateServerCertificate_section.md",
+      "section": "Update an IAM server certificate using an AWS SDK<a name=\"example_iam_UpdateServerCertificate_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_UpdateUser_section.md",
+      "source_title": "Update an IAM user using an AWS SDK<a name=\"example_iam_UpdateUser_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_UpdateUser_section.md",
+      "section": "Update an IAM user using an AWS SDK<a name=\"example_iam_UpdateUser_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_iam_UploadServerCertificate_section.md",
+      "source_title": "Upload an IAM server certificate using an AWS SDK<a name=\"example_iam_UploadServerCertificate_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_iam_UploadServerCertificate_section.md",
+      "section": "Upload an IAM server certificate using an AWS SDK<a name=\"example_iam_UploadServerCertificate_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_sts_AssumeRole_section.md",
+      "source_title": "Assume a role with AWS STS using an AWS SDK<a name=\"example_sts_AssumeRole_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_sts_AssumeRole_section.md",
+      "section": "Assume a role with AWS STS using an AWS SDK<a name=\"example_sts_AssumeRole_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_sts_GetSessionToken_section.md",
+      "source_title": "Get a session token with AWS STS using an AWS SDK<a name=\"example_sts_GetSessionToken_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_sts_GetSessionToken_section.md",
+      "section": "Get a session token with AWS STS using an AWS SDK<a name=\"example_sts_GetSessionToken_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_sts_Scenario_AssumeRoleMfa_section.md",
+      "source_title": "Assume an IAM role that requires an MFA token with AWS STS using an AWS SDK<a name=\"example_sts_Scenario_AssumeRoleMfa_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_sts_Scenario_AssumeRoleMfa_section.md",
+      "section": "Assume an IAM role that requires an MFA token with AWS STS using an AWS SDK<a name=\"example_sts_Scenario_AssumeRoleMfa_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_sts_Scenario_ConstructFederatedUrl_section.md",
+      "source_title": "Construct a URL with AWS STS for federated users using an AWS SDK<a name=\"example_sts_Scenario_ConstructFederatedUrl_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_sts_Scenario_ConstructFederatedUrl_section.md",
+      "section": "Construct a URL with AWS STS for federated users using an AWS SDK<a name=\"example_sts_Scenario_ConstructFederatedUrl_section\"></a>"
+    },
+    {
+      "file": "doc_source/example_sts_Scenario_SessionTokenMfa_section.md",
+      "source_title": "Get a session token that requires an MFA token with AWS STS using an AWS SDK<a name=\"example_sts_Scenario_SessionTokenMfa_section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/example_sts_Scenario_SessionTokenMfa_section.md",
+      "section": "Get a session token that requires an MFA token with AWS STS using an AWS SDK<a name=\"example_sts_Scenario_SessionTokenMfa_section\"></a>"
+    },
+    {
+      "file": "doc_source/getting-set-up.md",
+      "source_title": "Getting set up with IAM<a name=\"getting-set-up\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/getting-set-up.md",
+      "section": "Getting set up with IAM<a name=\"getting-set-up\"></a>"
+    },
+    {
+      "file": "doc_source/getting-started.md",
+      "source_title": "Getting started with IAM<a name=\"getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/getting-started.md",
+      "section": "Getting started with IAM<a name=\"getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/iam-compliance-validation.md",
+      "source_title": "Compliance validation for AWS Identity and Access Management<a name=\"iam-compliance-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/iam-compliance-validation.md",
+      "section": "Compliance validation for AWS Identity and Access Management<a name=\"iam-compliance-validation\"></a>"
+    },
+    {
+      "file": "doc_source/id.md",
+      "source_title": "IAM Identities \\(users, user groups, and roles\\)<a name=\"id\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id.md",
+      "section": "IAM Identities \\(users, user groups, and roles\\)<a name=\"id\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_access-keys.md",
+      "source_title": "Managing access keys for IAM users<a name=\"id_credentials_access-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_access-keys.md",
+      "section": "Managing access keys for IAM users<a name=\"id_credentials_access-keys\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_access-keys_retrieve.md",
+      "source_title": "Resetting lost or forgotten passwords or access keys for AWS<a name=\"id_credentials_access-keys_retrieve\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_access-keys_retrieve.md",
+      "section": "Resetting lost or forgotten passwords or access keys for AWS<a name=\"id_credentials_access-keys_retrieve\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_bearer.md",
+      "source_title": "Using bearer tokens<a name=\"id_credentials_bearer\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_bearer.md",
+      "section": "Using bearer tokens<a name=\"id_credentials_bearer\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_delegate-permissions_examples.md",
+      "source_title": "Example policies for administering IAM resources<a name=\"id_credentials_delegate-permissions_examples\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_delegate-permissions_examples.md",
+      "section": "Example policies for administering IAM resources<a name=\"id_credentials_delegate-permissions_examples\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_finding-unused.md",
+      "source_title": "Finding unused credentials<a name=\"id_credentials_finding-unused\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_finding-unused.md",
+      "section": "Finding unused credentials<a name=\"id_credentials_finding-unused\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_getting-report.md",
+      "source_title": "Getting credential reports for your AWS account<a name=\"id_credentials_getting-report\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_getting-report.md",
+      "section": "Getting credential reports for your AWS account<a name=\"id_credentials_getting-report\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_keyspaces.md",
+      "source_title": "Using IAM with Amazon Keyspaces \\(for Apache Cassandra\\)<a name=\"id_credentials_keyspaces\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_keyspaces.md",
+      "section": "Using IAM with Amazon Keyspaces \\(for Apache Cassandra\\)<a name=\"id_credentials_keyspaces\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa.md",
+      "source_title": "Using multi\\-factor authentication \\(MFA\\) in AWS<a name=\"id_credentials_mfa\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa.md",
+      "section": "Using multi\\-factor authentication \\(MFA\\) in AWS<a name=\"id_credentials_mfa\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_checking-status.md",
+      "source_title": "Checking MFA status<a name=\"id_credentials_mfa_checking-status\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_checking-status.md",
+      "section": "Checking MFA status<a name=\"id_credentials_mfa_checking-status\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_configure-api-require.md",
+      "source_title": "Configuring MFA\\-protected API access<a name=\"id_credentials_mfa_configure-api-require\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_configure-api-require.md",
+      "section": "Configuring MFA\\-protected API access<a name=\"id_credentials_mfa_configure-api-require\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_disable.md",
+      "source_title": "Deactivating MFA devices<a name=\"id_credentials_mfa_disable\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_disable.md",
+      "section": "Deactivating MFA devices<a name=\"id_credentials_mfa_disable\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_enable.md",
+      "source_title": "Enabling MFA devices for users in AWS<a name=\"id_credentials_mfa_enable\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_enable.md",
+      "section": "Enabling MFA devices for users in AWS<a name=\"id_credentials_mfa_enable\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_enable_cliapi.md",
+      "source_title": "Enabling and managing virtual MFA devices \\(AWS CLI or AWS API\\)<a name=\"id_credentials_mfa_enable_cliapi\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_enable_cliapi.md",
+      "section": "Enabling and managing virtual MFA devices \\(AWS CLI or AWS API\\)<a name=\"id_credentials_mfa_enable_cliapi\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_enable_fido.md",
+      "source_title": "Enabling a FIDO security key \\(console\\)<a name=\"id_credentials_mfa_enable_fido\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_enable_fido.md",
+      "section": "Enabling a FIDO security key \\(console\\)<a name=\"id_credentials_mfa_enable_fido\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_enable_physical.md",
+      "source_title": "Enabling a hardware TOTP token \\(console\\)<a name=\"id_credentials_mfa_enable_physical\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_enable_physical.md",
+      "section": "Enabling a hardware TOTP token \\(console\\)<a name=\"id_credentials_mfa_enable_physical\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_enable_virtual.md",
+      "source_title": "Enabling a virtual multi\\-factor authentication \\(MFA\\) device \\(console\\)<a name=\"id_credentials_mfa_enable_virtual\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_enable_virtual.md",
+      "section": "Enabling a virtual multi\\-factor authentication \\(MFA\\) device \\(console\\)<a name=\"id_credentials_mfa_enable_virtual\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_fido_supported_configurations.md",
+      "source_title": "Supported configurations for using FIDO security keys<a name=\"id_credentials_mfa_fido_supported_configurations\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_fido_supported_configurations.md",
+      "section": "Supported configurations for using FIDO security keys<a name=\"id_credentials_mfa_fido_supported_configurations\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_lost-or-broken.md",
+      "source_title": "What if an MFA device is lost or stops working?<a name=\"id_credentials_mfa_lost-or-broken\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_lost-or-broken.md",
+      "section": "What if an MFA device is lost or stops working?<a name=\"id_credentials_mfa_lost-or-broken\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_sample-code.md",
+      "source_title": "Sample code: Requesting credentials with multi\\-factor authentication<a name=\"id_credentials_mfa_sample-code\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_sample-code.md",
+      "section": "Sample code: Requesting credentials with multi\\-factor authentication<a name=\"id_credentials_mfa_sample-code\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_mfa_sync.md",
+      "source_title": "Resynchronizing virtual and hardware MFA devices<a name=\"id_credentials_mfa_sync\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_mfa_sync.md",
+      "section": "Resynchronizing virtual and hardware MFA devices<a name=\"id_credentials_mfa_sync\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords.md",
+      "source_title": "Managing user passwords in AWS<a name=\"id_credentials_passwords\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords.md",
+      "section": "Managing user passwords in AWS<a name=\"id_credentials_passwords\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords_account-policy.md",
+      "source_title": "Setting an account password policy for IAM users<a name=\"id_credentials_passwords_account-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords_account-policy.md",
+      "section": "Setting an account password policy for IAM users<a name=\"id_credentials_passwords_account-policy\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords_admin-change-user.md",
+      "source_title": "Managing passwords for IAM users<a name=\"id_credentials_passwords_admin-change-user\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords_admin-change-user.md",
+      "section": "Managing passwords for IAM users<a name=\"id_credentials_passwords_admin-change-user\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords_change-root.md",
+      "source_title": "Changing the AWS account root user password<a name=\"id_credentials_passwords_change-root\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords_change-root.md",
+      "section": "Changing the AWS account root user password<a name=\"id_credentials_passwords_change-root\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords_enable-user-change.md",
+      "source_title": "Permitting IAM users to change their own passwords<a name=\"id_credentials_passwords_enable-user-change\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords_enable-user-change.md",
+      "section": "Permitting IAM users to change their own passwords<a name=\"id_credentials_passwords_enable-user-change\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_passwords_user-change-own.md",
+      "source_title": "How an IAM user changes their own password<a name=\"id_credentials_passwords_user-change-own\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_passwords_user-change-own.md",
+      "section": "How an IAM user changes their own password<a name=\"id_credentials_passwords_user-change-own\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_server-certs.md",
+      "source_title": "Managing server certificates in IAM<a name=\"id_credentials_server-certs\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_server-certs.md",
+      "section": "Managing server certificates in IAM<a name=\"id_credentials_server-certs\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_ssh-keys.md",
+      "source_title": "Using IAM with CodeCommit: Git credentials, SSH keys, and AWS access keys<a name=\"id_credentials_ssh-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_ssh-keys.md",
+      "section": "Using IAM with CodeCommit: Git credentials, SSH keys, and AWS access keys<a name=\"id_credentials_ssh-keys\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_sts_vpce.md",
+      "source_title": "Using AWS STS interface VPC endpoints<a name=\"id_credentials_sts_vpce\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_sts_vpce.md",
+      "section": "Using AWS STS interface VPC endpoints<a name=\"id_credentials_sts_vpce\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp.md",
+      "source_title": "Temporary security credentials in IAM<a name=\"id_credentials_temp\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp.md",
+      "section": "Temporary security credentials in IAM<a name=\"id_credentials_temp\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access.md",
+      "source_title": "Controlling permissions for temporary security credentials<a name=\"id_credentials_temp_control-access\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access.md",
+      "section": "Controlling permissions for temporary security credentials<a name=\"id_credentials_temp_control-access\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_assumerole.md",
+      "source_title": "Permissions for AssumeRole, AssumeRoleWithSAML, and AssumeRoleWithWebIdentity<a name=\"id_credentials_temp_control-access_assumerole\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_assumerole.md",
+      "section": "Permissions for AssumeRole, AssumeRoleWithSAML, and AssumeRoleWithWebIdentity<a name=\"id_credentials_temp_control-access_assumerole\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_disable-perms.md",
+      "source_title": "Disabling permissions for temporary security credentials<a name=\"id_credentials_temp_control-access_disable-perms\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_disable-perms.md",
+      "section": "Disabling permissions for temporary security credentials<a name=\"id_credentials_temp_control-access_disable-perms\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_enable-create.md",
+      "source_title": "Granting permissions to create temporary security credentials<a name=\"id_credentials_temp_control-access_enable-create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_enable-create.md",
+      "section": "Granting permissions to create temporary security credentials<a name=\"id_credentials_temp_control-access_enable-create\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_getfederationtoken.md",
+      "source_title": "Permissions for GetFederationToken<a name=\"id_credentials_temp_control-access_getfederationtoken\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_getfederationtoken.md",
+      "section": "Permissions for GetFederationToken<a name=\"id_credentials_temp_control-access_getfederationtoken\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_getsessiontoken.md",
+      "source_title": "Permissions for GetSessionToken<a name=\"id_credentials_temp_control-access_getsessiontoken\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_getsessiontoken.md",
+      "section": "Permissions for GetSessionToken<a name=\"id_credentials_temp_control-access_getsessiontoken\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_control-access_monitor.md",
+      "source_title": "Monitor and control actions taken with assumed roles<a name=\"id_credentials_temp_control-access_monitor\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_control-access_monitor.md",
+      "section": "Monitor and control actions taken with assumed roles<a name=\"id_credentials_temp_control-access_monitor\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_enable-regions.md",
+      "source_title": "Managing AWS STS in an AWS Region<a name=\"id_credentials_temp_enable-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_enable-regions.md",
+      "section": "Managing AWS STS in an AWS Region<a name=\"id_credentials_temp_enable-regions\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_related-topics.md",
+      "source_title": "Additional resources for temporary security credentials<a name=\"id_credentials_temp_related-topics\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_related-topics.md",
+      "section": "Additional resources for temporary security credentials<a name=\"id_credentials_temp_related-topics\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_request.md",
+      "source_title": "Requesting temporary security credentials<a name=\"id_credentials_temp_request\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_request.md",
+      "section": "Requesting temporary security credentials<a name=\"id_credentials_temp_request\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_sample-apps.md",
+      "source_title": "Sample applications that use temporary credentials<a name=\"id_credentials_temp_sample-apps\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_sample-apps.md",
+      "section": "Sample applications that use temporary credentials<a name=\"id_credentials_temp_sample-apps\"></a>"
+    },
+    {
+      "file": "doc_source/id_credentials_temp_use-resources.md",
+      "source_title": "Using temporary credentials with AWS resources<a name=\"id_credentials_temp_use-resources\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_credentials_temp_use-resources.md",
+      "section": "Using temporary credentials with AWS resources<a name=\"id_credentials_temp_use-resources\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups.md",
+      "source_title": "IAM user groups<a name=\"id_groups\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups.md",
+      "section": "IAM user groups<a name=\"id_groups\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_create.md",
+      "source_title": "Creating IAM user groups<a name=\"id_groups_create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_create.md",
+      "section": "Creating IAM user groups<a name=\"id_groups_create\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage.md",
+      "source_title": "Managing IAM user groups<a name=\"id_groups_manage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage.md",
+      "section": "Managing IAM user groups<a name=\"id_groups_manage\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage_add-remove-users.md",
+      "source_title": "Adding and removing users in an IAM user group<a name=\"id_groups_manage_add-remove-users\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage_add-remove-users.md",
+      "section": "Adding and removing users in an IAM user group<a name=\"id_groups_manage_add-remove-users\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage_attach-policy.md",
+      "source_title": "Attaching a policy to an IAM user group<a name=\"id_groups_manage_attach-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage_attach-policy.md",
+      "section": "Attaching a policy to an IAM user group<a name=\"id_groups_manage_attach-policy\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage_delete.md",
+      "source_title": "Deleting an IAM user group<a name=\"id_groups_manage_delete\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage_delete.md",
+      "section": "Deleting an IAM user group<a name=\"id_groups_manage_delete\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage_list.md",
+      "source_title": "Listing IAM user groups<a name=\"id_groups_manage_list\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage_list.md",
+      "section": "Listing IAM user groups<a name=\"id_groups_manage_list\"></a>"
+    },
+    {
+      "file": "doc_source/id_groups_manage_rename.md",
+      "source_title": "Renaming an IAM user group<a name=\"id_groups_manage_rename\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_groups_manage_rename.md",
+      "section": "Renaming an IAM user group<a name=\"id_groups_manage_rename\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles.md",
+      "source_title": "IAM roles<a name=\"id_roles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles.md",
+      "section": "IAM roles<a name=\"id_roles\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios.md",
+      "source_title": "Common scenarios for roles: Users, applications, and services<a name=\"id_roles_common-scenarios\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios.md",
+      "section": "Common scenarios for roles: Users, applications, and services<a name=\"id_roles_common-scenarios\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios_aws-accounts.md",
+      "source_title": "Providing access to an IAM user in another AWS account that you own<a name=\"id_roles_common-scenarios_aws-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios_aws-accounts.md",
+      "section": "Providing access to an IAM user in another AWS account that you own<a name=\"id_roles_common-scenarios_aws-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios_federated-users.md",
+      "source_title": "Providing access to externally authenticated users \\(identity federation\\)<a name=\"id_roles_common-scenarios_federated-users\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios_federated-users.md",
+      "section": "Providing access to externally authenticated users \\(identity federation\\)<a name=\"id_roles_common-scenarios_federated-users\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios_non-aws.md",
+      "source_title": "Providing access for non AWS workloads<a name=\"id_roles_common-scenarios_non-aws\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios_non-aws.md",
+      "section": "Providing access for non AWS workloads<a name=\"id_roles_common-scenarios_non-aws\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios_services.md",
+      "source_title": "Providing access to an AWS service<a name=\"id_roles_common-scenarios_services\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios_services.md",
+      "section": "Providing access to an AWS service<a name=\"id_roles_common-scenarios_services\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_common-scenarios_third-party.md",
+      "source_title": "Providing access to AWS accounts owned by third parties<a name=\"id_roles_common-scenarios_third-party\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_common-scenarios_third-party.md",
+      "section": "Providing access to AWS accounts owned by third parties<a name=\"id_roles_common-scenarios_third-party\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_compare-resource-policies.md",
+      "source_title": "How IAM roles differ from resource\\-based policies<a name=\"id_roles_compare-resource-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_compare-resource-policies.md",
+      "section": "How IAM roles differ from resource\\-based policies<a name=\"id_roles_compare-resource-policies\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create.md",
+      "source_title": "Creating IAM roles<a name=\"id_roles_create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create.md",
+      "section": "Creating IAM roles<a name=\"id_roles_create\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-custom.md",
+      "source_title": "Creating a role using custom trust policies \\(console\\)<a name=\"id_roles_create_for-custom\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-custom.md",
+      "section": "Creating a role using custom trust policies \\(console\\)<a name=\"id_roles_create_for-custom\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-idp.md",
+      "source_title": "Creating a role for a third\\-party Identity Provider \\(federation\\)<a name=\"id_roles_create_for-idp\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-idp.md",
+      "section": "Creating a role for a third\\-party Identity Provider \\(federation\\)<a name=\"id_roles_create_for-idp\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-idp_oidc.md",
+      "source_title": "Creating a role for web identity or OpenID Connect Federation \\(console\\)<a name=\"id_roles_create_for-idp_oidc\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-idp_oidc.md",
+      "section": "Creating a role for web identity or OpenID Connect Federation \\(console\\)<a name=\"id_roles_create_for-idp_oidc\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-idp_saml.md",
+      "source_title": "Creating a role for SAML 2\\.0 federation \\(console\\)<a name=\"id_roles_create_for-idp_saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-idp_saml.md",
+      "section": "Creating a role for SAML 2\\.0 federation \\(console\\)<a name=\"id_roles_create_for-idp_saml\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-service.md",
+      "source_title": "Creating a role to delegate permissions to an AWS service<a name=\"id_roles_create_for-service\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-service.md",
+      "section": "Creating a role to delegate permissions to an AWS service<a name=\"id_roles_create_for-service\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-user.md",
+      "source_title": "Creating a role to delegate permissions to an IAM user<a name=\"id_roles_create_for-user\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-user.md",
+      "section": "Creating a role to delegate permissions to an IAM user<a name=\"id_roles_create_for-user\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_for-user_externalid.md",
+      "source_title": "How to use an external ID when granting access to your AWS resources to a third party<a name=\"id_roles_create_for-user_externalid\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_for-user_externalid.md",
+      "section": "How to use an external ID when granting access to your AWS resources to a third party<a name=\"id_roles_create_for-user_externalid\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_create_policy-examples.md",
+      "source_title": "Examples of policies for delegating access<a name=\"id_roles_create_policy-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_create_policy-examples.md",
+      "section": "Examples of policies for delegating access<a name=\"id_roles_create_policy-examples\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_manage.md",
+      "source_title": "Managing IAM roles<a name=\"id_roles_manage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_manage.md",
+      "section": "Managing IAM roles<a name=\"id_roles_manage\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_manage_delete.md",
+      "source_title": "Deleting roles or instance profiles<a name=\"id_roles_manage_delete\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_manage_delete.md",
+      "section": "Deleting roles or instance profiles<a name=\"id_roles_manage_delete\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_manage_modify.md",
+      "source_title": "Modifying a role<a name=\"id_roles_manage_modify\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_manage_modify.md",
+      "section": "Modifying a role<a name=\"id_roles_manage_modify\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers.md",
+      "source_title": "Identity providers and federation<a name=\"id_roles_providers\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers.md",
+      "section": "Identity providers and federation<a name=\"id_roles_providers\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create.md",
+      "source_title": "Creating IAM identity providers<a name=\"id_roles_providers_create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create.md",
+      "section": "Creating IAM identity providers<a name=\"id_roles_providers_create\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create_oidc.md",
+      "source_title": "Creating OpenID Connect \\(OIDC\\) identity providers<a name=\"id_roles_providers_create_oidc\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create_oidc.md",
+      "section": "Creating OpenID Connect \\(OIDC\\) identity providers<a name=\"id_roles_providers_create_oidc\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create_oidc_verify-thumbprint.md",
+      "source_title": "Obtaining the thumbprint for an OpenID Connect Identity Provider<a name=\"id_roles_providers_create_oidc_verify-thumbprint\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create_oidc_verify-thumbprint.md",
+      "section": "Obtaining the thumbprint for an OpenID Connect Identity Provider<a name=\"id_roles_providers_create_oidc_verify-thumbprint\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create_saml.md",
+      "source_title": "Creating IAM SAML identity providers<a name=\"id_roles_providers_create_saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create_saml.md",
+      "section": "Creating IAM SAML identity providers<a name=\"id_roles_providers_create_saml\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create_saml_assertions.md",
+      "source_title": "Configuring SAML assertions for the authentication response<a name=\"id_roles_providers_create_saml_assertions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create_saml_assertions.md",
+      "section": "Configuring SAML assertions for the authentication response<a name=\"id_roles_providers_create_saml_assertions\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_create_saml_relying-party.md",
+      "source_title": "Configuring your SAML 2\\.0 IdP with relying party trust and adding claims<a name=\"id_roles_providers_create_saml_relying-party\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_create_saml_relying-party.md",
+      "section": "Configuring your SAML 2\\.0 IdP with relying party trust and adding claims<a name=\"id_roles_providers_create_saml_relying-party\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_enable-console-custom-url.md",
+      "source_title": "Enabling custom identity broker access to the AWS console<a name=\"id_roles_providers_enable-console-custom-url\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_enable-console-custom-url.md",
+      "section": "Enabling custom identity broker access to the AWS console<a name=\"id_roles_providers_enable-console-custom-url\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_enable-console-saml.md",
+      "source_title": "Enabling SAML 2\\.0 federated users to access the AWS Management Console<a name=\"id_roles_providers_enable-console-saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_enable-console-saml.md",
+      "section": "Enabling SAML 2\\.0 federated users to access the AWS Management Console<a name=\"id_roles_providers_enable-console-saml\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_oidc.md",
+      "source_title": "About web identity federation<a name=\"id_roles_providers_oidc\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_oidc.md",
+      "section": "About web identity federation<a name=\"id_roles_providers_oidc\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_oidc_cognito.md",
+      "source_title": "Using Amazon Cognito for mobile apps<a name=\"id_roles_providers_oidc_cognito\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_oidc_cognito.md",
+      "section": "Using Amazon Cognito for mobile apps<a name=\"id_roles_providers_oidc_cognito\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_oidc_manual.md",
+      "source_title": "Using web identity federation API operations for mobile apps<a name=\"id_roles_providers_oidc_manual\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_oidc_manual.md",
+      "section": "Using web identity federation API operations for mobile apps<a name=\"id_roles_providers_oidc_manual\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_oidc_resources.md",
+      "source_title": "Additional resources for web identity federation<a name=\"id_roles_providers_oidc_resources\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_oidc_resources.md",
+      "section": "Additional resources for web identity federation<a name=\"id_roles_providers_oidc_resources\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_oidc_user-id.md",
+      "source_title": "Identifying users with web identity federation<a name=\"id_roles_providers_oidc_user-id\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_oidc_user-id.md",
+      "section": "Identifying users with web identity federation<a name=\"id_roles_providers_oidc_user-id\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_saml.md",
+      "source_title": "About SAML 2\\.0\\-based federation<a name=\"id_roles_providers_saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_saml.md",
+      "section": "About SAML 2\\.0\\-based federation<a name=\"id_roles_providers_saml\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_providers_saml_3rd-party.md",
+      "source_title": "Integrating third\\-party SAML solution providers with AWS<a name=\"id_roles_providers_saml_3rd-party\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_providers_saml_3rd-party.md",
+      "section": "Integrating third\\-party SAML solution providers with AWS<a name=\"id_roles_providers_saml_3rd-party\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_terms-and-concepts.md",
+      "source_title": "Roles terms and concepts<a name=\"id_roles_terms-and-concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_terms-and-concepts.md",
+      "section": "Roles terms and concepts<a name=\"id_roles_terms-and-concepts\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use.md",
+      "source_title": "Using IAM roles<a name=\"id_roles_use\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use.md",
+      "section": "Using IAM roles<a name=\"id_roles_use\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_passrole.md",
+      "source_title": "Granting a user permissions to pass a role to an AWS service<a name=\"id_roles_use_passrole\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_passrole.md",
+      "section": "Granting a user permissions to pass a role to an AWS service<a name=\"id_roles_use_passrole\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_permissions-to-switch.md",
+      "source_title": "Granting a user permissions to switch roles<a name=\"id_roles_use_permissions-to-switch\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_permissions-to-switch.md",
+      "section": "Granting a user permissions to switch roles<a name=\"id_roles_use_permissions-to-switch\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_revoke-sessions.md",
+      "source_title": "Revoking IAM role temporary security credentials<a name=\"id_roles_use_revoke-sessions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_revoke-sessions.md",
+      "section": "Revoking IAM role temporary security credentials<a name=\"id_roles_use_revoke-sessions\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-api.md",
+      "source_title": "Switching to an IAM role \\(AWS API\\)<a name=\"id_roles_use_switch-role-api\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-api.md",
+      "section": "Switching to an IAM role \\(AWS API\\)<a name=\"id_roles_use_switch-role-api\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-cli.md",
+      "source_title": "Switching to an IAM role \\(AWS CLI\\)<a name=\"id_roles_use_switch-role-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-cli.md",
+      "section": "Switching to an IAM role \\(AWS CLI\\)<a name=\"id_roles_use_switch-role-cli\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-console.md",
+      "source_title": "Switching to a role \\(console\\)<a name=\"id_roles_use_switch-role-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-console.md",
+      "section": "Switching to a role \\(console\\)<a name=\"id_roles_use_switch-role-console\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-ec2.md",
+      "source_title": "Using an IAM role to grant permissions to applications running on Amazon EC2 instances<a name=\"id_roles_use_switch-role-ec2\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-ec2.md",
+      "section": "Using an IAM role to grant permissions to applications running on Amazon EC2 instances<a name=\"id_roles_use_switch-role-ec2\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-ec2_instance-profiles.md",
+      "source_title": "Using instance profiles<a name=\"id_roles_use_switch-role-ec2_instance-profiles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-ec2_instance-profiles.md",
+      "section": "Using instance profiles<a name=\"id_roles_use_switch-role-ec2_instance-profiles\"></a>"
+    },
+    {
+      "file": "doc_source/id_roles_use_switch-role-twp.md",
+      "source_title": "Switching to an IAM role \\(Tools for Windows PowerShell\\)<a name=\"id_roles_use_switch-role-twp\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_roles_use_switch-role-twp.md",
+      "section": "Switching to an IAM role \\(Tools for Windows PowerShell\\)<a name=\"id_roles_use_switch-role-twp\"></a>"
+    },
+    {
+      "file": "doc_source/id_root-user.md",
+      "source_title": "AWS account root user<a name=\"id_root-user\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_root-user.md",
+      "section": "AWS account root user<a name=\"id_root-user\"></a>"
+    },
+    {
+      "file": "doc_source/id_session-tags.md",
+      "source_title": "Passing session tags in AWS STS<a name=\"id_session-tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_session-tags.md",
+      "section": "Passing session tags in AWS STS<a name=\"id_session-tags\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags.md",
+      "source_title": "Tagging IAM resources<a name=\"id_tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags.md",
+      "section": "Tagging IAM resources<a name=\"id_tags\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_customer-managed-policies.md",
+      "source_title": "Tagging customer managed policies<a name=\"id_tags_customer-managed-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_customer-managed-policies.md",
+      "section": "Tagging customer managed policies<a name=\"id_tags_customer-managed-policies\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_idps.md",
+      "source_title": "Tagging IAM identity providers<a name=\"id_tags_idps\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_idps.md",
+      "section": "Tagging IAM identity providers<a name=\"id_tags_idps\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_idps_oidc.md",
+      "source_title": "Tagging OpenID Connect \\(OIDC\\) identity providers<a name=\"id_tags_idps_oidc\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_idps_oidc.md",
+      "section": "Tagging OpenID Connect \\(OIDC\\) identity providers<a name=\"id_tags_idps_oidc\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_idps_saml.md",
+      "source_title": "Tagging IAM SAML identity providers<a name=\"id_tags_idps_saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_idps_saml.md",
+      "section": "Tagging IAM SAML identity providers<a name=\"id_tags_idps_saml\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_instance-profiles.md",
+      "source_title": "Tagging instance profiles for Amazon EC2 roles<a name=\"id_tags_instance-profiles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_instance-profiles.md",
+      "section": "Tagging instance profiles for Amazon EC2 roles<a name=\"id_tags_instance-profiles\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_roles.md",
+      "source_title": "Tagging IAM roles<a name=\"id_tags_roles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_roles.md",
+      "section": "Tagging IAM roles<a name=\"id_tags_roles\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_server-certificates.md",
+      "source_title": "Tagging server certificates<a name=\"id_tags_server-certificates\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_server-certificates.md",
+      "section": "Tagging server certificates<a name=\"id_tags_server-certificates\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_users.md",
+      "source_title": "Tagging IAM users<a name=\"id_tags_users\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_users.md",
+      "section": "Tagging IAM users<a name=\"id_tags_users\"></a>"
+    },
+    {
+      "file": "doc_source/id_tags_virtual-mfa.md",
+      "source_title": "Tagging virtual MFA devices<a name=\"id_tags_virtual-mfa\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_tags_virtual-mfa.md",
+      "section": "Tagging virtual MFA devices<a name=\"id_tags_virtual-mfa\"></a>"
+    },
+    {
+      "file": "doc_source/id_users.md",
+      "source_title": "IAM users<a name=\"id_users\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_users.md",
+      "section": "IAM users<a name=\"id_users\"></a>"
+    },
+    {
+      "file": "doc_source/id_users_change-permissions.md",
+      "source_title": "Changing permissions for an IAM user<a name=\"id_users_change-permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_users_change-permissions.md",
+      "section": "Changing permissions for an IAM user<a name=\"id_users_change-permissions\"></a>"
+    },
+    {
+      "file": "doc_source/id_users_create.md",
+      "source_title": "Creating an IAM user in your AWS account<a name=\"id_users_create\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_users_create.md",
+      "section": "Creating an IAM user in your AWS account<a name=\"id_users_create\"></a>"
+    },
+    {
+      "file": "doc_source/id_users_manage.md",
+      "source_title": "Managing IAM users<a name=\"id_users_manage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_users_manage.md",
+      "section": "Managing IAM users<a name=\"id_users_manage\"></a>"
+    },
+    {
+      "file": "doc_source/id_users_sign-in.md",
+      "source_title": "How IAM users sign in to AWS<a name=\"id_users_sign-in\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/id_users_sign-in.md",
+      "section": "How IAM users sign in to AWS<a name=\"id_users_sign-in\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "AWS Identity and Access Management User Guide",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/index.md",
+      "section": "AWS Identity and Access Management User Guide"
+    },
+    {
+      "file": "doc_source/infrastructure-security.md",
+      "source_title": "Infrastructure security in AWS Identity and Access Management<a name=\"infrastructure-security\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/infrastructure-security.md",
+      "section": "Infrastructure security in AWS Identity and Access Management<a name=\"infrastructure-security\"></a>"
+    },
+    {
+      "file": "doc_source/intro-structure.md",
+      "source_title": "How IAM works<a name=\"intro-structure\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/intro-structure.md",
+      "section": "How IAM works<a name=\"intro-structure\"></a>"
+    },
+    {
+      "file": "doc_source/introduction.md",
+      "source_title": "What is IAM?<a name=\"introduction\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction.md",
+      "section": "What is IAM?<a name=\"introduction\"></a>"
+    },
+    {
+      "file": "doc_source/introduction_access-management.md",
+      "source_title": "Overview of access management: Permissions and policies<a name=\"introduction_access-management\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction_access-management.md",
+      "section": "Overview of access management: Permissions and policies<a name=\"introduction_access-management\"></a>"
+    },
+    {
+      "file": "doc_source/introduction_attribute-based-access-control.md",
+      "source_title": "What is ABAC for AWS?<a name=\"introduction_attribute-based-access-control\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction_attribute-based-access-control.md",
+      "section": "What is ABAC for AWS?<a name=\"introduction_attribute-based-access-control\"></a>"
+    },
+    {
+      "file": "doc_source/introduction_identity-management.md",
+      "source_title": "Overview of AWS identity management: Users<a name=\"introduction_identity-management\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction_identity-management.md",
+      "section": "Overview of AWS identity management: Users<a name=\"introduction_identity-management\"></a>"
+    },
+    {
+      "file": "doc_source/introduction_quick-links-common-tasks.md",
+      "source_title": "Quick links to common tasks<a name=\"introduction_quick-links-common-tasks\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction_quick-links-common-tasks.md",
+      "section": "Quick links to common tasks<a name=\"introduction_quick-links-common-tasks\"></a>"
+    },
+    {
+      "file": "doc_source/introduction_security-outside-iam.md",
+      "source_title": "Security features outside IAM<a name=\"introduction_security-outside-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/introduction_security-outside-iam.md",
+      "section": "Security features outside IAM<a name=\"introduction_security-outside-iam\"></a>"
+    },
+    {
+      "file": "doc_source/logging-using-cloudtrail.md",
+      "source_title": "Logging IAM Access Analyzer API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/logging-using-cloudtrail.md",
+      "section": "Logging IAM Access Analyzer API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/programming.md",
+      "source_title": "Calling the IAM API using HTTP query requests<a name=\"programming\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/programming.md",
+      "section": "Calling the IAM API using HTTP query requests<a name=\"programming\"></a>"
+    },
+    {
+      "file": "doc_source/reference-arns.md",
+      "source_title": "Amazon Resource Names \\(ARNs\\)<a name=\"reference-arns\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference-arns.md",
+      "section": "Amazon Resource Names \\(ARNs\\)<a name=\"reference-arns\"></a>"
+    },
+    {
+      "file": "doc_source/reference.md",
+      "source_title": "Reference information for AWS Identity and Access Management<a name=\"reference\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference.md",
+      "section": "Reference information for AWS Identity and Access Management<a name=\"reference\"></a>"
+    },
+    {
+      "file": "doc_source/reference_aws-services-that-work-with-iam.md",
+      "source_title": "AWS services that work with IAM<a name=\"reference_aws-services-that-work-with-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_aws-services-that-work-with-iam.md",
+      "section": "AWS services that work with IAM<a name=\"reference_aws-services-that-work-with-iam\"></a>"
+    },
+    {
+      "file": "doc_source/reference_aws-signing.md",
+      "source_title": "Signing AWS API requests<a name=\"reference_aws-signing\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_aws-signing.md",
+      "section": "Signing AWS API requests<a name=\"reference_aws-signing\"></a>"
+    },
+    {
+      "file": "doc_source/reference_iam-quotas.md",
+      "source_title": "IAM and AWS STS quotas, name requirements, and character limits<a name=\"reference_iam-quotas\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_iam-quotas.md",
+      "section": "IAM and AWS STS quotas, name requirements, and character limits<a name=\"reference_iam-quotas\"></a>"
+    },
+    {
+      "file": "doc_source/reference_identifiers.md",
+      "source_title": "IAM identifiers<a name=\"reference_identifiers\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_identifiers.md",
+      "section": "IAM identifiers<a name=\"reference_identifiers\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies.md",
+      "source_title": "IAM JSON policy reference<a name=\"reference_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies.md",
+      "section": "IAM JSON policy reference<a name=\"reference_policies\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_actions-resources-contextkeys.md",
+      "source_title": "Actions, resources, and condition keys for AWS services<a name=\"reference_policies_actions-resources-contextkeys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_actions-resources-contextkeys.md",
+      "section": "Actions, resources, and condition keys for AWS services<a name=\"reference_policies_actions-resources-contextkeys\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_condition-keys.md",
+      "source_title": "AWS global condition context keys<a name=\"reference_policies_condition-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_condition-keys.md",
+      "section": "AWS global condition context keys<a name=\"reference_policies_condition-keys\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements.md",
+      "source_title": "IAM JSON policy elements reference<a name=\"reference_policies_elements\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements.md",
+      "section": "IAM JSON policy elements reference<a name=\"reference_policies_elements\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_action.md",
+      "source_title": "IAM JSON policy elements: Action<a name=\"reference_policies_elements_action\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_action.md",
+      "section": "IAM JSON policy elements: Action<a name=\"reference_policies_elements_action\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_condition.md",
+      "source_title": "IAM JSON policy elements: Condition<a name=\"reference_policies_elements_condition\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_condition.md",
+      "section": "IAM JSON policy elements: Condition<a name=\"reference_policies_elements_condition\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_condition_operators.md",
+      "source_title": "IAM JSON policy elements: Condition operators<a name=\"reference_policies_elements_condition_operators\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_condition_operators.md",
+      "section": "IAM JSON policy elements: Condition operators<a name=\"reference_policies_elements_condition_operators\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_datatypes.md",
+      "source_title": "IAM JSON policy elements: Supported data types<a name=\"reference_policies_elements_datatypes\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_datatypes.md",
+      "section": "IAM JSON policy elements: Supported data types<a name=\"reference_policies_elements_datatypes\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_effect.md",
+      "source_title": "IAM JSON policy elements: Effect<a name=\"reference_policies_elements_effect\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_effect.md",
+      "section": "IAM JSON policy elements: Effect<a name=\"reference_policies_elements_effect\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_id.md",
+      "source_title": "IAM JSON policy elements: Id<a name=\"reference_policies_elements_id\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_id.md",
+      "section": "IAM JSON policy elements: Id<a name=\"reference_policies_elements_id\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_notaction.md",
+      "source_title": "IAM JSON policy elements: NotAction<a name=\"reference_policies_elements_notaction\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_notaction.md",
+      "section": "IAM JSON policy elements: NotAction<a name=\"reference_policies_elements_notaction\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_notprincipal.md",
+      "source_title": "AWS JSON policy elements: NotPrincipal<a name=\"reference_policies_elements_notprincipal\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_notprincipal.md",
+      "section": "AWS JSON policy elements: NotPrincipal<a name=\"reference_policies_elements_notprincipal\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_notresource.md",
+      "source_title": "IAM JSON policy elements: NotResource<a name=\"reference_policies_elements_notresource\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_notresource.md",
+      "section": "IAM JSON policy elements: NotResource<a name=\"reference_policies_elements_notresource\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_principal.md",
+      "source_title": "AWS JSON policy elements: Principal<a name=\"reference_policies_elements_principal\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_principal.md",
+      "section": "AWS JSON policy elements: Principal<a name=\"reference_policies_elements_principal\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_resource.md",
+      "source_title": "IAM JSON policy elements: Resource<a name=\"reference_policies_elements_resource\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_resource.md",
+      "section": "IAM JSON policy elements: Resource<a name=\"reference_policies_elements_resource\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_sid.md",
+      "source_title": "IAM JSON policy elements: Sid<a name=\"reference_policies_elements_sid\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_sid.md",
+      "section": "IAM JSON policy elements: Sid<a name=\"reference_policies_elements_sid\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_statement.md",
+      "source_title": "IAM JSON policy elements: Statement<a name=\"reference_policies_elements_statement\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_statement.md",
+      "section": "IAM JSON policy elements: Statement<a name=\"reference_policies_elements_statement\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_elements_version.md",
+      "source_title": "IAM JSON policy elements: Version<a name=\"reference_policies_elements_version\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_elements_version.md",
+      "section": "IAM JSON policy elements: Version<a name=\"reference_policies_elements_version\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_evaluation-logic-cross-account.md",
+      "source_title": "Cross\\-account policy evaluation logic<a name=\"reference_policies_evaluation-logic-cross-account\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_evaluation-logic-cross-account.md",
+      "section": "Cross\\-account policy evaluation logic<a name=\"reference_policies_evaluation-logic-cross-account\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_evaluation-logic.md",
+      "source_title": "Policy evaluation logic<a name=\"reference_policies_evaluation-logic\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_evaluation-logic.md",
+      "section": "Policy evaluation logic<a name=\"reference_policies_evaluation-logic\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws-dates.md",
+      "source_title": "AWS: Allows access based on date and time<a name=\"reference_policies_examples_aws-dates\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws-dates.md",
+      "section": "AWS: Allows access based on date and time<a name=\"reference_policies_examples_aws-dates\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws-enable-disable-regions.md",
+      "source_title": "AWS: Allows enabling and disabling AWS Regions<a name=\"reference_policies_examples_aws-enable-disable-regions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws-enable-disable-regions.md",
+      "section": "AWS: Allows enabling and disabling AWS Regions<a name=\"reference_policies_examples_aws-enable-disable-regions\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_deny-ip.md",
+      "source_title": "AWS: Denies access to AWS based on the source IP<a name=\"reference_policies_examples_aws_deny-ip\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_deny-ip.md",
+      "section": "AWS: Denies access to AWS based on the source IP<a name=\"reference_policies_examples_aws_deny-ip\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_deny-requested-region.md",
+      "source_title": "AWS: Denies access to AWS based on the requested Region<a name=\"reference_policies_examples_aws_deny-requested-region\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_deny-requested-region.md",
+      "section": "AWS: Denies access to AWS based on the requested Region<a name=\"reference_policies_examples_aws_deny-requested-region\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_mfa-dates.md",
+      "source_title": "AWS: Allows specific access using MFA within specific dates<a name=\"reference_policies_examples_aws_mfa-dates\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_mfa-dates.md",
+      "section": "AWS: Allows specific access using MFA within specific dates<a name=\"reference_policies_examples_aws_mfa-dates\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-mfa-only.md",
+      "source_title": "AWS: Allows MFA\\-authenticated IAM users to manage their own MFA device on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-mfa-only\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-mfa-only.md",
+      "section": "AWS: Allows MFA\\-authenticated IAM users to manage their own MFA device on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-mfa-only\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-no-mfa.md",
+      "source_title": "AWS: Allows IAM users to manage their own credentials on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-no-mfa\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-no-mfa.md",
+      "section": "AWS: Allows IAM users to manage their own credentials on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-no-mfa\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-pass-accesskeys-ssh.md",
+      "source_title": "AWS: Allows IAM users to manage their own password, access keys, and SSH public keys on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-pass-accesskeys-ssh\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-pass-accesskeys-ssh.md",
+      "section": "AWS: Allows IAM users to manage their own password, access keys, and SSH public keys on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-pass-accesskeys-ssh\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-password-only.md",
+      "source_title": "AWS: Allows IAM users to change their own console password on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-password-only\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_my-sec-creds-self-manage-password-only.md",
+      "section": "AWS: Allows IAM users to change their own console password on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage-password-only\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_aws_my-sec-creds-self-manage.md",
+      "source_title": "AWS: Allows MFA\\-authenticated IAM users to manage their own credentials on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_aws_my-sec-creds-self-manage.md",
+      "section": "AWS: Allows MFA\\-authenticated IAM users to manage their own credentials on the My security credentials page<a name=\"reference_policies_examples_aws_my-sec-creds-self-manage\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_datapipeline_not-owned.md",
+      "source_title": "AWS Data Pipeline: Denies access to DataPipeline pipelines that a user did not create<a name=\"reference_policies_examples_datapipeline_not-owned\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_datapipeline_not-owned.md",
+      "section": "AWS Data Pipeline: Denies access to DataPipeline pipelines that a user did not create<a name=\"reference_policies_examples_datapipeline_not-owned\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_dynamodb_attributes.md",
+      "source_title": "Amazon DynamoDB: Allows access to specific attributes<a name=\"reference_policies_examples_dynamodb_attributes\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_dynamodb_attributes.md",
+      "section": "Amazon DynamoDB: Allows access to specific attributes<a name=\"reference_policies_examples_dynamodb_attributes\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_dynamodb_items.md",
+      "source_title": "Amazon DynamoDB: Allows item\\-level access to DynamoDB based on an Amazon Cognito ID<a name=\"reference_policies_examples_dynamodb_items\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_dynamodb_items.md",
+      "section": "Amazon DynamoDB: Allows item\\-level access to DynamoDB based on an Amazon Cognito ID<a name=\"reference_policies_examples_dynamodb_items\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_dynamodb_specific-table.md",
+      "source_title": "Amazon DynamoDB: Allows access to a specific table<a name=\"reference_policies_examples_dynamodb_specific-table\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_dynamodb_specific-table.md",
+      "section": "Amazon DynamoDB: Allows access to a specific table<a name=\"reference_policies_examples_dynamodb_specific-table\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2-start-stop-match-tags.md",
+      "source_title": "EC2: Start or stop instances based on matching principal and resource tags<a name=\"reference_policies_examples_ec2-start-stop-match-tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2-start-stop-match-tags.md",
+      "section": "EC2: Start or stop instances based on matching principal and resource tags<a name=\"reference_policies_examples_ec2-start-stop-match-tags\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2-start-stop-tags.md",
+      "source_title": "EC2: Start or stop instances based on tags<a name=\"reference_policies_examples_ec2-start-stop-tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2-start-stop-tags.md",
+      "section": "EC2: Start or stop instances based on tags<a name=\"reference_policies_examples_ec2-start-stop-tags\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_ebs-owner.md",
+      "source_title": "Amazon EC2: Attach or detach Amazon EBS volumes to EC2 instances based on tags<a name=\"reference_policies_examples_ec2_ebs-owner\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_ebs-owner.md",
+      "section": "Amazon EC2: Attach or detach Amazon EBS volumes to EC2 instances based on tags<a name=\"reference_policies_examples_ec2_ebs-owner\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_instance-securitygroup.md",
+      "source_title": "Amazon EC2: Allows starting or stopping an EC2 instance and modifying a security group, programmatically and in the console<a name=\"reference_policies_examples_ec2_instance-securitygroup\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_instance-securitygroup.md",
+      "section": "Amazon EC2: Allows starting or stopping an EC2 instance and modifying a security group, programmatically and in the console<a name=\"reference_policies_examples_ec2_instance-securitygroup\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_instances-subnet.md",
+      "source_title": "Amazon EC2: Allows launching EC2 instances in a specific subnet, programmatically and in the console<a name=\"reference_policies_examples_ec2_instances-subnet\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_instances-subnet.md",
+      "section": "Amazon EC2: Allows launching EC2 instances in a specific subnet, programmatically and in the console<a name=\"reference_policies_examples_ec2_instances-subnet\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_region.md",
+      "source_title": "Amazon EC2: Allows full EC2 access within a specific Region, programmatically and in the console<a name=\"reference_policies_examples_ec2_region\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_region.md",
+      "section": "Amazon EC2: Allows full EC2 access within a specific Region, programmatically and in the console<a name=\"reference_policies_examples_ec2_region\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_require-mfa.md",
+      "source_title": "Amazon EC2: Requires MFA \\(GetSessionToken\\) for specific EC2 operations<a name=\"reference_policies_examples_ec2_require-mfa\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_require-mfa.md",
+      "section": "Amazon EC2: Requires MFA \\(GetSessionToken\\) for specific EC2 operations<a name=\"reference_policies_examples_ec2_require-mfa\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_securitygroups-vpc.md",
+      "source_title": "Amazon EC2: Allows managing EC2 security groups with a specific tag key\\-value pair programmatically and in the console<a name=\"reference_policies_examples_ec2_securitygroups-vpc\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_securitygroups-vpc.md",
+      "section": "Amazon EC2: Allows managing EC2 security groups with a specific tag key\\-value pair programmatically and in the console<a name=\"reference_policies_examples_ec2_securitygroups-vpc\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_tag-owner.md",
+      "source_title": "Amazon EC2: Allows starting or stopping EC2 instances a user has tagged, programmatically and in the console<a name=\"reference_policies_examples_ec2_tag-owner\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_tag-owner.md",
+      "section": "Amazon EC2: Allows starting or stopping EC2 instances a user has tagged, programmatically and in the console<a name=\"reference_policies_examples_ec2_tag-owner\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_terminate-ip.md",
+      "source_title": "Amazon EC2: Limits terminating EC2 instances to an IP address range<a name=\"reference_policies_examples_ec2_terminate-ip\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_terminate-ip.md",
+      "section": "Amazon EC2: Limits terminating EC2 instances to an IP address range<a name=\"reference_policies_examples_ec2_terminate-ip\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_ec2_volumes-instance.md",
+      "source_title": "Amazon EC2: Attach or detach volumes to an EC2 instance<a name=\"reference_policies_examples_ec2_volumes-instance\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_ec2_volumes-instance.md",
+      "section": "Amazon EC2: Attach or detach volumes to an EC2 instance<a name=\"reference_policies_examples_ec2_volumes-instance\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-add-tag-user-role.md",
+      "source_title": "IAM: Add a specific tag with specific values<a name=\"reference_policies_examples_iam-add-tag-user-role\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-add-tag-user-role.md",
+      "section": "IAM: Add a specific tag with specific values<a name=\"reference_policies_examples_iam-add-tag-user-role\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-add-tag.md",
+      "source_title": "IAM: Add a specific tag to a user with a specific tag<a name=\"reference_policies_examples_iam-add-tag\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-add-tag.md",
+      "section": "IAM: Add a specific tag to a user with a specific tag<a name=\"reference_policies_examples_iam-add-tag\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-assume-tagged-role.md",
+      "source_title": "IAM: Assume roles that have a specific tag<a name=\"reference_policies_examples_iam-assume-tagged-role\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-assume-tagged-role.md",
+      "section": "IAM: Assume roles that have a specific tag<a name=\"reference_policies_examples_iam-assume-tagged-role\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-credential-report.md",
+      "source_title": "IAM: Generate and retrieve IAM credential reports<a name=\"reference_policies_examples_iam-credential-report\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-credential-report.md",
+      "section": "IAM: Generate and retrieve IAM credential reports<a name=\"reference_policies_examples_iam-credential-report\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-manage-tags.md",
+      "source_title": "IAM: Manage a specific tag<a name=\"reference_policies_examples_iam-manage-tags\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-manage-tags.md",
+      "section": "IAM: Manage a specific tag<a name=\"reference_policies_examples_iam-manage-tags\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-new-user-tag.md",
+      "source_title": "IAM: Create new users only with specific tags<a name=\"reference_policies_examples_iam-new-user-tag\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-new-user-tag.md",
+      "section": "IAM: Create new users only with specific tags<a name=\"reference_policies_examples_iam-new-user-tag\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam-passrole-service.md",
+      "source_title": "IAM: Pass an IAM role to a specific AWS service<a name=\"reference_policies_examples_iam-passrole-service\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam-passrole-service.md",
+      "section": "IAM: Pass an IAM role to a specific AWS service<a name=\"reference_policies_examples_iam-passrole-service\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_credentials_console.md",
+      "source_title": "IAM: Allows IAM users to rotate their own credentials programmatically and in the console<a name=\"reference_policies_examples_iam_credentials_console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_credentials_console.md",
+      "section": "IAM: Allows IAM users to rotate their own credentials programmatically and in the console<a name=\"reference_policies_examples_iam_credentials_console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_limit-managed.md",
+      "source_title": "IAM: Limits managed policies that can be applied to an IAM user, group, or role<a name=\"reference_policies_examples_iam_limit-managed\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_limit-managed.md",
+      "section": "IAM: Limits managed policies that can be applied to an IAM user, group, or role<a name=\"reference_policies_examples_iam_limit-managed\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_manage-group-membership.md",
+      "source_title": "IAM: Allows managing a group's membership programmatically and in the console<a name=\"reference_policies_examples_iam_manage-group-membership\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_manage-group-membership.md",
+      "section": "IAM: Allows managing a group's membership programmatically and in the console<a name=\"reference_policies_examples_iam_manage-group-membership\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_mfa-selfmanage.md",
+      "source_title": "IAM: Allows IAM users to self\\-manage an MFA device<a name=\"reference_policies_examples_iam_mfa-selfmanage\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_mfa-selfmanage.md",
+      "section": "IAM: Allows IAM users to self\\-manage an MFA device<a name=\"reference_policies_examples_iam_mfa-selfmanage\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_multiple-services-console.md",
+      "source_title": "IAM: Allows and denies access to multiple services programmatically and in the console<a name=\"reference_policies_examples_iam_multiple-services-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_multiple-services-console.md",
+      "section": "IAM: Allows and denies access to multiple services programmatically and in the console<a name=\"reference_policies_examples_iam_multiple-services-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_policy-sim-console.md",
+      "source_title": "IAM: Access the policy simulator console<a name=\"reference_policies_examples_iam_policy-sim-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_policy-sim-console.md",
+      "section": "IAM: Access the policy simulator console<a name=\"reference_policies_examples_iam_policy-sim-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_policy-sim-path-console.md",
+      "source_title": "IAM: Access the policy simulator console based on user path<a name=\"reference_policies_examples_iam_policy-sim-path-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_policy-sim-path-console.md",
+      "section": "IAM: Access the policy simulator console based on user path<a name=\"reference_policies_examples_iam_policy-sim-path-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_policy-sim-path.md",
+      "source_title": "IAM: Access the policy simulator API based on user path<a name=\"reference_policies_examples_iam_policy-sim-path\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_policy-sim-path.md",
+      "section": "IAM: Access the policy simulator API based on user path<a name=\"reference_policies_examples_iam_policy-sim-path\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_policy-sim.md",
+      "source_title": "IAM: Access the policy simulator API<a name=\"reference_policies_examples_iam_policy-sim\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_policy-sim.md",
+      "section": "IAM: Access the policy simulator API<a name=\"reference_policies_examples_iam_policy-sim\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_read-only-console-no-reporting.md",
+      "source_title": "IAM: Allows read\\-only access to the IAM console without reporting<a name=\"reference_policies_examples_iam_read-only-console-no-reporting\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_read-only-console-no-reporting.md",
+      "section": "IAM: Allows read\\-only access to the IAM console without reporting<a name=\"reference_policies_examples_iam_read-only-console-no-reporting\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_read-only-console.md",
+      "source_title": "IAM: Allows read\\-only access to the IAM console<a name=\"reference_policies_examples_iam_read-only-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_read-only-console.md",
+      "section": "IAM: Allows read\\-only access to the IAM console<a name=\"reference_policies_examples_iam_read-only-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_service-accessed-data-orgs.md",
+      "source_title": "IAM: View service last accessed information for an Organizations policy<a name=\"reference_policies_examples_iam_service-accessed-data-orgs\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_service-accessed-data-orgs.md",
+      "section": "IAM: View service last accessed information for an Organizations policy<a name=\"reference_policies_examples_iam_service-accessed-data-orgs\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_set-account-pass-policy.md",
+      "source_title": "IAM: Allows setting the account password requirements programmatically and in the console<a name=\"reference_policies_examples_iam_set-account-pass-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_set-account-pass-policy.md",
+      "section": "IAM: Allows setting the account password requirements programmatically and in the console<a name=\"reference_policies_examples_iam_set-account-pass-policy\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_iam_users-manage-group.md",
+      "source_title": "IAM: Allows specific IAM users to manage a group programmatically and in the console<a name=\"reference_policies_examples_iam_users-manage-group\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_users-manage-group.md",
+      "section": "IAM: Allows specific IAM users to manage a group programmatically and in the console<a name=\"reference_policies_examples_iam_users-manage-group\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_lambda-access-dynamodb.md",
+      "source_title": "AWS Lambda: Allows a Lambda function to access an Amazon DynamoDB table<a name=\"reference_policies_examples_lambda-access-dynamodb\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_lambda-access-dynamodb.md",
+      "section": "AWS Lambda: Allows a Lambda function to access an Amazon DynamoDB table<a name=\"reference_policies_examples_lambda-access-dynamodb\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_rds_db-console.md",
+      "source_title": "Amazon RDS: Allows restoring RDS databases, programmatically and in the console<a name=\"reference_policies_examples_rds_db-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_rds_db-console.md",
+      "section": "Amazon RDS: Allows restoring RDS databases, programmatically and in the console<a name=\"reference_policies_examples_rds_db-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_rds_region.md",
+      "source_title": "Amazon RDS: Allows full RDS database access within a specific Region<a name=\"reference_policies_examples_rds_region\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_rds_region.md",
+      "section": "Amazon RDS: Allows full RDS database access within a specific Region<a name=\"reference_policies_examples_rds_region\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_rds_tag-owner.md",
+      "source_title": "Amazon RDS: Allows tag owners full access to RDS resources that they have tagged<a name=\"reference_policies_examples_rds_tag-owner\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_rds_tag-owner.md",
+      "section": "Amazon RDS: Allows tag owners full access to RDS resources that they have tagged<a name=\"reference_policies_examples_rds_tag-owner\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_resource_account_data_exch.md",
+      "source_title": "AWS: Deny access to Amazon S3 resources outside your account except AWS Data Exchange<a name=\"reference_policies_examples_resource_account_data_exch\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_resource_account_data_exch.md",
+      "section": "AWS: Deny access to Amazon S3 resources outside your account except AWS Data Exchange<a name=\"reference_policies_examples_resource_account_data_exch\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_cognito-bucket.md",
+      "source_title": "Amazon S3: Allows Amazon Cognito users to access objects in their bucket<a name=\"reference_policies_examples_s3_cognito-bucket\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_cognito-bucket.md",
+      "section": "Amazon S3: Allows Amazon Cognito users to access objects in their bucket<a name=\"reference_policies_examples_s3_cognito-bucket\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_deny-except-bucket.md",
+      "source_title": "Amazon S3: Restrict management to a specific S3 bucket<a name=\"reference_policies_examples_s3_deny-except-bucket\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_deny-except-bucket.md",
+      "section": "Amazon S3: Restrict management to a specific S3 bucket<a name=\"reference_policies_examples_s3_deny-except-bucket\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_federated-home-directory-console.md",
+      "source_title": "Amazon S3: Allows federated users access to their S3 home directory, programmatically and in the console<a name=\"reference_policies_examples_s3_federated-home-directory-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_federated-home-directory-console.md",
+      "section": "Amazon S3: Allows federated users access to their S3 home directory, programmatically and in the console<a name=\"reference_policies_examples_s3_federated-home-directory-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_full-access-except-production.md",
+      "source_title": "Amazon S3: S3 Bucket access, but production bucket denied without recent MFA<a name=\"reference_policies_examples_s3_full-access-except-production\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_full-access-except-production.md",
+      "section": "Amazon S3: S3 Bucket access, but production bucket denied without recent MFA<a name=\"reference_policies_examples_s3_full-access-except-production\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_home-directory-console.md",
+      "source_title": "Amazon S3: Allows IAM users access to their S3 home directory, programmatically and in the console<a name=\"reference_policies_examples_s3_home-directory-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_home-directory-console.md",
+      "section": "Amazon S3: Allows IAM users access to their S3 home directory, programmatically and in the console<a name=\"reference_policies_examples_s3_home-directory-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_rw-bucket-console.md",
+      "source_title": "Amazon S3: Allows read and write access to objects in an S3 Bucket, programmatically and in the console<a name=\"reference_policies_examples_s3_rw-bucket-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_rw-bucket-console.md",
+      "section": "Amazon S3: Allows read and write access to objects in an S3 Bucket, programmatically and in the console<a name=\"reference_policies_examples_s3_rw-bucket-console\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_examples_s3_rw-bucket.md",
+      "source_title": "Amazon S3: Allows read and write access to objects in an S3 Bucket<a name=\"reference_policies_examples_s3_rw-bucket\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_s3_rw-bucket.md",
+      "section": "Amazon S3: Allows read and write access to objects in an S3 Bucket<a name=\"reference_policies_examples_s3_rw-bucket\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_grammar.md",
+      "source_title": "Grammar of the IAM JSON policy language<a name=\"reference_policies_grammar\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_grammar.md",
+      "section": "Grammar of the IAM JSON policy language<a name=\"reference_policies_grammar\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_iam-condition-keys.md",
+      "source_title": "IAM and AWS STS condition context keys<a name=\"reference_policies_iam-condition-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_iam-condition-keys.md",
+      "section": "IAM and AWS STS condition context keys<a name=\"reference_policies_iam-condition-keys\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_multi-value-conditions.md",
+      "source_title": "Creating a condition with multiple keys or values<a name=\"reference_policies_multi-value-conditions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_multi-value-conditions.md",
+      "section": "Creating a condition with multiple keys or values<a name=\"reference_policies_multi-value-conditions\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_single-vs-multi-valued-condition-keys.md",
+      "source_title": "Single\\-valued vs\\. multivalued condition keys<a name=\"reference_policies_single-vs-multi-valued-condition-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_single-vs-multi-valued-condition-keys.md",
+      "section": "Single\\-valued vs\\. multivalued condition keys<a name=\"reference_policies_single-vs-multi-valued-condition-keys\"></a>"
+    },
+    {
+      "file": "doc_source/reference_policies_variables.md",
+      "source_title": "IAM policy elements: Variables and tags<a name=\"reference_policies_variables\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_variables.md",
+      "section": "IAM policy elements: Variables and tags<a name=\"reference_policies_variables\"></a>"
+    },
+    {
+      "file": "doc_source/resource_examples_iam_policies_resource_account.md",
+      "source_title": "AWS: Deny access to resources outside your account except AWS managed IAM policies<a name=\"resource_examples_iam_policies_resource_account\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/resource_examples_iam_policies_resource_account.md",
+      "section": "AWS: Deny access to resources outside your account except AWS managed IAM policies<a name=\"resource_examples_iam_policies_resource_account\"></a>"
+    },
+    {
+      "file": "doc_source/resources.md",
+      "source_title": "Resources to learn more about IAM<a name=\"resources\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/resources.md",
+      "section": "Resources to learn more about IAM<a name=\"resources\"></a>"
+    },
+    {
+      "file": "doc_source/roles-managingrole-editing-api.md",
+      "source_title": "Modifying a role \\(AWS API\\)<a name=\"roles-managingrole-editing-api\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/roles-managingrole-editing-api.md",
+      "section": "Modifying a role \\(AWS API\\)<a name=\"roles-managingrole-editing-api\"></a>"
+    },
+    {
+      "file": "doc_source/roles-managingrole-editing-cli.md",
+      "source_title": "Modifying a role \\(AWS CLI\\)<a name=\"roles-managingrole-editing-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/roles-managingrole-editing-cli.md",
+      "section": "Modifying a role \\(AWS CLI\\)<a name=\"roles-managingrole-editing-cli\"></a>"
+    },
+    {
+      "file": "doc_source/roles-managingrole-editing-console.md",
+      "source_title": "Modifying a role \\(console\\)<a name=\"roles-managingrole-editing-console\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/roles-managingrole-editing-console.md",
+      "section": "Modifying a role \\(console\\)<a name=\"roles-managingrole-editing-console\"></a>"
+    },
+    {
+      "file": "doc_source/sdk-general-information-section.md",
+      "source_title": "Using IAM with an AWS SDK<a name=\"sdk-general-information-section\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/sdk-general-information-section.md",
+      "section": "Using IAM with an AWS SDK<a name=\"sdk-general-information-section\"></a>"
+    },
+    {
+      "file": "doc_source/security-audit-guide.md",
+      "source_title": "AWS security audit guidelines<a name=\"security-audit-guide\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/security-audit-guide.md",
+      "section": "AWS security audit guidelines<a name=\"security-audit-guide\"></a>"
+    },
+    {
+      "file": "doc_source/security-creds.md",
+      "source_title": "AWS security credentials<a name=\"security-creds\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/security-creds.md",
+      "section": "AWS security credentials<a name=\"security-creds\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam-awsmanpol.md",
+      "source_title": "AWS managed policies for AWS Identity and Access Management Access Analyzer<a name=\"security-iam-awsmanpol\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/security-iam-awsmanpol.md",
+      "section": "AWS managed policies for AWS Identity and Access Management Access Analyzer<a name=\"security-iam-awsmanpol\"></a>"
+    },
+    {
+      "file": "doc_source/security-logging-and-monitoring.md",
+      "source_title": "Logging and monitoring in AWS Identity and Access Management<a name=\"security-logging-and-monitoring\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/security-logging-and-monitoring.md",
+      "section": "Logging and monitoring in AWS Identity and Access Management<a name=\"security-logging-and-monitoring\"></a>"
+    },
+    {
+      "file": "doc_source/security.md",
+      "source_title": "Security in IAM and AWS STS<a name=\"security\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/security.md",
+      "section": "Security in IAM and AWS STS<a name=\"security\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples.md",
+      "source_title": "Code examples for IAM using AWS SDKs<a name=\"service_code_examples\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples.md",
+      "section": "Code examples for IAM using AWS SDKs<a name=\"service_code_examples\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_iam.md",
+      "source_title": "Code examples for IAM using AWS SDKs<a name=\"service_code_examples_iam\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_iam.md",
+      "section": "Code examples for IAM using AWS SDKs<a name=\"service_code_examples_iam\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_iam_actions.md",
+      "source_title": "Actions for IAM using AWS SDKs<a name=\"service_code_examples_iam_actions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_iam_actions.md",
+      "section": "Actions for IAM using AWS SDKs<a name=\"service_code_examples_iam_actions\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_iam_scenarios.md",
+      "source_title": "Scenarios for IAM using AWS SDKs<a name=\"service_code_examples_iam_scenarios\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_iam_scenarios.md",
+      "section": "Scenarios for IAM using AWS SDKs<a name=\"service_code_examples_iam_scenarios\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_sts.md",
+      "source_title": "Code examples for AWS STS using AWS SDKs<a name=\"service_code_examples_sts\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_sts.md",
+      "section": "Code examples for AWS STS using AWS SDKs<a name=\"service_code_examples_sts\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_sts_actions.md",
+      "source_title": "Actions for AWS STS using AWS SDKs<a name=\"service_code_examples_sts_actions\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_sts_actions.md",
+      "section": "Actions for AWS STS using AWS SDKs<a name=\"service_code_examples_sts_actions\"></a>"
+    },
+    {
+      "file": "doc_source/service_code_examples_sts_scenarios.md",
+      "source_title": "Scenarios for AWS STS using AWS SDKs<a name=\"service_code_examples_sts_scenarios\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/service_code_examples_sts_scenarios.md",
+      "section": "Scenarios for AWS STS using AWS SDKs<a name=\"service_code_examples_sts_scenarios\"></a>"
+    },
+    {
+      "file": "doc_source/signature-v4-troubleshooting.md",
+      "source_title": "Troubleshoot signed requests for AWS APIs<a name=\"signature-v4-troubleshooting\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/signature-v4-troubleshooting.md",
+      "section": "Troubleshoot signed requests for AWS APIs<a name=\"signature-v4-troubleshooting\"></a>"
+    },
+    {
+      "file": "doc_source/signing-elements.md",
+      "source_title": "Elements of an AWS API request signature<a name=\"signing-elements\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/signing-elements.md",
+      "section": "Elements of an AWS API request signature<a name=\"signing-elements\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot.md",
+      "source_title": "Troubleshooting IAM<a name=\"troubleshoot\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot.md",
+      "section": "Troubleshooting IAM<a name=\"troubleshoot\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_access-denied.md",
+      "source_title": "Troubleshooting access denied error messages<a name=\"troubleshoot_access-denied\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_access-denied.md",
+      "section": "Troubleshooting access denied error messages<a name=\"troubleshoot_access-denied\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_general.md",
+      "source_title": "Troubleshooting general IAM issues<a name=\"troubleshoot_general\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_general.md",
+      "section": "Troubleshooting general IAM issues<a name=\"troubleshoot_general\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_iam-ec2.md",
+      "source_title": "Troubleshooting IAM and Amazon EC2<a name=\"troubleshoot_iam-ec2\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_iam-ec2.md",
+      "section": "Troubleshooting IAM and Amazon EC2<a name=\"troubleshoot_iam-ec2\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_iam-s3.md",
+      "source_title": "Troubleshooting IAM and Amazon S3<a name=\"troubleshoot_iam-s3\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_iam-s3.md",
+      "section": "Troubleshooting IAM and Amazon S3<a name=\"troubleshoot_iam-s3\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_mfa-fido.md",
+      "source_title": "Troubleshooting FIDO security keys<a name=\"troubleshoot_mfa-fido\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_mfa-fido.md",
+      "section": "Troubleshooting FIDO security keys<a name=\"troubleshoot_mfa-fido\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_policies.md",
+      "source_title": "Troubleshooting IAM policies<a name=\"troubleshoot_policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_policies.md",
+      "section": "Troubleshooting IAM policies<a name=\"troubleshoot_policies\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_roles.md",
+      "source_title": "Troubleshooting IAM roles<a name=\"troubleshoot_roles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_roles.md",
+      "section": "Troubleshooting IAM roles<a name=\"troubleshoot_roles\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_saml.md",
+      "source_title": "Troubleshooting SAML 2\\.0 federation with AWS<a name=\"troubleshoot_saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_saml.md",
+      "section": "Troubleshooting SAML 2\\.0 federation with AWS<a name=\"troubleshoot_saml\"></a>"
+    },
+    {
+      "file": "doc_source/troubleshoot_saml_view-saml-response.md",
+      "source_title": "How to view a SAML response in your browser for troubleshooting<a name=\"troubleshoot_saml_view-saml-response\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/troubleshoot_saml_view-saml-response.md",
+      "section": "How to view a SAML response in your browser for troubleshooting<a name=\"troubleshoot_saml_view-saml-response\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_abac-saml.md",
+      "source_title": "IAM tutorial: Use SAML session tags for ABAC<a name=\"tutorial_abac-saml\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_abac-saml.md",
+      "section": "IAM tutorial: Use SAML session tags for ABAC<a name=\"tutorial_abac-saml\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_attribute-based-access-control.md",
+      "source_title": "IAM tutorial: Define permissions to access AWS resources based on tags<a name=\"tutorial_attribute-based-access-control\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_attribute-based-access-control.md",
+      "section": "IAM tutorial: Define permissions to access AWS resources based on tags<a name=\"tutorial_attribute-based-access-control\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_billing.md",
+      "source_title": "IAM tutorial: Delegate access to the billing console<a name=\"tutorial_billing\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_billing.md",
+      "section": "IAM tutorial: Delegate access to the billing console<a name=\"tutorial_billing\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_cross-account-with-roles.md",
+      "source_title": "IAM tutorial: Delegate access across AWS accounts using IAM roles<a name=\"tutorial_cross-account-with-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_cross-account-with-roles.md",
+      "section": "IAM tutorial: Delegate access across AWS accounts using IAM roles<a name=\"tutorial_cross-account-with-roles\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_managed-policies.md",
+      "source_title": "IAM tutorial: Create and attach your first customer managed policy<a name=\"tutorial_managed-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_managed-policies.md",
+      "section": "IAM tutorial: Create and attach your first customer managed policy<a name=\"tutorial_managed-policies\"></a>"
+    },
+    {
+      "file": "doc_source/tutorial_users-self-manage-mfa-and-creds.md",
+      "source_title": "IAM tutorial: Permit users to manage their credentials and MFA settings<a name=\"tutorial_users-self-manage-mfa-and-creds\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorial_users-self-manage-mfa-and-creds.md",
+      "section": "IAM tutorial: Permit users to manage their credentials and MFA settings<a name=\"tutorial_users-self-manage-mfa-and-creds\"></a>"
+    },
+    {
+      "file": "doc_source/tutorials.md",
+      "source_title": "IAM tutorials<a name=\"tutorials\"></a>",
+      "source_url": "https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/tutorials.md",
+      "section": "IAM tutorials<a name=\"tutorials\"></a>"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/hardware/firmware/get-system-firmware-table.yml -->
+rule:
+  meta:
+    name: get system firmware table
+    namespace: host-interaction/hardware/firmware
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Reconnaissance::Gather Victim Host Information::Firmware [T1592.003]
+    references:
+      - https://github.com/LordNoteworthy/al-khaser/blob/master/al-khaser/Shared/Utils.cpp#L854
+    examples:
+      - dc7cb53c5dc2e756822328a7144c29318cb871890727eff9c8da64a01e8e782d:0x180001BD0
+  features:
+    - and:
+      - api: kernel32.GetSystemFirmwareTable
+      - optional:
+        - or:
+          - number: 0x41435049 = "ACPI"
+          - number: 0x4649524d = "FIRM"
+          - number: 0x52534D42 = "RSMB"

@@ -1,0 +1,17 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-disasm/contain-anti-disasm-techniques.yml -->
+rule:
+  meta:
+    name: contain anti-disasm techniques
+    namespace: anti-analysis/anti-disasm
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: file
+      dynamic: file
+    mbc:
+      - Anti-Static Analysis::Disassembler Evasion [B0012]
+    examples:
+      - a5c70086b3bc4fe64f4e7a0aa452e620
+  features:
+    - or:
+      - count(match(contain pusha popa sequence)): 10 or more

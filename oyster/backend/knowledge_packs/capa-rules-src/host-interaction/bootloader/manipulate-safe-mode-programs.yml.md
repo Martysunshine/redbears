@@ -1,0 +1,22 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/bootloader/manipulate-safe-mode-programs.yml -->
+rule:
+  meta:
+    name: manipulate safe mode programs
+    namespace: host-interaction/bootloader
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Impair Defenses::Safe Mode Boot [T1562.009]
+    examples:
+      - 3446b3889a52d81119d8c482a2a282b9:0x409AA8
+  features:
+    - and:
+      - os: windows
+      - or:
+        - substring: "Control\\SafeBoot\\Minimal\\"
+          description: registry key for safe mode, no networking
+        - substring: "Control\\SafeBoot\\Network\\"
+          description: registry key for safe mode, with networking

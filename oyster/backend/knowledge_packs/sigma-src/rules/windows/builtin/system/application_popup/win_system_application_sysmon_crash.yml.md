@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/application_popup/win_system_application_sysmon_crash.yml -->
+title: Sysmon Application Crashed
+id: 4d7f1827-1637-4def-8d8a-fd254f9454df
+status: test
+description: Detects application popup reporting a failure of the Sysmon service
+references:
+    - https://github.com/nasbench/EVTX-ETW-Resources/blob/f1b010ce0ee1b71e3024180de1a3e67f99701fe4/ETWProvidersManifests/Windows10/1803/W10_1803_Pro_19700101_17134.1/WEPExplorer/Application%20Popup.xml#L36
+author: Tim Shelton
+date: 2022-04-26
+modified: 2024-01-17
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: 'Application Popup'
+        EventID: 26
+        Caption:
+            - 'sysmon64.exe - Application Error'
+            - 'sysmon.exe - Application Error'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

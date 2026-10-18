@@ -1,0 +1,20 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-debugging/debugger-detection/check-for-peb-beingdebugged-flag.yml -->
+rule:
+  meta:
+    name: check for PEB BeingDebugged flag
+    namespace: anti-analysis/anti-debugging/debugger-detection
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: unsupported  # requires offset features
+    mbc:
+      - Anti-Behavioral Analysis::Debugger Detection::Process Environment Block BeingDebugged [B0001.035]
+    references:
+      - Practical Malware Analysis, Chapter 16, p. 353
+    examples:
+      - Practical Malware Analysis Lab 16-01.exe_:0x403530
+  features:
+    - and:
+      - match: PEB access
+      - offset: 2 = PEB.BeingDebugged

@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_hktl_dumpert.yml -->
+title: HackTool - Dumpert Process Dumper Default File
+id: 93d94efc-d7ad-4161-ad7d-1638c4f908d8
+related:
+    - id: 2704ab9e-afe2-4854-a3b1-0c0706d03578
+      type: derived
+status: test
+description: Detects the creation of the default dump file used by Outflank Dumpert tool. A process dumper, which dumps the lsass process memory
+references:
+    - https://github.com/outflanknl/Dumpert
+    - https://unit42.paloaltonetworks.com/actors-still-exploiting-sharepoint-vulnerability/
+author: Florian Roth (Nextron Systems)
+date: 2020-02-04
+modified: 2023-05-09
+tags:
+    - attack.credential-access
+    - attack.t1003.001
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith: 'dumpert.dmp'
+    condition: selection
+falsepositives:
+    - Very unlikely
+level: critical

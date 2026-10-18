@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/identity_protection/azure_identity_protection_new_coutry_region.yml -->
+title: New Country
+id: adf9f4d2-559e-4f5c-95be-c28dff0b1476
+status: test
+description: Detects sign-ins from new countries. The detection considers past activity locations to determine new and infrequent locations.
+references:
+    - https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks#new-country
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-user-accounts#unusual-sign-ins
+author: Mark Morowczynski '@markmorow', Gloria Lee, '@gleeiamglo'
+date: 2023-09-03
+tags:
+    - attack.stealth
+    - attack.t1078
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.initial-access
+logsource:
+    product: azure
+    service: riskdetection
+detection:
+    selection:
+        riskEventType: 'newCountry'
+    condition: selection
+falsepositives:
+    - We recommend investigating the sessions flagged by this detection in the context of other sign-ins from the user.
+level: high

@@ -1,0 +1,36 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/lib/allocate-memory.yml -->
+rule:
+  meta:
+    name: allocate memory
+    authors:
+      - 0x534a@mailbox.org
+      - "@mr-tz"
+    lib: true
+    scopes:
+      static: basic block
+      dynamic: call
+    mbc:
+      - Memory::Allocate Memory [C0007]
+    examples:
+      - Practical Malware Analysis Lab 03-03.exe_:0x4010EA
+      - 563653399B82CD443F120ECEFF836EA3678D4CF11D9B351BB737573C2D856299:0x140001ABA  # ntdll.NtAllocateVirtualMemory
+  features:
+    - or:
+      - api: kernel32.VirtualAlloc
+      - api: kernel32.VirtualAllocEx
+      - api: kernel32.VirtualAllocExNuma
+      - api: NtAllocateVirtualMemory
+      - api: ZwAllocateVirtualMemory
+      - api: NtMapViewOfSection
+      - api: ZwMapViewOfSection
+      - basic block:
+        - and:
+          - match: link function at runtime on Windows
+          - or:
+            - string: "VirtualAlloc"
+            - string: "VirtualAllocEx"
+            - string: "VirtualAllocExNuma"
+            - string: "NtAllocateVirtualMemory"
+            - string: "ZwAllocateVirtualMemory"
+            - string: "NtMapViewOfSection"
+            - string: "ZwMapViewOfSection"

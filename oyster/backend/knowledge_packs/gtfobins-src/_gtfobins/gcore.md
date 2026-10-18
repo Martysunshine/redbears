@@ -1,0 +1,13 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gcore -->
+---
+functions:
+  file-read:
+  - code: |-
+      gcore $PID
+    comment: |-
+      It can be used to generate core dumps of running processes (`$PID`). Such files often contains sensitive information such as open files content, cryptographic keys, passwords, etc. This command produces a binary file named `core.$PID`, that is then often filtered with `strings` to narrow down relevant information.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+...

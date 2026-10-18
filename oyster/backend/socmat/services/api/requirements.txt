@@ -1,0 +1,13 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+sqlalchemy==2.0.36
+pydantic>=2.0
+python-multipart==0.0.12
+pyyaml==6.0.2
+python-dotenv>=1.0.0
+yara-python>=4.2
+anthropic>=0.40.0
+openai>=1.0.0
+fpdf2>=2.7.0
+requests>=2.31.0
+dpkt>=1.9.8

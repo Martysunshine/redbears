@@ -1,0 +1,14 @@
+{
+  "//": "Oyster MCP gateway — VS Code (stdio). Copy to .vscode/mcp.json in your workspace. Replace ABSOLUTE_PATH_TO_OYSTER with the real path, or run backend/scripts/mcp_setup.py --write-vscode ./.vscode/mcp.json to generate it safely. Keep secrets in the environment or in VS Code 'inputs', never inline in committed settings.",
+  "servers": {
+    "oyster-security": {
+      "type": "stdio",
+      "command": "ABSOLUTE_PATH_TO_OYSTER/backend/venv/bin/python",
+      "args": ["-m", "mcp_gateway.stdio_main"],
+      "cwd": "ABSOLUTE_PATH_TO_OYSTER/backend",
+      "env": {
+        "OYSTER_MCP_LOCAL_EMAIL": "you@example.com"
+      }
+    }
+  }
+}

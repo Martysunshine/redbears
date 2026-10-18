@@ -1,0 +1,25 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/linking/static/sqlite3/linked-against-sqlcipher.yml -->
+rule:
+  meta:
+    name: linked against SQLCipher
+    namespace: linking/static/sqlite3
+    authors:
+      - wballenthin@google.com
+    description: SQLCipher is a standalone fork of SQLite that adds 256 bit AES encryption of database files and other security features.
+    scopes:
+      static: file
+      dynamic: file
+    references:
+      - https://www.zetetic.net/sqlcipher/
+      - https://github.com/sqlcipher/sqlcipher
+    examples:
+      - 559efe9f3d4864910d5c5edbaadd3972c6dfc3ba887c48aa6728b0093898563f
+  features:
+    - or:
+      - 3 or more:
+        - string: "hexkey"
+        - string: "hexrekey"
+        - string: "cipher"
+        - string: "rekey_cipher"
+        - string: "kdf_iter"
+        - string: "rekey_kdf_iter"

@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml -->
+rule:
+  meta:
+    name: check for microsoft office emulation
+    namespace: anti-analysis/anti-vm/vm-detection
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Virtualization/Sandbox Evasion::System Checks [T1497.001]
+    mbc:
+      - Anti-Behavioral Analysis::Sandbox Detection::Product Key/ID Testing [B0007.005]
+    references:
+      - https://github.com/LloydLabs/wsb-detect
+    examples:
+      - 773290480d5445f11d3dc1b800728966:0x140001140
+  features:
+    - and:
+      - substring: "OfficePackagesForWDAG"
+      - api: GetWindowsDirectory
+      - optional:
+        - match: create or open file

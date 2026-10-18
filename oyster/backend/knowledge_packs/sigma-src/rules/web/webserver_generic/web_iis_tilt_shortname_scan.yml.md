@@ -1,0 +1,32 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/webserver_generic/web_iis_tilt_shortname_scan.yml -->
+title: Successful IIS Shortname Fuzzing Scan
+id: 7cb02516-6d95-4ffc-8eee-162075e111ac
+status: test
+description: When IIS uses an old .Net Framework it's possible to enumerate folders with the symbol "~"
+references:
+    - https://github.com/projectdiscovery/nuclei-templates/blob/9d2889356eebba661c8407038e430759dfd4ec31/fuzzing/iis-shortname.yaml
+    - https://www.exploit-db.com/exploits/19525
+    - https://github.com/lijiejie/IIS_shortname_Scanner
+author: frack113
+date: 2021-10-06
+modified: 2023-01-02
+tags:
+    - attack.initial-access
+    - attack.t1190
+logsource:
+    category: webserver
+detection:
+    selection:
+        cs-uri-query|contains: '~1'
+        cs-uri-query|endswith: 'a.aspx'
+        cs-method:
+            - GET
+            - OPTIONS
+        # Success only
+        sc-status:
+            - 200
+            - 301
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

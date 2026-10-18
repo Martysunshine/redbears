@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/audit_logs/azure_tap_added.yml -->
+title: Temporary Access Pass Added To An Account
+id: fa84aaf5-8142-43cd-9ec2-78cfebf878ce
+status: test
+description: Detects when a temporary access pass (TAP) is added to an account. TAPs added to priv accounts should be investigated
+references:
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-privileged-accounts#changes-to-privileged-accounts
+author: Mark Morowczynski '@markmorow', Yochana Henderson, '@Yochana-H'
+date: 2022-08-10
+tags:
+    - attack.privilege-escalation
+    - attack.initial-access
+    - attack.persistence
+    - attack.stealth
+    - attack.t1078.004
+logsource:
+    product: azure
+    service: auditlogs
+detection:
+    selection:
+        properties.message: Admin registered security info
+        Status: Admin registered temporary access pass method for user
+    condition: selection
+falsepositives:
+    - Administrator adding a legitimate temporary access pass
+level: high

@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/lsasrv/win_system_lsasrv_ntlmv1.yml -->
+title: NTLMv1 Logon Between Client and Server
+id: e9d4ab66-a532-4ef7-a502-66a9e4a34f5d
+status: test
+description: Detects the reporting of NTLMv1 being used between a client and server. NTLMv1 is insecure as the underlying encryption algorithms can be brute-forced by modern hardware.
+references:
+    - https://github.com/nasbench/EVTX-ETW-Resources/blob/f1b010ce0ee1b71e3024180de1a3e67f99701fe4/ETWProvidersManifests/Windows10/22H2/W10_22H2_Pro_20230321_19045.2728/WEPExplorer/LsaSrv.xml
+author: Tim Shelton, Nasreddine Bencherchali (Nextron Systems)
+date: 2022-04-26
+modified: 2023-06-06
+tags:
+    - attack.lateral-movement
+    - attack.t1550.002
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: "LsaSrv"
+        EventID:
+            - 6038
+            - 6039
+    condition: selection
+falsepositives:
+    - Environments that use NTLMv1
+level: medium

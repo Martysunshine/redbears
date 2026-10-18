@@ -1,0 +1,13 @@
+{
+  "id": "ai-llm-security",
+  "version": "1.1.0",
+  "title": "AI, LLM & Agent Security",
+  "domain": "offensive-defensive",
+  "description": "OWASP Top 10 for LLM Applications: direct/indirect prompt injection, retrieval poisoning, excessive agency, sensitive-information disclosure, and how to test with garak/PyRIT/promptfoo. Also covers abliterated/uncensored open-weight models: what the technique does and how to govern their use.",
+  "tags": ["ai-security", "llm", "prompt-injection", "owasp-llm", "agent-security", "abliteration", "open-weight-models"],
+  "authority": "OWASP GenAI",
+  "docs": [
+    {"file": "owasp-llm-top-10.md", "source_title": "OWASP Top 10 for LLM Applications", "source_url": "https://genai.owasp.org/llm-top-10/"},
+    {"file": "abliterated-models.md", "source_title": "Abliterated Models: Technique and Governance", "source_url": null}
+  ]
+}

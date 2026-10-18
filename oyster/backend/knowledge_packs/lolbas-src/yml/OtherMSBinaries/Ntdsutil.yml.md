@@ -1,0 +1,26 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Ntdsutil.yml -->
+---
+Name: ntdsutil.exe
+Description: Command line utility used to export Active Directory.
+Author: Tony Lambert
+Created: 2020-01-10
+Commands:
+  - Command: ntdsutil.exe "ac i ntds" "ifm" "create full c:\" q q
+    Description: Dump NTDS.dit into folder
+    Usecase: Dumping of Active Directory NTDS.dit database
+    Category: Dump
+    Privileges: Administrator
+    MitreID: T1003.003
+    OperatingSystem: Windows
+Full_Path:
+  - Path: C:\Windows\System32\ntdsutil.exe
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_ntdsutil_usage.yml
+  - Splunk: https://github.com/splunk/security_content/blob/2b87b26bdc2a84b65b1355ffbd5174bdbdb1879c/detections/endpoint/ntdsutil_export_ntds.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/5bdf70e72c6cd4547624c521108189af994af449/rules/windows/credential_access_cmdline_dump_tool.toml
+  - IOC: ntdsutil.exe with command line including "ifm"
+Resources:
+  - Link: https://adsecurity.org/?p=2398#CreateIFM
+Acknowledgement:
+  - Person: Sean Metcalf
+    Handle: '@PyroTek3'

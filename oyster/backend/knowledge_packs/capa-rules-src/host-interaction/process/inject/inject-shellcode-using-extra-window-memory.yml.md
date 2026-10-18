@@ -1,0 +1,30 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/inject/inject-shellcode-using-extra-window-memory.yml -->
+rule:
+  meta:
+    name: inject shellcode using extra window memory
+    namespace: host-interaction/process/inject
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Process Injection::Extra Window Memory Injection [T1055.011]
+    mbc:
+      - Defense Evasion::Process Injection [E1055]
+    references:
+      - https://unprotect.it/technique/extra-window-memory-injection/
+      - https://github.com/SafeBreach-Labs/pinjectra/blob/master/Pinjector/SetWindowLongPtrA.cpp
+    examples:
+      - 592cfd22bba96ef3aab566fe7bf82aff5e1b4130856d1f7f847d03d4689af7e7:0x1400010C0
+  features:
+    - and:
+      - match: find taskbar
+      - match: open process
+      - match: write process memory
+      - or:
+        - api: SetWindowLong
+        - api: SetWindowLongPtr
+      - or:
+        - api: PostMessage
+        - api: SendNotifyMessage

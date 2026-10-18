@@ -1,0 +1,759 @@
+{
+  "id": "owasp-cheatsheets-src",
+  "name": "owasp-cheatsheets-src",
+  "version": "6b8819da79e0",
+  "title": "OWASP Cheat Sheet Series (upstream)",
+  "domain": "defensive",
+  "security_domain": "secure-development",
+  "description": "Imported from https://cheatsheetseries.owasp.org/ at 6b8819da79e0. 120 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP Cheat Sheet Series, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "cheatsheets",
+    "secure-coding",
+    "remediation"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "web",
+    "api"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "owasp-cheatsheets-src",
+  "upstream_commit": "6b8819da79e0537d072e04296ffa3adfc94ba881",
+  "source_urls": [
+    "https://cheatsheetseries.owasp.org/",
+    "https://github.com/OWASP/CheatSheetSeries"
+  ],
+  "docs": [
+    {
+      "file": "cheatsheets/AI_Agent_Security_Cheat_Sheet.md",
+      "source_title": "AI Agent Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/AI_Agent_Security_Cheat_Sheet.md",
+      "section": "AI Agent Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/AJAX_Security_Cheat_Sheet.md",
+      "source_title": "AJAX Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/AJAX_Security_Cheat_Sheet.md",
+      "section": "AJAX Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/AML_Sanctions_AI_Agent_Payments_Cheat_Sheet.md",
+      "source_title": "AML and Sanctions Compliance for AI Agent Payments Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/AML_Sanctions_AI_Agent_Payments_Cheat_Sheet.md",
+      "section": "AML and Sanctions Compliance for AI Agent Payments Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Abuse_Case_Cheat_Sheet.md",
+      "source_title": "Abuse Case Cheat Sheet (Historical)",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Abuse_Case_Cheat_Sheet.md",
+      "section": "Abuse Case Cheat Sheet (Historical)"
+    },
+    {
+      "file": "cheatsheets/Access_Control_Cheat_Sheet.md",
+      "source_title": "DEPRECATED: Access Control Cheatsheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Access_Control_Cheat_Sheet.md",
+      "section": "DEPRECATED: Access Control Cheatsheet"
+    },
+    {
+      "file": "cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.md",
+      "source_title": "Attack Surface Analysis Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.md",
+      "section": "Attack Surface Analysis Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Authentication_Cheat_Sheet.md",
+      "source_title": "Authentication Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Authentication_Cheat_Sheet.md",
+      "section": "Authentication Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Authorization_Cheat_Sheet.md",
+      "source_title": "Authorization Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Authorization_Cheat_Sheet.md",
+      "section": "Authorization Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Authorization_Regression_Testing_Cheat_Sheet.md",
+      "source_title": "Authorization Regression Testing Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Authorization_Regression_Testing_Cheat_Sheet.md",
+      "section": "Authorization Regression Testing Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Authorization_Testing_Automation_Cheat_Sheet.md",
+      "source_title": "Authorization Testing Automation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Authorization_Testing_Automation_Cheat_Sheet.md",
+      "section": "Authorization Testing Automation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Automotive_Security_Cheat_Sheet.md",
+      "source_title": "Top 10 Automotive Security Vulnerabilities",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Automotive_Security_Cheat_Sheet.md",
+      "section": "Top 10 Automotive Security Vulnerabilities"
+    },
+    {
+      "file": "cheatsheets/Bean_Validation_Cheat_Sheet.md",
+      "source_title": "Bean Validation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Bean_Validation_Cheat_Sheet.md",
+      "section": "Bean Validation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Bot_Management_and_Anti-Automation_Cheat_Sheet.md",
+      "source_title": "Bot Management and Anti-Automation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Bot_Management_and_Anti-Automation_Cheat_Sheet.md",
+      "section": "Bot Management and Anti-Automation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.md",
+      "source_title": "Browser Extension Security Vulnerabilities Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.md",
+      "section": "Browser Extension Security Vulnerabilities Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Business_Logic_Security_Cheat_Sheet.md",
+      "source_title": "Business Logic Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Business_Logic_Security_Cheat_Sheet.md",
+      "section": "Business Logic Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.md",
+      "source_title": "C-Based Toolchain Hardening Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.md",
+      "section": "C-Based Toolchain Hardening Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/CI_CD_Security_Cheat_Sheet.md",
+      "source_title": "CI/CD Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/CI_CD_Security_Cheat_Sheet.md",
+      "section": "CI/CD Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.md",
+      "source_title": "Choosing and Using Security Questions Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.md",
+      "section": "Choosing and Using Security Questions Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Clickjacking_Defense_Cheat_Sheet.md",
+      "source_title": "Clickjacking Defense Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Clickjacking_Defense_Cheat_Sheet.md",
+      "section": "Clickjacking Defense Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Content_Security_Policy_Cheat_Sheet.md",
+      "source_title": "Content Security Policy Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Content_Security_Policy_Cheat_Sheet.md",
+      "section": "Content Security Policy Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.md",
+      "source_title": "Cookie Theft Mitigation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.md",
+      "section": "Cookie Theft Mitigation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.md",
+      "source_title": "Credential Stuffing Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.md",
+      "section": "Credential Stuffing Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md",
+      "source_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md",
+      "section": "Cross-Site Request Forgery Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md",
+      "source_title": "Cross Site Scripting Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md",
+      "section": "Cross Site Scripting Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Cryptographic_Storage_Cheat_Sheet.md",
+      "source_title": "Cryptographic Storage Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md",
+      "section": "Cryptographic Storage Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet.md",
+      "source_title": "DOM Clobbering Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet.md",
+      "section": "DOM Clobbering Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md",
+      "source_title": "DOM based XSS Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md",
+      "section": "DOM based XSS Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Database_Security_Cheat_Sheet.md",
+      "source_title": "Database Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Database_Security_Cheat_Sheet.md",
+      "section": "Database Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Denial_of_Service_Cheat_Sheet.md",
+      "source_title": "Denial of Service Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Denial_of_Service_Cheat_Sheet.md",
+      "section": "Denial of Service Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Dependency_Graph_SBOM_Cheat_Sheet.md",
+      "source_title": "Dependency Graph & SBOM Best Practices Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Dependency_Graph_SBOM_Cheat_Sheet.md",
+      "section": "Dependency Graph & SBOM Best Practices Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Deserialization_Cheat_Sheet.md",
+      "source_title": "Deserialization Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Deserialization_Cheat_Sheet.md",
+      "section": "Deserialization Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Django_REST_Framework_Cheat_Sheet.md",
+      "source_title": "Django REST Framework (DRF) Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Django_REST_Framework_Cheat_Sheet.md",
+      "section": "Django REST Framework (DRF) Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Django_Security_Cheat_Sheet.md",
+      "source_title": "Django Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Django_Security_Cheat_Sheet.md",
+      "section": "Django Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Docker_Security_Cheat_Sheet.md",
+      "source_title": "Docker Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Docker_Security_Cheat_Sheet.md",
+      "section": "Docker Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/DotNet_Security_Cheat_Sheet.md",
+      "source_title": "DotNet Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/DotNet_Security_Cheat_Sheet.md",
+      "section": "DotNet Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Drone_Security_Cheat_Sheet.md",
+      "source_title": "Drone Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Drone_Security_Cheat_Sheet.md",
+      "section": "Drone Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Email_Validation_and_Verification_Cheat_Sheet.md",
+      "source_title": "Email Validation and Verification in Identity Systems Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Email_Validation_and_Verification_Cheat_Sheet.md",
+      "section": "Email Validation and Verification in Identity Systems Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Error_Handling_Cheat_Sheet.md",
+      "source_title": "Error Handling Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Error_Handling_Cheat_Sheet.md",
+      "section": "Error Handling Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/File_Upload_Cheat_Sheet.md",
+      "source_title": "File Upload Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/File_Upload_Cheat_Sheet.md",
+      "section": "File Upload Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Forgot_Password_Cheat_Sheet.md",
+      "source_title": "Forgot Password Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Forgot_Password_Cheat_Sheet.md",
+      "section": "Forgot Password Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/GitHub_Actions_Security_Cheat_Sheet.md",
+      "source_title": "GitHub Actions Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/GitHub_Actions_Security_Cheat_Sheet.md",
+      "section": "GitHub Actions Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/GraphQL_Cheat_Sheet.md",
+      "source_title": "GraphQL Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/GraphQL_Cheat_Sheet.md",
+      "section": "GraphQL Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/HTML5_Security_Cheat_Sheet.md",
+      "source_title": "HTML5 Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/HTML5_Security_Cheat_Sheet.md",
+      "section": "HTML5 Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/HTTP_Headers_Cheat_Sheet.md",
+      "source_title": "HTTP Security Response Headers Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/HTTP_Headers_Cheat_Sheet.md",
+      "section": "HTTP Security Response Headers Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.md",
+      "source_title": "HTTP Strict Transport Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.md",
+      "section": "HTTP Strict Transport Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.md",
+      "source_title": "Infrastructure as Code Security Cheatsheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.md",
+      "section": "Infrastructure as Code Security Cheatsheet"
+    },
+    {
+      "file": "cheatsheets/Injection_Prevention_Cheat_Sheet.md",
+      "source_title": "Injection Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Injection_Prevention_Cheat_Sheet.md",
+      "section": "Injection Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.md",
+      "source_title": "Injection Prevention Cheat Sheet in Java",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.md",
+      "section": "Injection Prevention Cheat Sheet in Java"
+    },
+    {
+      "file": "cheatsheets/Input_Validation_Cheat_Sheet.md",
+      "source_title": "Input Validation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Input_Validation_Cheat_Sheet.md",
+      "section": "Input Validation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md",
+      "source_title": "Insecure Direct Object Reference Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md",
+      "section": "Insecure Direct Object Reference Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/JAAS_Cheat_Sheet.md",
+      "source_title": "JAAS Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/JAAS_Cheat_Sheet.md",
+      "section": "JAAS Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/JSON_Web_Token_Cheat_Sheet.md",
+      "source_title": "JSON Web Token Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/JSON_Web_Token_Cheat_Sheet.md",
+      "section": "JSON Web Token Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Java_Security_Cheat_Sheet.md",
+      "source_title": "Java Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Java_Security_Cheat_Sheet.md",
+      "section": "Java Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Key_Management_Cheat_Sheet.md",
+      "source_title": "Key Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Key_Management_Cheat_Sheet.md",
+      "section": "Key Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Kubernetes_Security_Cheat_Sheet.md",
+      "source_title": "Kubernetes Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Kubernetes_Security_Cheat_Sheet.md",
+      "section": "Kubernetes Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md",
+      "source_title": "LDAP Injection Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md",
+      "section": "LDAP Injection Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.md",
+      "source_title": "LLM Prompt Injection Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.md",
+      "section": "LLM Prompt Injection Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Laravel_Cheat_Sheet.md",
+      "source_title": "Laravel Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Laravel_Cheat_Sheet.md",
+      "section": "Laravel Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Legacy_Application_Management_Cheat_Sheet.md",
+      "source_title": "Legacy Application Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Legacy_Application_Management_Cheat_Sheet.md",
+      "section": "Legacy Application Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Logging_Cheat_Sheet.md",
+      "source_title": "Logging Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Logging_Cheat_Sheet.md",
+      "section": "Logging Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Logging_Vocabulary_Cheat_Sheet.md",
+      "source_title": "Application Logging Vocabulary Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Logging_Vocabulary_Cheat_Sheet.md",
+      "section": "Application Logging Vocabulary Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/MCP_Security_Cheat_Sheet.md",
+      "source_title": "MCP (Model Context Protocol) Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/MCP_Security_Cheat_Sheet.md",
+      "section": "MCP (Model Context Protocol) Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Mass_Assignment_Cheat_Sheet.md",
+      "source_title": "Mass Assignment Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Mass_Assignment_Cheat_Sheet.md",
+      "section": "Mass Assignment Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Microservices_Security_Cheat_Sheet.md",
+      "source_title": "Microservices Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Microservices_Security_Cheat_Sheet.md",
+      "section": "Microservices Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.md",
+      "source_title": "Microservices based Security Arch Doc Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.md",
+      "section": "Microservices based Security Arch Doc Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Mobile_Application_Security_Cheat_Sheet.md",
+      "source_title": "Mobile Application Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Mobile_Application_Security_Cheat_Sheet.md",
+      "section": "Mobile Application Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Multi_Tenant_Security_Cheat_Sheet.md",
+      "source_title": "Multi-Tenant Application Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.md",
+      "section": "Multi-Tenant Application Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Multifactor_Authentication_Cheat_Sheet.md",
+      "source_title": "Multifactor Authentication Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Multifactor_Authentication_Cheat_Sheet.md",
+      "section": "Multifactor Authentication Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/NPM_Security_Cheat_Sheet.md",
+      "source_title": "NPM Security best practices",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/NPM_Security_Cheat_Sheet.md",
+      "section": "NPM Security best practices"
+    },
+    {
+      "file": "cheatsheets/Network_Segmentation_Cheat_Sheet.md",
+      "source_title": "Network segmentation Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Network_Segmentation_Cheat_Sheet.md",
+      "section": "Network segmentation Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/NoSQL_Security_Cheat_Sheet.md",
+      "source_title": "NoSQL Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/NoSQL_Security_Cheat_Sheet.md",
+      "section": "NoSQL Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/NodeJS_Docker_Cheat_Sheet.md",
+      "source_title": "Node.js Docker Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/NodeJS_Docker_Cheat_Sheet.md",
+      "section": "Node.js Docker Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Nodejs_Security_Cheat_Sheet.md",
+      "source_title": "NodeJS Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Nodejs_Security_Cheat_Sheet.md",
+      "section": "NodeJS Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/OAuth2_Cheat_Sheet.md",
+      "source_title": "OAuth 2.0 Protocol Cheatsheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/OAuth2_Cheat_Sheet.md",
+      "section": "OAuth 2.0 Protocol Cheatsheet"
+    },
+    {
+      "file": "cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.md",
+      "source_title": "OS Command Injection Defense Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.md",
+      "section": "OS Command Injection Defense Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/PHP_Configuration_Cheat_Sheet.md",
+      "source_title": "PHP Configuration Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/PHP_Configuration_Cheat_Sheet.md",
+      "section": "PHP Configuration Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Password_Storage_Cheat_Sheet.md",
+      "source_title": "Password Storage Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Password_Storage_Cheat_Sheet.md",
+      "section": "Password Storage Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Pinning_Cheat_Sheet.md",
+      "source_title": "Pinning Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Pinning_Cheat_Sheet.md",
+      "section": "Pinning Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.md",
+      "source_title": "Prototype Pollution Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.md",
+      "section": "Prototype Pollution Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Query_Parameterization_Cheat_Sheet.md",
+      "source_title": "Query Parameterization Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Query_Parameterization_Cheat_Sheet.md",
+      "section": "Query Parameterization Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/RAG_Security_Cheat_Sheet.md",
+      "source_title": "Retrieval-Augmented Generation (RAG) Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/RAG_Security_Cheat_Sheet.md",
+      "section": "Retrieval-Augmented Generation (RAG) Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/REST_Assessment_Cheat_Sheet.md",
+      "source_title": "REST Assessment Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/REST_Assessment_Cheat_Sheet.md",
+      "section": "REST Assessment Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/REST_Security_Cheat_Sheet.md",
+      "source_title": "REST Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/REST_Security_Cheat_Sheet.md",
+      "section": "REST Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Ruby_on_Rails_Cheat_Sheet.md",
+      "source_title": "Ruby on Rails Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Ruby_on_Rails_Cheat_Sheet.md",
+      "section": "Ruby on Rails Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/SAML_Security_Cheat_Sheet.md",
+      "source_title": "SAML Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/SAML_Security_Cheat_Sheet.md",
+      "section": "SAML Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md",
+      "source_title": "SQL Injection Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md",
+      "section": "SQL Injection Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secrets_Management_Cheat_Sheet.md",
+      "source_title": "Secrets Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secrets_Management_Cheat_Sheet.md",
+      "section": "Secrets Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secure_AI_Model_Ops_Cheat_Sheet.md",
+      "source_title": "Secure AI/ML Model Ops Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secure_AI_Model_Ops_Cheat_Sheet.md",
+      "section": "Secure AI/ML Model Ops Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet.md",
+      "source_title": "Cloud Architecture Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet.md",
+      "section": "Cloud Architecture Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secure_Code_Review_Cheat_Sheet.md",
+      "source_title": "Secure Code Review Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secure_Code_Review_Cheat_Sheet.md",
+      "section": "Secure Code Review Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.md",
+      "source_title": "Secure Coding with AI Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.md",
+      "section": "Secure Coding with AI Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Secure_Product_Design_Cheat_Sheet.md",
+      "source_title": "Secure Product Design Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Secure_Product_Design_Cheat_Sheet.md",
+      "section": "Secure Product Design Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.md",
+      "source_title": "Securing Cascading Style Sheets Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.md",
+      "section": "Securing Cascading Style Sheets Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Security_Terminology_Cheat_Sheet.md",
+      "source_title": "Security Terminology Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Security_Terminology_Cheat_Sheet.md",
+      "section": "Security Terminology Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.md",
+      "source_title": "Server-Side Request Forgery Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.md",
+      "section": "Server-Side Request Forgery Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Serverless_FaaS_Security_Cheat_Sheet.md",
+      "source_title": "Serverless / FaaS Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Serverless_FaaS_Security_Cheat_Sheet.md",
+      "section": "Serverless / FaaS Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Session_Management_Cheat_Sheet.md",
+      "source_title": "Session Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Session_Management_Cheat_Sheet.md",
+      "section": "Session Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.md",
+      "source_title": "Software Supply Chain Security",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.md",
+      "section": "Software Supply Chain Security"
+    },
+    {
+      "file": "cheatsheets/Subdomain_Takeover_Prevention_Cheat_Sheet.md",
+      "source_title": "Subdomain Takeover Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Subdomain_Takeover_Prevention_Cheat_Sheet.md",
+      "section": "Subdomain Takeover Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Symfony_Cheat_Sheet.md",
+      "source_title": "Symfony Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Symfony_Cheat_Sheet.md",
+      "section": "Symfony Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/TLS_Cipher_String_Cheat_Sheet.md",
+      "source_title": "DEPRECATED: TLS Cipher String Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/TLS_Cipher_String_Cheat_Sheet.md",
+      "section": "DEPRECATED: TLS Cipher String Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.md",
+      "source_title": "Third Party JavaScript Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.md",
+      "section": "Third Party JavaScript Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Third_Party_Payment_Gateway_Integration_Cheat_Sheet.md",
+      "source_title": "Secure Integration of Third-Party Payment Gateways Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Third_Party_Payment_Gateway_Integration_Cheat_Sheet.md",
+      "section": "Secure Integration of Third-Party Payment Gateways Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Threat_Modeling_Cheat_Sheet.md",
+      "source_title": "Threat Modeling Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Threat_Modeling_Cheat_Sheet.md",
+      "section": "Threat Modeling Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Transaction_Authorization_Cheat_Sheet.md",
+      "source_title": "Transaction Authorization Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Transaction_Authorization_Cheat_Sheet.md",
+      "section": "Transaction Authorization Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md",
+      "source_title": "DEPRECATED: Transport Layer Protection Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md",
+      "section": "DEPRECATED: Transport Layer Protection Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Transport_Layer_Security_Cheat_Sheet.md",
+      "source_title": "Transport Layer Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Transport_Layer_Security_Cheat_Sheet.md",
+      "section": "Transport Layer Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md",
+      "source_title": "Unvalidated Redirects and Forwards Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md",
+      "section": "Unvalidated Redirects and Forwards Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/User_Privacy_Protection_Cheat_Sheet.md",
+      "source_title": "User Privacy Protection Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md",
+      "section": "User Privacy Protection Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Virtual_Patching_Cheat_Sheet.md",
+      "source_title": "Virtual Patching Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Virtual_Patching_Cheat_Sheet.md",
+      "section": "Virtual Patching Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.md",
+      "source_title": "Vulnerability Disclosure Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.md",
+      "section": "Vulnerability Disclosure Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.md",
+      "source_title": "Vulnerable Dependency Management Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.md",
+      "section": "Vulnerable Dependency Management Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/WebSocket_Security_Cheat_Sheet.md",
+      "source_title": "WebSocket Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/WebSocket_Security_Cheat_Sheet.md",
+      "section": "WebSocket Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Web_Service_Security_Cheat_Sheet.md",
+      "source_title": "Web Service Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Web_Service_Security_Cheat_Sheet.md",
+      "section": "Web Service Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md",
+      "source_title": "XML External Entity Prevention Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md",
+      "section": "XML External Entity Prevention Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/XML_Security_Cheat_Sheet.md",
+      "source_title": "XML Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/XML_Security_Cheat_Sheet.md",
+      "section": "XML Security Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.md",
+      "source_title": "XSS Filter Evasion Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.md",
+      "section": "XSS Filter Evasion Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/XS_Leaks_Cheat_Sheet.md",
+      "source_title": "Cross-site leaks Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/XS_Leaks_Cheat_Sheet.md",
+      "section": "Cross-site leaks Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/Zero_Trust_Architecture_Cheat_Sheet.md",
+      "source_title": "Zero Trust Architecture Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/Zero_Trust_Architecture_Cheat_Sheet.md",
+      "section": "Zero Trust Architecture Cheat Sheet"
+    },
+    {
+      "file": "cheatsheets/gRPC_Security_Cheat_Sheet.md",
+      "source_title": "gRPC Security Cheat Sheet",
+      "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/6b8819da79e0537d072e04296ffa3adfc94ba881/cheatsheets/gRPC_Security_Cheat_Sheet.md",
+      "section": "gRPC Security Cheat Sheet"
+    }
+  ]
+}

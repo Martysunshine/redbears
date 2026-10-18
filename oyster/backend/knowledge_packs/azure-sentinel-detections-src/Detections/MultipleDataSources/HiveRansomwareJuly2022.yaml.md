@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/HiveRansomwareJuly2022.yaml -->
+id: 5e343198-38c7-4057-ac53-2f306c6cb1c3
+name: Hive Ransomware IOC - July 2022
+description: |
+   'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Deprecated%20Analytic%20Rules/HiveRansomwareJuly2022.yaml'
+version: 1.0.3

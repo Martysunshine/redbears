@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ChiaCryptoMining.yaml -->
+id: 886024e0-e38e-4fae-aa3b-e30a0b8ee2c0
+name: Chia_Crypto_Mining - Domain, Process, Hash and IP IOCs - June 2021
+description: |
+   'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Deprecated%20Analytic%20Rules/ChiaCryptoMining.yaml'
+version: 1.2.2

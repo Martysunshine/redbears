@@ -1,0 +1,978 @@
+{
+  "id": "mitre-d3fend-src",
+  "name": "mitre-d3fend-src",
+  "version": "301000e2562d",
+  "title": "MITRE D3FEND \u2014 defensive countermeasure ontology (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-and-response",
+  "description": "Imported from https://d3fend.mitre.org/ at 301000e2562d. 156 documents.",
+  "authority": "MITRE",
+  "publisher": "The MITRE Corporation",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "MITRE D3FEND\u00ae, \u00a9 The MITRE Corporation, MIT licence.",
+  "tags": [
+    "d3fend",
+    "mitre",
+    "countermeasures",
+    "attack-mapping",
+    "hardening"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "windows",
+    "linux",
+    "macos",
+    "cloud",
+    "network"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track the official mapping CSV's ETag/Last-Modified header.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "mitre-d3fend-src",
+  "upstream_commit": "301000e2562d",
+  "source_urls": [
+    "https://d3fend.mitre.org/"
+  ],
+  "docs": [
+    {
+      "file": "techniques/AccessModeling.md",
+      "source_title": "D3FEND \u2014 Access Modeling",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AccessModeling/",
+      "section": "Access Modeling"
+    },
+    {
+      "file": "techniques/AccountLocking.md",
+      "source_title": "D3FEND \u2014 Account Locking",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AccountLocking/",
+      "section": "Account Locking"
+    },
+    {
+      "file": "techniques/AdministrativeNetworkActivityAnalysis.md",
+      "source_title": "D3FEND \u2014 Administrative Network Activity Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AdministrativeNetworkActivityAnalysis/",
+      "section": "Administrative Network Activity Analysis"
+    },
+    {
+      "file": "techniques/AgentAuthentication.md",
+      "source_title": "D3FEND \u2014 Agent Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AgentAuthentication/",
+      "section": "Agent Authentication"
+    },
+    {
+      "file": "techniques/ApplicationConfigurationHardening.md",
+      "source_title": "D3FEND \u2014 Application Configuration Hardening",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ApplicationConfigurationHardening/",
+      "section": "Application Configuration Hardening"
+    },
+    {
+      "file": "techniques/ApplicationExceptionMonitoring.md",
+      "source_title": "D3FEND \u2014 Application Exception Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ApplicationExceptionMonitoring/",
+      "section": "Application Exception Monitoring"
+    },
+    {
+      "file": "techniques/ApplicationProtocolCommandAnalysis.md",
+      "source_title": "D3FEND \u2014 Application Protocol Command Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ApplicationProtocolCommandAnalysis/",
+      "section": "Application Protocol Command Analysis"
+    },
+    {
+      "file": "techniques/Application-basedProcessIsolation.md",
+      "source_title": "D3FEND \u2014 Application-based Process Isolation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Application-basedProcessIsolation/",
+      "section": "Application-based Process Isolation"
+    },
+    {
+      "file": "techniques/AssetVulnerabilityEnumeration.md",
+      "source_title": "D3FEND \u2014 Asset Vulnerability Enumeration",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AssetVulnerabilityEnumeration/",
+      "section": "Asset Vulnerability Enumeration"
+    },
+    {
+      "file": "techniques/AuthenticationCacheInvalidation.md",
+      "source_title": "D3FEND \u2014 Authentication Cache Invalidation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:AuthenticationCacheInvalidation/",
+      "section": "Authentication Cache Invalidation"
+    },
+    {
+      "file": "techniques/BootloaderAuthentication.md",
+      "source_title": "D3FEND \u2014 Bootloader Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:BootloaderAuthentication/",
+      "section": "Bootloader Authentication"
+    },
+    {
+      "file": "techniques/CertificateAnalysis.md",
+      "source_title": "D3FEND \u2014 Certificate Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CertificateAnalysis/",
+      "section": "Certificate Analysis"
+    },
+    {
+      "file": "techniques/CertificatePinning.md",
+      "source_title": "D3FEND \u2014 Certificate Pinning",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CertificatePinning/",
+      "section": "Certificate Pinning"
+    },
+    {
+      "file": "techniques/CertificateRotation.md",
+      "source_title": "D3FEND \u2014 Certificate Rotation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CertificateRotation/",
+      "section": "Certificate Rotation"
+    },
+    {
+      "file": "techniques/Certificate-basedAuthentication.md",
+      "source_title": "D3FEND \u2014 Certificate-based Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Certificate-basedAuthentication/",
+      "section": "Certificate-based Authentication"
+    },
+    {
+      "file": "techniques/ChangeDefaultPassword.md",
+      "source_title": "D3FEND \u2014 Change Default Password",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ChangeDefaultPassword/",
+      "section": "Change Default Password"
+    },
+    {
+      "file": "techniques/Client-serverPayloadProfiling.md",
+      "source_title": "D3FEND \u2014 Client-server Payload Profiling",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Client-serverPayloadProfiling/",
+      "section": "Client-server Payload Profiling"
+    },
+    {
+      "file": "techniques/ConfigurationInventory.md",
+      "source_title": "D3FEND \u2014 Configuration Inventory",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ConfigurationInventory/",
+      "section": "Configuration Inventory"
+    },
+    {
+      "file": "techniques/ConnectionAttemptAnalysis.md",
+      "source_title": "D3FEND \u2014 Connection Attempt Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ConnectionAttemptAnalysis/",
+      "section": "Connection Attempt Analysis"
+    },
+    {
+      "file": "techniques/ContainerImageAnalysis.md",
+      "source_title": "D3FEND \u2014 Container Image Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ContainerImageAnalysis/",
+      "section": "Container Image Analysis"
+    },
+    {
+      "file": "techniques/ContentFiltering.md",
+      "source_title": "D3FEND \u2014 Content Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ContentFiltering/",
+      "section": "Content Filtering"
+    },
+    {
+      "file": "techniques/ContentModification.md",
+      "source_title": "D3FEND \u2014 Content Modification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ContentModification/",
+      "section": "Content Modification"
+    },
+    {
+      "file": "techniques/ContentQuarantine.md",
+      "source_title": "D3FEND \u2014 Content Quarantine",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ContentQuarantine/",
+      "section": "Content Quarantine"
+    },
+    {
+      "file": "techniques/CredentialCompromiseScopeAnalysis.md",
+      "source_title": "D3FEND \u2014 Credential Compromise Scope Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialCompromiseScopeAnalysis/",
+      "section": "Credential Compromise Scope Analysis"
+    },
+    {
+      "file": "techniques/CredentialHardening.md",
+      "source_title": "D3FEND \u2014 Credential Hardening",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialHardening/",
+      "section": "Credential Hardening"
+    },
+    {
+      "file": "techniques/CredentialRevocation.md",
+      "source_title": "D3FEND \u2014 Credential Revocation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialRevocation/",
+      "section": "Credential Revocation"
+    },
+    {
+      "file": "techniques/CredentialRotation.md",
+      "source_title": "D3FEND \u2014 Credential Rotation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialRotation/",
+      "section": "Credential Rotation"
+    },
+    {
+      "file": "techniques/CredentialScrubbing.md",
+      "source_title": "D3FEND \u2014 Credential Scrubbing",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialScrubbing/",
+      "section": "Credential Scrubbing"
+    },
+    {
+      "file": "techniques/CredentialTransmissionScoping.md",
+      "source_title": "D3FEND \u2014 Credential Transmission Scoping",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:CredentialTransmissionScoping/",
+      "section": "Credential Transmission Scoping"
+    },
+    {
+      "file": "techniques/DNSAllowlisting.md",
+      "source_title": "D3FEND \u2014 DNS Allowlisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DNSAllowlisting/",
+      "section": "DNS Allowlisting"
+    },
+    {
+      "file": "techniques/DNSDenylisting.md",
+      "source_title": "D3FEND \u2014 DNS Denylisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DNSDenylisting/",
+      "section": "DNS Denylisting"
+    },
+    {
+      "file": "techniques/DNSTrafficAnalysis.md",
+      "source_title": "D3FEND \u2014 DNS Traffic Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DNSTrafficAnalysis/",
+      "section": "DNS Traffic Analysis"
+    },
+    {
+      "file": "techniques/DataInventory.md",
+      "source_title": "D3FEND \u2014 Data Inventory",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DataInventory/",
+      "section": "Data Inventory"
+    },
+    {
+      "file": "techniques/DatabaseQueryStringAnalysis.md",
+      "source_title": "D3FEND \u2014 Database Query String Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DatabaseQueryStringAnalysis/",
+      "section": "Database Query String Analysis"
+    },
+    {
+      "file": "techniques/DecoyEnvironment.md",
+      "source_title": "D3FEND \u2014 Decoy Environment",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DecoyEnvironment/",
+      "section": "Decoy Environment"
+    },
+    {
+      "file": "techniques/DecoyFile.md",
+      "source_title": "D3FEND \u2014 Decoy File",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DecoyFile/",
+      "section": "Decoy File"
+    },
+    {
+      "file": "techniques/DecoyNetworkResource.md",
+      "source_title": "D3FEND \u2014 Decoy Network Resource",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DecoyNetworkResource/",
+      "section": "Decoy Network Resource"
+    },
+    {
+      "file": "techniques/DecoyUserCredential.md",
+      "source_title": "D3FEND \u2014 Decoy User Credential",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DecoyUserCredential/",
+      "section": "Decoy User Credential"
+    },
+    {
+      "file": "techniques/DirectionalNetworkLink.md",
+      "source_title": "D3FEND \u2014 Directional Network Link",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DirectionalNetworkLink/",
+      "section": "Directional Network Link"
+    },
+    {
+      "file": "techniques/DisableRemoteAccess.md",
+      "source_title": "D3FEND \u2014 Disable Remote Access",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DisableRemoteAccess/",
+      "section": "Disable Remote Access"
+    },
+    {
+      "file": "techniques/DiskEncryption.md",
+      "source_title": "D3FEND \u2014 Disk Encryption",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DiskEncryption/",
+      "section": "Disk Encryption"
+    },
+    {
+      "file": "techniques/DiskErasure.md",
+      "source_title": "D3FEND \u2014 Disk Erasure",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DiskErasure/",
+      "section": "Disk Erasure"
+    },
+    {
+      "file": "techniques/DiskFormatting.md",
+      "source_title": "D3FEND \u2014 Disk Formatting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DiskFormatting/",
+      "section": "Disk Formatting"
+    },
+    {
+      "file": "techniques/DiskPartitioning.md",
+      "source_title": "D3FEND \u2014 Disk Partitioning",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DiskPartitioning/",
+      "section": "Disk Partitioning"
+    },
+    {
+      "file": "techniques/DomainAccountMonitoring.md",
+      "source_title": "D3FEND \u2014 Domain Account Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DomainAccountMonitoring/",
+      "section": "Domain Account Monitoring"
+    },
+    {
+      "file": "techniques/DomainLogicValidation.md",
+      "source_title": "D3FEND \u2014 Domain Logic Validation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DomainLogicValidation/",
+      "section": "Domain Logic Validation"
+    },
+    {
+      "file": "techniques/DomainTrustPolicy.md",
+      "source_title": "D3FEND \u2014 Domain Trust Policy",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DomainTrustPolicy/",
+      "section": "Domain Trust Policy"
+    },
+    {
+      "file": "techniques/DynamicAnalysis.md",
+      "source_title": "D3FEND \u2014 Dynamic Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:DynamicAnalysis/",
+      "section": "Dynamic Analysis"
+    },
+    {
+      "file": "techniques/EmailFiltering.md",
+      "source_title": "D3FEND \u2014 Email Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:EmailFiltering/",
+      "section": "Email Filtering"
+    },
+    {
+      "file": "techniques/EmailRemoval.md",
+      "source_title": "D3FEND \u2014 Email Removal",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:EmailRemoval/",
+      "section": "Email Removal"
+    },
+    {
+      "file": "techniques/EmulatedFileAnalysis.md",
+      "source_title": "D3FEND \u2014 Emulated File Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:EmulatedFileAnalysis/",
+      "section": "Emulated File Analysis"
+    },
+    {
+      "file": "techniques/EndpointHealthBeacon.md",
+      "source_title": "D3FEND \u2014 Endpoint Health Beacon",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:EndpointHealthBeacon/",
+      "section": "Endpoint Health Beacon"
+    },
+    {
+      "file": "techniques/ExecutableAllowlisting.md",
+      "source_title": "D3FEND \u2014 Executable Allowlisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ExecutableAllowlisting/",
+      "section": "Executable Allowlisting"
+    },
+    {
+      "file": "techniques/ExecutableDenylisting.md",
+      "source_title": "D3FEND \u2014 Executable Denylisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ExecutableDenylisting/",
+      "section": "Executable Denylisting"
+    },
+    {
+      "file": "techniques/FileAnalysis.md",
+      "source_title": "D3FEND \u2014 File Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileAnalysis/",
+      "section": "File Analysis"
+    },
+    {
+      "file": "techniques/FileCarving.md",
+      "source_title": "D3FEND \u2014 File Carving",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileCarving/",
+      "section": "File Carving"
+    },
+    {
+      "file": "techniques/FileCreationAnalysis.md",
+      "source_title": "D3FEND \u2014 File Creation Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileCreationAnalysis/",
+      "section": "File Creation Analysis"
+    },
+    {
+      "file": "techniques/FileEncryption.md",
+      "source_title": "D3FEND \u2014 File Encryption",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileEncryption/",
+      "section": "File Encryption"
+    },
+    {
+      "file": "techniques/FileEviction.md",
+      "source_title": "D3FEND \u2014 File Eviction",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileEviction/",
+      "section": "File Eviction"
+    },
+    {
+      "file": "techniques/FileFormatVerification.md",
+      "source_title": "D3FEND \u2014 File Format Verification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileFormatVerification/",
+      "section": "File Format Verification"
+    },
+    {
+      "file": "techniques/FileIntegrityMonitoring.md",
+      "source_title": "D3FEND \u2014 File Integrity Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FileIntegrityMonitoring/",
+      "section": "File Integrity Monitoring"
+    },
+    {
+      "file": "techniques/FirmwareBehaviorAnalysis.md",
+      "source_title": "D3FEND \u2014 Firmware Behavior Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FirmwareBehaviorAnalysis/",
+      "section": "Firmware Behavior Analysis"
+    },
+    {
+      "file": "techniques/FirmwareEmbeddedMonitoringCode.md",
+      "source_title": "D3FEND \u2014 Firmware Embedded Monitoring Code",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FirmwareEmbeddedMonitoringCode/",
+      "section": "Firmware Embedded Monitoring Code"
+    },
+    {
+      "file": "techniques/FirmwareVerification.md",
+      "source_title": "D3FEND \u2014 Firmware Verification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:FirmwareVerification/",
+      "section": "Firmware Verification"
+    },
+    {
+      "file": "techniques/ForwardResolutionDomainDenylisting.md",
+      "source_title": "D3FEND \u2014 Forward Resolution Domain Denylisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ForwardResolutionDomainDenylisting/",
+      "section": "Forward Resolution Domain Denylisting"
+    },
+    {
+      "file": "techniques/HardwareComponentInventory.md",
+      "source_title": "D3FEND \u2014 Hardware Component Inventory",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:HardwareComponentInventory/",
+      "section": "Hardware Component Inventory"
+    },
+    {
+      "file": "techniques/Hardware-basedProcessIsolation.md",
+      "source_title": "D3FEND \u2014 Hardware-based Process Isolation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Hardware-basedProcessIsolation/",
+      "section": "Hardware-based Process Isolation"
+    },
+    {
+      "file": "techniques/Hardware-basedWriteProtection.md",
+      "source_title": "D3FEND \u2014 Hardware-based Write Protection",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Hardware-basedWriteProtection/",
+      "section": "Hardware-based Write Protection"
+    },
+    {
+      "file": "techniques/HomoglyphDetection.md",
+      "source_title": "D3FEND \u2014 Homoglyph Detection",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:HomoglyphDetection/",
+      "section": "Homoglyph Detection"
+    },
+    {
+      "file": "techniques/HostReboot.md",
+      "source_title": "D3FEND \u2014 Host Reboot",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:HostReboot/",
+      "section": "Host Reboot"
+    },
+    {
+      "file": "techniques/HostShutdown.md",
+      "source_title": "D3FEND \u2014 Host Shutdown",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:HostShutdown/",
+      "section": "Host Shutdown"
+    },
+    {
+      "file": "techniques/IOPortRestriction.md",
+      "source_title": "D3FEND \u2014 IO Port Restriction",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:IOPortRestriction/",
+      "section": "IO Port Restriction"
+    },
+    {
+      "file": "techniques/IPCTrafficAnalysis.md",
+      "source_title": "D3FEND \u2014 IPC Traffic Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:IPCTrafficAnalysis/",
+      "section": "IPC Traffic Analysis"
+    },
+    {
+      "file": "techniques/IdentifierActivityAnalysis.md",
+      "source_title": "D3FEND \u2014 Identifier Activity Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:IdentifierActivityAnalysis/",
+      "section": "Identifier Activity Analysis"
+    },
+    {
+      "file": "techniques/InboundSessionVolumeAnalysis.md",
+      "source_title": "D3FEND \u2014 Inbound Session Volume Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:InboundSessionVolumeAnalysis/",
+      "section": "Inbound Session Volume Analysis"
+    },
+    {
+      "file": "techniques/InboundTrafficFiltering.md",
+      "source_title": "D3FEND \u2014 Inbound Traffic Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:InboundTrafficFiltering/",
+      "section": "Inbound Traffic Filtering"
+    },
+    {
+      "file": "techniques/InputDeviceAnalysis.md",
+      "source_title": "D3FEND \u2014 Input Device Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:InputDeviceAnalysis/",
+      "section": "Input Device Analysis"
+    },
+    {
+      "file": "techniques/Kernel-basedProcessIsolation.md",
+      "source_title": "D3FEND \u2014 Kernel-based Process Isolation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Kernel-basedProcessIsolation/",
+      "section": "Kernel-based Process Isolation"
+    },
+    {
+      "file": "techniques/LocalAccountMonitoring.md",
+      "source_title": "D3FEND \u2014 Local Account Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:LocalAccountMonitoring/",
+      "section": "Local Account Monitoring"
+    },
+    {
+      "file": "techniques/LocalFilePermissions.md",
+      "source_title": "D3FEND \u2014 Local File Permissions",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:LocalFilePermissions/",
+      "section": "Local File Permissions"
+    },
+    {
+      "file": "techniques/LogicalLinkMapping.md",
+      "source_title": "D3FEND \u2014 Logical Link Mapping",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:LogicalLinkMapping/",
+      "section": "Logical Link Mapping"
+    },
+    {
+      "file": "techniques/MemoryBoundaryTracking.md",
+      "source_title": "D3FEND \u2014 Memory Boundary Tracking",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:MemoryBoundaryTracking/",
+      "section": "Memory Boundary Tracking"
+    },
+    {
+      "file": "techniques/MessageAuthentication.md",
+      "source_title": "D3FEND \u2014 Message Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:MessageAuthentication/",
+      "section": "Message Authentication"
+    },
+    {
+      "file": "techniques/MessageEncryption.md",
+      "source_title": "D3FEND \u2014 Message Encryption",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:MessageEncryption/",
+      "section": "Message Encryption"
+    },
+    {
+      "file": "techniques/Multi-factorAuthentication.md",
+      "source_title": "D3FEND \u2014 Multi-factor Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Multi-factorAuthentication/",
+      "section": "Multi-factor Authentication"
+    },
+    {
+      "file": "techniques/NetworkNodeInventory.md",
+      "source_title": "D3FEND \u2014 Network Node Inventory",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkNodeInventory/",
+      "section": "Network Node Inventory"
+    },
+    {
+      "file": "techniques/NetworkResourceAccessMediation.md",
+      "source_title": "D3FEND \u2014 Network Resource Access Mediation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkResourceAccessMediation/",
+      "section": "Network Resource Access Mediation"
+    },
+    {
+      "file": "techniques/NetworkTrafficCommunityDeviation.md",
+      "source_title": "D3FEND \u2014 Network Traffic Community Deviation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkTrafficCommunityDeviation/",
+      "section": "Network Traffic Community Deviation"
+    },
+    {
+      "file": "techniques/NetworkTrafficFiltering.md",
+      "source_title": "D3FEND \u2014 Network Traffic Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkTrafficFiltering/",
+      "section": "Network Traffic Filtering"
+    },
+    {
+      "file": "techniques/NetworkTrafficPolicyMapping.md",
+      "source_title": "D3FEND \u2014 Network Traffic Policy Mapping",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkTrafficPolicyMapping/",
+      "section": "Network Traffic Policy Mapping"
+    },
+    {
+      "file": "techniques/NetworkTrafficSignatureAnalysis.md",
+      "source_title": "D3FEND \u2014 Network Traffic Signature Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:NetworkTrafficSignatureAnalysis/",
+      "section": "Network Traffic Signature Analysis"
+    },
+    {
+      "file": "techniques/OTVariableAccessRestriction.md",
+      "source_title": "D3FEND \u2014 OT Variable Access Restriction",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:OTVariableAccessRestriction/",
+      "section": "OT Variable Access Restriction"
+    },
+    {
+      "file": "techniques/One-timePassword.md",
+      "source_title": "D3FEND \u2014 One-time Password",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:One-timePassword/",
+      "section": "One-time Password"
+    },
+    {
+      "file": "techniques/OperatingModeMonitoring.md",
+      "source_title": "D3FEND \u2014 Operating Mode Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:OperatingModeMonitoring/",
+      "section": "Operating Mode Monitoring"
+    },
+    {
+      "file": "techniques/OperatingModeRestriction.md",
+      "source_title": "D3FEND \u2014 Operating Mode Restriction",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:OperatingModeRestriction/",
+      "section": "Operating Mode Restriction"
+    },
+    {
+      "file": "techniques/OperationalProcessMonitoring.md",
+      "source_title": "D3FEND \u2014 Operational Process Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:OperationalProcessMonitoring/",
+      "section": "Operational Process Monitoring"
+    },
+    {
+      "file": "techniques/OutboundTrafficFiltering.md",
+      "source_title": "D3FEND \u2014 Outbound Traffic Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:OutboundTrafficFiltering/",
+      "section": "Outbound Traffic Filtering"
+    },
+    {
+      "file": "techniques/PasswordAuthentication.md",
+      "source_title": "D3FEND \u2014 Password Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:PasswordAuthentication/",
+      "section": "Password Authentication"
+    },
+    {
+      "file": "techniques/PasswordRotation.md",
+      "source_title": "D3FEND \u2014 Password Rotation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:PasswordRotation/",
+      "section": "Password Rotation"
+    },
+    {
+      "file": "techniques/PerHostDownload-UploadRatioAnalysis.md",
+      "source_title": "D3FEND \u2014 Per Host Download-Upload Ratio Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:PerHostDownload-UploadRatioAnalysis/",
+      "section": "Per Host Download-Upload Ratio Analysis"
+    },
+    {
+      "file": "techniques/PhysicalLinkMapping.md",
+      "source_title": "D3FEND \u2014 Physical Link Mapping",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:PhysicalLinkMapping/",
+      "section": "Physical Link Mapping"
+    },
+    {
+      "file": "techniques/ProcessCodeSegmentVerification.md",
+      "source_title": "D3FEND \u2014 Process Code Segment Verification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessCodeSegmentVerification/",
+      "section": "Process Code Segment Verification"
+    },
+    {
+      "file": "techniques/ProcessLineageAnalysis.md",
+      "source_title": "D3FEND \u2014 Process Lineage Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessLineageAnalysis/",
+      "section": "Process Lineage Analysis"
+    },
+    {
+      "file": "techniques/ProcessSegmentExecutionPrevention.md",
+      "source_title": "D3FEND \u2014 Process Segment Execution Prevention",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessSegmentExecutionPrevention/",
+      "section": "Process Segment Execution Prevention"
+    },
+    {
+      "file": "techniques/ProcessSelf-ModificationDetection.md",
+      "source_title": "D3FEND \u2014 Process Self-Modification Detection",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessSelf-ModificationDetection/",
+      "section": "Process Self-Modification Detection"
+    },
+    {
+      "file": "techniques/ProcessSpawnAnalysis.md",
+      "source_title": "D3FEND \u2014 Process Spawn Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessSpawnAnalysis/",
+      "section": "Process Spawn Analysis"
+    },
+    {
+      "file": "techniques/ProcessSuspension.md",
+      "source_title": "D3FEND \u2014 Process Suspension",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessSuspension/",
+      "section": "Process Suspension"
+    },
+    {
+      "file": "techniques/ProcessTermination.md",
+      "source_title": "D3FEND \u2014 Process Termination",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProcessTermination/",
+      "section": "Process Termination"
+    },
+    {
+      "file": "techniques/ProtocolMetadataAnomalyDetection.md",
+      "source_title": "D3FEND \u2014 Protocol Metadata Anomaly Detection",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ProtocolMetadataAnomalyDetection/",
+      "section": "Protocol Metadata Anomaly Detection"
+    },
+    {
+      "file": "techniques/RPCTrafficAnalysis.md",
+      "source_title": "D3FEND \u2014 RPC Traffic Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RPCTrafficAnalysis/",
+      "section": "RPC Traffic Analysis"
+    },
+    {
+      "file": "techniques/RadiationHardening.md",
+      "source_title": "D3FEND \u2014 Radiation Hardening",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RadiationHardening/",
+      "section": "Radiation Hardening"
+    },
+    {
+      "file": "techniques/RegistryKeyDeletion.md",
+      "source_title": "D3FEND \u2014 Registry Key Deletion",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RegistryKeyDeletion/",
+      "section": "Registry Key Deletion"
+    },
+    {
+      "file": "techniques/ReissueCredential.md",
+      "source_title": "D3FEND \u2014 Reissue Credential",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ReissueCredential/",
+      "section": "Reissue Credential"
+    },
+    {
+      "file": "techniques/RelayPatternAnalysis.md",
+      "source_title": "D3FEND \u2014 Relay Pattern Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RelayPatternAnalysis/",
+      "section": "Relay Pattern Analysis"
+    },
+    {
+      "file": "techniques/RemoteFileAccessMediation.md",
+      "source_title": "D3FEND \u2014 Remote File Access Mediation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RemoteFileAccessMediation/",
+      "section": "Remote File Access Mediation"
+    },
+    {
+      "file": "techniques/RemoteFirmwareUpdateMonitoring.md",
+      "source_title": "D3FEND \u2014 Remote Firmware Update Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RemoteFirmwareUpdateMonitoring/",
+      "section": "Remote Firmware Update Monitoring"
+    },
+    {
+      "file": "techniques/RemoteTerminalSessionDetection.md",
+      "source_title": "D3FEND \u2014 Remote Terminal Session Detection",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RemoteTerminalSessionDetection/",
+      "section": "Remote Terminal Session Detection"
+    },
+    {
+      "file": "techniques/RestoreConfiguration.md",
+      "source_title": "D3FEND \u2014 Restore Configuration",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreConfiguration/",
+      "section": "Restore Configuration"
+    },
+    {
+      "file": "techniques/RestoreDatabase.md",
+      "source_title": "D3FEND \u2014 Restore Database",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreDatabase/",
+      "section": "Restore Database"
+    },
+    {
+      "file": "techniques/RestoreEmail.md",
+      "source_title": "D3FEND \u2014 Restore Email",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreEmail/",
+      "section": "Restore Email"
+    },
+    {
+      "file": "techniques/RestoreFile.md",
+      "source_title": "D3FEND \u2014 Restore File",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreFile/",
+      "section": "Restore File"
+    },
+    {
+      "file": "techniques/RestoreNetworkAccess.md",
+      "source_title": "D3FEND \u2014 Restore Network Access",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreNetworkAccess/",
+      "section": "Restore Network Access"
+    },
+    {
+      "file": "techniques/RestoreSoftware.md",
+      "source_title": "D3FEND \u2014 Restore Software",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreSoftware/",
+      "section": "Restore Software"
+    },
+    {
+      "file": "techniques/RestoreUserAccountAccess.md",
+      "source_title": "D3FEND \u2014 Restore User Account Access",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:RestoreUserAccountAccess/",
+      "section": "Restore User Account Access"
+    },
+    {
+      "file": "techniques/ReverseResolutionIPDenylisting.md",
+      "source_title": "D3FEND \u2014 Reverse Resolution IP Denylisting",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ReverseResolutionIPDenylisting/",
+      "section": "Reverse Resolution IP Denylisting"
+    },
+    {
+      "file": "techniques/ScheduledJobAnalysis.md",
+      "source_title": "D3FEND \u2014 Scheduled Job Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ScheduledJobAnalysis/",
+      "section": "Scheduled Job Analysis"
+    },
+    {
+      "file": "techniques/SegmentAddressOffsetRandomization.md",
+      "source_title": "D3FEND \u2014 Segment Address Offset Randomization",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SegmentAddressOffsetRandomization/",
+      "section": "Segment Address Offset Randomization"
+    },
+    {
+      "file": "techniques/SenderMTAReputationAnalysis.md",
+      "source_title": "D3FEND \u2014 Sender MTA Reputation Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SenderMTAReputationAnalysis/",
+      "section": "Sender MTA Reputation Analysis"
+    },
+    {
+      "file": "techniques/SenderReputationAnalysis.md",
+      "source_title": "D3FEND \u2014 Sender Reputation Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SenderReputationAnalysis/",
+      "section": "Sender Reputation Analysis"
+    },
+    {
+      "file": "techniques/ServiceBinaryVerification.md",
+      "source_title": "D3FEND \u2014 Service Binary Verification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ServiceBinaryVerification/",
+      "section": "Service Binary Verification"
+    },
+    {
+      "file": "techniques/SessionTermination.md",
+      "source_title": "D3FEND \u2014 Session Termination",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SessionTermination/",
+      "section": "Session Termination"
+    },
+    {
+      "file": "techniques/ShadowStackComparisons.md",
+      "source_title": "D3FEND \u2014 Shadow Stack Comparisons",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:ShadowStackComparisons/",
+      "section": "Shadow Stack Comparisons"
+    },
+    {
+      "file": "techniques/SoftwareInventory.md",
+      "source_title": "D3FEND \u2014 Software Inventory",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SoftwareInventory/",
+      "section": "Software Inventory"
+    },
+    {
+      "file": "techniques/SoftwareUpdate.md",
+      "source_title": "D3FEND \u2014 Software Update",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SoftwareUpdate/",
+      "section": "Software Update"
+    },
+    {
+      "file": "techniques/StackFrameCanaryValidation.md",
+      "source_title": "D3FEND \u2014 Stack Frame Canary Validation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:StackFrameCanaryValidation/",
+      "section": "Stack Frame Canary Validation"
+    },
+    {
+      "file": "techniques/StrongPasswordPolicy.md",
+      "source_title": "D3FEND \u2014 Strong Password Policy",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:StrongPasswordPolicy/",
+      "section": "Strong Password Policy"
+    },
+    {
+      "file": "techniques/SystemCallAnalysis.md",
+      "source_title": "D3FEND \u2014 System Call Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemCallAnalysis/",
+      "section": "System Call Analysis"
+    },
+    {
+      "file": "techniques/SystemCallFiltering.md",
+      "source_title": "D3FEND \u2014 System Call Filtering",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemCallFiltering/",
+      "section": "System Call Filtering"
+    },
+    {
+      "file": "techniques/SystemConfigurationPermissions.md",
+      "source_title": "D3FEND \u2014 System Configuration Permissions",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemConfigurationPermissions/",
+      "section": "System Configuration Permissions"
+    },
+    {
+      "file": "techniques/SystemDaemonMonitoring.md",
+      "source_title": "D3FEND \u2014 System Daemon Monitoring",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemDaemonMonitoring/",
+      "section": "System Daemon Monitoring"
+    },
+    {
+      "file": "techniques/SystemFileAnalysis.md",
+      "source_title": "D3FEND \u2014 System File Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemFileAnalysis/",
+      "section": "System File Analysis"
+    },
+    {
+      "file": "techniques/SystemFirmwareVerification.md",
+      "source_title": "D3FEND \u2014 System Firmware Verification",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemFirmwareVerification/",
+      "section": "System Firmware Verification"
+    },
+    {
+      "file": "techniques/SystemInitConfigAnalysis.md",
+      "source_title": "D3FEND \u2014 System Init Config Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemInitConfigAnalysis/",
+      "section": "System Init Config Analysis"
+    },
+    {
+      "file": "techniques/SystemVulnerabilityAssessment.md",
+      "source_title": "D3FEND \u2014 System Vulnerability Assessment",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:SystemVulnerabilityAssessment/",
+      "section": "System Vulnerability Assessment"
+    },
+    {
+      "file": "techniques/TokenBinding.md",
+      "source_title": "D3FEND \u2014 Token Binding",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:TokenBinding/",
+      "section": "Token Binding"
+    },
+    {
+      "file": "techniques/Token-basedAuthentication.md",
+      "source_title": "D3FEND \u2014 Token-based Authentication",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:Token-basedAuthentication/",
+      "section": "Token-based Authentication"
+    },
+    {
+      "file": "techniques/TrustedLibrary.md",
+      "source_title": "D3FEND \u2014 Trusted Library",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:TrustedLibrary/",
+      "section": "Trusted Library"
+    },
+    {
+      "file": "techniques/URLAnalysis.md",
+      "source_title": "D3FEND \u2014 URL Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:URLAnalysis/",
+      "section": "URL Analysis"
+    },
+    {
+      "file": "techniques/URLReputationAnalysis.md",
+      "source_title": "D3FEND \u2014 URL Reputation Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:URLReputationAnalysis/",
+      "section": "URL Reputation Analysis"
+    },
+    {
+      "file": "techniques/UnlockAccount.md",
+      "source_title": "D3FEND \u2014 Unlock Account",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:UnlockAccount/",
+      "section": "Unlock Account"
+    },
+    {
+      "file": "techniques/UserAccountPermissions.md",
+      "source_title": "D3FEND \u2014 User Account Permissions",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:UserAccountPermissions/",
+      "section": "User Account Permissions"
+    },
+    {
+      "file": "techniques/UserGeolocationLogonPatternAnalysis.md",
+      "source_title": "D3FEND \u2014 User Geolocation Logon Pattern Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:UserGeolocationLogonPatternAnalysis/",
+      "section": "User Geolocation Logon Pattern Analysis"
+    },
+    {
+      "file": "techniques/UserSessionInitConfigAnalysis.md",
+      "source_title": "D3FEND \u2014 User Session Init Config Analysis",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:UserSessionInitConfigAnalysis/",
+      "section": "User Session Init Config Analysis"
+    },
+    {
+      "file": "techniques/VariableInitialization.md",
+      "source_title": "D3FEND \u2014 Variable Initialization",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:VariableInitialization/",
+      "section": "Variable Initialization"
+    },
+    {
+      "file": "techniques/VideoSurveillance.md",
+      "source_title": "D3FEND \u2014 Video Surveillance",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:VideoSurveillance/",
+      "section": "Video Surveillance"
+    },
+    {
+      "file": "techniques/WebSessionAccessMediation.md",
+      "source_title": "D3FEND \u2014 Web Session Access Mediation",
+      "source_url": "https://d3fend.mitre.org/technique/d3f:WebSessionAccessMediation/",
+      "section": "Web Session Access Mediation"
+    }
+  ]
+}

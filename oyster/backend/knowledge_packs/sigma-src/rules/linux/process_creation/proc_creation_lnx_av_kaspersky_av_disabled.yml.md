@@ -1,0 +1,32 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/process_creation/proc_creation_lnx_av_kaspersky_av_disabled.yml -->
+title: Kaspersky Endpoint Security Stopped Via CommandLine - Linux
+id: 36388120-b3f1-4ce9-b50b-280d9a7f4c04
+status: experimental
+description: |
+  Detects execution of the Kaspersky init.d stop script on Linux systems either directly or via systemctl.
+  This activity may indicate a manual interruption of the antivirus service by an administrator, or it could be a sign of potential tampering or evasion attempts by malicious actors.
+references:
+    - https://support.kaspersky.com/KES4Linux/12.0.0/en-US/197929.htm
+author: Milad Cheraghi
+date: 2025-10-18
+tags:
+    - attack.execution
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: linux
+    category: process_creation
+detection:
+    selection:
+        Image|endswith:
+            # Note: Add the list of shells allowed in your environment that can be used to run init.d scripts.
+            - '/systemctl'
+            - '/bash'
+            - '/sh'
+        CommandLine|contains|all:
+            - 'stop'
+            - 'kesl'
+    condition: selection
+falsepositives:
+    - System administrator manually stopping Kaspersky services
+level: high

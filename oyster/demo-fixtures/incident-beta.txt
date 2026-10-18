@@ -1,0 +1,2 @@
+Oyster demo incident beta
+The Beta API returned HTTP 500 for requests containing an unexpected Content-Type. The service uses an API gateway and should validate content types, log request IDs, and reject malformed bodies with a documented 4xx response.

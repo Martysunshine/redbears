@@ -1,0 +1,7 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODEmailSenderIPinTIList.yaml -->
+id: 186cef98-4580-4d59-85f3-9fad5c40c71d
+name: ProofpointPOD - Email sender IP in TI list
+description: |
+  'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Proofpoint%20On%20demand(POD)%20Email%20Security/Analytic%20Rules/ProofpointPODEmailSenderIPinTIList.yaml'
+version: 1.1.2
+kind: Scheduled

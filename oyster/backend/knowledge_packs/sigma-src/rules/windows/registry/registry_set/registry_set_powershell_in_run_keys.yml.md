@@ -1,0 +1,52 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_powershell_in_run_keys.yml -->
+title: Suspicious PowerShell In Registry Run Keys
+id: 8d85cf08-bf97-4260-ba49-986a2a65129c
+status: test
+description: Detects potential PowerShell commands or code within registry run keys
+references:
+    - https://github.com/frack113/atomic-red-team/blob/a9051c38de8a5320b31c7039efcbd3b56cf2d65a/atomics/T1547.001/T1547.001.md#atomic-test-9---systembc-malware-as-a-service-registry
+    - https://www.trendmicro.com/en_us/research/22/j/lv-ransomware-exploits-proxyshell-in-attack.html
+    - https://github.com/HackTricks-wiki/hacktricks/blob/e4c7b21b8f36c97c35b7c622732b38a189ce18f7/src/windows-hardening/windows-local-privilege-escalation/privilege-escalation-with-autorun-binaries.md
+author: frack113, Florian Roth (Nextron Systems)
+date: 2022-03-17
+modified: 2025-07-18
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.t1547.001
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains:
+            - '\Software\Microsoft\Windows\CurrentVersion\Run' # Also covers "RunOnce" and "RunOnceEx"
+            - '\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Run'
+            - '\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run'
+        Details|contains:
+            - 'powershell'
+            - 'pwsh '
+            - 'FromBase64String'
+            - '.DownloadFile('
+            - '.DownloadString('
+            - ' -w hidden '
+            - ' -w 1 '
+            - '-windowstyle hidden'
+            - '-window hidden'
+            - ' -nop '
+            - ' -encodedcommand '
+            - '-ExecutionPolicy Bypass'
+            - 'Invoke-Expression'
+            - 'IEX ('
+            - 'Invoke-Command'
+            - 'ICM -'
+            - 'Invoke-WebRequest'
+            - 'IWR '
+            - 'Invoke-RestMethod'
+            - 'IRM '
+            - ' -noni '
+            - ' -noninteractive '
+    condition: selection
+falsepositives:
+    - Legitimate admin or third party scripts. Baseline according to your environment
+level: medium

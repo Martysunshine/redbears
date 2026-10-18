@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/Mail_redirect_via_ExO_transport_rule.yaml -->
+id: a0dde092-d143-449d-8cbc-b5e4b5b261b8
+name: Mail redirect via ExO transport rule
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365/Analytic%20Rules/Mail_redirect_via_ExO_transport_rule.yaml'
+version: 1.0.1

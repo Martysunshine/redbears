@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/identity/okta/okta_admin_activity_from_proxy_query.yml -->
+title: Okta Admin Functions Access Through Proxy
+id: 9058ca8b-f397-4fd1-a9fa-2b7aad4d6309
+status: test
+description: Detects access to Okta admin functions through proxy.
+references:
+    - https://www.beyondtrust.com/blog/entry/okta-support-unit-breach
+    - https://dataconomy.com/2023/10/23/okta-data-breach/
+    - https://blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise/
+author: Muhammad Faisal @faisalusuf
+date: 2023-10-25
+tags:
+    - attack.credential-access
+logsource:
+    service: okta
+    product: okta
+detection:
+    selection:
+        debugContext.debugData.requestUri|contains: 'admin'
+        securityContext.isProxy: 'true'
+    condition: selection
+falsepositives:
+    - False positives are expected if administrators access these function through proxy legitimatly. Apply additional filters if necessary
+level: medium

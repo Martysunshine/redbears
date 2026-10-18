@@ -1,0 +1,34 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/create/create-process-on-windows.yml -->
+rule:
+  meta:
+    name: create process on Windows
+    namespace: host-interaction/process/create
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: instruction
+      dynamic: call
+    mbc:
+      - Process::Create Process [C0017]
+    examples:
+      - 9324D1A8AE37A36AE560C37448C9705A:0x406DB0
+      - Practical Malware Analysis Lab 01-04.exe_:0x4011FC
+  features:
+    - and:
+      - os: windows
+      - or:
+        - api: kernel32.WinExec
+        - api: kernel32.CreateProcess
+        - api: shell32.ShellExecute
+        - api: shell32.ShellExecuteEx
+        - api: advapi32.CreateProcessAsUser
+        - api: advapi32.CreateProcessWithLogon
+        - api: advapi32.CreateProcessWithToken
+        - api: kernel32.CreateProcessInternal
+        - api: ntdll.NtCreateUserProcess
+        - api: ntdll.NtCreateProcess
+        - api: ntdll.NtCreateProcessEx
+        - api: ntdll.ZwCreateProcess
+        - api: ZwCreateProcessEx
+        - api: ntdll.ZwCreateUserProcess
+        - api: ntdll.RtlCreateUserProcess

@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/network_connection/net_connection_win_susp_binary_no_cmdline.yml -->
+title: Suspicious Network Connection Binary No CommandLine
+id: 20384606-a124-4fec-acbb-8bd373728613
+status: test
+description: Detects suspicious network connections made by a well-known Windows binary run with no command line parameters
+references:
+    - https://redcanary.com/blog/raspberry-robin/
+author: Florian Roth (Nextron Systems)
+date: 2022-07-03
+tags:
+    - attack.stealth
+logsource:
+    category: network_connection
+    product: windows
+detection:
+    selection:
+        Initiated: 'true'
+        Image|endswith:
+            - '\regsvr32.exe'
+            - '\rundll32.exe'
+            - '\dllhost.exe'
+        CommandLine|endswith:
+            - '\regsvr32.exe'
+            - '\rundll32.exe'
+            - '\dllhost.exe'
+    filter_no_cmdline:
+        CommandLine: ''
+    filter_null: # e.g. Sysmon has no CommandLine field in network events with ID 3
+        CommandLine: null
+    condition: selection and not 1 of filter*
+falsepositives:
+    - Unknown
+level: high

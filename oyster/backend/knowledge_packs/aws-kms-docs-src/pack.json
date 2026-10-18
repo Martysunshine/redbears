@@ -1,0 +1,1355 @@
+{
+  "id": "aws-kms-docs-src",
+  "name": "aws-kms-docs-src",
+  "version": "3447fd9221fc",
+  "title": "AWS Key Management Service Developer Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/kms/ at 3447fd9221fc. 219 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "AWS Key Management Service Developer Guide, Amazon.com, Inc., CC BY-SA 4.0.",
+  "tags": [
+    "aws",
+    "kms",
+    "cloud",
+    "encryption"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'master' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-kms-docs-src",
+  "upstream_commit": "3447fd9221fcc8ee5589b4c1a513883756729eac",
+  "source_urls": [
+    "https://docs.aws.amazon.com/kms/",
+    "https://github.com/awsdocs/aws-kms-developer-guide"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/abac.md",
+      "source_title": "ABAC for AWS KMS<a name=\"abac\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/abac.md",
+      "section": "ABAC for AWS KMS<a name=\"abac\"></a>"
+    },
+    {
+      "file": "doc_source/alias-about.md",
+      "source_title": "About aliases<a name=\"alias-about\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-about.md",
+      "section": "About aliases<a name=\"alias-about\"></a>"
+    },
+    {
+      "file": "doc_source/alias-access.md",
+      "source_title": "Controlling access to aliases<a name=\"alias-access\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-access.md",
+      "section": "Controlling access to aliases<a name=\"alias-access\"></a>"
+    },
+    {
+      "file": "doc_source/alias-authorization.md",
+      "source_title": "Using aliases to control access to KMS keys<a name=\"alias-authorization\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-authorization.md",
+      "section": "Using aliases to control access to KMS keys<a name=\"alias-authorization\"></a>"
+    },
+    {
+      "file": "doc_source/alias-ct.md",
+      "source_title": "Finding aliases in AWS CloudTrail logs<a name=\"alias-ct\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-ct.md",
+      "section": "Finding aliases in AWS CloudTrail logs<a name=\"alias-ct\"></a>"
+    },
+    {
+      "file": "doc_source/alias-manage.md",
+      "source_title": "Managing aliases<a name=\"alias-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-manage.md",
+      "section": "Managing aliases<a name=\"alias-manage\"></a>"
+    },
+    {
+      "file": "doc_source/alias-using.md",
+      "source_title": "Using aliases in your applications<a name=\"alias-using\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/alias-using.md",
+      "section": "Using aliases in your applications<a name=\"alias-using\"></a>"
+    },
+    {
+      "file": "doc_source/asymm-create-key.md",
+      "source_title": "Creating asymmetric KMS keys<a name=\"asymm-create-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/asymm-create-key.md",
+      "section": "Creating asymmetric KMS keys<a name=\"asymm-create-key\"></a>"
+    },
+    {
+      "file": "doc_source/asymmetric-key-specs.md",
+      "source_title": "Asymmetric key specs<a name=\"asymmetric-key-specs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/asymmetric-key-specs.md",
+      "section": "Asymmetric key specs<a name=\"asymmetric-key-specs\"></a>"
+    },
+    {
+      "file": "doc_source/authorize-key-store.md",
+      "source_title": "Controlling access to your AWS CloudHSM key store<a name=\"authorize-key-store\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/authorize-key-store.md",
+      "section": "Controlling access to your AWS CloudHSM key store<a name=\"authorize-key-store\"></a>"
+    },
+    {
+      "file": "doc_source/authorize-xks-key-store.md",
+      "source_title": "Controlling access to your external key store<a name=\"authorize-xks-key-store\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/authorize-xks-key-store.md",
+      "section": "Controlling access to your external key store<a name=\"authorize-xks-key-store\"></a>"
+    },
+    {
+      "file": "doc_source/aws-managed-policies.md",
+      "source_title": "AWS managed policy for power users<a name=\"aws-managed-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/aws-managed-policies.md",
+      "section": "AWS managed policy for power users<a name=\"aws-managed-policies\"></a>"
+    },
+    {
+      "file": "doc_source/best-practices.md",
+      "source_title": "Security best practices for AWS Key Management Service<a name=\"best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/best-practices.md",
+      "section": "Security best practices for AWS Key Management Service<a name=\"best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/cmks-in-iam-policies.md",
+      "source_title": "Specifying KMS keys in IAM policy statements<a name=\"cmks-in-iam-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/cmks-in-iam-policies.md",
+      "section": "Specifying KMS keys in IAM policy statements<a name=\"cmks-in-iam-policies\"></a>"
+    },
+    {
+      "file": "doc_source/concepts.md",
+      "source_title": "AWS KMS concepts<a name=\"concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/concepts.md",
+      "section": "AWS KMS concepts<a name=\"concepts\"></a>"
+    },
+    {
+      "file": "doc_source/conditions-aws.md",
+      "source_title": "AWS global condition keys<a name=\"conditions-aws\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/conditions-aws.md",
+      "section": "AWS global condition keys<a name=\"conditions-aws\"></a>"
+    },
+    {
+      "file": "doc_source/conditions-kms.md",
+      "source_title": "AWS KMS condition keys<a name=\"conditions-kms\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/conditions-kms.md",
+      "section": "AWS KMS condition keys<a name=\"conditions-kms\"></a>"
+    },
+    {
+      "file": "doc_source/conditions-nitro-enclaves.md",
+      "source_title": "AWS KMS condition keys for AWS Nitro Enclaves<a name=\"conditions-nitro-enclaves\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/conditions-nitro-enclaves.md",
+      "section": "AWS KMS condition keys for AWS Nitro Enclaves<a name=\"conditions-nitro-enclaves\"></a>"
+    },
+    {
+      "file": "doc_source/console-permissions.md",
+      "source_title": "Permissions required to use the AWS KMS console<a name=\"console-permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/console-permissions.md",
+      "section": "Permissions required to use the AWS KMS console<a name=\"console-permissions\"></a>"
+    },
+    {
+      "file": "doc_source/control-access.md",
+      "source_title": "Authentication and access control for AWS KMS<a name=\"control-access\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/control-access.md",
+      "section": "Authentication and access control for AWS KMS<a name=\"control-access\"></a>"
+    },
+    {
+      "file": "doc_source/create-cmk-keystore.md",
+      "source_title": "Creating KMS keys in an AWS CloudHSM key store<a name=\"create-cmk-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-cmk-keystore.md",
+      "section": "Creating KMS keys in an AWS CloudHSM key store<a name=\"create-cmk-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/create-grant-overview.md",
+      "source_title": "Creating grants<a name=\"create-grant-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-grant-overview.md",
+      "section": "Creating grants<a name=\"create-grant-overview\"></a>"
+    },
+    {
+      "file": "doc_source/create-keys.md",
+      "source_title": "Creating keys<a name=\"create-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-keys.md",
+      "section": "Creating keys<a name=\"create-keys\"></a>"
+    },
+    {
+      "file": "doc_source/create-keystore.md",
+      "source_title": "Creating an AWS CloudHSM key store<a name=\"create-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-keystore.md",
+      "section": "Creating an AWS CloudHSM key store<a name=\"create-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/create-primary-keys.md",
+      "source_title": "Creating multi\\-Region primary keys<a name=\"create-primary-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-primary-keys.md",
+      "section": "Creating multi\\-Region primary keys<a name=\"create-primary-keys\"></a>"
+    },
+    {
+      "file": "doc_source/create-xks-keys.md",
+      "source_title": "Creating KMS keys in an external key store<a name=\"create-xks-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-xks-keys.md",
+      "section": "Creating KMS keys in an external key store<a name=\"create-xks-keys\"></a>"
+    },
+    {
+      "file": "doc_source/create-xks-keystore.md",
+      "source_title": "Creating an external key store<a name=\"create-xks-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/create-xks-keystore.md",
+      "section": "Creating an external key store<a name=\"create-xks-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/creating-resources-with-cloudformation.md",
+      "source_title": "Creating AWS KMS resources with AWS CloudFormation<a name=\"creating-resources-with-cloudformation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/creating-resources-with-cloudformation.md",
+      "section": "Creating AWS KMS resources with AWS CloudFormation<a name=\"creating-resources-with-cloudformation\"></a>"
+    },
+    {
+      "file": "doc_source/ct-cancel-key-deletion.md",
+      "source_title": "CancelKeyDeletion<a name=\"ct-cancel-key-deletion\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-cancel-key-deletion.md",
+      "section": "CancelKeyDeletion<a name=\"ct-cancel-key-deletion\"></a>"
+    },
+    {
+      "file": "doc_source/ct-connect-keystore.md",
+      "source_title": "ConnectCustomKeyStore<a name=\"ct-connect-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-connect-keystore.md",
+      "section": "ConnectCustomKeyStore<a name=\"ct-connect-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/ct-create-keystore.md",
+      "source_title": "CreateCustomKeyStore<a name=\"ct-create-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-create-keystore.md",
+      "section": "CreateCustomKeyStore<a name=\"ct-create-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/ct-createalias.md",
+      "source_title": "CreateAlias<a name=\"ct-createalias\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-createalias.md",
+      "section": "CreateAlias<a name=\"ct-createalias\"></a>"
+    },
+    {
+      "file": "doc_source/ct-creategrant.md",
+      "source_title": "CreateGrant<a name=\"ct-creategrant\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-creategrant.md",
+      "section": "CreateGrant<a name=\"ct-creategrant\"></a>"
+    },
+    {
+      "file": "doc_source/ct-createkey.md",
+      "source_title": "CreateKey<a name=\"ct-createkey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-createkey.md",
+      "section": "CreateKey<a name=\"ct-createkey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-decrypt-enclave.md",
+      "source_title": "Decrypt \\(from an enclave\\)<a name=\"ct-decrypt-enclave\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-decrypt-enclave.md",
+      "section": "Decrypt \\(from an enclave\\)<a name=\"ct-decrypt-enclave\"></a>"
+    },
+    {
+      "file": "doc_source/ct-decrypt.md",
+      "source_title": "Decrypt<a name=\"ct-decrypt\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-decrypt.md",
+      "section": "Decrypt<a name=\"ct-decrypt\"></a>"
+    },
+    {
+      "file": "doc_source/ct-delete-key.md",
+      "source_title": "DeleteKey<a name=\"ct-delete-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-delete-key.md",
+      "section": "DeleteKey<a name=\"ct-delete-key\"></a>"
+    },
+    {
+      "file": "doc_source/ct-delete-keystore.md",
+      "source_title": "DeleteCustomKeyStore<a name=\"ct-delete-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-delete-keystore.md",
+      "section": "DeleteCustomKeyStore<a name=\"ct-delete-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/ct-deletealias.md",
+      "source_title": "DeleteAlias<a name=\"ct-deletealias\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-deletealias.md",
+      "section": "DeleteAlias<a name=\"ct-deletealias\"></a>"
+    },
+    {
+      "file": "doc_source/ct-deleteexpiredkeymaterial.md",
+      "source_title": "DeleteExpiredKeyMaterial<a name=\"ct-deleteexpiredkeymaterial\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-deleteexpiredkeymaterial.md",
+      "section": "DeleteExpiredKeyMaterial<a name=\"ct-deleteexpiredkeymaterial\"></a>"
+    },
+    {
+      "file": "doc_source/ct-describe-keystores.md",
+      "source_title": "DescribeCustomKeyStores<a name=\"ct-describe-keystores\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-describe-keystores.md",
+      "section": "DescribeCustomKeyStores<a name=\"ct-describe-keystores\"></a>"
+    },
+    {
+      "file": "doc_source/ct-describekey.md",
+      "source_title": "DescribeKey<a name=\"ct-describekey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-describekey.md",
+      "section": "DescribeKey<a name=\"ct-describekey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-disable-key-rotation.md",
+      "source_title": "DisableKeyRotation<a name=\"ct-disable-key-rotation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-disable-key-rotation.md",
+      "section": "DisableKeyRotation<a name=\"ct-disable-key-rotation\"></a>"
+    },
+    {
+      "file": "doc_source/ct-disablekey.md",
+      "source_title": "DisableKey<a name=\"ct-disablekey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-disablekey.md",
+      "section": "DisableKey<a name=\"ct-disablekey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-disconnect-keystore.md",
+      "source_title": "DisconnectCustomKeyStore<a name=\"ct-disconnect-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-disconnect-keystore.md",
+      "section": "DisconnectCustomKeyStore<a name=\"ct-disconnect-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/ct-ec2one.md",
+      "source_title": "Amazon EC2 example one<a name=\"ct-ec2one\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-ec2one.md",
+      "section": "Amazon EC2 example one<a name=\"ct-ec2one\"></a>"
+    },
+    {
+      "file": "doc_source/ct-ec2two.md",
+      "source_title": "Amazon EC2 example two<a name=\"ct-ec2two\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-ec2two.md",
+      "section": "Amazon EC2 example two<a name=\"ct-ec2two\"></a>"
+    },
+    {
+      "file": "doc_source/ct-enablekey.md",
+      "source_title": "EnableKey<a name=\"ct-enablekey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-enablekey.md",
+      "section": "EnableKey<a name=\"ct-enablekey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-enablekeyrotation.md",
+      "source_title": "EnableKeyRotation<a name=\"ct-enablekeyrotation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-enablekeyrotation.md",
+      "section": "EnableKeyRotation<a name=\"ct-enablekeyrotation\"></a>"
+    },
+    {
+      "file": "doc_source/ct-encrypt.md",
+      "source_title": "Encrypt<a name=\"ct-encrypt\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-encrypt.md",
+      "section": "Encrypt<a name=\"ct-encrypt\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generate-data-key-enclave.md",
+      "source_title": "GenerateDataKey \\(from an enclave\\)<a name=\"ct-generate-data-key-enclave\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generate-data-key-enclave.md",
+      "section": "GenerateDataKey \\(from an enclave\\)<a name=\"ct-generate-data-key-enclave\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generate-random-enclave.md",
+      "source_title": "GenerateRandom \\(from an enclave\\)<a name=\"ct-generate-random-enclave\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generate-random-enclave.md",
+      "section": "GenerateRandom \\(from an enclave\\)<a name=\"ct-generate-random-enclave\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generatedatakey.md",
+      "source_title": "GenerateDataKey<a name=\"ct-generatedatakey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generatedatakey.md",
+      "section": "GenerateDataKey<a name=\"ct-generatedatakey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generatedatakeypair.md",
+      "source_title": "GenerateDataKeyPair<a name=\"ct-generatedatakeypair\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generatedatakeypair.md",
+      "section": "GenerateDataKeyPair<a name=\"ct-generatedatakeypair\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generatedatakeypairwithoutplaintext.md",
+      "source_title": "GenerateDataKeyPairWithoutPlaintext<a name=\"ct-generatedatakeypairwithoutplaintext\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generatedatakeypairwithoutplaintext.md",
+      "section": "GenerateDataKeyPairWithoutPlaintext<a name=\"ct-generatedatakeypairwithoutplaintext\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generatedatakeyplaintext.md",
+      "source_title": "GenerateDataKeyWithoutPlaintext<a name=\"ct-generatedatakeyplaintext\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generatedatakeyplaintext.md",
+      "section": "GenerateDataKeyWithoutPlaintext<a name=\"ct-generatedatakeyplaintext\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generatemac.md",
+      "source_title": "GenerateMac<a name=\"ct-generatemac\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generatemac.md",
+      "section": "GenerateMac<a name=\"ct-generatemac\"></a>"
+    },
+    {
+      "file": "doc_source/ct-generaterandom.md",
+      "source_title": "GenerateRandom<a name=\"ct-generaterandom\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-generaterandom.md",
+      "section": "GenerateRandom<a name=\"ct-generaterandom\"></a>"
+    },
+    {
+      "file": "doc_source/ct-getkeypolicy.md",
+      "source_title": "GetKeyPolicy<a name=\"ct-getkeypolicy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-getkeypolicy.md",
+      "section": "GetKeyPolicy<a name=\"ct-getkeypolicy\"></a>"
+    },
+    {
+      "file": "doc_source/ct-getparametersforimport.md",
+      "source_title": "GetParametersForImport<a name=\"ct-getparametersforimport\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-getparametersforimport.md",
+      "section": "GetParametersForImport<a name=\"ct-getparametersforimport\"></a>"
+    },
+    {
+      "file": "doc_source/ct-importkeymaterial.md",
+      "source_title": "ImportKeyMaterial<a name=\"ct-importkeymaterial\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-importkeymaterial.md",
+      "section": "ImportKeyMaterial<a name=\"ct-importkeymaterial\"></a>"
+    },
+    {
+      "file": "doc_source/ct-listaliases.md",
+      "source_title": "ListAliases<a name=\"ct-listaliases\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-listaliases.md",
+      "section": "ListAliases<a name=\"ct-listaliases\"></a>"
+    },
+    {
+      "file": "doc_source/ct-listgrants.md",
+      "source_title": "ListGrants<a name=\"ct-listgrants\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-listgrants.md",
+      "section": "ListGrants<a name=\"ct-listgrants\"></a>"
+    },
+    {
+      "file": "doc_source/ct-put-key-policy.md",
+      "source_title": "PutKeyPolicy<a name=\"ct-put-key-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-put-key-policy.md",
+      "section": "PutKeyPolicy<a name=\"ct-put-key-policy\"></a>"
+    },
+    {
+      "file": "doc_source/ct-reencrypt.md",
+      "source_title": "ReEncrypt<a name=\"ct-reencrypt\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-reencrypt.md",
+      "section": "ReEncrypt<a name=\"ct-reencrypt\"></a>"
+    },
+    {
+      "file": "doc_source/ct-replicate-key.md",
+      "source_title": "ReplicateKey<a name=\"ct-replicate-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-replicate-key.md",
+      "section": "ReplicateKey<a name=\"ct-replicate-key\"></a>"
+    },
+    {
+      "file": "doc_source/ct-retire-grant.md",
+      "source_title": "RetireGrant<a name=\"ct-retire-grant\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-retire-grant.md",
+      "section": "RetireGrant<a name=\"ct-retire-grant\"></a>"
+    },
+    {
+      "file": "doc_source/ct-revoke-grant.md",
+      "source_title": "RevokeGrant<a name=\"ct-revoke-grant\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-revoke-grant.md",
+      "section": "RevokeGrant<a name=\"ct-revoke-grant\"></a>"
+    },
+    {
+      "file": "doc_source/ct-rotatekey.md",
+      "source_title": "RotateKey<a name=\"ct-rotatekey\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-rotatekey.md",
+      "section": "RotateKey<a name=\"ct-rotatekey\"></a>"
+    },
+    {
+      "file": "doc_source/ct-schedule-key-deletion.md",
+      "source_title": "ScheduleKeyDeletion<a name=\"ct-schedule-key-deletion\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-schedule-key-deletion.md",
+      "section": "ScheduleKeyDeletion<a name=\"ct-schedule-key-deletion\"></a>"
+    },
+    {
+      "file": "doc_source/ct-sign.md",
+      "source_title": "Sign<a name=\"ct-sign\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-sign.md",
+      "section": "Sign<a name=\"ct-sign\"></a>"
+    },
+    {
+      "file": "doc_source/ct-synchronize-multi-region-key.md",
+      "source_title": "SynchronizeMultiRegionKey<a name=\"ct-synchronize-multi-region-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-synchronize-multi-region-key.md",
+      "section": "SynchronizeMultiRegionKey<a name=\"ct-synchronize-multi-region-key\"></a>"
+    },
+    {
+      "file": "doc_source/ct-tagresource.md",
+      "source_title": "TagResource<a name=\"ct-tagresource\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-tagresource.md",
+      "section": "TagResource<a name=\"ct-tagresource\"></a>"
+    },
+    {
+      "file": "doc_source/ct-untagresource.md",
+      "source_title": "UntagResource<a name=\"ct-untagresource\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-untagresource.md",
+      "section": "UntagResource<a name=\"ct-untagresource\"></a>"
+    },
+    {
+      "file": "doc_source/ct-update-key-description.md",
+      "source_title": "UpdateKeyDescription<a name=\"ct-update-key-description\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-update-key-description.md",
+      "section": "UpdateKeyDescription<a name=\"ct-update-key-description\"></a>"
+    },
+    {
+      "file": "doc_source/ct-update-keystore.md",
+      "source_title": "UpdateCustomKeyStore<a name=\"ct-update-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-update-keystore.md",
+      "section": "UpdateCustomKeyStore<a name=\"ct-update-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/ct-update-primary-region.md",
+      "source_title": "UpdatePrimaryRegion<a name=\"ct-update-primary-region\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-update-primary-region.md",
+      "section": "UpdatePrimaryRegion<a name=\"ct-update-primary-region\"></a>"
+    },
+    {
+      "file": "doc_source/ct-updatealias.md",
+      "source_title": "UpdateAlias<a name=\"ct-updatealias\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-updatealias.md",
+      "section": "UpdateAlias<a name=\"ct-updatealias\"></a>"
+    },
+    {
+      "file": "doc_source/ct-verify.md",
+      "source_title": "Verify<a name=\"ct-verify\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-verify.md",
+      "section": "Verify<a name=\"ct-verify\"></a>"
+    },
+    {
+      "file": "doc_source/ct-verifymac.md",
+      "source_title": "VerifyMac<a name=\"ct-verifymac\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/ct-verifymac.md",
+      "section": "VerifyMac<a name=\"ct-verifymac\"></a>"
+    },
+    {
+      "file": "doc_source/custom-key-store-overview.md",
+      "source_title": "Custom key stores<a name=\"custom-key-store-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/custom-key-store-overview.md",
+      "section": "Custom key stores<a name=\"custom-key-store-overview\"></a>"
+    },
+    {
+      "file": "doc_source/customer-managed-policies.md",
+      "source_title": "IAM policy examples<a name=\"customer-managed-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/customer-managed-policies.md",
+      "section": "IAM policy examples<a name=\"customer-managed-policies\"></a>"
+    },
+    {
+      "file": "doc_source/data-protection.md",
+      "source_title": "Data protection in AWS Key Management Service<a name=\"data-protection\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/data-protection.md",
+      "section": "Data protection in AWS Key Management Service<a name=\"data-protection\"></a>"
+    },
+    {
+      "file": "doc_source/delete-cmk-keystore.md",
+      "source_title": "Scheduling deletion of KMS keys from an AWS CloudHSM key store<a name=\"delete-cmk-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/delete-cmk-keystore.md",
+      "section": "Scheduling deletion of KMS keys from an AWS CloudHSM key store<a name=\"delete-cmk-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/delete-keystore.md",
+      "source_title": "Deleting an AWS CloudHSM key store<a name=\"delete-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/delete-keystore.md",
+      "section": "Deleting an AWS CloudHSM key store<a name=\"delete-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/delete-xks-key.md",
+      "source_title": "Scheduling deletion of KMS keys from an external key store<a name=\"delete-xks-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/delete-xks-key.md",
+      "section": "Scheduling deletion of KMS keys from an external key store<a name=\"delete-xks-key\"></a>"
+    },
+    {
+      "file": "doc_source/delete-xks.md",
+      "source_title": "Deleting an external key store<a name=\"delete-xks\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/delete-xks.md",
+      "section": "Deleting an external key store<a name=\"delete-xks\"></a>"
+    },
+    {
+      "file": "doc_source/deleting-keys-adding-permission.md",
+      "source_title": "Controlling access to key deletion<a name=\"deleting-keys-adding-permission\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/deleting-keys-adding-permission.md",
+      "section": "Controlling access to key deletion<a name=\"deleting-keys-adding-permission\"></a>"
+    },
+    {
+      "file": "doc_source/deleting-keys-creating-cloudwatch-alarm.md",
+      "source_title": "Creating an alarm that detects use of a KMS key pending deletion<a name=\"deleting-keys-creating-cloudwatch-alarm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/deleting-keys-creating-cloudwatch-alarm.md",
+      "section": "Creating an alarm that detects use of a KMS key pending deletion<a name=\"deleting-keys-creating-cloudwatch-alarm\"></a>"
+    },
+    {
+      "file": "doc_source/deleting-keys-determining-usage.md",
+      "source_title": "Determining past usage of a KMS key<a name=\"deleting-keys-determining-usage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/deleting-keys-determining-usage.md",
+      "section": "Determining past usage of a KMS key<a name=\"deleting-keys-determining-usage\"></a>"
+    },
+    {
+      "file": "doc_source/deleting-keys-scheduling-key-deletion.md",
+      "source_title": "Scheduling and canceling key deletion<a name=\"deleting-keys-scheduling-key-deletion\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/deleting-keys-scheduling-key-deletion.md",
+      "section": "Scheduling and canceling key deletion<a name=\"deleting-keys-scheduling-key-deletion\"></a>"
+    },
+    {
+      "file": "doc_source/deleting-keys.md",
+      "source_title": "Deleting AWS KMS keys<a name=\"deleting-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/deleting-keys.md",
+      "section": "Deleting AWS KMS keys<a name=\"deleting-keys\"></a>"
+    },
+    {
+      "file": "doc_source/determining-access-grants.md",
+      "source_title": "Examining grants<a name=\"determining-access-grants\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/determining-access-grants.md",
+      "section": "Examining grants<a name=\"determining-access-grants\"></a>"
+    },
+    {
+      "file": "doc_source/determining-access-iam-policies.md",
+      "source_title": "Examining IAM policies<a name=\"determining-access-iam-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/determining-access-iam-policies.md",
+      "section": "Examining IAM policies<a name=\"determining-access-iam-policies\"></a>"
+    },
+    {
+      "file": "doc_source/determining-access-key-policy.md",
+      "source_title": "Examining the key policy<a name=\"determining-access-key-policy\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/determining-access-key-policy.md",
+      "section": "Examining the key policy<a name=\"determining-access-key-policy\"></a>"
+    },
+    {
+      "file": "doc_source/determining-access.md",
+      "source_title": "Determining access to AWS KMS keys<a name=\"determining-access\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/determining-access.md",
+      "section": "Determining access to AWS KMS keys<a name=\"determining-access\"></a>"
+    },
+    {
+      "file": "doc_source/disaster-recovery-resiliency.md",
+      "source_title": "Resilience in AWS Key Management Service<a name=\"disaster-recovery-resiliency\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/disaster-recovery-resiliency.md",
+      "section": "Resilience in AWS Key Management Service<a name=\"disaster-recovery-resiliency\"></a>"
+    },
+    {
+      "file": "doc_source/disconnect-keystore.md",
+      "source_title": "Connecting and disconnecting an AWS CloudHSM key store<a name=\"disconnect-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/disconnect-keystore.md",
+      "section": "Connecting and disconnecting an AWS CloudHSM key store<a name=\"disconnect-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/dochistory.md",
+      "source_title": "Document history<a name=\"dochistory\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/dochistory.md",
+      "section": "Document history<a name=\"dochistory\"></a>"
+    },
+    {
+      "file": "doc_source/download-public-key.md",
+      "source_title": "Downloading public keys<a name=\"download-public-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/download-public-key.md",
+      "section": "Downloading public keys<a name=\"download-public-key\"></a>"
+    },
+    {
+      "file": "doc_source/editing-keys.md",
+      "source_title": "Editing keys<a name=\"editing-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/editing-keys.md",
+      "section": "Editing keys<a name=\"editing-keys\"></a>"
+    },
+    {
+      "file": "doc_source/enabling-keys.md",
+      "source_title": "Enabling and disabling keys<a name=\"enabling-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/enabling-keys.md",
+      "section": "Enabling and disabling keys<a name=\"enabling-keys\"></a>"
+    },
+    {
+      "file": "doc_source/find-cmk-alias.md",
+      "source_title": "Finding the alias name and alias ARN<a name=\"find-cmk-alias\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/find-cmk-alias.md",
+      "section": "Finding the alias name and alias ARN<a name=\"find-cmk-alias\"></a>"
+    },
+    {
+      "file": "doc_source/find-cmk-id-arn.md",
+      "source_title": "Finding the key ID and key ARN<a name=\"find-cmk-id-arn\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/find-cmk-id-arn.md",
+      "section": "Finding the key ID and key ARN<a name=\"find-cmk-id-arn\"></a>"
+    },
+    {
+      "file": "doc_source/find-key-material.md",
+      "source_title": "Finding KMS keys and key material<a name=\"find-key-material\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/find-key-material.md",
+      "section": "Finding KMS keys and key material<a name=\"find-key-material\"></a>"
+    },
+    {
+      "file": "doc_source/find-symm-asymm.md",
+      "source_title": "Identifying asymmetric KMS keys<a name=\"find-symm-asymm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/find-symm-asymm.md",
+      "section": "Identifying asymmetric KMS keys<a name=\"find-symm-asymm\"></a>"
+    },
+    {
+      "file": "doc_source/fix-keystore.md",
+      "source_title": "Troubleshooting a custom key store<a name=\"fix-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/fix-keystore.md",
+      "section": "Troubleshooting a custom key store<a name=\"fix-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/getting-started.md",
+      "source_title": "Managing keys<a name=\"getting-started\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/getting-started.md",
+      "section": "Managing keys<a name=\"getting-started\"></a>"
+    },
+    {
+      "file": "doc_source/grant-manage.md",
+      "source_title": "Managing grants<a name=\"grant-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/grant-manage.md",
+      "section": "Managing grants<a name=\"grant-manage\"></a>"
+    },
+    {
+      "file": "doc_source/grants.md",
+      "source_title": "Grants in AWS KMS<a name=\"grants\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/grants.md",
+      "section": "Grants in AWS KMS<a name=\"grants\"></a>"
+    },
+    {
+      "file": "doc_source/hmac-authz.md",
+      "source_title": "Controlling access to HMAC KMS keys<a name=\"hmac-authz\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/hmac-authz.md",
+      "section": "Controlling access to HMAC KMS keys<a name=\"hmac-authz\"></a>"
+    },
+    {
+      "file": "doc_source/hmac-create-key.md",
+      "source_title": "Creating HMAC KMS keys<a name=\"hmac-create-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/hmac-create-key.md",
+      "section": "Creating HMAC KMS keys<a name=\"hmac-create-key\"></a>"
+    },
+    {
+      "file": "doc_source/hmac-view.md",
+      "source_title": "Viewing HMAC KMS keys<a name=\"hmac-view\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/hmac-view.md",
+      "section": "Viewing HMAC KMS keys<a name=\"hmac-view\"></a>"
+    },
+    {
+      "file": "doc_source/hmac.md",
+      "source_title": "HMAC keys in AWS KMS<a name=\"hmac\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/hmac.md",
+      "section": "HMAC keys in AWS KMS<a name=\"hmac\"></a>"
+    },
+    {
+      "file": "doc_source/hsm-key-store-concepts.md",
+      "source_title": "AWS CloudHSM key store concepts<a name=\"hsm-key-store-concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/hsm-key-store-concepts.md",
+      "section": "AWS CloudHSM key store concepts<a name=\"hsm-key-store-concepts\"></a>"
+    },
+    {
+      "file": "doc_source/iam-policies-best-practices.md",
+      "source_title": "Best practices for IAM policies<a name=\"iam-policies-best-practices\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/iam-policies-best-practices.md",
+      "section": "Best practices for IAM policies<a name=\"iam-policies-best-practices\"></a>"
+    },
+    {
+      "file": "doc_source/iam-policies-overview.md",
+      "source_title": "Overview of IAM policies<a name=\"iam-policies-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/iam-policies-overview.md",
+      "section": "Overview of IAM policies<a name=\"iam-policies-overview\"></a>"
+    },
+    {
+      "file": "doc_source/iam-policies.md",
+      "source_title": "Using IAM policies with AWS KMS<a name=\"iam-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/iam-policies.md",
+      "section": "Using IAM policies with AWS KMS<a name=\"iam-policies\"></a>"
+    },
+    {
+      "file": "doc_source/importing-keys-create-cmk.md",
+      "source_title": "Importing key material step 1: Create an AWS KMS key without key material<a name=\"importing-keys-create-cmk\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/importing-keys-create-cmk.md",
+      "section": "Importing key material step 1: Create an AWS KMS key without key material<a name=\"importing-keys-create-cmk\"></a>"
+    },
+    {
+      "file": "doc_source/importing-keys-encrypt-key-material.md",
+      "source_title": "Importing key material step 3: Encrypt the key material<a name=\"importing-keys-encrypt-key-material\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/importing-keys-encrypt-key-material.md",
+      "section": "Importing key material step 3: Encrypt the key material<a name=\"importing-keys-encrypt-key-material\"></a>"
+    },
+    {
+      "file": "doc_source/importing-keys-get-public-key-and-token.md",
+      "source_title": "Importing key material step 2: Download the public key and import token<a name=\"importing-keys-get-public-key-and-token\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/importing-keys-get-public-key-and-token.md",
+      "section": "Importing key material step 2: Download the public key and import token<a name=\"importing-keys-get-public-key-and-token\"></a>"
+    },
+    {
+      "file": "doc_source/importing-keys-import-key-material.md",
+      "source_title": "Importing key material step 4: Import the key material<a name=\"importing-keys-import-key-material\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/importing-keys-import-key-material.md",
+      "section": "Importing key material step 4: Import the key material<a name=\"importing-keys-import-key-material\"></a>"
+    },
+    {
+      "file": "doc_source/importing-keys.md",
+      "source_title": "Importing key material in AWS KMS keys<a name=\"importing-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/importing-keys.md",
+      "section": "Importing key material in AWS KMS keys<a name=\"importing-keys\"></a>"
+    },
+    {
+      "file": "doc_source/increase-quota.md",
+      "source_title": "Requesting an AWS KMS quota change<a name=\"increase-quota\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/increase-quota.md",
+      "section": "Requesting an AWS KMS quota change<a name=\"increase-quota\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "AWS Key Management Service Developer Guide",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/index.md",
+      "section": "AWS Key Management Service Developer Guide"
+    },
+    {
+      "file": "doc_source/infrastructure-security.md",
+      "source_title": "Infrastructure security in AWS Key Management Service<a name=\"infrastructure-security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/infrastructure-security.md",
+      "section": "Infrastructure security in AWS Key Management Service<a name=\"infrastructure-security\"></a>"
+    },
+    {
+      "file": "doc_source/key-policies.md",
+      "source_title": "Key policies in AWS KMS<a name=\"key-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policies.md",
+      "section": "Key policies in AWS KMS<a name=\"key-policies\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-default.md",
+      "source_title": "Default key policy<a name=\"key-policy-default\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-default.md",
+      "section": "Default key policy<a name=\"key-policy-default\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-modifying-external-accounts.md",
+      "source_title": "Allowing users in other accounts to use a KMS key<a name=\"key-policy-modifying-external-accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-modifying-external-accounts.md",
+      "section": "Allowing users in other accounts to use a KMS key<a name=\"key-policy-modifying-external-accounts\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-modifying.md",
+      "source_title": "Changing a key policy<a name=\"key-policy-modifying\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-modifying.md",
+      "section": "Changing a key policy<a name=\"key-policy-modifying\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-overview.md",
+      "source_title": "Creating a key policy<a name=\"key-policy-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-overview.md",
+      "section": "Creating a key policy<a name=\"key-policy-overview\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-services.md",
+      "source_title": "Permissions for AWS services in key policies<a name=\"key-policy-services\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-services.md",
+      "section": "Permissions for AWS services in key policies<a name=\"key-policy-services\"></a>"
+    },
+    {
+      "file": "doc_source/key-policy-viewing.md",
+      "source_title": "Viewing a key policy<a name=\"key-policy-viewing\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-policy-viewing.md",
+      "section": "Viewing a key policy<a name=\"key-policy-viewing\"></a>"
+    },
+    {
+      "file": "doc_source/key-state.md",
+      "source_title": "Key states of AWS KMS keys<a name=\"key-state\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-state.md",
+      "section": "Key states of AWS KMS keys<a name=\"key-state\"></a>"
+    },
+    {
+      "file": "doc_source/key-types.md",
+      "source_title": "Special\\-purpose keys<a name=\"key-types\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/key-types.md",
+      "section": "Special\\-purpose keys<a name=\"key-types\"></a>"
+    },
+    {
+      "file": "doc_source/keystore-cloudhsm.md",
+      "source_title": "AWS CloudHSM key stores<a name=\"keystore-cloudhsm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/keystore-cloudhsm.md",
+      "section": "AWS CloudHSM key stores<a name=\"keystore-cloudhsm\"></a>"
+    },
+    {
+      "file": "doc_source/keystore-external-key-manage.md",
+      "source_title": "Managing KMS keys in an external key store<a name=\"keystore-external-key-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/keystore-external-key-manage.md",
+      "section": "Managing KMS keys in an external key store<a name=\"keystore-external-key-manage\"></a>"
+    },
+    {
+      "file": "doc_source/keystore-external-manage.md",
+      "source_title": "Managing an external key store<a name=\"keystore-external-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/keystore-external-manage.md",
+      "section": "Managing an external key store<a name=\"keystore-external-manage\"></a>"
+    },
+    {
+      "file": "doc_source/keystore-external.md",
+      "source_title": "External key stores<a name=\"keystore-external\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/keystore-external.md",
+      "section": "External key stores<a name=\"keystore-external\"></a>"
+    },
+    {
+      "file": "doc_source/kms-alias.md",
+      "source_title": "Using aliases<a name=\"kms-alias\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-alias.md",
+      "section": "Using aliases<a name=\"kms-alias\"></a>"
+    },
+    {
+      "file": "doc_source/kms-api-permissions-reference.md",
+      "source_title": "AWS KMS permissions<a name=\"kms-api-permissions-reference\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-api-permissions-reference.md",
+      "section": "AWS KMS permissions<a name=\"kms-api-permissions-reference\"></a>"
+    },
+    {
+      "file": "doc_source/kms-compliance.md",
+      "source_title": "Compliance validation for AWS Key Management Service<a name=\"kms-compliance\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-compliance.md",
+      "section": "Compliance validation for AWS Key Management Service<a name=\"kms-compliance\"></a>"
+    },
+    {
+      "file": "doc_source/kms-events.md",
+      "source_title": "Monitoring with Amazon EventBridge<a name=\"kms-events\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-events.md",
+      "section": "Monitoring with Amazon EventBridge<a name=\"kms-events\"></a>"
+    },
+    {
+      "file": "doc_source/kms-security.md",
+      "source_title": "Security of AWS Key Management Service<a name=\"kms-security\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-security.md",
+      "section": "Security of AWS Key Management Service<a name=\"kms-security\"></a>"
+    },
+    {
+      "file": "doc_source/kms-vpc-endpoint.md",
+      "source_title": "Connecting to AWS KMS through a VPC endpoint<a name=\"kms-vpc-endpoint\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/kms-vpc-endpoint.md",
+      "section": "Connecting to AWS KMS through a VPC endpoint<a name=\"kms-vpc-endpoint\"></a>"
+    },
+    {
+      "file": "doc_source/limits.md",
+      "source_title": "Quotas<a name=\"limits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/limits.md",
+      "section": "Quotas<a name=\"limits\"></a>"
+    },
+    {
+      "file": "doc_source/logging-using-cloudtrail.md",
+      "source_title": "Logging AWS KMS API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/logging-using-cloudtrail.md",
+      "section": "Logging AWS KMS API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/manage-cmk-keystore.md",
+      "source_title": "Managing KMS keys in a CloudHSM key store<a name=\"manage-cmk-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/manage-cmk-keystore.md",
+      "section": "Managing KMS keys in a CloudHSM key store<a name=\"manage-cmk-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/manage-keystore.md",
+      "source_title": "Managing a CloudHSM custom key store<a name=\"manage-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/manage-keystore.md",
+      "section": "Managing a CloudHSM custom key store<a name=\"manage-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/manage-tags-api.md",
+      "source_title": "Managing KMS key tags with API operations<a name=\"manage-tags-api\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/manage-tags-api.md",
+      "section": "Managing KMS key tags with API operations<a name=\"manage-tags-api\"></a>"
+    },
+    {
+      "file": "doc_source/manage-tags-console.md",
+      "source_title": "Managing KMS key tags in the console<a name=\"manage-tags-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/manage-tags-console.md",
+      "section": "Managing KMS key tags in the console<a name=\"manage-tags-console\"></a>"
+    },
+    {
+      "file": "doc_source/monitoring-cloudwatch.md",
+      "source_title": "Monitoring with Amazon CloudWatch<a name=\"monitoring-cloudwatch\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/monitoring-cloudwatch.md",
+      "section": "Monitoring with Amazon CloudWatch<a name=\"monitoring-cloudwatch\"></a>"
+    },
+    {
+      "file": "doc_source/monitoring-overview.md",
+      "source_title": "Monitoring AWS KMS keys<a name=\"monitoring-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/monitoring-overview.md",
+      "section": "Monitoring AWS KMS keys<a name=\"monitoring-overview\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-auth.md",
+      "source_title": "Controlling access to multi\\-Region keys<a name=\"multi-region-keys-auth\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-auth.md",
+      "section": "Controlling access to multi\\-Region keys<a name=\"multi-region-keys-auth\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-create.md",
+      "source_title": "Creating multi\\-Region keys<a name=\"multi-region-keys-create\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-create.md",
+      "section": "Creating multi\\-Region keys<a name=\"multi-region-keys-create\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-delete.md",
+      "source_title": "Deleting multi\\-Region keys<a name=\"multi-region-keys-delete\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-delete.md",
+      "section": "Deleting multi\\-Region keys<a name=\"multi-region-keys-delete\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-import.md",
+      "source_title": "Importing key material into multi\\-Region keys<a name=\"multi-region-keys-import\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-import.md",
+      "section": "Importing key material into multi\\-Region keys<a name=\"multi-region-keys-import\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-manage.md",
+      "source_title": "Managing multi\\-Region keys<a name=\"multi-region-keys-manage\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-manage.md",
+      "section": "Managing multi\\-Region keys<a name=\"multi-region-keys-manage\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-overview.md",
+      "source_title": "Multi\\-Region keys in AWS KMS<a name=\"multi-region-keys-overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-overview.md",
+      "section": "Multi\\-Region keys in AWS KMS<a name=\"multi-region-keys-overview\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-replicate.md",
+      "source_title": "Creating multi\\-Region replica keys<a name=\"multi-region-keys-replicate\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-replicate.md",
+      "section": "Creating multi\\-Region replica keys<a name=\"multi-region-keys-replicate\"></a>"
+    },
+    {
+      "file": "doc_source/multi-region-keys-view.md",
+      "source_title": "Viewing multi\\-Region keys<a name=\"multi-region-keys-view\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/multi-region-keys-view.md",
+      "section": "Viewing multi\\-Region keys<a name=\"multi-region-keys-view\"></a>"
+    },
+    {
+      "file": "doc_source/overview.md",
+      "source_title": "AWS Key Management Service<a name=\"overview\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/overview.md",
+      "section": "AWS Key Management Service<a name=\"overview\"></a>"
+    },
+    {
+      "file": "doc_source/plan-xks-keystore.md",
+      "source_title": "Planning an external key store<a name=\"plan-xks-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/plan-xks-keystore.md",
+      "section": "Planning an external key store<a name=\"plan-xks-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/policy-conditions.md",
+      "source_title": "Condition keys for AWS KMS<a name=\"policy-conditions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/policy-conditions.md",
+      "section": "Condition keys for AWS KMS<a name=\"policy-conditions\"></a>"
+    },
+    {
+      "file": "doc_source/policy-evaluation.md",
+      "source_title": "Troubleshooting key access<a name=\"policy-evaluation\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/policy-evaluation.md",
+      "section": "Troubleshooting key access<a name=\"policy-evaluation\"></a>"
+    },
+    {
+      "file": "doc_source/pqtls.md",
+      "source_title": "Using hybrid post\\-quantum TLS with AWS KMS<a name=\"pqtls\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/pqtls.md",
+      "section": "Using hybrid post\\-quantum TLS with AWS KMS<a name=\"pqtls\"></a>"
+    },
+    {
+      "file": "doc_source/programming-aliases.md",
+      "source_title": "Working with aliases<a name=\"programming-aliases\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-aliases.md",
+      "section": "Working with aliases<a name=\"programming-aliases\"></a>"
+    },
+    {
+      "file": "doc_source/programming-client.md",
+      "source_title": "Creating a client<a name=\"programming-client\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-client.md",
+      "section": "Creating a client<a name=\"programming-client\"></a>"
+    },
+    {
+      "file": "doc_source/programming-encryption.md",
+      "source_title": "Encrypting and decrypting data keys<a name=\"programming-encryption\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-encryption.md",
+      "section": "Encrypting and decrypting data keys<a name=\"programming-encryption\"></a>"
+    },
+    {
+      "file": "doc_source/programming-grants.md",
+      "source_title": "Working with grants<a name=\"programming-grants\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-grants.md",
+      "section": "Working with grants<a name=\"programming-grants\"></a>"
+    },
+    {
+      "file": "doc_source/programming-key-policies.md",
+      "source_title": "Working with key policies<a name=\"programming-key-policies\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-key-policies.md",
+      "section": "Working with key policies<a name=\"programming-key-policies\"></a>"
+    },
+    {
+      "file": "doc_source/programming-keys.md",
+      "source_title": "Working with keys<a name=\"programming-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-keys.md",
+      "section": "Working with keys<a name=\"programming-keys\"></a>"
+    },
+    {
+      "file": "doc_source/programming-top.md",
+      "source_title": "Programming the AWS KMS API<a name=\"programming-top\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/programming-top.md",
+      "section": "Programming the AWS KMS API<a name=\"programming-top\"></a>"
+    },
+    {
+      "file": "doc_source/references.md",
+      "source_title": "References<a name=\"references\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/references.md",
+      "section": "References<a name=\"references\"></a>"
+    },
+    {
+      "file": "doc_source/requests-per-second.md",
+      "source_title": "Request quotas<a name=\"requests-per-second\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/requests-per-second.md",
+      "section": "Request quotas<a name=\"requests-per-second\"></a>"
+    },
+    {
+      "file": "doc_source/resource-limits.md",
+      "source_title": "Resource quotas<a name=\"resource-limits\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/resource-limits.md",
+      "section": "Resource quotas<a name=\"resource-limits\"></a>"
+    },
+    {
+      "file": "doc_source/rotate-keys.md",
+      "source_title": "Rotating AWS KMS keys<a name=\"rotate-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/rotate-keys.md",
+      "section": "Rotating AWS KMS keys<a name=\"rotate-keys\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam.md",
+      "source_title": "Identity and access management for AWS Key Management Service<a name=\"security-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/security-iam.md",
+      "section": "Identity and access management for AWS Key Management Service<a name=\"security-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security-logging-monitoring.md",
+      "source_title": "Logging and monitoring in AWS Key Management Service<a name=\"security-logging-monitoring\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/security-logging-monitoring.md",
+      "section": "Logging and monitoring in AWS Key Management Service<a name=\"security-logging-monitoring\"></a>"
+    },
+    {
+      "file": "doc_source/service-integration.md",
+      "source_title": "How AWS services use AWS KMS<a name=\"service-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/service-integration.md",
+      "section": "How AWS services use AWS KMS<a name=\"service-integration\"></a>"
+    },
+    {
+      "file": "doc_source/services-cloudtrail.md",
+      "source_title": "How AWS CloudTrail uses AWS KMS<a name=\"services-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-cloudtrail.md",
+      "section": "How AWS CloudTrail uses AWS KMS<a name=\"services-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/services-dynamodb.md",
+      "source_title": "How Amazon DynamoDB uses AWS KMS<a name=\"services-dynamodb\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-dynamodb.md",
+      "section": "How Amazon DynamoDB uses AWS KMS<a name=\"services-dynamodb\"></a>"
+    },
+    {
+      "file": "doc_source/services-ebs.md",
+      "source_title": "How Amazon Elastic Block Store \\(Amazon EBS\\) uses AWS KMS<a name=\"services-ebs\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-ebs.md",
+      "section": "How Amazon Elastic Block Store \\(Amazon EBS\\) uses AWS KMS<a name=\"services-ebs\"></a>"
+    },
+    {
+      "file": "doc_source/services-emr.md",
+      "source_title": "How Amazon EMR uses AWS KMS<a name=\"services-emr\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-emr.md",
+      "section": "How Amazon EMR uses AWS KMS<a name=\"services-emr\"></a>"
+    },
+    {
+      "file": "doc_source/services-et.md",
+      "source_title": "How Amazon Elastic Transcoder uses AWS KMS<a name=\"services-et\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-et.md",
+      "section": "How Amazon Elastic Transcoder uses AWS KMS<a name=\"services-et\"></a>"
+    },
+    {
+      "file": "doc_source/services-nitro-enclaves.md",
+      "source_title": "How AWS Nitro Enclaves uses AWS KMS<a name=\"services-nitro-enclaves\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-nitro-enclaves.md",
+      "section": "How AWS Nitro Enclaves uses AWS KMS<a name=\"services-nitro-enclaves\"></a>"
+    },
+    {
+      "file": "doc_source/services-parameter-store.md",
+      "source_title": "How AWS Systems Manager Parameter Store uses AWS KMS<a name=\"services-parameter-store\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-parameter-store.md",
+      "section": "How AWS Systems Manager Parameter Store uses AWS KMS<a name=\"services-parameter-store\"></a>"
+    },
+    {
+      "file": "doc_source/services-rds.md",
+      "source_title": "How Amazon Relational Database Service \\(Amazon RDS\\) uses AWS KMS<a name=\"services-rds\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-rds.md",
+      "section": "How Amazon Relational Database Service \\(Amazon RDS\\) uses AWS KMS<a name=\"services-rds\"></a>"
+    },
+    {
+      "file": "doc_source/services-redshift.md",
+      "source_title": "How Amazon Redshift uses AWS KMS<a name=\"services-redshift\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-redshift.md",
+      "section": "How Amazon Redshift uses AWS KMS<a name=\"services-redshift\"></a>"
+    },
+    {
+      "file": "doc_source/services-s3.md",
+      "source_title": "How Amazon Simple Storage Service \\(Amazon S3\\) uses AWS KMS<a name=\"services-s3\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-s3.md",
+      "section": "How Amazon Simple Storage Service \\(Amazon S3\\) uses AWS KMS<a name=\"services-s3\"></a>"
+    },
+    {
+      "file": "doc_source/services-secrets-manager.md",
+      "source_title": "How AWS Secrets Manager uses AWS KMS<a name=\"services-secrets-manager\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-secrets-manager.md",
+      "section": "How AWS Secrets Manager uses AWS KMS<a name=\"services-secrets-manager\"></a>"
+    },
+    {
+      "file": "doc_source/services-ses.md",
+      "source_title": "How Amazon Simple Email Service \\(Amazon SES\\) uses AWS KMS<a name=\"services-ses\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-ses.md",
+      "section": "How Amazon Simple Email Service \\(Amazon SES\\) uses AWS KMS<a name=\"services-ses\"></a>"
+    },
+    {
+      "file": "doc_source/services-wm.md",
+      "source_title": "How Amazon WorkMail uses AWS KMS<a name=\"services-wm\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-wm.md",
+      "section": "How Amazon WorkMail uses AWS KMS<a name=\"services-wm\"></a>"
+    },
+    {
+      "file": "doc_source/services-workspaces.md",
+      "source_title": "How WorkSpaces uses AWS KMS<a name=\"services-workspaces\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/services-workspaces.md",
+      "section": "How WorkSpaces uses AWS KMS<a name=\"services-workspaces\"></a>"
+    },
+    {
+      "file": "doc_source/symm-asymm-compare.md",
+      "source_title": "Key type reference<a name=\"symm-asymm-compare\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/symm-asymm-compare.md",
+      "section": "Key type reference<a name=\"symm-asymm-compare\"></a>"
+    },
+    {
+      "file": "doc_source/symm-asymm-crypto-config.md",
+      "source_title": "Viewing the cryptographic configuration of KMS keys<a name=\"symm-asymm-crypto-config\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/symm-asymm-crypto-config.md",
+      "section": "Viewing the cryptographic configuration of KMS keys<a name=\"symm-asymm-crypto-config\"></a>"
+    },
+    {
+      "file": "doc_source/symmetric-asymmetric.md",
+      "source_title": "Asymmetric keys in AWS KMS<a name=\"symmetric-asymmetric\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/symmetric-asymmetric.md",
+      "section": "Asymmetric keys in AWS KMS<a name=\"symmetric-asymmetric\"></a>"
+    },
+    {
+      "file": "doc_source/tag-authorization.md",
+      "source_title": "Using tags to control access to KMS keys<a name=\"tag-authorization\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/tag-authorization.md",
+      "section": "Using tags to control access to KMS keys<a name=\"tag-authorization\"></a>"
+    },
+    {
+      "file": "doc_source/tag-permissions.md",
+      "source_title": "Controlling access to tags<a name=\"tag-permissions\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/tag-permissions.md",
+      "section": "Controlling access to tags<a name=\"tag-permissions\"></a>"
+    },
+    {
+      "file": "doc_source/tagging-keys.md",
+      "source_title": "Tagging keys<a name=\"tagging-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/tagging-keys.md",
+      "section": "Tagging keys<a name=\"tagging-keys\"></a>"
+    },
+    {
+      "file": "doc_source/tags-about.md",
+      "source_title": "About tags in AWS KMS<a name=\"tags-about\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/tags-about.md",
+      "section": "About tags in AWS KMS<a name=\"tags-about\"></a>"
+    },
+    {
+      "file": "doc_source/throttling.md",
+      "source_title": "Throttling AWS KMS requests<a name=\"throttling\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/throttling.md",
+      "section": "Throttling AWS KMS requests<a name=\"throttling\"></a>"
+    },
+    {
+      "file": "doc_source/understanding-kms-entries.md",
+      "source_title": "Examples of AWS KMS log entries<a name=\"understanding-kms-entries\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/understanding-kms-entries.md",
+      "section": "Examples of AWS KMS log entries<a name=\"understanding-kms-entries\"></a>"
+    },
+    {
+      "file": "doc_source/update-keystore.md",
+      "source_title": "Editing AWS CloudHSM key store settings<a name=\"update-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/update-keystore.md",
+      "section": "Editing AWS CloudHSM key store settings<a name=\"update-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/update-xks-keystore.md",
+      "source_title": "Editing external key store properties<a name=\"update-xks-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/update-xks-keystore.md",
+      "section": "Editing external key store properties<a name=\"update-xks-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/use-cmk-keystore.md",
+      "source_title": "Using KMS keys in an AWS CloudHSM key store<a name=\"use-cmk-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/use-cmk-keystore.md",
+      "section": "Using KMS keys in an AWS CloudHSM key store<a name=\"use-cmk-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/use-xks-key.md",
+      "source_title": "Using KMS keys in an external key store<a name=\"use-xks-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/use-xks-key.md",
+      "section": "Using KMS keys in an external key store<a name=\"use-xks-key\"></a>"
+    },
+    {
+      "file": "doc_source/using-service-linked-roles.md",
+      "source_title": "Using service\\-linked roles for AWS KMS<a name=\"using-service-linked-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/using-service-linked-roles.md",
+      "section": "Using service\\-linked roles for AWS KMS<a name=\"using-service-linked-roles\"></a>"
+    },
+    {
+      "file": "doc_source/view-cmk-keystore.md",
+      "source_title": "Viewing KMS keys in an AWS CloudHSM key store<a name=\"view-cmk-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/view-cmk-keystore.md",
+      "section": "Viewing KMS keys in an AWS CloudHSM key store<a name=\"view-cmk-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/view-keystore.md",
+      "source_title": "Viewing an AWS CloudHSM key store<a name=\"view-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/view-keystore.md",
+      "section": "Viewing an AWS CloudHSM key store<a name=\"view-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/view-xks-key.md",
+      "source_title": "Viewing KMS keys in an external key store<a name=\"view-xks-key\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/view-xks-key.md",
+      "section": "Viewing KMS keys in an external key store<a name=\"view-xks-key\"></a>"
+    },
+    {
+      "file": "doc_source/view-xks-keystore.md",
+      "source_title": "Viewing an external key store<a name=\"view-xks-keystore\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/view-xks-keystore.md",
+      "section": "Viewing an external key store<a name=\"view-xks-keystore\"></a>"
+    },
+    {
+      "file": "doc_source/viewing-keys-cli.md",
+      "source_title": "Viewing KMS keys with the API<a name=\"viewing-keys-cli\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/viewing-keys-cli.md",
+      "section": "Viewing KMS keys with the API<a name=\"viewing-keys-cli\"></a>"
+    },
+    {
+      "file": "doc_source/viewing-keys-console.md",
+      "source_title": "Viewing KMS keys in the console<a name=\"viewing-keys-console\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/viewing-keys-console.md",
+      "section": "Viewing KMS keys in the console<a name=\"viewing-keys-console\"></a>"
+    },
+    {
+      "file": "doc_source/viewing-keys.md",
+      "source_title": "Viewing keys<a name=\"viewing-keys\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/viewing-keys.md",
+      "section": "Viewing keys<a name=\"viewing-keys\"></a>"
+    },
+    {
+      "file": "doc_source/vpc-connectivity.md",
+      "source_title": "Configuring VPC endpoint service connectivity<a name=\"vpc-connectivity\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/vpc-connectivity.md",
+      "section": "Configuring VPC endpoint service connectivity<a name=\"vpc-connectivity\"></a>"
+    },
+    {
+      "file": "doc_source/xks-connect-disconnect.md",
+      "source_title": "Connecting and disconnecting an external key store<a name=\"xks-connect-disconnect\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/xks-connect-disconnect.md",
+      "section": "Connecting and disconnecting an external key store<a name=\"xks-connect-disconnect\"></a>"
+    },
+    {
+      "file": "doc_source/xks-monitoring.md",
+      "source_title": "Monitoring an external key store<a name=\"xks-monitoring\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/xks-monitoring.md",
+      "section": "Monitoring an external key store<a name=\"xks-monitoring\"></a>"
+    },
+    {
+      "file": "doc_source/xks-troubleshooting.md",
+      "source_title": "Troubleshooting external key stores<a name=\"xks-troubleshooting\"></a>",
+      "source_url": "https://github.com/awsdocs/aws-kms-developer-guide/blob/3447fd9221fcc8ee5589b4c1a513883756729eac/doc_source/xks-troubleshooting.md",
+      "section": "Troubleshooting external key stores<a name=\"xks-troubleshooting\"></a>"
+    }
+  ]
+}

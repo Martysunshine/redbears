@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270WMICDiscoverySep2022.yaml -->
+id: 5cea0706-86b7-4a00-8b4e-e5b2b78316fd
+name: Dev-0270 WMIC  Discovery
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dev%200270%20Detection%20and%20Hunting/Analytic%20Rules/Dev-0270WMICDiscoverySep2022.yaml'
+version: 1.1.1

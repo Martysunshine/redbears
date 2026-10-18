@@ -1,0 +1,28 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_external_device.yml -->
+title: External Disk Drive Or USB Storage Device Was Recognized By The System
+id: f69a87ea-955e-4fb4-adb2-bb9fd6685632
+status: test
+description: Detects external disk drives or plugged-in USB devices.
+references:
+    - https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6416
+author: Keith Wright
+date: 2019-11-20
+modified: 2024-02-09
+tags:
+    - attack.t1091
+    - attack.t1200
+    - attack.lateral-movement
+    - attack.initial-access
+logsource:
+    product: windows
+    service: security
+detection:
+    selection_eid:
+        EventID: 6416
+    selection_field:
+        - ClassName: 'DiskDrive'
+        - DeviceDescription: 'USB Mass Storage Device'
+    condition: all of selection_*
+falsepositives:
+    - Likely
+level: low

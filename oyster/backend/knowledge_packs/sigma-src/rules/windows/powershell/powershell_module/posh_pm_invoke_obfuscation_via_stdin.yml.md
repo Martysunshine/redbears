@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_module/posh_pm_invoke_obfuscation_via_stdin.yml -->
+title: Invoke-Obfuscation Via Stdin - PowerShell Module
+id: c72aca44-8d52-45ad-8f81-f96c4d3c755e
+related:
+    - id: 86b896ba-ffa1-4fea-83e3-ee28a4c915c7
+      type: derived
+status: test
+description: Detects Obfuscated Powershell via Stdin in Scripts
+references:
+    - https://github.com/SigmaHQ/sigma/issues/1009  # (Task28)
+author: Nikita Nazarov, oscd.community
+date: 2020-10-12
+modified: 2024-04-05
+tags:
+    - attack.stealth
+    - attack.t1027
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    product: windows
+    category: ps_module
+    definition: 0ad03ef1-f21b-4a79-8ce8-e6900c54b65b
+detection:
+    selection_4103:
+        Payload|re: '(?i)(set).*&&\s?set.*(environment|invoke|\$?\{?input).*&&.*"'
+    condition: selection_4103
+falsepositives:
+    - Unknown
+level: high

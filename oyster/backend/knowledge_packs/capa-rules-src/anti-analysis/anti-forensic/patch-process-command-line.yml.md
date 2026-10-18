@@ -1,0 +1,55 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-forensic/patch-process-command-line.yml -->
+rule:
+  meta:
+    name: patch process command line
+    namespace: anti-analysis/anti-forensic
+    authors:
+      - william.ballenthin@mandiant.com
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: unsupported  # requires characteristic, offset features
+    att&ck:
+      - Defense Evasion::Process Injection [T1055]
+    mbc:
+      - Defense Evasion::Process Injection::Patch Process Command Line [E1055.m04]
+    references:
+      - https://stackoverflow.com/q/24754844/87207
+      - https://blog.xpnsec.com/how-to-argue-like-cobalt-strike/
+    examples:
+      - e353d3fbfb5c3738a77a622adff9a416:0x401626
+  features:
+    - or:
+      - and:
+        - basic block:
+          # example:
+          #   mov     rbx, gs:60h
+          #   lea     r9, [rsp+4A0h+flOldProtect] ; lpflOldProtect
+          #   mov     edx, 8          ; dwSize
+          #   mov     rcx, [rbx+20h]
+          #   add     rcx, 70h ; 'p'  ; lpAddress
+          #   lea     r8d, [rdx-4]    ; flNewProtect
+          #   call    cs:VirtualProtect
+          #   test    eax, eax
+          - and:
+            - arch: amd64
+            - characteristic: gs access
+            - offset: 0x60 = PEB
+            - offset: 0x20 = PEB->ProcessParameters
+            - offset: 0x70 = PEB->ProcessParameters->CommandLine
+            - api: VirtualProtect
+        - count(api(VirtualProtect)): 2 or more
+      - and:
+        - characteristic: indirect call
+        - api: GetProcAddress
+        - string: "NtQueryInformationProcess"
+        - api: ReadProcessMemory
+        - or:
+          - and:
+            - arch: i386
+            - offset: 0x10 = PEB->ProcessParameters
+            - offset: 0x40 = PEB->ProcessParameters->CommandLine
+          - and:
+            - arch: amd64
+            - offset: 0x20 = PEB->ProcessParameters
+            - offset: 0x70 = PEB->ProcessParameters->CommandLine

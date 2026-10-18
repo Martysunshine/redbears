@@ -1,0 +1,27 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Sqltoolsps.yml -->
+---
+Name: SQLToolsPS.exe
+Description: Tool included with Microsoft SQL that loads SQL Server cmdlts. A replacement for sqlps.exe. Successor to sqlps.exe in SQL Server 2016+.
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: SQLToolsPS.exe -noprofile -command Start-Process {PATH:.exe}
+    Description: Run a SQL Server PowerShell mini-console without Module and ScriptBlock Logging.
+    Usecase: Execute PowerShell command.
+    Category: Execute
+    Privileges: User
+    MitreID: T1218
+    OperatingSystem: Windows
+    Tags:
+      - Execute: PowerShell
+Full_Path:
+  - Path: C:\Program files (x86)\Microsoft SQL Server\130\Tools\Binn\sqlps.exe
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_mssql_sqltoolsps_susp_execution.yml
+  - Splunk: https://github.com/splunk/security_content/blob/aa9f7e0d13a61626c69367290ed1b7b71d1281fd/docs/_posts/2021-10-05-suspicious_copy_on_system32.md
+Resources:
+  - Link: https://twitter.com/pabraeken/status/993298228840992768
+  - Link: https://docs.microsoft.com/en-us/sql/powershell/sql-server-powershell?view=sql-server-2017
+Acknowledgement:
+  - Person: Pierre-Alexandre Braeken
+    Handle: '@pabraeken'

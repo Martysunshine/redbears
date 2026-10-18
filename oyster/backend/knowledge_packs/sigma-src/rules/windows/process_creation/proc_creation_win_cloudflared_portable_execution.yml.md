@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_cloudflared_portable_execution.yml -->
+title: Cloudflared Portable Execution
+id: fadb84f0-4e84-4f6d-a1ce-9ef2bffb6ccd
+status: test
+description: |
+    Detects the execution of the "cloudflared" binary from a non standard location.
+references:
+    - https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/
+    - https://github.com/cloudflare/cloudflared
+    - https://www.intrinsec.com/akira_ransomware/
+    - https://www.guidepointsecurity.com/blog/tunnel-vision-cloudflared-abused-in-the-wild/
+    - https://github.com/cloudflare/cloudflared/releases
+author: Nasreddine Bencherchali (Nextron Systems)
+tags:
+    - attack.command-and-control
+    - attack.t1090.001
+date: 2023-12-20
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: '\cloudflared.exe'
+    filter_main_admin_location:
+        Image|contains:
+            - ':\Program Files (x86)\cloudflared\'
+            - ':\Program Files\cloudflared\'
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - Legitimate usage of Cloudflared portable versions
+level: medium

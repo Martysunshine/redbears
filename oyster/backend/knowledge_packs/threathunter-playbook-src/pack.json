@@ -1,0 +1,372 @@
+{
+  "id": "threathunter-playbook-src",
+  "name": "threathunter-playbook-src",
+  "version": "9b52b40bb1d4",
+  "title": "ThreatHunter-Playbook (upstream)",
+  "domain": "defensive",
+  "security_domain": "threat-hunting",
+  "description": "Imported from https://threathunterplaybook.com/ at 9b52b40bb1d4. 55 documents.",
+  "authority": "OTRF",
+  "publisher": "Open Threat Research Forge",
+  "trust_level": "community",
+  "licence": "MIT",
+  "attribution": "ThreatHunter-Playbook, Open Threat Research Forge (OTRF), MIT License.",
+  "tags": [
+    "threat-hunting",
+    "dfir",
+    "attack-mapping",
+    "windows",
+    "sigma"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "windows",
+    "linux",
+    "macos",
+    "azure"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track ThreatHunter-Playbook default branch.",
+  "retrieved_at": "2026-09-14",
+  "last_reviewed_at": "2026-09-14",
+  "origin": "connector",
+  "connector_id": "threathunter-playbook-src",
+  "upstream_commit": "9b52b40bb1d4deec9827b94a20d07e071b962ee7",
+  "source_urls": [
+    "https://threathunterplaybook.com/",
+    "https://github.com/OTRF/ThreatHunter-Playbook"
+  ],
+  "docs": [
+    {
+      "file": "docs/hunts/windows/170105-LSASSMemoryReadAccess/notebook.md",
+      "source_title": "LSASS Memory Read Access",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/170105-LSASSMemoryReadAccess/notebook.md",
+      "section": "LSASS Memory Read Access"
+    },
+    {
+      "file": "docs/hunts/windows/180719-DLLProcessInjectionCreateRemoteThread/notebook.md",
+      "source_title": "DLL Process Injection via CreateRemoteThread and LoadLibrary",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/180719-DLLProcessInjectionCreateRemoteThread/notebook.md",
+      "section": "DLL Process Injection via CreateRemoteThread and LoadLibrary"
+    },
+    {
+      "file": "docs/hunts/windows/180815-ADObjectAccessReplication/notebook.md",
+      "source_title": "Active Directory Object Access via Replication Services",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/180815-ADObjectAccessReplication/notebook.md",
+      "section": "Active Directory Object Access via Replication Services"
+    },
+    {
+      "file": "docs/hunts/windows/190101-ADModDirectoryReplication/notebook.md",
+      "source_title": "Active Directory Root Domain Modification for Replication Services",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190101-ADModDirectoryReplication/notebook.md",
+      "section": "Active Directory Root Domain Modification for Replication Services"
+    },
+    {
+      "file": "docs/hunts/windows/190407-RegModEnableRDPConnections/notebook.md",
+      "source_title": "Registry Modification to Enable Remote Desktop Conections",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190407-RegModEnableRDPConnections/notebook.md",
+      "section": "Registry Modification to Enable Remote Desktop Conections"
+    },
+    {
+      "file": "docs/hunts/windows/190410-LocalPwshExecution/notebook.md",
+      "source_title": "Local PowerShell Execution",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190410-LocalPwshExecution/notebook.md",
+      "section": "Local PowerShell Execution"
+    },
+    {
+      "file": "docs/hunts/windows/190510-RegModWDigestDowngrade/notebook.md",
+      "source_title": "WDigest Downgrade",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190510-RegModWDigestDowngrade/notebook.md",
+      "section": "WDigest Downgrade"
+    },
+    {
+      "file": "docs/hunts/windows/190511-RemotePwshExecution/notebook.md",
+      "source_title": "PowerShell Remote Session",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190511-RemotePwshExecution/notebook.md",
+      "section": "PowerShell Remote Session"
+    },
+    {
+      "file": "docs/hunts/windows/190610-PwshAlternateHosts/notebook.md",
+      "source_title": "Alternate PowerShell Hosts",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190610-PwshAlternateHosts/notebook.md",
+      "section": "Alternate PowerShell Hosts"
+    },
+    {
+      "file": "docs/hunts/windows/190620-DomainDPAPIBackupKeyExtraction/notebook.md",
+      "source_title": "Domain DPAPI Backup Key Extraction",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190620-DomainDPAPIBackupKeyExtraction/notebook.md",
+      "section": "Domain DPAPI Backup Key Extraction"
+    },
+    {
+      "file": "docs/hunts/windows/190625-RegKeyAccessSyskey/notebook.md",
+      "source_title": "SysKey Registry Keys Access",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190625-RegKeyAccessSyskey/notebook.md",
+      "section": "SysKey Registry Keys Access"
+    },
+    {
+      "file": "docs/hunts/windows/190725-SAMRegistryHiveHandleRequest/notebook.md",
+      "source_title": "SAM Registry Hive Handle Request",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190725-SAMRegistryHiveHandleRequest/notebook.md",
+      "section": "SAM Registry Hive Handle Request"
+    },
+    {
+      "file": "docs/hunts/windows/190810-RemoteWMIExecution/notebook.md",
+      "source_title": "WMI Win32_Process Class and Create Method for Remote Execution",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190810-RemoteWMIExecution/notebook.md",
+      "section": "WMI Win32_Process Class and Create Method for Remote Execution"
+    },
+    {
+      "file": "docs/hunts/windows/190810-WMIEventing/notebook.md",
+      "source_title": "WMI Eventing",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190810-WMIEventing/notebook.md",
+      "section": "WMI Eventing"
+    },
+    {
+      "file": "docs/hunts/windows/190811-WMIModuleLoad/notebook.md",
+      "source_title": "WMI Module Load",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190811-WMIModuleLoad/notebook.md",
+      "section": "WMI Module Load"
+    },
+    {
+      "file": "docs/hunts/windows/190813-LocalServiceInstallation/notebook.md",
+      "source_title": "Local Service Installation",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190813-LocalServiceInstallation/notebook.md",
+      "section": "Local Service Installation"
+    },
+    {
+      "file": "docs/hunts/windows/190815-RemoteServiceInstallation/notebook.md",
+      "source_title": "Remote Service creation",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190815-RemoteServiceInstallation/notebook.md",
+      "section": "Remote Service creation"
+    },
+    {
+      "file": "docs/hunts/windows/190826-RemoteSCMHandle/notebook.md",
+      "source_title": "Remote Service Control Manager Handle",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/190826-RemoteSCMHandle/notebook.md",
+      "section": "Remote Service Control Manager Handle"
+    },
+    {
+      "file": "docs/hunts/windows/191030-RemoteInteractiveTaskMgrLsassDump/notebook.md",
+      "source_title": "Remote Interactive Task Manager LSASS Dump",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/191030-RemoteInteractiveTaskMgrLsassDump/notebook.md",
+      "section": "Remote Interactive Task Manager LSASS Dump"
+    },
+    {
+      "file": "docs/hunts/windows/191224-RegModExtendedNetNTLMDowngrade/notebook.md",
+      "source_title": "Registry Modification for Extended NetNTLM Downgrade",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/191224-RegModExtendedNetNTLMDowngrade/notebook.md",
+      "section": "Registry Modification for Extended NetNTLM Downgrade"
+    },
+    {
+      "file": "docs/hunts/windows/200609-MicrophoneDvcAccess/notebook.md",
+      "source_title": "Access to Microphone Device",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/200609-MicrophoneDvcAccess/notebook.md",
+      "section": "Access to Microphone Device"
+    },
+    {
+      "file": "docs/hunts/windows/200902-RemoteWMIActiveScriptEventConsumers/notebook.md",
+      "source_title": "Remote WMI ActiveScriptEventConsumers",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/200902-RemoteWMIActiveScriptEventConsumers/notebook.md",
+      "section": "Remote WMI ActiveScriptEventConsumers"
+    },
+    {
+      "file": "docs/hunts/windows/201009-RemoteDCOMIErtUtilDLLHijack/notebook.md",
+      "source_title": "Remote DCOM IErtUtil DLL Hijack",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/201009-RemoteDCOMIErtUtilDLLHijack/notebook.md",
+      "section": "Remote DCOM IErtUtil DLL Hijack"
+    },
+    {
+      "file": "docs/hunts/windows/201009-RemoteWMIWbemcomnDLLHijack/notebook.md",
+      "source_title": "Remote WMI Wbemcomn DLL Hijack",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/201009-RemoteWMIWbemcomnDLLHijack/notebook.md",
+      "section": "Remote WMI Wbemcomn DLL Hijack"
+    },
+    {
+      "file": "docs/hunts/windows/201012-RemoteCreateFileSMB/notebook.md",
+      "source_title": "SMB Create Remote File",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/201012-RemoteCreateFileSMB/notebook.md",
+      "section": "SMB Create Remote File"
+    },
+    {
+      "file": "docs/hunts/windows/201012-WuaucltCreateRemoteThread/notebook.md",
+      "source_title": "Wuauclt CreateRemoteThread Execution",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/201012-WuaucltCreateRemoteThread/notebook.md",
+      "section": "Wuauclt CreateRemoteThread Execution"
+    },
+    {
+      "file": "docs/hunts/windows/intro.md",
+      "source_title": "Windows",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/hunts/windows/intro.md",
+      "section": "Windows"
+    },
+    {
+      "file": "docs/library/azure/intro.md",
+      "source_title": "Azure",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/azure/intro.md",
+      "section": "Azure"
+    },
+    {
+      "file": "docs/library/linux/intro.md",
+      "source_title": "Linux",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/linux/intro.md",
+      "section": "Linux"
+    },
+    {
+      "file": "docs/library/macOS/intro.md",
+      "source_title": "macOS",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/macOS/intro.md",
+      "section": "macOS"
+    },
+    {
+      "file": "docs/library/task_scheduler_service.md",
+      "source_title": "Task Scheduler Service",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/task_scheduler_service.md",
+      "section": "Task Scheduler Service"
+    },
+    {
+      "file": "docs/library/windows/active_directory_replication.md",
+      "source_title": "Active Directory Replication",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/active_directory_replication.md",
+      "section": "Active Directory Replication"
+    },
+    {
+      "file": "docs/library/windows/adfs_dkm_keys.md",
+      "source_title": "Active Directory Federation Services (ADFS) Distributed Key Manager (DKM) Keys",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/adfs_dkm_keys.md",
+      "section": "Active Directory Federation Services (ADFS) Distributed Key Manager (DKM) Keys"
+    },
+    {
+      "file": "docs/library/windows/data_protection_api.md",
+      "source_title": "Data Protection API",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/data_protection_api.md",
+      "section": "Data Protection API"
+    },
+    {
+      "file": "docs/library/windows/intro.md",
+      "source_title": "Windows",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/intro.md",
+      "section": "Windows"
+    },
+    {
+      "file": "docs/library/windows/logon_session.md",
+      "source_title": "Logon Session",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/logon_session.md",
+      "section": "Logon Session"
+    },
+    {
+      "file": "docs/library/windows/lsa_policy_objects.md",
+      "source_title": "LSA Policy Objects",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/lsa_policy_objects.md",
+      "section": "LSA Policy Objects"
+    },
+    {
+      "file": "docs/library/windows/mimikatz_openprocess_modules.md",
+      "source_title": "Mimikatz OpenProcess Modules",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/mimikatz_openprocess_modules.md",
+      "section": "Mimikatz OpenProcess Modules"
+    },
+    {
+      "file": "docs/library/windows/process_access_rights.md",
+      "source_title": "Process Security and Access Rights",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/process_access_rights.md",
+      "section": "Process Security and Access Rights"
+    },
+    {
+      "file": "docs/library/windows/security_account_manager_database.md",
+      "source_title": "Security Account Manager (SAM) Database",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/security_account_manager_database.md",
+      "section": "Security Account Manager (SAM) Database"
+    },
+    {
+      "file": "docs/library/windows/security_account_manager_protocol.md",
+      "source_title": "Security Account Manager Remote Protocol (SAMRP)",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/security_account_manager_protocol.md",
+      "section": "Security Account Manager Remote Protocol (SAMRP)"
+    },
+    {
+      "file": "docs/library/windows/security_assertion_markup_language.md",
+      "source_title": "Security Assertion Markup Language (SAML)",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/security_assertion_markup_language.md",
+      "section": "Security Assertion Markup Language (SAML)"
+    },
+    {
+      "file": "docs/library/windows/service_control_manager.md",
+      "source_title": "Service Control Manager",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/service_control_manager.md",
+      "section": "Service Control Manager"
+    },
+    {
+      "file": "docs/library/windows/syskey.md",
+      "source_title": "SysKey",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/syskey.md",
+      "section": "SysKey"
+    },
+    {
+      "file": "docs/library/windows/task_scheduler_service.md",
+      "source_title": "Task Scheduler Service",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/library/windows/task_scheduler_service.md",
+      "section": "Task Scheduler Service"
+    },
+    {
+      "file": "docs/pre-hunt/data_documentation.md",
+      "source_title": "Data Documentation",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/pre-hunt/data_documentation.md",
+      "section": "Data Documentation"
+    },
+    {
+      "file": "docs/pre-hunt/data_management.md",
+      "source_title": "Data Management",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/pre-hunt/data_management.md",
+      "section": "Data Management"
+    },
+    {
+      "file": "docs/pre-hunt/data_modeling.md",
+      "source_title": "Data Modeling",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/pre-hunt/data_modeling.md",
+      "section": "Data Modeling"
+    },
+    {
+      "file": "docs/pre-hunt/data_quality.md",
+      "source_title": "Data Quality",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/pre-hunt/data_quality.md",
+      "section": "Data Quality"
+    },
+    {
+      "file": "docs/pre-hunt/data_standardization.md",
+      "source_title": "Data Standardization",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/pre-hunt/data_standardization.md",
+      "section": "Data Standardization"
+    },
+    {
+      "file": "docs/tutorials/jupyter/installing_jupyter.md",
+      "source_title": "Jupyter Server Installation",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/tutorials/jupyter/installing_jupyter.md",
+      "section": "Jupyter Server Installation"
+    },
+    {
+      "file": "docs/tutorials/jupyter/introduction.md",
+      "source_title": "Jupyter Notebooks",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/tutorials/jupyter/introduction.md",
+      "section": "Jupyter Notebooks"
+    },
+    {
+      "file": "docs/tutorials/jupyter/notebooks/01_intro_to_python.md",
+      "source_title": "Introduction to Python",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/tutorials/jupyter/notebooks/01_intro_to_python.md",
+      "section": "Introduction to Python"
+    },
+    {
+      "file": "docs/tutorials/jupyter/notebooks/02_intro_to_numpy_arrays.md",
+      "source_title": "Introduction to Python NumPy Arrays",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/tutorials/jupyter/notebooks/02_intro_to_numpy_arrays.md",
+      "section": "Introduction to Python NumPy Arrays"
+    },
+    {
+      "file": "docs/tutorials/jupyter/notebooks/03_intro_to_pandas.md",
+      "source_title": "Introduction to Pandas",
+      "source_url": "https://github.com/OTRF/ThreatHunter-Playbook/blob/9b52b40bb1d4deec9827b94a20d07e071b962ee7/docs/tutorials/jupyter/notebooks/03_intro_to_pandas.md",
+      "section": "Introduction to Pandas"
+    }
+  ]
+}

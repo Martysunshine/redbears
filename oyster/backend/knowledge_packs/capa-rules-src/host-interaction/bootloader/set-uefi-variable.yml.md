@@ -1,0 +1,21 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/bootloader/set-uefi-variable.yml -->
+rule:
+  meta:
+    name: set UEFI variable
+    namespace: host-interaction/bootloader
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    att&ck:
+      - Persistence::Pre-OS Boot::System Firmware [T1542.001]
+    references:
+      - https://learn.microsoft.com/en-us/windows/win32/sysinfo/access-uefi-firmware-variables-from-a-universal-windows-app
+    examples:
+      - b761e060c7114448d6a5fe276d4ca882c4bd702c12c4d73f6ad79b8dfac33448:0x1400013DA
+  features:
+    - or:
+      - api: ntoskrn.ExSetFirmwareEnvironmentVariable
+      - api: kernel32.SetFirmwareEnvironmentVariable
+      - api: kernel32.SetFirmwareEnvironmentVariableEx

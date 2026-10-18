@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/NRT_DNS_Related_To_Mining_Pools.yaml -->
+id: 138fab04-5d68-4ac9-9aa0-6fd260a0b089
+name: NRT DNS events related to mining pools
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Analytic%20Rules/NRT_DNS_Related_To_Mining_Pools.yaml'
+version: 1.0.0

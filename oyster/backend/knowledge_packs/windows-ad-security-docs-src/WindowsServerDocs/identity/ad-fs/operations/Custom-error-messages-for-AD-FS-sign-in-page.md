@@ -1,0 +1,64 @@
+<!-- source: https://github.com/MicrosoftDocs/windowsserverdocs/blob/2b6696197bc41e7d770c70ee354bdb49c6642697/WindowsServerDocs/identity/ad-fs/operations/Custom-error-messages-for-AD-FS-sign-in-page.md -->
+---
+description: "Learn more about: Custom error messages for AD FS sign-in page"
+title: Custom error messages for AD FS sign-in page
+ms.date: 04/08/2025
+ms.topic: how-to
+---
+
+# Custom error messages for AD FS sign-in page
+
+You can configure custom error messages that can be tailored to your organization. The following illustration shows a customized error page description and a generic error message. Use the following Windows PowerShell cmdlets to customize your error messages.
+
+![custom error](media/AD-FS-user-sign-in-customization/ADFS_Blue_Custom3.png)
+
+## Customize the error page description
+
+To customize the error page description, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsGlobalWebContent -ErrorPageDescriptionText "This is Contoso's error page description"
+```
+
+## Customize a generic error message
+To customize the generic error message, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsGlobalWebContent -ErrorPageGenericErrorMessage "This is a generic error message.  Contact Contoso IT for assistance."
+```
+
+## Customize an authorization error message
+To customize the authorization error message, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsGlobalWebContent -ErrorPageAuthorizationErrorMessage "You have received an Authorization error.  Contact Contoso IT for assistance."
+```
+
+## Customize a device authentication error message
+To customize the device authentication error message, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsGlobalWebContent -ErrorPageDeviceAuthenticationErrorMessage "Your device is not authorized.  Contact Contoso IT for assistance."
+```
+
+## Customize a support email error message
+You can configure a support email address in AD FS. If configured, AD FS automatically shows a link for end users to email the error details.
+
+To customize the support email error message, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsGlobalWebContent -ErrorPageSupportEmail  "admin@contoso.com"
+```
+
+## Customize a relying party authorization message
+You can configure a relying party authorization error message in AD FS.
+
+To customize the relying party error message, use the following Windows PowerShell cmdlet and syntax.
+
+```powershell
+Set-AdfsRelyingPartyWebContent -Name fedpassive -ErrorPageAuthorizationErrorMessage "<p> You need to be a member of Security Auditors to access this site. Click <A href='http://accessrequest/'>here</A> for more information.</p>"
+```
+
+## Additional references
+
+[AD FS User Sign-in Customization](AD-FS-user-sign-in-customization.md)

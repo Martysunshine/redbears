@@ -1,0 +1,19 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/network/traffic/filter/enumerate-network-filters-via-wfp-api.yml -->
+rule:
+  meta:
+    name: enumerate network filters via WFP API
+    namespace: host-interaction/network/traffic/filter
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    references:
+      - https://learn.microsoft.com/en-us/windows/win32/api/fwpmu/nf-fwpmu-fwpmfilterenum0
+      - https://github.com/netero1010/EDRSilencer/blob/main/EDRSilencer.c
+    examples:
+      - d9531e53036c5d04fbe7d1aeae2988c3bf0fdec63774690c5df70cc121af8de4:0x10001DF0
+  features:
+    - and:
+      - api: fwpkclnt.FwpmFilterCreateEnumHandle0
+      - api: fwpkclnt.FwpmFilterEnum0

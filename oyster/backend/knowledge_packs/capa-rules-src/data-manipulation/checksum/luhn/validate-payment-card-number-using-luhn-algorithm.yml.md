@@ -1,0 +1,19 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/checksum/luhn/validate-payment-card-number-using-luhn-algorithm.yml -->
+rule:
+  meta:
+    name: validate payment card number using luhn algorithm
+    namespace: data-manipulation/checksum/luhn
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: unsupported
+    mbc:
+      - Data::Checksum::Luhn [C0032.002]
+    examples:
+      - 1d8fd13c890060464019c0f07b928b1a:0x401920
+      - 6fcc13563aad936c7d0f3165351cb453:0x4026C0
+  features:
+    - or:
+      - match: validate payment card number using luhn algorithm with no lookup table
+      - match: validate payment card number using luhn algorithm with lookup table

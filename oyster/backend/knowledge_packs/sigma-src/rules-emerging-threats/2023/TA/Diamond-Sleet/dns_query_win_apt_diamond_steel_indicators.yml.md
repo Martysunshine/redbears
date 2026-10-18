@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2023/TA/Diamond-Sleet/dns_query_win_apt_diamond_steel_indicators.yml -->
+title: Diamond Sleet APT DNS Communication Indicators
+id: fba38e0f-4607-4344-bb8f-a4b50cdeef7f
+status: test
+description: Detects DNS queries related to Diamond Sleet APT activity
+references:
+    - https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-10-24
+tags:
+    - attack.command-and-control
+    - detection.emerging-threats
+logsource:
+    product: windows
+    category: dns_query
+detection:
+    selection:
+        QueryName|contains:
+            - '3dkit.org'
+            - 'dersmarketim.com'
+            - 'galerielamy.com'
+            - 'olidhealth.com'
+    condition: selection
+falsepositives:
+    - Might generate some false positive if triggered by a user during investigation for example.
+level: high

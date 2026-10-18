@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/gcp/gworkspace/admin/gcp_gworkspace_mfa_disabled.yml -->
+title: Google Workspace MFA Disabled
+id: 780601d1-6376-4f2a-884e-b8d45599f78c
+status: test
+description: Detects when multi-factor authentication (MFA) is disabled.
+references:
+    - https://cloud.google.com/logging/docs/audit/gsuite-audit-logging#3
+    - https://developers.google.com/admin-sdk/reports/v1/appendix/activity/admin-security-settings#ENFORCE_STRONG_AUTHENTICATION
+    - https://developers.google.com/admin-sdk/reports/v1/appendix/activity/admin-security-settings?hl=en#ALLOW_STRONG_AUTHENTICATION
+author: Austin Songer
+date: 2021-08-26
+modified: 2023-10-11
+tags:
+    - attack.impact
+logsource:
+    product: gcp
+    service: google_workspace.admin
+detection:
+    selection_base:
+        eventService: admin.googleapis.com
+        eventName:
+            - ENFORCE_STRONG_AUTHENTICATION
+            - ALLOW_STRONG_AUTHENTICATION
+    selection_eventValue:
+        new_value: 'false'
+    condition: all of selection*
+falsepositives:
+    - MFA may be disabled and performed by a system administrator.
+level: medium

@@ -1,0 +1,26 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/persistence/registry/persist-via-shellserviceobjectdelayload-registry-key.yml -->
+rule:
+  meta:
+    name: persist via ShellServiceObjectDelayLoad registry key
+    namespace: persistence/registry
+    authors:
+      - xpzhxhm@gmail.com
+    description: Match on files using ShellServiceObjectDelayLoad to persist. Windows Explorer uses this key to load COM objects at startup, allowing malicious DLLs to execute automatically.
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Persistence::Event Triggered Execution::Component Object Model Hijacking [T1546.015]
+    references:
+      - https://blog.virustotal.com/2024/03/com-objects-hijacking.html
+    examples:
+      - c05ec67e75693127e5556eee229b88f93c7cef926cfe905dfd5464be9d305c94:0x405224
+  features:
+    - and:
+      - os: windows
+      - or:
+        - match: set registry value
+        - number: 0x80000002 = HKEY_LOCAL_MACHINE
+      - or:
+        - string: /Software\\Microsoft\\Windows\\CurrentVersion\\ShellServiceObjectDelayLoad/i
+        - string: /Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\ShellServiceObjectDelayLoad/i

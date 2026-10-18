@@ -1,0 +1,14 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/batcat -->
+---
+functions:
+  inherit:
+  - code: |-
+      batcat --paging always /etc/hosts
+    comment: |-
+      `--paging always` can be omitted provided that the output doesn't fit the screen.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+    from: less
+...

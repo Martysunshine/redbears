@@ -1,0 +1,1644 @@
+{
+  "id": "owasp-llm-top10-src",
+  "name": "owasp-llm-top10-src",
+  "version": "99f4395589bd",
+  "title": "OWASP Top 10 for LLM Applications (upstream)",
+  "domain": "offensive-defensive",
+  "security_domain": "ai-llm-security",
+  "description": "Imported from https://genai.owasp.org/ at 99f4395589bd. 267 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP Top 10 for LLM Applications, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "llm",
+    "genai",
+    "ai-security",
+    "prompt-injection"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "ai",
+    "llm",
+    "web",
+    "api"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track the OWASP Top 10 for LLM Applications versioned releases (~annual).",
+  "retrieved_at": "2026-09-14",
+  "last_reviewed_at": "2026-09-14",
+  "origin": "connector",
+  "connector_id": "owasp-llm-top10-src",
+  "upstream_commit": "99f4395589bdbd120ae961f9cd179e79d7f9b27f",
+  "source_urls": [
+    "https://genai.owasp.org/",
+    "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications"
+  ],
+  "docs": [
+    {
+      "file": "2_0_vulns/LLM00_Preface.md",
+      "source_title": "Letter from the Project Leads",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM00_Preface.md",
+      "section": "Letter from the Project Leads"
+    },
+    {
+      "file": "2_0_vulns/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 Prompt Injection",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 Prompt Injection"
+    },
+    {
+      "file": "2_0_vulns/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 Sensitive Information Disclosure",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 Sensitive Information Disclosure"
+    },
+    {
+      "file": "2_0_vulns/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 Supply Chain",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 Supply Chain"
+    },
+    {
+      "file": "2_0_vulns/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04:2025 Data and Model Poisoning",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM04_DataModelPoisoning.md",
+      "section": "LLM04:2025 Data and Model Poisoning"
+    },
+    {
+      "file": "2_0_vulns/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 Improper Output Handling",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 Improper Output Handling"
+    },
+    {
+      "file": "2_0_vulns/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 Excessive Agency",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 Excessive Agency"
+    },
+    {
+      "file": "2_0_vulns/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 System Prompt Leakage",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 System Prompt Leakage"
+    },
+    {
+      "file": "2_0_vulns/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 Vector and Embedding Weaknesses",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 Vector and Embedding Weaknesses"
+    },
+    {
+      "file": "2_0_vulns/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 Misinformation",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM09_Misinformation.md",
+      "section": "LLM09:2025 Misinformation"
+    },
+    {
+      "file": "2_0_vulns/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 Unbounded Consumption",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 Unbounded Consumption"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM00_Preface.md",
+      "source_title": "Vorwort der Projektleiter",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM00_Preface.md",
+      "section": "Vorwort der Projektleiter"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 Prompt Injection",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 Prompt Injection"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 Offenlegung sensibler Informationen",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 Offenlegung sensibler Informationen"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 Lieferkette",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 Lieferkette"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: Poisoning von Daten und Modellen",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: Poisoning von Daten und Modellen"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 Fehlerhafte Ausgabeverarbeitung",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 Fehlerhafte Ausgabeverarbeitung"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u00dcberm\u00e4\u00dfige Handlungsfreiheit",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u00dcberm\u00e4\u00dfige Handlungsfreiheit"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 Offenlegung des Systems Prompts",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 Offenlegung des Systems Prompts"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 Schwachstellen in Vektoren und Embeddings",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 Schwachstellen in Vektoren und Embeddings"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 Fehlinformationen",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM09_Misinformation.md",
+      "section": "LLM09:2025 Fehlinformationen"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 Unbegrenzter Verbrauch",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 Unbegrenzter Verbrauch"
+    },
+    {
+      "file": "2_0_vulns/translations/de-DE/Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/de-DE/Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/ADD00_Cover.md",
+      "source_title": "OWASP \u03a4\u03bf\u03c0-10 \u03b3\u03b9\u03b1 \u0395\u03c6\u03b1\u03c1\u03bc\u03bf\u03b3\u03ad\u03c2 LLM 2025",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/ADD00_Cover.md",
+      "section": "OWASP \u03a4\u03bf\u03c0-10 \u03b3\u03b9\u03b1 \u0395\u03c6\u03b1\u03c1\u03bc\u03bf\u03b3\u03ad\u03c2 LLM 2025"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/ADD01_Table_of_Contents.md",
+      "source_title": "\u03a0\u03af\u03bd\u03b1\u03ba\u03b1\u03c2 \u03a0\u03b5\u03c1\u03b9\u03b5\u03c7\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/ADD01_Table_of_Contents.md",
+      "section": "\u03a0\u03af\u03bd\u03b1\u03ba\u03b1\u03c2 \u03a0\u03b5\u03c1\u03b9\u03b5\u03c7\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/ADD02_Figures.md",
+      "source_title": "\u03a3\u03c7\u03ae\u03bc\u03b1\u03c4\u03b1",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/ADD02_Figures.md",
+      "section": "\u03a3\u03c7\u03ae\u03bc\u03b1\u03c4\u03b1"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/ADD04_Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/ADD04_Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM00_Preface.md",
+      "source_title": "\u0395\u03c0\u03b9\u03c3\u03c4\u03bf\u03bb\u03ae \u03c4\u03c9\u03bd \u0395\u03c0\u03b9\u03ba\u03b5\u03c6\u03b1\u03bb\u03b5\u03af\u03c2 \u03c4\u03bf\u03c5 \u0388\u03c1\u03b3\u03bf\u03c5",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM00_Preface.md",
+      "section": "\u0395\u03c0\u03b9\u03c3\u03c4\u03bf\u03bb\u03ae \u03c4\u03c9\u03bd \u0395\u03c0\u03b9\u03ba\u03b5\u03c6\u03b1\u03bb\u03b5\u03af\u03c2 \u03c4\u03bf\u03c5 \u0388\u03c1\u03b3\u03bf\u03c5"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 \u0388\u03b3\u03c7\u03c5\u03c3\u03b7 \u03a0\u03c1\u03bf\u03c4\u03c1\u03bf\u03c0\u03ce\u03bd  (Prompt Injection)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 \u0388\u03b3\u03c7\u03c5\u03c3\u03b7 \u03a0\u03c1\u03bf\u03c4\u03c1\u03bf\u03c0\u03ce\u03bd  (Prompt Injection)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 \u0391\u03c0\u03bf\u03ba\u03ac\u03bb\u03c5\u03c8\u03b7 \u0395\u03c5\u03b1\u03af\u03c3\u03b8\u03b7\u03c4\u03c9\u03bd  \u03a0\u03bb\u03b7\u03c1\u03bf\u03c6\u03bf\u03c1\u03b9\u03ce\u03bd (Sensitive Information Disclosure)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 \u0391\u03c0\u03bf\u03ba\u03ac\u03bb\u03c5\u03c8\u03b7 \u0395\u03c5\u03b1\u03af\u03c3\u03b8\u03b7\u03c4\u03c9\u03bd  \u03a0\u03bb\u03b7\u03c1\u03bf\u03c6\u03bf\u03c1\u03b9\u03ce\u03bd (Sensitive Information Disclosure)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 \u0395\u03c6\u03bf\u03b4\u03b9\u03b1\u03c3\u03c4\u03b9\u03ba\u03ae \u0391\u03bb\u03c5\u03c3\u03af\u03b4\u03b1  (Supply Chain)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 \u0395\u03c6\u03bf\u03b4\u03b9\u03b1\u03c3\u03c4\u03b9\u03ba\u03ae \u0391\u03bb\u03c5\u03c3\u03af\u03b4\u03b1  (Supply Chain)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04:2025 \u0394\u03b7\u03bb\u03b7\u03c4\u03b7\u03c1\u03af\u03b1\u03c3\u03b7 \u039c\u03bf\u03bd\u03c4\u03ad\u03bb\u03bf\u03c5  \u03ba\u03b1\u03b9 \u0394\u03b5\u03b4\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd (Data and Model Poisoning)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM04_DataModelPoisoning.md",
+      "section": "LLM04:2025 \u0394\u03b7\u03bb\u03b7\u03c4\u03b7\u03c1\u03af\u03b1\u03c3\u03b7 \u039c\u03bf\u03bd\u03c4\u03ad\u03bb\u03bf\u03c5  \u03ba\u03b1\u03b9 \u0394\u03b5\u03b4\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd (Data and Model Poisoning)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 \u03a0\u03bb\u03b7\u03bc\u03bc\u03b5\u03bb\u03ae\u03c2 X\u03b5\u03b9\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2  E\u03be\u03cc\u03b4\u03bf\u03c5 (Improper Output Handling)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 \u03a0\u03bb\u03b7\u03bc\u03bc\u03b5\u03bb\u03ae\u03c2 X\u03b5\u03b9\u03c1\u03b9\u03c3\u03bc\u03cc\u03c2  E\u03be\u03cc\u03b4\u03bf\u03c5 (Improper Output Handling)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u03a5\u03c0\u03b5\u03c1\u03b2\u03bf\u03bb\u03b9\u03ba\u03ae \u0391\u03c5\u03c4\u03b5\u03bd\u03ad\u03c1\u03b3\u03b5\u03b9\u03b1  (Excessive Agency)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u03a5\u03c0\u03b5\u03c1\u03b2\u03bf\u03bb\u03b9\u03ba\u03ae \u0391\u03c5\u03c4\u03b5\u03bd\u03ad\u03c1\u03b3\u03b5\u03b9\u03b1  (Excessive Agency)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 \u0394\u03b9\u03b1\u03c1\u03c1\u03bf\u03ae \u03a0\u03c1\u03bf\u03c4\u03c1\u03bf\u03c0\u03ce\u03bd   \u03a3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 (System Prompt Leakage)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 \u0394\u03b9\u03b1\u03c1\u03c1\u03bf\u03ae \u03a0\u03c1\u03bf\u03c4\u03c1\u03bf\u03c0\u03ce\u03bd   \u03a3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 (System Prompt Leakage)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 \u0391\u03b4\u03c5\u03bd\u03b1\u03bc\u03af\u03b5\u03c2 \u0394\u03b9\u03b1\u03bd\u03c5\u03c3\u03bc\u03ac\u03c4\u03c9\u03bd \u03ba\u03b1\u03b9 \u0395\u03bd\u03c3\u03c9\u03bc\u03ac\u03c4\u03c9\u03c3\u03b7\u03c2  (Vector and Embedding Weaknesses)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 \u0391\u03b4\u03c5\u03bd\u03b1\u03bc\u03af\u03b5\u03c2 \u0394\u03b9\u03b1\u03bd\u03c5\u03c3\u03bc\u03ac\u03c4\u03c9\u03bd \u03ba\u03b1\u03b9 \u0395\u03bd\u03c3\u03c9\u03bc\u03ac\u03c4\u03c9\u03c3\u03b7\u03c2  (Vector and Embedding Weaknesses)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 \u0395\u03c3\u03c6\u03b1\u03bb\u03bc\u03ad\u03bd\u03b7 \u03a0\u03bb\u03b7\u03c1\u03bf\u03c6\u03cc\u03c1\u03b7\u03c3\u03b7  (Misinformation)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM09_Misinformation.md",
+      "section": "LLM09:2025 \u0395\u03c3\u03c6\u03b1\u03bb\u03bc\u03ad\u03bd\u03b7 \u03a0\u03bb\u03b7\u03c1\u03bf\u03c6\u03cc\u03c1\u03b7\u03c3\u03b7  (Misinformation)"
+    },
+    {
+      "file": "2_0_vulns/translations/el-GR/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u0391\u03c0\u03b5\u03c1\u03b9\u03cc\u03c1\u03b9\u03c3\u03c4\u03b7 \u039a\u03b1\u03c4\u03b1\u03bd\u03ac\u03bb\u03c9\u03c3\u03b7  (Unbounded Consumption)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/el-GR/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u0391\u03c0\u03b5\u03c1\u03b9\u03cc\u03c1\u03b9\u03c3\u03c4\u03b7 \u039a\u03b1\u03c4\u03b1\u03bd\u03ac\u03bb\u03c9\u03c3\u03b7  (Unbounded Consumption)"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM00_Preface.md",
+      "source_title": "Carta de los l\u00edderes del proyecto",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM00_Preface.md",
+      "section": "Carta de los l\u00edderes del proyecto"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 Inyecci\u00f3n de prompt",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 Inyecci\u00f3n de prompt"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 Divulgaci\u00f3n de informaci\u00f3n sensible",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 Divulgaci\u00f3n de informaci\u00f3n sensible"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 Cadena de suministro",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 Cadena de suministro"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: Envenenamiento de datos y modelo",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: Envenenamiento de datos y modelo"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 Manejo inadecuado de la salida",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 Manejo inadecuado de la salida"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 Agencia excesiva",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 Agencia excesiva"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 Filtraci\u00f3n de prompts de sistema",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 Filtraci\u00f3n de prompts de sistema"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 Debilidades de vector y representaciones vectoriales",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 Debilidades de vector y representaciones vectoriales"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 Desinformaci\u00f3n",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM09_Misinformation.md",
+      "section": "LLM09:2025 Desinformaci\u00f3n"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 Consumo ilimitado",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 Consumo ilimitado"
+    },
+    {
+      "file": "2_0_vulns/translations/es-ES/Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/es-ES/Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/ADD00_Cover.md",
+      "source_title": "2025 \u092e\u0947\u0902 LLM Applications \u0915\u0947 \u0932\u093f\u090f OWASP \u0915\u0947 \u0936\u0940\u0930\u094d\u0937 10",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/ADD00_Cover.md",
+      "section": "2025 \u092e\u0947\u0902 LLM Applications \u0915\u0947 \u0932\u093f\u090f OWASP \u0915\u0947 \u0936\u0940\u0930\u094d\u0937 10"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/ADD01_Table_of_Contents.md",
+      "source_title": "\u0935\u093f\u0937\u092f \u0938\u0942\u091a\u0940",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/ADD01_Table_of_Contents.md",
+      "section": "\u0935\u093f\u0937\u092f \u0938\u0942\u091a\u0940"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/ADD02_Figures.md",
+      "source_title": "\u091a\u093f\u0924\u094d\u0930\u0923",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/ADD02_Figures.md",
+      "section": "\u091a\u093f\u0924\u094d\u0930\u0923"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/ADD04_Supplemental_Content.md",
+      "source_title": "\u0936\u0940\u0930\u094d\u0937\u0915",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/ADD04_Supplemental_Content.md",
+      "section": "\u0936\u0940\u0930\u094d\u0937\u0915"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM00_Preface.md",
+      "source_title": "\u092a\u094d\u0930\u094b\u091c\u0947\u0915\u094d\u091f \u0932\u0940\u0921\u0930\u094d\u0938 \u0915\u093e \u0938\u0902\u0926\u0947\u0936",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM00_Preface.md",
+      "section": "\u092a\u094d\u0930\u094b\u091c\u0947\u0915\u094d\u091f \u0932\u0940\u0921\u0930\u094d\u0938 \u0915\u093e \u0938\u0902\u0926\u0947\u0936"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM01_PromptInjection.md",
+      "source_title": "LLM01: 2025 Prompt \u0907\u0902\u091c\u0947\u0915\u094d\u0936\u0928",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM01_PromptInjection.md",
+      "section": "LLM01: 2025 Prompt \u0907\u0902\u091c\u0947\u0915\u094d\u0936\u0928"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02: 2025 \u0938\u0902\u0935\u0947\u0926\u0928\u0936\u0940\u0932 \u0938\u0942\u091a\u0928\u093e \u0915\u093e \u092a\u094d\u0930\u0915\u091f\u0940\u0915\u0930\u0923",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02: 2025 \u0938\u0902\u0935\u0947\u0926\u0928\u0936\u0940\u0932 \u0938\u0942\u091a\u0928\u093e \u0915\u093e \u092a\u094d\u0930\u0915\u091f\u0940\u0915\u0930\u0923"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 Supply Chain",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 Supply Chain"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: \u0921\u0947\u091f\u093e \u090f\u0935\u0902 \u092e\u0949\u0921\u0932 Poisoning",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: \u0921\u0947\u091f\u093e \u090f\u0935\u0902 \u092e\u0949\u0921\u0932 Poisoning"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05: 2025 \u0905\u0928\u0941\u091a\u093f\u0924 \u092a\u094d\u0930\u0915\u093e\u0930 \u0938\u0947 \u0906\u0909\u091f\u092a\u0941\u091f \u0915\u094b \u0938\u0902\u092d\u093e\u0932\u0928\u093e",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05: 2025 \u0905\u0928\u0941\u091a\u093f\u0924 \u092a\u094d\u0930\u0915\u093e\u0930 \u0938\u0947 \u0906\u0909\u091f\u092a\u0941\u091f \u0915\u094b \u0938\u0902\u092d\u093e\u0932\u0928\u093e"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06: 2025 \u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u090f\u091c\u0947\u0902\u0938\u0940",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM06_ExcessiveAgency.md",
+      "section": "LLM06: 2025 \u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u090f\u091c\u0947\u0902\u0938\u0940"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 System Prompt \u0938\u0947 Leakage",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 System Prompt \u0938\u0947 Leakage"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08: 2025 Vector & Embeddings",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08: 2025 Vector & Embeddings"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM09_Misinformation.md",
+      "source_title": "LLM09: 2025 \u0917\u0932\u0924 \u0938\u0942\u091a\u0928\u093e",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM09_Misinformation.md",
+      "section": "LLM09: 2025 \u0917\u0932\u0924 \u0938\u0942\u091a\u0928\u093e"
+    },
+    {
+      "file": "2_0_vulns/translations/hi-IN/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u0905\u0928\u093f\u092f\u0902\u0924\u094d\u0930\u093f\u0924 \u0916\u092a\u0924",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/hi-IN/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u0905\u0928\u093f\u092f\u0902\u0924\u094d\u0930\u093f\u0924 \u0916\u092a\u0924"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/ADD00_Cover.md",
+      "source_title": "OWASP Top 10 for LLM Applications 2025",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/ADD00_Cover.md",
+      "section": "OWASP Top 10 for LLM Applications 2025"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/ADD01_Table_of_Contents.md",
+      "source_title": "Table of Contents",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/ADD01_Table_of_Contents.md",
+      "section": "Table of Contents"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/ADD02_Figures.md",
+      "source_title": "Figures",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/ADD02_Figures.md",
+      "section": "Figures"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/ADD04_Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/ADD04_Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM00_Preface.md",
+      "source_title": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ea\u30fc\u30c0\u30fc\u304b\u3089\u306e\u624b\u7d19",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM00_Preface.md",
+      "section": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ea\u30fc\u30c0\u30fc\u304b\u3089\u306e\u624b\u7d19"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 \u30d7\u30ed\u30f3\u30d7\u30c8\u30a4\u30f3\u30b8\u30a7\u30af\u30b7\u30e7\u30f3",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 \u30d7\u30ed\u30f3\u30d7\u30c8\u30a4\u30f3\u30b8\u30a7\u30af\u30b7\u30e7\u30f3"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 \u6a5f\u5bc6\u60c5\u5831\u306e\u958b\u793a",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 \u6a5f\u5bc6\u60c5\u5831\u306e\u958b\u793a"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 \u30b5\u30d7\u30e9\u30a4\u30c1\u30a7\u30fc\u30f3",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 \u30b5\u30d7\u30e9\u30a4\u30c1\u30a7\u30fc\u30f3"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04:2025 \u30c7\u30fc\u30bf\u3068\u30e2\u30c7\u30eb\u30dd\u30a4\u30ba\u30cb\u30f3\u30b0",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM04_DataModelPoisoning.md",
+      "section": "LLM04:2025 \u30c7\u30fc\u30bf\u3068\u30e2\u30c7\u30eb\u30dd\u30a4\u30ba\u30cb\u30f3\u30b0"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 \u4e0d\u9069\u5207\u306a\u51fa\u529b\u51e6\u7406",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 \u4e0d\u9069\u5207\u306a\u51fa\u529b\u51e6\u7406"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u904e\u5270\u306a\u30a8\u30fc\u30b8\u30a7\u30f3\u30b7\u30fc",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u904e\u5270\u306a\u30a8\u30fc\u30b8\u30a7\u30f3\u30b7\u30fc"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 \u30b7\u30b9\u30c6\u30e0\u30d7\u30ed\u30f3\u30d7\u30c8\u306e\u6f0f\u6d29",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 \u30b7\u30b9\u30c6\u30e0\u30d7\u30ed\u30f3\u30d7\u30c8\u306e\u6f0f\u6d29"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 \u30d9\u30af\u30c8\u30eb\u3068\u57cb\u3081\u8fbc\u307f\u306e\u8106\u5f31\u6027",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 \u30d9\u30af\u30c8\u30eb\u3068\u57cb\u3081\u8fbc\u307f\u306e\u8106\u5f31\u6027"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 \u8aa4\u60c5\u5831",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM09_Misinformation.md",
+      "section": "LLM09:2025 \u8aa4\u60c5\u5831"
+    },
+    {
+      "file": "2_0_vulns/translations/ja-JP/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u969b\u9650\u306e\u306a\u3044\u6d88\u8cbb",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ja-JP/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u969b\u9650\u306e\u306a\u3044\u6d88\u8cbb"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/ADD00_Cover.md",
+      "source_title": "LLM \uc560\ud50c\ub9ac\ucf00\uc774\uc158\uc744 \uc704\ud55c OWASP Top 10 2025",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/ADD00_Cover.md",
+      "section": "LLM \uc560\ud50c\ub9ac\ucf00\uc774\uc158\uc744 \uc704\ud55c OWASP Top 10 2025"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/ADD01_Table_of_Contents.md",
+      "source_title": "\ubaa9\ucc28",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/ADD01_Table_of_Contents.md",
+      "section": "\ubaa9\ucc28"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/ADD02_Figures.md",
+      "source_title": "\uadf8\ub9bc",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/ADD02_Figures.md",
+      "section": "\uadf8\ub9bc"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/ADD04_Supplemental_Content.md",
+      "source_title": "\uc81c\ubaa9",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/ADD04_Supplemental_Content.md",
+      "section": "\uc81c\ubaa9"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM00_Preface.md",
+      "source_title": "\ud504\ub85c\uc81d\ud2b8 \ub9ac\ub354 \uc11c\ubb38",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM00_Preface.md",
+      "section": "\ud504\ub85c\uc81d\ud2b8 \ub9ac\ub354 \uc11c\ubb38"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM01_PromptInjection.md",
+      "source_title": "LLM01: 2025 \ud504\ub86c\ud504\ud2b8 \uc778\uc81d\uc158",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM01_PromptInjection.md",
+      "section": "LLM01: 2025 \ud504\ub86c\ud504\ud2b8 \uc778\uc81d\uc158"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02: 2025 \ubbfc\uac10 \uc815\ubcf4 \uc720\ucd9c",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02: 2025 \ubbfc\uac10 \uc815\ubcf4 \uc720\ucd9c"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM03_SupplyChain.md",
+      "source_title": "LLM03: 2025 \uacf5\uae09\ub9dd",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM03_SupplyChain.md",
+      "section": "LLM03: 2025 \uacf5\uae09\ub9dd"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: 2025 \ub370\uc774\ud130 \ubc0f \ubaa8\ub378 \uc624\uc5fc",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: 2025 \ub370\uc774\ud130 \ubc0f \ubaa8\ub378 \uc624\uc5fc"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05: 2025 \ubd80\uc801\uc808\ud55c \ucd9c\ub825 \ucc98\ub9ac",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05: 2025 \ubd80\uc801\uc808\ud55c \ucd9c\ub825 \ucc98\ub9ac"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06: 2025 \uacfc\ub3c4\ud55c \uc704\uc784",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM06_ExcessiveAgency.md",
+      "section": "LLM06: 2025 \uacfc\ub3c4\ud55c \uc704\uc784"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07: 2025 \uc2dc\uc2a4\ud15c \ud504\ub86c\ud504\ud2b8 \uc720\ucd9c",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07: 2025 \uc2dc\uc2a4\ud15c \ud504\ub86c\ud504\ud2b8 \uc720\ucd9c"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08: 2025 \ubca1\ud130 \ubc0f \uc784\ubca0\ub529 \ucde8\uc57d\uc810",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08: 2025 \ubca1\ud130 \ubc0f \uc784\ubca0\ub529 \ucde8\uc57d\uc810"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM09_Misinformation.md",
+      "source_title": "LLM09: 2025 \ud5c8\uc704 \uc815\ubcf4",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM09_Misinformation.md",
+      "section": "LLM09: 2025 \ud5c8\uc704 \uc815\ubcf4"
+    },
+    {
+      "file": "2_0_vulns/translations/ko-KR/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10: 2025 \ubb34\uc81c\ud55c \uc18c\ube44",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ko-KR/LLM10_UnboundedConsumption.md",
+      "section": "LLM10: 2025 \ubb34\uc81c\ud55c \uc18c\ube44"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM00_Prefacio.md",
+      "source_title": "Carta dos L\u00edderes do Projeto",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM00_Prefacio.md",
+      "section": "Carta dos L\u00edderes do Projeto"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM01_InjecaodePrompt.md",
+      "source_title": "LLM01:2025 Inje\u00e7\u00e3o de Prompt",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM01_InjecaodePrompt.md",
+      "section": "LLM01:2025 Inje\u00e7\u00e3o de Prompt"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM02_DivulgacaodeInformacoesSensiveis.md",
+      "source_title": "LLM02:2025 Divulga\u00e7\u00e3o de Informa\u00e7\u00f5es Sens\u00edveis",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM02_DivulgacaodeInformacoesSensiveis.md",
+      "section": "LLM02:2025 Divulga\u00e7\u00e3o de Informa\u00e7\u00f5es Sens\u00edveis"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM03_CadeiadeSuprimentos.md",
+      "source_title": "LLM03:2025 Cadeia de Suprimentos",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM03_CadeiadeSuprimentos.md",
+      "section": "LLM03:2025 Cadeia de Suprimentos"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM04_EnvenenamentodeDadoseModelo.md",
+      "source_title": "LLM04: Envenenamento de Dados e Modelos",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM04_EnvenenamentodeDadoseModelo.md",
+      "section": "LLM04: Envenenamento de Dados e Modelos"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM05_TratamentoImpropriodeSaida.md",
+      "source_title": "LLM05:2025 Manipula\u00e7\u00e3o Impr\u00f3pria de Sa\u00edda",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM05_TratamentoImpropriodeSaida.md",
+      "section": "LLM05:2025 Manipula\u00e7\u00e3o Impr\u00f3pria de Sa\u00edda"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM06_AutonomiaExcessiva.md",
+      "source_title": "LLM06:2025 Autonomia Excessiva",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM06_AutonomiaExcessiva.md",
+      "section": "LLM06:2025 Autonomia Excessiva"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM07_VazamentodePromptdoSistema.md",
+      "source_title": "LLM07:2025 Vazamento de Prompt do Sistema",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM07_VazamentodePromptdoSistema.md",
+      "section": "LLM07:2025 Vazamento de Prompt do Sistema"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM08_FraquezasemVetoreseEmbeddings.md",
+      "source_title": "LLM08:2025 Fraquezas em Vetores e Embeddings",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM08_FraquezasemVetoreseEmbeddings.md",
+      "section": "LLM08:2025 Fraquezas em Vetores e Embeddings"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM09_Desinformacao.md",
+      "source_title": "LLM09:2025 Desinforma\u00e7\u00e3o",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM09_Desinformacao.md",
+      "section": "LLM09:2025 Desinforma\u00e7\u00e3o"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/LLM10_ConsumoIrrestrito.md",
+      "source_title": "LLM10:2025 Consumo Irrestrito",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/LLM10_ConsumoIrrestrito.md",
+      "section": "LLM10:2025 Consumo Irrestrito"
+    },
+    {
+      "file": "2_0_vulns/translations/pt-BR/Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/pt-BR/Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM00_Preface.md",
+      "source_title": "\u041e\u0431\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u043e\u0442 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u0435\u0439 \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM00_Preface.md",
+      "section": "\u041e\u0431\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u043e\u0442 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u0435\u0439 \u043f\u0440\u043e\u0435\u043a\u0442\u0430"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 Prompt Injection",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 Prompt Injection"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 \u0423\u0442\u0435\u0447\u043a\u0430 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 \u0423\u0442\u0435\u0447\u043a\u0430 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 \u0423\u044f\u0437\u0432\u0438\u043c\u043e\u0441\u0442\u044c \u0446\u0435\u043f\u043e\u0447\u043a\u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 \u0423\u044f\u0437\u0432\u0438\u043c\u043e\u0441\u0442\u044c \u0446\u0435\u043f\u043e\u0447\u043a\u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04:2025 \u041e\u0442\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0434\u0430\u043d\u043d\u044b\u0445 \u0438 \u043c\u043e\u0434\u0435\u043b\u0438",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM04_DataModelPoisoning.md",
+      "section": "LLM04:2025 \u041e\u0442\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0434\u0430\u043d\u043d\u044b\u0445 \u0438 \u043c\u043e\u0434\u0435\u043b\u0438"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 \u041d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u0430\u044f \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 \u041d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u0430\u044f \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u0427\u0440\u0435\u0437\u043c\u0435\u0440\u043d\u0430\u044f \u0430\u0433\u0435\u043d\u0442\u043d\u043e\u0441\u0442\u044c",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u0427\u0440\u0435\u0437\u043c\u0435\u0440\u043d\u0430\u044f \u0430\u0433\u0435\u043d\u0442\u043d\u043e\u0441\u0442\u044c"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 \u0423\u0442\u0435\u0447\u043a\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0445 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0439",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 \u0423\u0442\u0435\u0447\u043a\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0445 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0439"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 \u0423\u044f\u0437\u0432\u0438\u043c\u043e\u0441\u0442\u0438 \u0432\u0435\u043a\u0442\u043e\u0440\u043e\u0432 \u0438 \u044d\u043c\u0431\u0435\u0434\u0434\u0438\u043d\u0433\u043e\u0432",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 \u0423\u044f\u0437\u0432\u0438\u043c\u043e\u0441\u0442\u0438 \u0432\u0435\u043a\u0442\u043e\u0440\u043e\u0432 \u0438 \u044d\u043c\u0431\u0435\u0434\u0434\u0438\u043d\u0433\u043e\u0432"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 \u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0432 \u0437\u0430\u0431\u043b\u0443\u0436\u0434\u0435\u043d\u0438\u0435",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM09_Misinformation.md",
+      "section": "LLM09:2025 \u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0432 \u0437\u0430\u0431\u043b\u0443\u0436\u0434\u0435\u043d\u0438\u0435"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u041d\u0435\u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0442\u0440\u0435\u0431\u043b\u0435\u043d\u0438\u0435",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u041d\u0435\u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0442\u0440\u0435\u0431\u043b\u0435\u043d\u0438\u0435"
+    },
+    {
+      "file": "2_0_vulns/translations/ru-RU/Supplemental_Content.md",
+      "source_title": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/ru-RU/Supplemental_Content.md",
+      "section": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM00_Preface.md",
+      "source_title": "\u9879\u76ee\u8d1f\u8d23\u4eba\u5e8f\u8a00",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM00_Preface.md",
+      "section": "\u9879\u76ee\u8d1f\u8d23\u4eba\u5e8f\u8a00"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 \u63d0\u793a\u8bcd\u6ce8\u5165",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 \u63d0\u793a\u8bcd\u6ce8\u5165"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 \u654f\u611f\u4fe1\u606f\u6cc4\u9732",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 \u654f\u611f\u4fe1\u606f\u6cc4\u9732"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 \u4f9b\u5e94\u94fe",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 \u4f9b\u5e94\u94fe"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: 2025 \u6570\u636e\u4e0e\u6a21\u578b\u6295\u6bd2",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: 2025 \u6570\u636e\u4e0e\u6a21\u578b\u6295\u6bd2"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 \u4e0d\u5f53\u8f93\u51fa\u5904\u7406",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 \u4e0d\u5f53\u8f93\u51fa\u5904\u7406"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u8fc7\u5ea6\u6388\u6743",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u8fc7\u5ea6\u6388\u6743"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 \u7cfb\u7edf\u63d0\u793a\u6cc4\u9732",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 \u7cfb\u7edf\u63d0\u793a\u6cc4\u9732"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 \u5411\u91cf\u4e0e\u5d4c\u5165\u6f0f\u6d1e",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 \u5411\u91cf\u4e0e\u5d4c\u5165\u6f0f\u6d1e"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 \u4fe1\u606f\u8bef\u5bfc",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM09_Misinformation.md",
+      "section": "LLM09:2025 \u4fe1\u606f\u8bef\u5bfc"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u65e0\u9650\u8d44\u6e90\u6d88\u8017",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u65e0\u9650\u8d44\u6e90\u6d88\u8017"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-CN/Supplemental_Content.md",
+      "source_title": "\u6807\u9898",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-CN/Supplemental_Content.md",
+      "section": "\u6807\u9898"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM00_Preface.md",
+      "source_title": "\u5c08\u6848\u8ca0\u8cac\u5718\u968a\u7684\u4fe1",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM00_Preface.md",
+      "section": "\u5c08\u6848\u8ca0\u8cac\u5718\u968a\u7684\u4fe1"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM01_PromptInjection.md",
+      "source_title": "LLM01:2025 \u63d0\u793a\u6ce8\u5165",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM01_PromptInjection.md",
+      "section": "LLM01:2025 \u63d0\u793a\u6ce8\u5165"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM02_SensitiveInformationDisclosure.md",
+      "source_title": "LLM02:2025 \u654f\u611f\u8cc7\u8a0a\u6d29\u6f0f",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM02_SensitiveInformationDisclosure.md",
+      "section": "LLM02:2025 \u654f\u611f\u8cc7\u8a0a\u6d29\u6f0f"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM03_SupplyChain.md",
+      "source_title": "LLM03:2025 \u4f9b\u61c9\u93c8",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM03_SupplyChain.md",
+      "section": "LLM03:2025 \u4f9b\u61c9\u93c8"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM04_DataModelPoisoning.md",
+      "source_title": "LLM04: \u8cc7\u6599\u53ca\u6a21\u578b\u6295\u6bd2",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM04_DataModelPoisoning.md",
+      "section": "LLM04: \u8cc7\u6599\u53ca\u6a21\u578b\u6295\u6bd2"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM05_ImproperOutputHandling.md",
+      "source_title": "LLM05:2025 \u4e0d\u7576\u8f38\u51fa\u8655\u7406",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM05_ImproperOutputHandling.md",
+      "section": "LLM05:2025 \u4e0d\u7576\u8f38\u51fa\u8655\u7406"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM06_ExcessiveAgency.md",
+      "source_title": "LLM06:2025 \u904e\u5ea6\u4ee3\u7406\u6388\u6b0a",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM06_ExcessiveAgency.md",
+      "section": "LLM06:2025 \u904e\u5ea6\u4ee3\u7406\u6388\u6b0a"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM07_SystemPromptLeakage.md",
+      "source_title": "LLM07:2025 \u7cfb\u7d71\u63d0\u793a\u6d29\u6f0f",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM07_SystemPromptLeakage.md",
+      "section": "LLM07:2025 \u7cfb\u7d71\u63d0\u793a\u6d29\u6f0f"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "source_title": "LLM08:2025 \u5411\u91cf\u8207\u5d4c\u5165\u5f31\u9ede",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM08_VectorAndEmbeddingWeaknesses.md",
+      "section": "LLM08:2025 \u5411\u91cf\u8207\u5d4c\u5165\u5f31\u9ede"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM09_Misinformation.md",
+      "source_title": "LLM09:2025 \u932f\u8aa4\u8cc7\u8a0a",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM09_Misinformation.md",
+      "section": "LLM09:2025 \u932f\u8aa4\u8cc7\u8a0a"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/LLM10_UnboundedConsumption.md",
+      "source_title": "LLM10:2025 \u7121\u9650\u5236\u6d88\u8017",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/LLM10_UnboundedConsumption.md",
+      "section": "LLM10:2025 \u7121\u9650\u5236\u6d88\u8017"
+    },
+    {
+      "file": "2_0_vulns/translations/zh-TW/Supplemental_Content.md",
+      "source_title": "Title",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/2_0_vulns/translations/zh-TW/Supplemental_Content.md",
+      "section": "Title"
+    },
+    {
+      "file": "documentation/style/README.md",
+      "source_title": "OWASP Top 10 for Large Language Model Applications Style Guide",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/documentation/style/README.md",
+      "section": "OWASP Top 10 for Large Language Model Applications Style Guide"
+    },
+    {
+      "file": "documentation/style/branding.md",
+      "source_title": "Branding",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/documentation/style/branding.md",
+      "section": "Branding"
+    },
+    {
+      "file": "documentation/style/entries.md",
+      "source_title": "Entry Style Guide",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/documentation/style/entries.md",
+      "section": "Entry Style Guide"
+    },
+    {
+      "file": "documentation/style/general.md",
+      "source_title": "General",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/documentation/style/general.md",
+      "section": "General"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/ASI Agentic Exploits & Incidents/ASI_Agentic_Exploits_Incidents.md",
+      "source_title": "ASI Agentic Exploits & Incidents Tracker",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/ASI Agentic Exploits & Incidents/ASI_Agentic_Exploits_Incidents.md",
+      "section": "ASI Agentic Exploits & Incidents Tracker"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/README.md",
+      "source_title": "OWASP Agentic Security Initiative (ASI) - Insecure Agent Samples",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/README.md",
+      "section": "OWASP Agentic Security Initiative (ASI) - Insecure Agent Samples"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI01_Memory Poisoning.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI01_Memory Poisoning.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI02_Tool_Misuse.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI02_Tool_Misuse.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI03_Privilege_Compromise.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI03_Privilege_Compromise.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI04_Resource_Overload.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI04_Resource_Overload.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI05_Cascading_Hallucination_Attacks.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI05_Cascading_Hallucination_Attacks.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI06_Intent_Breaking_Goal_Manipulation.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI06_Intent_Breaking_Goal_Manipulation.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI07_Misaligned_Deceptive_Behaviors.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI07_Misaligned_Deceptive_Behaviors.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI08_Repudiation_Untraceability.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI08_Repudiation_Untraceability.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI09_Identity_Spoofing_Impersonation.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI09_Identity_Spoofing_Impersonation.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI10_Overwhelming_Human_in_the_Loop.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI10_Overwhelming_Human_in_the_Loop.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI11_Unexpected_RCE_Code_Attacks.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI11_Unexpected_RCE_Code_Attacks.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI12_Agent_Communication_Poisoning.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI12_Agent_Communication_Poisoning.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI13_Rogue_Agents_MultiAgent_Systems.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI13_Rogue_Agents_MultiAgent_Systems.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI14_Human_Attacks_MultiAgent_Systems.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI14_Human_Attacks_MultiAgent_Systems.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI15_Human_Manipulation.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI15_Human_Manipulation.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI16_Insecure_InterAgent_Protocol_Abuse.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/ASI16_Insecure_InterAgent_Protocol_Abuse.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/JohnSotiropoulos_Vulnerable_Agentic_Supply_Chain.md",
+      "source_title": "Risk/Vuln Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/JohnSotiropoulos_Vulnerable_Agentic_Supply_Chain.md",
+      "section": "Risk/Vuln Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/_template.md",
+      "source_title": "Vulnerability Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/0.5-initial-candidates/_template.md",
+      "section": "Vulnerability Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI01_Agent_Behaviour_Hijack .md",
+      "source_title": "ASI01 \u2013 Agent Behaviour Hijack",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI01_Agent_Behaviour_Hijack .md",
+      "section": "ASI01 \u2013 Agent Behaviour Hijack"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI02_Tool_Misuse_and_Exploitation .md",
+      "source_title": "ASI02 \u2013 Tool Misuse and Exploitation",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI02_Tool_Misuse_and_Exploitation .md",
+      "section": "ASI02 \u2013 Tool Misuse and Exploitation"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI03_Identity_and_Privilege_Abuse .md",
+      "source_title": "ASI03 \u2013 Identity & Privilege Abuse",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI03_Identity_and_Privilege_Abuse .md",
+      "section": "ASI03 \u2013 Identity & Privilege Abuse"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI04_Agentic_Supply_Chain_Vulnerabilities .md",
+      "source_title": "ASI04 \u2013 Agentic Supply Chain Vulnerabilities",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI04_Agentic_Supply_Chain_Vulnerabilities .md",
+      "section": "ASI04 \u2013 Agentic Supply Chain Vulnerabilities"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI05_Unexpected_Code_Execution_RCE .md",
+      "source_title": "ASI05 \u2013 Unexpected Code Execution (RCE)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI05_Unexpected_Code_Execution_RCE .md",
+      "section": "ASI05 \u2013 Unexpected Code Execution (RCE)"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI06_Memory_and_Context_Poisoning .md",
+      "source_title": "ASI06 \u2013 Memory & Context Poisoning",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI06_Memory_and_Context_Poisoning .md",
+      "section": "ASI06 \u2013 Memory & Context Poisoning"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI07_Insecure_Inter_Agent_Communication .md",
+      "source_title": "ASI07 \u2013 Insecure Inter-Agent Communication",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI07_Insecure_Inter_Agent_Communication .md",
+      "section": "ASI07 \u2013 Insecure Inter-Agent Communication"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI08_Cascading_Failures .md",
+      "source_title": "ASI08 \u2013 Cascading Failures",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI08_Cascading_Failures .md",
+      "section": "ASI08 \u2013 Cascading Failures"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI09_Human_Agent_Trust_Exploitation .md",
+      "source_title": "ASI09 \u2013 Human-Agent Trust Exploitation",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI09_Human_Agent_Trust_Exploitation .md",
+      "section": "ASI09 \u2013 Human-Agent Trust Exploitation"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI10_Rogue_Agents .md",
+      "source_title": "ASI10 \u2013 Rogue Agents",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/ASI10_Rogue_Agents .md",
+      "section": "ASI10 \u2013 Rogue Agents"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/README.md",
+      "source_title": "Top Ten for Agentic Applications \u2013 1st Public Draft",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/README.md",
+      "section": "Top Ten for Agentic Applications \u2013 1st Public Draft"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/_template.md",
+      "source_title": "Vulnerability Name",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/agentic-top-10/Sprint 1-first-public-draft-expanded/_template.md",
+      "section": "Vulnerability Name"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/CONTRIBUTING.md",
+      "source_title": "Contributing Guidelines",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/CONTRIBUTING.md",
+      "section": "Contributing Guidelines"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/agentic_top_ten/frameworks/mastra/invoice_agent/README.md",
+      "source_title": "Mastra Invoice Agent",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/agentic_top_ten/frameworks/mastra/invoice_agent/README.md",
+      "section": "Mastra Invoice Agent"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/agentic_top_ten/frameworks/pydantic/invoice_agent/README.md",
+      "source_title": "Pydantic Invoice Agent",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/agentic_top_ten/frameworks/pydantic/invoice_agent/README.md",
+      "section": "Pydantic Invoice Agent"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/autogen/autogen_refund_demo/README.md",
+      "source_title": "Single-Agent Setup",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/autogen/autogen_refund_demo/README.md",
+      "section": "Single-Agent Setup"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/crewai/freysa_demo/README.md",
+      "source_title": "About Freysa",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/crewai/freysa_demo/README.md",
+      "section": "About Freysa"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/custom_code/ai_recruiter/README.md",
+      "source_title": "AI Recruiter Agent",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/custom_code/ai_recruiter/README.md",
+      "section": "AI Recruiter Agent"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/custom_code/ai_recruiter/owasp_top_ten/readme.md",
+      "source_title": "**Relevant Vulnerabilities in the AI Recruiter**",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/custom_code/ai_recruiter/owasp_top_ten/readme.md",
+      "section": "**Relevant Vulnerabilities in the AI Recruiter**"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/Excessive Db Agency/README.md",
+      "source_title": "README.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/Excessive Db Agency/README.md",
+      "section": "README.md"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/data_poisoning/README.md",
+      "source_title": "\ud83c\udfaf Zero-to-Hired",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/data_poisoning/README.md",
+      "section": "\ud83c\udfaf Zero-to-Hired"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/github_improper_output_handling/README.md",
+      "source_title": "GitHub GraphQL AI Agent - OWASP LLM Output Handling Demo",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/github_improper_output_handling/README.md",
+      "section": "GitHub GraphQL AI Agent - OWASP LLM Output Handling Demo"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/leaked_credentials/README.md",
+      "source_title": "Leaked Credentials",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/leaked_credentials/README.md",
+      "section": "Leaked Credentials"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/multi_agent/README.md",
+      "source_title": "insecure-ai-agents",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/multi_agent/README.md",
+      "section": "insecure-ai-agents"
+    },
+    {
+      "file": "initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/unrestricted_agent/README.md",
+      "source_title": "Unrestricted Agent",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/agent_security_initiative/code_samples/top_10_for_llms/frameworks/langgraph/unrestricted_agent/README.md",
+      "section": "Unrestricted Agent"
+    },
+    {
+      "file": "initiatives/data_gathering/README.md",
+      "source_title": "README.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/README.md",
+      "section": "README.md"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/ASVS.md",
+      "source_title": "Python Data Validation Script for LLM Vulnerabilities (LLM01 - LLM10)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/ASVS.md",
+      "section": "Python Data Validation Script for LLM Vulnerabilities (LLM01 - LLM10)"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/BSIMM.md",
+      "source_title": "Python Data Validation Script Example",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/BSIMM.md",
+      "section": "Python Data Validation Script Example"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/CIS-CONTROLS.md",
+      "source_title": "Mock functions to represent the validation checks for each LLM vulnerability",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/CIS-CONTROLS.md",
+      "section": "Mock functions to represent the validation checks for each LLM vulnerability"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/CONTRIBUTING.md",
+      "source_title": "Contributing to OWASP Top 10 for LLM AI Applications Data Validation",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/CONTRIBUTING.md",
+      "section": "Contributing to OWASP Top 10 for LLM AI Applications Data Validation"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/CWE.md",
+      "source_title": "Basic Data Validation Script for Large Language Models (LLMs)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/CWE.md",
+      "section": "Basic Data Validation Script for Large Language Models (LLMs)"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/CycloneDX-SBOM.md",
+      "source_title": "Automated Validation Tools Suggestion",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/CycloneDX-SBOM.md",
+      "section": "Automated Validation Tools Suggestion"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/ENISA.md",
+      "source_title": "Assuming a CSV file for LLM data inputs",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/ENISA.md",
+      "section": "Assuming a CSV file for LLM data inputs"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/FAIR.md",
+      "source_title": "Data Validation Script for FAIR Risk Assessment of LLM Vulnerabilities",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/FAIR.md",
+      "section": "Data Validation Script for FAIR Risk Assessment of LLM Vulnerabilities"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/ISO27001.md",
+      "source_title": "Example utilities that might be used for validations",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/ISO27001.md",
+      "section": "Example utilities that might be used for validations"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/ISOIEC20547_4_2020.md",
+      "source_title": "Data Validation and Protection Script Aligned with ISO/IEC 20547-4:2020",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/ISOIEC20547_4_2020.md",
+      "section": "Data Validation and Protection Script Aligned with ISO/IEC 20547-4:2020"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/MITREATLAS.md",
+      "source_title": "Python Script for Data Validation",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/MITREATLAS.md",
+      "section": "Python Script for Data Validation"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/MITREATT&CK.md",
+      "source_title": "Import necessary libraries",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/MITREATT&CK.md",
+      "section": "Import necessary libraries"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/NIST.md",
+      "source_title": "Basic setup for logging to monitor behaviors and potential attacks",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/NIST.md",
+      "section": "Basic setup for logging to monitor behaviors and potential attacks"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/OPENCRE.md",
+      "source_title": "Function to read markdown content from a file",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/OPENCRE.md",
+      "section": "Function to read markdown content from a file"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/README.md",
+      "source_title": "Step 3: Data Validation and Quality Control Methodology",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/README.md",
+      "section": "Step 3: Data Validation and Quality Control Methodology"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/SAMM.md",
+      "source_title": "Data Validation Script for LLMs based on OWASP Top 10 SAMM Mapping",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/SAMM.md",
+      "section": "Data Validation Script for LLMs based on OWASP Top 10 SAMM Mapping"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/SETUP.md",
+      "source_title": "Setup Instructions",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/SETUP.md",
+      "section": "Setup Instructions"
+    },
+    {
+      "file": "initiatives/data_gathering/data_validation/STRIDE.md",
+      "source_title": "Import necessary libraries",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/data_validation/STRIDE.md",
+      "section": "Import necessary libraries"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/BackdoorAttacks.md",
+      "source_title": "Backdoor Attacks in Large Language Models (LLMs)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/BackdoorAttacks.md",
+      "section": "Backdoor Attacks in Large Language Models (LLMs)"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/BypassingSIUSPL.md",
+      "source_title": "Bypassing System Instructions Using System Prompt Leakage",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/BypassingSIUSPL.md",
+      "section": "Bypassing System Instructions Using System Prompt Leakage"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/DangerousHallucinations.md",
+      "source_title": "Dangerous Hallucinations in Large Language Models (LLMs)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/DangerousHallucinations.md",
+      "section": "Dangerous Hallucinations in Large Language Models (LLMs)"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/DeepFakeThreat.md",
+      "source_title": "Deepfake Threat",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/DeepFakeThreat.md",
+      "section": "Deepfake Threat"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/InsecureDesign.md",
+      "source_title": "Insecure Design",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/InsecureDesign.md",
+      "section": "Insecure Design"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/README.md",
+      "source_title": "OWASP TOP 10 for LLM AI Apps - Data Support",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/README.md",
+      "section": "OWASP TOP 10 for LLM AI Apps - Data Support"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/SensitiveInfoDisclosure.md",
+      "source_title": "Sensitive Information Disclosure",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/SensitiveInfoDisclosure.md",
+      "section": "Sensitive Information Disclosure"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/SupplyChainV.md",
+      "source_title": "Supply-Chain Vulnerabilities in Large Language Models (LLMs)",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/SupplyChainV.md",
+      "section": "Supply-Chain Vulnerabilities in Large Language Models (LLMs)"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/UnwantedAIActions.md",
+      "source_title": "Unwanted AI Actions by General Purpose LLMs",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/UnwantedAIActions.md",
+      "section": "Unwanted AI Actions by General Purpose LLMs"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/VulnerableAutonomousAgents.md",
+      "source_title": "Vulnerable Autonomous Agents",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/VulnerableAutonomousAgents.md",
+      "section": "Vulnerable Autonomous Agents"
+    },
+    {
+      "file": "initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/promptinjection.md",
+      "source_title": "LLM01: Prompt Injection",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/entrydatasupport/2_0/2_0_candidates/promptinjection.md",
+      "section": "LLM01: Prompt Injection"
+    },
+    {
+      "file": "initiatives/data_gathering/literature/CONTRIBUTING.md",
+      "source_title": "Contributing to OWASP Top 10 for LLM - Literature Review",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/literature/CONTRIBUTING.md",
+      "section": "Contributing to OWASP Top 10 for LLM - Literature Review"
+    },
+    {
+      "file": "initiatives/data_gathering/literature/README.md",
+      "source_title": "OWASP Top 10 for LLM - Literature Review",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/literature/README.md",
+      "section": "OWASP Top 10 for LLM - Literature Review"
+    },
+    {
+      "file": "initiatives/data_gathering/literature/scripts.md",
+      "source_title": "Data Processing Scripts for OWASP Top 10 LLM Analysis",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/literature/scripts.md",
+      "section": "Data Processing Scripts for OWASP Top 10 LLM Analysis"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/ASVS.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to ASVS",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/ASVS.md",
+      "section": "OWASP Top 10 for LLMs Mapped to ASVS"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/BSIMM.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to BSIMM Activities",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/BSIMM.md",
+      "section": "OWASP Top 10 for LLMs Mapped to BSIMM Activities"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/CIS_Controls.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to CIS (Center for Internet Security) Controls",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/CIS_Controls.md",
+      "section": "OWASP Top 10 for LLMs Mapped to CIS (Center for Internet Security) Controls"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/CODE_OF_CONDUCT.md",
+      "source_title": "Code of Conduct for the LLM Top 10 Mapping Project",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/CODE_OF_CONDUCT.md",
+      "section": "Code of Conduct for the LLM Top 10 Mapping Project"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/CONTRIBUTING.md",
+      "source_title": "Contributing to OWASP Top 10 for LLM Mapping",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/CONTRIBUTING.md",
+      "section": "Contributing to OWASP Top 10 for LLM Mapping"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/CVE_CWE.md",
+      "source_title": "Mapping OWASP Top 10 for LLMs to CVEs and CWEs",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/CVE_CWE.md",
+      "section": "Mapping OWASP Top 10 for LLMs to CVEs and CWEs"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/CycloneDX_Software-Bill-of-Materials(SBOM).md",
+      "source_title": "OWASP Top 10 for LLM Applications - CycloneDX SBOM Mapping",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/CycloneDX_Software-Bill-of-Materials(SBOM).md",
+      "section": "OWASP Top 10 for LLM Applications - CycloneDX SBOM Mapping"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/ENISA.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to ENISA Recommendations",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/ENISA.md",
+      "section": "OWASP Top 10 for LLMs Mapped to ENISA Recommendations"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/FAIR.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to FAIR Risk Assessment Framework",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/FAIR.md",
+      "section": "OWASP Top 10 for LLMs Mapped to FAIR Risk Assessment Framework"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/ISO20547-4_2020.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to ISO/IEC 20547-4:2020",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/ISO20547-4_2020.md",
+      "section": "OWASP Top 10 for LLMs Mapped to ISO/IEC 20547-4:2020"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/ISO27001.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to ISO/IEC 27001 Controls",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/ISO27001.md",
+      "section": "OWASP Top 10 for LLMs Mapped to ISO/IEC 27001 Controls"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/MITREATLAS.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to MITRE ATLAS with Mitigations",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/MITREATLAS.md",
+      "section": "OWASP Top 10 for LLMs Mapped to MITRE ATLAS with Mitigations"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/MITREATT&CK.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to MITRE ATT&CK with Mitigations",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/MITREATT&CK.md",
+      "section": "OWASP Top 10 for LLMs Mapped to MITRE ATT&CK with Mitigations"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/NIST.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to the NIST Cybersecurity Framework",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/NIST.md",
+      "section": "OWASP Top 10 for LLMs Mapped to the NIST Cybersecurity Framework"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/OPEN_CRE.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to OPENCRE",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/OPEN_CRE.md",
+      "section": "OWASP Top 10 for LLMs Mapped to OPENCRE"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/README.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to Cybersecurity Frameworks and Standards",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/README.md",
+      "section": "OWASP Top 10 for LLMs Mapped to Cybersecurity Frameworks and Standards"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/SAMM.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to SAMM",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/SAMM.md",
+      "section": "OWASP Top 10 for LLMs Mapped to SAMM"
+    },
+    {
+      "file": "initiatives/data_gathering/mappings/STRIDE.md",
+      "source_title": "OWASP Top 10 for LLMs Mapped to STRIDE",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/data_gathering/mappings/STRIDE.md",
+      "section": "OWASP Top 10 for LLMs Mapped to STRIDE"
+    },
+    {
+      "file": "initiatives/genai-security-center-of-excellence-doc/readme.md",
+      "source_title": "readme.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai-security-center-of-excellence-doc/readme.md",
+      "section": "readme.md"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/CONTRIBUTING.md",
+      "source_title": "Contribution Guide",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/CONTRIBUTING.md",
+      "section": "Contribution Guide"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/README.md",
+      "source_title": "GenAI Red Team Handbook",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/README.md",
+      "section": "GenAI Red Team Handbook"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/README.md",
+      "source_title": "Red Team Example: Adversarial Attack on LLM Sandbox",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/README.md",
+      "section": "Red Team Example: Adversarial Attack on LLM Sandbox"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/prompts/MITRE_RAG_AML_T0070_T0071_v2025.md",
+      "source_title": "MITRE_RAG_AML_T0070_T0071_v2025.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/prompts/MITRE_RAG_AML_T0070_T0071_v2025.md",
+      "section": "MITRE_RAG_AML_T0070_T0071_v2025.md"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/prompts/OWASP_Top10_LLM_App_v2025.md",
+      "source_title": "OWASP_Top10_LLM_App_v2025.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/prompts/OWASP_Top10_LLM_App_v2025.md",
+      "section": "OWASP_Top10_LLM_App_v2025.md"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/prompts/OWASP_Top10_v2021.md",
+      "source_title": "OWASP_Top10_v2021.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/prompts/OWASP_Top10_v2021.md",
+      "section": "OWASP_Top10_v2021.md"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/prompts/minimal.md",
+      "source_title": "minimal.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/prompts/minimal.md",
+      "section": "minimal.md"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_040107.md",
+      "source_title": "Configuration Log",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_040107.md",
+      "section": "Configuration Log"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_042429.md",
+      "source_title": "Configuration Log",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_042429.md",
+      "section": "Configuration Log"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_053044.md",
+      "source_title": "Configuration Log",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/agent0/reports/log_20251205_053044.md",
+      "section": "Configuration Log"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/example/README.md",
+      "source_title": "Red Team Example: Adversarial Attack on LLM Sandbox",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/example/README.md",
+      "section": "Red Team Example: Adversarial Attack on LLM Sandbox"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/garak/README.md",
+      "source_title": "Red Team Example: Garak Scanner on LLM Sandbox",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/garak/README.md",
+      "section": "Red Team Example: Garak Scanner on LLM Sandbox"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/exploitation/promptfoo/README.md",
+      "source_title": "Red Team Example: Promptfoo Scanner on LLM Sandbox",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/exploitation/promptfoo/README.md",
+      "section": "Red Team Example: Promptfoo Scanner on LLM Sandbox"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/RAG_local/README.md",
+      "source_title": "LLM Mock API Template",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/RAG_local/README.md",
+      "section": "LLM Mock API Template"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/RAG_local/app/mocks/README.md",
+      "source_title": "Adding New Mock Services",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/RAG_local/app/mocks/README.md",
+      "section": "Adding New Mock Services"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/RAG_local/threat_model/RAG_TM_report.md",
+      "source_title": "RAG",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/RAG_local/threat_model/RAG_TM_report.md",
+      "section": "RAG"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/README.md",
+      "source_title": "GenAI Red Team Sandboxes",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/README.md",
+      "section": "GenAI Red Team Sandboxes"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/llm_local/README.md",
+      "source_title": "LLM Mock API Template",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/llm_local/README.md",
+      "section": "LLM Mock API Template"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/llm_local/app/mocks/README.md",
+      "source_title": "Adding New Mock Services",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/llm_local/app/mocks/README.md",
+      "section": "Adding New Mock Services"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/sandboxes/llm_local/threat_model/LLM_TM_report.md",
+      "source_title": "Untitled model",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/sandboxes/llm_local/threat_model/LLM_TM_report.md",
+      "section": "Untitled model"
+    },
+    {
+      "file": "initiatives/genai_red_team_handbook/tools/ghostglyph/README.md",
+      "source_title": "ghostglyph",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/genai_red_team_handbook/tools/ghostglyph/README.md",
+      "section": "ghostglyph"
+    },
+    {
+      "file": "initiatives/llm-top-10-solutions-landscape/readme.md",
+      "source_title": "readme.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/llm-top-10-solutions-landscape/readme.md",
+      "section": "readme.md"
+    },
+    {
+      "file": "initiatives/readme.md",
+      "source_title": "readme.md",
+      "source_url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/readme.md",
+      "section": "readme.md"
+    }
+  ]
+}

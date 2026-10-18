@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/internal/limitation/dynamic/internal-dotnet-file-limitation.yml -->
+rule:
+  meta:
+    name: (internal) .NET file limitation
+    namespace: internal/limitation/dynamic
+    authors:
+      - "@v1bh475u"
+    description: |
+      This dynamic analysis trace describes a .NET file.
+
+      capa rules are not yet tuned for the .NET runtime, 
+      so its analysis may be incomplete or misleading.
+    scopes:
+      static: file
+      dynamic: file
+    examples:
+      - 2f8a79b12a7a989ac7e5f6ec65050036588a92e65aeb6841e08dc228ff0e21b4_min_archive.zip
+  features:
+    - or:
+      - format: dotnet
+      - import: mscoree._CorExeMain
+      - import: mscoree._corexemain
+      - import: mscoree._CorDllMain
+      - import: mscoree._cordllmain

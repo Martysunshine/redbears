@@ -1,0 +1,33 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/persistence/scheduled-tasks/schedule-task-via-schtasks.yml -->
+rule:
+  meta:
+    name: schedule task via schtasks
+    namespace: persistence/scheduled-tasks
+    authors:
+      - 0x534a@mailbox.org
+      - j.j.vannielen@utwente.nl
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Persistence::Scheduled Task/Job::Scheduled Task [T1053.005]
+    references:
+      - https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page
+      - https://stmxcsr.com/persistence/scheduled-tasks.html
+    examples:
+      - 79cde1aa711e321b4939805d27e160be:0x401440
+  features:
+    - or:
+      - and:
+        - match: set registry value
+        - string: /Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\/i
+        - string: /^Actions$/i
+      - and:
+        - match: host-interaction/process/create
+        - or:
+          - and:
+            - string: /schtasks/i
+            - or:
+              - string: /\/change/i
+              - string: /\/create/i
+          - string: /Register-ScheduledTask /i

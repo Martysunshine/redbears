@@ -1,0 +1,35 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/list/enumerate-processes-on-remote-desktop-session-host.yml -->
+rule:
+  meta:
+    name: enumerate processes on remote desktop session host
+    namespace: host-interaction/process/list
+    authors:
+      - michael.hunhoff@mandiant.com
+      - 99.elad.levi@gmail.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Discovery::Process Discovery [T1057]
+    examples:
+      - 6f99a2c8944cb02ff28c6f9ced59b161:0x414B70
+  features:
+    - or:
+      - and:
+        - or:
+          - api: wtsapi32.WTSEnumerateProcesses
+          - api: wtsapi32.WTSEnumerateProcessesEx
+        - optional:
+          - or:
+            - api: wtsapi32.WTSFreeMemory
+            - api: wtsapi32.WTSOpenServer
+      - and:
+        - or:
+          - api: wtsapi32.WTSEnumerateSessions
+          - api: wtsapi32.WTSEnumerateSessionsEx
+        - api: kernel32.ProcessIdToSessionId
+        - optional:
+          - match: enumerate processes
+          - or:
+            - api: wtsapi32.WTSFreeMemory
+            - api: wtsapi32.WTSOpenServer

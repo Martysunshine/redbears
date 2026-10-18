@@ -1,0 +1,37 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_svchost_uncommon_parent_process.yml -->
+title: Uncommon Svchost Parent Process
+id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
+status: test
+description: Detects an uncommon svchost parent process
+references:
+    - Internal Research
+author: Florian Roth (Nextron Systems)
+date: 2017-08-15
+modified: 2022-06-28
+tags:
+    - attack.stealth
+    - attack.t1036.005
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: '\svchost.exe'
+    filter_main_generic:
+        ParentImage|endswith:
+            - '\Mrt.exe'
+            - '\MsMpEng.exe'
+            - '\ngen.exe'
+            - '\rpcnet.exe'
+            - '\services.exe'
+            - '\TiWorker.exe'
+    filter_main_parent_null:
+        ParentImage: null
+    filter_main_parent_empty:
+        ParentImage:
+            - '-'
+            - ''
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - Unknown
+level: medium

@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/KeyVaultSensitiveOperations.yaml -->
+id: c81732c7-d46d-4349-b8e3-4a2af143c983
+name: Sensitive Azure Key Vault operations
+description: |
+   'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Key%20Vault/Analytic%20Rules/KeyVaultSensitiveOperations.yaml'
+version: 1.0.2

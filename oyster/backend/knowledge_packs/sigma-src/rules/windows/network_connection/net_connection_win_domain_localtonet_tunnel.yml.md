@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/network_connection/net_connection_win_domain_localtonet_tunnel.yml -->
+title: Communication To LocaltoNet Tunneling Service Initiated
+id: 3ab65069-d82a-4d44-a759-466661a082d1
+status: test
+description: |
+    Detects an executable initiating a network connection to "LocaltoNet" tunneling sub-domains.
+    LocaltoNet is a reverse proxy that enables localhost services to be exposed to the Internet.
+    Attackers have been seen to use this service for command-and-control activities to bypass MFA and perimeter controls.
+references:
+    - https://localtonet.com/documents/supported-tunnels
+    - https://cloud.google.com/blog/topics/threat-intelligence/unc3944-targets-saas-applications
+author: Andreas Braathen (mnemonic.io)
+date: 2024-06-17
+tags:
+    - attack.command-and-control
+    - attack.t1572
+    - attack.t1090
+    - attack.t1102
+logsource:
+    category: network_connection
+    product: windows
+detection:
+    selection:
+        DestinationHostname|endswith:
+            - '.localto.net'
+            - '.localtonet.com'
+        Initiated: 'true'
+    condition: selection
+falsepositives:
+    - Legitimate use of the LocaltoNet service.
+level: high

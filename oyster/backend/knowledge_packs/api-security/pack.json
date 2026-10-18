@@ -1,0 +1,12 @@
+{
+  "id": "api-security",
+  "version": "1.0.0",
+  "title": "API Security",
+  "domain": "offensive",
+  "description": "OWASP API Security Top 10 (2023): object/function/property-level authorization, mass assignment, unrestricted resource consumption, SSRF, and inventory management across REST/GraphQL.",
+  "tags": ["api", "owasp", "rest", "graphql", "jwt", "oauth", "bola"],
+  "authority": "OWASP",
+  "docs": [
+    {"file": "owasp-api-top-10.md", "source_title": "OWASP API Security Top 10 (2023)", "source_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/"}
+  ]
+}

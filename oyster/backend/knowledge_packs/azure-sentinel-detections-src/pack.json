@@ -1,0 +1,2938 @@
+{
+  "id": "azure-sentinel-detections-src",
+  "name": "azure-sentinel-detections-src",
+  "version": "f57d4b0ba1a8",
+  "title": "Microsoft Sentinel detection rule templates (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://github.com/Azure/Azure-Sentinel at f57d4b0ba1a8. 483 documents.",
+  "authority": "Microsoft",
+  "publisher": "Microsoft Corporation",
+  "trust_level": "official",
+  "licence": "MIT",
+  "attribution": "Microsoft Sentinel / Microsoft 365 Defender detection content, \u00a9 Microsoft Corporation, MIT licence.",
+  "tags": [
+    "sentinel",
+    "detection",
+    "siem",
+    "kql",
+    "microsoft"
+  ],
+  "applicable_tools": [
+    "microsoft-sentinel",
+    "kql"
+  ],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "azure-sentinel-detections-src",
+  "upstream_commit": "f57d4b0ba1a8e04726d1adec5a370a608878f646",
+  "source_urls": [
+    "https://github.com/Azure/Azure-Sentinel",
+    "https://github.com/Azure/Azure-Sentinel"
+  ],
+  "docs": [
+    {
+      "file": "Detections/ASimAuthentication/imAuthBruteForce.yaml.md",
+      "source_title": "imAuthBruteForce.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimAuthentication/imAuthBruteForce.yaml",
+      "section": "imAuthBruteForce.yaml"
+    },
+    {
+      "file": "Detections/ASimAuthentication/imAuthPasswordSpray.yaml.md",
+      "source_title": "imAuthPasswordSpray.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimAuthentication/imAuthPasswordSpray.yaml",
+      "section": "imAuthPasswordSpray.yaml"
+    },
+    {
+      "file": "Detections/ASimAuthentication/imAuthSigninsMultipleCountries.yaml.md",
+      "source_title": "imAuthSigninsMultipleCountries.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimAuthentication/imAuthSigninsMultipleCountries.yaml",
+      "section": "imAuthSigninsMultipleCountries.yaml"
+    },
+    {
+      "file": "Detections/ASimAuthentication/imSigninAttemptsByIPviaDisabledAccounts.yaml.md",
+      "source_title": "imSigninAttemptsByIPviaDisabledAccounts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimAuthentication/imSigninAttemptsByIPviaDisabledAccounts.yaml",
+      "section": "imSigninAttemptsByIPviaDisabledAccounts.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDNS_Miners.yaml.md",
+      "source_title": "imDNS_Miners.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDNS_Miners.yaml",
+      "section": "imDNS_Miners.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDNS_TorProxies.yaml.md",
+      "source_title": "imDNS_TorProxies.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDNS_TorProxies.yaml",
+      "section": "imDNS_TorProxies.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDns_DomainEntity_DnsEvents.yaml.md",
+      "source_title": "imDns_DomainEntity_DnsEvents.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDns_DomainEntity_DnsEvents.yaml",
+      "section": "imDns_DomainEntity_DnsEvents.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDns_ExcessiveNXDOMAINDNSQueries.yaml.md",
+      "source_title": "imDns_ExcessiveNXDOMAINDNSQueries.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDns_ExcessiveNXDOMAINDNSQueries.yaml",
+      "section": "imDns_ExcessiveNXDOMAINDNSQueries.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDns_HighNXDomainCount_detection.yaml.md",
+      "source_title": "imDns_HighNXDomainCount_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDns_HighNXDomainCount_detection.yaml",
+      "section": "imDns_HighNXDomainCount_detection.yaml"
+    },
+    {
+      "file": "Detections/ASimDNS/imDns_IPEntity_DnsEvents.yaml.md",
+      "source_title": "imDns_IPEntity_DnsEvents.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimDNS/imDns_IPEntity_DnsEvents.yaml",
+      "section": "imDns_IPEntity_DnsEvents.yaml"
+    },
+    {
+      "file": "Detections/ASimFileEvent/SuspiciousAccessOfBECRelatedDocuments.yaml.md",
+      "source_title": "SuspiciousAccessOfBECRelatedDocuments.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimFileEvent/SuspiciousAccessOfBECRelatedDocuments.yaml",
+      "section": "SuspiciousAccessOfBECRelatedDocuments.yaml"
+    },
+    {
+      "file": "Detections/ASimFileEvent/imFileESolarWindsSunburstSupernova.yaml.md",
+      "source_title": "imFileESolarWindsSunburstSupernova.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimFileEvent/imFileESolarWindsSunburstSupernova.yaml",
+      "section": "imFileESolarWindsSunburstSupernova.yaml"
+    },
+    {
+      "file": "Detections/ASimNetworkSession/ExcessiveHTTPFailuresFromSource.yaml.md",
+      "source_title": "ExcessiveHTTPFailuresFromSource.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimNetworkSession/ExcessiveHTTPFailuresFromSource.yaml",
+      "section": "ExcessiveHTTPFailuresFromSource.yaml"
+    },
+    {
+      "file": "Detections/ASimNetworkSession/IPEntity_imNetworkSession.yaml.md",
+      "source_title": "IPEntity_imNetworkSession.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimNetworkSession/IPEntity_imNetworkSession.yaml",
+      "section": "IPEntity_imNetworkSession.yaml"
+    },
+    {
+      "file": "Detections/ASimNetworkSession/PortScan.yaml.md",
+      "source_title": "PortScan.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimNetworkSession/PortScan.yaml",
+      "section": "PortScan.yaml"
+    },
+    {
+      "file": "Detections/ASimNetworkSession/PossibleBeaconingActivity.yaml.md",
+      "source_title": "PossibleBeaconingActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimNetworkSession/PossibleBeaconingActivity.yaml",
+      "section": "PossibleBeaconingActivity.yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies(ASIMVersion).yaml.md",
+      "source_title": "NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies(ASIMVersion).yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies(ASIMVersion).yaml",
+      "section": "NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies(ASIMVersion).yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/Potentialre-namedsdeleteusage(ASIMVersion).yaml.md",
+      "source_title": "Potentialre-namedsdeleteusage(ASIMVersion).yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/Potentialre-namedsdeleteusage(ASIMVersion).yaml",
+      "section": "Potentialre-namedsdeleteusage(ASIMVersion).yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/SdeletedeployedviaGPOandrunrecursively(ASIMVersion).yaml.md",
+      "source_title": "SdeletedeployedviaGPOandrunrecursively(ASIMVersion).yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/SdeletedeployedviaGPOandrunrecursively(ASIMVersion).yaml",
+      "section": "SdeletedeployedviaGPOandrunrecursively(ASIMVersion).yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imFileEvent_Dev-0228FilePathHashesNovember2021(ASIMVersion).yaml.md",
+      "source_title": "imFileEvent_Dev-0228FilePathHashesNovember2021(ASIMVersion).yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imFileEvent_Dev-0228FilePathHashesNovember2021(ASIMVersion).yaml",
+      "section": "imFileEvent_Dev-0228FilePathHashesNovember2021(ASIMVersion).yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imProcess_AdFind_Usage.yaml.md",
+      "source_title": "imProcess_AdFind_Usage.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imProcess_AdFind_Usage.yaml",
+      "section": "imProcess_AdFind_Usage.yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imProcess_MidnightBlizzard_SuspiciousRundll32Exec.yaml.md",
+      "source_title": "imProcess_MidnightBlizzard_SuspiciousRundll32Exec.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imProcess_MidnightBlizzard_SuspiciousRundll32Exec.yaml",
+      "section": "imProcess_MidnightBlizzard_SuspiciousRundll32Exec.yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imProcess_SolarWinds_SUNBURST_Process-IOCs.yaml.md",
+      "source_title": "imProcess_SolarWinds_SUNBURST_Process-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imProcess_SolarWinds_SUNBURST_Process-IOCs.yaml",
+      "section": "imProcess_SolarWinds_SUNBURST_Process-IOCs.yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imProcess_base64_encoded_pefile.yaml.md",
+      "source_title": "imProcess_base64_encoded_pefile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imProcess_base64_encoded_pefile.yaml",
+      "section": "imProcess_base64_encoded_pefile.yaml"
+    },
+    {
+      "file": "Detections/ASimProcess/imProcess_malware_in_recyclebin.yaml.md",
+      "source_title": "imProcess_malware_in_recyclebin.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimProcess/imProcess_malware_in_recyclebin.yaml",
+      "section": "imProcess_malware_in_recyclebin.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/DiscordCDNRiskyFileDownload_ASim.yaml.md",
+      "source_title": "DiscordCDNRiskyFileDownload_ASim.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/DiscordCDNRiskyFileDownload_ASim.yaml",
+      "section": "DiscordCDNRiskyFileDownload_ASim.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/ExcessiveNetworkFailuresFromSource.yaml.md",
+      "source_title": "ExcessiveNetworkFailuresFromSource.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/ExcessiveNetworkFailuresFromSource.yaml",
+      "section": "ExcessiveNetworkFailuresFromSource.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/PossibleDGAContacts.yaml.md",
+      "source_title": "PossibleDGAContacts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/PossibleDGAContacts.yaml",
+      "section": "PossibleDGAContacts.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/PotentiallyHarmfulFileTypes.yaml.md",
+      "source_title": "PotentiallyHarmfulFileTypes.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/PotentiallyHarmfulFileTypes.yaml",
+      "section": "PotentiallyHarmfulFileTypes.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/UnusualUACryptoMiners.yaml.md",
+      "source_title": "UnusualUACryptoMiners.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/UnusualUACryptoMiners.yaml",
+      "section": "UnusualUACryptoMiners.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/UnusualUAHackTool.yaml.md",
+      "source_title": "UnusualUAHackTool.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/UnusualUAHackTool.yaml",
+      "section": "UnusualUAHackTool.yaml"
+    },
+    {
+      "file": "Detections/ASimWebSession/UnusualUAPowershell.yaml.md",
+      "source_title": "UnusualUAPowershell.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ASimWebSession/UnusualUAPowershell.yaml",
+      "section": "UnusualUAPowershell.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_ChangeToRDSDatabase.yaml.md",
+      "source_title": "AWS_ChangeToRDSDatabase.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_ChangeToRDSDatabase.yaml",
+      "section": "AWS_ChangeToRDSDatabase.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_ChangeToVPC.yaml.md",
+      "source_title": "AWS_ChangeToVPC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_ChangeToVPC.yaml",
+      "section": "AWS_ChangeToVPC.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_ClearStopChangeTrailLogs.yaml.md",
+      "source_title": "AWS_ClearStopChangeTrailLogs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_ClearStopChangeTrailLogs.yaml",
+      "section": "AWS_ClearStopChangeTrailLogs.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_ConsoleLogonWithoutMFA.yaml.md",
+      "source_title": "AWS_ConsoleLogonWithoutMFA.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_ConsoleLogonWithoutMFA.yaml",
+      "section": "AWS_ConsoleLogonWithoutMFA.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_CredentialHijack.yaml.md",
+      "source_title": "AWS_CredentialHijack.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_CredentialHijack.yaml",
+      "section": "AWS_CredentialHijack.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_FullAdminPolicyAttachedToRolesUsersGroups.yaml.md",
+      "source_title": "AWS_FullAdminPolicyAttachedToRolesUsersGroups.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_FullAdminPolicyAttachedToRolesUsersGroups.yaml",
+      "section": "AWS_FullAdminPolicyAttachedToRolesUsersGroups.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_IngressEgressSecurityGroupChange.yaml.md",
+      "source_title": "AWS_IngressEgressSecurityGroupChange.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_IngressEgressSecurityGroupChange.yaml",
+      "section": "AWS_IngressEgressSecurityGroupChange.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/AWS_LoadBalancerSecGroupChange.yaml.md",
+      "source_title": "AWS_LoadBalancerSecGroupChange.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/AWS_LoadBalancerSecGroupChange.yaml",
+      "section": "AWS_LoadBalancerSecGroupChange.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/NRT_AWS_ConsoleLogonWithoutMFA.yaml.md",
+      "source_title": "NRT_AWS_ConsoleLogonWithoutMFA.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/NRT_AWS_ConsoleLogonWithoutMFA.yaml",
+      "section": "NRT_AWS_ConsoleLogonWithoutMFA.yaml"
+    },
+    {
+      "file": "Detections/AWSCloudTrail/SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml.md",
+      "source_title": "SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSCloudTrail/SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml",
+      "section": "SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml"
+    },
+    {
+      "file": "Detections/AWSGuardDuty/AWS_GuardDuty_template.yaml.md",
+      "source_title": "AWS_GuardDuty_template.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AWSGuardDuty/AWS_GuardDuty_template.yaml",
+      "section": "AWS_GuardDuty_template.yaml"
+    },
+    {
+      "file": "Detections/Anomalies/SignInAnomaly.yaml.md",
+      "source_title": "SignInAnomaly.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Anomalies/SignInAnomaly.yaml",
+      "section": "SignInAnomaly.yaml"
+    },
+    {
+      "file": "Detections/Anomalies/UnusualAnomaly.yaml.md",
+      "source_title": "UnusualAnomaly.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Anomalies/UnusualAnomaly.yaml",
+      "section": "UnusualAnomaly.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ADFSDomainTrustMods.yaml.md",
+      "source_title": "ADFSDomainTrustMods.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ADFSDomainTrustMods.yaml",
+      "section": "ADFSDomainTrustMods.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AccountCreatedDeletedByNonApprovedUser.yaml.md",
+      "source_title": "AccountCreatedDeletedByNonApprovedUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AccountCreatedDeletedByNonApprovedUser.yaml",
+      "section": "AccountCreatedDeletedByNonApprovedUser.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AccountCreatedandDeletedinShortTimeframe.yaml.md",
+      "source_title": "AccountCreatedandDeletedinShortTimeframe.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AccountCreatedandDeletedinShortTimeframe.yaml",
+      "section": "AccountCreatedandDeletedinShortTimeframe.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AccountElevatedtoNewRole.yaml.md",
+      "source_title": "AccountElevatedtoNewRole.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AccountElevatedtoNewRole.yaml",
+      "section": "AccountElevatedtoNewRole.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AdditionofaTemporaryAccessPasstoaPrivilegedAccount.yaml.md",
+      "source_title": "AdditionofaTemporaryAccessPasstoaPrivilegedAccount.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AdditionofaTemporaryAccessPasstoaPrivilegedAccount.yaml",
+      "section": "AdditionofaTemporaryAccessPasstoaPrivilegedAccount.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AdminPromoAfterRoleMgmtAppPermissionGrant.yaml.md",
+      "source_title": "AdminPromoAfterRoleMgmtAppPermissionGrant.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AdminPromoAfterRoleMgmtAppPermissionGrant.yaml",
+      "section": "AdminPromoAfterRoleMgmtAppPermissionGrant.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ApplicationIDURIChanged.yaml.md",
+      "source_title": "ApplicationIDURIChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ApplicationIDURIChanged.yaml",
+      "section": "ApplicationIDURIChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ApplicationRedirectURLUpdate.yaml.md",
+      "source_title": "ApplicationRedirectURLUpdate.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ApplicationRedirectURLUpdate.yaml",
+      "section": "ApplicationRedirectURLUpdate.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AuthenticationMethodChangedforPrivilegedAccount.yaml.md",
+      "source_title": "AuthenticationMethodChangedforPrivilegedAccount.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AuthenticationMethodChangedforPrivilegedAccount.yaml",
+      "section": "AuthenticationMethodChangedforPrivilegedAccount.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/AzureADRoleManagementPermissionGrant.yaml.md",
+      "source_title": "AzureADRoleManagementPermissionGrant.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/AzureADRoleManagementPermissionGrant.yaml",
+      "section": "AzureADRoleManagementPermissionGrant.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/BulkChangestoPrivilegedAccountPermissions.yaml.md",
+      "source_title": "BulkChangestoPrivilegedAccountPermissions.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/BulkChangestoPrivilegedAccountPermissions.yaml",
+      "section": "BulkChangestoPrivilegedAccountPermissions.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ChangestoApplicationLogoutURL.yaml.md",
+      "source_title": "ChangestoApplicationLogoutURL.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ChangestoApplicationLogoutURL.yaml",
+      "section": "ChangestoApplicationLogoutURL.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ChangestoApplicationOwnership.yaml.md",
+      "source_title": "ChangestoApplicationOwnership.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ChangestoApplicationOwnership.yaml",
+      "section": "ChangestoApplicationOwnership.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ChangestoPIMSettings.yaml.md",
+      "source_title": "ChangestoPIMSettings.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ChangestoPIMSettings.yaml",
+      "section": "ChangestoPIMSettings.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ConditionalAccessPolicyModifiedbyNewUser.yaml.md",
+      "source_title": "ConditionalAccessPolicyModifiedbyNewUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ConditionalAccessPolicyModifiedbyNewUser.yaml",
+      "section": "ConditionalAccessPolicyModifiedbyNewUser.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/CredentialAddedAfterAdminConsent.yaml.md",
+      "source_title": "CredentialAddedAfterAdminConsent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/CredentialAddedAfterAdminConsent.yaml",
+      "section": "CredentialAddedAfterAdminConsent.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationAdded.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationAdded.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationAdded.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationAdded.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationDeleted.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationDeleted.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationDeleted.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationDeleted.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationInboundCollaborationSettingsChanged.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationInboundCollaborationSettingsChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationInboundCollaborationSettingsChanged.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationInboundCollaborationSettingsChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationInboundDirectSettingsChanged.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationInboundDirectSettingsChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationInboundDirectSettingsChanged.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationInboundDirectSettingsChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationOutboundCollaborationSettingsChanged.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationOutboundCollaborationSettingsChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationOutboundCollaborationSettingsChanged.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationOutboundCollaborationSettingsChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationOutboundDirectSettingsChanged.yaml.md",
+      "source_title": "Cross-tenantAccessSettingsOrganizationOutboundDirectSettingsChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Cross-tenantAccessSettingsOrganizationOutboundDirectSettingsChanged.yaml",
+      "section": "Cross-tenantAccessSettingsOrganizationOutboundDirectSettingsChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/End-userconsentstoppedduetorisk-basedconsent.yaml.md",
+      "source_title": "End-userconsentstoppedduetorisk-basedconsent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/End-userconsentstoppedduetorisk-basedconsent.yaml",
+      "section": "End-userconsentstoppedduetorisk-basedconsent.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/FirstAppOrServicePrincipalCredential.yaml.md",
+      "source_title": "FirstAppOrServicePrincipalCredential.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/FirstAppOrServicePrincipalCredential.yaml",
+      "section": "FirstAppOrServicePrincipalCredential.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/GuestAccountsAddedinAADGroupsOtherThanTheOnesSpecified.yaml.md",
+      "source_title": "GuestAccountsAddedinAADGroupsOtherThanTheOnesSpecified.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/GuestAccountsAddedinAADGroupsOtherThanTheOnesSpecified.yaml",
+      "section": "GuestAccountsAddedinAADGroupsOtherThanTheOnesSpecified.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/GuestUsersInvitedtoTenantbyNewInviters.yaml.md",
+      "source_title": "GuestUsersInvitedtoTenantbyNewInviters.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/GuestUsersInvitedtoTenantbyNewInviters.yaml",
+      "section": "GuestUsersInvitedtoTenantbyNewInviters.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/MailPermissionsAddedToApplication.yaml.md",
+      "source_title": "MailPermissionsAddedToApplication.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/MailPermissionsAddedToApplication.yaml",
+      "section": "MailPermissionsAddedToApplication.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/MaliciousOAuthApp_O365AttackToolkit.yaml.md",
+      "source_title": "MaliciousOAuthApp_O365AttackToolkit.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/MaliciousOAuthApp_O365AttackToolkit.yaml",
+      "section": "MaliciousOAuthApp_O365AttackToolkit.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/MaliciousOAuthApp_PwnAuth.yaml.md",
+      "source_title": "MaliciousOAuthApp_PwnAuth.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/MaliciousOAuthApp_PwnAuth.yaml",
+      "section": "MaliciousOAuthApp_PwnAuth.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/MultipleAdmin_membership_removals_from_NewAdmin.yaml.md",
+      "source_title": "MultipleAdmin_membership_removals_from_NewAdmin.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/MultipleAdmin_membership_removals_from_NewAdmin.yaml",
+      "section": "MultipleAdmin_membership_removals_from_NewAdmin.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_ADFSDomainTrustMods.yaml.md",
+      "source_title": "NRT_ADFSDomainTrustMods.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_ADFSDomainTrustMods.yaml",
+      "section": "NRT_ADFSDomainTrustMods.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_AuthenticationMethodsChangedforVIPUsers.yaml.md",
+      "source_title": "NRT_AuthenticationMethodsChangedforVIPUsers.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_AuthenticationMethodsChangedforVIPUsers.yaml",
+      "section": "NRT_AuthenticationMethodsChangedforVIPUsers.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_NewAppOrServicePrincipalCredential.yaml.md",
+      "source_title": "NRT_NewAppOrServicePrincipalCredential.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_NewAppOrServicePrincipalCredential.yaml",
+      "section": "NRT_NewAppOrServicePrincipalCredential.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_PIMElevationRequestRejected.yaml.md",
+      "source_title": "NRT_PIMElevationRequestRejected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_PIMElevationRequestRejected.yaml",
+      "section": "NRT_PIMElevationRequestRejected.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_PrivlegedRoleAssignedOutsidePIM.yaml.md",
+      "source_title": "NRT_PrivlegedRoleAssignedOutsidePIM.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_PrivlegedRoleAssignedOutsidePIM.yaml",
+      "section": "NRT_PrivlegedRoleAssignedOutsidePIM.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NRT_UseraddedtoPrivilgedGroups.yaml.md",
+      "source_title": "NRT_UseraddedtoPrivilgedGroups.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NRT_UseraddedtoPrivilgedGroups.yaml",
+      "section": "NRT_UseraddedtoPrivilgedGroups.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NewAppOrServicePrincipalCredential.yaml.md",
+      "source_title": "NewAppOrServicePrincipalCredential.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NewAppOrServicePrincipalCredential.yaml",
+      "section": "NewAppOrServicePrincipalCredential.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/NewExtUserGrantedAdmin.yaml.md",
+      "source_title": "NewExtUserGrantedAdmin.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/NewExtUserGrantedAdmin.yaml",
+      "section": "NewExtUserGrantedAdmin.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/PIMElevationRequestRejected.yaml.md",
+      "source_title": "PIMElevationRequestRejected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/PIMElevationRequestRejected.yaml",
+      "section": "PIMElevationRequestRejected.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/PrivilegedAccountPermissionsChanged.yaml.md",
+      "source_title": "PrivilegedAccountPermissionsChanged.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/PrivilegedAccountPermissionsChanged.yaml",
+      "section": "PrivilegedAccountPermissionsChanged.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/PrivlegedRoleAssignedOutsidePIM.yaml.md",
+      "source_title": "PrivlegedRoleAssignedOutsidePIM.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/PrivlegedRoleAssignedOutsidePIM.yaml",
+      "section": "PrivlegedRoleAssignedOutsidePIM.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/RareApplicationConsent.yaml.md",
+      "source_title": "RareApplicationConsent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/RareApplicationConsent.yaml",
+      "section": "RareApplicationConsent.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ServicePrincipalAssignedAppRoleWithSensitiveAccess.yaml.md",
+      "source_title": "ServicePrincipalAssignedAppRoleWithSensitiveAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ServicePrincipalAssignedAppRoleWithSensitiveAccess.yaml",
+      "section": "ServicePrincipalAssignedAppRoleWithSensitiveAccess.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/ServicePrincipalAssignedPrivilegedRole.yaml.md",
+      "source_title": "ServicePrincipalAssignedPrivilegedRole.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/ServicePrincipalAssignedPrivilegedRole.yaml",
+      "section": "ServicePrincipalAssignedPrivilegedRole.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/SuspiciousLinkingofExternalIdtoExistingUsers.yaml.md",
+      "source_title": "SuspiciousLinkingofExternalIdtoExistingUsers.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/SuspiciousLinkingofExternalIdtoExistingUsers.yaml",
+      "section": "SuspiciousLinkingofExternalIdtoExistingUsers.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/SuspiciousOAuthApp_OfflineAccess.yaml.md",
+      "source_title": "SuspiciousOAuthApp_OfflineAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/SuspiciousOAuthApp_OfflineAccess.yaml",
+      "section": "SuspiciousOAuthApp_OfflineAccess.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/SuspiciousServicePrincipalcreationactivity.yaml.md",
+      "source_title": "SuspiciousServicePrincipalcreationactivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/SuspiciousServicePrincipalcreationactivity.yaml",
+      "section": "SuspiciousServicePrincipalcreationactivity.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/URLAddedtoApplicationfromUnknownDomain.yaml.md",
+      "source_title": "URLAddedtoApplicationfromUnknownDomain.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/URLAddedtoApplicationfromUnknownDomain.yaml",
+      "section": "URLAddedtoApplicationfromUnknownDomain.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/UserAccountCreatedUsingIncorrectNamingFormat.yaml.md",
+      "source_title": "UserAccountCreatedUsingIncorrectNamingFormat.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/UserAccountCreatedUsingIncorrectNamingFormat.yaml",
+      "section": "UserAccountCreatedUsingIncorrectNamingFormat.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/UserAddedtoAdminRole.yaml.md",
+      "source_title": "UserAddedtoAdminRole.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/UserAddedtoAdminRole.yaml",
+      "section": "UserAddedtoAdminRole.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/UserAssignedPrivilegedRole.yaml.md",
+      "source_title": "UserAssignedPrivilegedRole.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/UserAssignedPrivilegedRole.yaml",
+      "section": "UserAssignedPrivilegedRole.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/UserStatechangedfromGuesttoMember.yaml.md",
+      "source_title": "UserStatechangedfromGuesttoMember.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/UserStatechangedfromGuesttoMember.yaml",
+      "section": "UserStatechangedfromGuesttoMember.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/Useraccountcreatedwithoutexpectedattributesdefined.yaml.md",
+      "source_title": "Useraccountcreatedwithoutexpectedattributesdefined.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/Useraccountcreatedwithoutexpectedattributesdefined.yaml",
+      "section": "Useraccountcreatedwithoutexpectedattributesdefined.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/UseraddedtoPrivilgedGroups.yaml.md",
+      "source_title": "UseraddedtoPrivilgedGroups.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/UseraddedtoPrivilgedGroups.yaml",
+      "section": "UseraddedtoPrivilgedGroups.yaml"
+    },
+    {
+      "file": "Detections/AuditLogs/nrt_FirstAppOrServicePrincipalCredential.yaml.md",
+      "source_title": "nrt_FirstAppOrServicePrincipalCredential.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AuditLogs/nrt_FirstAppOrServicePrincipalCredential.yaml",
+      "section": "nrt_FirstAppOrServicePrincipalCredential.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/AADHybridHealthADFSNewServer.yaml.md",
+      "source_title": "AADHybridHealthADFSNewServer.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/AADHybridHealthADFSNewServer.yaml",
+      "section": "AADHybridHealthADFSNewServer.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/AADHybridHealthADFSServiceDelete.yaml.md",
+      "source_title": "AADHybridHealthADFSServiceDelete.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/AADHybridHealthADFSServiceDelete.yaml",
+      "section": "AADHybridHealthADFSServiceDelete.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/AADHybridHealthADFSSuspApp.yaml.md",
+      "source_title": "AADHybridHealthADFSSuspApp.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/AADHybridHealthADFSSuspApp.yaml",
+      "section": "AADHybridHealthADFSSuspApp.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/AzDiagSettingsDeleted.yaml.md",
+      "source_title": "AzDiagSettingsDeleted.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/AzDiagSettingsDeleted.yaml",
+      "section": "AzDiagSettingsDeleted.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/Creating_Anomalous_Number_Of_Resources_detection.yaml.md",
+      "source_title": "Creating_Anomalous_Number_Of_Resources_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/Creating_Anomalous_Number_Of_Resources_detection.yaml",
+      "section": "Creating_Anomalous_Number_Of_Resources_detection.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/Creation_of_Expensive_Computes_in_Azure.yaml.md",
+      "source_title": "Creation_of_Expensive_Computes_in_Azure.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/Creation_of_Expensive_Computes_in_Azure.yaml",
+      "section": "Creation_of_Expensive_Computes_in_Azure.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/Granting_Permissions_To_Account_detection.yaml.md",
+      "source_title": "Granting_Permissions_To_Account_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/Granting_Permissions_To_Account_detection.yaml",
+      "section": "Granting_Permissions_To_Account_detection.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/NRT-AADHybridHealthADFSNewServer.yaml.md",
+      "source_title": "NRT-AADHybridHealthADFSNewServer.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/NRT-AADHybridHealthADFSNewServer.yaml",
+      "section": "NRT-AADHybridHealthADFSNewServer.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/NRT_Creation_of_Expensive_Computes_in_Azure.yaml.md",
+      "source_title": "NRT_Creation_of_Expensive_Computes_in_Azure.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/NRT_Creation_of_Expensive_Computes_in_Azure.yaml",
+      "section": "NRT_Creation_of_Expensive_Computes_in_Azure.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/New-CloudShell-User.yaml.md",
+      "source_title": "New-CloudShell-User.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/New-CloudShell-User.yaml",
+      "section": "New-CloudShell-User.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/NewResourceGroupsDeployedTo.yaml.md",
+      "source_title": "NewResourceGroupsDeployedTo.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/NewResourceGroupsDeployedTo.yaml",
+      "section": "NewResourceGroupsDeployedTo.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/RareOperations.yaml.md",
+      "source_title": "RareOperations.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/RareOperations.yaml",
+      "section": "RareOperations.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/RareRunCommandPowerShellScript.yaml.md",
+      "source_title": "RareRunCommandPowerShellScript.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/RareRunCommandPowerShellScript.yaml",
+      "section": "RareRunCommandPowerShellScript.yaml"
+    },
+    {
+      "file": "Detections/AzureActivity/TimeSeriesAnomaly_Mass_Cloud_Resource_Deletions.yaml.md",
+      "source_title": "TimeSeriesAnomaly_Mass_Cloud_Resource_Deletions.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/TimeSeriesAnomaly_Mass_Cloud_Resource_Deletions.yaml",
+      "section": "TimeSeriesAnomaly_Mass_Cloud_Resource_Deletions.yaml"
+    },
+    {
+      "file": "Detections/AzureAppServices/AVScan_Failure.yaml.md",
+      "source_title": "AVScan_Failure.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureAppServices/AVScan_Failure.yaml",
+      "section": "AVScan_Failure.yaml"
+    },
+    {
+      "file": "Detections/AzureAppServices/AVScan_Infected_Files_Found.yaml.md",
+      "source_title": "AVScan_Infected_Files_Found.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureAppServices/AVScan_Infected_Files_Found.yaml",
+      "section": "AVScan_Infected_Files_Found.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOAgentPoolCreatedDeleted.yaml.md",
+      "source_title": "ADOAgentPoolCreatedDeleted.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOAgentPoolCreatedDeleted.yaml",
+      "section": "ADOAgentPoolCreatedDeleted.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOAuditStreamDisabled.yaml.md",
+      "source_title": "ADOAuditStreamDisabled.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOAuditStreamDisabled.yaml",
+      "section": "ADOAuditStreamDisabled.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADONewExtensionAdded.yaml.md",
+      "source_title": "ADONewExtensionAdded.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADONewExtensionAdded.yaml",
+      "section": "ADONewExtensionAdded.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOPATUsedWithBrowser.yaml.md",
+      "source_title": "ADOPATUsedWithBrowser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOPATUsedWithBrowser.yaml",
+      "section": "ADOPATUsedWithBrowser.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOPipelineModifiedbyNewUser.yaml.md",
+      "source_title": "ADOPipelineModifiedbyNewUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOPipelineModifiedbyNewUser.yaml",
+      "section": "ADOPipelineModifiedbyNewUser.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADORetentionReduced.yaml.md",
+      "source_title": "ADORetentionReduced.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADORetentionReduced.yaml",
+      "section": "ADORetentionReduced.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOSecretNotSecured.yaml.md",
+      "source_title": "ADOSecretNotSecured.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOSecretNotSecured.yaml",
+      "section": "ADOSecretNotSecured.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ADOVariableModifiedByNewUser.yaml.md",
+      "source_title": "ADOVariableModifiedByNewUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ADOVariableModifiedByNewUser.yaml",
+      "section": "ADOVariableModifiedByNewUser.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOAdminGroupAdditions.yaml.md",
+      "source_title": "AzDOAdminGroupAdditions.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOAdminGroupAdditions.yaml",
+      "section": "AzDOAdminGroupAdditions.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOHistoricPrPolicyBypassing.yaml.md",
+      "source_title": "AzDOHistoricPrPolicyBypassing.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOHistoricPrPolicyBypassing.yaml",
+      "section": "AzDOHistoricPrPolicyBypassing.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOHistoricServiceConnectionAdds.yaml.md",
+      "source_title": "AzDOHistoricServiceConnectionAdds.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOHistoricServiceConnectionAdds.yaml",
+      "section": "AzDOHistoricServiceConnectionAdds.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOPatSessionMisuse.yaml.md",
+      "source_title": "AzDOPatSessionMisuse.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOPatSessionMisuse.yaml",
+      "section": "AzDOPatSessionMisuse.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOPipelineCreatedDeletedOneDay.yaml.md",
+      "source_title": "AzDOPipelineCreatedDeletedOneDay.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOPipelineCreatedDeletedOneDay.yaml",
+      "section": "AzDOPipelineCreatedDeletedOneDay.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/AzDOServiceConnectionUsage.yaml.md",
+      "source_title": "AzDOServiceConnectionUsage.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/AzDOServiceConnectionUsage.yaml",
+      "section": "AzDOServiceConnectionUsage.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/ExternalUpstreamSourceAddedtoAzureDevOpsFeed.yaml.md",
+      "source_title": "ExternalUpstreamSourceAddedtoAzureDevOpsFeed.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/ExternalUpstreamSourceAddedtoAzureDevOpsFeed.yaml",
+      "section": "ExternalUpstreamSourceAddedtoAzureDevOpsFeed.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/NRT_ADOAuditStreamDisabled.yaml.md",
+      "source_title": "NRT_ADOAuditStreamDisabled.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/NRT_ADOAuditStreamDisabled.yaml",
+      "section": "NRT_ADOAuditStreamDisabled.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/NewAgentAddedToPoolbyNewUserorofNewOS.yaml.md",
+      "source_title": "NewAgentAddedToPoolbyNewUserorofNewOS.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/NewAgentAddedToPoolbyNewUserorofNewOS.yaml",
+      "section": "NewAgentAddedToPoolbyNewUserorofNewOS.yaml"
+    },
+    {
+      "file": "Detections/AzureDevOpsAuditing/NewPAPCAPCASaddedtoADO.yaml.md",
+      "source_title": "NewPAPCAPCASaddedtoADO.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/NewPAPCAPCASaddedtoADO.yaml",
+      "section": "NewPAPCAPCASaddedtoADO.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/AzureWAFmatching_log4j_vuln.yaml.md",
+      "source_title": "AzureWAFmatching_log4j_vuln.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/AzureWAFmatching_log4j_vuln.yaml",
+      "section": "AzureWAFmatching_log4j_vuln.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/KeyVaultSensitiveOperations.yaml.md",
+      "source_title": "KeyVaultSensitiveOperations.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/KeyVaultSensitiveOperations.yaml",
+      "section": "KeyVaultSensitiveOperations.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/KeyvaultMassSecretRetrieval.yaml.md",
+      "source_title": "KeyvaultMassSecretRetrieval.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/KeyvaultMassSecretRetrieval.yaml",
+      "section": "KeyvaultMassSecretRetrieval.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/MaliciousWAFSessions.yaml.md",
+      "source_title": "MaliciousWAFSessions.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/MaliciousWAFSessions.yaml",
+      "section": "MaliciousWAFSessions.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/NRT_KeyVaultSensitiveOperations.yaml.md",
+      "source_title": "NRT_KeyVaultSensitiveOperations.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/NRT_KeyVaultSensitiveOperations.yaml",
+      "section": "NRT_KeyVaultSensitiveOperations.yaml"
+    },
+    {
+      "file": "Detections/AzureDiagnostics/TimeSeriesKeyvaultAccessAnomaly.yaml.md",
+      "source_title": "TimeSeriesKeyvaultAccessAnomaly.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDiagnostics/TimeSeriesKeyvaultAccessAnomaly.yaml",
+      "section": "TimeSeriesKeyvaultAccessAnomaly.yaml"
+    },
+    {
+      "file": "Detections/AzureFirewall/SeveralDenyActionsRegistered.yaml.md",
+      "source_title": "SeveralDenyActionsRegistered.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureFirewall/SeveralDenyActionsRegistered.yaml",
+      "section": "SeveralDenyActionsRegistered.yaml"
+    },
+    {
+      "file": "Detections/AzureWAF/AFD-Premium-WAF-SQLiDetection.yaml.md",
+      "source_title": "AFD-Premium-WAF-SQLiDetection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureWAF/AFD-Premium-WAF-SQLiDetection.yaml",
+      "section": "AFD-Premium-WAF-SQLiDetection.yaml"
+    },
+    {
+      "file": "Detections/AzureWAF/AFD-Premium-WAF-XSSDetection.yaml.md",
+      "source_title": "AFD-Premium-WAF-XSSDetection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureWAF/AFD-Premium-WAF-XSSDetection.yaml",
+      "section": "AFD-Premium-WAF-XSSDetection.yaml"
+    },
+    {
+      "file": "Detections/AzureWAF/AppGwWAF-SQLiDetection.yaml.md",
+      "source_title": "The Threshold value above can be changed as per your infrastructure's requirement",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureWAF/AppGwWAF-SQLiDetection.yaml",
+      "section": "The Threshold value above can be changed as per your infrastructure's requirement"
+    },
+    {
+      "file": "Detections/AzureWAF/AppGwWAF-XSSDetection.yaml.md",
+      "source_title": "The Threshold value above can be changed as per your infrastructure's requirement",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureWAF/AppGwWAF-XSSDetection.yaml",
+      "section": "The Threshold value above can be changed as per your infrastructure's requirement"
+    },
+    {
+      "file": "Detections/BehaviorAnalytics/SuspiciousSigninByAADConnectAccount.yaml.md",
+      "source_title": "SuspiciousSigninByAADConnectAccount.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/BehaviorAnalytics/SuspiciousSigninByAADConnectAccount.yaml",
+      "section": "SuspiciousSigninByAADConnectAccount.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaConnectionNon-CorporatePrivateNetwork.yaml.md",
+      "source_title": "CiscoUmbrellaConnectionNon-CorporatePrivateNetwork.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaConnectionNon-CorporatePrivateNetwork.yaml",
+      "section": "CiscoUmbrellaConnectionNon-CorporatePrivateNetwork.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaConnectionToUnpopularWebsiteDetected.yaml.md",
+      "source_title": "CiscoUmbrellaConnectionToUnpopularWebsiteDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaConnectionToUnpopularWebsiteDetected.yaml",
+      "section": "CiscoUmbrellaConnectionToUnpopularWebsiteDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaCryptoMinerUserAgentDetected.yaml.md",
+      "source_title": "CiscoUmbrellaCryptoMinerUserAgentDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaCryptoMinerUserAgentDetected.yaml",
+      "section": "CiscoUmbrellaCryptoMinerUserAgentDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaEmptyUserAgentDetected.yaml.md",
+      "source_title": "CiscoUmbrellaEmptyUserAgentDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaEmptyUserAgentDetected.yaml",
+      "section": "CiscoUmbrellaEmptyUserAgentDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaHackToolUserAgentDetected.yaml.md",
+      "source_title": "CiscoUmbrellaHackToolUserAgentDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaHackToolUserAgentDetected.yaml",
+      "section": "CiscoUmbrellaHackToolUserAgentDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaPowershellUserAgentDetected.yaml.md",
+      "source_title": "CiscoUmbrellaPowershellUserAgentDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaPowershellUserAgentDetected.yaml",
+      "section": "CiscoUmbrellaPowershellUserAgentDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaRareUserAgentDetected.yaml.md",
+      "source_title": "CiscoUmbrellaRareUserAgentDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaRareUserAgentDetected.yaml",
+      "section": "CiscoUmbrellaRareUserAgentDetected.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaRequestAllowedHarmfulMaliciousURICategory.yaml.md",
+      "source_title": "CiscoUmbrellaRequestAllowedHarmfulMaliciousURICategory.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaRequestAllowedHarmfulMaliciousURICategory.yaml",
+      "section": "CiscoUmbrellaRequestAllowedHarmfulMaliciousURICategory.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaRequestBlocklistedFileType.yaml.md",
+      "source_title": "CiscoUmbrellaRequestBlocklistedFileType.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaRequestBlocklistedFileType.yaml",
+      "section": "CiscoUmbrellaRequestBlocklistedFileType.yaml"
+    },
+    {
+      "file": "Detections/CiscoUmbrella/CiscoUmbrellaURIContainsIPAddress.yaml.md",
+      "source_title": "CiscoUmbrellaURIContainsIPAddress.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CiscoUmbrella/CiscoUmbrellaURIContainsIPAddress.yaml",
+      "section": "CiscoUmbrellaURIContainsIPAddress.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/CiscoASA-AvgAttackDetectRateIncrease.yaml.md",
+      "source_title": "CiscoASA-AvgAttackDetectRateIncrease.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CiscoASA-AvgAttackDetectRateIncrease.yaml",
+      "section": "CiscoASA-AvgAttackDetectRateIncrease.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/CiscoASA-ThreatDetectionMessage.yaml.md",
+      "source_title": "CiscoASA-ThreatDetectionMessage.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CiscoASA-ThreatDetectionMessage.yaml",
+      "section": "CiscoASA-ThreatDetectionMessage.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/CreepyDriveRequestSequence.yaml.md",
+      "source_title": "CreepyDriveRequestSequence.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CreepyDriveRequestSequence.yaml",
+      "section": "CreepyDriveRequestSequence.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/CreepyDriveURLs.yaml.md",
+      "source_title": "CreepyDriveURLs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CreepyDriveURLs.yaml",
+      "section": "CreepyDriveURLs.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/CreepySnailURLParameters.yaml.md",
+      "source_title": "CreepySnailURLParameters.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/CreepySnailURLParameters.yaml",
+      "section": "CreepySnailURLParameters.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/Fortinet-NetworkBeaconPattern.yaml.md",
+      "source_title": "Fortinet-NetworkBeaconPattern.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/Fortinet-NetworkBeaconPattern.yaml",
+      "section": "Fortinet-NetworkBeaconPattern.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/MultiVendor-PossibleDGAContacts.yaml.md",
+      "source_title": "MultiVendor-PossibleDGAContacts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/MultiVendor-PossibleDGAContacts.yaml",
+      "section": "MultiVendor-PossibleDGAContacts.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/PaloAlto-NetworkBeaconing.yaml.md",
+      "source_title": "PaloAlto-NetworkBeaconing.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/PaloAlto-NetworkBeaconing.yaml",
+      "section": "PaloAlto-NetworkBeaconing.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/PaloAlto-PortScanning.yaml.md",
+      "source_title": "PaloAlto-PortScanning.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/PaloAlto-PortScanning.yaml",
+      "section": "PaloAlto-PortScanning.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/PaloAlto-UnusualThreatSignatures.yaml.md",
+      "source_title": "PaloAlto-UnusualThreatSignatures.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/PaloAlto-UnusualThreatSignatures.yaml",
+      "section": "PaloAlto-UnusualThreatSignatures.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/TimeSeriesAnomaly-MultiVendor_NetworkTraffic.yaml.md",
+      "source_title": "TimeSeriesAnomaly-MultiVendor_NetworkTraffic.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/TimeSeriesAnomaly-MultiVendor_NetworkTraffic.yaml",
+      "section": "TimeSeriesAnomaly-MultiVendor_NetworkTraffic.yaml"
+    },
+    {
+      "file": "Detections/CommonSecurityLog/Wazuh-Large_Number_of_Web_errors_from_an_IP.yaml.md",
+      "source_title": "Wazuh-Large_Number_of_Web_errors_from_an_IP.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/CommonSecurityLog/Wazuh-Large_Number_of_Web_errors_from_an_IP.yaml",
+      "section": "Wazuh-Large_Number_of_Web_errors_from_an_IP.yaml"
+    },
+    {
+      "file": "Detections/DeviceEvents/SolarWinds_TEARDROP_Process-IOCs.yaml.md",
+      "source_title": "SolarWinds_TEARDROP_Process-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceEvents/SolarWinds_TEARDROP_Process-IOCs.yaml",
+      "section": "SolarWinds_TEARDROP_Process-IOCs.yaml"
+    },
+    {
+      "file": "Detections/DeviceFileEvents/PEfiledroppedinColorDriversFolder.yaml.md",
+      "source_title": "PEfiledroppedinColorDriversFolder.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceFileEvents/PEfiledroppedinColorDriversFolder.yaml",
+      "section": "PEfiledroppedinColorDriversFolder.yaml"
+    },
+    {
+      "file": "Detections/DeviceFileEvents/SolarWinds_SUNBURST_&_SUPERNOVA_File-IOCs.yaml.md",
+      "source_title": "SolarWinds_SUNBURST_&_SUPERNOVA_File-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceFileEvents/SolarWinds_SUNBURST_&_SUPERNOVA_File-IOCs.yaml",
+      "section": "SolarWinds_SUNBURST_&_SUPERNOVA_File-IOCs.yaml"
+    },
+    {
+      "file": "Detections/DeviceNetworkEvents/SolarWinds_SUNBURST_Network-IOCs.yaml.md",
+      "source_title": "SolarWinds_SUNBURST_Network-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceNetworkEvents/SolarWinds_SUNBURST_Network-IOCs.yaml",
+      "section": "SolarWinds_SUNBURST_Network-IOCs.yaml"
+    },
+    {
+      "file": "Detections/DeviceProcessEvents/AdFind_Usage.yaml.md",
+      "source_title": "AdFind_Usage.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceProcessEvents/AdFind_Usage.yaml",
+      "section": "AdFind_Usage.yaml"
+    },
+    {
+      "file": "Detections/DeviceProcessEvents/SolarWinds_SUNBURST_Process-IOCs.yaml.md",
+      "source_title": "SolarWinds_SUNBURST_Process-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DeviceProcessEvents/SolarWinds_SUNBURST_Process-IOCs.yaml",
+      "section": "SolarWinds_SUNBURST_Process-IOCs.yaml"
+    },
+    {
+      "file": "Detections/DnsEvents/DNS_HighNXDomainCount_detection.yaml.md",
+      "source_title": "DNS_HighNXDomainCount_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/DNS_HighNXDomainCount_detection.yaml",
+      "section": "DNS_HighNXDomainCount_detection.yaml"
+    },
+    {
+      "file": "Detections/DnsEvents/DNS_HighReverseDNSCount_detection.yaml.md",
+      "source_title": "DNS_HighReverseDNSCount_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/DNS_HighReverseDNSCount_detection.yaml",
+      "section": "DNS_HighReverseDNSCount_detection.yaml"
+    },
+    {
+      "file": "Detections/DnsEvents/DNS_Miners.yaml.md",
+      "source_title": "DNS_Miners.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/DNS_Miners.yaml",
+      "section": "DNS_Miners.yaml"
+    },
+    {
+      "file": "Detections/DnsEvents/DNS_TorProxies.yaml.md",
+      "source_title": "DNS_TorProxies.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/DNS_TorProxies.yaml",
+      "section": "DNS_TorProxies.yaml"
+    },
+    {
+      "file": "Detections/DnsEvents/NRT_DNS_Related_To_Mining_Pools.yaml.md",
+      "source_title": "NRT_DNS_Related_To_Mining_Pools.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/NRT_DNS_Related_To_Mining_Pools.yaml",
+      "section": "NRT_DNS_Related_To_Mining_Pools.yaml"
+    },
+    {
+      "file": "Detections/DuoSecurity/IPEntity_DuoSecurity.yaml.md",
+      "source_title": "IPEntity_DuoSecurity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DuoSecurity/IPEntity_DuoSecurity.yaml",
+      "section": "IPEntity_DuoSecurity.yaml"
+    },
+    {
+      "file": "Detections/DuoSecurity/TrustMonitorEvent.yaml.md",
+      "source_title": "TrustMonitorEvent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DuoSecurity/TrustMonitorEvent.yaml",
+      "section": "TrustMonitorEvent.yaml"
+    },
+    {
+      "file": "Detections/GitHub/(Preview) GitHub - Activities from Infrequent Country.yaml.md",
+      "source_title": "(Preview) GitHub - Activities from Infrequent Country.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/(Preview) GitHub - Activities from Infrequent Country.yaml",
+      "section": "(Preview) GitHub - Activities from Infrequent Country.yaml"
+    },
+    {
+      "file": "Detections/GitHub/(Preview) GitHub - Two Factor Authentication Disabled in GitHub.yaml.md",
+      "source_title": "(Preview) GitHub - Two Factor Authentication Disabled in GitHub.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/(Preview) GitHub - Two Factor Authentication Disabled in GitHub.yaml",
+      "section": "(Preview) GitHub - Two Factor Authentication Disabled in GitHub.yaml"
+    },
+    {
+      "file": "Detections/GitHub/NRT Two Factor Authentication Disabled.yaml.md",
+      "source_title": "NRT Two Factor Authentication Disabled.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/NRT Two Factor Authentication Disabled.yaml",
+      "section": "NRT Two Factor Authentication Disabled.yaml"
+    },
+    {
+      "file": "Detections/GitHub/Security Vulnerability in Repo.yaml.md",
+      "source_title": "Security Vulnerability in Repo.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/Security Vulnerability in Repo.yaml",
+      "section": "Security Vulnerability in Repo.yaml"
+    },
+    {
+      "file": "Detections/GitHub/Threat Intel Matches to GitHub Audit Logs.yaml.md",
+      "source_title": "Threat Intel Matches to GitHub Audit Logs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/GitHub/Threat Intel Matches to GitHub Audit Logs.yaml",
+      "section": "Threat Intel Matches to GitHub Audit Logs.yaml"
+    },
+    {
+      "file": "Detections/Heartbeat/MissingDCHearbeat.yaml.md",
+      "source_title": "MissingDCHearbeat.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Heartbeat/MissingDCHearbeat.yaml",
+      "section": "MissingDCHearbeat.yaml"
+    },
+    {
+      "file": "Detections/Heartbeat/OMI_vulnerability_detection.yaml.md",
+      "source_title": "OMI_vulnerability_detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Heartbeat/OMI_vulnerability_detection.yaml",
+      "section": "OMI_vulnerability_detection.yaml"
+    },
+    {
+      "file": "Detections/LAQueryLogs/UserSearchingForVIPUserActivity.yaml.md",
+      "source_title": "UserSearchingForVIPUserActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/LAQueryLogs/UserSearchingForVIPUserActivity.yaml",
+      "section": "UserSearchingForVIPUserActivity.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AADAWSConsoleCorrelation.yaml.md",
+      "source_title": "AADAWSConsoleCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AADAWSConsoleCorrelation.yaml",
+      "section": "AADAWSConsoleCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AADHostLoginCorrelation.yaml.md",
+      "source_title": "AADHostLoginCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AADHostLoginCorrelation.yaml",
+      "section": "AADHostLoginCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AAD_PAVPN_Correlation.yaml.md",
+      "source_title": "AAD_PAVPN_Correlation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AAD_PAVPN_Correlation.yaml",
+      "section": "AAD_PAVPN_Correlation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ADFS-DKM-MasterKey-Export.yaml.md",
+      "source_title": "ADFS-DKM-MasterKey-Export.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ADFS-DKM-MasterKey-Export.yaml",
+      "section": "ADFS-DKM-MasterKey-Export.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AWSConsoleAADCorrelation.yaml.md",
+      "source_title": "AWSConsoleAADCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AWSConsoleAADCorrelation.yaml",
+      "section": "AWSConsoleAADCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Accountcreatedfromnon-approvedsources.yaml.md",
+      "source_title": "Accountcreatedfromnon-approvedsources.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Accountcreatedfromnon-approvedsources.yaml",
+      "section": "Accountcreatedfromnon-approvedsources.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AdditionalFilesUploadedByActor.yaml.md",
+      "source_title": "AdditionalFilesUploadedByActor.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AdditionalFilesUploadedByActor.yaml",
+      "section": "AdditionalFilesUploadedByActor.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AnomalousIPUsageFollowedByTeamsAction.yaml.md",
+      "source_title": "AnomalousIPUsageFollowedByTeamsAction.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AnomalousIPUsageFollowedByTeamsAction.yaml",
+      "section": "AnomalousIPUsageFollowedByTeamsAction.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AquaBlizzardFeb2022.yaml.md",
+      "source_title": "AquaBlizzardFeb2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AquaBlizzardFeb2022.yaml",
+      "section": "AquaBlizzardFeb2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AuditPolicyManipulation_using_auditpol.yaml.md",
+      "source_title": "AuditPolicyManipulation_using_auditpol.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AuditPolicyManipulation_using_auditpol.yaml",
+      "section": "AuditPolicyManipulation_using_auditpol.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/AuthenticationMethodsChangedforPrivilegedAccount.yaml.md",
+      "source_title": "AuthenticationMethodsChangedforPrivilegedAccount.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/AuthenticationMethodsChangedforPrivilegedAccount.yaml",
+      "section": "AuthenticationMethodsChangedforPrivilegedAccount.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/B64IPInURLFromMDE.yaml.md",
+      "source_title": "B64IPInURLFromMDE.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/B64IPInURLFromMDE.yaml",
+      "section": "B64IPInURLFromMDE.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/B64UserInWebURIFromMDE.yaml.md",
+      "source_title": "B64UserInWebURIFromMDE.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/B64UserInWebURIFromMDE.yaml",
+      "section": "B64UserInWebURIFromMDE.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/BariumDomainIOC112020.yaml.md",
+      "source_title": "BariumDomainIOC112020.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/BariumDomainIOC112020.yaml",
+      "section": "BariumDomainIOC112020.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/BariumIPIOC112020.yaml.md",
+      "source_title": "BariumIPIOC112020.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/BariumIPIOC112020.yaml",
+      "section": "BariumIPIOC112020.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/BrutforceAttemptOnAzurePortalAndAWSConsolAtSameTime.yaml.md",
+      "source_title": "BrutforceAttemptOnAzurePortalAndAWSConsolAtSameTime.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/BrutforceAttemptOnAzurePortalAndAWSConsolAtSameTime.yaml",
+      "section": "BrutforceAttemptOnAzurePortalAndAWSConsolAtSameTime.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/COMRegistryKeyModifiedtoPointtoFileinColorDrivers.yaml.md",
+      "source_title": "COMRegistryKeyModifiedtoPointtoFileinColorDrivers.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/COMRegistryKeyModifiedtoPointtoFileinColorDrivers.yaml",
+      "section": "COMRegistryKeyModifiedtoPointtoFileinColorDrivers.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/CadetBlizzard_Jan2022_IOC.yaml.md",
+      "source_title": "CadetBlizzard_Jan2022_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/CadetBlizzard_Jan2022_IOC.yaml",
+      "section": "CadetBlizzard_Jan2022_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/CaramelTsunami_IOC.yaml.md",
+      "source_title": "CaramelTsunami_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/CaramelTsunami_IOC.yaml",
+      "section": "CaramelTsunami_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ChiaCryptoMining.yaml.md",
+      "source_title": "ChiaCryptoMining.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ChiaCryptoMining.yaml",
+      "section": "ChiaCryptoMining.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Cross-CloudSuspiciousComputeResourcecreationinGCP.yaml.md",
+      "source_title": "Cross-CloudSuspiciousComputeResourcecreationinGCP.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Cross-CloudSuspiciousComputeResourcecreationinGCP.yaml",
+      "section": "Cross-CloudSuspiciousComputeResourcecreationinGCP.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/CrossCloudSuspiciousUserActivityObservedInGCPEnvourment.yaml.md",
+      "source_title": "CrossCloudSuspiciousUserActivityObservedInGCPEnvourment.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/CrossCloudSuspiciousUserActivityObservedInGCPEnvourment.yaml",
+      "section": "CrossCloudSuspiciousUserActivityObservedInGCPEnvourment.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/CrossCloudUnauthorizedCredentialsAccessDetection.yaml.md",
+      "source_title": "CrossCloudUnauthorizedCredentialsAccessDetection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/CrossCloudUnauthorizedCredentialsAccessDetection.yaml",
+      "section": "CrossCloudUnauthorizedCredentialsAccessDetection.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DEV-0322_SolarWinds_Serv-U_IOC.yaml.md",
+      "source_title": "DEV-0322_SolarWinds_Serv-U_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DEV-0322_SolarWinds_Serv-U_IOC.yaml",
+      "section": "DEV-0322_SolarWinds_Serv-U_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DenimTsunamiAVDetection.yaml.md",
+      "source_title": "DenimTsunamiAVDetection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DenimTsunamiAVDetection.yaml",
+      "section": "DenimTsunamiAVDetection.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DenimTsunamiC2DomainsJuly2022.yaml.md",
+      "source_title": "DenimTsunamiC2DomainsJuly2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DenimTsunamiC2DomainsJuly2022.yaml",
+      "section": "DenimTsunamiC2DomainsJuly2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DenimTsunamiFileHashesJuly2022.yaml.md",
+      "source_title": "DenimTsunamiFileHashesJuly2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DenimTsunamiFileHashesJuly2022.yaml",
+      "section": "DenimTsunamiFileHashesJuly2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0228FilePathHashesNovember2021.yaml.md",
+      "source_title": "Dev-0228FilePathHashesNovember2021.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0228FilePathHashesNovember2021.yaml",
+      "section": "Dev-0228FilePathHashesNovember2021.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0270NewUserSep2022.yaml.md",
+      "source_title": "Dev-0270NewUserSep2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270NewUserSep2022.yaml",
+      "section": "Dev-0270NewUserSep2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0270PowershellSep2022.yaml.md",
+      "source_title": "Dev-0270PowershellSep2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270PowershellSep2022.yaml",
+      "section": "Dev-0270PowershellSep2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0270RegistryIOCSep2022.yaml.md",
+      "source_title": "Dev-0270RegistryIOCSep2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270RegistryIOCSep2022.yaml",
+      "section": "Dev-0270RegistryIOCSep2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0270WMICDiscoverySep2022.yaml.md",
+      "source_title": "Dev-0270WMICDiscoverySep2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0270WMICDiscoverySep2022.yaml",
+      "section": "Dev-0270WMICDiscoverySep2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0530_FileExtRename.yaml.md",
+      "source_title": "Dev-0530_FileExtRename.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0530_FileExtRename.yaml",
+      "section": "Dev-0530_FileExtRename.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Dev-0530_July2022.yaml.md",
+      "source_title": "Dev-0530_July2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Dev-0530_July2022.yaml",
+      "section": "Dev-0530_July2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DiamondSleetJan272021IOCs.yaml.md",
+      "source_title": "DiamondSleetJan272021IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DiamondSleetJan272021IOCs.yaml",
+      "section": "DiamondSleetJan272021IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DiamondSleetOct292020IOCs.yaml.md",
+      "source_title": "DiamondSleetOct292020IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DiamondSleetOct292020IOCs.yaml",
+      "section": "DiamondSleetOct292020IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/DisabledAccIPSigninWithRareRiskyOps.yaml.md",
+      "source_title": "DisabledAccIPSigninWithRareRiskyOps.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/DisabledAccIPSigninWithRareRiskyOps.yaml",
+      "section": "DisabledAccIPSigninWithRareRiskyOps.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/EUROPIUM _September2022.yaml.md",
+      "source_title": "EUROPIUM _September2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/EUROPIUM _September2022.yaml",
+      "section": "EUROPIUM _September2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/EmailAccessviaActiveSync.yaml.md",
+      "source_title": "EmailAccessviaActiveSync.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/EmailAccessviaActiveSync.yaml",
+      "section": "EmailAccessviaActiveSync.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/EmeraldSleetIOCs.yaml.md",
+      "source_title": "EmeraldSleetIOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/EmeraldSleetIOCs.yaml",
+      "section": "EmeraldSleetIOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/EuropiumUnusualIdentity.yaml.md",
+      "source_title": "EuropiumUnusualIdentity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/EuropiumUnusualIdentity.yaml",
+      "section": "EuropiumUnusualIdentity.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ExchangeServerVulnerabilitiesMarch2021IoCs.yaml.md",
+      "source_title": "ExchangeServerVulnerabilitiesMarch2021IoCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ExchangeServerVulnerabilitiesMarch2021IoCs.yaml",
+      "section": "ExchangeServerVulnerabilitiesMarch2021IoCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ExchangeWorkerProcessMakingRemoteCall.yaml.md",
+      "source_title": "ExchangeWorkerProcessMakingRemoteCall.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ExchangeWorkerProcessMakingRemoteCall.yaml",
+      "section": "ExchangeWorkerProcessMakingRemoteCall.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ForestBlizzardJuly2019IOCs.yaml.md",
+      "source_title": "ForestBlizzardJuly2019IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ForestBlizzardJuly2019IOCs.yaml",
+      "section": "ForestBlizzardJuly2019IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ForestBlizzardOct292020IOCs.yaml.md",
+      "source_title": "ForestBlizzardOct292020IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ForestBlizzardOct292020IOCs.yaml",
+      "section": "ForestBlizzardOct292020IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/GainCodeExecutionADFSviaWMI.yaml.md",
+      "source_title": "GainCodeExecutionADFSviaWMI.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/GainCodeExecutionADFSviaWMI.yaml",
+      "section": "GainCodeExecutionADFSviaWMI.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/GraniteTyphoonIOCs.yaml.md",
+      "source_title": "GraniteTyphoonIOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/GraniteTyphoonIOCs.yaml",
+      "section": "GraniteTyphoonIOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/HiveRansomwareJuly2022.yaml.md",
+      "source_title": "HiveRansomwareJuly2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/HiveRansomwareJuly2022.yaml",
+      "section": "HiveRansomwareJuly2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/HostAADCorrelation.yaml.md",
+      "source_title": "HostAADCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/HostAADCorrelation.yaml",
+      "section": "HostAADCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/KnownMintSandstormDomainsIP-October2020.yaml.md",
+      "source_title": "KnownMintSandstormDomainsIP-October2020.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/KnownMintSandstormDomainsIP-October2020.yaml",
+      "section": "KnownMintSandstormDomainsIP-October2020.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Log4J_IPIOC_Dec112021.yaml.md",
+      "source_title": "Log4J_IPIOC_Dec112021.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Log4J_IPIOC_Dec112021.yaml",
+      "section": "Log4J_IPIOC_Dec112021.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MFADisable.yaml.md",
+      "source_title": "MFADisable.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MFADisable.yaml",
+      "section": "MFADisable.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MSHTMLVuln.yaml.md",
+      "source_title": "MSHTMLVuln.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MSHTMLVuln.yaml",
+      "section": "MSHTMLVuln.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MailBoxTampering.yaml.md",
+      "source_title": "MailBoxTampering.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MailBoxTampering.yaml",
+      "section": "MailBoxTampering.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MalformedUserAgents.yaml.md",
+      "source_title": "MalformedUserAgents.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MalformedUserAgents.yaml",
+      "section": "MalformedUserAgents.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Manganese_VPN-IOCs.yaml.md",
+      "source_title": "Manganese_VPN-IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Manganese_VPN-IOCs.yaml",
+      "section": "Manganese_VPN-IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Mercury_Log4j_August2022.yaml.md",
+      "source_title": "Mercury_Log4j_August2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Mercury_Log4j_August2022.yaml",
+      "section": "Mercury_Log4j_August2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MidnightBlizzard_DomainIOCsMarch2021.yaml.md",
+      "source_title": "MidnightBlizzard_DomainIOCsMarch2021.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MidnightBlizzard_DomainIOCsMarch2021.yaml",
+      "section": "MidnightBlizzard_DomainIOCsMarch2021.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MidnightBlizzard_FoggyWeb.yaml.md",
+      "source_title": "MidnightBlizzard_FoggyWeb.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MidnightBlizzard_FoggyWeb.yaml",
+      "section": "MidnightBlizzard_FoggyWeb.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MidnightBlizzard_IOCsMay2021.yaml.md",
+      "source_title": "MidnightBlizzard_IOCsMay2021.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MidnightBlizzard_IOCsMay2021.yaml",
+      "section": "MidnightBlizzard_IOCsMay2021.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/MultiplePasswordresetsbyUser.yaml.md",
+      "source_title": "MultiplePasswordresetsbyUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/MultiplePasswordresetsbyUser.yaml",
+      "section": "MultiplePasswordresetsbyUser.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/NetworkEndpointCorrelation.yaml.md",
+      "source_title": "NetworkEndpointCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/NetworkEndpointCorrelation.yaml",
+      "section": "NetworkEndpointCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/NewUserAgentLast24h.yaml.md",
+      "source_title": "NewUserAgentLast24h.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/NewUserAgentLast24h.yaml",
+      "section": "NewUserAgentLast24h.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/NylonTyphoonIOCsNov2021.yaml.md",
+      "source_title": "NylonTyphoonIOCsNov2021.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/NylonTyphoonIOCsNov2021.yaml",
+      "section": "NylonTyphoonIOCsNov2021.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PHOSPHORUSMarch2019IOCs.yaml.md",
+      "source_title": "PHOSPHORUSMarch2019IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PHOSPHORUSMarch2019IOCs.yaml",
+      "section": "PHOSPHORUSMarch2019IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PhishinglinkExecutionObserved.yaml.md",
+      "source_title": "PhishinglinkExecutionObserved.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PhishinglinkExecutionObserved.yaml",
+      "section": "PhishinglinkExecutionObserved.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PlaidRainIPIoC.yaml.md",
+      "source_title": "PlaidRainIPIoC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PlaidRainIPIoC.yaml",
+      "section": "PlaidRainIPIoC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PotentialBuildProcessCompromiseMDE.yaml.md",
+      "source_title": "PotentialBuildProcessCompromiseMDE.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PotentialBuildProcessCompromiseMDE.yaml",
+      "section": "PotentialBuildProcessCompromiseMDE.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PotentialFodhelperUACBypass(ASIMVersion).yaml.md",
+      "source_title": "PotentialFodhelperUACBypass(ASIMVersion).yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PotentialFodhelperUACBypass(ASIMVersion).yaml",
+      "section": "PotentialFodhelperUACBypass(ASIMVersion).yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PotentialMercury_Webshell.yaml.md",
+      "source_title": "PotentialMercury_Webshell.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PotentialMercury_Webshell.yaml",
+      "section": "PotentialMercury_Webshell.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PrestigeRansomwareIOCsOct22.yaml.md",
+      "source_title": "PrestigeRansomwareIOCsOct22.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PrestigeRansomwareIOCsOct22.yaml",
+      "section": "PrestigeRansomwareIOCsOct22.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/PrivilegedAccountsSigninFailureSpikes.yaml.md",
+      "source_title": "PrivilegedAccountsSigninFailureSpikes.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/PrivilegedAccountsSigninFailureSpikes.yaml",
+      "section": "PrivilegedAccountsSigninFailureSpikes.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/RiskyUserIn3Pnetworkactivity.yaml.md",
+      "source_title": "RiskyUserIn3Pnetworkactivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/RiskyUserIn3Pnetworkactivity.yaml",
+      "section": "RiskyUserIn3Pnetworkactivity.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/RubySleetOct292020IOCs.yaml.md",
+      "source_title": "RubySleetOct292020IOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/RubySleetOct292020IOCs.yaml",
+      "section": "RubySleetOct292020IOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/RunCommandUEBABreach.yaml.md",
+      "source_title": "RunCommandUEBABreach.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/RunCommandUEBABreach.yaml",
+      "section": "RunCommandUEBABreach.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SUNSPOTHashes.yaml.md",
+      "source_title": "SUNSPOTHashes.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SUNSPOTHashes.yaml",
+      "section": "SUNSPOTHashes.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SUNSPOTLogFile.yaml.md",
+      "source_title": "SUNSPOTLogFile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SUNSPOTLogFile.yaml",
+      "section": "SUNSPOTLogFile.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SeashellBlizzardIOCs.yaml.md",
+      "source_title": "SeashellBlizzardIOCs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SeashellBlizzardIOCs.yaml",
+      "section": "SeashellBlizzardIOCs.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SecurityServiceRegistryACLModification.yaml.md",
+      "source_title": "SecurityServiceRegistryACLModification.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SecurityServiceRegistryACLModification.yaml",
+      "section": "SecurityServiceRegistryACLModification.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SigninFirewallCorrelation.yaml.md",
+      "source_title": "SigninFirewallCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SigninFirewallCorrelation.yaml",
+      "section": "SigninFirewallCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SilkTyphoonUmServiceSuspiciousFile.yaml.md",
+      "source_title": "SilkTyphoonUmServiceSuspiciousFile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SilkTyphoonUmServiceSuspiciousFile.yaml",
+      "section": "SilkTyphoonUmServiceSuspiciousFile.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Solorigate-Network-Beacon.yaml.md",
+      "source_title": "Solorigate-Network-Beacon.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Solorigate-Network-Beacon.yaml",
+      "section": "Solorigate-Network-Beacon.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Solorigate-VM-Network.yaml.md",
+      "source_title": "Solorigate-VM-Network.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Solorigate-VM-Network.yaml",
+      "section": "Solorigate-VM-Network.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/StarBlizzardDomainsAugust2022.yaml.md",
+      "source_title": "StarBlizzardDomainsAugust2022.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/StarBlizzardDomainsAugust2022.yaml",
+      "section": "StarBlizzardDomainsAugust2022.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SuccessfulAWSConsoleLoginfromIPAddressObservedConductingPasswordSpray.yaml.md",
+      "source_title": "SuccessfulAWSConsoleLoginfromIPAddressObservedConductingPasswordSpray.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SuccessfulAWSConsoleLoginfromIPAddressObservedConductingPasswordSpray.yaml",
+      "section": "SuccessfulAWSConsoleLoginfromIPAddressObservedConductingPasswordSpray.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SucessfullSiginFromPhingLink.yaml.md",
+      "source_title": "SucessfullSiginFromPhingLink.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SucessfullSiginFromPhingLink.yaml",
+      "section": "SucessfullSiginFromPhingLink.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SuspiciousAWSConsolLoginByCredentialAceessAlerts.yaml.md",
+      "source_title": "SuspiciousAWSConsolLoginByCredentialAceessAlerts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SuspiciousAWSConsolLoginByCredentialAceessAlerts.yaml",
+      "section": "SuspiciousAWSConsolLoginByCredentialAceessAlerts.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SuspiciousLoginfromDeletedExternalIdentities.yaml.md",
+      "source_title": "SuspiciousLoginfromDeletedExternalIdentities.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SuspiciousLoginfromDeletedExternalIdentities.yaml",
+      "section": "SuspiciousLoginfromDeletedExternalIdentities.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SuspiciousModificationofGlobalAdminProperties.yaml.md",
+      "source_title": "SuspiciousModificationofGlobalAdminProperties.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SuspiciousModificationofGlobalAdminProperties.yaml",
+      "section": "SuspiciousModificationofGlobalAdminProperties.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/SuspiciousVMInstanceCreationActivity.yaml.md",
+      "source_title": "SuspiciousVMInstanceCreationActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/SuspiciousVMInstanceCreationActivity.yaml",
+      "section": "SuspiciousVMInstanceCreationActivity.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/TarraskHashIoC.yaml.md",
+      "source_title": "TarraskHashIoC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/TarraskHashIoC.yaml",
+      "section": "TarraskHashIoC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/TimeSeriesAnomaly-MultiVendor_DataExfiltration.yaml.md",
+      "source_title": "TimeSeriesAnomaly-MultiVendor_DataExfiltration.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/TimeSeriesAnomaly-MultiVendor_DataExfiltration.yaml",
+      "section": "TimeSeriesAnomaly-MultiVendor_DataExfiltration.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/Unauthorized_user_access_across_AWS_and_Azure.yaml.md",
+      "source_title": "Unauthorized_user_access_across_AWS_and_Azure.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/Unauthorized_user_access_across_AWS_and_Azure.yaml",
+      "section": "Unauthorized_user_access_across_AWS_and_Azure.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/UnusualGuestActivity.yaml.md",
+      "source_title": "UnusualGuestActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/UnusualGuestActivity.yaml",
+      "section": "UnusualGuestActivity.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/UserAgentSearch_log4j.yaml.md",
+      "source_title": "UserAgentSearch_log4j.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/UserAgentSearch_log4j.yaml",
+      "section": "UserAgentSearch_log4j.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/UserImpersonateByAAID.yaml.md",
+      "source_title": "UserImpersonateByAAID.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/UserImpersonateByAAID.yaml",
+      "section": "UserImpersonateByAAID.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/UserImpersonateByRiskyUser.yaml.md",
+      "source_title": "UserImpersonateByRiskyUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/UserImpersonateByRiskyUser.yaml",
+      "section": "UserImpersonateByRiskyUser.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/WSLMalwareCorrelation.yaml.md",
+      "source_title": "WSLMalwareCorrelation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/WSLMalwareCorrelation.yaml",
+      "section": "WSLMalwareCorrelation.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ZincOctober2022_AVHits_IOC.yaml.md",
+      "source_title": "ZincOctober2022_AVHits_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ZincOctober2022_AVHits_IOC.yaml",
+      "section": "ZincOctober2022_AVHits_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ZincOctober2022_Filename_Commandline_IOC.yaml.md",
+      "source_title": "ZincOctober2022_Filename_Commandline_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ZincOctober2022_Filename_Commandline_IOC.yaml",
+      "section": "ZincOctober2022_Filename_Commandline_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/ZincOctober2022_IP_Domain_Hash_IOC.yaml.md",
+      "source_title": "ZincOctober2022_IP_Domain_Hash_IOC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ZincOctober2022_IP_Domain_Hash_IOC.yaml",
+      "section": "ZincOctober2022_IP_Domain_Hash_IOC.yaml"
+    },
+    {
+      "file": "Detections/MultipleDataSources/powershell_MangoSandstorm.yaml.md",
+      "source_title": "powershell_MangoSandstorm.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/powershell_MangoSandstorm.yaml",
+      "section": "powershell_MangoSandstorm.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/BEC_MailboxRule.yaml.md",
+      "source_title": "BEC_MailboxRule.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/BEC_MailboxRule.yaml",
+      "section": "BEC_MailboxRule.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/External User added to Team and immediately uploads file.yaml.md",
+      "source_title": "External User added to Team and immediately uploads file.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/External User added to Team and immediately uploads file.yaml",
+      "section": "External User added to Team and immediately uploads file.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml.md",
+      "source_title": "ExternalUserAddedRemovedInTeams.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml",
+      "section": "ExternalUserAddedRemovedInTeams.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/ForestBlizzardCredHarvesting.yaml.md",
+      "source_title": "ForestBlizzardCredHarvesting.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/ForestBlizzardCredHarvesting.yaml",
+      "section": "ForestBlizzardCredHarvesting.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/MailItemsAccessedTimeSeries.yaml.md",
+      "source_title": "MailItemsAccessedTimeSeries.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/MailItemsAccessedTimeSeries.yaml",
+      "section": "MailItemsAccessedTimeSeries.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/Mail_redirect_via_ExO_transport_rule.yaml.md",
+      "source_title": "Mail_redirect_via_ExO_transport_rule.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/Mail_redirect_via_ExO_transport_rule.yaml",
+      "section": "Mail_redirect_via_ExO_transport_rule.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/Malicious_Inbox_Rule.yaml.md",
+      "source_title": "Malicious_Inbox_Rule.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/Malicious_Inbox_Rule.yaml",
+      "section": "Malicious_Inbox_Rule.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/MultipleTeamsDeletes.yaml.md",
+      "source_title": "MultipleTeamsDeletes.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/MultipleTeamsDeletes.yaml",
+      "section": "MultipleTeamsDeletes.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/NRT_Malicious_Inbox_Rule.yaml.md",
+      "source_title": "NRT_Malicious_Inbox_Rule.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/NRT_Malicious_Inbox_Rule.yaml",
+      "section": "NRT_Malicious_Inbox_Rule.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/NRT_Office_MailForwarding.yaml.md",
+      "source_title": "NRT_Office_MailForwarding.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/NRT_Office_MailForwarding.yaml",
+      "section": "NRT_Office_MailForwarding.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/Office_MailForwarding.yaml.md",
+      "source_title": "Office_MailForwarding.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/Office_MailForwarding.yaml",
+      "section": "Office_MailForwarding.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/Office_Uploaded_Executables.yaml.md",
+      "source_title": "Office_Uploaded_Executables.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/Office_Uploaded_Executables.yaml",
+      "section": "Office_Uploaded_Executables.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/RareOfficeOperations.yaml.md",
+      "source_title": "RareOfficeOperations.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/RareOfficeOperations.yaml",
+      "section": "RareOfficeOperations.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/SharePoint_Downloads_byNewIP.yaml.md",
+      "source_title": "SharePoint_Downloads_byNewIP.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/SharePoint_Downloads_byNewIP.yaml",
+      "section": "SharePoint_Downloads_byNewIP.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/SharePoint_Downloads_byNewUserAgent.yaml.md",
+      "source_title": "SharePoint_Downloads_byNewUserAgent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/SharePoint_Downloads_byNewUserAgent.yaml",
+      "section": "SharePoint_Downloads_byNewUserAgent.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/exchange_auditlogdisabled.yaml.md",
+      "source_title": "exchange_auditlogdisabled.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/exchange_auditlogdisabled.yaml",
+      "section": "exchange_auditlogdisabled.yaml"
+    },
+    {
+      "file": "Detections/OfficeActivity/office_policytampering.yaml.md",
+      "source_title": "office_policytampering.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/OfficeActivity/office_policytampering.yaml",
+      "section": "office_policytampering.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODBinaryInAttachment.yaml.md",
+      "source_title": "ProofpointPODBinaryInAttachment.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODBinaryInAttachment.yaml",
+      "section": "ProofpointPODBinaryInAttachment.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODDataExfiltrationToPrivateEmail.yaml.md",
+      "source_title": "ProofpointPODDataExfiltrationToPrivateEmail.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODDataExfiltrationToPrivateEmail.yaml",
+      "section": "ProofpointPODDataExfiltrationToPrivateEmail.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODEmailSenderIPinTIList.yaml.md",
+      "source_title": "ProofpointPODEmailSenderIPinTIList.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODEmailSenderIPinTIList.yaml",
+      "section": "ProofpointPODEmailSenderIPinTIList.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODEmailSenderInTIList.yaml.md",
+      "source_title": "ProofpointPODEmailSenderInTIList.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODEmailSenderInTIList.yaml",
+      "section": "ProofpointPODEmailSenderInTIList.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODHighRiskNotDiscarded.yaml.md",
+      "source_title": "ProofpointPODHighRiskNotDiscarded.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODHighRiskNotDiscarded.yaml",
+      "section": "ProofpointPODHighRiskNotDiscarded.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml.md",
+      "source_title": "ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml",
+      "section": "ProofpointPODMultipleArchivedAttachmentsToSameRecipient.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODMultipleLargeEmailsToSameRecipient.yaml.md",
+      "source_title": "ProofpointPODMultipleLargeEmailsToSameRecipient.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODMultipleLargeEmailsToSameRecipient.yaml",
+      "section": "ProofpointPODMultipleLargeEmailsToSameRecipient.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODMultipleProtectedEmailsToUnknownRecipient.yaml.md",
+      "source_title": "ProofpointPODMultipleProtectedEmailsToUnknownRecipient.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODMultipleProtectedEmailsToUnknownRecipient.yaml",
+      "section": "ProofpointPODMultipleProtectedEmailsToUnknownRecipient.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODSuspiciousAttachment.yaml.md",
+      "source_title": "ProofpointPODSuspiciousAttachment.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODSuspiciousAttachment.yaml",
+      "section": "ProofpointPODSuspiciousAttachment.yaml"
+    },
+    {
+      "file": "Detections/ProofpointPOD/ProofpointPODWeakCiphers.yaml.md",
+      "source_title": "ProofpointPODWeakCiphers.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODWeakCiphers.yaml",
+      "section": "ProofpointPODWeakCiphers.yaml"
+    },
+    {
+      "file": "Detections/PulseConnectSecure/PulseConnectSecureVPN-CVE_2021_22893_Exploit.yaml.md",
+      "source_title": "PulseConnectSecureVPN-CVE_2021_22893_Exploit.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/PulseConnectSecure/PulseConnectSecureVPN-CVE_2021_22893_Exploit.yaml",
+      "section": "PulseConnectSecureVPN-CVE_2021_22893_Exploit.yaml"
+    },
+    {
+      "file": "Detections/QualysVM/HighNumberofVulnDetected.yaml.md",
+      "source_title": "HighNumberofVulnDetected.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/QualysVM/HighNumberofVulnDetected.yaml",
+      "section": "HighNumberofVulnDetected.yaml"
+    },
+    {
+      "file": "Detections/QualysVM/NewHighSeverityVulnDetectedAcrossMulitpleHosts.yaml.md",
+      "source_title": "NewHighSeverityVulnDetectedAcrossMulitpleHosts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/QualysVM/NewHighSeverityVulnDetectedAcrossMulitpleHosts.yaml",
+      "section": "NewHighSeverityVulnDetectedAcrossMulitpleHosts.yaml"
+    },
+    {
+      "file": "Detections/QualysVMV2/HighNumberofVulnDetectedV2.yaml.md",
+      "source_title": "HighNumberofVulnDetectedV2.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/QualysVMV2/HighNumberofVulnDetectedV2.yaml",
+      "section": "HighNumberofVulnDetectedV2.yaml"
+    },
+    {
+      "file": "Detections/QualysVMV2/NewHighSeverityVulnDetectedAcrossMulitpleHostsV2.yaml.md",
+      "source_title": "NewHighSeverityVulnDetectedAcrossMulitpleHostsV2.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/QualysVMV2/NewHighSeverityVulnDetectedAcrossMulitpleHostsV2.yaml",
+      "section": "NewHighSeverityVulnDetectedAcrossMulitpleHostsV2.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/AVSpringShell.yaml.md",
+      "source_title": "AVSpringShell.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AVSpringShell.yaml",
+      "section": "AVSpringShell.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/AVTarrask.yaml.md",
+      "source_title": "AVTarrask.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AVTarrask.yaml",
+      "section": "AVTarrask.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/AVdetectionsrelatedtoUkrainebasedthreats.yaml.md",
+      "source_title": "AVdetectionsrelatedtoUkrainebasedthreats.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AVdetectionsrelatedtoUkrainebasedthreats.yaml",
+      "section": "AVdetectionsrelatedtoUkrainebasedthreats.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/AquaBlizzardAVHits.yaml.md",
+      "source_title": "AquaBlizzardAVHits.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AquaBlizzardAVHits.yaml",
+      "section": "AquaBlizzardAVHits.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/CoreBackupDeletionwithSecurityAlert.yaml.md",
+      "source_title": "CoreBackupDeletionwithSecurityAlert.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/CoreBackupDeletionwithSecurityAlert.yaml",
+      "section": "CoreBackupDeletionwithSecurityAlert.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/CorrelateIPC_Unfamiliar-Atypical.yaml.md",
+      "source_title": "CorrelateIPC_Unfamiliar-Atypical.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/CorrelateIPC_Unfamiliar-Atypical.yaml",
+      "section": "CorrelateIPC_Unfamiliar-Atypical.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/DetectPIMAlertDisablingActivity.yaml.md",
+      "source_title": "DetectPIMAlertDisablingActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/DetectPIMAlertDisablingActivity.yaml",
+      "section": "DetectPIMAlertDisablingActivity.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/Dev-0530AVHits.yaml.md",
+      "source_title": "Dev-0530AVHits.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/Dev-0530AVHits.yaml",
+      "section": "Dev-0530AVHits.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/EuropiumAVHits.yaml.md",
+      "source_title": "EuropiumAVHits.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/EuropiumAVHits.yaml",
+      "section": "EuropiumAVHits.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/HiveRansomwareAVHits.yaml.md",
+      "source_title": "HiveRansomwareAVHits.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/HiveRansomwareAVHits.yaml",
+      "section": "HiveRansomwareAVHits.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/MDE_hitsforADFandAzureSynapsePipelines.yaml.md",
+      "source_title": "MDE_hitsforADFandAzureSynapsePipelines.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/MDE_hitsforADFandAzureSynapsePipelines.yaml",
+      "section": "MDE_hitsforADFandAzureSynapsePipelines.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/Massdownload_USBFileCopy.yaml.md",
+      "source_title": "Massdownload_USBFileCopy.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/Massdownload_USBFileCopy.yaml",
+      "section": "Massdownload_USBFileCopy.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/Solorigate-Defender-Detections.yaml.md",
+      "source_title": "Solorigate-Defender-Detections.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/Solorigate-Defender-Detections.yaml",
+      "section": "Solorigate-Defender-Detections.yaml"
+    },
+    {
+      "file": "Detections/SecurityAlert/Suspicious_WorkSpaceDeletion_Attempt.yaml.md",
+      "source_title": "Suspicious_WorkSpaceDeletion_Attempt.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/Suspicious_WorkSpaceDeletion_Attempt.yaml",
+      "section": "Suspicious_WorkSpaceDeletion_Attempt.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/AADHealthMonAgentRegKeyAccess.yaml.md",
+      "source_title": "AADHealthMonAgentRegKeyAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/AADHealthMonAgentRegKeyAccess.yaml",
+      "section": "AADHealthMonAgentRegKeyAccess.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/AADHealthSvcAgentRegKeyAccess.yaml.md",
+      "source_title": "AADHealthSvcAgentRegKeyAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/AADHealthSvcAgentRegKeyAccess.yaml",
+      "section": "AADHealthSvcAgentRegKeyAccess.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ADFSAbnormalEnhancedKeyUsageAttribute-OID.yaml.md",
+      "source_title": "ADFSAbnormalEnhancedKeyUsageAttribute-OID.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ADFSAbnormalEnhancedKeyUsageAttribute-OID.yaml",
+      "section": "ADFSAbnormalEnhancedKeyUsageAttribute-OID.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ADFSDBNamedPipeConnection.yaml.md",
+      "source_title": "ADFSDBNamedPipeConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ADFSDBNamedPipeConnection.yaml",
+      "section": "ADFSDBNamedPipeConnection.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ADFSRemoteAuthSyncConnection.yaml.md",
+      "source_title": "ADFSRemoteAuthSyncConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ADFSRemoteAuthSyncConnection.yaml",
+      "section": "ADFSRemoteAuthSyncConnection.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ADFSRemoteHTTPNetworkConnection.yaml.md",
+      "source_title": "ADFSRemoteHTTPNetworkConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ADFSRemoteHTTPNetworkConnection.yaml",
+      "section": "ADFSRemoteHTTPNetworkConnection.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/AccessibilityFeaturesModification.yaml.md",
+      "source_title": "AccessibilityFeaturesModification.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/AccessibilityFeaturesModification.yaml",
+      "section": "AccessibilityFeaturesModification.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/AdminSDHolder_Modifications.yaml.md",
+      "source_title": "AdminSDHolder_Modifications.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/AdminSDHolder_Modifications.yaml",
+      "section": "AdminSDHolder_Modifications.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/COMEventSystemLoadingNewDLL.yaml.md",
+      "source_title": "COMEventSystemLoadingNewDLL.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/COMEventSystemLoadingNewDLL.yaml",
+      "section": "COMEventSystemLoadingNewDLL.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/CredentialDumpingServiceInstallation.yaml.md",
+      "source_title": "CredentialDumpingServiceInstallation.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/CredentialDumpingServiceInstallation.yaml",
+      "section": "CredentialDumpingServiceInstallation.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/CredentialDumpingToolsFileArtifacts.yaml.md",
+      "source_title": "CredentialDumpingToolsFileArtifacts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/CredentialDumpingToolsFileArtifacts.yaml",
+      "section": "CredentialDumpingToolsFileArtifacts.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/DSRMAccountAbuse.yaml.md",
+      "source_title": "DSRMAccountAbuse.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/DSRMAccountAbuse.yaml",
+      "section": "DSRMAccountAbuse.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/DumpingLSASSProcessIntoaFile.yaml.md",
+      "source_title": "DumpingLSASSProcessIntoaFile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/DumpingLSASSProcessIntoaFile.yaml",
+      "section": "DumpingLSASSProcessIntoaFile.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ExcessiveLogonFailures.yaml.md",
+      "source_title": "ExcessiveLogonFailures.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ExcessiveLogonFailures.yaml",
+      "section": "ExcessiveLogonFailures.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ExchangeOABVirtualDirectoryAttributeContainingPotentialWebshell.yaml.md",
+      "source_title": "ExchangeOABVirtualDirectoryAttributeContainingPotentialWebshell.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ExchangeOABVirtualDirectoryAttributeContainingPotentialWebshell.yaml",
+      "section": "ExchangeOABVirtualDirectoryAttributeContainingPotentialWebshell.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/FakeComputerAccountCreated.yaml.md",
+      "source_title": "FakeComputerAccountCreated.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/FakeComputerAccountCreated.yaml",
+      "section": "FakeComputerAccountCreated.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/GainCodeExecutionADFSViaSMB.yaml.md",
+      "source_title": "GainCodeExecutionADFSViaSMB.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/GainCodeExecutionADFSViaSMB.yaml",
+      "section": "GainCodeExecutionADFSViaSMB.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/GroupCreatedAddedToPrivlegeGroup_1h.yaml.md",
+      "source_title": "GroupCreatedAddedToPrivlegeGroup_1h.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/GroupCreatedAddedToPrivlegeGroup_1h.yaml",
+      "section": "GroupCreatedAddedToPrivlegeGroup_1h.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/LateralMovementViaDCOM.yaml.md",
+      "source_title": "LateralMovementViaDCOM.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/LateralMovementViaDCOM.yaml",
+      "section": "LateralMovementViaDCOM.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/LocalDeviceJoinInfoAndTransportKeyRegKeysAccess.yaml.md",
+      "source_title": "LocalDeviceJoinInfoAndTransportKeyRegKeysAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/LocalDeviceJoinInfoAndTransportKeyRegKeysAccess.yaml",
+      "section": "LocalDeviceJoinInfoAndTransportKeyRegKeysAccess.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/MacroInvokingShellBrowserWindowCOMObjects.yaml.md",
+      "source_title": "MacroInvokingShellBrowserWindowCOMObjects.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/MacroInvokingShellBrowserWindowCOMObjects.yaml",
+      "section": "MacroInvokingShellBrowserWindowCOMObjects.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/MidnightBlizzard_SuspiciousRundll32Exec.yaml.md",
+      "source_title": "MidnightBlizzard_SuspiciousRundll32Exec.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/MidnightBlizzard_SuspiciousRundll32Exec.yaml",
+      "section": "MidnightBlizzard_SuspiciousRundll32Exec.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/MidnightBlizzard_SuspiciousScriptRegistryWrite.yaml.md",
+      "source_title": "MidnightBlizzard_SuspiciousScriptRegistryWrite.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/MidnightBlizzard_SuspiciousScriptRegistryWrite.yaml",
+      "section": "MidnightBlizzard_SuspiciousScriptRegistryWrite.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/MultipleFailedFollowedBySuccess.yaml.md",
+      "source_title": "MultipleFailedFollowedBySuccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/MultipleFailedFollowedBySuccess.yaml",
+      "section": "MultipleFailedFollowedBySuccess.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/NRT_SecurityEventLogCleared.yaml.md",
+      "source_title": "NRT_SecurityEventLogCleared.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/NRT_SecurityEventLogCleared.yaml",
+      "section": "NRT_SecurityEventLogCleared.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/NRT_base64_encoded_pefile.yaml.md",
+      "source_title": "NRT_base64_encoded_pefile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/NRT_base64_encoded_pefile.yaml",
+      "section": "NRT_base64_encoded_pefile.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/NRT_execute_base64_decodedpayload.yaml.md",
+      "source_title": "NRT_execute_base64_decodedpayload.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/NRT_execute_base64_decodedpayload.yaml",
+      "section": "NRT_execute_base64_decodedpayload.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies.yaml.md",
+      "source_title": "NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies.yaml",
+      "section": "NewEXEdeployedviaDefaultDomainorDefaultDomainControllerPolicies.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/NonDCActiveDirectoryReplication.yaml.md",
+      "source_title": "NonDCActiveDirectoryReplication.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/NonDCActiveDirectoryReplication.yaml",
+      "section": "NonDCActiveDirectoryReplication.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/PotenialResourceBasedConstrainedDelegationAbuse.yaml.md",
+      "source_title": "PotenialResourceBasedConstrainedDelegationAbuse.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/PotenialResourceBasedConstrainedDelegationAbuse.yaml",
+      "section": "PotenialResourceBasedConstrainedDelegationAbuse.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/PotentialBuildProcessCompromise.yaml.md",
+      "source_title": "PotentialBuildProcessCompromise.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/PotentialBuildProcessCompromise.yaml",
+      "section": "PotentialBuildProcessCompromise.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/PotentialFodhelperUACBypass.yaml.md",
+      "source_title": "PotentialFodhelperUACBypass.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/PotentialFodhelperUACBypass.yaml",
+      "section": "PotentialFodhelperUACBypass.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/PotentialKerberoast.yaml.md",
+      "source_title": "PotentialKerberoast.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/PotentialKerberoast.yaml",
+      "section": "PotentialKerberoast.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/PotentialRemoteDesktopTunneling.yaml.md",
+      "source_title": "PotentialRemoteDesktopTunneling.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/PotentialRemoteDesktopTunneling.yaml",
+      "section": "PotentialRemoteDesktopTunneling.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/Potentialre-namedsdeleteusage.yaml.md",
+      "source_title": "Potentialre-namedsdeleteusage.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/Potentialre-namedsdeleteusage.yaml",
+      "section": "Potentialre-namedsdeleteusage.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/RDP_MultipleConnectionsFromSingleSystem.yaml.md",
+      "source_title": "RDP_MultipleConnectionsFromSingleSystem.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/RDP_MultipleConnectionsFromSingleSystem.yaml",
+      "section": "RDP_MultipleConnectionsFromSingleSystem.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/RDP_Nesting.yaml.md",
+      "source_title": "RDP_Nesting.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/RDP_Nesting.yaml",
+      "section": "RDP_Nesting.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/RDP_RareConnection.yaml.md",
+      "source_title": "RDP_RareConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/RDP_RareConnection.yaml",
+      "section": "RDP_RareConnection.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/RegistryPersistenceViaAppCertDLLModification.yaml.md",
+      "source_title": "RegistryPersistenceViaAppCertDLLModification.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/RegistryPersistenceViaAppCertDLLModification.yaml",
+      "section": "RegistryPersistenceViaAppCertDLLModification.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/RegistryPersistenceViaAppInt_DLLsModification.yaml.md",
+      "source_title": "RegistryPersistenceViaAppInt_DLLsModification.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/RegistryPersistenceViaAppInt_DLLsModification.yaml",
+      "section": "RegistryPersistenceViaAppInt_DLLsModification.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/ScheduleTaskHide.yaml.md",
+      "source_title": "ScheduleTaskHide.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/ScheduleTaskHide.yaml",
+      "section": "ScheduleTaskHide.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/SdeletedeployedviaGPOandrunrecursively.yaml.md",
+      "source_title": "SdeletedeployedviaGPOandrunrecursively.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/SdeletedeployedviaGPOandrunrecursively.yaml",
+      "section": "SdeletedeployedviaGPOandrunrecursively.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/SecurityEventLogCleared.yaml.md",
+      "source_title": "SecurityEventLogCleared.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/SecurityEventLogCleared.yaml",
+      "section": "SecurityEventLogCleared.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/SilkTyphoonNewUMServiceChildProcess.yaml.md",
+      "source_title": "SilkTyphoonNewUMServiceChildProcess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/SilkTyphoonNewUMServiceChildProcess.yaml",
+      "section": "SilkTyphoonNewUMServiceChildProcess.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/SilkTyphoonSuspiciousUMServiceError.yaml.md",
+      "source_title": "SilkTyphoonSuspiciousUMServiceError.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/SilkTyphoonSuspiciousUMServiceError.yaml",
+      "section": "SilkTyphoonSuspiciousUMServiceError.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/SolorigateNamedPipe.yaml.md",
+      "source_title": "SolorigateNamedPipe.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/SolorigateNamedPipe.yaml",
+      "section": "SolorigateNamedPipe.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/StartStopHealthService.yaml.md",
+      "source_title": "StartStopHealthService.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/StartStopHealthService.yaml",
+      "section": "StartStopHealthService.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/TimeSeriesAnomaly-ProcessExecutions.yaml.md",
+      "source_title": "TimeSeriesAnomaly-ProcessExecutions.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/TimeSeriesAnomaly-ProcessExecutions.yaml",
+      "section": "TimeSeriesAnomaly-ProcessExecutions.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserAccountAdd-Removed.yaml.md",
+      "source_title": "UserAccountAdd-Removed.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserAccountAdd-Removed.yaml",
+      "section": "UserAccountAdd-Removed.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserAccountAddedToPrivlegeGroup_1h.yaml.md",
+      "source_title": "UserAccountAddedToPrivlegeGroup_1h.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserAccountAddedToPrivlegeGroup_1h.yaml",
+      "section": "UserAccountAddedToPrivlegeGroup_1h.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserAccountCreatedDeleted_10m.yaml.md",
+      "source_title": "UserAccountCreatedDeleted_10m.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserAccountCreatedDeleted_10m.yaml",
+      "section": "UserAccountCreatedDeleted_10m.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserAccountEnabledDisabled_10m.yaml.md",
+      "source_title": "UserAccountEnabledDisabled_10m.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserAccountEnabledDisabled_10m.yaml",
+      "section": "UserAccountEnabledDisabled_10m.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserCreatedAddedToBuiltinAdmins_1d.yaml.md",
+      "source_title": "UserCreatedAddedToBuiltinAdmins_1d.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserCreatedAddedToBuiltinAdmins_1d.yaml",
+      "section": "UserCreatedAddedToBuiltinAdmins_1d.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/UserPrincipalNameAssignedToUserAccount.yaml.md",
+      "source_title": "UserPrincipalNameAssignedToUserAccount.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/UserPrincipalNameAssignedToUserAccount.yaml",
+      "section": "UserPrincipalNameAssignedToUserAccount.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/WDigestDowngradeAttack.yaml.md",
+      "source_title": "WDigestDowngradeAttack.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/WDigestDowngradeAttack.yaml",
+      "section": "WDigestDowngradeAttack.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/WindowsBinariesExecutedfromNon-DefaultDirectory.yaml.md",
+      "source_title": "WindowsBinariesExecutedfromNon-DefaultDirectory.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/WindowsBinariesExecutedfromNon-DefaultDirectory.yaml",
+      "section": "WindowsBinariesExecutedfromNon-DefaultDirectory.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/WindowsBinariesLolbinsRenamed.yaml.md",
+      "source_title": "WindowsBinariesLolbinsRenamed.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/WindowsBinariesLolbinsRenamed.yaml",
+      "section": "WindowsBinariesLolbinsRenamed.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/base64_encoded_pefile.yaml.md",
+      "source_title": "base64_encoded_pefile.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/base64_encoded_pefile.yaml",
+      "section": "base64_encoded_pefile.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/execute_base64_decodedpayload.yaml.md",
+      "source_title": "execute_base64_decodedpayload.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/execute_base64_decodedpayload.yaml",
+      "section": "execute_base64_decodedpayload.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/gte_6_FailedLogons_10m.yaml.md",
+      "source_title": "gte_6_FailedLogons_10m.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/gte_6_FailedLogons_10m.yaml",
+      "section": "gte_6_FailedLogons_10m.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/malware_in_recyclebin.yaml.md",
+      "source_title": "malware_in_recyclebin.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/malware_in_recyclebin.yaml",
+      "section": "malware_in_recyclebin.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/password_never_expires.yaml.md",
+      "source_title": "password_never_expires.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/password_never_expires.yaml",
+      "section": "password_never_expires.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/password_not_set.yaml.md",
+      "source_title": "password_not_set.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/password_not_set.yaml",
+      "section": "password_not_set.yaml"
+    },
+    {
+      "file": "Detections/SecurityEvent/powershell_empire.yaml.md",
+      "source_title": "powershell_empire.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityEvent/powershell_empire.yaml",
+      "section": "powershell_empire.yaml"
+    },
+    {
+      "file": "Detections/SecurityNestedRecommendation/Log4jVulnerableMachines.yaml.md",
+      "source_title": "Log4jVulnerableMachines.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityNestedRecommendation/Log4jVulnerableMachines.yaml",
+      "section": "Log4jVulnerableMachines.yaml"
+    },
+    {
+      "file": "Detections/SecurityNestedRecommendation/OMIGODVulnerableMachines.yaml.md",
+      "source_title": "OMIGODVulnerableMachines.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityNestedRecommendation/OMIGODVulnerableMachines.yaml",
+      "section": "OMIGODVulnerableMachines.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/ADFSSignInLogsPasswordSpray.yaml.md",
+      "source_title": "ADFSSignInLogsPasswordSpray.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/ADFSSignInLogsPasswordSpray.yaml",
+      "section": "ADFSSignInLogsPasswordSpray.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AnomalousSingleFactorSignin.yaml.md",
+      "source_title": "AnomalousSingleFactorSignin.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AnomalousSingleFactorSignin.yaml",
+      "section": "AnomalousSingleFactorSignin.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AnomalousUserAppSigninLocationIncrease-detection.yaml.md",
+      "source_title": "AnomalousUserAppSigninLocationIncrease-detection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AnomalousUserAppSigninLocationIncrease-detection.yaml",
+      "section": "AnomalousUserAppSigninLocationIncrease-detection.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AuthenticationAttemptfromNewCountry.yaml.md",
+      "source_title": "AuthenticationAttemptfromNewCountry.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AuthenticationAttemptfromNewCountry.yaml",
+      "section": "AuthenticationAttemptfromNewCountry.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AuthenticationsofPrivilegedAccountsOutsideofExpectedControls.yaml.md",
+      "source_title": "AuthenticationsofPrivilegedAccountsOutsideofExpectedControls.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AuthenticationsofPrivilegedAccountsOutsideofExpectedControls.yaml",
+      "section": "AuthenticationsofPrivilegedAccountsOutsideofExpectedControls.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AzureAADPowerShellAnomaly.yaml.md",
+      "source_title": "AzureAADPowerShellAnomaly.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AzureAADPowerShellAnomaly.yaml",
+      "section": "AzureAADPowerShellAnomaly.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/AzurePortalSigninfromanotherAzureTenant.yaml.md",
+      "source_title": "AzurePortalSigninfromanotherAzureTenant.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/AzurePortalSigninfromanotherAzureTenant.yaml",
+      "section": "AzurePortalSigninfromanotherAzureTenant.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/Brute Force Attack against GitHub Account.yaml.md",
+      "source_title": "Brute Force Attack against GitHub Account.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/Brute Force Attack against GitHub Account.yaml",
+      "section": "Brute Force Attack against GitHub Account.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/BruteForceCloudPC.yaml.md",
+      "source_title": "BruteForceCloudPC.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/BruteForceCloudPC.yaml",
+      "section": "BruteForceCloudPC.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/BypassCondAccessRule.yaml.md",
+      "source_title": "BypassCondAccessRule.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/BypassCondAccessRule.yaml",
+      "section": "BypassCondAccessRule.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/DisabledAccountSigninsAcrossManyApplications.yaml.md",
+      "source_title": "DisabledAccountSigninsAcrossManyApplications.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/DisabledAccountSigninsAcrossManyApplications.yaml",
+      "section": "DisabledAccountSigninsAcrossManyApplications.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/DistribPassCrackAttempt.yaml.md",
+      "source_title": "DistribPassCrackAttempt.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/DistribPassCrackAttempt.yaml",
+      "section": "DistribPassCrackAttempt.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/ExplicitMFADeny.yaml.md",
+      "source_title": "ExplicitMFADeny.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/ExplicitMFADeny.yaml",
+      "section": "ExplicitMFADeny.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/FailedLogonToAzurePortal.yaml.md",
+      "source_title": "FailedLogonToAzurePortal.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/FailedLogonToAzurePortal.yaml",
+      "section": "FailedLogonToAzurePortal.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/MFARejectedbyUser.yaml.md",
+      "source_title": "MFARejectedbyUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/MFARejectedbyUser.yaml",
+      "section": "MFARejectedbyUser.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/NRT_MFARejectedbyUser.yaml.md",
+      "source_title": "NRT_MFARejectedbyUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/NRT_MFARejectedbyUser.yaml",
+      "section": "NRT_MFARejectedbyUser.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/NewCountryValidCreds.yaml.md",
+      "source_title": "NewCountryValidCreds.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/NewCountryValidCreds.yaml",
+      "section": "NewCountryValidCreds.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/PrivilegedUserLogonfromnewASN.yaml.md",
+      "source_title": "PrivilegedUserLogonfromnewASN.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/PrivilegedUserLogonfromnewASN.yaml",
+      "section": "PrivilegedUserLogonfromnewASN.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/SeamlessSSOPasswordSpray.yaml.md",
+      "source_title": "SeamlessSSOPasswordSpray.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/SeamlessSSOPasswordSpray.yaml",
+      "section": "SeamlessSSOPasswordSpray.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/ServicePrincipalAuthenticationAttemptfromNewCountry.yaml.md",
+      "source_title": "ServicePrincipalAuthenticationAttemptfromNewCountry.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/ServicePrincipalAuthenticationAttemptfromNewCountry.yaml",
+      "section": "ServicePrincipalAuthenticationAttemptfromNewCountry.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/Sign-in Burst from Multiple Locations.yaml.md",
+      "source_title": "Sign-in Burst from Multiple Locations.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/Sign-in Burst from Multiple Locations.yaml",
+      "section": "Sign-in Burst from Multiple Locations.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/SigninAttemptsByIPviaDisabledAccounts.yaml.md",
+      "source_title": "SigninAttemptsByIPviaDisabledAccounts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/SigninAttemptsByIPviaDisabledAccounts.yaml",
+      "section": "SigninAttemptsByIPviaDisabledAccounts.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/SigninBruteForce-AzurePortal.yaml.md",
+      "source_title": "SigninBruteForce-AzurePortal.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/SigninBruteForce-AzurePortal.yaml",
+      "section": "SigninBruteForce-AzurePortal.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/SigninPasswordSpray.yaml.md",
+      "source_title": "SigninPasswordSpray.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/SigninPasswordSpray.yaml",
+      "section": "SigninPasswordSpray.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/SuccessThenFail_DiffIP_SameUserandApp.yaml.md",
+      "source_title": "SuccessThenFail_DiffIP_SameUserandApp.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/SuccessThenFail_DiffIP_SameUserandApp.yaml",
+      "section": "SuccessThenFail_DiffIP_SameUserandApp.yaml"
+    },
+    {
+      "file": "Detections/SigninLogs/UserAccounts-CABlockedSigninSpikes.yaml.md",
+      "source_title": "UserAccounts-CABlockedSigninSpikes.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/UserAccounts-CABlockedSigninSpikes.yaml",
+      "section": "UserAccounts-CABlockedSigninSpikes.yaml"
+    },
+    {
+      "file": "Detections/Syslog/FailedLogonAttempts_UnknownUser.yaml.md",
+      "source_title": "FailedLogonAttempts_UnknownUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Syslog/FailedLogonAttempts_UnknownUser.yaml",
+      "section": "FailedLogonAttempts_UnknownUser.yaml"
+    },
+    {
+      "file": "Detections/Syslog/NRT_squid_events_for_mining_pools.yaml.md",
+      "source_title": "NRT_squid_events_for_mining_pools.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Syslog/NRT_squid_events_for_mining_pools.yaml",
+      "section": "NRT_squid_events_for_mining_pools.yaml"
+    },
+    {
+      "file": "Detections/Syslog/squid_cryptomining_pools.yaml.md",
+      "source_title": "squid_cryptomining_pools.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Syslog/squid_cryptomining_pools.yaml",
+      "section": "squid_cryptomining_pools.yaml"
+    },
+    {
+      "file": "Detections/Syslog/squid_tor_proxies.yaml.md",
+      "source_title": "squid_tor_proxies.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Syslog/squid_tor_proxies.yaml",
+      "section": "squid_tor_proxies.yaml"
+    },
+    {
+      "file": "Detections/Syslog/ssh_potentialBruteForce.yaml.md",
+      "source_title": "ssh_potentialBruteForce.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/Syslog/ssh_potentialBruteForce.yaml",
+      "section": "ssh_potentialBruteForce.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_CommonSecurityLog.yaml.md",
+      "source_title": "DomainEntity_CommonSecurityLog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_CommonSecurityLog.yaml",
+      "section": "DomainEntity_CommonSecurityLog.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_DnsEvents.yaml.md",
+      "source_title": "DomainEntity_DnsEvents.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_DnsEvents.yaml",
+      "section": "DomainEntity_DnsEvents.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_PaloAlto.yaml.md",
+      "source_title": "DomainEntity_PaloAlto.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_PaloAlto.yaml",
+      "section": "DomainEntity_PaloAlto.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_SecurityAlert.yaml.md",
+      "source_title": "DomainEntity_SecurityAlert.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_SecurityAlert.yaml",
+      "section": "DomainEntity_SecurityAlert.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_Syslog.yaml.md",
+      "source_title": "DomainEntity_Syslog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_Syslog.yaml",
+      "section": "DomainEntity_Syslog.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/DomainEntity_imWebSession.yaml.md",
+      "source_title": "DomainEntity_imWebSession.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_imWebSession.yaml",
+      "section": "DomainEntity_imWebSession.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_AzureActivity.yaml.md",
+      "source_title": "EmailEntity_AzureActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_AzureActivity.yaml",
+      "section": "EmailEntity_AzureActivity.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_OfficeActivity.yaml.md",
+      "source_title": "EmailEntity_OfficeActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_OfficeActivity.yaml",
+      "section": "EmailEntity_OfficeActivity.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_PaloAlto.yaml.md",
+      "source_title": "EmailEntity_PaloAlto.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_PaloAlto.yaml",
+      "section": "EmailEntity_PaloAlto.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_SecurityAlert.yaml.md",
+      "source_title": "EmailEntity_SecurityAlert.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_SecurityAlert.yaml",
+      "section": "EmailEntity_SecurityAlert.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_SecurityEvent.yaml.md",
+      "source_title": "EmailEntity_SecurityEvent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_SecurityEvent.yaml",
+      "section": "EmailEntity_SecurityEvent.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/EmailEntity_SigninLogs.yaml.md",
+      "source_title": "EmailEntity_SigninLogs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/EmailEntity_SigninLogs.yaml",
+      "section": "EmailEntity_SigninLogs.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/FileHashEntity_CommonSecurityLog.yaml.md",
+      "source_title": "FileHashEntity_CommonSecurityLog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/FileHashEntity_CommonSecurityLog.yaml",
+      "section": "FileHashEntity_CommonSecurityLog.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/FileHashEntity_SecurityEvent.yaml.md",
+      "source_title": "FileHashEntity_SecurityEvent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/FileHashEntity_SecurityEvent.yaml",
+      "section": "FileHashEntity_SecurityEvent.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AWSCloudTrail.yaml.md",
+      "source_title": "IPEntity_AWSCloudTrail.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AWSCloudTrail.yaml",
+      "section": "IPEntity_AWSCloudTrail.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AppServiceHTTPLogs.yaml.md",
+      "source_title": "IPEntity_AppServiceHTTPLogs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AppServiceHTTPLogs.yaml",
+      "section": "IPEntity_AppServiceHTTPLogs.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AzureActivity.yaml.md",
+      "source_title": "IPEntity_AzureActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureActivity.yaml",
+      "section": "IPEntity_AzureActivity.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AzureFirewall.yaml.md",
+      "source_title": "IPEntity_AzureFirewall.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureFirewall.yaml",
+      "section": "IPEntity_AzureFirewall.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AzureKeyVault.yaml.md",
+      "source_title": "IPEntity_AzureKeyVault.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureKeyVault.yaml",
+      "section": "IPEntity_AzureKeyVault.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AzureNetworkAnalytics.yaml.md",
+      "source_title": "IPEntity_AzureNetworkAnalytics.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureNetworkAnalytics.yaml",
+      "section": "IPEntity_AzureNetworkAnalytics.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_AzureSQL.yaml.md",
+      "source_title": "IPEntity_AzureSQL.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_AzureSQL.yaml",
+      "section": "IPEntity_AzureSQL.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_CustomSecurityLog.yaml.md",
+      "source_title": "IPEntity_CustomSecurityLog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_CustomSecurityLog.yaml",
+      "section": "IPEntity_CustomSecurityLog.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_DnsEvents.yaml.md",
+      "source_title": "IPEntity_DnsEvents.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_DnsEvents.yaml",
+      "section": "IPEntity_DnsEvents.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_OfficeActivity.yaml.md",
+      "source_title": "IPEntity_OfficeActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_OfficeActivity.yaml",
+      "section": "IPEntity_OfficeActivity.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_VMConnection.yaml.md",
+      "source_title": "IPEntity_VMConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_VMConnection.yaml",
+      "section": "IPEntity_VMConnection.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_W3CIISLog.yaml.md",
+      "source_title": "IPEntity_W3CIISLog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_W3CIISLog.yaml",
+      "section": "IPEntity_W3CIISLog.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPEntity_imWebSession.yaml.md",
+      "source_title": "IPEntity_imWebSession.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPEntity_imWebSession.yaml",
+      "section": "IPEntity_imWebSession.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/IPentity_SigninLogs.yaml.md",
+      "source_title": "IPentity_SigninLogs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/IPentity_SigninLogs.yaml",
+      "section": "IPentity_SigninLogs.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/URLEntity_AuditLogs.yaml.md",
+      "source_title": "URLEntity_AuditLogs.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/URLEntity_AuditLogs.yaml",
+      "section": "URLEntity_AuditLogs.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/URLEntity_OfficeActivity.yaml.md",
+      "source_title": "URLEntity_OfficeActivity.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/URLEntity_OfficeActivity.yaml",
+      "section": "URLEntity_OfficeActivity.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/URLEntity_PaloAlto.yaml.md",
+      "source_title": "URLEntity_PaloAlto.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/URLEntity_PaloAlto.yaml",
+      "section": "URLEntity_PaloAlto.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/URLEntity_SecurityAlerts.yaml.md",
+      "source_title": "URLEntity_SecurityAlerts.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/URLEntity_SecurityAlerts.yaml",
+      "section": "URLEntity_SecurityAlerts.yaml"
+    },
+    {
+      "file": "Detections/ThreatIntelligenceIndicator/URLEntity_Syslog.yaml.md",
+      "source_title": "URLEntity_Syslog.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/URLEntity_Syslog.yaml",
+      "section": "URLEntity_Syslog.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/AnomomlousUserAgentConnection.yaml.md",
+      "source_title": "AnomomlousUserAgentConnection.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/AnomomlousUserAgentConnection.yaml",
+      "section": "AnomomlousUserAgentConnection.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/HighFailedLogonCountByClientIP.yaml.md",
+      "source_title": "HighFailedLogonCountByClientIP.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/HighFailedLogonCountByClientIP.yaml",
+      "section": "HighFailedLogonCountByClientIP.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/HighFailedLogonCountByUser.yaml.md",
+      "source_title": "HighFailedLogonCountByUser.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/HighFailedLogonCountByUser.yaml",
+      "section": "HighFailedLogonCountByUser.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/HighPortCountByClientIP.yaml.md",
+      "source_title": "HighPortCountByClientIP.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/HighPortCountByClientIP.yaml",
+      "section": "HighPortCountByClientIP.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/MaliciousAlertLinkedWebRequests.yaml.md",
+      "source_title": "MaliciousAlertLinkedWebRequests.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/MaliciousAlertLinkedWebRequests.yaml",
+      "section": "MaliciousAlertLinkedWebRequests.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/ProxyShellPwn2Own.yaml.md",
+      "source_title": "ProxyShellPwn2Own.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/ProxyShellPwn2Own.yaml",
+      "section": "ProxyShellPwn2Own.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/SilkTyphoonSuspiciousExchangeRequestPattern.yaml.md",
+      "source_title": "SilkTyphoonSuspiciousExchangeRequestPattern.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/SilkTyphoonSuspiciousExchangeRequestPattern.yaml",
+      "section": "SilkTyphoonSuspiciousExchangeRequestPattern.yaml"
+    },
+    {
+      "file": "Detections/W3CIISLog/Supernovawebshell.yaml.md",
+      "source_title": "Supernovawebshell.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/W3CIISLog/Supernovawebshell.yaml",
+      "section": "Supernovawebshell.yaml"
+    },
+    {
+      "file": "Detections/WindowsEvents/CaramelTsunami_IOC_WindowsEvent.yaml.md",
+      "source_title": "CaramelTsunami_IOC_WindowsEvent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/WindowsEvents/CaramelTsunami_IOC_WindowsEvent.yaml",
+      "section": "CaramelTsunami_IOC_WindowsEvent.yaml"
+    },
+    {
+      "file": "Detections/WindowsEvents/ChiaCryptoMining_WindowsEvent.yaml.md",
+      "source_title": "ChiaCryptoMining_WindowsEvent.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/WindowsEvents/ChiaCryptoMining_WindowsEvent.yaml",
+      "section": "ChiaCryptoMining_WindowsEvent.yaml"
+    },
+    {
+      "file": "Detections/ZoomLogs/E2EEDisbaled.yaml.md",
+      "source_title": "E2EEDisbaled.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ZoomLogs/E2EEDisbaled.yaml",
+      "section": "E2EEDisbaled.yaml"
+    },
+    {
+      "file": "Detections/ZoomLogs/ExternalUserAccess.yaml.md",
+      "source_title": "ExternalUserAccess.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ZoomLogs/ExternalUserAccess.yaml",
+      "section": "ExternalUserAccess.yaml"
+    },
+    {
+      "file": "Detections/ZoomLogs/JoiningMeetingFromAnotherTimeZone.yaml.md",
+      "source_title": "JoiningMeetingFromAnotherTimeZone.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ZoomLogs/JoiningMeetingFromAnotherTimeZone.yaml",
+      "section": "JoiningMeetingFromAnotherTimeZone.yaml"
+    },
+    {
+      "file": "Detections/ZoomLogs/SupiciousLinkSharing.yaml.md",
+      "source_title": "SupiciousLinkSharing.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ZoomLogs/SupiciousLinkSharing.yaml",
+      "section": "SupiciousLinkSharing.yaml"
+    },
+    {
+      "file": "Detections/http_proxy_oab_CL/ExchagngeSuspiciousFileDownloads.yaml.md",
+      "source_title": "ExchagngeSuspiciousFileDownloads.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/http_proxy_oab_CL/ExchagngeSuspiciousFileDownloads.yaml",
+      "section": "ExchagngeSuspiciousFileDownloads.yaml"
+    },
+    {
+      "file": "Detections/http_proxy_oab_CL/SilkTyphoonSuspiciousFileDownloads.yaml.md",
+      "source_title": "SilkTyphoonSuspiciousFileDownloads.yaml",
+      "source_url": "https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/http_proxy_oab_CL/SilkTyphoonSuspiciousFileDownloads.yaml",
+      "section": "SilkTyphoonSuspiciousFileDownloads.yaml"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "nist-sp800-61-src",
+  "name": "nist-sp800-61-src",
+  "version": "e5593d6bb85d",
+  "title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations",
+  "domain": "defensive",
+  "security_domain": "incident-response",
+  "description": "Imported from https://doi.org/10.6028/NIST.SP.800-61r3 at e5593d6bb85d. 11 documents.",
+  "authority": "NIST",
+  "publisher": "National Institute of Standards and Technology",
+  "trust_level": "official",
+  "licence": "public-domain",
+  "attribution": "NIST Special Publication 800-61 Revision 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management \u2014 a U.S. Government work, not subject to copyright in the United States.",
+  "tags": [
+    "nist",
+    "incident-response",
+    "dfir",
+    "csf",
+    "playbook"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "general"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Current revision (Apr 2025, supersedes SP 800-61r2); re-check for updates.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "nist-sp800-61-src",
+  "upstream_commit": "e5593d6bb85d",
+  "source_urls": [
+    "https://doi.org/10.6028/NIST.SP.800-61r3",
+    "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+  ],
+  "docs": [
+    {
+      "file": "sections/2-0.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 2.0 Community Profile. Doing so provides a common taxonomy that is already widely used for",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "2.0 Community Profile. Doing so provides a common taxonomy that is already widely used for"
+    },
+    {
+      "file": "sections/1.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 1 Introduction",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "1 Introduction"
+    },
+    {
+      "file": "sections/1-1.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 1.1 Purpose and Scope",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "1.1 Purpose and Scope"
+    },
+    {
+      "file": "sections/1-2.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 1.2 Document Structure",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "1.2 Document Structure"
+    },
+    {
+      "file": "sections/2.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 2 Incident Response as Part of Cybersecurity Risk Management",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "2 Incident Response as Part of Cybersecurity Risk Management"
+    },
+    {
+      "file": "sections/2-1.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 2.1 Incident Response Life Cycle Model",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "2.1 Incident Response Life Cycle Model"
+    },
+    {
+      "file": "sections/2-2.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 2.2 Incident Response Roles and Responsibilities",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "2.2 Incident Response Roles and Responsibilities"
+    },
+    {
+      "file": "sections/2-3.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 2.3 Incident Response Policies, Processes, and Procedures",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "2.3 Incident Response Policies, Processes, and Procedures"
+    },
+    {
+      "file": "sections/3.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 3 CSF 2.0 Community Profile for Cyber Incident Risk Management",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "3 CSF 2.0 Community Profile for Cyber Incident Risk Management"
+    },
+    {
+      "file": "sections/3-1.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 3.1 Preparation and Lessons Learned",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "3.1 Preparation and Lessons Learned"
+    },
+    {
+      "file": "sections/3-2.md",
+      "source_title": "NIST SP 800-61r3 \u2014 Incident Response Recommendations and Considerations \u2014 3.2 Incident Response",
+      "source_url": "https://doi.org/10.6028/NIST.SP.800-61r3",
+      "section": "3.2 Incident Response"
+    }
+  ]
+}

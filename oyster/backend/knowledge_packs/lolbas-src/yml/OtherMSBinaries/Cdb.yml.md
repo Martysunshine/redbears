@@ -1,0 +1,61 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Cdb.yml -->
+---
+Name: Cdb.exe
+Description: Debugging tool included with Windows Debugging Tools.
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: cdb.exe -cf {PATH:.wds} -o notepad.exe
+    Description: Launch 64-bit shellcode from the specified .wds file using cdb.exe.
+    Usecase: Local execution of assembly shellcode.
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: Shellcode
+  - Command: |
+      cdb.exe -pd -pn {process_name}
+      .shell {CMD}
+    Description: Attaching to any process and executing shell commands.
+    Usecase: Run a shell command under a trusted Microsoft signed binary
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: CMD
+  - Command: cdb.exe -c {PATH:.txt} "{CMD}"
+    Description: Execute arbitrary commands and binaries using a debugging script (see Resources section for a sample file).
+    Usecase: Run commands under a trusted Microsoft signed binary
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: CMD
+Full_Path:
+  - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\cdb.exe
+  - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\cdb.exe
+Code_Sample:
+  - Code: https://gist.github.com/nasbench/d9c15864f1e21bdd8b7cf55997b45f4b
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_cdb.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_unusual_process_network_connection.toml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_network_connection_from_windows_binary.toml
+  - BlockRule: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules
+Resources:
+  - Link: http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+  - Link: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/cdb-command-line-options
+  - Link: https://gist.github.com/mattifestation/94e2b0a9e3fe1ac0a433b5c3e6bd0bda
+  - Link: https://mrd0x.com/the-power-of-cdb-debugging-tool/
+  - Link: https://twitter.com/nas_bench/status/1534957360032120833
+Acknowledgement:
+  - Person: Matt Graeber
+    Handle: '@mattifestation'
+  - Person: mr.d0x
+    Handle: '@mrd0x'
+  - Person: Spooky Sec
+    Handle: '@sec_spooky'
+  - Person: Nasreddine Bencherchali
+    Handle: '@nas_bench'

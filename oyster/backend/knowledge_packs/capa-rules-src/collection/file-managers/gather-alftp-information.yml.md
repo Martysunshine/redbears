@@ -1,0 +1,22 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/file-managers/gather-alftp-information.yml -->
+rule:
+  meta:
+    name: gather alftp information
+    namespace: collection/file-managers
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Credential Access::Credentials from Password Stores [T1555]
+    references:
+      - https://en.wikipedia.org/wiki/ALFTP
+      - https://www.altools.co.kr/Main/Default.aspx
+    examples:
+      - 5a2f620f29ca2f44fc22df67b674198f:0x40A257
+  features:
+    - and:
+      - string: "ESTdb2.dat"
+      - string: "QData.dat"
+      - substring: "\\Estsoft\\ALFTP"

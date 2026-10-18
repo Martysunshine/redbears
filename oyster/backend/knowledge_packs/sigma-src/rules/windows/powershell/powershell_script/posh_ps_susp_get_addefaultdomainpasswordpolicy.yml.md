@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_susp_get_addefaultdomainpasswordpolicy.yml -->
+title: Password Policy Discovery With Get-AdDefaultDomainPasswordPolicy
+id: bbb9495b-58fc-4016-b9df-9a3a1b67ca82
+status: test
+description: Detetcts PowerShell activity in which Get-Addefaultdomainpasswordpolicy is used to get the default password policy for an Active Directory domain.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1201/T1201.md#atomic-test-9---enumerate-active-directory-password-policy-with-get-addefaultdomainpasswordpolicy
+    - https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-addefaultdomainpasswordpolicy?view=windowsserver2022-ps
+author: frack113
+date: 2022-03-17
+tags:
+    - attack.discovery
+    - attack.t1201
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection:
+        ScriptBlockText|contains: Get-AdDefaultDomainPasswordPolicy
+    condition: selection
+falsepositives:
+    - Legitimate PowerShell scripts
+level: low

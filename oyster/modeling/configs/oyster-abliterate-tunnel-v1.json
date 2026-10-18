@@ -1,0 +1,12 @@
+{
+  "schema": "oyster-abliterate-tunnel-v1",
+  "batch_size": 1,
+  "max_prompt_tokens": 96,
+  "activation_stats": "disk-backed incremental means",
+  "source_access": "safetensors safe_open read-only",
+  "materialization": "one tensor per safetensor shard",
+  "checkpoint": "after every tensor",
+  "max_peak_gib": 20.0,
+  "candidate_strengths": [0.2, 0.35, 0.5, 0.65, 0.8, 1.0],
+  "preserve": ["embeddings", "normalization", "lm_head"]
+}

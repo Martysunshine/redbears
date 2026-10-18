@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/application/opencanary/opencanary_sip_request.yml -->
+title: OpenCanary - SIP Request
+id: e30de276-68ec-435c-ab99-ef3befec6c61
+status: test
+description: Detects instances where an SIP service on an OpenCanary node has had a SIP request.
+references:
+    - https://opencanary.readthedocs.io/en/latest/starting/configuration.html#services-configuration
+    - https://github.com/thinkst/opencanary/blob/a0896adfcaf0328cfd5829fe10d2878c7445138e/opencanary/logger.py#L52
+author: Security Onion Solutions
+date: 2024-03-08
+tags:
+    - attack.collection
+    - attack.t1123
+logsource:
+    category: application
+    product: opencanary
+detection:
+    selection:
+        logtype: 15001
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

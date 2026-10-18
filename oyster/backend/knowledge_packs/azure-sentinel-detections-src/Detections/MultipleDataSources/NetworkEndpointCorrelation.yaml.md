@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/NetworkEndpointCorrelation.yaml -->
+id: 5dcdd936-da7a-44ee-9ecf-efee9425fa53
+name: Network endpoint to host executable correlation
+description: |
+    'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials/Analytic%20Rules/NetworkEndpointCorrelation.yaml'
+version: 1.0.2

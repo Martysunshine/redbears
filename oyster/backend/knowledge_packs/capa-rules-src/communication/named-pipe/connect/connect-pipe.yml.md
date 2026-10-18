@@ -1,0 +1,23 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/named-pipe/connect/connect-pipe.yml -->
+rule:
+  meta:
+    name: connect pipe
+    namespace: communication/named-pipe/connect
+    authors:
+      - moritz.raabe@mandiant.com
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: call
+    mbc:
+      - Communication::Interprocess Communication::Connect Pipe [C0003.002]
+    examples:
+      # Windows msdt.exe
+      - 152d4c9f63efb332ccb134c6953c0104:0x42e400
+  features:
+    - or:
+      - api: kernel32.ConnectNamedPipe
+      - api: kernel32.CallNamedPipe
+        description: connect, read, write from pipe in single operation
+      - api: System.IO.Pipes.NamedPipeClientStream::Connect
+      - api: System.IO.Pipes.NamedPipeClientStream::ConnectAsync

@@ -1,0 +1,28 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Dnx.yml -->
+---
+Name: dnx.exe
+Description: .NET Execution environment file included with .NET.
+Author: Oddvar Moe
+Created: 2018-05-25
+Commands:
+  - Command: dnx.exe {PATH_ABSOLUTE:folder}
+    Description: Execute C# code located in the specified folder via 'Program.cs' and 'Project.json' (Note - Requires dependencies)
+    Usecase: Local execution of C# project stored in consoleapp folder.
+    Category: Execute
+    Privileges: User
+    MitreID: T1127
+    OperatingSystem: Windows
+    Tags:
+      - Execute: CSharp
+Full_Path:
+  - Path: no default
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_lolbin_dnx.yml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_unusual_process_network_connection.toml
+  - Elastic: https://github.com/elastic/detection-rules/blob/414d32027632a49fb239abb8fbbb55d3fa8dd861/rules/windows/defense_evasion_network_connection_from_windows_binary.toml
+  - BlockRule: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules
+Resources:
+  - Link: https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/
+Acknowledgement:
+  - Person: Matt Nelson
+    Handle: '@enigma0x3'

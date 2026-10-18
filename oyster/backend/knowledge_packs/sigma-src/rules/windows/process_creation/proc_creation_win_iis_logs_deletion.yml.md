@@ -1,0 +1,48 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_iis_logs_deletion.yml -->
+title: IIS WebServer Log Deletion via CommandLine Utilities
+id: 0649be4a-aeb0-45b0-b89e-7f1668f6d9c0
+related:
+    - id: 3eb8c339-a765-48cc-a150-4364c04652bf
+      type: similar
+status: experimental
+description: |
+    Detects attempts to delete Internet Information Services (IIS) log files via command line utilities, which is a common defense evasion technique used by attackers to cover their tracks.
+    Threat actors often abuse vulnerabilities in web applications hosted on IIS servers to gain initial access and later delete IIS logs to evade detection.
+references:
+    - https://learn.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage
+author: Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2025-09-02
+tags:
+    - attack.stealth
+    - attack.t1070
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith:
+              - '\cmd.exe'
+              - '\powershell_ise.exe'
+              - '\powershell.exe'
+              - '\pwsh.exe'
+        - OriginalFileName:
+              - 'cmd.exe'
+              - 'powershell.exe'
+              - 'powershell_ise.exe'
+              - 'pwsh.dll'
+    selection_cli_del:
+        CommandLine|contains:
+            - 'del '
+            - 'erase '
+            - 'rm '
+            - 'remove-item '
+            - 'rmdir '
+    selection_cli_iis_dir:
+        CommandLine|contains: '\inetpub\logs\'
+    condition: all of selection_*
+falsepositives:
+    - Deletion of IIS logs that are older than a certain retention period as part of regular maintenance activities.
+    - Legitimate schedule tasks or scripts that clean up log files regularly.
+    # More Fp cases
+    # https://learn.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage#02
+level: medium

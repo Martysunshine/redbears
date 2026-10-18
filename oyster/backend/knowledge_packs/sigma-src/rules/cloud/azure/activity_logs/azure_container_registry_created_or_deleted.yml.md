@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/activity_logs/azure_container_registry_created_or_deleted.yml -->
+title: Azure Container Registry Created or Deleted
+id: 93e0ef48-37c8-49ed-a02c-038aab23628e
+status: test
+description: Detects when a Container Registry is created or deleted.
+references:
+    - https://learn.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations#microsoftkubernetes
+    - https://www.microsoft.com/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/
+    - https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/
+    - https://medium.com/mitre-engenuity/att-ck-for-containers-now-available-4c2359654bf1
+author: Austin Songer @austinsonger
+date: 2021-08-07
+modified: 2022-08-23
+tags:
+    - attack.impact
+    - attack.t1485
+    - attack.t1496
+    - attack.t1489
+logsource:
+    product: azure
+    service: activitylogs
+detection:
+    selection:
+        operationName:
+            - MICROSOFT.CONTAINERREGISTRY/REGISTRIES/WRITE
+            - MICROSOFT.CONTAINERREGISTRY/REGISTRIES/DELETE
+    condition: selection
+falsepositives:
+    - Container Registry being created or deleted may be performed by a system administrator. Verify whether the user identity, user agent, and/or hostname should be making changes in your environment.
+    - Container Registry created or deleted from unfamiliar users should be investigated. If known behavior is causing false positives, it can be exempted from the rule.
+level: low

@@ -1,0 +1,21 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/data-manipulation/encryption/get-outbound-credentials-handle-via-credssp.yml -->
+rule:
+  meta:
+    name: get outbound credentials handle via CredSSP
+    namespace: data-manipulation/encryption
+    authors:
+      - matthew.williams@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+    references:
+      - https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea
+      - https://docs.microsoft.com/en-us/windows/win32/secauthn/getting-schannel-credentials
+    examples:
+      - mimikatz.exe_:0x457AAB
+  features:
+    - and:
+      - api: secur32.AcquireCredentialsHandle
+      - number: 2 = fCredentialUse=SECPKG_CRED_OUTBOUND

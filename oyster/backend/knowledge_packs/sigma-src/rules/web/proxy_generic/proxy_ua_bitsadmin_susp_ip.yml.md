@@ -1,0 +1,37 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/proxy_generic/proxy_ua_bitsadmin_susp_ip.yml -->
+title: Bitsadmin to Uncommon IP Server Address
+id: 8ccd35a2-1c7c-468b-b568-ac6cdf80eec3
+status: test
+description: Detects Bitsadmin connections to IP addresses instead of FQDN names
+references:
+    - https://isc.sans.edu/diary/Microsoft+BITS+Used+to+Download+Payloads/21027
+author: Florian Roth (Nextron Systems)
+date: 2022-06-10
+modified: 2022-08-24
+tags:
+    - attack.command-and-control
+    - attack.execution
+    - attack.stealth
+    - attack.t1071.001
+    - attack.persistence
+    - attack.t1197
+    - attack.s0190
+logsource:
+    category: proxy
+detection:
+    selection:
+        c-useragent|startswith: 'Microsoft BITS/'
+        cs-host|endswith:
+            - '1'
+            - '2'
+            - '3'
+            - '4'
+            - '5'
+            - '6'
+            - '7'
+            - '8'
+            - '9'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

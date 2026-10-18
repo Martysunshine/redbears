@@ -1,0 +1,1019 @@
+{
+  "id": "falco-docs-src",
+  "name": "falco-docs-src",
+  "version": "c2cf6a9ef7d1",
+  "title": "Falco Documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://falco.org/docs/ at c2cf6a9ef7d1. 163 documents.",
+  "authority": "Falco / CNCF",
+  "publisher": "The Falco Authors",
+  "trust_level": "official",
+  "licence": "cc-by-4.0",
+  "attribution": "Falco Documentation, The Falco Authors (CNCF), CC BY 4.0.",
+  "tags": [
+    "falco",
+    "runtime-security",
+    "kubernetes",
+    "documentation"
+  ],
+  "applicable_tools": [
+    "falco"
+  ],
+  "applicable_platforms": [
+    "linux",
+    "kubernetes"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "falco-docs-src",
+  "upstream_commit": "c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb",
+  "source_urls": [
+    "https://falco.org/docs/",
+    "https://github.com/falcosecurity/falco-website"
+  ],
+  "docs": [
+    {
+      "file": "content/en/docs/_index.md",
+      "source_title": "What is Falco?",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/_index.md",
+      "section": "What is Falco?"
+    },
+    {
+      "file": "content/en/docs/concepts/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/_index.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/_index.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/kernel/_index.md",
+      "source_title": "Kernel module",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/kernel/_index.md",
+      "section": "Kernel module"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/kernel/architecture.md",
+      "source_title": "How Falco interacts with kernel components",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/kernel/architecture.md",
+      "section": "How Falco interacts with kernel components"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/kernel/dropped-events.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/kernel/dropped-events.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/kernel/sample-events.md",
+      "source_title": "Downloads",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/kernel/sample-events.md",
+      "section": "Downloads"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/kernel/tuning.md",
+      "source_title": "Adaptive syscalls selection",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/kernel/tuning.md",
+      "section": "Adaptive syscalls selection"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/plugins/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/plugins/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/plugins/cloudtrail.md",
+      "source_title": "Configuration",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/plugins/cloudtrail.md",
+      "section": "Configuration"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/plugins/kubernetes-audit.md",
+      "source_title": "What's New in Falco",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/plugins/kubernetes-audit.md",
+      "section": "What's New in Falco"
+    },
+    {
+      "file": "content/en/docs/concepts/event-sources/plugins/okta.md",
+      "source_title": "Configuration",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/event-sources/plugins/okta.md",
+      "section": "Configuration"
+    },
+    {
+      "file": "content/en/docs/concepts/metrics/_index.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/metrics/_index.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/concepts/outputs/_index.md",
+      "source_title": "Integration with third parties",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/outputs/_index.md",
+      "section": "Integration with third parties"
+    },
+    {
+      "file": "content/en/docs/concepts/outputs/channels.md",
+      "source_title": "Standard Output",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/outputs/channels.md",
+      "section": "Standard Output"
+    },
+    {
+      "file": "content/en/docs/concepts/outputs/formatting.md",
+      "source_title": "Appending Extra Output and Fields with `append_output`",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/outputs/formatting.md",
+      "section": "Appending Extra Output and Fields with `append_output`"
+    },
+    {
+      "file": "content/en/docs/concepts/outputs/forwarding.md",
+      "source_title": "Falcosidekick",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/outputs/forwarding.md",
+      "section": "Falcosidekick"
+    },
+    {
+      "file": "content/en/docs/concepts/plugins/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/plugins/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/concepts/plugins/architecture.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/plugins/architecture.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/concepts/plugins/registered-plugins.md",
+      "source_title": "registered-plugins.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/plugins/registered-plugins.md",
+      "section": "registered-plugins.md"
+    },
+    {
+      "file": "content/en/docs/concepts/plugins/usage.md",
+      "source_title": "Loading plugins in Falco",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/plugins/usage.md",
+      "section": "Loading plugins in Falco"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/adoption-rules.md",
+      "source_title": "High-level Phases",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/adoption-rules.md",
+      "section": "High-level Phases"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/basic-elements.md",
+      "source_title": "Rules",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/basic-elements.md",
+      "section": "Rules"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/conditions.md",
+      "source_title": "Operators",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/conditions.md",
+      "section": "Operators"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/controlling-rules.md",
+      "source_title": "Disable Default Rules",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/controlling-rules.md",
+      "section": "Disable Default Rules"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/custom-ruleset.md",
+      "source_title": "Rules Placement",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/custom-ruleset.md",
+      "section": "Rules Placement"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/default-custom.md",
+      "source_title": "The configuration file",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/default-custom.md",
+      "section": "The configuration file"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/exceptions.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/exceptions.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/fd-sip-name.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/fd-sip-name.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/fspath.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/fspath.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/ide-support.md",
+      "source_title": "Emacs",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/ide-support.md",
+      "section": "Emacs"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/overriding.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/overriding.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/special-characters.md",
+      "source_title": "special-characters.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/special-characters.md",
+      "section": "special-characters.md"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/style-guide.md",
+      "source_title": "Style Guide",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/style-guide.md",
+      "section": "Style Guide"
+    },
+    {
+      "file": "content/en/docs/concepts/rules/versioning.md",
+      "source_title": "Falco Engine Versioning",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/concepts/rules/versioning.md",
+      "section": "Falco Engine Versioning"
+    },
+    {
+      "file": "content/en/docs/contribute/_index.md",
+      "source_title": "How can I contribute?",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/contribute/_index.md",
+      "section": "How can I contribute?"
+    },
+    {
+      "file": "content/en/docs/contribute/contributor-of-the-month.md",
+      "source_title": "Falco Contributor of the Month",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/contribute/contributor-of-the-month.md",
+      "section": "Falco Contributor of the Month"
+    },
+    {
+      "file": "content/en/docs/contribute/share-rules.md",
+      "source_title": "share-rules.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/contribute/share-rules.md",
+      "section": "share-rules.md"
+    },
+    {
+      "file": "content/en/docs/developer-guide/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/developer-guide/plugins/_index.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/plugins/_index.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/developer-guide/plugins/how-to-develop.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/plugins/how-to-develop.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/developer-guide/plugins/how-to-distribute.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/plugins/how-to-distribute.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/developer-guide/plugins/how-to-register.md",
+      "source_title": "Plugin Registry",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/plugins/how-to-register.md",
+      "section": "Plugin Registry"
+    },
+    {
+      "file": "content/en/docs/developer-guide/plugins/sdks.md",
+      "source_title": "Plugins SDKs",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/plugins/sdks.md",
+      "section": "Plugins SDKs"
+    },
+    {
+      "file": "content/en/docs/developer-guide/source.md",
+      "source_title": "Dependencies",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/developer-guide/source.md",
+      "section": "Dependencies"
+    },
+    {
+      "file": "content/en/docs/getting-started/_index.md",
+      "source_title": "Try it now",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/_index.md",
+      "section": "Try it now"
+    },
+    {
+      "file": "content/en/docs/getting-started/additional-resources.md",
+      "source_title": "Learn more about Falco",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/additional-resources.md",
+      "section": "Learn more about Falco"
+    },
+    {
+      "file": "content/en/docs/getting-started/docker-quickstart.md",
+      "source_title": "Install Falco",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/docker-quickstart.md",
+      "section": "Install Falco"
+    },
+    {
+      "file": "content/en/docs/getting-started/kubernetes-quickstart.md",
+      "source_title": "Deploy Falco",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/kubernetes-quickstart.md",
+      "section": "Deploy Falco"
+    },
+    {
+      "file": "content/en/docs/getting-started/learning-environments.md",
+      "source_title": "minikube",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/learning-environments.md",
+      "section": "minikube"
+    },
+    {
+      "file": "content/en/docs/getting-started/linux-quickstart.md",
+      "source_title": "Prerequisites",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/getting-started/linux-quickstart.md",
+      "section": "Prerequisites"
+    },
+    {
+      "file": "content/en/docs/reference/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/reference/changelog/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/changelog/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/daemon/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/daemon/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/reference/daemon/cli-arguments/cli-arguments.md",
+      "source_title": "cli-arguments.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/daemon/cli-arguments/cli-arguments.md",
+      "section": "cli-arguments.md"
+    },
+    {
+      "file": "content/en/docs/reference/daemon/cli-arguments/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/daemon/cli-arguments/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/daemon/config-options/index.md",
+      "source_title": "`config_files`",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/daemon/config-options/index.md",
+      "section": "`config_files`"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/abnormal-behavior.md",
+      "source_title": "abnormal-behavior.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/abnormal-behavior.md",
+      "section": "abnormal-behavior.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/alerts.md",
+      "source_title": "alerts.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/alerts.md",
+      "section": "alerts.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/conditions.md",
+      "source_title": "conditions.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/conditions.md",
+      "section": "conditions.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/data-enrichment.md",
+      "source_title": "data-enrichment.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/data-enrichment.md",
+      "section": "data-enrichment.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/detection.md",
+      "source_title": "detection.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/detection.md",
+      "section": "detection.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/drivers.md",
+      "source_title": "drivers.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/drivers.md",
+      "section": "drivers.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/ebpf.md",
+      "source_title": "ebpf.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/ebpf.md",
+      "section": "ebpf.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/event-generator.md",
+      "source_title": "event-generator.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/event-generator.md",
+      "section": "event-generator.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/exceptions.md",
+      "source_title": "exceptions.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/exceptions.md",
+      "section": "exceptions.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/extractor-plugins.md",
+      "source_title": "extractor-plugins.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/extractor-plugins.md",
+      "section": "extractor-plugins.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/falco-exporter.md",
+      "source_title": "falco-exporter.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/falco-exporter.md",
+      "section": "falco-exporter.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/falco.md",
+      "source_title": "falco.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/falco.md",
+      "section": "falco.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/falcoctl.md",
+      "source_title": "falcoctl.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/falcoctl.md",
+      "section": "falcoctl.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/falcosidekick-ui.md",
+      "source_title": "falcosidekick-ui.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/falcosidekick-ui.md",
+      "section": "falcosidekick-ui.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/falcosidekick.md",
+      "source_title": "falcosidekick.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/falcosidekick.md",
+      "section": "falcosidekick.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/fields.md",
+      "source_title": "fields.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/fields.md",
+      "section": "fields.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/intrusion.md",
+      "source_title": "intrusion.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/intrusion.md",
+      "section": "intrusion.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/kernel-module-driver.md",
+      "source_title": "kernel-module-driver.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/kernel-module-driver.md",
+      "section": "kernel-module-driver.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/kernel-module.md",
+      "source_title": "kernel-module.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/kernel-module.md",
+      "section": "kernel-module.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/kernel-space.md",
+      "source_title": "kernel-space.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/kernel-space.md",
+      "section": "kernel-space.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/kernel.md",
+      "source_title": "kernel.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/kernel.md",
+      "section": "kernel.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/kubernetes-audit-log.md",
+      "source_title": "kubernetes-audit-log.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/kubernetes-audit-log.md",
+      "section": "kubernetes-audit-log.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/libscap.md",
+      "source_title": "libscap.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/libscap.md",
+      "section": "libscap.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/libsinsp.md",
+      "source_title": "libsinsp.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/libsinsp.md",
+      "section": "libsinsp.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/lists.md",
+      "source_title": "lists.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/lists.md",
+      "section": "lists.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/macros.md",
+      "source_title": "macros.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/macros.md",
+      "section": "macros.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/modern-ebpf-probe.md",
+      "source_title": "modern-ebpf-probe.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/modern-ebpf-probe.md",
+      "section": "modern-ebpf-probe.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/monitoring.md",
+      "source_title": "monitoring.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/monitoring.md",
+      "section": "monitoring.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/outputs.md",
+      "source_title": "outputs.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/outputs.md",
+      "section": "outputs.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/plugins.md",
+      "source_title": "plugins.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/plugins.md",
+      "section": "plugins.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/priorities.md",
+      "source_title": "priorities.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/priorities.md",
+      "section": "priorities.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/reaction.md",
+      "source_title": "reaction.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/reaction.md",
+      "section": "reaction.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/response-engine.md",
+      "source_title": "response-engine.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/response-engine.md",
+      "section": "response-engine.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/ring-buffer.md",
+      "source_title": "ring-buffer.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/ring-buffer.md",
+      "section": "ring-buffer.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/rules-file.md",
+      "source_title": "rules-file.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/rules-file.md",
+      "section": "rules-file.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/rules.md",
+      "source_title": "rules.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/rules.md",
+      "section": "rules.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/runtime-security.md",
+      "source_title": "runtime-security.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/runtime-security.md",
+      "section": "runtime-security.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/source-plugins.md",
+      "source_title": "source-plugins.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/source-plugins.md",
+      "section": "source-plugins.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/syscalls.md",
+      "source_title": "syscalls.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/syscalls.md",
+      "section": "syscalls.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/tags.md",
+      "source_title": "tags.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/tags.md",
+      "section": "tags.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/tracing.md",
+      "source_title": "tracing.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/tracing.md",
+      "section": "tracing.md"
+    },
+    {
+      "file": "content/en/docs/reference/glossary/user-space.md",
+      "source_title": "user-space.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/user-space.md",
+      "section": "user-space.md"
+    },
+    {
+      "file": "content/en/docs/reference/plugins/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/plugins/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/reference/plugins/go-sdk-walkthrough.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/plugins/go-sdk-walkthrough.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/reference/plugins/plugin-api-reference.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/plugins/plugin-api-reference.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "content/en/docs/reference/rules/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/always_true.md",
+      "source_title": "always_true.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/always_true.md",
+      "section": "always_true.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/bin_dir.md",
+      "source_title": "bin_dir.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/bin_dir.md",
+      "section": "bin_dir.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/container.md",
+      "source_title": "container.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/container.md",
+      "section": "container.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/inbound.md",
+      "source_title": "inbound.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/inbound.md",
+      "section": "inbound.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/inbound_outbound.md",
+      "source_title": "inbound_outbound.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/inbound_outbound.md",
+      "section": "inbound_outbound.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/index.md",
+      "source_title": "File Opened for Writing",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/index.md",
+      "section": "File Opened for Writing"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/interactive.md",
+      "source_title": "interactive.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/interactive.md",
+      "section": "interactive.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/mkdir.md",
+      "source_title": "mkdir.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/mkdir.md",
+      "section": "mkdir.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/modify.md",
+      "source_title": "modify.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/modify.md",
+      "section": "modify.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/never_true.md",
+      "source_title": "never_true.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/never_true.md",
+      "section": "never_true.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/open_read.md",
+      "source_title": "open_read.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/open_read.md",
+      "section": "open_read.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/open_write.md",
+      "source_title": "open_write.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/open_write.md",
+      "section": "open_write.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/outbound.md",
+      "source_title": "outbound.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/outbound.md",
+      "section": "outbound.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/proc_is_new.md",
+      "source_title": "proc_is_new.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/proc_is_new.md",
+      "section": "proc_is_new.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/proc_name_exists.md",
+      "source_title": "proc_name_exists.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/proc_name_exists.md",
+      "section": "proc_name_exists.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/remove.md",
+      "source_title": "remove.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/remove.md",
+      "section": "remove.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/rename.md",
+      "source_title": "rename.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/rename.md",
+      "section": "rename.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/sensitive_files.md",
+      "source_title": "sensitive_files.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/sensitive_files.md",
+      "section": "sensitive_files.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/shell_procs.md",
+      "source_title": "shell_procs.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/shell_procs.md",
+      "section": "shell_procs.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-macros/spawned_process.md",
+      "source_title": "spawned_process.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-macros/spawned_process.md",
+      "section": "spawned_process.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/default-rules/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/default-rules/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/access_camera.md",
+      "source_title": "access_camera.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/access_camera.md",
+      "section": "access_camera.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/change_thread_namespace.md",
+      "source_title": "change_thread_namespace.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/change_thread_namespace.md",
+      "section": "change_thread_namespace.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/create_files_below_dev.md",
+      "source_title": "create_files_below_dev.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/create_files_below_dev.md",
+      "section": "create_files_below_dev.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/elasticsearch_unexpected_network_outbound.md",
+      "source_title": "elasticsearch_unexpected_network_outbound.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/elasticsearch_unexpected_network_outbound.md",
+      "section": "elasticsearch_unexpected_network_outbound.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/index.md",
+      "source_title": "A shell is run in a container",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/index.md",
+      "section": "A shell is run in a container"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/run_shell_in_container.md",
+      "source_title": "run_shell_in_container.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/run_shell_in_container.md",
+      "section": "run_shell_in_container.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/examples/write_binary_dir.md",
+      "source_title": "write_binary_dir.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/examples/write_binary_dir.md",
+      "section": "write_binary_dir.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/allowed_ssh_hosts.md",
+      "source_title": "allowed_ssh_hosts.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/allowed_ssh_hosts.md",
+      "section": "allowed_ssh_hosts.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/ec2_metadata_containers.md",
+      "source_title": "ec2_metadata_containers.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/ec2_metadata_containers.md",
+      "section": "ec2_metadata_containers.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/index.md",
+      "source_title": "Common SSH Port",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/index.md",
+      "section": "Common SSH Port"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/k8s_api_server.md",
+      "source_title": "k8s_api_server.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/k8s_api_server.md",
+      "section": "k8s_api_server.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/k8s_containers.md",
+      "source_title": "k8s_containers.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/k8s_containers.md",
+      "section": "k8s_containers.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/nodeport_containers.md",
+      "source_title": "nodeport_containers.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/nodeport_containers.md",
+      "section": "nodeport_containers.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/ssh_port.md",
+      "source_title": "ssh_port.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/ssh_port.md",
+      "section": "ssh_port.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/user_shell_container_exclusions.md",
+      "source_title": "user_shell_container_exclusions.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/user_shell_container_exclusions.md",
+      "section": "user_shell_container_exclusions.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/macros-override/user_trusted_containers.md",
+      "source_title": "user_trusted_containers.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/macros-override/user_trusted_containers.md",
+      "section": "user_trusted_containers.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/rule-fields/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/rule-fields/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/rule-fields/rule-fields.md",
+      "source_title": "rule-fields.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/rule-fields/rule-fields.md",
+      "section": "rule-fields.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/supported-events/index.md",
+      "source_title": "index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/supported-events/index.md",
+      "section": "index.md"
+    },
+    {
+      "file": "content/en/docs/reference/rules/supported-events/supported-events.md",
+      "source_title": "Syscall events",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/supported-events/supported-events.md",
+      "section": "Syscall events"
+    },
+    {
+      "file": "content/en/docs/reference/rules/supported-fields/index.md",
+      "source_title": "System Calls (source `syscall`)",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/supported-fields/index.md",
+      "section": "System Calls (source `syscall`)"
+    },
+    {
+      "file": "content/en/docs/reference/rules/supported-fields/supported-fields.md",
+      "source_title": "Field Class: evt",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/rules/supported-fields/supported-fields.md",
+      "section": "Field Class: evt"
+    },
+    {
+      "file": "content/en/docs/roadmap.md",
+      "source_title": "Road to Falco 1.0.0",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/roadmap.md",
+      "section": "Road to Falco 1.0.0"
+    },
+    {
+      "file": "content/en/docs/setup/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/setup/container.md",
+      "source_title": "Install",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/container.md",
+      "section": "Install"
+    },
+    {
+      "file": "content/en/docs/setup/download.md",
+      "source_title": "Packages {#packages}",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/download.md",
+      "section": "Packages {#packages}"
+    },
+    {
+      "file": "content/en/docs/setup/enviroments.md",
+      "source_title": "GKE {#gke}",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/enviroments.md",
+      "section": "GKE {#gke}"
+    },
+    {
+      "file": "content/en/docs/setup/kubernetes.md",
+      "source_title": "Install",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/kubernetes.md",
+      "section": "Install"
+    },
+    {
+      "file": "content/en/docs/setup/operator.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/operator.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/setup/packages.md",
+      "source_title": "System requirements {#system-requirements}",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/packages.md",
+      "section": "System requirements {#system-requirements}"
+    },
+    {
+      "file": "content/en/docs/setup/tarball.md",
+      "source_title": "System requirements {#system-requirements}",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/setup/tarball.md",
+      "section": "System requirements {#system-requirements}"
+    },
+    {
+      "file": "content/en/docs/supported-doc-versions.md",
+      "source_title": "supported-doc-versions.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/supported-doc-versions.md",
+      "section": "supported-doc-versions.md"
+    },
+    {
+      "file": "content/en/docs/troubleshooting/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/troubleshooting/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/troubleshooting/dropping.md",
+      "source_title": "Action Items (TL;DR)",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/troubleshooting/dropping.md",
+      "section": "Action Items (TL;DR)"
+    },
+    {
+      "file": "content/en/docs/troubleshooting/missing-fields.md",
+      "source_title": "Action Items (TL;DR)",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/troubleshooting/missing-fields.md",
+      "section": "Action Items (TL;DR)"
+    },
+    {
+      "file": "content/en/docs/troubleshooting/performance.md",
+      "source_title": "Resource Utilization and System Impact",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/troubleshooting/performance.md",
+      "section": "Resource Utilization and System Impact"
+    },
+    {
+      "file": "content/en/docs/troubleshooting/start-up-error.md",
+      "source_title": "Action Items (TL;DR)",
+      "source_url": "https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/troubleshooting/start-up-error.md",
+      "section": "Action Items (TL;DR)"
+    }
+  ]
+}

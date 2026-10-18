@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/DnsEvents/DNS_TorProxies.yaml -->
+id: 0bed3203-3659-44f6-a711-6ed53bab29db
+name: DNS events related to ToR proxies
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Analytic%20Rules/DNS_TorProxies.yaml'
+version: 1.0.1

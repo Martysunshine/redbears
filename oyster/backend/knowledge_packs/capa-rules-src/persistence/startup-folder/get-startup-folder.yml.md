@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/persistence/startup-folder/get-startup-folder.yml -->
+rule:
+  meta:
+    name: get startup folder
+    namespace: persistence/startup-folder
+    authors:
+      - matthew.williams@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: call
+    att&ck:
+      - Persistence::Boot or Logon Autostart Execution::Registry Run Keys / Startup Folder [T1547.001]
+    examples:
+      - 07F7846BBCDA782E5639292AD93907EB:0x40121A
+  features:
+    - and:
+      - or:
+        - number: 0x07 = CSIDL_STARTUP
+        - number: 0x18 = CSIDL_COMMON_STARTUP
+      - or:
+        - api: shell32.SHGetFolderPath
+        - api: shell32.SHGetFolderLocation
+        - api: shell32.SHGetSpecialFolderPath
+        - api: shell32.SHGetSpecialFolderLocation

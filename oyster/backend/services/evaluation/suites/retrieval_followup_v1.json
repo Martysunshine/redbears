@@ -1,0 +1,108 @@
+{
+  "suite_id": "retrieval-followup-v1",
+  "title": "Conversation follow-ups — anchored retrieval verification",
+  "description": "Two-turn cases where the second question is anaphoric ('how is it exploited?', 'summarize that'). Measures live retrieval on the BARE follow-up versus the follow-up anchored with the prior user turn by prompt_utils.build_followup_query. Read-only against the live knowledge store; demonstrates the retrieval half of the RAG-Analyst follow-up fix without touching fusion/ranking.",
+  "default_top_k": 5,
+  "governance": {
+    "read_only": true,
+    "note": "Never writes to the knowledge store. Scoring reuses services.evaluation.harness.score_case."
+  },
+  "cases": [
+    {
+      "id": "fu-log4shell-exploit",
+      "prior_user": "Explain CVE-2021-44228 Log4Shell",
+      "followup": "how is it exploited?",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2021-44228", "log4shell", "log4j"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-printnightmare-summary",
+      "prior_user": "What is CVE-2021-34527 PrintNightmare in the Windows print spooler",
+      "followup": "summarize that for me",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2021-34527", "printnightmare", "spooler"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-kerberoast-detect",
+      "prior_user": "What is kerberoasting a service account and cracking the TGS ticket",
+      "followup": "and how do I detect that?",
+      "expect_any_pack": ["sigma-src", "splunk-security-content-src", "mitre-attack-src", "atomic-red-team-src"],
+      "expect_source_substring": ["kerberoast", "T1558", "TGS"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-lsass-technique",
+      "prior_user": "How do attackers dump LSASS process memory to steal credentials on Windows",
+      "followup": "which ATT&CK technique is that?",
+      "expect_any_pack": ["mitre-attack-src", "atomic-red-team-src", "sigma-src"],
+      "expect_source_substring": ["T1003", "lsass"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-xss-prevent",
+      "prior_user": "Explain CWE-79 cross-site scripting weakness",
+      "followup": "and how do I prevent it?",
+      "expect_any_pack": ["owasp-cheatsheets-src", "owasp-wstg-src", "owasp-top10-src", "mitre-cwe"],
+      "expect_source_substring": ["cross-site", "xss", "encoding", "CWE-79"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-ssrf-detail",
+      "prior_user": "What is server-side request forgery SSRF in the OWASP Top 10",
+      "followup": "give me more detail",
+      "expect_any_pack": ["owasp-top10-src", "owasp-cheatsheets-src", "owasp-wstg-src"],
+      "expect_source_substring": ["ssrf", "request forgery", "server-side"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-iam-sts",
+      "prior_user": "How does AWS IAM assume role work with temporary security credentials",
+      "followup": "and the STS part?",
+      "expect_any_pack": ["aws-iam-docs-src"],
+      "expect_source_substring": ["sts", "role", "credential"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-certutil-lolbas",
+      "prior_user": "How is certutil.exe used to download a file living off the land on Windows",
+      "followup": "is that logged anywhere?",
+      "expect_any_pack": ["lolbas-src", "sigma-src", "splunk-security-content-src"],
+      "expect_source_substring": ["certutil", "download"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-eternalblue-more",
+      "prior_user": "Describe CVE-2017-0144 EternalBlue SMB vulnerability",
+      "followup": "tell me more about it",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2017-0144", "eternalblue", "smb"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-k8s-rbac-example",
+      "prior_user": "What are Kubernetes RBAC role based access control best practices",
+      "followup": "and an example of that?",
+      "expect_any_pack": ["kubernetes-security-docs-src", "owasp-k8s-top10-src"],
+      "expect_source_substring": ["rbac", "role", "kubernetes"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-sqli-test-more",
+      "prior_user": "How do I test a web application for SQL injection",
+      "followup": "any other techniques?",
+      "expect_any_pack": ["owasp-wstg-src", "owasp-cheatsheets-src"],
+      "expect_source_substring": ["sql", "injection"],
+      "min_results": 1
+    },
+    {
+      "id": "fu-zerologon-impact",
+      "prior_user": "Explain CVE-2020-1472 Zerologon Netlogon privilege escalation",
+      "followup": "what is the impact of that?",
+      "expect_any_pack": ["vulnerability-cve"],
+      "expect_source_substring": ["CVE-2020-1472", "zerologon", "netlogon"],
+      "min_results": 1
+    }
+  ]
+}

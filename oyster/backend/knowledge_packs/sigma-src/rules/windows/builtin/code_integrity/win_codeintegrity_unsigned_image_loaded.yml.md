@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/code_integrity/win_codeintegrity_unsigned_image_loaded.yml -->
+title: CodeIntegrity - Unsigned Image Loaded
+id: c92c24e7-f595-493f-9c98-53d5142f5c18
+status: test
+description: Detects loaded unsigned image on the system
+references:
+    - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/operations/event-id-explanations
+    - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/operations/event-tag-explanations
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-06-06
+tags:
+    - attack.privilege-escalation
+logsource:
+    product: windows
+    service: codeintegrity-operational
+detection:
+    selection:
+        EventID: 3037 # Code Integrity determined an unsigned image %2 is loaded into the system. Check with the publisher to see if a signed version of the image is available.
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

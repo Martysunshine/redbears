@@ -1,0 +1,35 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/create_stream_hash/create_stream_hash_winget_susp_package_source.yml -->
+title: Potential Suspicious Winget Package Installation
+id: a3f5c081-e75b-43a0-9f5b-51f26fe5dba2
+status: test
+description: Detects potential suspicious winget package installation from a suspicious source.
+references:
+    - https://github.com/nasbench/Misc-Research/tree/b9596e8109dcdb16ec353f316678927e507a5b8d/LOLBINs/Winget
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-04-18
+tags:
+    - attack.persistence
+    - attack.stealth
+logsource:
+    product: windows
+    category: create_stream_hash
+detection:
+    selection:
+        Contents|startswith: '[ZoneTransfer]  ZoneId=3'
+        Contents|contains:
+            # Note: Add any untrusted sources that are custom to your env
+            - '://1'
+            - '://2'
+            - '://3'
+            - '://4'
+            - '://5'
+            - '://6'
+            - '://7'
+            - '://8'
+            - '://9'
+        TargetFilename|endswith: ':Zone.Identifier'
+        TargetFilename|contains: '\AppData\Local\Temp\WinGet\'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

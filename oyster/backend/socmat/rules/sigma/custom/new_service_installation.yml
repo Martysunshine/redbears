@@ -1,0 +1,29 @@
+title: New Windows Service Installed
+id: 9a1f4b7c-2e5d-4a8f-b3c6-0d2e4a6f8b1c
+status: stable
+description: >
+  Detects the installation of a new Windows service (Event ID 7045). Attackers
+  frequently install malicious services for persistence and privilege escalation.
+  Legitimate software also installs services during installation.
+references:
+  - https://attack.mitre.org/techniques/T1543/003/
+  - https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-7045
+author: SOC Copilot Workbench
+date: 2024/01/10
+modified: 2024/02/20
+tags:
+  - attack.persistence
+  - attack.privilege_escalation
+  - attack.t1543.003
+logsource:
+  product: windows
+  service: system
+detection:
+  selection:
+    EventID: 7045
+  condition: selection
+falsepositives:
+  - Legitimate software installations that register services
+  - IT management tools and monitoring agents
+  - Antivirus and security product installations
+level: low

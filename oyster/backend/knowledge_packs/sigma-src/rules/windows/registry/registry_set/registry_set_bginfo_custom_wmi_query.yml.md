@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_bginfo_custom_wmi_query.yml -->
+title: New BgInfo.EXE Custom WMI Query Registry Configuration
+id: cd277474-5c52-4423-a52b-ac2d7969902f
+related:
+    - id: 992dd79f-dde8-4bb0-9085-6350ba97cfb3
+      type: similar
+status: test
+description: Detects setting of a new registry value related to BgInfo configuration, which can be abused to execute custom WMI query via "BgInfo.exe"
+references:
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-08-16
+tags:
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1112
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: '\Software\Winternals\BGInfo\UserFields\'
+        Details|startswith: '6' # WMI
+    condition: selection
+falsepositives:
+    - Legitimate WMI query
+level: medium

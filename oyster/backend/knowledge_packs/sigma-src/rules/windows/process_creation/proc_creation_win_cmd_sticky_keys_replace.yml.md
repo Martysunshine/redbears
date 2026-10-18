@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_cmd_sticky_keys_replace.yml -->
+title: Persistence Via Sticky Key Backdoor
+id: 1070db9a-3e5d-412e-8e7b-7183b616e1b3
+status: test
+description: |
+    By replacing the sticky keys executable with the local admins CMD executable, an attacker is able to access a privileged windows console session without authenticating to the system.
+    When the sticky keys are "activated" the privilleged shell is launched.
+references:
+    - https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+    - https://www.clearskysec.com/wp-content/uploads/2020/02/ClearSky-Fox-Kitten-Campaign-v1.pdf
+    - https://learn.microsoft.com/en-us/archive/blogs/jonathantrull/detecting-sticky-key-backdoors
+author: Sreeman
+date: 2020-02-18
+modified: 2023-03-07
+tags:
+    - attack.persistence
+    - attack.t1546.008
+    - attack.privilege-escalation
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection:
+        CommandLine|contains|all:
+            - 'copy '
+            - '/y '
+            - 'C:\windows\system32\cmd.exe C:\windows\system32\sethc.exe'
+    condition: selection
+falsepositives:
+    - Unlikely
+level: critical

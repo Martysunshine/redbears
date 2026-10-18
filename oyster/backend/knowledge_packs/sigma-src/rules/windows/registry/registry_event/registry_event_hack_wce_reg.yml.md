@@ -1,0 +1,24 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_event/registry_event_hack_wce_reg.yml -->
+title: Windows Credential Editor Registry
+id: a6b33c02-8305-488f-8585-03cb2a7763f2
+status: test
+description: Detects the use of Windows Credential Editor (WCE)
+references:
+    - https://www.ampliasecurity.com/research/windows-credentials-editor/
+author: Florian Roth (Nextron Systems)
+date: 2019-12-31
+modified: 2021-11-27
+tags:
+    - attack.credential-access
+    - attack.t1003.001
+    - attack.s0005
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: Services\WCESERVICE\Start
+    condition: selection
+falsepositives:
+    - Unknown
+level: critical

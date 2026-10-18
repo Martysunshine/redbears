@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_net_cli_ngenassemblyusagelog.yml -->
+title: NET NGenAssemblyUsageLog Registry Key Tamper
+id: 28036918-04d3-423d-91c0-55ecf99fb892
+status: test
+description: |
+  Detects changes to the NGenAssemblyUsageLog registry key.
+  .NET Usage Log output location can be controlled by setting the NGenAssemblyUsageLog CLR configuration knob in the Registry or by configuring an environment variable (as described in the next section).
+  By simplify specifying an arbitrary value (e.g. fake output location or junk data) for the expected value, a Usage Log file for the .NET execution context will not be created.
+references:
+    - https://bohops.com/2021/03/16/investigating-net-clr-usage-log-tampering-techniques-for-edr-evasion/
+author: frack113
+date: 2022-11-18
+modified: 2023-08-17
+tags:
+    - attack.persistence
+    - attack.defense-impairment
+    - attack.t1112
+logsource:
+    product: windows
+    category: registry_set
+detection:
+    selection:
+        TargetObject|endswith: 'SOFTWARE\Microsoft\.NETFramework\NGenAssemblyUsageLog'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

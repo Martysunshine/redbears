@@ -1,0 +1,31 @@
+<!-- source: https://github.com/OWASP/mastg/blob/0e88142b5d7aad8f052b4e75199a8aad9b89d5b5/techniques/ios/MASTG-TECH-0132.md -->
+---
+title: Software Composition Analysis (SCA) of iOS Dependencies by Creating a SBOM
+platform: ios
+---
+
+You can use @MASTG-TOOL-0134 to generate a Software Bill of Materials (SBOM) in the CycloneDX format when using SwiftPM. Currently, Carthage and CocoaPods are not supported. You can either ask the development team to provide the SBOM file or create it yourself. To do so, navigate to the root directory of the Xcode project you wish to scan, then execute the following command:
+
+```bash
+$ cdxgen -o sbom.json
+```
+
+The SBOM file needs to be Base64-encoded and uploaded to @MASTG-TOOL-0132 for analysis.
+
+```bash
+$ cat sbom.json | base64
+$ curl -X "PUT" "http://localhost:8081/api/v1/bom" \
+     -H 'Content-Type: application/json' \
+     -H 'X-API-Key: <YOUR API KEY>>' \
+     -d $'{
+  "project": "<YOUR PROJECT ID>",
+  "bom": "<BASE64-ENCODED SBOM>"
+  }'
+```
+
+Also, check the [alternatives for uploading](https://docs.dependencytrack.org/usage/cicd/) the SBOM file if the generated JSON file is too large.
+
+If you are using the default settings of the @MASTG-TOOL-0133 Docker container, go to the frontend of @MASTG-TOOL-0132, which is <http://localhost:8080>. Open the project you uploaded the SBOM to verify whether there are any vulnerable dependencies.
+
+!!! note
+    Transitive dependencies are not supported by @MASTG-TOOL-0134 for [SwiftPM](https://cdxgen.github.io/cdxgen/#/PROJECT_TYPES).

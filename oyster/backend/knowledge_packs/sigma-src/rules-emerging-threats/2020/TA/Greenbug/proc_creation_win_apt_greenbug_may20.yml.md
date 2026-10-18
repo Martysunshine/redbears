@@ -1,0 +1,53 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2020/TA/Greenbug/proc_creation_win_apt_greenbug_may20.yml -->
+title: Greenbug Espionage Group Indicators
+id: 3711eee4-a808-4849-8a14-faf733da3612
+status: test
+description: Detects tools and process executions used by Greenbug in their May 2020 campaign as reported by Symantec
+references:
+    - https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/greenbug-espionage-telco-south-asia
+author: Florian Roth (Nextron Systems)
+date: 2020-05-20
+modified: 2023-03-09
+tags:
+    - attack.stealth
+    - attack.g0049
+    - attack.execution
+    - attack.t1059.001
+    - attack.command-and-control
+    - attack.t1105
+    - attack.t1036.005
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        Image|endswith:
+            - ':\ProgramData\adobe\Adobe.exe'
+            - ':\ProgramData\oracle\local.exe'
+            - '\revshell.exe'
+            - '\infopagesbackup\ncat.exe'
+            - ':\ProgramData\comms\comms.exe'
+    selection_msf:
+        CommandLine|contains|all:
+            - '-ExecutionPolicy Bypass -File'
+            - '\msf.ps1'
+    selection_ncat:
+        CommandLine|contains|all:
+            - 'infopagesbackup'
+            - '\ncat'
+            - '-e cmd.exe'
+    selection_powershell:
+        CommandLine|contains:
+            - 'system.Data.SqlClient.SqlDataAdapter($cmd); [void]$da.fill'
+            - '-nop -w hidden -c $k=new-object'
+            - '[Net.CredentialCache]::DefaultCredentials;IEX '
+            - ' -nop -w hidden -c $m=new-object net.webclient;$m'
+            - '-noninteractive -executionpolicy bypass whoami'
+            - '-noninteractive -executionpolicy bypass netstat -a'
+    selection_other:
+        CommandLine|contains: 'L3NlcnZlcj1'  # base64 encoded '/server='
+    condition: 1 of selection_*
+falsepositives:
+    - Unlikely
+level: critical

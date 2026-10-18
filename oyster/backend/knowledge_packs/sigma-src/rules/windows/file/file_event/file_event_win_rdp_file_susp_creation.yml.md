@@ -1,0 +1,51 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_rdp_file_susp_creation.yml -->
+title: .RDP File Created By Uncommon Application
+id: fccfb43e-09a7-4bd2-8b37-a5a7df33386d
+related:
+    - id: f748c45a-f8d3-4e6f-b617-fe176f695b8f
+      type: derived
+status: test
+description: |
+    Detects creation of a file with an ".rdp" extension by an application that doesn't commonly create such files.
+references:
+    - https://www.blackhillsinfosec.com/rogue-rdp-revisiting-initial-access-methods/
+    - https://web.archive.org/web/20230726144748/https://blog.thickmints.dev/mintsights/detecting-rogue-rdp/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-04-18
+modified: 2024-11-01
+tags:
+    - attack.stealth
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        TargetFilename|endswith: '.rdp'
+        Image|endswith:
+            # Covers browsers
+            - '\brave.exe'
+            - '\CCleaner Browser\Application\CCleanerBrowser.exe'
+            - '\chromium.exe'
+            - '\firefox.exe'
+            - '\Google\Chrome\Application\chrome.exe'
+            - '\iexplore.exe'
+            - '\microsoftedge.exe'
+            - '\msedge.exe'
+            - '\Opera.exe'
+            - '\Vivaldi.exe'
+            - '\Whale.exe'
+            # Covers email clients
+            - '\olk.exe' # Outlook
+            - '\Outlook.exe'
+            - '\RuntimeBroker.exe' # If the windows mail client is used
+            - '\Thunderbird.exe'
+            # Covers chat applications
+            - '\Discord.exe' # Should open the browser for download, but just in case.
+            - '\Keybase.exe'
+            - '\msteams.exe'
+            - '\Slack.exe'
+            - '\teams.exe'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

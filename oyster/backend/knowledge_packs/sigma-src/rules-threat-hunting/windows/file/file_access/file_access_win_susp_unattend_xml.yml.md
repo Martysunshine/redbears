@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/file/file_access/file_access_win_susp_unattend_xml.yml -->
+title: Unattend.XML File Access Attempt
+id: 76a26006-0942-430b-8249-bd51d448f8e5
+status: test
+description: |
+    Detects attempts to access the "unattend.xml" file, where credentials might be stored.
+    This file is used during the unattended windows install process.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1552.001/T1552.001.md
+author: frack113
+date: 2024-07-22
+tags:
+    - attack.credential-access
+    - attack.t1552.001
+    - detection.threat-hunting
+logsource:
+    product: windows
+    category: file_access
+    definition: 'Requirements: Microsoft-Windows-Kernel-File ETW provider'
+detection:
+    selection:
+        FileName|endswith: '\Panther\unattend.xml'
+    condition: selection
+falsepositives:
+    - Unknown
+level: low

@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-threat-hunting/windows/file/file_event/file_event_win_susp_desktop_txt.yml -->
+title: Suspicious Creation TXT File in User Desktop
+id: caf02a0a-1e1c-4552-9b48-5e070bd88d11
+status: test
+description: |
+    Detects creation of .txt files in user desktop folders via cmd.exe. This behavior may indicate ransomware deploying ransom notes, but can also occur during legitimate administrative tasks.
+    Analysts should investigate for suspicious filenames (e.g., "RANSOM", "DECRYPT", "READ_ME"), bulk file creation patterns, or concurrent encryption activity to determine if this is part of a ransomware attack.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1486/T1486.md#atomic-test-5---purelocker-ransom-note
+author: frack113
+date: 2021-12-26
+modified: 2026-01-09
+tags:
+    - attack.impact
+    - attack.t1486
+    - detection.threat-hunting
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        Image|endswith: '\cmd.exe'
+        TargetFilename|contains|all:
+            - '\Users\'
+            - '\Desktop\'
+        TargetFilename|endswith: '.txt'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

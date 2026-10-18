@@ -1,0 +1,37 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/inject/allocate-or-change-rwx-memory.yml -->
+rule:
+  meta:
+    name: allocate or change RWX memory
+    namespace: host-interaction/process/inject
+    authors:
+      - "@mr-tz"
+      - mehunhoff@google.com
+    scopes:
+      static: basic block
+      dynamic: call
+    mbc:
+      - Memory::Allocate Memory [C0007]
+    examples:
+      - Practical Malware Analysis Lab 03-03.exe_:0x4010EA
+      # ntdll
+      - 563653399B82CD443F120ECEFF836EA3678D4CF11D9B351BB737573C2D856299:0x140001ABA
+  features:
+    - or:
+      - basic block:
+        - and:
+          - or:
+            - match: allocate memory
+            - match: change memory protection
+          - or:
+            - number: 0x40 = PAGE_EXECUTE_READWRITE
+            # lea     r9d, [rcx+40h]  ; flProtect
+            # call    cs:VirtualAlloc
+            - instruction:
+              - mnemonic: lea
+              - offset: 0x40 = PAGE_EXECUTE_READWRITE
+      - call:
+        - and:
+          - or:
+            - match: allocate memory
+            - match: change memory protection
+          - number: 0x40 = PAGE_EXECUTE_READWRITE

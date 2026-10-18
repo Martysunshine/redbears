@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/FailedLogonToAzurePortal.yaml -->
+id: 149c628b-7ae8-421a-9ef9-76d30d57d7a5
+name: Failed login attempts to Azure Portal
+description: |
+  'As part of content migration, this file is moved to a new location. You can find it here https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/FailedLogonToAzurePortal.yaml'
+version: 1.0.4

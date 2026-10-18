@@ -1,0 +1,16 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/poetry -->
+---
+functions:
+  inherit:
+  - code: |-
+      echo '...' >/path/to/temp-file
+      poetry run python /path/to/temp-file
+    comment: |-
+      This allows to run Python code (`...`).
+
+      A valid `pyproject.toml` file must be present in the current working directory, you can create one with `poetry init -n`.
+    contexts:
+      sudo:
+      unprivileged:
+    from: python
+...

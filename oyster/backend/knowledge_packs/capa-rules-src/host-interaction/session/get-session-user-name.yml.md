@@ -1,0 +1,31 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/session/get-session-user-name.yml -->
+rule:
+  meta:
+    name: get session user name
+    namespace: host-interaction/session
+    authors:
+      - moritz.raabe@mandiant.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Discovery::System Owner/User Discovery [T1033]
+      - Discovery::Account Discovery [T1087]
+    examples:
+      - Practical Malware Analysis Lab 14-01.exe_:0x401285
+  features:
+    - or:
+      - api: advapi32.GetUserName
+      - api: secur32.GetUserNameEx
+      - basic block:
+        - and:
+          # - match: get session information (see #463)
+          - api: wtsapi32.WTSQuerySessionInformation
+          - number: 5 = WTSUserName
+      - call:
+        - and:
+          - api: wtsapi32.WTSQuerySessionInformation
+          - number: 5 = WTSUserName
+      - api: System.Security.Principal.WindowsIdentity::GetCurrent
+      - property/read: System.Environment::UserName

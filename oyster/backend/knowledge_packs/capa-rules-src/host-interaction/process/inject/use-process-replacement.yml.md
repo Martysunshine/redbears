@@ -1,0 +1,23 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/inject/use-process-replacement.yml -->
+rule:
+  meta:
+    name: use process replacement
+    namespace: host-interaction/process/inject
+    authors:
+      - william.ballenthin@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Process Injection::Process Hollowing [T1055.012]
+      - Defense Evasion::Reflective Code Loading [T1620]
+    references:
+      - http://www.autosectools.com/process-hollowing.pdf
+      - https://www.andreafortuna.org/2017/10/09/understanding-process-hollowing/
+    examples:
+      - Practical Malware Analysis Lab 12-02.exe_:0x4010EA
+  features:
+    - and:
+      - match: create process suspended
+      - match: write process memory
+      - match: resume thread

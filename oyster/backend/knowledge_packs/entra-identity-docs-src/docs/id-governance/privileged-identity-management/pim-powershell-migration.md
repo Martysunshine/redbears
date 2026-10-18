@@ -1,0 +1,32 @@
+<!-- source: https://github.com/MicrosoftDocs/entra-docs/blob/3db172a622c96d9fccdca0143085ea28ec04ba41/docs/id-governance/privileged-identity-management/pim-powershell-migration.md -->
+---
+title: PIM PowerShell for Azure resources migration guidance
+description: The following documentation provides guidance for Privileged Identity Management (PIM) PowerShell migration.
+
+ms.topic: how-to
+ms.date: 04/23/2026
+ms.reviewer: shaunliu
+ms.custom: pim, devx-track-azurepowershell
+
+#Customer Intent: As an administrator, I want to migrate from legacy PIM PowerShell cmdlets to the new Azure PowerShell module for managing Azure resource roles.
+---
+# PIM PowerShell for Azure resources migration guidance
+
+## Overview
+
+The following table provides guidance on using the new PowerShell cmdlets in the newer Azure PowerShell module.
+
+## New cmdlets in the Azure PowerShell module
+
+|Old AzureADPreview cmd|New Az cmd equivalent|Description|
+|-----|-----|-----|
+|Get-AzureADMSPrivilegedResource|[Get-AzResource](/powershell/module/az.resources/get-azresource)|Get resources|
+|Get-AzureADMSPrivilegedRoleDefinition|[Get-AzRoleDefinition](/powershell/module/az.resources/get-azroledefinition)| Get role definitions|
+|Get-AzureADMSPrivilegedRoleSetting|[Get-AzRoleManagementPolicy](/powershell/module/az.resources/get-azrolemanagementpolicy)|Get the specified role management policy for a resource scope|
+|Set-AzureADMSPrivilegedRoleSetting|[Update-AzRoleManagementPolicy](/powershell/module/az.resources/update-azrolemanagementpolicy)| Update a rule defined for a role management policy|
+|Open-AzureADMSPrivilegedRoleAssignmentRequest|[New-AzRoleAssignmentScheduleRequest](/powershell/module/az.resources/new-azroleassignmentschedulerequest)|Used for Assignment Requests<br>Create role assignment schedule request|
+|Open-AzureADMSPrivilegedRoleAssignmentRequest|[New-AzRoleEligibilityScheduleRequest](/powershell/module/az.resources/new-azroleeligibilityschedulerequest)|Used for Eligibility Requests<br>Create role eligibility schedule request|
+
+## Next steps
+
+- [Microsoft Entra Privileged Identity Management API reference](/graph/api/resources/privilegedidentitymanagementv3-overview)

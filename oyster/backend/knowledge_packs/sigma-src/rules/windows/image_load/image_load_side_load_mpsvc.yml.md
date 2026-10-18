@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/image_load/image_load_side_load_mpsvc.yml -->
+title: Potential DLL Sideloading Of MpSvc.DLL
+id: 5ba243e5-8165-4cf7-8c69-e1d3669654c1
+status: test
+description: Detects potential DLL sideloading of "MpSvc.dll".
+references:
+    - https://hijacklibs.net/entries/microsoft/built-in/mpsvc.html
+author: Nasreddine Bencherchali (Nextron Systems), Wietze Beukema
+date: 2024-07-11
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.001
+logsource:
+    product: windows
+    category: image_load
+detection:
+    selection:
+        ImageLoaded|endswith: '\MpSvc.dll'
+    filter_main_generic:
+        ImageLoaded|startswith:
+            - 'C:\Program Files\Windows Defender\'
+            - 'C:\ProgramData\Microsoft\Windows Defender\Platform\'
+            - 'C:\Windows\WinSxS\'
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - Legitimate applications loading their own versions of the DLL mentioned in this rule.
+level: medium

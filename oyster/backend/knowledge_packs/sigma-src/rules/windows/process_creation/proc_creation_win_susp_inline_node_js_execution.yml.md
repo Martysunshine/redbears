@@ -1,0 +1,32 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_susp_inline_node_js_execution.yml -->
+title: Potentially Suspicious Inline JavaScript Execution via NodeJS Binary
+id: 8537c866-072e-460d-bfff-aaf39cbd73d3
+status: experimental
+description: Detects potentially suspicious inline JavaScript execution using Node.js with specific keywords in the command line.
+references:
+    - https://www.microsoft.com/en-us/security/blog/2025/04/15/threat-actors-misuse-node-js-to-deliver-malware-and-other-malicious-payloads/
+author: Microsoft (idea), Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2025-04-21
+tags:
+    - attack.execution
+    - attack.t1059.007
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\node.exe'
+        - OriginalFileName: 'node.exe'
+        - Product: 'Node.js'
+    selection_cmd:
+        CommandLine|contains|all:
+            - 'http'
+            - 'execSync'
+            - 'spawn'
+            - 'fs'
+            - 'path'
+            - 'zlib'
+    condition: all of selection_*
+falsepositives:
+    - Legitimate scripts using Node.js with these modules
+level: medium

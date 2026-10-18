@@ -1,0 +1,74 @@
+# --- torch: CPU build, pinned FIRST on purpose -----------------------------
+# torch is not a direct dependency — it arrives transitively via
+# sentence-transformers (embeddings) and peft (LoRA). Left to resolve on its
+# own, pip takes PyPI's default Linux wheel, which is the CUDA build: the image
+# shipped torch 2.13.0+cu130 carrying 2.7GB of `nvidia/` and 691MB of `triton/`
+# onto a VPS with NO NVIDIA GPU (torch.cuda.is_available() was False). None of
+# it could ever execute.
+#
+# That is not merely wasted space. The deploy of 2026-08-23 FAILED because of
+# it: the build ran the disk to 100% and died extracting
+# `triton/backends/nvidia/bin/ptxas` — the CUDA compiler — with "no space left
+# on device", and left the :latest tag pointing at a half-extracted image.
+#
+# Pinned to an EXACT +cpu version rather than an --extra-index-url with a loose
+# spec, because with a loose spec pip can still legitimately resolve to PyPI's
+# CUDA wheel; `2.13.0+cpu` exists only on the pytorch CPU index, so the choice
+# is unambiguous. Cost of that precision: bumping torch is now a deliberate
+# edit here, and the version must stay compatible with sentence-transformers
+# and peft below.
+#
+# PLATFORM MARKER (do not remove): the `+cpu` local-version tag is published
+# ONLY for Linux/Windows. PyTorch ships macOS as a plain `torch==2.13.0` wheel
+# (Mac was never CUDA, so it needs no tag). Without the marker below, `pip
+# install -r requirements.txt` on a Mac dies with "No matching distribution
+# found for torch==2.13.0+cpu" and aborts the WHOLE file — which breaks the
+# documented Oyster dev machine (oyster/CLAUDE.md: Apple M5) and Pritika's
+# nightly LoRA box (scripts/daily_run.sh, /Users/pritsss). The Linux deploy
+# still gets +cpu (the whole point of the disk-space fix); only macOS falls
+# back to the plain build, which is CPU-only there anyway.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0+cpu ; sys_platform != "darwin"
+torch==2.13.0     ; sys_platform == "darwin"
+
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+httpx==0.28.0
+pydantic==2.10.3
+chromadb>=0.5.0
+sentence-transformers>=2.7.0
+pypdf>=4.3.0
+python-multipart>=0.0.9
+# artifact ingestion (text + media)
+python-docx>=1.1.0
+chardet>=5.2.0
+# long-term memory encryption at rest
+cryptography>=42.0.0
+# Supabase JWT verification (admin-only production auth gate)
+python-jose[cryptography]==3.3.0
+# Execution Engine tool (static analysis) — services/execution/tool_registry.py
+semgrep>=1.45.0
+pillow>=10.0.0
+defusedxml>=0.7.1
+# local video transcription (CTranslate2 — no torch, no cloud); needs system ffmpeg
+faster-whisper>=1.0.0
+# OPTIONAL local OCR (used only if installed): pip install pytesseract + brew install tesseract
+# Vision (image + video frames) is served by Ollama VISION_MODEL — no python dep.
+# --- Blue Team → SOC Copilot (vendored socmat workbench, backend/socmat/) ---
+# socmat is a self-contained FastAPI + SQLAlchemy app mounted at /socmat/api.
+# yara-python ships manylinux wheels that bundle libyara (no apt libyara needed
+# on the slim image); the loader degrades gracefully if it is ever missing.
+sqlalchemy>=2.0.36
+yara-python>=4.2
+fpdf2>=2.7.0
+dpkt>=1.9.8
+pyyaml>=6.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+# --- dev/test only (Knowledge Service test suite) ---
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+# LoRA training pipeline (services/training/lora_job.py) — torch/transformers
+# already come in transitively via sentence-transformers; peft is the one
+# piece that needs installing explicitly.
+peft>=0.20.0

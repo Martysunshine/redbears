@@ -1,0 +1,45 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/thread/create/create-thread.yml -->
+rule:
+  meta:
+    name: create thread
+    namespace: host-interaction/thread/create
+    authors:
+      - moritz.raabe@mandiant.com
+      - michael.hunhoff@mandiant.com
+      - joakim@intezer.com
+      - anushka.virgaonkar@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: span of calls
+    mbc:
+      - Process::Create Thread [C0038]
+    examples:
+      - 946A99F36A46D335DEC080D9A4371940:0x10001DA0
+      - B5F85C26D7AA5A1FB4AF5821B6B5AB9B:0x408020
+  features:
+    - or:
+      - and:
+        - os: windows
+        - or:
+          - api: kernel32.CreateThread
+          - api: _beginthread
+          - api: _beginthreadex
+          - api: PsCreateSystemThread
+          - api: SHCreateThread
+          - api: SHCreateThreadWithHandle
+          - api: kernel32.CreateRemoteThread
+          - api: kernel32.CreateRemoteThreadEx
+          - api: RtlCreateUserThread
+          - api: ntdll.NtCreateThread
+          - api: ntdll.NtCreateThreadEx
+          - api: ntdll.ZwCreateThread
+          - api: ntdll.ZwCreateThreadEx
+      - and:
+        - or:
+          - os: linux
+          - os: android
+        - api: pthread_create
+      - and:
+        - api: System.Threading.Thread::Start
+        - optional:
+          - api: System.Threading.Thread::ctor

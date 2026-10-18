@@ -1,0 +1,20 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/communication/receive-data.yml -->
+rule:
+  meta:
+    name: receive data
+    namespace: communication
+    authors:
+      - william.ballenthin@mandiant.com
+    description: all known techniques for receiving data from a potential C2 server
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - Command and Control::C2 Communication::Receive Data [B0030.002]
+    examples:
+      - BFB9B5391A13D0AFD787E87AB90F14F5:0x13145D60
+  features:
+    - or:
+      - match: receive data on socket
+      - match: read data from Internet
+      - match: download URL

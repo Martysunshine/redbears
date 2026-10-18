@@ -1,0 +1,39 @@
+<!-- source: https://github.com/MicrosoftDocs/azure-docs/blob/1de6b957936ffbbe3666c209ad49e18370a72efd/articles/security/fundamentals/infrastructure.md -->
+---
+title: Azure infrastructure security
+description: Learn how Microsoft secures Azure datacenters. Microsoft operations staff manage, monitor, and administer the datacenters.
+services: security
+author: msmbaldwin
+
+ms.assetid: 61e95a87-39c5-48f5-aee6-6f90ddcd336e
+ms.service: security
+ms.subservice: security-fundamentals
+ms.topic: article
+ms.date: 05/01/2025
+ms.author: mbaldwin
+ai-usage: ai-assisted
+
+---
+
+# Azure infrastructure security
+Microsoft Azure runs in datacenters that Microsoft manages and operates. These geographically dispersed datacenters comply with key industry standards, such as ISO/IEC 27001:2013 and NIST SP 800-53, for security and reliability. Microsoft operations staff manage, monitor, and administer the datacenters. The operations staff has years of experience in delivering the world's largest online services with 24/7 continuity.
+
+## Securing the Azure infrastructure
+This series of articles provides information about what Microsoft does to secure the Azure infrastructure. The articles address:
+
+- [Physical security](physical-security.md)
+- [Availability](infrastructure-availability.md)
+- [Components and boundaries](infrastructure-components.md)
+- [Network architecture](infrastructure-network.md)
+- [Production network](production-network.md)
+- [SQL Database](infrastructure-sql.md)
+- [Operations](infrastructure-operations.md)
+- [Monitoring](infrastructure-monitoring.md)
+- [Integrity](infrastructure-integrity.md)
+- [Data protection](protection-customer-data.md)
+
+## Next steps
+
+- Understand your [shared responsibility in the cloud](shared-responsibility.md).
+
+- Learn how [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) can help you prevent, detect, and respond to threats with increased visibility and control over the security of your Azure resources.

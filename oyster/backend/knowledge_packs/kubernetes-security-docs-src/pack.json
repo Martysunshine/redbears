@@ -1,0 +1,268 @@
+{
+  "id": "kubernetes-security-docs-src",
+  "name": "kubernetes-security-docs-src",
+  "version": "6ffe282752ca",
+  "title": "Kubernetes official security documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "container-orchestration-security",
+  "description": "Imported from https://kubernetes.io/docs/concepts/security/ at 6ffe282752ca. 38 documents.",
+  "authority": "Kubernetes",
+  "publisher": "The Kubernetes Authors",
+  "trust_level": "official",
+  "licence": "CC-BY-4.0",
+  "attribution": "Kubernetes documentation, The Kubernetes Authors, CC BY 4.0.",
+  "tags": [
+    "kubernetes",
+    "k8s",
+    "containers",
+    "rbac",
+    "hardening"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "kubernetes",
+    "cloud"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "kubernetes-security-docs-src",
+  "upstream_commit": "6ffe282752caee04e4074a2c4e2b6ed261d4f640",
+  "source_urls": [
+    "https://kubernetes.io/docs/concepts/security/",
+    "https://github.com/kubernetes/website"
+  ],
+  "docs": [
+    {
+      "file": "content/en/docs/concepts/security/_index.md",
+      "source_title": "Kubernetes security mechanisms {#security-mechanisms}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/_index.md",
+      "section": "Kubernetes security mechanisms {#security-mechanisms}"
+    },
+    {
+      "file": "content/en/docs/concepts/security/api-server-bypass-risks.md",
+      "source_title": "Static Pods {#static-pods}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/api-server-bypass-risks.md",
+      "section": "Static Pods {#static-pods}"
+    },
+    {
+      "file": "content/en/docs/concepts/security/application-security-checklist.md",
+      "source_title": "Base security hardening",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/application-security-checklist.md",
+      "section": "Base security hardening"
+    },
+    {
+      "file": "content/en/docs/concepts/security/cloud-native-security.md",
+      "source_title": "The section index lists this explicitly",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/cloud-native-security.md",
+      "section": "The section index lists this explicitly"
+    },
+    {
+      "file": "content/en/docs/concepts/security/controlling-access.md",
+      "source_title": "Transport security",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/controlling-access.md",
+      "section": "Transport security"
+    },
+    {
+      "file": "content/en/docs/concepts/security/hardening-guide/authentication-mechanisms.md",
+      "source_title": "X.509 client certificate authentication {#x509-client-certificate-authentication}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/hardening-guide/authentication-mechanisms.md",
+      "section": "X.509 client certificate authentication {#x509-client-certificate-authentication}"
+    },
+    {
+      "file": "content/en/docs/concepts/security/hardening-guide/dynamic-resource-allocation.md",
+      "source_title": "Harden DRA status update permissions",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/hardening-guide/dynamic-resource-allocation.md",
+      "section": "Harden DRA status update permissions"
+    },
+    {
+      "file": "content/en/docs/concepts/security/hardening-guide/scheduler.md",
+      "source_title": "kube-scheduler configuration",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/hardening-guide/scheduler.md",
+      "section": "kube-scheduler configuration"
+    },
+    {
+      "file": "content/en/docs/concepts/security/linux-kernel-security-constraints.md",
+      "source_title": "Run workloads without root privileges {#run-without-root}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/linux-kernel-security-constraints.md",
+      "section": "Run workloads without root privileges {#run-without-root}"
+    },
+    {
+      "file": "content/en/docs/concepts/security/linux-security.md",
+      "source_title": "Protection for Secret data on nodes",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/linux-security.md",
+      "section": "Protection for Secret data on nodes"
+    },
+    {
+      "file": "content/en/docs/concepts/security/multi-tenancy.md",
+      "source_title": "Use cases",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/multi-tenancy.md",
+      "section": "Use cases"
+    },
+    {
+      "file": "content/en/docs/concepts/security/pod-security-admission.md",
+      "source_title": "Built-in Pod Security admission enforcement",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/pod-security-admission.md",
+      "section": "Built-in Pod Security admission enforcement"
+    },
+    {
+      "file": "content/en/docs/concepts/security/pod-security-policy.md",
+      "source_title": "pod-security-policy.md",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/pod-security-policy.md",
+      "section": "pod-security-policy.md"
+    },
+    {
+      "file": "content/en/docs/concepts/security/pod-security-standards.md",
+      "source_title": "Profile Details",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/pod-security-standards.md",
+      "section": "Profile Details"
+    },
+    {
+      "file": "content/en/docs/concepts/security/rbac-good-practices.md",
+      "source_title": "General good practice",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/rbac-good-practices.md",
+      "section": "General good practice"
+    },
+    {
+      "file": "content/en/docs/concepts/security/secrets-good-practices.md",
+      "source_title": "Cluster administrators",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/secrets-good-practices.md",
+      "section": "Cluster administrators"
+    },
+    {
+      "file": "content/en/docs/concepts/security/security-checklist.md",
+      "source_title": "Authentication & Authorization",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/security-checklist.md",
+      "section": "Authentication & Authorization"
+    },
+    {
+      "file": "content/en/docs/concepts/security/service-accounts.md",
+      "source_title": "What are service accounts? {#what-are-service-accounts}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/service-accounts.md",
+      "section": "What are service accounts? {#what-are-service-accounts}"
+    },
+    {
+      "file": "content/en/docs/concepts/security/windows-security.md",
+      "source_title": "Protection for Secret data on nodes",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/concepts/security/windows-security.md",
+      "section": "Protection for Secret data on nodes"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/_index.md",
+      "source_title": "_index.md",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/_index.md",
+      "section": "_index.md"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/abac.md",
+      "source_title": "Policy File Format",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/abac.md",
+      "section": "Policy File Format"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/admission-controllers.md",
+      "source_title": "What are they?",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/admission-controllers.md",
+      "section": "What are they?"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/authentication.md",
+      "source_title": "Users in Kubernetes",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/authentication.md",
+      "section": "Users in Kubernetes"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/authorization.md",
+      "source_title": "Authorization verdicts {#determine-whether-a-request-is-allowed-or-denied}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/authorization.md",
+      "section": "Authorization verdicts {#determine-whether-a-request-is-allowed-or-denied}"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/bootstrap-tokens.md",
+      "source_title": "Bootstrap Tokens Overview",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/bootstrap-tokens.md",
+      "section": "Bootstrap Tokens Overview"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/certificate-signing-requests.md",
+      "source_title": "Certificate signing requests",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/certificate-signing-requests.md",
+      "section": "Certificate signing requests"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "source_title": "What are admission webhooks?",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "section": "What are admission webhooks?"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/kubelet-authn-authz.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/kubelet-authn-authz.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/kubelet-tls-bootstrapping.md",
+      "source_title": "Initialization process",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/kubelet-tls-bootstrapping.md",
+      "section": "Initialization process"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/manifest-admission-control.md",
+      "source_title": "Why use manifest-based admission control?",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/manifest-admission-control.md",
+      "section": "Why use manifest-based admission control?"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/mutating-admission-policy.md",
+      "source_title": "What are MutatingAdmissionPolicies?",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/mutating-admission-policy.md",
+      "section": "What are MutatingAdmissionPolicies?"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/node.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/node.md",
+      "section": "Overview"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/psp-to-pod-security-standards.md",
+      "source_title": "PodSecurityPolicy Spec",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/psp-to-pod-security-standards.md",
+      "section": "PodSecurityPolicy Spec"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/rbac.md",
+      "source_title": "API objects {#api-overview}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/rbac.md",
+      "section": "API objects {#api-overview}"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/service-accounts-admin.md",
+      "source_title": "{{% heading \"prerequisites\" %}}",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/service-accounts-admin.md",
+      "section": "{{% heading \"prerequisites\" %}}"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/user-impersonation.md",
+      "source_title": "Can set \"Impersonate-Extra-scopes\" header and the \"Impersonate-Uid\" header.",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/user-impersonation.md",
+      "section": "Can set \"Impersonate-Extra-scopes\" header and the \"Impersonate-Uid\" header."
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/validating-admission-policy.md",
+      "source_title": "What is Validating Admission Policy?",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/validating-admission-policy.md",
+      "section": "What is Validating Admission Policy?"
+    },
+    {
+      "file": "content/en/docs/reference/access-authn-authz/webhook.md",
+      "source_title": "Configuration File Format",
+      "source_url": "https://github.com/kubernetes/website/blob/6ffe282752caee04e4074a2c4e2b6ed261d4f640/content/en/docs/reference/access-authn-authz/webhook.md",
+      "section": "Configuration File Format"
+    }
+  ]
+}

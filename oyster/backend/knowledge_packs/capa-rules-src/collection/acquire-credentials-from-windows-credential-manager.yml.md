@@ -1,0 +1,29 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/acquire-credentials-from-windows-credential-manager.yml -->
+# generated using capa explorer for IDA Pro
+rule:
+  meta:
+    name: acquire credentials from Windows Credential Manager
+    namespace: collection
+    authors:
+      - moritz.raabe@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Credential Access::Credentials from Password Stores::Windows Credential Manager [T1555.004]
+    examples:
+      - c56af5561e3f20bed435fb4355cffc29:0x411A41
+  features:
+    - or:
+      - string: ".vcrd"
+      - string: "*.vcrd"
+      - string: "Policy.vpol"
+      - string: /AppData\\Local\\Microsoft\\(Vault|Credentials)/
+      - api: CredEnumerate
+      - and:
+        - optional:
+          - match: host-interaction/process/create
+        - or:
+          - string: /vaultcmd(\.exe)?/
+          - substring: "/listcreds:"
+          - substring: "\"Windows Credentials\""

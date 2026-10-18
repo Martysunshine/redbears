@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: #e8e8e8;
+  font-family: 'Inter', system-ui, sans-serif;
+  /* A chat pane should never rubber-band the whole document on iOS. */
+  overscroll-behavior-y: none;
+}
+
+/* The app's full height. 100vh is the EXPANDED viewport on iOS Safari (the
+   toolbar counts), so with h-screen the composer sat under the toolbar; dvh
+   tracks what is actually visible. The vh line stays first as the fallback
+   for browsers without dvh (iOS < 15.4). */
+.h-app {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Bottom padding that clears the iPhone home indicator when it exists. */
+.safe-bottom {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Prose / markdown overrides */
+.prose {
+  color: #e8e8e8;
+  max-width: none;
+}
+
+.prose p {
+  margin: 0.5em 0;
+  line-height: 1.7;
+}
+
+.prose pre {
+  background: #111111 !important;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.prose code {
+  color: #a78bfa;
+  background: #1e1e1e;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+.prose pre code {
+  color: #e8e8e8;
+  background: transparent;
+  padding: 0;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+.prose li {
+  margin: 0.25em 0;
+}
+
+.prose a {
+  color: #7c6fff;
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+.prose blockquote {
+  border-left: 3px solid #7c6fff;
+  padding-left: 1em;
+  color: #888888;
+  margin: 0.75em 0;
+}
+
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.75em 0;
+}
+
+.prose th, .prose td {
+  border: 1px solid #2a2a2a;
+  padding: 0.5em 0.75em;
+}
+
+.prose th {
+  background: #1e1e1e;
+  font-weight: 600;
+}
+
+/* Hide scrollbars while preserving scroll functionality */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Blinking cursor for streaming */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '▋';
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+  color: #7c6fff;
+  margin-left: 1px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Oyster Mascot — real transparent artwork (purple shell + pearl,
+   no white foam), animated with CSS transforms.
+   ───────────────────────────────────────────────────────────── */
+
+.oyster-mascot {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.oyster-mascot .om-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform-origin: center bottom;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Soft purple bloom behind the shell */
+.oyster-mascot .om-bloom {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  width: 84%;
+  height: 76%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(150, 90, 255, 0.42), rgba(124, 92, 255, 0.12) 55%, transparent 72%);
+  filter: blur(7px);
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.oyster-mascot:not(.oyster-mascot--animated) .om-bloom { opacity: 0.24; }
+
+/* Sparkle particles (welcome only) */
+.oyster-mascot .om-sparks { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.oyster-mascot .om-spark { position: absolute; width: 11px; height: 11px; opacity: 0; }
+.oyster-mascot .om-spark::before,
+.oyster-mascot .om-spark::after {
+  content: "";
+  position: absolute;
+  background: rgba(228, 212, 255, 0.95);
+  border-radius: 2px;
+}
+.oyster-mascot .om-spark::before { width: 100%; height: 2px; top: 50%; transform: translateY(-50%); }
+.oyster-mascot .om-spark::after { height: 100%; width: 2px; left: 50%; transform: translateX(-50%); }
+.oyster-mascot .om-spark-1 { top: 9%; left: 9%; }
+.oyster-mascot .om-spark-2 { top: 20%; right: 6%; width: 8px; height: 8px; }
+.oyster-mascot .om-spark-3 { bottom: 22%; right: 13%; width: 7px; height: 7px; }
+
+/* ── Animated (welcome): shell-open reveal, then settle into idle ── */
+
+.oyster-mascot--animated .om-img {
+  animation: om-open 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             om-float 4.6s ease-in-out 1.3s infinite;
+}
+.oyster-mascot--animated .om-bloom {
+  animation: om-bloom-in 0.9s ease-out both,
+             om-bloom-pulse 3.8s ease-in-out 1.3s infinite;
+}
+.oyster-mascot--animated .om-spark-1 { animation: om-spark-pop 0.5s ease-out 0.85s both, om-twinkle 2.8s ease-in-out 1.3s infinite; }
+.oyster-mascot--animated .om-spark-2 { animation: om-spark-pop 0.5s ease-out 1.0s both,  om-twinkle 3.1s ease-in-out 1.5s infinite; }
+.oyster-mascot--animated .om-spark-3 { animation: om-spark-pop 0.5s ease-out 1.12s both, om-twinkle 2.5s ease-in-out 1.4s infinite; }
+
+@keyframes om-open {
+  /* closed: shell compressed flat at the bottom … */
+  0%   { transform: scaleY(0.16) scaleX(1.05); opacity: 0.55; filter: brightness(0.62); }
+  /* … springs open with a bright bloom … */
+  62%  { filter: brightness(1.16) drop-shadow(0 8px 26px rgba(140, 100, 255, 0.5)); }
+  /* … and settles fully open. */
+  100% { transform: scaleY(1) scaleX(1); opacity: 1; filter: brightness(1) drop-shadow(0 6px 18px rgba(124, 92, 255, 0.3)); }
+}
+@keyframes om-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+@keyframes om-bloom-in {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.6); }
+  to   { opacity: 0.42; transform: translate(-50%, -50%) scale(1); }
+}
+@keyframes om-bloom-pulse {
+  0%, 100% { opacity: 0.32; transform: translate(-50%, -50%) scale(1); }
+  50%      { opacity: 0.56; transform: translate(-50%, -50%) scale(1.07); }
+}
+@keyframes om-spark-pop {
+  0%   { opacity: 0; transform: scale(0); }
+  70%  { opacity: 1; transform: scale(1.3); }
+  100% { opacity: 0.9; transform: scale(1); }
+}
+@keyframes om-twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.8) rotate(0deg); }
+  50%      { opacity: 1;   transform: scale(1.15) rotate(15deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oyster-mascot--animated .om-img,
+  .oyster-mascot--animated .om-bloom,
+  .oyster-mascot--animated .om-spark-1,
+  .oyster-mascot--animated .om-spark-2,
+  .oyster-mascot--animated .om-spark-3 {
+    animation: none;
+  }
+  .oyster-mascot--animated .om-spark { opacity: 0.9; }
+}
+
+/* Attachment menu fade-in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Handbook side panel slide-in. Kept subtle and short so it reads as the panel
+   arriving, not as motion for its own sake. */
+@keyframes slideInRight {
+  from { opacity: 0.4; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[slideInRight_0\.18s_ease-out\] { animation: none; }
+}
+
+/* ── Settings wheel ───────────────────────────────────────────────────────
+   A minimal Red Orca red gear that turns slowly on its own and speeds up on
+   hover/focus. Slow enough (24s) to read as "alive" rather than as a spinner
+   demanding attention — this sits in a chat header, not on a loading screen. */
+@keyframes rw-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.rw-wheel {
+  animation: rw-spin 24s linear infinite;
+  transform-origin: 50% 50%;
+  transition: animation-duration 200ms linear;
+}
+.rw-btn:hover .rw-wheel,
+.rw-btn:focus-visible .rw-wheel {
+  animation-duration: 2.4s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rw-wheel { animation: none; }
+  .rw-btn:hover .rw-wheel,
+  .rw-btn:focus-visible .rw-wheel { animation: none; }
+}

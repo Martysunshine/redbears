@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/file/file_event/file_event_win_hktl_mimikatz_files.yml -->
+title: HackTool - Mimikatz Kirbi File Creation
+id: 9e099d99-44c2-42b6-a6d8-54c3545cab29
+related:
+    - id: 034affe8-6170-11ec-844f-0f78aa0c4d66
+      type: obsolete
+status: test
+description: Detects the creation of files created by mimikatz such as ".kirbi", "mimilsa.log", etc.
+references:
+    - https://cobalt.io/blog/kerberoast-attack-techniques
+    - https://pentestlab.blog/2019/10/21/persistence-security-support-provider/
+author: Florian Roth (Nextron Systems), David ANDRE
+date: 2021-11-08
+modified: 2024-06-27
+tags:
+    - attack.credential-access
+    - attack.t1558
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+            - '.kirbi' # Kerberos tickets
+            - 'mimilsa.log' # MemSSP default file
+    condition: selection
+falsepositives:
+    - Unlikely
+level: critical

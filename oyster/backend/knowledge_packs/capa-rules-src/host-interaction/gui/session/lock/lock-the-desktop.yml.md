@@ -1,0 +1,16 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/gui/session/lock/lock-the-desktop.yml -->
+rule:
+  meta:
+    name: lock the desktop
+    namespace: host-interaction/gui/session/lock
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Impact::Endpoint Denial of Service [T1499]
+    examples:
+      - 39C05B15E9834AC93F206BC114D0A00C357C888DB567BA8F5345DA0529CBED41:0x100084D0
+  features:
+    - api: user32.LockWorkStation

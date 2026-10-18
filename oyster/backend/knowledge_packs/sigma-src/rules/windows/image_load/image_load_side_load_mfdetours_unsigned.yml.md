@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/image_load/image_load_side_load_mfdetours_unsigned.yml -->
+title: Unsigned Mfdetours.DLL Sideloading
+id: 948a0953-f287-4806-bbcb-3b2e396df89f
+related:
+    - id: d2605a99-2218-4894-8fd3-2afb7946514d
+      type: similar
+status: test
+description: Detects DLL sideloading of unsigned "mfdetours.dll". Executing "mftrace.exe" can be abused to attach to an arbitrary process and force load any DLL named "mfdetours.dll" from the current directory of execution.
+references:
+    - Internal Research
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-08-11
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.001
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith: '\mfdetours.dll'
+    filter_main_legit_path:
+        ImageLoaded|contains: ':\Program Files (x86)\Windows Kits\10\bin\'
+        SignatureStatus: 'Valid'
+    condition: selection and not 1 of filter_main_*
+falsepositives:
+    - Unlikely
+level: high

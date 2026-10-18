@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/RareOperations.yaml -->
+id: e0aa0b90-addb-4c42-8a1a-d3327dc7ebff
+name: Rare subscription-level operations in Azure
+description: 'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Analytic%20Rules/RareOperations.yaml'
+version: 2.0.1

@@ -1,0 +1,49 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/load-code/pe/inspect-section-memory-permissions.yml -->
+rule:
+  meta:
+    name: inspect section memory permissions
+    namespace: load-code/pe
+    authors:
+      - "@Ana06"
+    description: "translate section memory permissions (specified in the 'Characteristics' field of the image section header) into page protection constants"
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - Discovery::Code Discovery::Inspect Section Memory Permissions [B0046.002]
+    examples:
+      - E4C33AC3638EEF68311F8AC0D72483C7:0x401480
+  features:
+    - and:
+      - os: windows
+      - 3 or more:
+        - and:
+          - number: 0x40000000 = IMAGE_SCN_MEM_READ
+          - number: 0x2 = PAGE_READONLY
+        - and:
+          - number: 0x20000000 = IMAGE_SCN_MEM_EXECUTE
+          - number: 0x10 = PAGE_EXECUTE
+        - and:
+          - or:
+            - number: 0x60000000 = IMAGE_SCN_MEM_READ | IMAGE_SCN_MEM_EXECUTE
+            - and:
+              - number: 0x40000000 = IMAGE_SCN_MEM_READ
+              - number: 0x20000000 = IMAGE_SCN_MEM_EXECUTE
+          - number: 0x20 = PAGE_EXECUTE_READ
+        - and:
+          - or:
+            - number: 0xC0000000 = IMAGE_SCN_MEM_READ | IMAGE_SCN_MEM_WRITE
+            - and:
+              - number: 0x40000000 = IMAGE_SCN_MEM_READ
+              - number: 0x80000000 = IMAGE_SCN_MEM_WRITE
+          - number: 0x4 = PAGE_READWRITE
+        - and:
+          - or:
+            - number: 0xE0000000 = IMAGE_SCN_MEM_READ | IMAGE_SCN_MEM_WRITE | IMAGE_SCN_MEM_EXECUTE
+            - and:
+              - number: 0x40000000 = IMAGE_SCN_MEM_READ
+              - number: 0x80000000 = IMAGE_SCN_MEM_WRITE
+              - number: 0x20000000 = IMAGE_SCN_MEM_EXECUTE
+          - number: 0x40 = PAGE_EXECUTE_READWRITE
+      - optional:
+        - number: 0x1 = PAGE_NOACCESS

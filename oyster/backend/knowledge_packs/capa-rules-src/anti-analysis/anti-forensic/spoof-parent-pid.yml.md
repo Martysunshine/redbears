@@ -1,0 +1,21 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-forensic/spoof-parent-pid.yml -->
+# generated using capa explorer for IDA Pro
+rule:
+  meta:
+    name: spoof parent PID
+    namespace: anti-analysis/anti-forensic
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Access Token Manipulation::Parent PID Spoofing [T1134.004]
+    references:
+      - https://blog.f-secure.com/detecting-parent-pid-spoofing/
+    examples:
+      - 2ebadd04f0ada89c36c1409b6e96423a68dd77b513db8db3da203c36d3753e5f:0x140002291
+  features:
+    - and:
+      - api: kernel32.UpdateProcThreadAttribute
+      - number: 0x20000 = PROC_THREAD_ATTRIBUTE_PARENT_PROCESS

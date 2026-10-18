@@ -1,0 +1,53 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/credit-card/parse-credit-card-information.yml -->
+rule:
+  meta:
+    name: parse credit card information
+    namespace: collection/credit-card
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: unsupported  # requires mnemonic features
+    mbc:
+      - Data::Check String [C0019]
+    examples:
+      - 1d8fd13c890060464019c0f07b928b1a:0x402860
+  features:
+    - and:
+      - 3 or more:
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x5E = '^' (Track 1 separator)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x3D = '=' (Track 2 separator)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x25 = '%' (Track 1 start sentinel)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x42 = 'B' (Format code)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x44 = 'D' (Format code)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x3F = '?' (Track 1 & 2 end sentinel)
+        - instruction:
+          - mnemonic: cmp
+          - number: 0x3B = ';' (Track 2 start sentinel)
+      - not:
+        - description: if a function also compares these non-hex characters it's most likely NOT parsing CC data
+        - and:
+          - instruction:
+            - mnemonic: cmp
+            - number: 0x6D = 'm'
+          - instruction:
+            - mnemonic: cmp
+            - number: 0x6E = 'n'
+          - instruction:
+            - mnemonic: cmp
+            - number: 0x6F = 'o'
+          - instruction:
+            - mnemonic: cmp
+            - number: 0x70 = 'p'

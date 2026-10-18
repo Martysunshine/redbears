@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/application/opencanary/opencanary_ftp_login_attempt.yml -->
+title: OpenCanary - FTP Login Attempt
+id: 6991bc2b-ae2e-447f-bc55-3a1ba04c14e5
+status: test
+description: Detects instances where an FTP service on an OpenCanary node has had a login attempt.
+references:
+    - https://opencanary.readthedocs.io/en/latest/starting/configuration.html#services-configuration
+    - https://github.com/thinkst/opencanary/blob/a0896adfcaf0328cfd5829fe10d2878c7445138e/opencanary/logger.py#L52
+author: Security Onion Solutions
+date: 2024-03-08
+tags:
+    - attack.initial-access
+    - attack.exfiltration
+    - attack.lateral-movement
+    - attack.t1190
+    - attack.t1021
+logsource:
+    category: application
+    product: opencanary
+detection:
+    selection:
+        logtype: 2000
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

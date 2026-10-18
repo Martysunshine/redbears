@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/builtin/syslog/lnx_syslog_susp_named.yml -->
+title: Suspicious Named Error
+id: c8e35e96-19ce-4f16-aeb6-fd5588dc5365
+status: test
+description: Detects suspicious DNS error messages that indicate a fatal or suspicious error that could be caused by exploiting attempts
+references:
+    - https://github.com/ossec/ossec-hids/blob/1ecffb1b884607cb12e619f9ab3c04f530801083/etc/rules/named_rules.xml
+author: Florian Roth (Nextron Systems)
+date: 2018-02-20
+modified: 2022-10-05
+tags:
+    - attack.initial-access
+    - attack.t1190
+logsource:
+    product: linux
+    service: syslog
+detection:
+    keywords:
+        - ' dropping source port zero packet from '
+        - ' denied AXFR from '
+        - ' exiting (due to fatal error)'
+    condition: keywords
+falsepositives:
+    - Unknown
+level: high

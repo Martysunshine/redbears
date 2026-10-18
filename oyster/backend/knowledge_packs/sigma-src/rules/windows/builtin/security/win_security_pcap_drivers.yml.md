@@ -1,0 +1,35 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_pcap_drivers.yml -->
+title: Windows Pcap Drivers
+id: 7b687634-ab20-11ea-bb37-0242ac130002
+status: test
+description: Detects Windows Pcap driver installation based on a list of associated .sys files.
+references:
+    - https://ragged-lab.blogspot.com/2020/06/capturing-pcap-driver-installations.html#more
+author: Cian Heasley
+date: 2020-06-10
+modified: 2023-04-14
+tags:
+    - attack.discovery
+    - attack.credential-access
+    - attack.t1040
+logsource:
+    product: windows
+    service: security
+    definition: The 'System Security Extension' audit subcategory need to be enabled to log the EID 4697
+detection:
+    selection:
+        EventID: 4697
+        ServiceFileName|contains:
+            - 'pcap'
+            - 'npcap'
+            - 'npf'
+            - 'nm3'
+            - 'ndiscap'
+            - 'nmnt'
+            - 'windivert'
+            - 'USBPcap'
+            - 'pktmon'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

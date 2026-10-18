@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_regsvr32_remote_share.yml -->
+title: Suspicious Regsvr32 Execution From Remote Share
+id: 88a87a10-384b-4ad7-8871-2f9bf9259ce5
+status: test
+description: Detects REGSVR32.exe to execute DLL hosted on remote shares
+references:
+    - https://thedfirreport.com/2022/10/31/follina-exploit-leads-to-domain-compromise/
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-10-31
+tags:
+    - attack.stealth
+    - attack.t1218.010
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\regsvr32.exe'
+        - OriginalFileName: '\REGSVR32.EXE'
+    selection_cli:
+        CommandLine|contains: ' \\\\'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+# Decrease to medium if this is something common in your org
+level: high

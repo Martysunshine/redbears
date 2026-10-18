@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ProofpointPOD/ProofpointPODWeakCiphers.yaml -->
+id: 8e111d19-fe03-4205-aa39-9ddeef3fb23a
+name: ProofpointPOD - Weak ciphers
+description: 'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand(POD)%20Email%20Security/Analytic%20Rules/ProofpointPODWeakCiphers.yaml'
+version: 1.0.3

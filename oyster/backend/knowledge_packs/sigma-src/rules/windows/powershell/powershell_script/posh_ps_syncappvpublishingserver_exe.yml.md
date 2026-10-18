@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/powershell/powershell_script/posh_ps_syncappvpublishingserver_exe.yml -->
+title: SyncAppvPublishingServer Execution to Bypass Powershell Restriction
+id: dddfebae-c46f-439c-af7a-fdb6bde90218
+related:
+    - id: fde7929d-8beb-4a4c-b922-be9974671667
+      type: derived
+    - id: 9f7aa113-9da6-4a8d-907c-5f1a4b908299
+      type: derived
+status: test
+description: Detects SyncAppvPublishingServer process execution which usually utilized by adversaries to bypass PowerShell execution restrictions.
+references:
+    - https://lolbas-project.github.io/lolbas/Binaries/Syncappvpublishingserver/
+author: 'Ensar Şamil, @sblmsrsn, OSCD Community'
+date: 2020-10-05
+modified: 2022-12-25
+tags:
+    - attack.stealth
+    - attack.t1218
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    selection:
+        ScriptBlockText|contains: 'SyncAppvPublishingServer.exe'
+    condition: selection
+falsepositives:
+    - App-V clients
+level: medium

@@ -1,0 +1,33 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-av/patch-event-tracing-for-windows-function.yml -->
+rule:
+  meta:
+    name: patch Event Tracing for Windows function
+    namespace: anti-analysis/anti-av
+    authors:
+      - jakub.jozwiak@mandiant.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Impair Defenses::Disable or Modify Tools [T1562.001]
+    mbc:
+      - Defense Evasion::Disable or Evade Security Tools [F0004]
+    references:
+      - https://unprotect.it/technique/disabling-event-tracing-for-windows-etw/
+      - https://github.com/Mr-Un1k0d3r/AMSI-ETW-Patch/blob/main/patch-etw-x64.c
+    examples:
+      - 15835b6dd703e69d22d4ab941ccd5f6e78c3abc22ae123366da5e950eaa62e2b:0x180001D70
+  features:
+    - and:
+      - match: change memory protection
+      - or:
+        - string: "EventWrite"
+        - string: "EtwEventWrite"
+        - string: "EtwEventWriteFull"
+        - string: "TraceEvent"
+        - string: "NtTraceEvent"
+        - string: "ZwTraceEvent"
+        - string: "NtTraceControl"
+        - string: "ZwTraceControl"
+      - optional:
+        - match: write process memory

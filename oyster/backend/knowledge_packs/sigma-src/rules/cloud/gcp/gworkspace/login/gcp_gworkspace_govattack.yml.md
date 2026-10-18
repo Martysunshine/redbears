@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/gcp/gworkspace/login/gcp_gworkspace_govattack.yml -->
+title: Google Workspace Government Attack Warning
+id: eafe6f2b-cfec-4612-aec2-49563c33a087
+status: experimental
+description: Detects a login attempt in Google Workspace flagged as a potential attack by a government-backed threat actor
+references:
+    - https://cloud.google.com/logging/docs/audit/gsuite-audit-logging
+    - https://cloud.google.com/logging/docs/audit/understanding-audit-logs
+    - https://developers.google.com/workspace/admin/reports/v1/appendix/activity/login#gov_attack_warning
+author: Tom Kluter
+date: 2026-04-28
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.initial-access
+    - attack.impact
+    - attack.stealth
+    - attack.t1078
+logsource:
+    product: gcp
+    service: google_workspace.login
+detection:
+    selection:
+        protoPayload.serviceName: 'login.googleapis.com'
+        protoPayload.metadata.event.eventName: 'gov_attack_warning'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium

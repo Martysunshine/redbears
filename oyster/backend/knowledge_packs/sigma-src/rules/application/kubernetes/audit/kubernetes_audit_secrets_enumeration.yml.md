@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/application/kubernetes/audit/kubernetes_audit_secrets_enumeration.yml -->
+title: Kubernetes Secrets Enumeration
+id: eeb3e9e1-b685-44e4-9232-6bb701f925b5
+related:
+    - id: 7ee0b4aa-d8d4-4088-b661-20efdf41a04c
+      type: derived
+status: test
+description: Detects enumeration of Kubernetes secrets.
+references:
+    - https://microsoft.github.io/Threat-Matrix-for-Kubernetes/techniques/List%20K8S%20secrets/
+author: Leo Tsaousis (@laripping)
+date: 2024-03-26
+tags:
+    - attack.t1552.007
+    - attack.credential-access
+logsource:
+    category: application
+    product: kubernetes
+    service: audit
+detection:
+    selection:
+        verb: 'list'
+        objectRef.resource: 'secrets'
+    condition: selection
+falsepositives:
+    - The Kubernetes dashboard occasionally accesses the kubernetes-dashboard-key-holder secret
+level: low

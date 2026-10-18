@@ -1,0 +1,20 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/anti-analysis/anti-forensic/crash-the-windows-event-logging-service.yml -->
+rule:
+  meta:
+    name: crash the Windows event logging service
+    namespace: anti-analysis/anti-forensic
+    authors:
+      - michael.hunhoff@mandiant.com
+    scopes:
+      static: basic block
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Impair Defenses::Disable Windows Event Logging [T1562.002]
+    references:
+      - https://github.com/limbenjamin/LogServiceCrash
+    examples:
+      - 82BF6347ACF15E5D883715DC289D8A2B:0x14005E0C0
+  features:
+    - and:
+      - count(api(advapi32.ElfClearEventLogFileW)): 3 or more
+      - count(api(advapi32.OpenEventLogA)): 1 or more

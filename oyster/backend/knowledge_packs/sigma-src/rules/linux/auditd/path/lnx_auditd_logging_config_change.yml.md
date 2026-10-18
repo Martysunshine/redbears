@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/path/lnx_auditd_logging_config_change.yml -->
+title: Logging Configuration Changes on Linux Host
+id: c830f15d-6f6e-430f-8074-6f73d6807841
+status: test
+description: Detect changes of syslog daemons configuration files
+references:
+    - self experience
+author: Mikhail Larin, oscd.community
+date: 2019-10-25
+modified: 2021-11-27
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection:
+        type: 'PATH'
+        name:
+            - /etc/syslog.conf
+            - /etc/rsyslog.conf
+            - /etc/syslog-ng/syslog-ng.conf
+    condition: selection
+falsepositives:
+    - Legitimate administrative activity
+level: high

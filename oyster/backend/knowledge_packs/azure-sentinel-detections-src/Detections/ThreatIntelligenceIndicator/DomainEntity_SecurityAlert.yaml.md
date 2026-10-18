@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/ThreatIntelligenceIndicator/DomainEntity_SecurityAlert.yaml -->
+id: d2599aab-5956-432a-a73a-2674f0b7f000
+name: TI map Domain entity to SecurityAlert
+description: |
+    'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/DomainEntity_SecurityAlert.yaml'
+version: 1.0.1

@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_service_install_anydesk.yml -->
+title: Anydesk Remote Access Software Service Installation
+id: 530a6faa-ff3d-4022-b315-50828e77eef5
+status: test
+description: Detects the installation of the anydesk software service. Which could be an indication of anydesk abuse if you the software isn't already used.
+references:
+    - https://thedfirreport.com/2022/08/08/bumblebee-roasts-its-way-to-domain-admin/
+    - https://thedfirreport.com/2025/02/24/confluence-exploit-leads-to-lockbit-ransomware/
+author: Nasreddine Bencherchali (Nextron Systems), Swachchhanda Shrawan Poudel (Nextron Systems)
+date: 2022-08-11
+modified: 2025-02-24
+tags:
+    - attack.persistence
+logsource:
+    product: windows
+    service: system
+detection:
+    selection_provider:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+    selection_service:
+        - ServiceName|contains|all:
+              - 'AnyDesk' # Covers both AnyDesk Service and AnyDesk MSI Service
+              - 'Service'
+        - ImagePath|contains: 'AnyDesk'
+    condition: all of selection_*
+falsepositives:
+    - Legitimate usage of the anydesk tool
+level: medium

@@ -1,0 +1,36 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/signin_logs/azure_legacy_authentication_protocols.yml -->
+title: Use of Legacy Authentication Protocols
+id: 60f6535a-760f-42a9-be3f-c9a0a025906e
+status: test
+description: Alert on when legacy authentication has been used on an account
+references:
+    - https://learn.microsoft.com/en-gb/entra/architecture/security-operations-privileged-accounts
+author: Yochana Henderson, '@Yochana-H'
+date: 2022-06-17
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.initial-access
+    - attack.credential-access
+    - attack.stealth
+    - attack.t1078.004
+    - attack.t1110
+logsource:
+    product: azure
+    service: signinlogs
+detection:
+    selection:
+        ActivityDetails: Sign-ins
+        ClientApp:
+            - Other client
+            - IMAP
+            - POP3
+            - MAPI
+            - SMTP
+            - Exchange ActiveSync
+            - Exchange Web Services
+        Username: 'UPN'
+    condition: selection
+falsepositives:
+    - User has been put in acception group so they can use legacy authentication
+level: high

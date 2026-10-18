@@ -1,0 +1,42 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/path/lnx_auditd_magic_system_request_key.yml -->
+title: Potential Abuse of Linux Magic System Request Key
+id: ea61bb82-a5e0-42e6-8537-91d29500f1b9
+status: experimental
+description: |
+    Detects the potential abuse of the Linux Magic SysRq (System Request) key by adversaries with root or sufficient privileges
+    to silently manipulate or destabilize a system. By writing to /proc/sysrq-trigger, they can crash the system, kill processes,
+    or disrupt forensic analysis—all while bypassing standard logging. Though intended for recovery and debugging, SysRq can be
+    misused as a stealthy post-exploitation tool. It is controlled via /proc/sys/kernel/sysrq or permanently through /etc/sysctl.conf.
+references:
+    - https://www.kernel.org/doc/html/v4.10/_sources/admin-guide/sysrq.txt
+    - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/4/html/reference_guide/s3-proc-sys-kernel
+    - https://www.splunk.com/en_us/blog/security/threat-update-awfulshred-script-wiper.html
+author: Milad Cheraghi
+date: 2025-05-23
+tags:
+    - attack.execution
+    - attack.t1059.004
+    - attack.impact
+    - attack.t1529
+    - attack.t1489
+    - attack.t1499
+logsource:
+    product: linux
+    service: auditd
+    definition: |
+        Required auditd configuration:
+        -w /proc/sysrq-trigger -p wa -k sysrq
+        -w /proc/sys/kernel/sysrq -p wa -k sysrq
+detection:
+    selection:
+        type: 'PATH'
+        name|endswith:
+            # Enable
+            - '/sysrq'
+            - '/sysctl.conf'
+            # Execute
+            - '/sysrq-trigger'
+    condition: selection
+falsepositives:
+    - Legitimate administrative activity
+level: medium

@@ -1,0 +1,16 @@
+<!-- source: https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/99f4395589bdbd120ae961f9cd179e79d7f9b27f/initiatives/readme.md -->
+Strategic Inititives 
+
+Background: The goal of initiatives within the project are to address specific
+areas of education and research to create practical, executable 
+resources and insights in support of the overall project goals.
+
+This folder is to contain the assets and outputs of the inititives
+for publishing and ongoing revisions.
+
+Current Inititives Include:
+ - AI Security Center of Excellence (CoE) Guide
+ - Scrutinizing LLMs in Exploit Generation, Spearheaded by Rachel James and Bryan Nakayama 
+   and in partnership with the University of Illinois. Along with a broad team of contributors.
+ - AI Red Teaming & Evaluation Guidelines, Spearheaded by Krishna Sankar, and a broad team of contributors.
+   

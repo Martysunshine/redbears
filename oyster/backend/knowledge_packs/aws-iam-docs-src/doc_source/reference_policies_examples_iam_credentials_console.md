@@ -1,0 +1,33 @@
+<!-- source: https://github.com/awsdocs/iam-user-guide/blob/e2b8637a825b9f292bb04af61277d067dfcc5676/doc_source/reference_policies_examples_iam_credentials_console.md -->
+# IAM: Allows IAM users to rotate their own credentials programmatically and in the console<a name="reference_policies_examples_iam_credentials_console"></a>
+
+This example shows how you might create an identity\-based policy that allows IAM users to rotate their own access keys, signing certificates, service specific credentials, and passwords\. This policy defines permissions for programmatic and console access\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListUsers",
+                "iam:GetAccountPasswordPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:*AccessKey*",
+                "iam:ChangePassword",
+                "iam:GetUser",
+                "iam:*ServiceSpecificCredential*",
+                "iam:*SigningCertificate*"
+            ],
+            "Resource": ["arn:aws:iam::*:user/${aws:username}"]
+        }
+    ]
+}
+```
+
+To learn how a user can change their own password in the console, see [How an IAM user changes their own password](id_credentials_passwords_user-change-own.md)\.

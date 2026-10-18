@@ -1,0 +1,255 @@
+{
+  "id": "osquery-docs-src",
+  "name": "osquery-docs-src",
+  "version": "4886ba1f55c2",
+  "title": "osquery official documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "detection-engineering",
+  "description": "Imported from https://osquery.readthedocs.io/ at 4886ba1f55c2. 36 documents.",
+  "authority": "osquery",
+  "publisher": "The osquery Foundation",
+  "trust_level": "official",
+  "licence": "Apache-2.0",
+  "attribution": "osquery documentation, \u00a9 The osquery Authors, dual Apache License 2.0 / GPL 2.0.",
+  "tags": [
+    "osquery",
+    "endpoint",
+    "detection",
+    "fim",
+    "process-auditing"
+  ],
+  "applicable_tools": [
+    "osquery"
+  ],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "osquery-docs-src",
+  "upstream_commit": "4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b",
+  "source_urls": [
+    "https://osquery.readthedocs.io/",
+    "https://github.com/osquery/osquery"
+  ],
+  "docs": [
+    {
+      "file": "docs/README.md",
+      "source_title": "ReadTheDocs Wiki",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/README.md",
+      "section": "ReadTheDocs Wiki"
+    },
+    {
+      "file": "docs/doxygen/mainpage.md",
+      "source_title": "mainpage.md",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/doxygen/mainpage.md",
+      "section": "mainpage.md"
+    },
+    {
+      "file": "docs/wiki/deployment/anomaly-detection.md",
+      "source_title": "Anomaly detection with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/anomaly-detection.md",
+      "section": "Anomaly detection with osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/aws-logging.md",
+      "source_title": "Logging osquery to AWS",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/aws-logging.md",
+      "section": "Logging osquery to AWS"
+    },
+    {
+      "file": "docs/wiki/deployment/configuration.md",
+      "source_title": "Configuring an osquery deployment",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/configuration.md",
+      "section": "Configuring an osquery deployment"
+    },
+    {
+      "file": "docs/wiki/deployment/debugging.md",
+      "source_title": "Debugging osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/debugging.md",
+      "section": "Debugging osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/dependency-security.md",
+      "source_title": "Security Alerts for Third-party Dependencies Used by osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/dependency-security.md",
+      "section": "Security Alerts for Third-party Dependencies Used by osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/extensions.md",
+      "source_title": "Developing osquery Extensions",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/extensions.md",
+      "section": "Developing osquery Extensions"
+    },
+    {
+      "file": "docs/wiki/deployment/file-carving.md",
+      "source_title": "File Carving with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/file-carving.md",
+      "section": "File Carving with osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/file-integrity-monitoring.md",
+      "source_title": "File Integrity Monitoring with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/file-integrity-monitoring.md",
+      "section": "File Integrity Monitoring with osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/log-aggregation.md",
+      "source_title": "Log aggregation",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/log-aggregation.md",
+      "section": "Log aggregation"
+    },
+    {
+      "file": "docs/wiki/deployment/logging.md",
+      "source_title": "Logging osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/logging.md",
+      "section": "Logging osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/performance-safety.md",
+      "source_title": "Performance safety",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/performance-safety.md",
+      "section": "Performance safety"
+    },
+    {
+      "file": "docs/wiki/deployment/process-auditing.md",
+      "source_title": "Process and socket auditing with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/process-auditing.md",
+      "section": "Process and socket auditing with osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/remote.md",
+      "source_title": "Remotely interfacing osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/remote.md",
+      "section": "Remotely interfacing osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/syslog.md",
+      "source_title": "Reading syslog with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/syslog.md",
+      "section": "Reading syslog with osquery"
+    },
+    {
+      "file": "docs/wiki/deployment/yara.md",
+      "source_title": "YARA-based scanning with osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/deployment/yara.md",
+      "section": "YARA-based scanning with osquery"
+    },
+    {
+      "file": "docs/wiki/development/building.md",
+      "source_title": "Building osquery from source",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/building.md",
+      "section": "Building osquery from source"
+    },
+    {
+      "file": "docs/wiki/development/config-plugins.md",
+      "source_title": "Configuration Plugins",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/config-plugins.md",
+      "section": "Configuration Plugins"
+    },
+    {
+      "file": "docs/wiki/development/creating-tables.md",
+      "source_title": "Creating tables",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/creating-tables.md",
+      "section": "Creating tables"
+    },
+    {
+      "file": "docs/wiki/development/cve-scan.md",
+      "source_title": "CVE Scan",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/cve-scan.md",
+      "section": "CVE Scan"
+    },
+    {
+      "file": "docs/wiki/development/logger-plugins.md",
+      "source_title": "Logger plugins",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/logger-plugins.md",
+      "section": "Logger plugins"
+    },
+    {
+      "file": "docs/wiki/development/options-arguments.md",
+      "source_title": "Adding new options and arguments to osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/options-arguments.md",
+      "section": "Adding new options and arguments to osquery"
+    },
+    {
+      "file": "docs/wiki/development/osquery-sdk.md",
+      "source_title": "The osquery SDK",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/osquery-sdk.md",
+      "section": "The osquery SDK"
+    },
+    {
+      "file": "docs/wiki/development/pubsub-framework.md",
+      "source_title": "The pub-sub evented data framework of osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/pubsub-framework.md",
+      "section": "The pub-sub evented data framework of osquery"
+    },
+    {
+      "file": "docs/wiki/development/reading-files.md",
+      "source_title": "Reading Files",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/reading-files.md",
+      "section": "Reading Files"
+    },
+    {
+      "file": "docs/wiki/development/unit-tests.md",
+      "source_title": "Unit testing in osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/development/unit-tests.md",
+      "section": "Unit testing in osquery"
+    },
+    {
+      "file": "docs/wiki/index.md",
+      "source_title": "Getting Started",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/index.md",
+      "section": "Getting Started"
+    },
+    {
+      "file": "docs/wiki/installation/cli-flags.md",
+      "source_title": "Command-line flags",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/installation/cli-flags.md",
+      "section": "Command-line flags"
+    },
+    {
+      "file": "docs/wiki/installation/custom-packages.md",
+      "source_title": "Custom packaging",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/installation/custom-packages.md",
+      "section": "Custom packaging"
+    },
+    {
+      "file": "docs/wiki/installation/install-linux.md",
+      "source_title": "Installing osquery on Linux",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/installation/install-linux.md",
+      "section": "Installing osquery on Linux"
+    },
+    {
+      "file": "docs/wiki/installation/install-macos.md",
+      "source_title": "Installing on macOS",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/installation/install-macos.md",
+      "section": "Installing on macOS"
+    },
+    {
+      "file": "docs/wiki/installation/install-windows.md",
+      "source_title": "Installing osquery on Windows",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/installation/install-windows.md",
+      "section": "Installing osquery on Windows"
+    },
+    {
+      "file": "docs/wiki/introduction/sql.md",
+      "source_title": "Everything in SQL",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/introduction/sql.md",
+      "section": "Everything in SQL"
+    },
+    {
+      "file": "docs/wiki/introduction/using-osqueryd.md",
+      "source_title": "Using osquery",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/introduction/using-osqueryd.md",
+      "section": "Using osquery"
+    },
+    {
+      "file": "docs/wiki/introduction/using-osqueryi.md",
+      "source_title": "Using osqueryi",
+      "source_url": "https://github.com/osquery/osquery/blob/4886ba1f55c2339e8f8bcda785e4a1e0a7ecf38b/docs/wiki/introduction/using-osqueryi.md",
+      "section": "Using osqueryi"
+    }
+  ]
+}

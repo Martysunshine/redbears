@@ -1,0 +1,47 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_lm_namedpipe.yml -->
+title: First Time Seen Remote Named Pipe
+id: 52d8b0c6-53d6-439a-9e41-52ad442ad9ad
+status: test
+description: This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes
+references:
+    - https://twitter.com/menasec1/status/1104489274387451904
+author: Samir Bousseaden
+date: 2019-04-03
+modified: 2023-03-14
+tags:
+    - attack.lateral-movement
+    - attack.t1021.002
+logsource:
+    product: windows
+    service: security
+    definition: 'The advanced audit policy setting "Object Access > Audit Detailed File Share" must be configured for Success/Failure'
+detection:
+    selection1:
+        EventID: 5145
+        ShareName: '\\\\\*\\IPC$' # looking for the string \\*\IPC$
+    false_positives:
+        RelativeTargetName:
+            - 'atsvc'
+            - 'samr'
+            - 'lsarpc'
+            - 'lsass'
+            - 'winreg'
+            - 'netlogon'
+            - 'srvsvc'
+            - 'protected_storage'
+            - 'wkssvc'
+            - 'browser'
+            - 'netdfs'
+            - 'svcctl'
+            - 'spoolss'
+            - 'ntsvcs'
+            - 'LSM_API_service'
+            - 'HydraLsPipe'
+            - 'TermSrv_API_service'
+            - 'MsFteWds'
+            - 'sql\query'
+            - 'eventlog'
+    condition: selection1 and not false_positives
+falsepositives:
+    - Update the excluded named pipe to filter out any newly observed legit named pipe
+level: high

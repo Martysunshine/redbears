@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/proxy_generic/proxy_ua_cryptominer.yml -->
+title: Crypto Miner User Agent
+id: fa935401-513b-467b-81f4-f9e77aa0dd78
+status: test
+description: Detects suspicious user agent strings used by crypto miners in proxy logs
+references:
+    - https://github.com/xmrig/xmrig/blob/da22b3e6c45825f3ac1f208255126cb8585cd4fc/src/base/kernel/Platform_win.cpp#L65
+    - https://github.com/xmrig/xmrig/blob/427b6516e0550200c17ca28675118f0fffcc323f/src/version.h
+author: Florian Roth (Nextron Systems)
+date: 2019-10-21
+modified: 2021-11-27
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+logsource:
+    category: proxy
+detection:
+    selection:
+        c-useragent|startswith:
+        # XMRig
+            - 'XMRig '
+        # CCMiner
+            - 'ccminer'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

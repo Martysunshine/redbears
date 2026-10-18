@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_renamed_msdt.yml -->
+title: Renamed Msdt.EXE Execution
+id: bd1c6866-65fc-44b2-be51-5588fcff82b9
+status: test
+description: Detects the execution of a renamed "Msdt.exe" binary
+references:
+    - https://lolbas-project.github.io/lolbas/Binaries/Msdt/
+author: pH-T (Nextron Systems)
+date: 2022-06-03
+modified: 2023-02-03
+tags:
+    - attack.stealth
+    - attack.t1036.003
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        OriginalFileName: 'msdt.exe'
+    filter:
+        Image|endswith: '\msdt.exe'
+    condition: selection and not filter
+falsepositives:
+    - Unlikely
+level: high
+regression_tests_path: regression_data/rules/windows/process_creation/proc_creation_win_renamed_msdt/info.yml

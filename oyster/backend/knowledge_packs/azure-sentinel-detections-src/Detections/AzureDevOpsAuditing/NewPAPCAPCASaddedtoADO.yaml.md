@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureDevOpsAuditing/NewPAPCAPCASaddedtoADO.yaml -->
+id: 13045624-b966-41ba-823f-f1e9bddc0cbe
+name: New PA, PCA, or PCAS added to Azure DevOps
+description: |
+  'As part of content migration, this file is moved to new location. You can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Analytic%20Rules/NewPAPCAPCASaddedtoADO.yaml'

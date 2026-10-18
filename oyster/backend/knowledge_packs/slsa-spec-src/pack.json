@@ -1,0 +1,222 @@
+{
+  "id": "slsa-spec-src",
+  "name": "slsa-spec-src",
+  "version": "1686afeba11a",
+  "title": "SLSA \u2014 Supply-chain Levels for Software Artifacts (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://slsa.dev/ at 1686afeba11a. 31 documents.",
+  "authority": "OpenSSF",
+  "publisher": "SLSA Working Group",
+  "trust_level": "official",
+  "licence": "community-specification-1.0",
+  "attribution": "SLSA specification, SLSA Working Group / OpenSSF, Community Specification License 1.0.",
+  "tags": [
+    "slsa",
+    "supply-chain",
+    "provenance",
+    "build-integrity"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track SLSA spec releases.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "slsa-spec-src",
+  "upstream_commit": "1686afeba11a456e470235ecf50cfc0d2f9ecbc3",
+  "source_urls": [
+    "https://slsa.dev/",
+    "https://github.com/slsa-framework/slsa"
+  ],
+  "docs": [
+    {
+      "file": "spec/about.md",
+      "source_title": "What is SLSA?",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/about.md",
+      "section": "What is SLSA?"
+    },
+    {
+      "file": "spec/assessing-build-platforms.md",
+      "source_title": "Threats",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/assessing-build-platforms.md",
+      "section": "Threats"
+    },
+    {
+      "file": "spec/assessing-source-systems.md",
+      "source_title": "Threats",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/assessing-source-systems.md",
+      "section": "Threats"
+    },
+    {
+      "file": "spec/attestation-model.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/attestation-model.md",
+      "section": "Overview"
+    },
+    {
+      "file": "spec/attested-build-env-levels.md",
+      "source_title": "Rationale",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/attested-build-env-levels.md",
+      "section": "Rationale"
+    },
+    {
+      "file": "spec/build-env-track-basics.md",
+      "source_title": "Rationale",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/build-env-track-basics.md",
+      "section": "Rationale"
+    },
+    {
+      "file": "spec/build-provenance.md",
+      "source_title": "Purpose",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/build-provenance.md",
+      "section": "Purpose"
+    },
+    {
+      "file": "spec/build-requirements.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/build-requirements.md",
+      "section": "Overview"
+    },
+    {
+      "file": "spec/build-track-basics.md",
+      "source_title": "Build L0: No guarantees",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/build-track-basics.md",
+      "section": "Build L0: No guarantees"
+    },
+    {
+      "file": "spec/dependency-track.md",
+      "source_title": "Basics",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/dependency-track.md",
+      "section": "Basics"
+    },
+    {
+      "file": "spec/distributing-provenance.md",
+      "source_title": "Background",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/distributing-provenance.md",
+      "section": "Background"
+    },
+    {
+      "file": "spec/faq.md",
+      "source_title": "Q: Why is SLSA not transitive?",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/faq.md",
+      "section": "Q: Why is SLSA not transitive?"
+    },
+    {
+      "file": "spec/future-directions.md",
+      "source_title": "Build track",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/future-directions.md",
+      "section": "Build track"
+    },
+    {
+      "file": "spec/index.md",
+      "source_title": "{{ subsection.title }}",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/index.md",
+      "section": "{{ subsection.title }}"
+    },
+    {
+      "file": "spec/principles.md",
+      "source_title": "Simple levels with clear outcomes",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/principles.md",
+      "section": "Simple levels with clear outcomes"
+    },
+    {
+      "file": "spec/provenance.md",
+      "source_title": "provenance.md",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/provenance.md",
+      "section": "provenance.md"
+    },
+    {
+      "file": "spec/requirements.md",
+      "source_title": "requirements.md",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/requirements.md",
+      "section": "requirements.md"
+    },
+    {
+      "file": "spec/source-example-controls.md",
+      "source_title": "Expert Code Review",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/source-example-controls.md",
+      "section": "Expert Code Review"
+    },
+    {
+      "file": "spec/source-requirements.md",
+      "source_title": "Objective",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/source-requirements.md",
+      "section": "Objective"
+    },
+    {
+      "file": "spec/terminology.md",
+      "source_title": "Software supply chain",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/terminology.md",
+      "section": "Software supply chain"
+    },
+    {
+      "file": "spec/threats-overview.md",
+      "source_title": "Summary",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/threats-overview.md",
+      "section": "Summary"
+    },
+    {
+      "file": "spec/threats.md",
+      "source_title": "Overview",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/threats.md",
+      "section": "Overview"
+    },
+    {
+      "file": "spec/tracks.md",
+      "source_title": "Build Track",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/tracks.md",
+      "section": "Build Track"
+    },
+    {
+      "file": "spec/use-cases.md",
+      "source_title": "Applications of SLSA",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/use-cases.md",
+      "section": "Applications of SLSA"
+    },
+    {
+      "file": "spec/verification_summary.md",
+      "source_title": "Purpose",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/verification_summary.md",
+      "section": "Purpose"
+    },
+    {
+      "file": "spec/verified-properties.md",
+      "source_title": "SLSA_SOURCE_TWO_PARTY_REVIEWED",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/verified-properties.md",
+      "section": "SLSA_SOURCE_TWO_PARTY_REVIEWED"
+    },
+    {
+      "file": "spec/verifying-artifacts.md",
+      "source_title": "How to verify",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/verifying-artifacts.md",
+      "section": "How to verify"
+    },
+    {
+      "file": "spec/verifying-source.md",
+      "source_title": "How to verify a source revision",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/verifying-source.md",
+      "section": "How to verify a source revision"
+    },
+    {
+      "file": "spec/verifying-systems.md",
+      "source_title": "Threats",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/verifying-systems.md",
+      "section": "Threats"
+    },
+    {
+      "file": "spec/whats-new.md",
+      "source_title": "Summary of changes",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/whats-new.md",
+      "section": "Summary of changes"
+    },
+    {
+      "file": "spec/zonepage.md",
+      "source_title": "zonepage.md",
+      "source_url": "https://github.com/slsa-framework/slsa/blob/1686afeba11a456e470235ecf50cfc0d2f9ecbc3/spec/zonepage.md",
+      "section": "zonepage.md"
+    }
+  ]
+}

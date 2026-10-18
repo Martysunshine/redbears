@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/MultipleDataSources/ZincOctober2022_AVHits_IOC.yaml -->
+id: 26cf7f7c-a1bb-4dae-a2fd-6b25060e8e6a
+name: AV detections related to Zinc actors
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source/Analytic%20Rules/ZincOctober2022_AVHits_IOC.yaml'
+version: 1.0.0

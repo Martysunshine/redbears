@@ -1,0 +1,37 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/collection/file-managers/gather-filezilla-information.yml -->
+rule:
+  meta:
+    name: gather filezilla information
+    namespace: collection/file-managers
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Credential Access::Credentials from Password Stores [T1555]
+    references:
+      - https://filezilla-project.org/
+    examples:
+      - 5a2f620f29ca2f44fc22df67b674198f:0x4057A7
+  features:
+    - or:
+      - and:
+        - substring: "\\sitemanager.xml"
+        - substring: "\\recentservers.xml"
+        - substring: "\\filezilla.xml"
+      - and:
+        - substring: "Software\\FileZilla"
+        - string: "Install_Dir"
+        - substring: "Software\\FileZilla Client"
+      - 3 or more:
+        - string: "Server Type"
+        - string: "Remote Dir"
+        - string: "Server.Port"
+        - string: "Server.Host"
+        - string: "Server.User"
+        - string: "Last Server Type"
+        - string: "Last Server Port"
+        - string: "Last Server User"
+        - string: "Last Server Host"
+        - string: "Last Server Pass"

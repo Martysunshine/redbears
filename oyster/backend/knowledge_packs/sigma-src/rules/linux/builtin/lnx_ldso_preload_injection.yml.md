@@ -1,0 +1,25 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/builtin/lnx_ldso_preload_injection.yml -->
+title: Code Injection by ld.so Preload
+id: 7e3c4651-c347-40c4-b1d4-d48590fdf684
+status: test
+description: Detects the ld.so preload persistence file. See `man ld.so` for more information.
+references:
+    - https://man7.org/linux/man-pages/man8/ld.so.8.html
+author: Christian Burkard (Nextron Systems)
+date: 2021-05-05
+modified: 2022-10-09
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1574.006
+logsource:
+    product: linux
+detection:
+    keywords:
+        - '/etc/ld.so.preload'
+    condition: keywords
+falsepositives:
+    - Rare temporary workaround for library misconfiguration
+level: high

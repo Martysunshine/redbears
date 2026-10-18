@@ -1,0 +1,109 @@
+{
+  "id": "openssf-scorecard-docs-src",
+  "name": "openssf-scorecard-docs-src",
+  "version": "d1fab88f5463",
+  "title": "OpenSSF Scorecard documentation (upstream)",
+  "domain": "defensive",
+  "security_domain": "software-supply-chain-security",
+  "description": "Imported from https://scorecard.dev/ at d1fab88f5463. 12 documents.",
+  "authority": "OpenSSF",
+  "publisher": "Open Source Security Foundation",
+  "trust_level": "official",
+  "licence": "Apache-2.0",
+  "attribution": "OpenSSF Scorecard documentation, \u00a9 OpenSSF, Apache License 2.0.",
+  "tags": [
+    "openssf",
+    "scorecard",
+    "supply-chain",
+    "sast",
+    "fuzzing"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "openssf-scorecard-docs-src",
+  "upstream_commit": "d1fab88f54636ff366076edfc5c239f97b3c8e66",
+  "source_urls": [
+    "https://scorecard.dev/",
+    "https://github.com/ossf/scorecard"
+  ],
+  "docs": [
+    {
+      "file": "docs/ROADMAP.md",
+      "source_title": "OpenSSF Scorecard Roadmap",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/ROADMAP.md",
+      "section": "OpenSSF Scorecard Roadmap"
+    },
+    {
+      "file": "docs/beginner-checks.md",
+      "source_title": "Getting Started with Scorecard Checks for Supply Chain Security",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/beginner-checks.md",
+      "section": "Getting Started with Scorecard Checks for Supply Chain Security"
+    },
+    {
+      "file": "docs/checks/dependencyupdatetool/README.md",
+      "source_title": "Supported Tools",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/checks/dependencyupdatetool/README.md",
+      "section": "Supported Tools"
+    },
+    {
+      "file": "docs/checks/fuzzing/README.md",
+      "source_title": "Supported Fuzzers",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/checks/fuzzing/README.md",
+      "section": "Supported Fuzzers"
+    },
+    {
+      "file": "docs/checks/sast/README.md",
+      "source_title": "Supported Tools",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/checks/sast/README.md",
+      "section": "Supported Tools"
+    },
+    {
+      "file": "docs/checks.md",
+      "source_title": "Check Documentation",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/checks.md",
+      "section": "Check Documentation"
+    },
+    {
+      "file": "docs/design/cdn.md",
+      "source_title": "Scorecard CDN",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/design/cdn.md",
+      "section": "Scorecard CDN"
+    },
+    {
+      "file": "docs/design/scalable_scorecard.md",
+      "source_title": "Scalable Scorecard",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/design/scalable_scorecard.md",
+      "section": "Scalable Scorecard"
+    },
+    {
+      "file": "docs/faq.md",
+      "source_title": "Frequently Asked Questions",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/faq.md",
+      "section": "Frequently Asked Questions"
+    },
+    {
+      "file": "docs/osps-baseline-coverage.md",
+      "source_title": "OSPS Baseline Coverage Analysis",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/osps-baseline-coverage.md",
+      "section": "OSPS Baseline Coverage Analysis"
+    },
+    {
+      "file": "docs/probes.md",
+      "source_title": "Probe Documentation",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/probes.md",
+      "section": "Probe Documentation"
+    },
+    {
+      "file": "docs/repositories.md",
+      "source_title": "Repository Guidelines",
+      "source_url": "https://github.com/ossf/scorecard/blob/d1fab88f54636ff366076edfc5c239f97b3c8e66/docs/repositories.md",
+      "section": "Repository Guidelines"
+    }
+  ]
+}

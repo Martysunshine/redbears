@@ -1,0 +1,12 @@
+{
+  "id": "identity-ad",
+  "version": "1.0.0",
+  "title": "Identity, Active Directory & Entra ID",
+  "domain": "offensive-defensive",
+  "description": "AD/Entra fundamentals, Kerberos/NTLM, attack-path analysis with BloodHound, and the detections/hardening that defenders use. Modern attackers target identity, not the firewall.",
+  "tags": ["active-directory", "kerberos", "bloodhound", "entra", "identity"],
+  "authority": "MITRE ATT&CK / Microsoft",
+  "docs": [
+    {"file": "ad-attack-paths-and-defense.md", "source_title": "MITRE ATT&CK — Credential Access & Lateral Movement", "source_url": "https://attack.mitre.org/"}
+  ]
+}

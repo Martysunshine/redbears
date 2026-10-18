@@ -1,0 +1,30 @@
+{
+  "model": "oyster-dolphin-v2-gguf-q4",
+  "description": "Transformed (refusal-ablated) Dolphin 3.0 Llama 3.1 8B, exported to GGUF Q4_K_M.",
+  "verified_utc": "2026-10-10",
+  "artifact": {
+    "gguf_filename": "oyster-dolphin-v2-q4_k_m.gguf",
+    "byte_size": 4920745984,
+    "sha256": "61422299380cb628562411fff869d56b555e0f72257a7a37d7c0e585ca6143d3"
+  },
+  "expected_ollama_identity": {
+    "name": "oyster-dolphin-v2-gguf-q4:latest",
+    "manifest_digest": "sha256:d82c7860dff52af5ba63f2f4eda43b958ef3f309f0e2d79ca7b0782926166670",
+    "architecture": "llama",
+    "parameter_size": "8.0B",
+    "parameter_count": 8030277696,
+    "quantization_level": "Q4_K_M",
+    "format": "gguf"
+  },
+  "serving": {
+    "template": "ChatML (<|im_start|>{role}\\n{content}<|im_end|>\\n ; assistant cue <|im_start|>assistant\\n)",
+    "stop_tokens": ["<|im_end|>", "<|end_of_text|>", "<|eom_id|>", "<|eot_id|>"],
+    "temperature": 0,
+    "top_p": 0.9,
+    "num_ctx": 8192,
+    "num_batch": 64,
+    "modelfile": "oyster/modeling/configs/oyster-dolphin-v2-gguf-q4.Modelfile"
+  },
+  "backend_registry_key": "oyster-dolphin-v2",
+  "rollback_models": ["oyster-dolphin-v1-q4", "dolphin3"]
+}

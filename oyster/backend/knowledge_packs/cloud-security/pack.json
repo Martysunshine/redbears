@@ -1,0 +1,12 @@
+{
+  "id": "cloud-security",
+  "version": "1.0.0",
+  "title": "Cloud Security (AWS / Azure / GCP)",
+  "domain": "offensive-defensive",
+  "description": "Identity, storage exposure, metadata services, logging, and cloud attack paths across the three major providers, with the CSPM/audit tooling used to find and fix misconfigurations.",
+  "tags": ["cloud", "aws", "azure", "gcp", "iam", "cspm"],
+  "authority": "Cloud provider docs / Prowler",
+  "docs": [
+    {"file": "cloud-identity-and-misconfig.md", "source_title": "Prowler (cloud security posture)", "source_url": "https://github.com/prowler-cloud/prowler"}
+  ]
+}

@@ -1,0 +1,30 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_scm_database_handle_failure.yml -->
+title: SCM Database Handle Failure
+id: 13addce7-47b2-4ca0-a98f-1de964d1d669
+status: test
+description: Detects non-system users failing to get a handle of the SCM database.
+references:
+    - https://threathunterplaybook.com/hunts/windows/190826-RemoteSCMHandle/notebook.html
+author: Roberto Rodriguez @Cyb3rWard0g
+date: 2019-08-12
+modified: 2022-07-11
+tags:
+    - attack.discovery
+    - attack.t1010
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4656
+        ObjectType: 'SC_MANAGER OBJECT'
+        ObjectName: 'ServicesActive'
+        AccessMask: '0xf003f'  # is used in the reference; otherwise too many FPs
+        # Keywords: 'Audit Failure' <-> in the ref 'Keywords':-9214364837600034816
+    filter:
+        SubjectLogonId: '0x3e4'
+    condition: selection and not filter
+falsepositives:
+    - Unknown
+# triggering on many hosts in some environments
+level: medium

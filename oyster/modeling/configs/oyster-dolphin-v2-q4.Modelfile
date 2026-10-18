@@ -1,0 +1,44 @@
+# Corrected Ollama serving config for the v2 candidate (oyster-dolphin-v2-q4).
+#
+# The initial import served the candidate with TEMPLATE "{{ .Prompt }}" and NO
+# stop tokens (raw-completion), so it received no role formatting, no assistant-
+# generation cue, and never knew when to stop. This Modelfile corrects that
+# WITHOUT touching the transformed weights: `ollama create` reuses every tensor
+# layer from the prior import and only rewrites the template/params layers, so
+# the model's weights (parameter_count 2401777664, q4_k_m safetensors/MLX) are
+# byte-identical. The manifest digest changes (3b32a271… -> 3ca7cf03…); the
+# weights it resolves to do not. Rollback: oyster-dolphin-v2-q4-raw-backup
+# (digest 3b32a271…); production default remains oyster-dolphin-v1-q4 (b6e5d24c).
+#
+# TEMPLATE and stop tokens are derived from the SOURCE tokenizer of the
+# transformed weights (oyster-heretic-work/oyster-dolphin-v2-f16-cpu), NOT
+# guessed and NOT copied from v1:
+#   - chat_template.jinja  -> ChatML: "<|im_start|>{role}\n{content}<|im_end|>\n"
+#                            per message, assistant cue "<|im_start|>assistant\n"
+#                            (v1's Modelfile trimmed the inter-message newline;
+#                             this restores it to match the trained format).
+#   - generation_config.json eos_token_id [128256,128001,128008,128009] mapped
+#     via tokenizer.json added_tokens -> <|im_end|>, <|end_of_text|>, <|eom_id|>,
+#     <|eot_id|>  (v1 omitted <|eom_id|>; the source lists it).
+# temperature 0 and num_ctx 8192 per the intended deterministic/runtime config
+# (backend OYSTER_OLLAMA_NUM_CTX=8192).
+#
+# Rebuild:
+#   ollama cp oyster-dolphin-v2-q4 oyster-dolphin-v2-q4-raw-backup   # once, for rollback
+#   ollama create oyster-dolphin-v2-q4 -f oyster-dolphin-v2-q4.Modelfile
+#
+# NOTE: this candidate is NOT promoted. On a temp-0 comparison vs v1 it showed no
+# quality gain and a ~4x latency regression (MLX runner); see docs handoffs.
+FROM oyster-dolphin-v2-q4-raw-backup:latest
+TEMPLATE """{{ range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|end_of_text|>"
+PARAMETER stop "<|eom_id|>"
+PARAMETER stop "<|eot_id|>"
+PARAMETER temperature 0
+PARAMETER top_p 0.9
+PARAMETER num_ctx 8192
+PARAMETER num_batch 64

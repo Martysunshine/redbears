@@ -1,0 +1,92 @@
+{
+  "registry": "labs",
+  "version": "1.0.0",
+  "note": "Approved isolated lab DEFINITIONS. No vulnerable environment starts automatically. Launching any lab requires explicit user action, authorization, an isolation check, and approval. Oyster only records how to install/isolate/clean up — it does not run these.",
+  "auto_start_forbidden": true,
+  "items": [
+    {
+      "name": "OWASP Juice Shop",
+      "purpose": "Modern intentionally-vulnerable web app for training web-appsec skills.",
+      "source": "https://github.com/juice-shop/juice-shop",
+      "licence": "MIT",
+      "installation_method": "docker run (local) or npm; use a pinned image tag.",
+      "isolation_requirements": "Run on an isolated host/VM or a dedicated bridge network; never expose to the internet.",
+      "network_requirements": "localhost only; block egress.",
+      "cleanup_procedure": "docker rm -f the container and remove the image/volume.",
+      "supported_evaluation_tasks": ["web-appsec", "owasp-top-10", "injection", "authz"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    },
+    {
+      "name": "OWASP WebGoat",
+      "purpose": "Guided lessons for common web vulnerabilities.",
+      "source": "https://github.com/WebGoat/WebGoat",
+      "licence": "GPL-2.0",
+      "installation_method": "docker run or the provided JAR; pinned version.",
+      "isolation_requirements": "Isolated VM/network; bind to localhost.",
+      "network_requirements": "localhost only.",
+      "cleanup_procedure": "Stop and remove the container/JAR process; delete data dir.",
+      "supported_evaluation_tasks": ["web-appsec", "training"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    },
+    {
+      "name": "DVWA",
+      "purpose": "Damn Vulnerable Web Application — classic PHP/MySQL vuln lab.",
+      "source": "https://github.com/digininja/DVWA",
+      "licence": "GPL-3.0",
+      "installation_method": "docker-compose or LAMP; pinned image.",
+      "isolation_requirements": "Isolated VM; never internet-exposed (intentionally trivially exploitable).",
+      "network_requirements": "localhost only.",
+      "cleanup_procedure": "docker-compose down -v; drop the database.",
+      "supported_evaluation_tasks": ["web-appsec", "sqli", "xss", "csrf"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    },
+    {
+      "name": "Vulhub",
+      "purpose": "Pre-built docker-compose environments for specific CVEs.",
+      "source": "https://github.com/vulhub/vulhub",
+      "licence": "MIT",
+      "installation_method": "docker-compose up within a specific CVE directory.",
+      "isolation_requirements": "Dedicated disposable VM; tear down immediately after use (real CVEs).",
+      "network_requirements": "Isolated network; no internet egress.",
+      "cleanup_procedure": "docker-compose down -v in the environment directory.",
+      "supported_evaluation_tasks": ["cve-reproduction", "detection-validation"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    },
+    {
+      "name": "pwn.college",
+      "purpose": "Structured curriculum for binary exploitation / systems security.",
+      "source": "https://pwn.college/",
+      "licence": "See site terms.",
+      "installation_method": "Hosted platform / dojo containers per their instructions.",
+      "isolation_requirements": "Use their sandboxed dojo; keep separate from engagement infra.",
+      "network_requirements": "Per platform.",
+      "cleanup_procedure": "Terminate dojo containers.",
+      "supported_evaluation_tasks": ["binary-exploitation", "reversing", "training"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    },
+    {
+      "name": "Atomic Red Team",
+      "purpose": "Library of small, mapped ATT&CK tests for detection validation (purple team).",
+      "source": "https://github.com/redcanaryco/atomic-red-team",
+      "licence": "MIT",
+      "installation_method": "Invoke-AtomicRedTeam (PowerShell) in a dedicated test host.",
+      "isolation_requirements": "Dedicated, monitored, disposable test host — these execute real (benign) attack techniques.",
+      "network_requirements": "Isolated; some atomics touch the network — review each before running.",
+      "cleanup_procedure": "Run the atomic's cleanup command; revert the host snapshot.",
+      "supported_evaluation_tasks": ["detection-validation", "purple-team", "attack-coverage"],
+      "active_execution_requires_approval": true,
+      "auto_start": false
+    }
+  ],
+  "excluded": [
+    {
+      "name": "TryHackMe",
+      "reason": "Do NOT ingest or scrape. Its proprietary content and current terms prohibit systematic extraction and competing-model use without permission. Documented here so it is explicitly out of scope for ingestion."
+    }
+  ]
+}

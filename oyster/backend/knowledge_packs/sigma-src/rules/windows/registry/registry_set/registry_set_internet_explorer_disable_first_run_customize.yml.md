@@ -1,0 +1,42 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_internet_explorer_disable_first_run_customize.yml -->
+title: Internet Explorer DisableFirstRunCustomize Enabled
+id: ab567429-1dfb-4674-b6d2-979fd2f9d125
+status: test
+description: |
+    Detects changes to the Internet Explorer "DisableFirstRunCustomize" value, which prevents Internet Explorer from running the first run wizard the first time a user starts the browser after installing Internet Explorer or Windows.
+references:
+    - https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/devil-bait/NCSC-MAR-Devil-Bait.pdf
+    - https://unit42.paloaltonetworks.com/operation-ke3chang-resurfaces-with-new-tidepool-malware/
+    - https://admx.help/?Category=InternetExplorer&Policy=Microsoft.Policies.InternetExplorer::NoFirstRunCustomise
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2023-05-16
+modified: 2025-10-07
+tags:
+    - attack.defense-impairment
+logsource:
+    product: windows
+    category: registry_set
+detection:
+    selection:
+        TargetObject|endswith: '\Microsoft\Internet Explorer\Main\DisableFirstRunCustomize'
+        Details:
+            - 'DWORD (0x00000001)' # Home Page
+            - 'DWORD (0x00000002)' # Welcome To IE
+    filter_main_generic:
+        Image:
+            - 'C:\Windows\explorer.exe'
+            - 'C:\Windows\System32\ie4uinit.exe'
+    filter_optional_avira:
+        Image|contains|all:
+            - '\Temp\'
+            - '\.cr\avira_'
+        Details|contains: 'DWORD (0x00000001)'
+    filter_optional_foxit:
+        Image:
+            - 'C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\FoxitPDFReader.exe'
+            - 'C:\Program Files\Foxit Software\Foxit PDF Reader\FoxitPDFReader.exe'
+        Details|contains: 'DWORD (0x00000001)'
+    condition: selection and not 1 of filter_main_* and not 1 of filter_optional_*
+falsepositives:
+    - As this is controlled by group policy as well as user settings. Some false positives may occur.
+level: medium

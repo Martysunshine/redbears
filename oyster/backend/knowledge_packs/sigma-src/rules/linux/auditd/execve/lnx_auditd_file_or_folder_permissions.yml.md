@@ -1,0 +1,26 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/linux/auditd/execve/lnx_auditd_file_or_folder_permissions.yml -->
+title: File or Folder Permissions Change
+id: 74c01ace-0152-4094-8ae2-6fd776dd43e5
+status: test
+description: Detects file and folder permission changes.
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1222.002/T1222.002.md
+author: Jakob Weinzettl, oscd.community
+date: 2019-09-23
+modified: 2021-11-27
+tags:
+    - attack.defense-impairment
+    - attack.t1222.002
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection:
+        type: 'EXECVE'
+        a0|contains:
+            - 'chmod'
+            - 'chown'
+    condition: selection
+falsepositives:
+    - User interacting with files permissions (normal/daily behaviour).
+level: low

@@ -1,0 +1,146 @@
+{
+  "id": "owasp-top10-src",
+  "name": "owasp-top10-src",
+  "version": "66ebc4798d2c",
+  "title": "OWASP Top 10 (upstream)",
+  "domain": "defensive",
+  "security_domain": "web-application-security",
+  "description": "Imported from https://owasp.org/www-project-top-ten/ at 66ebc4798d2c. 18 documents.",
+  "authority": "OWASP",
+  "publisher": "OWASP Foundation",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "OWASP Top 10, OWASP Foundation, CC BY-SA 4.0.",
+  "tags": [
+    "owasp",
+    "top10",
+    "web",
+    "risk"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "web"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track OWASP Top 10 editions (~4yr cadence).",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "owasp-top10-src",
+  "upstream_commit": "66ebc4798d2ca72973967a20264bdeb70dcf0a13",
+  "source_urls": [
+    "https://owasp.org/www-project-top-ten/",
+    "https://github.com/OWASP/Top10"
+  ],
+  "docs": [
+    {
+      "file": "2021/docs/en/0x00_2021-introduction.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/0x00_2021-introduction.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "2021/docs/en/0x00_2021-notice.md",
+      "source_title": "Release",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/0x00_2021-notice.md",
+      "section": "Release"
+    },
+    {
+      "file": "2021/docs/en/0x01_2021-about-owasp.md",
+      "source_title": "About OWASP",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/0x01_2021-about-owasp.md",
+      "section": "About OWASP"
+    },
+    {
+      "file": "2021/docs/en/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.md",
+      "source_title": "How to start an AppSec Program with the OWASP Top 10",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.md",
+      "section": "How to start an AppSec Program with the OWASP Top 10"
+    },
+    {
+      "file": "2021/docs/en/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.md",
+      "source_title": "How to use the OWASP Top 10 as a standard",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.md",
+      "section": "How to use the OWASP Top 10 as a standard"
+    },
+    {
+      "file": "2021/docs/en/A00_2021_Introduction.md",
+      "source_title": "Introduction",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A00_2021_Introduction.md",
+      "section": "Introduction"
+    },
+    {
+      "file": "2021/docs/en/A01_2021-Broken_Access_Control.md",
+      "source_title": "A01:2021 \u2013 Broken Access Control    ![icon](assets/TOP_10_Icons_Final_Broken_Access_Control.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A01_2021-Broken_Access_Control.md",
+      "section": "A01:2021 \u2013 Broken Access Control    ![icon](assets/TOP_10_Icons_Final_Broken_Access_Control.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A02_2021-Cryptographic_Failures.md",
+      "source_title": "A02:2021 \u2013 Cryptographic Failures    ![icon](assets/TOP_10_Icons_Final_Crypto_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A02_2021-Cryptographic_Failures.md",
+      "section": "A02:2021 \u2013 Cryptographic Failures    ![icon](assets/TOP_10_Icons_Final_Crypto_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A03_2021-Injection.md",
+      "source_title": "A03:2021 \u2013 Injection    ![icon](assets/TOP_10_Icons_Final_Injection.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A03_2021-Injection.md",
+      "section": "A03:2021 \u2013 Injection    ![icon](assets/TOP_10_Icons_Final_Injection.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A04_2021-Insecure_Design.md",
+      "source_title": "A04:2021 \u2013 Insecure Design   ![icon](assets/TOP_10_Icons_Final_Insecure_Design.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A04_2021-Insecure_Design.md",
+      "section": "A04:2021 \u2013 Insecure Design   ![icon](assets/TOP_10_Icons_Final_Insecure_Design.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A05_2021-Security_Misconfiguration.md",
+      "source_title": "A05:2021 \u2013 Security Misconfiguration    ![icon](assets/TOP_10_Icons_Final_Security_Misconfiguration.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A05_2021-Security_Misconfiguration.md",
+      "section": "A05:2021 \u2013 Security Misconfiguration    ![icon](assets/TOP_10_Icons_Final_Security_Misconfiguration.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md",
+      "source_title": "A06:2021 \u2013 Vulnerable and Outdated Components    ![icon](assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md",
+      "section": "A06:2021 \u2013 Vulnerable and Outdated Components    ![icon](assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md",
+      "source_title": "A07:2021 \u2013 Identification and Authentication Failures    ![icon](assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md",
+      "section": "A07:2021 \u2013 Identification and Authentication Failures    ![icon](assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md",
+      "source_title": "A08:2021 \u2013 Software and Data Integrity Failures    ![icon](assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md",
+      "section": "A08:2021 \u2013 Software and Data Integrity Failures    ![icon](assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md",
+      "source_title": "A09:2021 \u2013 Security Logging and Monitoring Failures    ![icon](assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md",
+      "section": "A09:2021 \u2013 Security Logging and Monitoring Failures    ![icon](assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A10_2021-Server-Side_Request_Forgery_(SSRF).md",
+      "source_title": "A10:2021 \u2013 Server-Side Request Forgery (SSRF)    ![icon](assets/TOP_10_Icons_Final_SSRF.png){: style=\"height:80px;width:80px\" align=\"right\"}",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A10_2021-Server-Side_Request_Forgery_(SSRF).md",
+      "section": "A10:2021 \u2013 Server-Side Request Forgery (SSRF)    ![icon](assets/TOP_10_Icons_Final_SSRF.png){: style=\"height:80px;width:80px\" align=\"right\"}"
+    },
+    {
+      "file": "2021/docs/en/A11_2021-Next_Steps.md",
+      "source_title": "A11:2021 \u2013 Next Steps",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/A11_2021-Next_Steps.md",
+      "section": "A11:2021 \u2013 Next Steps"
+    },
+    {
+      "file": "2021/docs/en/index.md",
+      "source_title": "OWASP Top 10:2021",
+      "source_url": "https://github.com/OWASP/Top10/blob/66ebc4798d2ca72973967a20264bdeb70dcf0a13/2021/docs/en/index.md",
+      "section": "OWASP Top 10:2021"
+    }
+  ]
+}

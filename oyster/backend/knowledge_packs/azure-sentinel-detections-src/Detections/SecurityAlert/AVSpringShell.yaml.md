@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/AVSpringShell.yaml -->
+id: 3b446b66-acec-4cf8-9048-179eed4c81d5
+name: AV detections related to SpringShell Vulnerability
+description: |
+  'As part of content migration, this file is moved to new location. You can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Analytic%20Rules/AVSpringShell.yaml'
+version: 1.0.2

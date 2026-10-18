@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/AzureActivity/AADHybridHealthADFSServiceDelete.yaml -->
+id: e7af6711-6eb2-43bd-b9b8-4aa2193f5b54
+name: Microsoft Entra ID Hybrid Health AD FS Service Delete
+description: 'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Analytic%20Rules/AADHybridHealthADFSServiceDelete.yaml'
+version: 2.0.1

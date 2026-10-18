@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/identity_protection/azure_identity_protection_inbox_forwarding_rule.yml -->
+title: Suspicious Inbox Forwarding Identity Protection
+id: 27e4f1d6-ae72-4ea0-8a67-77a73a289c3d
+status: test
+description: Indicates suspicious rules such as an inbox rule that forwards a copy of all emails to an external address
+references:
+    - https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks#suspicious-inbox-forwarding
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-user-accounts#unusual-sign-ins
+author: Mark Morowczynski '@markmorow', Gloria Lee, '@gleeiamglo'
+date: 2023-09-03
+tags:
+    - attack.t1114.003
+    - attack.collection
+logsource:
+    product: azure
+    service: riskdetection
+detection:
+    selection:
+        riskEventType: 'suspiciousInboxForwarding'
+    condition: selection
+falsepositives:
+    - A legitimate forwarding rule.
+level: high

@@ -1,0 +1,9 @@
+<!-- source: https://github.com/OWASP/mastg/blob/0e88142b5d7aad8f052b4e75199a8aad9b89d5b5/tools/ios/MASTG-TOOL-0122.md -->
+---
+title: c++filt
+platform: ios
+source: https://www.gnu.org/software/binutils/
+hosts: [macOS, windows, linux]
+---
+
+c++filt is a demangling tool that converts mangled C++ symbols into human readable strings by calling `c++filt <symbol>`. See [the man page](https://ftp.gnu.org/old-gnu/Manuals/binutils-2.12/html_node/binutils_11.html "c++filt") for more information on its usage.

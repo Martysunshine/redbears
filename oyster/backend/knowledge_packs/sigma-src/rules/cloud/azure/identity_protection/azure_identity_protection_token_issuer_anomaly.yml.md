@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/cloud/azure/identity_protection/azure_identity_protection_token_issuer_anomaly.yml -->
+title: SAML Token Issuer Anomaly
+id: e3393cba-31f0-4207-831e-aef90ab17a8c
+status: test
+description: Indicates the SAML token issuer for the associated SAML token is potentially compromised. The claims included in the token are unusual or match known attacker patterns
+references:
+    - https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks#token-issuer-anomaly
+    - https://learn.microsoft.com/en-us/entra/architecture/security-operations-user-accounts#unusual-sign-ins
+author: Mark Morowczynski '@markmorow', Gloria Lee, '@gleeiamglo'
+date: 2023-09-03
+tags:
+    - attack.t1606
+    - attack.credential-access
+logsource:
+    product: azure
+    service: riskdetection
+detection:
+    selection:
+        riskEventType: 'tokenIssuerAnomaly'
+    condition: selection
+falsepositives:
+    - We recommend investigating the sessions flagged by this detection in the context of other sign-ins from the user.
+level: high

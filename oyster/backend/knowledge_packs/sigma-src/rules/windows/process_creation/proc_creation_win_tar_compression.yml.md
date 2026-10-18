@@ -1,0 +1,34 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_tar_compression.yml -->
+title: Compressed File Creation Via Tar.EXE
+id: 418a3163-3247-4b7b-9933-dcfcb7c52ea9
+status: test
+description: |
+    Detects execution of "tar.exe" in order to create a compressed file.
+    Adversaries may abuse various utilities to compress or encrypt data before exfiltration.
+references:
+    - https://unit42.paloaltonetworks.com/chromeloader-malware/
+    - https://lolbas-project.github.io/lolbas/Binaries/Tar/
+    - https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cicada-apt10-japan-espionage
+author: Nasreddine Bencherchali (Nextron Systems), AdmU3
+date: 2023-12-19
+tags:
+    - attack.collection
+    - attack.exfiltration
+    - attack.t1560
+    - attack.t1560.001
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_img:
+        - Image|endswith: '\tar.exe'
+        - OriginalFileName: 'bsdtar'
+    selection_create:
+        CommandLine|contains:
+            - '-c'
+            - '-r'
+            - '-u'
+    condition: all of selection_*
+falsepositives:
+    - Likely
+level: low

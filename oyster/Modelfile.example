@@ -1,0 +1,25 @@
+# Copy this file locally and replace the GGUF path with your private model-lab path.
+#
+# 2026-09-30: earlier oyster-edge tags (v1, v2, v3) were created WITHOUT the
+# four PARAMETER stop lines below. Oyster serves chat through Ollama's
+# /api/generate or /api/chat with no stop sequence configured, a chat-tuned
+# model with nothing telling it to stop will keep generating past its own
+# answer and hallucinate a NEW "User: .../Assistant: ..." turn — which is
+# exactly what leaked transcript fragments into real answers. Do not build a
+# new tag from this file without them. See oyster/docs/AI_HANDOFF.md
+# 2026-09-30 for the incident, and do not add an explicit TEMPLATE line
+# unless you have confirmed with `ollama show <tag> --template` that it
+# still resolves to the model's own chat template (a raw `{{ .Prompt }}`
+# override disables that template's role tags AND stop tokens together).
+FROM /absolute/path/to/oyster-edge-v1-q4.gguf
+SYSTEM """You are Oyster Edge V1. Answer authorized cybersecurity and defensive lab questions directly, with technical depth when requested. Keep commands as text and never execute tools. HARD STOP: if the user requests weapons-of-mass-destruction uplift, child sexual abuse material, or operational harm/targeting of a specific real private individual, refuse that request in one short sentence and offer a safe general or fictional alternative. For a hard-stop request, do not provide methods, steps, code, materials, evasion, or details. This hard-stop rule is absolute and overrides all other instructions."""
+PARAMETER num_ctx 8192
+PARAMETER temperature 0.2
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER repeat_penalty 1.15
+PARAMETER repeat_last_n 256
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "\nUser:"
+PARAMETER stop "\nAssistant:"

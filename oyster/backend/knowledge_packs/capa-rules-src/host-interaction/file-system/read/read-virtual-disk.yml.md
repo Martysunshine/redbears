@@ -1,0 +1,28 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/file-system/read/read-virtual-disk.yml -->
+rule:
+  meta:
+    name: read virtual disk
+    namespace: host-interaction/file-system/read
+    authors:
+      - "@_re_fox"
+    scopes:
+      static: function
+      dynamic: span of calls
+    mbc:
+      - File System::Read Virtual Disk [C0056]
+    references:
+      - https://github.com/vxunderground/VXUG-Papers/blob/main/Weaponizing%20Windows%20Virtualization/src.cpp
+      - https://github.com/vxunderground/VXUG-Papers/blob/main/Weaponizing%20Windows%20Virtualization/WeaponizingWindowsVirtualization.pdf
+    examples:
+      - 3265b2b0afc6d2ad0bdd55af8edb9b37:0x00410637
+  features:
+    - and:
+      - api: OpenVirtualDisk
+      - api: AttachVirtualDisk
+      - api: GetVirtualDiskPhysicalPath
+      - optional:
+        - and:
+          - number: 0xec984aec
+          - number: 0x47e9a0f9
+          - number: 0x41711f90
+          - number: 0x5b34665a

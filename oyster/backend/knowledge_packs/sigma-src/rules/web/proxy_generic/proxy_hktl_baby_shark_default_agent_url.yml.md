@@ -1,0 +1,22 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/web/proxy_generic/proxy_hktl_baby_shark_default_agent_url.yml -->
+title: HackTool - BabyShark Agent Default URL Pattern
+id: 304810ed-8853-437f-9e36-c4975c3dfd7e
+status: test
+description: Detects Baby Shark C2 Framework default communication patterns
+references:
+    - https://nasbench.medium.com/understanding-detecting-c2-frameworks-babyshark-641be4595845
+author: Florian Roth (Nextron Systems)
+date: 2021-06-09
+modified: 2024-02-15
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+logsource:
+    category: proxy
+detection:
+    selection:
+        c-uri|contains: 'momyshark\?key='
+    condition: selection
+falsepositives:
+    - Unlikely
+level: critical

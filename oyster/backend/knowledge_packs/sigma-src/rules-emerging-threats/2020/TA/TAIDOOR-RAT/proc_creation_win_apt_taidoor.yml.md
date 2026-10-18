@@ -1,0 +1,32 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules-emerging-threats/2020/TA/TAIDOOR-RAT/proc_creation_win_apt_taidoor.yml -->
+title: TAIDOOR RAT DLL Load
+id: d1aa3382-abab-446f-96ea-4de52908210b
+status: test
+description: Detects specific process characteristics of Chinese TAIDOOR RAT malware load
+references:
+    - https://us-cert.cisa.gov/ncas/analysis-reports/ar20-216a
+author: Florian Roth (Nextron Systems)
+date: 2020-07-30
+modified: 2021-11-27
+tags:
+    - attack.privilege-escalation
+    - attack.execution
+    - attack.stealth
+    - attack.t1055.001
+    - detection.emerging-threats
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection1:
+        CommandLine|contains:
+            - 'dll,MyStart'
+            - 'dll MyStart'
+    selection2a:
+        CommandLine|endswith: ' MyStart'
+    selection2b:
+        CommandLine|contains: 'rundll32.exe'
+    condition: selection1 or ( selection2a and selection2b )
+falsepositives:
+    - Unknown
+level: high

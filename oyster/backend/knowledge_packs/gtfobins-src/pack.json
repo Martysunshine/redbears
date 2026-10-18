@@ -1,0 +1,2906 @@
+{
+  "id": "gtfobins-src",
+  "name": "gtfobins-src",
+  "version": "acd524623f9c",
+  "title": "GTFOBins (upstream)",
+  "domain": "offensive",
+  "security_domain": "linux-privilege-escalation",
+  "description": "Imported from https://gtfobins.github.io/ at acd524623f9c. 478 documents.",
+  "authority": "GTFOBins",
+  "publisher": "GTFOBins",
+  "trust_level": "community",
+  "licence": "GPL-3.0",
+  "attribution": "GTFOBins, licensed under GPL-3.0.",
+  "tags": [
+    "gtfobins",
+    "linux",
+    "privesc",
+    "living-off-the-land"
+  ],
+  "applicable_tools": [],
+  "applicable_platforms": [
+    "linux"
+  ],
+  "risk_classification": "medium",
+  "active_execution_possible": false,
+  "freshness_policy": "Rolling; re-check monthly.",
+  "retrieved_at": "2026-08-17",
+  "last_reviewed_at": "2026-08-17",
+  "origin": "connector",
+  "connector_id": "gtfobins-src",
+  "upstream_commit": "acd524623f9c406acedd2754ebd9c2431f3675ad",
+  "source_urls": [
+    "https://gtfobins.github.io/",
+    "https://github.com/GTFOBins/GTFOBins.github.io"
+  ],
+  "docs": [
+    {
+      "file": "_gtfobins/7z.md",
+      "source_title": "7z",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/7z",
+      "section": "7z"
+    },
+    {
+      "file": "_gtfobins/R.md",
+      "source_title": "R",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/R",
+      "section": "R"
+    },
+    {
+      "file": "_gtfobins/aa-exec.md",
+      "source_title": "aa-exec",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aa-exec",
+      "section": "aa-exec"
+    },
+    {
+      "file": "_gtfobins/ab.md",
+      "source_title": "ab",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ab",
+      "section": "ab"
+    },
+    {
+      "file": "_gtfobins/acr.md",
+      "source_title": "acr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/acr",
+      "section": "acr"
+    },
+    {
+      "file": "_gtfobins/agetty.md",
+      "source_title": "agetty",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/agetty",
+      "section": "agetty"
+    },
+    {
+      "file": "_gtfobins/alpine.md",
+      "source_title": "alpine",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/alpine",
+      "section": "alpine"
+    },
+    {
+      "file": "_gtfobins/ansible-playbook.md",
+      "source_title": "ansible-playbook",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ansible-playbook",
+      "section": "ansible-playbook"
+    },
+    {
+      "file": "_gtfobins/ansible-test.md",
+      "source_title": "ansible-test",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ansible-test",
+      "section": "ansible-test"
+    },
+    {
+      "file": "_gtfobins/aoss.md",
+      "source_title": "aoss",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aoss",
+      "section": "aoss"
+    },
+    {
+      "file": "_gtfobins/apache2.md",
+      "source_title": "apache2",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/apache2",
+      "section": "apache2"
+    },
+    {
+      "file": "_gtfobins/apache2ctl.md",
+      "source_title": "apache2ctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/apache2ctl",
+      "section": "apache2ctl"
+    },
+    {
+      "file": "_gtfobins/apport-cli.md",
+      "source_title": "apport-cli",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/apport-cli",
+      "section": "apport-cli"
+    },
+    {
+      "file": "_gtfobins/apt.md",
+      "source_title": "apt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/apt",
+      "section": "apt"
+    },
+    {
+      "file": "_gtfobins/apt-get.md",
+      "source_title": "apt-get",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/apt-get",
+      "section": "apt-get"
+    },
+    {
+      "file": "_gtfobins/aptitude.md",
+      "source_title": "aptitude",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aptitude",
+      "section": "aptitude"
+    },
+    {
+      "file": "_gtfobins/ar.md",
+      "source_title": "ar",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ar",
+      "section": "ar"
+    },
+    {
+      "file": "_gtfobins/arch-nspawn.md",
+      "source_title": "arch-nspawn",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/arch-nspawn",
+      "section": "arch-nspawn"
+    },
+    {
+      "file": "_gtfobins/aria2c.md",
+      "source_title": "aria2c",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aria2c",
+      "section": "aria2c"
+    },
+    {
+      "file": "_gtfobins/arj.md",
+      "source_title": "arj",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/arj",
+      "section": "arj"
+    },
+    {
+      "file": "_gtfobins/arp.md",
+      "source_title": "arp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/arp",
+      "section": "arp"
+    },
+    {
+      "file": "_gtfobins/as.md",
+      "source_title": "as",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/as",
+      "section": "as"
+    },
+    {
+      "file": "_gtfobins/ascii-xfr.md",
+      "source_title": "ascii-xfr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ascii-xfr",
+      "section": "ascii-xfr"
+    },
+    {
+      "file": "_gtfobins/ascii85.md",
+      "source_title": "ascii85",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ascii85",
+      "section": "ascii85"
+    },
+    {
+      "file": "_gtfobins/ash.md",
+      "source_title": "ash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ash",
+      "section": "ash"
+    },
+    {
+      "file": "_gtfobins/aspell.md",
+      "source_title": "aspell",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aspell",
+      "section": "aspell"
+    },
+    {
+      "file": "_gtfobins/asterisk.md",
+      "source_title": "asterisk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/asterisk",
+      "section": "asterisk"
+    },
+    {
+      "file": "_gtfobins/at.md",
+      "source_title": "at",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/at",
+      "section": "at"
+    },
+    {
+      "file": "_gtfobins/atobm.md",
+      "source_title": "atobm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/atobm",
+      "section": "atobm"
+    },
+    {
+      "file": "_gtfobins/autoconf.md",
+      "source_title": "autoconf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/autoconf",
+      "section": "autoconf"
+    },
+    {
+      "file": "_gtfobins/autoheader.md",
+      "source_title": "autoheader",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/autoheader",
+      "section": "autoheader"
+    },
+    {
+      "file": "_gtfobins/autoreconf.md",
+      "source_title": "autoreconf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/autoreconf",
+      "section": "autoreconf"
+    },
+    {
+      "file": "_gtfobins/awk.md",
+      "source_title": "awk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/awk",
+      "section": "awk"
+    },
+    {
+      "file": "_gtfobins/aws.md",
+      "source_title": "aws",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/aws",
+      "section": "aws"
+    },
+    {
+      "file": "_gtfobins/base32.md",
+      "source_title": "base32",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/base32",
+      "section": "base32"
+    },
+    {
+      "file": "_gtfobins/base58.md",
+      "source_title": "base58",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/base58",
+      "section": "base58"
+    },
+    {
+      "file": "_gtfobins/base64.md",
+      "source_title": "base64",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/base64",
+      "section": "base64"
+    },
+    {
+      "file": "_gtfobins/basenc.md",
+      "source_title": "basenc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/basenc",
+      "section": "basenc"
+    },
+    {
+      "file": "_gtfobins/basez.md",
+      "source_title": "basez",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/basez",
+      "section": "basez"
+    },
+    {
+      "file": "_gtfobins/bash.md",
+      "source_title": "bash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bash",
+      "section": "bash"
+    },
+    {
+      "file": "_gtfobins/bashbug.md",
+      "source_title": "bashbug",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bashbug",
+      "section": "bashbug"
+    },
+    {
+      "file": "_gtfobins/batcat.md",
+      "source_title": "batcat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/batcat",
+      "section": "batcat"
+    },
+    {
+      "file": "_gtfobins/bbot.md",
+      "source_title": "bbot",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bbot",
+      "section": "bbot"
+    },
+    {
+      "file": "_gtfobins/bc.md",
+      "source_title": "bc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bc",
+      "section": "bc"
+    },
+    {
+      "file": "_gtfobins/bconsole.md",
+      "source_title": "bconsole",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bconsole",
+      "section": "bconsole"
+    },
+    {
+      "file": "_gtfobins/bee.md",
+      "source_title": "bee",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bee",
+      "section": "bee"
+    },
+    {
+      "file": "_gtfobins/borg.md",
+      "source_title": "borg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/borg",
+      "section": "borg"
+    },
+    {
+      "file": "_gtfobins/bpftrace.md",
+      "source_title": "bpftrace",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bpftrace",
+      "section": "bpftrace"
+    },
+    {
+      "file": "_gtfobins/bridge.md",
+      "source_title": "bridge",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bridge",
+      "section": "bridge"
+    },
+    {
+      "file": "_gtfobins/bundle.md",
+      "source_title": "bundle",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bundle",
+      "section": "bundle"
+    },
+    {
+      "file": "_gtfobins/bundler.md",
+      "source_title": "bundler",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bundler",
+      "section": "bundler"
+    },
+    {
+      "file": "_gtfobins/busctl.md",
+      "source_title": "busctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/busctl",
+      "section": "busctl"
+    },
+    {
+      "file": "_gtfobins/busybox.md",
+      "source_title": "busybox",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/busybox",
+      "section": "busybox"
+    },
+    {
+      "file": "_gtfobins/byebug.md",
+      "source_title": "byebug",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/byebug",
+      "section": "byebug"
+    },
+    {
+      "file": "_gtfobins/bzip2.md",
+      "source_title": "bzip2",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/bzip2",
+      "section": "bzip2"
+    },
+    {
+      "file": "_gtfobins/c89.md",
+      "source_title": "c89",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/c89",
+      "section": "c89"
+    },
+    {
+      "file": "_gtfobins/c99.md",
+      "source_title": "c99",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/c99",
+      "section": "c99"
+    },
+    {
+      "file": "_gtfobins/cabal.md",
+      "source_title": "cabal",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cabal",
+      "section": "cabal"
+    },
+    {
+      "file": "_gtfobins/cancel.md",
+      "source_title": "cancel",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cancel",
+      "section": "cancel"
+    },
+    {
+      "file": "_gtfobins/capsh.md",
+      "source_title": "capsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/capsh",
+      "section": "capsh"
+    },
+    {
+      "file": "_gtfobins/cargo.md",
+      "source_title": "cargo",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cargo",
+      "section": "cargo"
+    },
+    {
+      "file": "_gtfobins/cat.md",
+      "source_title": "cat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cat",
+      "section": "cat"
+    },
+    {
+      "file": "_gtfobins/cc.md",
+      "source_title": "cc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cc",
+      "section": "cc"
+    },
+    {
+      "file": "_gtfobins/cdist.md",
+      "source_title": "cdist",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cdist",
+      "section": "cdist"
+    },
+    {
+      "file": "_gtfobins/certbot.md",
+      "source_title": "certbot",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/certbot",
+      "section": "certbot"
+    },
+    {
+      "file": "_gtfobins/chattr.md",
+      "source_title": "chattr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/chattr",
+      "section": "chattr"
+    },
+    {
+      "file": "_gtfobins/check_by_ssh.md",
+      "source_title": "check_by_ssh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_by_ssh",
+      "section": "check_by_ssh"
+    },
+    {
+      "file": "_gtfobins/check_cups.md",
+      "source_title": "check_cups",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_cups",
+      "section": "check_cups"
+    },
+    {
+      "file": "_gtfobins/check_log.md",
+      "source_title": "check_log",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_log",
+      "section": "check_log"
+    },
+    {
+      "file": "_gtfobins/check_memory.md",
+      "source_title": "check_memory",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_memory",
+      "section": "check_memory"
+    },
+    {
+      "file": "_gtfobins/check_raid.md",
+      "source_title": "check_raid",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_raid",
+      "section": "check_raid"
+    },
+    {
+      "file": "_gtfobins/check_ssl_cert.md",
+      "source_title": "check_ssl_cert",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_ssl_cert",
+      "section": "check_ssl_cert"
+    },
+    {
+      "file": "_gtfobins/check_statusfile.md",
+      "source_title": "check_statusfile",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/check_statusfile",
+      "section": "check_statusfile"
+    },
+    {
+      "file": "_gtfobins/chmod.md",
+      "source_title": "chmod",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/chmod",
+      "section": "chmod"
+    },
+    {
+      "file": "_gtfobins/choom.md",
+      "source_title": "choom",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/choom",
+      "section": "choom"
+    },
+    {
+      "file": "_gtfobins/chown.md",
+      "source_title": "chown",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/chown",
+      "section": "chown"
+    },
+    {
+      "file": "_gtfobins/chroot.md",
+      "source_title": "chroot",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/chroot",
+      "section": "chroot"
+    },
+    {
+      "file": "_gtfobins/chrt.md",
+      "source_title": "chrt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/chrt",
+      "section": "chrt"
+    },
+    {
+      "file": "_gtfobins/clamscan.md",
+      "source_title": "clamscan",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/clamscan",
+      "section": "clamscan"
+    },
+    {
+      "file": "_gtfobins/clisp.md",
+      "source_title": "clisp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/clisp",
+      "section": "clisp"
+    },
+    {
+      "file": "_gtfobins/cmake.md",
+      "source_title": "cmake",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cmake",
+      "section": "cmake"
+    },
+    {
+      "file": "_gtfobins/cmp.md",
+      "source_title": "cmp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cmp",
+      "section": "cmp"
+    },
+    {
+      "file": "_gtfobins/cobc.md",
+      "source_title": "cobc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cobc",
+      "section": "cobc"
+    },
+    {
+      "file": "_gtfobins/code.md",
+      "source_title": "code",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/code",
+      "section": "code"
+    },
+    {
+      "file": "_gtfobins/codex.md",
+      "source_title": "codex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/codex",
+      "section": "codex"
+    },
+    {
+      "file": "_gtfobins/column.md",
+      "source_title": "column",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/column",
+      "section": "column"
+    },
+    {
+      "file": "_gtfobins/comm.md",
+      "source_title": "comm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/comm",
+      "section": "comm"
+    },
+    {
+      "file": "_gtfobins/composer.md",
+      "source_title": "composer",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/composer",
+      "section": "composer"
+    },
+    {
+      "file": "_gtfobins/cowsay.md",
+      "source_title": "cowsay",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cowsay",
+      "section": "cowsay"
+    },
+    {
+      "file": "_gtfobins/cowthink.md",
+      "source_title": "cowthink",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cowthink",
+      "section": "cowthink"
+    },
+    {
+      "file": "_gtfobins/cp.md",
+      "source_title": "cp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cp",
+      "section": "cp"
+    },
+    {
+      "file": "_gtfobins/cpan.md",
+      "source_title": "cpan",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cpan",
+      "section": "cpan"
+    },
+    {
+      "file": "_gtfobins/cpio.md",
+      "source_title": "cpio",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cpio",
+      "section": "cpio"
+    },
+    {
+      "file": "_gtfobins/cpulimit.md",
+      "source_title": "cpulimit",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cpulimit",
+      "section": "cpulimit"
+    },
+    {
+      "file": "_gtfobins/crash.md",
+      "source_title": "crash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/crash",
+      "section": "crash"
+    },
+    {
+      "file": "_gtfobins/crontab.md",
+      "source_title": "crontab",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/crontab",
+      "section": "crontab"
+    },
+    {
+      "file": "_gtfobins/csh.md",
+      "source_title": "csh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/csh",
+      "section": "csh"
+    },
+    {
+      "file": "_gtfobins/csplit.md",
+      "source_title": "csplit",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/csplit",
+      "section": "csplit"
+    },
+    {
+      "file": "_gtfobins/csvtool.md",
+      "source_title": "csvtool",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/csvtool",
+      "section": "csvtool"
+    },
+    {
+      "file": "_gtfobins/ctr.md",
+      "source_title": "ctr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ctr",
+      "section": "ctr"
+    },
+    {
+      "file": "_gtfobins/cupsfilter.md",
+      "source_title": "cupsfilter",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cupsfilter",
+      "section": "cupsfilter"
+    },
+    {
+      "file": "_gtfobins/curl.md",
+      "source_title": "curl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/curl",
+      "section": "curl"
+    },
+    {
+      "file": "_gtfobins/cut.md",
+      "source_title": "cut",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/cut",
+      "section": "cut"
+    },
+    {
+      "file": "_gtfobins/dash.md",
+      "source_title": "dash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dash",
+      "section": "dash"
+    },
+    {
+      "file": "_gtfobins/date.md",
+      "source_title": "date",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/date",
+      "section": "date"
+    },
+    {
+      "file": "_gtfobins/dc.md",
+      "source_title": "dc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dc",
+      "section": "dc"
+    },
+    {
+      "file": "_gtfobins/dd.md",
+      "source_title": "dd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dd",
+      "section": "dd"
+    },
+    {
+      "file": "_gtfobins/debugfs.md",
+      "source_title": "debugfs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/debugfs",
+      "section": "debugfs"
+    },
+    {
+      "file": "_gtfobins/dhclient.md",
+      "source_title": "dhclient",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dhclient",
+      "section": "dhclient"
+    },
+    {
+      "file": "_gtfobins/dialog.md",
+      "source_title": "dialog",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dialog",
+      "section": "dialog"
+    },
+    {
+      "file": "_gtfobins/diff.md",
+      "source_title": "diff",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/diff",
+      "section": "diff"
+    },
+    {
+      "file": "_gtfobins/dig.md",
+      "source_title": "dig",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dig",
+      "section": "dig"
+    },
+    {
+      "file": "_gtfobins/distcc.md",
+      "source_title": "distcc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/distcc",
+      "section": "distcc"
+    },
+    {
+      "file": "_gtfobins/dmesg.md",
+      "source_title": "dmesg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dmesg",
+      "section": "dmesg"
+    },
+    {
+      "file": "_gtfobins/dmidecode.md",
+      "source_title": "dmidecode",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dmidecode",
+      "section": "dmidecode"
+    },
+    {
+      "file": "_gtfobins/dmsetup.md",
+      "source_title": "dmsetup",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dmsetup",
+      "section": "dmsetup"
+    },
+    {
+      "file": "_gtfobins/dnf.md",
+      "source_title": "dnf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dnf",
+      "section": "dnf"
+    },
+    {
+      "file": "_gtfobins/dnsmasq.md",
+      "source_title": "dnsmasq",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dnsmasq",
+      "section": "dnsmasq"
+    },
+    {
+      "file": "_gtfobins/doas.md",
+      "source_title": "doas",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/doas",
+      "section": "doas"
+    },
+    {
+      "file": "_gtfobins/docker.md",
+      "source_title": "docker",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/docker",
+      "section": "docker"
+    },
+    {
+      "file": "_gtfobins/dos2unix.md",
+      "source_title": "dos2unix",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dos2unix",
+      "section": "dos2unix"
+    },
+    {
+      "file": "_gtfobins/dosbox.md",
+      "source_title": "dosbox",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dosbox",
+      "section": "dosbox"
+    },
+    {
+      "file": "_gtfobins/dotnet.md",
+      "source_title": "dotnet",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dotnet",
+      "section": "dotnet"
+    },
+    {
+      "file": "_gtfobins/dpkg.md",
+      "source_title": "dpkg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dpkg",
+      "section": "dpkg"
+    },
+    {
+      "file": "_gtfobins/dstat.md",
+      "source_title": "dstat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dstat",
+      "section": "dstat"
+    },
+    {
+      "file": "_gtfobins/dvips.md",
+      "source_title": "dvips",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/dvips",
+      "section": "dvips"
+    },
+    {
+      "file": "_gtfobins/easy_install.md",
+      "source_title": "easy_install",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/easy_install",
+      "section": "easy_install"
+    },
+    {
+      "file": "_gtfobins/easyrsa.md",
+      "source_title": "easyrsa",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/easyrsa",
+      "section": "easyrsa"
+    },
+    {
+      "file": "_gtfobins/eb.md",
+      "source_title": "eb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/eb",
+      "section": "eb"
+    },
+    {
+      "file": "_gtfobins/ed.md",
+      "source_title": "ed",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ed",
+      "section": "ed"
+    },
+    {
+      "file": "_gtfobins/efax.md",
+      "source_title": "efax",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/efax",
+      "section": "efax"
+    },
+    {
+      "file": "_gtfobins/egrep.md",
+      "source_title": "egrep",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/egrep",
+      "section": "egrep"
+    },
+    {
+      "file": "_gtfobins/elvish.md",
+      "source_title": "elvish",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/elvish",
+      "section": "elvish"
+    },
+    {
+      "file": "_gtfobins/emacs.md",
+      "source_title": "emacs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/emacs",
+      "section": "emacs"
+    },
+    {
+      "file": "_gtfobins/enscript.md",
+      "source_title": "enscript",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/enscript",
+      "section": "enscript"
+    },
+    {
+      "file": "_gtfobins/env.md",
+      "source_title": "env",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/env",
+      "section": "env"
+    },
+    {
+      "file": "_gtfobins/eqn.md",
+      "source_title": "eqn",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/eqn",
+      "section": "eqn"
+    },
+    {
+      "file": "_gtfobins/espeak.md",
+      "source_title": "espeak",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/espeak",
+      "section": "espeak"
+    },
+    {
+      "file": "_gtfobins/ex.md",
+      "source_title": "ex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ex",
+      "section": "ex"
+    },
+    {
+      "file": "_gtfobins/exiftool.md",
+      "source_title": "exiftool",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/exiftool",
+      "section": "exiftool"
+    },
+    {
+      "file": "_gtfobins/expand.md",
+      "source_title": "expand",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/expand",
+      "section": "expand"
+    },
+    {
+      "file": "_gtfobins/expect.md",
+      "source_title": "expect",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/expect",
+      "section": "expect"
+    },
+    {
+      "file": "_gtfobins/facter.md",
+      "source_title": "facter",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/facter",
+      "section": "facter"
+    },
+    {
+      "file": "_gtfobins/fail2ban-client.md",
+      "source_title": "fail2ban-client",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fail2ban-client",
+      "section": "fail2ban-client"
+    },
+    {
+      "file": "_gtfobins/fastfetch.md",
+      "source_title": "fastfetch",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fastfetch",
+      "section": "fastfetch"
+    },
+    {
+      "file": "_gtfobins/ffmpeg.md",
+      "source_title": "ffmpeg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ffmpeg",
+      "section": "ffmpeg"
+    },
+    {
+      "file": "_gtfobins/fgrep.md",
+      "source_title": "fgrep",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fgrep",
+      "section": "fgrep"
+    },
+    {
+      "file": "_gtfobins/file.md",
+      "source_title": "file",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/file",
+      "section": "file"
+    },
+    {
+      "file": "_gtfobins/find.md",
+      "source_title": "find",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/find",
+      "section": "find"
+    },
+    {
+      "file": "_gtfobins/finger.md",
+      "source_title": "finger",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/finger",
+      "section": "finger"
+    },
+    {
+      "file": "_gtfobins/firejail.md",
+      "source_title": "firejail",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/firejail",
+      "section": "firejail"
+    },
+    {
+      "file": "_gtfobins/fish.md",
+      "source_title": "fish",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fish",
+      "section": "fish"
+    },
+    {
+      "file": "_gtfobins/flock.md",
+      "source_title": "flock",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/flock",
+      "section": "flock"
+    },
+    {
+      "file": "_gtfobins/fmt.md",
+      "source_title": "fmt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fmt",
+      "section": "fmt"
+    },
+    {
+      "file": "_gtfobins/fold.md",
+      "source_title": "fold",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fold",
+      "section": "fold"
+    },
+    {
+      "file": "_gtfobins/forge.md",
+      "source_title": "forge",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/forge",
+      "section": "forge"
+    },
+    {
+      "file": "_gtfobins/fping.md",
+      "source_title": "fping",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fping",
+      "section": "fping"
+    },
+    {
+      "file": "_gtfobins/ftp.md",
+      "source_title": "ftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ftp",
+      "section": "ftp"
+    },
+    {
+      "file": "_gtfobins/fzf.md",
+      "source_title": "fzf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/fzf",
+      "section": "fzf"
+    },
+    {
+      "file": "_gtfobins/g++.md",
+      "source_title": "g++",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/g++",
+      "section": "g++"
+    },
+    {
+      "file": "_gtfobins/gawk.md",
+      "source_title": "gawk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gawk",
+      "section": "gawk"
+    },
+    {
+      "file": "_gtfobins/gcc.md",
+      "source_title": "gcc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gcc",
+      "section": "gcc"
+    },
+    {
+      "file": "_gtfobins/gcloud.md",
+      "source_title": "gcloud",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gcloud",
+      "section": "gcloud"
+    },
+    {
+      "file": "_gtfobins/gcore.md",
+      "source_title": "gcore",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gcore",
+      "section": "gcore"
+    },
+    {
+      "file": "_gtfobins/gdb.md",
+      "source_title": "gdb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gdb",
+      "section": "gdb"
+    },
+    {
+      "file": "_gtfobins/gem.md",
+      "source_title": "gem",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gem",
+      "section": "gem"
+    },
+    {
+      "file": "_gtfobins/genie.md",
+      "source_title": "genie",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/genie",
+      "section": "genie"
+    },
+    {
+      "file": "_gtfobins/genisoimage.md",
+      "source_title": "genisoimage",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/genisoimage",
+      "section": "genisoimage"
+    },
+    {
+      "file": "_gtfobins/getent.md",
+      "source_title": "getent",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/getent",
+      "section": "getent"
+    },
+    {
+      "file": "_gtfobins/ghc.md",
+      "source_title": "ghc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ghc",
+      "section": "ghc"
+    },
+    {
+      "file": "_gtfobins/ghci.md",
+      "source_title": "ghci",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ghci",
+      "section": "ghci"
+    },
+    {
+      "file": "_gtfobins/gimp.md",
+      "source_title": "gimp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gimp",
+      "section": "gimp"
+    },
+    {
+      "file": "_gtfobins/ginsh.md",
+      "source_title": "ginsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ginsh",
+      "section": "ginsh"
+    },
+    {
+      "file": "_gtfobins/git.md",
+      "source_title": "git",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/git",
+      "section": "git"
+    },
+    {
+      "file": "_gtfobins/gnuplot.md",
+      "source_title": "gnuplot",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gnuplot",
+      "section": "gnuplot"
+    },
+    {
+      "file": "_gtfobins/go.md",
+      "source_title": "go",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/go",
+      "section": "go"
+    },
+    {
+      "file": "_gtfobins/grc.md",
+      "source_title": "grc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/grc",
+      "section": "grc"
+    },
+    {
+      "file": "_gtfobins/grep.md",
+      "source_title": "grep",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/grep",
+      "section": "grep"
+    },
+    {
+      "file": "_gtfobins/gtester.md",
+      "source_title": "gtester",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gtester",
+      "section": "gtester"
+    },
+    {
+      "file": "_gtfobins/guile.md",
+      "source_title": "guile",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/guile",
+      "section": "guile"
+    },
+    {
+      "file": "_gtfobins/gzip.md",
+      "source_title": "gzip",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/gzip",
+      "section": "gzip"
+    },
+    {
+      "file": "_gtfobins/hashcat.md",
+      "source_title": "hashcat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/hashcat",
+      "section": "hashcat"
+    },
+    {
+      "file": "_gtfobins/hd.md",
+      "source_title": "hd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/hd",
+      "section": "hd"
+    },
+    {
+      "file": "_gtfobins/head.md",
+      "source_title": "head",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/head",
+      "section": "head"
+    },
+    {
+      "file": "_gtfobins/hexdump.md",
+      "source_title": "hexdump",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/hexdump",
+      "section": "hexdump"
+    },
+    {
+      "file": "_gtfobins/hg.md",
+      "source_title": "hg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/hg",
+      "section": "hg"
+    },
+    {
+      "file": "_gtfobins/highlight.md",
+      "source_title": "highlight",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/highlight",
+      "section": "highlight"
+    },
+    {
+      "file": "_gtfobins/hping3.md",
+      "source_title": "hping3",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/hping3",
+      "section": "hping3"
+    },
+    {
+      "file": "_gtfobins/iconv.md",
+      "source_title": "iconv",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/iconv",
+      "section": "iconv"
+    },
+    {
+      "file": "_gtfobins/iftop.md",
+      "source_title": "iftop",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/iftop",
+      "section": "iftop"
+    },
+    {
+      "file": "_gtfobins/install.md",
+      "source_title": "install",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/install",
+      "section": "install"
+    },
+    {
+      "file": "_gtfobins/ionice.md",
+      "source_title": "ionice",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ionice",
+      "section": "ionice"
+    },
+    {
+      "file": "_gtfobins/ip.md",
+      "source_title": "ip",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ip",
+      "section": "ip"
+    },
+    {
+      "file": "_gtfobins/iptables-save.md",
+      "source_title": "iptables-save",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/iptables-save",
+      "section": "iptables-save"
+    },
+    {
+      "file": "_gtfobins/irb.md",
+      "source_title": "irb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/irb",
+      "section": "irb"
+    },
+    {
+      "file": "_gtfobins/ispell.md",
+      "source_title": "ispell",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ispell",
+      "section": "ispell"
+    },
+    {
+      "file": "_gtfobins/java.md",
+      "source_title": "java",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/java",
+      "section": "java"
+    },
+    {
+      "file": "_gtfobins/jjs.md",
+      "source_title": "jjs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/jjs",
+      "section": "jjs"
+    },
+    {
+      "file": "_gtfobins/joe.md",
+      "source_title": "joe",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/joe",
+      "section": "joe"
+    },
+    {
+      "file": "_gtfobins/join.md",
+      "source_title": "join",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/join",
+      "section": "join"
+    },
+    {
+      "file": "_gtfobins/journalctl.md",
+      "source_title": "journalctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/journalctl",
+      "section": "journalctl"
+    },
+    {
+      "file": "_gtfobins/jq.md",
+      "source_title": "jq",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/jq",
+      "section": "jq"
+    },
+    {
+      "file": "_gtfobins/jrunscript.md",
+      "source_title": "jrunscript",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/jrunscript",
+      "section": "jrunscript"
+    },
+    {
+      "file": "_gtfobins/jshell.md",
+      "source_title": "jshell",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/jshell",
+      "section": "jshell"
+    },
+    {
+      "file": "_gtfobins/jtag.md",
+      "source_title": "jtag",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/jtag",
+      "section": "jtag"
+    },
+    {
+      "file": "_gtfobins/julia.md",
+      "source_title": "julia",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/julia",
+      "section": "julia"
+    },
+    {
+      "file": "_gtfobins/knife.md",
+      "source_title": "knife",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/knife",
+      "section": "knife"
+    },
+    {
+      "file": "_gtfobins/ksh.md",
+      "source_title": "ksh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ksh",
+      "section": "ksh"
+    },
+    {
+      "file": "_gtfobins/ksshell.md",
+      "source_title": "ksshell",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ksshell",
+      "section": "ksshell"
+    },
+    {
+      "file": "_gtfobins/ksu.md",
+      "source_title": "ksu",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ksu",
+      "section": "ksu"
+    },
+    {
+      "file": "_gtfobins/kubectl.md",
+      "source_title": "kubectl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/kubectl",
+      "section": "kubectl"
+    },
+    {
+      "file": "_gtfobins/last.md",
+      "source_title": "last",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/last",
+      "section": "last"
+    },
+    {
+      "file": "_gtfobins/lastb.md",
+      "source_title": "lastb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lastb",
+      "section": "lastb"
+    },
+    {
+      "file": "_gtfobins/latex.md",
+      "source_title": "latex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/latex",
+      "section": "latex"
+    },
+    {
+      "file": "_gtfobins/latexmk.md",
+      "source_title": "latexmk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/latexmk",
+      "section": "latexmk"
+    },
+    {
+      "file": "_gtfobins/ld.so.md",
+      "source_title": "ld.so",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ld.so",
+      "section": "ld.so"
+    },
+    {
+      "file": "_gtfobins/ldconfig.md",
+      "source_title": "ldconfig",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ldconfig",
+      "section": "ldconfig"
+    },
+    {
+      "file": "_gtfobins/less.md",
+      "source_title": "less",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/less",
+      "section": "less"
+    },
+    {
+      "file": "_gtfobins/lftp.md",
+      "source_title": "lftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lftp",
+      "section": "lftp"
+    },
+    {
+      "file": "_gtfobins/links.md",
+      "source_title": "links",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/links",
+      "section": "links"
+    },
+    {
+      "file": "_gtfobins/ln.md",
+      "source_title": "ln",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ln",
+      "section": "ln"
+    },
+    {
+      "file": "_gtfobins/loginctl.md",
+      "source_title": "loginctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/loginctl",
+      "section": "loginctl"
+    },
+    {
+      "file": "_gtfobins/logrotate.md",
+      "source_title": "logrotate",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/logrotate",
+      "section": "logrotate"
+    },
+    {
+      "file": "_gtfobins/logsave.md",
+      "source_title": "logsave",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/logsave",
+      "section": "logsave"
+    },
+    {
+      "file": "_gtfobins/look.md",
+      "source_title": "look",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/look",
+      "section": "look"
+    },
+    {
+      "file": "_gtfobins/lp.md",
+      "source_title": "lp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lp",
+      "section": "lp"
+    },
+    {
+      "file": "_gtfobins/ltrace.md",
+      "source_title": "ltrace",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ltrace",
+      "section": "ltrace"
+    },
+    {
+      "file": "_gtfobins/lua.md",
+      "source_title": "lua",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lua",
+      "section": "lua"
+    },
+    {
+      "file": "_gtfobins/lualatex.md",
+      "source_title": "lualatex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lualatex",
+      "section": "lualatex"
+    },
+    {
+      "file": "_gtfobins/luatex.md",
+      "source_title": "luatex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/luatex",
+      "section": "luatex"
+    },
+    {
+      "file": "_gtfobins/lwp-download.md",
+      "source_title": "lwp-download",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lwp-download",
+      "section": "lwp-download"
+    },
+    {
+      "file": "_gtfobins/lwp-request.md",
+      "source_title": "lwp-request",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lwp-request",
+      "section": "lwp-request"
+    },
+    {
+      "file": "_gtfobins/lxd.md",
+      "source_title": "lxd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/lxd",
+      "section": "lxd"
+    },
+    {
+      "file": "_gtfobins/m4.md",
+      "source_title": "m4",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/m4",
+      "section": "m4"
+    },
+    {
+      "file": "_gtfobins/mail.md",
+      "source_title": "mail",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mail",
+      "section": "mail"
+    },
+    {
+      "file": "_gtfobins/make.md",
+      "source_title": "make",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/make",
+      "section": "make"
+    },
+    {
+      "file": "_gtfobins/man.md",
+      "source_title": "man",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/man",
+      "section": "man"
+    },
+    {
+      "file": "_gtfobins/mawk.md",
+      "source_title": "mawk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mawk",
+      "section": "mawk"
+    },
+    {
+      "file": "_gtfobins/minicom.md",
+      "source_title": "minicom",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/minicom",
+      "section": "minicom"
+    },
+    {
+      "file": "_gtfobins/more.md",
+      "source_title": "more",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/more",
+      "section": "more"
+    },
+    {
+      "file": "_gtfobins/mosh-server.md",
+      "source_title": "mosh-server",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mosh-server",
+      "section": "mosh-server"
+    },
+    {
+      "file": "_gtfobins/mosquitto.md",
+      "source_title": "mosquitto",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mosquitto",
+      "section": "mosquitto"
+    },
+    {
+      "file": "_gtfobins/mount.md",
+      "source_title": "mount",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mount",
+      "section": "mount"
+    },
+    {
+      "file": "_gtfobins/msfconsole.md",
+      "source_title": "msfconsole",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msfconsole",
+      "section": "msfconsole"
+    },
+    {
+      "file": "_gtfobins/msgattrib.md",
+      "source_title": "msgattrib",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msgattrib",
+      "section": "msgattrib"
+    },
+    {
+      "file": "_gtfobins/msgcat.md",
+      "source_title": "msgcat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msgcat",
+      "section": "msgcat"
+    },
+    {
+      "file": "_gtfobins/msgconv.md",
+      "source_title": "msgconv",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msgconv",
+      "section": "msgconv"
+    },
+    {
+      "file": "_gtfobins/msgfilter.md",
+      "source_title": "msgfilter",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msgfilter",
+      "section": "msgfilter"
+    },
+    {
+      "file": "_gtfobins/msgmerge.md",
+      "source_title": "msgmerge",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msgmerge",
+      "section": "msgmerge"
+    },
+    {
+      "file": "_gtfobins/msguniq.md",
+      "source_title": "msguniq",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/msguniq",
+      "section": "msguniq"
+    },
+    {
+      "file": "_gtfobins/mtr.md",
+      "source_title": "mtr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mtr",
+      "section": "mtr"
+    },
+    {
+      "file": "_gtfobins/multitime.md",
+      "source_title": "multitime",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/multitime",
+      "section": "multitime"
+    },
+    {
+      "file": "_gtfobins/mutt.md",
+      "source_title": "mutt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mutt",
+      "section": "mutt"
+    },
+    {
+      "file": "_gtfobins/mv.md",
+      "source_title": "mv",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mv",
+      "section": "mv"
+    },
+    {
+      "file": "_gtfobins/mypy.md",
+      "source_title": "mypy",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mypy",
+      "section": "mypy"
+    },
+    {
+      "file": "_gtfobins/mysql.md",
+      "source_title": "mysql",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/mysql",
+      "section": "mysql"
+    },
+    {
+      "file": "_gtfobins/nano.md",
+      "source_title": "nano",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nano",
+      "section": "nano"
+    },
+    {
+      "file": "_gtfobins/nasm.md",
+      "source_title": "nasm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nasm",
+      "section": "nasm"
+    },
+    {
+      "file": "_gtfobins/nawk.md",
+      "source_title": "nawk",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nawk",
+      "section": "nawk"
+    },
+    {
+      "file": "_gtfobins/nc.md",
+      "source_title": "nc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nc",
+      "section": "nc"
+    },
+    {
+      "file": "_gtfobins/ncdu.md",
+      "source_title": "ncdu",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ncdu",
+      "section": "ncdu"
+    },
+    {
+      "file": "_gtfobins/ncftp.md",
+      "source_title": "ncftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ncftp",
+      "section": "ncftp"
+    },
+    {
+      "file": "_gtfobins/needrestart.md",
+      "source_title": "needrestart",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/needrestart",
+      "section": "needrestart"
+    },
+    {
+      "file": "_gtfobins/neofetch.md",
+      "source_title": "neofetch",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/neofetch",
+      "section": "neofetch"
+    },
+    {
+      "file": "_gtfobins/nft.md",
+      "source_title": "nft",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nft",
+      "section": "nft"
+    },
+    {
+      "file": "_gtfobins/nginx.md",
+      "source_title": "nginx",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nginx",
+      "section": "nginx"
+    },
+    {
+      "file": "_gtfobins/nice.md",
+      "source_title": "nice",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nice",
+      "section": "nice"
+    },
+    {
+      "file": "_gtfobins/nl.md",
+      "source_title": "nl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nl",
+      "section": "nl"
+    },
+    {
+      "file": "_gtfobins/nm.md",
+      "source_title": "nm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nm",
+      "section": "nm"
+    },
+    {
+      "file": "_gtfobins/nmap.md",
+      "source_title": "nmap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nmap",
+      "section": "nmap"
+    },
+    {
+      "file": "_gtfobins/node.md",
+      "source_title": "node",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/node",
+      "section": "node"
+    },
+    {
+      "file": "_gtfobins/nohup.md",
+      "source_title": "nohup",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nohup",
+      "section": "nohup"
+    },
+    {
+      "file": "_gtfobins/npm.md",
+      "source_title": "npm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/npm",
+      "section": "npm"
+    },
+    {
+      "file": "_gtfobins/nroff.md",
+      "source_title": "nroff",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nroff",
+      "section": "nroff"
+    },
+    {
+      "file": "_gtfobins/nsenter.md",
+      "source_title": "nsenter",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nsenter",
+      "section": "nsenter"
+    },
+    {
+      "file": "_gtfobins/ntpdate.md",
+      "source_title": "ntpdate",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ntpdate",
+      "section": "ntpdate"
+    },
+    {
+      "file": "_gtfobins/nvim.md",
+      "source_title": "nvim",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/nvim",
+      "section": "nvim"
+    },
+    {
+      "file": "_gtfobins/octave.md",
+      "source_title": "octave",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/octave",
+      "section": "octave"
+    },
+    {
+      "file": "_gtfobins/od.md",
+      "source_title": "od",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/od",
+      "section": "od"
+    },
+    {
+      "file": "_gtfobins/opencode.md",
+      "source_title": "opencode",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/opencode",
+      "section": "opencode"
+    },
+    {
+      "file": "_gtfobins/openssl.md",
+      "source_title": "openssl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/openssl",
+      "section": "openssl"
+    },
+    {
+      "file": "_gtfobins/openvpn.md",
+      "source_title": "openvpn",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/openvpn",
+      "section": "openvpn"
+    },
+    {
+      "file": "_gtfobins/openvt.md",
+      "source_title": "openvt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/openvt",
+      "section": "openvt"
+    },
+    {
+      "file": "_gtfobins/opkg.md",
+      "source_title": "opkg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/opkg",
+      "section": "opkg"
+    },
+    {
+      "file": "_gtfobins/pandoc.md",
+      "source_title": "pandoc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pandoc",
+      "section": "pandoc"
+    },
+    {
+      "file": "_gtfobins/passwd.md",
+      "source_title": "passwd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/passwd",
+      "section": "passwd"
+    },
+    {
+      "file": "_gtfobins/paste.md",
+      "source_title": "paste",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/paste",
+      "section": "paste"
+    },
+    {
+      "file": "_gtfobins/pax.md",
+      "source_title": "pax",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pax",
+      "section": "pax"
+    },
+    {
+      "file": "_gtfobins/pdb.md",
+      "source_title": "pdb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pdb",
+      "section": "pdb"
+    },
+    {
+      "file": "_gtfobins/pdflatex.md",
+      "source_title": "pdflatex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pdflatex",
+      "section": "pdflatex"
+    },
+    {
+      "file": "_gtfobins/pdftex.md",
+      "source_title": "pdftex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pdftex",
+      "section": "pdftex"
+    },
+    {
+      "file": "_gtfobins/perf.md",
+      "source_title": "perf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/perf",
+      "section": "perf"
+    },
+    {
+      "file": "_gtfobins/perl.md",
+      "source_title": "perl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/perl",
+      "section": "perl"
+    },
+    {
+      "file": "_gtfobins/perlbug.md",
+      "source_title": "perlbug",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/perlbug",
+      "section": "perlbug"
+    },
+    {
+      "file": "_gtfobins/pexec.md",
+      "source_title": "pexec",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pexec",
+      "section": "pexec"
+    },
+    {
+      "file": "_gtfobins/pg.md",
+      "source_title": "pg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pg",
+      "section": "pg"
+    },
+    {
+      "file": "_gtfobins/php.md",
+      "source_title": "php",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/php",
+      "section": "php"
+    },
+    {
+      "file": "_gtfobins/pic.md",
+      "source_title": "pic",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pic",
+      "section": "pic"
+    },
+    {
+      "file": "_gtfobins/pico.md",
+      "source_title": "pico",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pico",
+      "section": "pico"
+    },
+    {
+      "file": "_gtfobins/pidstat.md",
+      "source_title": "pidstat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pidstat",
+      "section": "pidstat"
+    },
+    {
+      "file": "_gtfobins/pip.md",
+      "source_title": "pip",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pip",
+      "section": "pip"
+    },
+    {
+      "file": "_gtfobins/pipx.md",
+      "source_title": "pipx",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pipx",
+      "section": "pipx"
+    },
+    {
+      "file": "_gtfobins/pkexec.md",
+      "source_title": "pkexec",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pkexec",
+      "section": "pkexec"
+    },
+    {
+      "file": "_gtfobins/pkg.md",
+      "source_title": "pkg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pkg",
+      "section": "pkg"
+    },
+    {
+      "file": "_gtfobins/plymouth.md",
+      "source_title": "plymouth",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/plymouth",
+      "section": "plymouth"
+    },
+    {
+      "file": "_gtfobins/podman.md",
+      "source_title": "podman",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/podman",
+      "section": "podman"
+    },
+    {
+      "file": "_gtfobins/poetry.md",
+      "source_title": "poetry",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/poetry",
+      "section": "poetry"
+    },
+    {
+      "file": "_gtfobins/posh.md",
+      "source_title": "posh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/posh",
+      "section": "posh"
+    },
+    {
+      "file": "_gtfobins/pr.md",
+      "source_title": "pr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pr",
+      "section": "pr"
+    },
+    {
+      "file": "_gtfobins/procmail.md",
+      "source_title": "procmail",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/procmail",
+      "section": "procmail"
+    },
+    {
+      "file": "_gtfobins/pry.md",
+      "source_title": "pry",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pry",
+      "section": "pry"
+    },
+    {
+      "file": "_gtfobins/psftp.md",
+      "source_title": "psftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/psftp",
+      "section": "psftp"
+    },
+    {
+      "file": "_gtfobins/psql.md",
+      "source_title": "psql",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/psql",
+      "section": "psql"
+    },
+    {
+      "file": "_gtfobins/ptx.md",
+      "source_title": "ptx",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ptx",
+      "section": "ptx"
+    },
+    {
+      "file": "_gtfobins/puppet.md",
+      "source_title": "puppet",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/puppet",
+      "section": "puppet"
+    },
+    {
+      "file": "_gtfobins/pwsh.md",
+      "source_title": "pwsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pwsh",
+      "section": "pwsh"
+    },
+    {
+      "file": "_gtfobins/pygmentize.md",
+      "source_title": "pygmentize",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pygmentize",
+      "section": "pygmentize"
+    },
+    {
+      "file": "_gtfobins/pyright.md",
+      "source_title": "pyright",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/pyright",
+      "section": "pyright"
+    },
+    {
+      "file": "_gtfobins/python.md",
+      "source_title": "python",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/python",
+      "section": "python"
+    },
+    {
+      "file": "_gtfobins/qpdf.md",
+      "source_title": "qpdf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/qpdf",
+      "section": "qpdf"
+    },
+    {
+      "file": "_gtfobins/rake.md",
+      "source_title": "rake",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rake",
+      "section": "rake"
+    },
+    {
+      "file": "_gtfobins/ranger.md",
+      "source_title": "ranger",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ranger",
+      "section": "ranger"
+    },
+    {
+      "file": "_gtfobins/rc.md",
+      "source_title": "rc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rc",
+      "section": "rc"
+    },
+    {
+      "file": "_gtfobins/readelf.md",
+      "source_title": "readelf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/readelf",
+      "section": "readelf"
+    },
+    {
+      "file": "_gtfobins/red.md",
+      "source_title": "red",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/red",
+      "section": "red"
+    },
+    {
+      "file": "_gtfobins/redcarpet.md",
+      "source_title": "redcarpet",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/redcarpet",
+      "section": "redcarpet"
+    },
+    {
+      "file": "_gtfobins/redis.md",
+      "source_title": "redis",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/redis",
+      "section": "redis"
+    },
+    {
+      "file": "_gtfobins/restic.md",
+      "source_title": "restic",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/restic",
+      "section": "restic"
+    },
+    {
+      "file": "_gtfobins/rev.md",
+      "source_title": "rev",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rev",
+      "section": "rev"
+    },
+    {
+      "file": "_gtfobins/rlogin.md",
+      "source_title": "rlogin",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rlogin",
+      "section": "rlogin"
+    },
+    {
+      "file": "_gtfobins/rlwrap.md",
+      "source_title": "rlwrap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rlwrap",
+      "section": "rlwrap"
+    },
+    {
+      "file": "_gtfobins/rpm.md",
+      "source_title": "rpm",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rpm",
+      "section": "rpm"
+    },
+    {
+      "file": "_gtfobins/rpmdb.md",
+      "source_title": "rpmdb",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rpmdb",
+      "section": "rpmdb"
+    },
+    {
+      "file": "_gtfobins/rpmquery.md",
+      "source_title": "rpmquery",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rpmquery",
+      "section": "rpmquery"
+    },
+    {
+      "file": "_gtfobins/rpmverify.md",
+      "source_title": "rpmverify",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rpmverify",
+      "section": "rpmverify"
+    },
+    {
+      "file": "_gtfobins/rsync.md",
+      "source_title": "rsync",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rsync",
+      "section": "rsync"
+    },
+    {
+      "file": "_gtfobins/rsyslogd.md",
+      "source_title": "rsyslogd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rsyslogd",
+      "section": "rsyslogd"
+    },
+    {
+      "file": "_gtfobins/rtorrent.md",
+      "source_title": "rtorrent",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rtorrent",
+      "section": "rtorrent"
+    },
+    {
+      "file": "_gtfobins/ruby.md",
+      "source_title": "ruby",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ruby",
+      "section": "ruby"
+    },
+    {
+      "file": "_gtfobins/run-mailcap.md",
+      "source_title": "run-mailcap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/run-mailcap",
+      "section": "run-mailcap"
+    },
+    {
+      "file": "_gtfobins/run-parts.md",
+      "source_title": "run-parts",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/run-parts",
+      "section": "run-parts"
+    },
+    {
+      "file": "_gtfobins/runscript.md",
+      "source_title": "runscript",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/runscript",
+      "section": "runscript"
+    },
+    {
+      "file": "_gtfobins/rustc.md",
+      "source_title": "rustc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rustc",
+      "section": "rustc"
+    },
+    {
+      "file": "_gtfobins/rustdoc.md",
+      "source_title": "rustdoc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rustdoc",
+      "section": "rustdoc"
+    },
+    {
+      "file": "_gtfobins/rustfmt.md",
+      "source_title": "rustfmt",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rustfmt",
+      "section": "rustfmt"
+    },
+    {
+      "file": "_gtfobins/rustup.md",
+      "source_title": "rustup",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rustup",
+      "section": "rustup"
+    },
+    {
+      "file": "_gtfobins/rview.md",
+      "source_title": "rview",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rview",
+      "section": "rview"
+    },
+    {
+      "file": "_gtfobins/rvim.md",
+      "source_title": "rvim",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/rvim",
+      "section": "rvim"
+    },
+    {
+      "file": "_gtfobins/sash.md",
+      "source_title": "sash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sash",
+      "section": "sash"
+    },
+    {
+      "file": "_gtfobins/scanmem.md",
+      "source_title": "scanmem",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/scanmem",
+      "section": "scanmem"
+    },
+    {
+      "file": "_gtfobins/scp.md",
+      "source_title": "scp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/scp",
+      "section": "scp"
+    },
+    {
+      "file": "_gtfobins/screen.md",
+      "source_title": "screen",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/screen",
+      "section": "screen"
+    },
+    {
+      "file": "_gtfobins/script.md",
+      "source_title": "script",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/script",
+      "section": "script"
+    },
+    {
+      "file": "_gtfobins/scrot.md",
+      "source_title": "scrot",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/scrot",
+      "section": "scrot"
+    },
+    {
+      "file": "_gtfobins/sed.md",
+      "source_title": "sed",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sed",
+      "section": "sed"
+    },
+    {
+      "file": "_gtfobins/service.md",
+      "source_title": "service",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/service",
+      "section": "service"
+    },
+    {
+      "file": "_gtfobins/setarch.md",
+      "source_title": "setarch",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/setarch",
+      "section": "setarch"
+    },
+    {
+      "file": "_gtfobins/setcap.md",
+      "source_title": "setcap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/setcap",
+      "section": "setcap"
+    },
+    {
+      "file": "_gtfobins/setfacl.md",
+      "source_title": "setfacl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/setfacl",
+      "section": "setfacl"
+    },
+    {
+      "file": "_gtfobins/setlock.md",
+      "source_title": "setlock",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/setlock",
+      "section": "setlock"
+    },
+    {
+      "file": "_gtfobins/sftp.md",
+      "source_title": "sftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sftp",
+      "section": "sftp"
+    },
+    {
+      "file": "_gtfobins/sg.md",
+      "source_title": "sg",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sg",
+      "section": "sg"
+    },
+    {
+      "file": "_gtfobins/shred.md",
+      "source_title": "shred",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/shred",
+      "section": "shred"
+    },
+    {
+      "file": "_gtfobins/shuf.md",
+      "source_title": "shuf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/shuf",
+      "section": "shuf"
+    },
+    {
+      "file": "_gtfobins/slsh.md",
+      "source_title": "slsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/slsh",
+      "section": "slsh"
+    },
+    {
+      "file": "_gtfobins/smbclient.md",
+      "source_title": "smbclient",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/smbclient",
+      "section": "smbclient"
+    },
+    {
+      "file": "_gtfobins/snap.md",
+      "source_title": "snap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/snap",
+      "section": "snap"
+    },
+    {
+      "file": "_gtfobins/socat.md",
+      "source_title": "socat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/socat",
+      "section": "socat"
+    },
+    {
+      "file": "_gtfobins/socket.md",
+      "source_title": "socket",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/socket",
+      "section": "socket"
+    },
+    {
+      "file": "_gtfobins/soelim.md",
+      "source_title": "soelim",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/soelim",
+      "section": "soelim"
+    },
+    {
+      "file": "_gtfobins/softlimit.md",
+      "source_title": "softlimit",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/softlimit",
+      "section": "softlimit"
+    },
+    {
+      "file": "_gtfobins/sort.md",
+      "source_title": "sort",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sort",
+      "section": "sort"
+    },
+    {
+      "file": "_gtfobins/split.md",
+      "source_title": "split",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/split",
+      "section": "split"
+    },
+    {
+      "file": "_gtfobins/sqlite3.md",
+      "source_title": "sqlite3",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sqlite3",
+      "section": "sqlite3"
+    },
+    {
+      "file": "_gtfobins/sqlmap.md",
+      "source_title": "sqlmap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sqlmap",
+      "section": "sqlmap"
+    },
+    {
+      "file": "_gtfobins/ss.md",
+      "source_title": "ss",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ss",
+      "section": "ss"
+    },
+    {
+      "file": "_gtfobins/ssh.md",
+      "source_title": "ssh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ssh",
+      "section": "ssh"
+    },
+    {
+      "file": "_gtfobins/ssh-agent.md",
+      "source_title": "ssh-agent",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ssh-agent",
+      "section": "ssh-agent"
+    },
+    {
+      "file": "_gtfobins/ssh-copy-id.md",
+      "source_title": "ssh-copy-id",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ssh-copy-id",
+      "section": "ssh-copy-id"
+    },
+    {
+      "file": "_gtfobins/ssh-keygen.md",
+      "source_title": "ssh-keygen",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ssh-keygen",
+      "section": "ssh-keygen"
+    },
+    {
+      "file": "_gtfobins/ssh-keyscan.md",
+      "source_title": "ssh-keyscan",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ssh-keyscan",
+      "section": "ssh-keyscan"
+    },
+    {
+      "file": "_gtfobins/sshfs.md",
+      "source_title": "sshfs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sshfs",
+      "section": "sshfs"
+    },
+    {
+      "file": "_gtfobins/sshpass.md",
+      "source_title": "sshpass",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sshpass",
+      "section": "sshpass"
+    },
+    {
+      "file": "_gtfobins/sshuttle.md",
+      "source_title": "sshuttle",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sshuttle",
+      "section": "sshuttle"
+    },
+    {
+      "file": "_gtfobins/start-stop-daemon.md",
+      "source_title": "start-stop-daemon",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/start-stop-daemon",
+      "section": "start-stop-daemon"
+    },
+    {
+      "file": "_gtfobins/stdbuf.md",
+      "source_title": "stdbuf",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/stdbuf",
+      "section": "stdbuf"
+    },
+    {
+      "file": "_gtfobins/strace.md",
+      "source_title": "strace",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/strace",
+      "section": "strace"
+    },
+    {
+      "file": "_gtfobins/strings.md",
+      "source_title": "strings",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/strings",
+      "section": "strings"
+    },
+    {
+      "file": "_gtfobins/su.md",
+      "source_title": "su",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/su",
+      "section": "su"
+    },
+    {
+      "file": "_gtfobins/sudo.md",
+      "source_title": "sudo",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sudo",
+      "section": "sudo"
+    },
+    {
+      "file": "_gtfobins/sysctl.md",
+      "source_title": "sysctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/sysctl",
+      "section": "sysctl"
+    },
+    {
+      "file": "_gtfobins/systemctl.md",
+      "source_title": "systemctl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/systemctl",
+      "section": "systemctl"
+    },
+    {
+      "file": "_gtfobins/systemd-resolve.md",
+      "source_title": "systemd-resolve",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/systemd-resolve",
+      "section": "systemd-resolve"
+    },
+    {
+      "file": "_gtfobins/systemd-run.md",
+      "source_title": "systemd-run",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/systemd-run",
+      "section": "systemd-run"
+    },
+    {
+      "file": "_gtfobins/tac.md",
+      "source_title": "tac",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tac",
+      "section": "tac"
+    },
+    {
+      "file": "_gtfobins/tail.md",
+      "source_title": "tail",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tail",
+      "section": "tail"
+    },
+    {
+      "file": "_gtfobins/tailscale.md",
+      "source_title": "tailscale",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tailscale",
+      "section": "tailscale"
+    },
+    {
+      "file": "_gtfobins/tar.md",
+      "source_title": "tar",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tar",
+      "section": "tar"
+    },
+    {
+      "file": "_gtfobins/task.md",
+      "source_title": "task",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/task",
+      "section": "task"
+    },
+    {
+      "file": "_gtfobins/taskset.md",
+      "source_title": "taskset",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/taskset",
+      "section": "taskset"
+    },
+    {
+      "file": "_gtfobins/tasksh.md",
+      "source_title": "tasksh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tasksh",
+      "section": "tasksh"
+    },
+    {
+      "file": "_gtfobins/tbl.md",
+      "source_title": "tbl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tbl",
+      "section": "tbl"
+    },
+    {
+      "file": "_gtfobins/tclsh.md",
+      "source_title": "tclsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tclsh",
+      "section": "tclsh"
+    },
+    {
+      "file": "_gtfobins/tcpdump.md",
+      "source_title": "tcpdump",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tcpdump",
+      "section": "tcpdump"
+    },
+    {
+      "file": "_gtfobins/tcsh.md",
+      "source_title": "tcsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tcsh",
+      "section": "tcsh"
+    },
+    {
+      "file": "_gtfobins/tdbtool.md",
+      "source_title": "tdbtool",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tdbtool",
+      "section": "tdbtool"
+    },
+    {
+      "file": "_gtfobins/tee.md",
+      "source_title": "tee",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tee",
+      "section": "tee"
+    },
+    {
+      "file": "_gtfobins/telnet.md",
+      "source_title": "telnet",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/telnet",
+      "section": "telnet"
+    },
+    {
+      "file": "_gtfobins/terraform.md",
+      "source_title": "terraform",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/terraform",
+      "section": "terraform"
+    },
+    {
+      "file": "_gtfobins/tex.md",
+      "source_title": "tex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tex",
+      "section": "tex"
+    },
+    {
+      "file": "_gtfobins/tftp.md",
+      "source_title": "tftp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tftp",
+      "section": "tftp"
+    },
+    {
+      "file": "_gtfobins/tic.md",
+      "source_title": "tic",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tic",
+      "section": "tic"
+    },
+    {
+      "file": "_gtfobins/time.md",
+      "source_title": "time",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/time",
+      "section": "time"
+    },
+    {
+      "file": "_gtfobins/timedatectl.md",
+      "source_title": "timedatectl",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/timedatectl",
+      "section": "timedatectl"
+    },
+    {
+      "file": "_gtfobins/timeout.md",
+      "source_title": "timeout",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/timeout",
+      "section": "timeout"
+    },
+    {
+      "file": "_gtfobins/tmate.md",
+      "source_title": "tmate",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tmate",
+      "section": "tmate"
+    },
+    {
+      "file": "_gtfobins/tmux.md",
+      "source_title": "tmux",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tmux",
+      "section": "tmux"
+    },
+    {
+      "file": "_gtfobins/top.md",
+      "source_title": "top",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/top",
+      "section": "top"
+    },
+    {
+      "file": "_gtfobins/torify.md",
+      "source_title": "torify",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/torify",
+      "section": "torify"
+    },
+    {
+      "file": "_gtfobins/torsocks.md",
+      "source_title": "torsocks",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/torsocks",
+      "section": "torsocks"
+    },
+    {
+      "file": "_gtfobins/troff.md",
+      "source_title": "troff",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/troff",
+      "section": "troff"
+    },
+    {
+      "file": "_gtfobins/tsc.md",
+      "source_title": "tsc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tsc",
+      "section": "tsc"
+    },
+    {
+      "file": "_gtfobins/tshark.md",
+      "source_title": "tshark",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/tshark",
+      "section": "tshark"
+    },
+    {
+      "file": "_gtfobins/ul.md",
+      "source_title": "ul",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/ul",
+      "section": "ul"
+    },
+    {
+      "file": "_gtfobins/unexpand.md",
+      "source_title": "unexpand",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/unexpand",
+      "section": "unexpand"
+    },
+    {
+      "file": "_gtfobins/uniq.md",
+      "source_title": "uniq",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/uniq",
+      "section": "uniq"
+    },
+    {
+      "file": "_gtfobins/unshare.md",
+      "source_title": "unshare",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/unshare",
+      "section": "unshare"
+    },
+    {
+      "file": "_gtfobins/unsquashfs.md",
+      "source_title": "unsquashfs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/unsquashfs",
+      "section": "unsquashfs"
+    },
+    {
+      "file": "_gtfobins/unzip.md",
+      "source_title": "unzip",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/unzip",
+      "section": "unzip"
+    },
+    {
+      "file": "_gtfobins/update-alternatives.md",
+      "source_title": "update-alternatives",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/update-alternatives",
+      "section": "update-alternatives"
+    },
+    {
+      "file": "_gtfobins/urlget.md",
+      "source_title": "urlget",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/urlget",
+      "section": "urlget"
+    },
+    {
+      "file": "_gtfobins/uuencode.md",
+      "source_title": "uuencode",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/uuencode",
+      "section": "uuencode"
+    },
+    {
+      "file": "_gtfobins/uv.md",
+      "source_title": "uv",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/uv",
+      "section": "uv"
+    },
+    {
+      "file": "_gtfobins/vagrant.md",
+      "source_title": "vagrant",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vagrant",
+      "section": "vagrant"
+    },
+    {
+      "file": "_gtfobins/valgrind.md",
+      "source_title": "valgrind",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/valgrind",
+      "section": "valgrind"
+    },
+    {
+      "file": "_gtfobins/varnishncsa.md",
+      "source_title": "varnishncsa",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/varnishncsa",
+      "section": "varnishncsa"
+    },
+    {
+      "file": "_gtfobins/vi.md",
+      "source_title": "vi",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vi",
+      "section": "vi"
+    },
+    {
+      "file": "_gtfobins/view.md",
+      "source_title": "view",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/view",
+      "section": "view"
+    },
+    {
+      "file": "_gtfobins/vigr.md",
+      "source_title": "vigr",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vigr",
+      "section": "vigr"
+    },
+    {
+      "file": "_gtfobins/vim.md",
+      "source_title": "vim",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vim",
+      "section": "vim"
+    },
+    {
+      "file": "_gtfobins/vimdiff.md",
+      "source_title": "vimdiff",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vimdiff",
+      "section": "vimdiff"
+    },
+    {
+      "file": "_gtfobins/vipw.md",
+      "source_title": "vipw",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/vipw",
+      "section": "vipw"
+    },
+    {
+      "file": "_gtfobins/virsh.md",
+      "source_title": "virsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/virsh",
+      "section": "virsh"
+    },
+    {
+      "file": "_gtfobins/volatility.md",
+      "source_title": "volatility",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/volatility",
+      "section": "volatility"
+    },
+    {
+      "file": "_gtfobins/w3m.md",
+      "source_title": "w3m",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/w3m",
+      "section": "w3m"
+    },
+    {
+      "file": "_gtfobins/wall.md",
+      "source_title": "wall",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wall",
+      "section": "wall"
+    },
+    {
+      "file": "_gtfobins/watch.md",
+      "source_title": "watch",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/watch",
+      "section": "watch"
+    },
+    {
+      "file": "_gtfobins/wc.md",
+      "source_title": "wc",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wc",
+      "section": "wc"
+    },
+    {
+      "file": "_gtfobins/wg-quick.md",
+      "source_title": "wg-quick",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wg-quick",
+      "section": "wg-quick"
+    },
+    {
+      "file": "_gtfobins/wget.md",
+      "source_title": "wget",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wget",
+      "section": "wget"
+    },
+    {
+      "file": "_gtfobins/whiptail.md",
+      "source_title": "whiptail",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/whiptail",
+      "section": "whiptail"
+    },
+    {
+      "file": "_gtfobins/whois.md",
+      "source_title": "whois",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/whois",
+      "section": "whois"
+    },
+    {
+      "file": "_gtfobins/wireshark.md",
+      "source_title": "wireshark",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wireshark",
+      "section": "wireshark"
+    },
+    {
+      "file": "_gtfobins/wish.md",
+      "source_title": "wish",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/wish",
+      "section": "wish"
+    },
+    {
+      "file": "_gtfobins/xargs.md",
+      "source_title": "xargs",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xargs",
+      "section": "xargs"
+    },
+    {
+      "file": "_gtfobins/xdg-user-dir.md",
+      "source_title": "xdg-user-dir",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xdg-user-dir",
+      "section": "xdg-user-dir"
+    },
+    {
+      "file": "_gtfobins/xdotool.md",
+      "source_title": "xdotool",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xdotool",
+      "section": "xdotool"
+    },
+    {
+      "file": "_gtfobins/xelatex.md",
+      "source_title": "xelatex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xelatex",
+      "section": "xelatex"
+    },
+    {
+      "file": "_gtfobins/xetex.md",
+      "source_title": "xetex",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xetex",
+      "section": "xetex"
+    },
+    {
+      "file": "_gtfobins/xmodmap.md",
+      "source_title": "xmodmap",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xmodmap",
+      "section": "xmodmap"
+    },
+    {
+      "file": "_gtfobins/xmore.md",
+      "source_title": "xmore",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xmore",
+      "section": "xmore"
+    },
+    {
+      "file": "_gtfobins/xpad.md",
+      "source_title": "xpad",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xpad",
+      "section": "xpad"
+    },
+    {
+      "file": "_gtfobins/xxd.md",
+      "source_title": "xxd",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xxd",
+      "section": "xxd"
+    },
+    {
+      "file": "_gtfobins/xz.md",
+      "source_title": "xz",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/xz",
+      "section": "xz"
+    },
+    {
+      "file": "_gtfobins/yarn.md",
+      "source_title": "yarn",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/yarn",
+      "section": "yarn"
+    },
+    {
+      "file": "_gtfobins/yash.md",
+      "source_title": "yash",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/yash",
+      "section": "yash"
+    },
+    {
+      "file": "_gtfobins/yelp.md",
+      "source_title": "yelp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/yelp",
+      "section": "yelp"
+    },
+    {
+      "file": "_gtfobins/yt-dlp.md",
+      "source_title": "yt-dlp",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/yt-dlp",
+      "section": "yt-dlp"
+    },
+    {
+      "file": "_gtfobins/yum.md",
+      "source_title": "yum",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/yum",
+      "section": "yum"
+    },
+    {
+      "file": "_gtfobins/zathura.md",
+      "source_title": "zathura",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zathura",
+      "section": "zathura"
+    },
+    {
+      "file": "_gtfobins/zcat.md",
+      "source_title": "zcat",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zcat",
+      "section": "zcat"
+    },
+    {
+      "file": "_gtfobins/zgrep.md",
+      "source_title": "zgrep",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zgrep",
+      "section": "zgrep"
+    },
+    {
+      "file": "_gtfobins/zic.md",
+      "source_title": "zic",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zic",
+      "section": "zic"
+    },
+    {
+      "file": "_gtfobins/zip.md",
+      "source_title": "zip",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zip",
+      "section": "zip"
+    },
+    {
+      "file": "_gtfobins/zless.md",
+      "source_title": "zless",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zless",
+      "section": "zless"
+    },
+    {
+      "file": "_gtfobins/zsh.md",
+      "source_title": "zsh",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zsh",
+      "section": "zsh"
+    },
+    {
+      "file": "_gtfobins/zsoelim.md",
+      "source_title": "zsoelim",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zsoelim",
+      "section": "zsoelim"
+    },
+    {
+      "file": "_gtfobins/zypper.md",
+      "source_title": "zypper",
+      "source_url": "https://github.com/GTFOBins/GTFOBins.github.io/blob/acd524623f9c406acedd2754ebd9c2431f3675ad/_gtfobins/zypper",
+      "section": "zypper"
+    }
+  ]
+}

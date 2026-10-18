@@ -1,0 +1,24 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/registry/change-registry-key-timestamp.yml -->
+rule:
+  meta:
+    name: change registry key timestamp
+    namespace: host-interaction/registry
+    authors:
+      - wballenthin@google.com
+    scopes:
+      static: basic block
+      dynamic: call
+    att&ck:
+      - Defense Evasion::Modify Registry [T1112]
+    references:
+      - https://www.inversecos.com/2022/04/malicious-registry-timestamp.html
+      - https://chentiangemalc.wordpress.com/2020/03/14/get-set-registry-key-timestamp-with-c-powershell/
+      - https://github.com/jschicht/SetRegTime
+    examples:
+      - e365e3e3febb8a71267b5cd64457744a00e2d61edafb7c98b205b729315e97de:0x70578508
+  features:
+    - and:
+      - api: NtSetInformationKey
+      - number: 8 = sizeof(KEY_WRITE_TIME_INFORMATION)
+      - optional:
+        - number: 0 = KEY_SET_INFORMATION_CLASS::KeyWriteTimeInformation

@@ -1,0 +1,6 @@
+{
+  "engagement_name": "E2E",
+  "allowed_targets": [
+    "http://127.0.0.1:8777/"
+  ]
+}

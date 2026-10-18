@@ -1,0 +1,6 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SigninLogs/Brute Force Attack against GitHub Account.yaml -->
+id: 0f872637-8817-44a0-bb9d-ceab3dbd4ecd
+name: Brute Force Attack against GitHub Account
+description: |
+  'As part of content migration, this file is moved to new location. you can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/Brute%20Force%20Attack%20against%20GitHub%20Account.yaml'
+version: 1.0.1

@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/application/mssqlserver/win_mssql_sp_procoption_set.yml -->
+title: MSSQL SPProcoption Set
+id: b3d57a5c-c92e-4b48-9a79-5f124b7cf964
+status: test
+description: Detects when the a stored procedure is set or cleared for automatic execution in MSSQL. A stored procedure that is set to automatic execution runs every time an instance of SQL Server is started
+references:
+    - https://www.netspi.com/blog/technical/network-penetration-testing/sql-server-persistence-part-1-startup-stored-procedures/
+    - https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-procoption-transact-sql?view=sql-server-ver16
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-07-13
+modified: 2024-06-26
+tags:
+    - attack.persistence
+logsource:
+    product: windows
+    service: application
+    definition: 'Requirements: MSSQL audit policy to monitor for "sp_procoption" must be enabled in order to receive this event in the application log'
+    # warning: The 'data' field used in the detection section is the container for the event data as a whole. You may have to adapt the rule for your backend accordingly
+detection:
+    selection:
+        Provider_Name|contains: 'MSSQL' # Note: We use contains to account for other third party providers - See https://github.com/SigmaHQ/sigma/issues/4876
+        EventID: 33205
+        Data|contains|all:
+            - 'object_name:sp_procoption'
+            - 'statement:EXEC'
+    condition: selection
+falsepositives:
+    - Legitimate use of the feature by administrators (rare)
+level: high

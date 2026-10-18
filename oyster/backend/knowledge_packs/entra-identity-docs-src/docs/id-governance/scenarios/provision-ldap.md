@@ -1,0 +1,19 @@
+<!-- source: https://github.com/MicrosoftDocs/entra-docs/blob/3db172a622c96d9fccdca0143085ea28ec04ba41/docs/id-governance/scenarios/provision-ldap.md -->
+---
+title: Govern provisioning to on-premises LDAP based apps
+description: This document describes how to configure Microsoft Entra ID to provision users into an on-premises LDAP directory.
+ms.topic: how-to
+ms.date: 04/09/2025
+ms.reviewer: arvinh
+---
+
+#  Govern provisioning to on-premises LDAP based apps
+
+
+
+[!INCLUDE [app-provisioning-ldap.md](~/includes/app-provisioning-ldap.md)]
+
+
+## Next steps 
+- [What is identity lifecycle management](~/id-governance/what-is-identity-lifecycle-management.md)
+- [What is provisioning?](~/id-governance/what-is-provisioning.md)

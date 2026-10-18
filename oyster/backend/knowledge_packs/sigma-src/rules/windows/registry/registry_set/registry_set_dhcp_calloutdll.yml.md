@@ -1,0 +1,32 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_dhcp_calloutdll.yml -->
+title: DHCP Callout DLL Installation
+id: 9d3436ef-9476-4c43-acca-90ce06bdf33a
+status: test
+description: Detects the installation of a Callout DLL via CalloutDlls and CalloutEnabled parameter in Registry, which can be used to execute code in context of the DHCP server (restart required)
+references:
+    - https://blog.3or.de/mimilib-dhcp-server-callout-dll-injection.html
+    - https://technet.microsoft.com/en-us/library/cc726884(v=ws.10).aspx
+    - https://msdn.microsoft.com/de-de/library/windows/desktop/aa363389(v=vs.85).aspx
+author: Dimitrios Slamaris
+date: 2017-05-15
+modified: 2023-08-17
+tags:
+    - attack.privilege-escalation
+    - attack.persistence
+    - attack.execution
+    - attack.stealth
+    - attack.defense-impairment
+    - attack.t1574.001
+    - attack.t1112
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|endswith:
+            - '\Services\DHCPServer\Parameters\CalloutDlls'
+            - '\Services\DHCPServer\Parameters\CalloutEnabled'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

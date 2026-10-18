@@ -1,0 +1,317 @@
+{
+  "id": "aws-guardduty-docs-src",
+  "name": "aws-guardduty-docs-src",
+  "version": "7736793b30f2",
+  "title": "Amazon GuardDuty User Guide (upstream)",
+  "domain": "defensive",
+  "security_domain": "cloud-security",
+  "description": "Imported from https://docs.aws.amazon.com/guardduty/ at 7736793b30f2. 46 documents.",
+  "authority": "AWS",
+  "publisher": "Amazon.com, Inc.",
+  "trust_level": "official",
+  "licence": "CC-BY-SA-4.0",
+  "attribution": "Amazon GuardDuty User Guide, Amazon.com, Inc., CC BY-SA 4.0.",
+  "tags": [
+    "aws",
+    "guardduty",
+    "cloud",
+    "detection"
+  ],
+  "applicable_tools": [
+    "aws"
+  ],
+  "applicable_platforms": [
+    "cloud",
+    "aws"
+  ],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Upstream repo default branch was archived/stubbed; content tracked from its last maintained 'main' branch instead.",
+  "retrieved_at": "2026-08-18",
+  "last_reviewed_at": "2026-08-18",
+  "origin": "connector",
+  "connector_id": "aws-guardduty-docs-src",
+  "upstream_commit": "7736793b30f29a8fe64245b652779a13c82a8a75",
+  "source_urls": [
+    "https://docs.aws.amazon.com/guardduty/",
+    "https://github.com/awsdocs/amazon-guardduty-user-guide"
+  ],
+  "docs": [
+    {
+      "file": "doc_source/compliance-validation.md",
+      "source_title": "Compliance validation for Amazon GuardDuty<a name=\"compliance-validation\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/compliance-validation.md",
+      "section": "Compliance validation for Amazon GuardDuty<a name=\"compliance-validation\"></a>"
+    },
+    {
+      "file": "doc_source/data-protection.md",
+      "source_title": "Data protection in Amazon GuardDuty<a name=\"data-protection\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/data-protection.md",
+      "section": "Data protection in Amazon GuardDuty<a name=\"data-protection\"></a>"
+    },
+    {
+      "file": "doc_source/detective-integration.md",
+      "source_title": "Integration with Amazon Detective<a name=\"detective-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/detective-integration.md",
+      "section": "Integration with Amazon Detective<a name=\"detective-integration\"></a>"
+    },
+    {
+      "file": "doc_source/disaster-recovery-resiliency.md",
+      "source_title": "Resilience in Amazon GuardDuty<a name=\"disaster-recovery-resiliency\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/disaster-recovery-resiliency.md",
+      "section": "Resilience in Amazon GuardDuty<a name=\"disaster-recovery-resiliency\"></a>"
+    },
+    {
+      "file": "doc_source/doc-history.md",
+      "source_title": "Document history for Amazon GuardDuty<a name=\"doc-history\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/doc-history.md",
+      "section": "Document history for Amazon GuardDuty<a name=\"doc-history\"></a>"
+    },
+    {
+      "file": "doc_source/findings_management.md",
+      "source_title": "Managing Amazon GuardDuty findings<a name=\"findings_management\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/findings_management.md",
+      "section": "Managing Amazon GuardDuty findings<a name=\"findings_management\"></a>"
+    },
+    {
+      "file": "doc_source/findings_suppression-rule.md",
+      "source_title": "Suppression rules<a name=\"findings_suppression-rule\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/findings_suppression-rule.md",
+      "section": "Suppression rules<a name=\"findings_suppression-rule\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_accounts.md",
+      "source_title": "Managing multiple accounts in Amazon GuardDuty<a name=\"guardduty_accounts\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_accounts.md",
+      "section": "Managing multiple accounts in Amazon GuardDuty<a name=\"guardduty_accounts\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_concepts.md",
+      "source_title": "Concepts and terminology<a name=\"guardduty_concepts\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_concepts.md",
+      "section": "Concepts and terminology<a name=\"guardduty_concepts\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_data-sources.md",
+      "source_title": "How Amazon GuardDuty uses its data sources<a name=\"guardduty_data-sources\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_data-sources.md",
+      "section": "How Amazon GuardDuty uses its data sources<a name=\"guardduty_data-sources\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_exportfindings.md",
+      "source_title": "Exporting findings<a name=\"guardduty_exportfindings\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_exportfindings.md",
+      "section": "Exporting findings<a name=\"guardduty_exportfindings\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_filter-findings.md",
+      "source_title": "Filtering findings<a name=\"guardduty_filter-findings\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_filter-findings.md",
+      "section": "Filtering findings<a name=\"guardduty_filter-findings\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-format.md",
+      "source_title": "GuardDuty finding format<a name=\"guardduty_finding-format\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-format.md",
+      "section": "GuardDuty finding format<a name=\"guardduty_finding-format\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-types-active.md",
+      "source_title": "Finding types<a name=\"guardduty_finding-types-active\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-types-active.md",
+      "section": "Finding types<a name=\"guardduty_finding-types-active\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-types-ec2.md",
+      "source_title": "GuardDuty EC2 finding types<a name=\"guardduty_finding-types-ec2\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-types-ec2.md",
+      "section": "GuardDuty EC2 finding types<a name=\"guardduty_finding-types-ec2\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-types-iam.md",
+      "source_title": "GuardDuty IAM finding types<a name=\"guardduty_finding-types-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-types-iam.md",
+      "section": "GuardDuty IAM finding types<a name=\"guardduty_finding-types-iam\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-types-retired.md",
+      "source_title": "Retired finding types<a name=\"guardduty_finding-types-retired\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-types-retired.md",
+      "section": "Retired finding types<a name=\"guardduty_finding-types-retired\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_finding-types-s3.md",
+      "source_title": "GuardDuty S3 finding types<a name=\"guardduty_finding-types-s3\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_finding-types-s3.md",
+      "section": "GuardDuty S3 finding types<a name=\"guardduty_finding-types-s3\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_findings-summary.md",
+      "source_title": "Finding details<a name=\"guardduty_findings-summary\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_findings-summary.md",
+      "section": "Finding details<a name=\"guardduty_findings-summary\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_findings.md",
+      "source_title": "Understanding Amazon GuardDuty findings<a name=\"guardduty_findings\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_findings.md",
+      "section": "Understanding Amazon GuardDuty findings<a name=\"guardduty_findings\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_findings_cloudwatch.md",
+      "source_title": "Creating custom responses to GuardDuty findings with Amazon CloudWatch Events<a name=\"guardduty_findings_cloudwatch\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_findings_cloudwatch.md",
+      "section": "Creating custom responses to GuardDuty findings with Amazon CloudWatch Events<a name=\"guardduty_findings_cloudwatch\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_integrations.md",
+      "source_title": "AWS Service Integrations with GuardDuty<a name=\"guardduty_integrations\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_integrations.md",
+      "section": "AWS Service Integrations with GuardDuty<a name=\"guardduty_integrations\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_invitations.md",
+      "source_title": "Managing GuardDuty accounts by invitation<a name=\"guardduty_invitations\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_invitations.md",
+      "section": "Managing GuardDuty accounts by invitation<a name=\"guardduty_invitations\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_limits.md",
+      "source_title": "Quotas for Amazon GuardDuty<a name=\"guardduty_limits\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_limits.md",
+      "section": "Quotas for Amazon GuardDuty<a name=\"guardduty_limits\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_organizations.md",
+      "source_title": "Managing GuardDuty accounts with AWS Organizations<a name=\"guardduty_organizations\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_organizations.md",
+      "section": "Managing GuardDuty accounts with AWS Organizations<a name=\"guardduty_organizations\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_regions.md",
+      "source_title": "Regions and endpoints<a name=\"guardduty_regions\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_regions.md",
+      "section": "Regions and endpoints<a name=\"guardduty_regions\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_remediate.md",
+      "source_title": "Remediating security issues discovered by GuardDuty<a name=\"guardduty_remediate\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_remediate.md",
+      "section": "Remediating security issues discovered by GuardDuty<a name=\"guardduty_remediate\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_settingup.md",
+      "source_title": "Getting started with GuardDuty<a name=\"guardduty_settingup\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_settingup.md",
+      "section": "Getting started with GuardDuty<a name=\"guardduty_settingup\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_sns.md",
+      "source_title": "Subscribing to GuardDuty announcements SNS topic<a name=\"guardduty_sns\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_sns.md",
+      "section": "Subscribing to GuardDuty announcements SNS topic<a name=\"guardduty_sns\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_suspend-disable.md",
+      "source_title": "Suspending or disabling GuardDuty<a name=\"guardduty_suspend-disable\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_suspend-disable.md",
+      "section": "Suspending or disabling GuardDuty<a name=\"guardduty_suspend-disable\"></a>"
+    },
+    {
+      "file": "doc_source/guardduty_upload-lists.md",
+      "source_title": "Working with trusted IP lists and threat lists<a name=\"guardduty_upload-lists\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/guardduty_upload-lists.md",
+      "section": "Working with trusted IP lists and threat lists<a name=\"guardduty_upload-lists\"></a>"
+    },
+    {
+      "file": "doc_source/index.md",
+      "source_title": "Amazon GuardDuty Amazon GuardDuty User Guide",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/index.md",
+      "section": "Amazon GuardDuty Amazon GuardDuty User Guide"
+    },
+    {
+      "file": "doc_source/infrastructure-security.md",
+      "source_title": "Infrastructure security in Amazon GuardDuty<a name=\"infrastructure-security\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/infrastructure-security.md",
+      "section": "Infrastructure security in Amazon GuardDuty<a name=\"infrastructure-security\"></a>"
+    },
+    {
+      "file": "doc_source/logging-using-cloudtrail.md",
+      "source_title": "Logging Amazon GuardDuty API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/logging-using-cloudtrail.md",
+      "section": "Logging Amazon GuardDuty API calls with AWS CloudTrail<a name=\"logging-using-cloudtrail\"></a>"
+    },
+    {
+      "file": "doc_source/monitoring_costs.md",
+      "source_title": "Estimating GuardDuty costs<a name=\"monitoring_costs\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/monitoring_costs.md",
+      "section": "Estimating GuardDuty costs<a name=\"monitoring_costs\"></a>"
+    },
+    {
+      "file": "doc_source/s3_detection.md",
+      "source_title": "Amazon S3 protection in Amazon GuardDuty<a name=\"s3_detection\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/s3_detection.md",
+      "section": "Amazon S3 protection in Amazon GuardDuty<a name=\"s3_detection\"></a>"
+    },
+    {
+      "file": "doc_source/sample_findings.md",
+      "source_title": "Generating sample findings in GuardDuty<a name=\"sample_findings\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/sample_findings.md",
+      "section": "Generating sample findings in GuardDuty<a name=\"sample_findings\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam-awsmanpol.md",
+      "source_title": "AWS managed policies for Amazon GuardDuty<a name=\"security-iam-awsmanpol\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security-iam-awsmanpol.md",
+      "section": "AWS managed policies for Amazon GuardDuty<a name=\"security-iam-awsmanpol\"></a>"
+    },
+    {
+      "file": "doc_source/security-iam.md",
+      "source_title": "Identity and Access Management for AWS GuardDuty<a name=\"security-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security-iam.md",
+      "section": "Identity and Access Management for AWS GuardDuty<a name=\"security-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security.md",
+      "source_title": "Security in Amazon GuardDuty<a name=\"security\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security.md",
+      "section": "Security in Amazon GuardDuty<a name=\"security\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_id-based-policy-examples.md",
+      "source_title": "Identity\\-based policy examples for AWS GuardDuty<a name=\"security_iam_id-based-policy-examples\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security_iam_id-based-policy-examples.md",
+      "section": "Identity\\-based policy examples for AWS GuardDuty<a name=\"security_iam_id-based-policy-examples\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_service-with-iam.md",
+      "source_title": "How AWS GuardDuty works with IAM<a name=\"security_iam_service-with-iam\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security_iam_service-with-iam.md",
+      "section": "How AWS GuardDuty works with IAM<a name=\"security_iam_service-with-iam\"></a>"
+    },
+    {
+      "file": "doc_source/security_iam_troubleshoot.md",
+      "source_title": "Troubleshooting AWS GuardDuty identity and access<a name=\"security_iam_troubleshoot\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/security_iam_troubleshoot.md",
+      "section": "Troubleshooting AWS GuardDuty identity and access<a name=\"security_iam_troubleshoot\"></a>"
+    },
+    {
+      "file": "doc_source/securityhub-integration.md",
+      "source_title": "Integration with AWS Security Hub<a name=\"securityhub-integration\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/securityhub-integration.md",
+      "section": "Integration with AWS Security Hub<a name=\"securityhub-integration\"></a>"
+    },
+    {
+      "file": "doc_source/using-service-linked-roles.md",
+      "source_title": "Using service\\-linked roles for Amazon GuardDuty<a name=\"using-service-linked-roles\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/using-service-linked-roles.md",
+      "section": "Using service\\-linked roles for Amazon GuardDuty<a name=\"using-service-linked-roles\"></a>"
+    },
+    {
+      "file": "doc_source/what-is-guardduty.md",
+      "source_title": "What is Amazon GuardDuty?<a name=\"what-is-guardduty\"></a>",
+      "source_url": "https://github.com/awsdocs/amazon-guardduty-user-guide/blob/7736793b30f29a8fe64245b652779a13c82a8a75/doc_source/what-is-guardduty.md",
+      "section": "What is Amazon GuardDuty?<a name=\"what-is-guardduty\"></a>"
+    }
+  ]
+}

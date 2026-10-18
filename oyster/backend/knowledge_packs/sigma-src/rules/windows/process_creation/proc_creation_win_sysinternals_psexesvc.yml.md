@@ -1,0 +1,27 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_sysinternals_psexesvc.yml -->
+title: PsExec Service Execution
+id: fdfcbd78-48f1-4a4b-90ac-d82241e368c5
+related:
+    - id: fa91cc36-24c9-41ce-b3c8-3bbc3f2f67ba
+      type: obsolete
+status: test
+description: Detects launch of the PSEXESVC service, which means that this system was the target of a psexec remote execution
+references:
+    - https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+    - https://www.youtube.com/watch?v=ro2QuZTIMBM
+author: Thomas Patzke, Romaissa Adjailia, Florian Roth (Nextron Systems)
+date: 2017-06-12
+modified: 2023-02-28
+tags:
+    - attack.execution
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        - Image: 'C:\Windows\PSEXESVC.exe'
+        - OriginalFileName: 'psexesvc.exe'
+    condition: selection
+falsepositives:
+    - Legitimate administrative tasks
+level: medium

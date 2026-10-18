@@ -1,0 +1,31 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/security/win_security_syskey_registry_access.yml -->
+title: SysKey Registry Keys Access
+id: 9a4ff3b8-6187-4fd2-8e8b-e0eae1129495
+status: test
+description: Detects handle requests and access operations to specific registry keys to calculate the SysKey
+references:
+    - https://threathunterplaybook.com/hunts/windows/190625-RegKeyAccessSyskey/notebook.html
+author: Roberto Rodriguez @Cyb3rWard0g
+date: 2019-08-12
+modified: 2021-11-27
+tags:
+    - attack.discovery
+    - attack.t1012
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID:
+            - 4656
+            - 4663
+        ObjectType: 'key'
+        ObjectName|endswith:
+            - 'lsa\JD'
+            - 'lsa\GBG'
+            - 'lsa\Skew1'
+            - 'lsa\Data'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

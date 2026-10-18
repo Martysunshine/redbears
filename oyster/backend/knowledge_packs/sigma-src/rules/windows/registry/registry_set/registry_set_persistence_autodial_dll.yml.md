@@ -1,0 +1,23 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/registry/registry_set/registry_set_persistence_autodial_dll.yml -->
+title: Potential Persistence Via AutodialDLL
+id: e6fe26ee-d063-4f5b-b007-39e90aaf50e3
+status: test
+description: Detects change the the "AutodialDLL" key which could be used as a persistence method to load custom DLL via the "ws2_32" library
+references:
+    - https://www.hexacorn.com/blog/2015/01/13/beyond-good-ol-run-key-part-24/
+    - https://persistence-info.github.io/Data/autodialdll.html
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-08-10
+modified: 2023-08-17
+tags:
+    - attack.persistence
+logsource:
+    category: registry_set
+    product: windows
+detection:
+    selection:
+        TargetObject|contains: '\Services\WinSock2\Parameters\AutodialDLL'
+    condition: selection
+falsepositives:
+    - Unlikely
+level: high

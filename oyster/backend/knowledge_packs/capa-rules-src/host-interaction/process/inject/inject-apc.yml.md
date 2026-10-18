@@ -1,0 +1,32 @@
+<!-- source: https://github.com/mandiant/capa-rules/blob/805f9eaccfb6a4e1ddffc809d71d1e2b5ccc15e5/host-interaction/process/inject/inject-apc.yml -->
+rule:
+  meta:
+    name: inject APC
+    namespace: host-interaction/process/inject
+    authors:
+      - william.ballenthin@mandiant.com
+      - mehunhoff@google.com
+    scopes:
+      static: function
+      dynamic: span of calls
+    att&ck:
+      - Defense Evasion::Process Injection::Asynchronous Procedure Call [T1055.004]
+    examples:
+      - al-khaser_x64.exe_:0x140019348
+  features:
+    - and:
+      - or:
+        - match: write process memory
+        - match: create or open section object
+        - api: kernel32.MapViewOfFile
+      - or:
+        - api: kernel32.QueueUserAPC
+        - api: kernel32.KeInsertQueueApc
+        - api: ntdll.NtQueueApcThread
+        - api: ntdll.NtQueueApcThreadEx
+        - api: ntdll.NtQueueApcThreadEx2
+      - optional:
+        - or:
+          - number: 0x1fffff = THREAD_ALL_ACCESS
+          - api: kernel32.CreateProcess
+          - api: kernel32.OpenProcess

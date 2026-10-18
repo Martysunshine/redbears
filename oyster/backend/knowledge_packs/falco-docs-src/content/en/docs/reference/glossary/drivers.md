@@ -1,0 +1,16 @@
+<!-- source: https://github.com/falcosecurity/falco-website/blob/c2cf6a9ef7d1ee48cc4189cc47f5e432a01628eb/content/en/docs/reference/glossary/drivers.md -->
+---
+title: Drivers
+id: drivers
+date: 2023-07-17
+full_link: /docs/concepts/event-sources/kernel/
+short_description: >
+  The global term for the software that sends events from the kernel.
+aka:
+tags:
+- fundamental
+---
+The global term for the software that sends events from the {{< glossary_tooltip text="kernel" term_id="kernel" >}}.
+
+<!--more--> 
+Examples include {{< glossary_tooltip text="modern eBPF probe" term_id="modern-ebpf-probe" >}} or the {{< glossary_tooltip text="kernel module" term_id="kernel-module-driver" >}}.

@@ -1,0 +1,19 @@
+# Weights, indexes, runtime state and secrets live OUTSIDE git (see README → Assets)
+*.gguf
+*.safetensors
+*.bin
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+venv-backend/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+oyster/backend/data/
+oyster/backend/logs/
+oyster/frontend/tsconfig.tsbuildinfo

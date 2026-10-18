@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/process_creation/proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml -->
+title: Windows Defender Definition Files Removed
+id: 9719a8aa-401c-41af-8108-ced7ec9cd75c
+status: test
+description: Adversaries may disable security tools to avoid possible detection of their tools and activities by removing Windows Defender Definition Files
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/f339e7da7d05f6057fdfcdd3742bfcf365fee2a9/atomics/T1562.001/T1562.001.md
+    - https://unit42.paloaltonetworks.com/unit42-gorgon-group-slithering-nation-state-cybercrime/
+author: frack113
+date: 2021-07-07
+modified: 2023-07-18
+tags:
+    - attack.defense-impairment
+    - attack.t1685
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\MpCmdRun.exe'
+        - OriginalFileName: MpCmdRun.exe
+    selection_cli:
+        CommandLine|contains|all:
+            - ' -RemoveDefinitions'
+            - ' -All'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: high

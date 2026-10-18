@@ -1,0 +1,27 @@
+{
+  "id": "mitre-attack",
+  "name": "MITRE ATT&CK (technique summaries)",
+  "version": "1.0.0",
+  "title": "MITRE ATT&CK — Technique to Detection",
+  "domain": "defensive",
+  "security_domain": "detection-and-adversary-behavior",
+  "description": "Concise ATT&CK technique summaries that connect Technique to Prerequisites to Telemetry to Detection to Mitigation, so offensive findings map to defensive coverage. Sourced from the ATT&CK knowledge base and the STIX 2.1 dataset.",
+  "authority": "MITRE ATT&CK",
+  "publisher": "The MITRE Corporation",
+  "trust_level": "official",
+  "licence": "MITRE ATT&CK is (c) The MITRE Corporation, available under the ATT&CK Terms of Use with attribution. This pack contains original condensed summaries with attribution and links to attack.mitre.org, not a copy of the corpus.",
+  "attribution": "MITRE ATT&CK(r) — https://attack.mitre.org/ (c) The MITRE Corporation. STIX 2.1 data: https://github.com/mitre-attack/attack-stix-data.",
+  "tags": ["mitre", "attack", "detection", "ttp", "stix", "blue-team", "purple"],
+  "supported_tasks": ["detection-mapping", "purple-team", "technique-lookup", "coverage-analysis"],
+  "intended_audience": ["blue-team", "detection-engineer", "red-team", "purple-team"],
+  "applicable_platforms": ["windows", "linux", "macos", "cloud", "active-directory"],
+  "risk_classification": "informational",
+  "active_execution_possible": false,
+  "freshness_policy": "Track ATT&CK releases (roughly twice a year); record the ATT&CK version consumed.",
+  "retrieved_at": "2026-07-24",
+  "last_reviewed_at": "2026-07-24",
+  "source_urls": ["https://attack.mitre.org/", "https://github.com/mitre-attack/attack-stix-data"],
+  "docs": [
+    {"file": "technique-to-detection.md", "source_title": "MITRE ATT&CK — Technique to Detection", "source_url": "https://attack.mitre.org/techniques/enterprise/", "section": "Technique → Detection → Mitigation"}
+  ]
+}

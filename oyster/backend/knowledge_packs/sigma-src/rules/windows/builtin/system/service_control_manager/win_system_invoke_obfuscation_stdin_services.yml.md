@@ -1,0 +1,40 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_invoke_obfuscation_stdin_services.yml -->
+title: Invoke-Obfuscation STDIN+ Launcher - System
+id: 72862bf2-0eb1-11eb-adc1-0242ac120002
+status: test
+description: Detects Obfuscated use of stdin to execute PowerShell
+references:
+    - https://github.com/SigmaHQ/sigma/issues/1009  # (Task 25)
+author: Jonathan Cheong, oscd.community
+date: 2020-10-15
+modified: 2022-11-29
+tags:
+    - attack.stealth
+    - attack.t1027
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    product: windows
+    service: system
+detection:
+    selection_main:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+        # ImagePath|re: 'cmd.{0,5}(?:\/c|\/r).+powershell.+(?:\$\{?input\}?|noexit).+\"'
+        # Example 1: c:\windows\sYstEm32\CmD.eXE /C"echO\Invoke-Expression (New-Object Net.WebClient).DownloadString | POwersHELl -NoEXiT -"
+        # Example 2: c:\WiNDOws\sysTEm32\cmd.EXe /C " ECHo Invoke-Expression (New-Object Net.WebClient).DownloadString | POwersHELl -nol ${EXEcUtIONCONTeXT}.INvOkEComMANd.InvOKEScRIPt( $InpUt )"
+        ImagePath|contains|all:
+            - 'cmd'
+            - 'powershell'
+        ImagePath|contains:
+            - '/c'
+            - '/r'
+    selection_other:
+        - ImagePath|contains: 'noexit'
+        - ImagePath|contains|all:
+              - 'input'
+              - '$'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: high

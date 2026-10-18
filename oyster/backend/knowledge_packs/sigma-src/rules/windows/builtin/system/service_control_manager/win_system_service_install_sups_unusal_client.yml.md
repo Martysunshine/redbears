@@ -1,0 +1,29 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_service_install_sups_unusal_client.yml -->
+title: Service Installed By Unusual Client - System
+id: 71c276aa-49cd-43d2-b920-2dcd3e6962d5
+related:
+    - id: c4e92a97-a9ff-4392-9d2d-7a4c642768ca
+      type: similar
+status: test
+description: Detects a service installed by a client which has PID 0 or whose parent has PID 0
+references:
+    - https://www.elastic.co/guide/en/security/current/windows-service-installed-via-an-unusual-client.html
+author: Tim Rauch (Nextron Systems), Elastic (idea)
+date: 2022-09-15
+modified: 2023-01-04
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.t1543
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+        ProcessId: 0
+    condition: selection
+falsepositives:
+    - Unknown
+level: high

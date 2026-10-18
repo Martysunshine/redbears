@@ -1,0 +1,33 @@
+<!-- source: https://github.com/SigmaHQ/sigma/blob/4faa9d9d378f726638eb1284e6efd53f1990ee82/rules/windows/builtin/system/service_control_manager/win_system_service_install_netsupport_manager.yml -->
+title: NetSupport Manager Service Install
+id: 2d510d8d-912b-45c5-b1df-36faa3d8c3f4
+status: test
+description: Detects NetSupport Manager service installation on the target system.
+references:
+    - http://resources.netsupportsoftware.com/resources/manualpdfs/nsm_manual_uk.pdf
+author: Nasreddine Bencherchali (Nextron Systems)
+date: 2022-10-31
+tags:
+    - attack.persistence
+logsource:
+    product: windows
+    service: system
+detection:
+    # Example:
+    #   <EventData>
+    #       <Data Name="ServiceName">Client32</Data>
+    #       <Data Name="ImagePath">"C:\Program Files (x86)\NetSupport\NetSupport Manager\client32.exe" /* *</Data>
+    #       <Data Name="ServiceType">user mode service</Data>
+    #       <Data Name="StartType">auto start</Data>
+    #       <Data Name="AccountName">LocalSystem</Data>
+    #   </EventData>
+    selection_root:
+        Provider_Name: 'Service Control Manager'
+        EventID: 7045
+    selection_service:
+        - ImagePath|contains: '\NetSupport Manager\client32.exe'
+        - ServiceName: 'Client32'
+    condition: all of selection_*
+falsepositives:
+    - Legitimate use of the tool
+level: medium

@@ -1,0 +1,5 @@
+<!-- source: https://github.com/Azure/Azure-Sentinel/blob/f57d4b0ba1a8e04726d1adec5a370a608878f646/Detections/SecurityAlert/CoreBackupDeletionwithSecurityAlert.yaml -->
+id: a7663271-964e-42da-a54f-df19d6ea4fcd
+name: CoreBackUp Deletion in correlation with other related security alerts
+description: |
+  'As part of content migration, this file is moved to new location. You can find here: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%Defender%for%Cloud/Analytic%20Rules/CoreBackupDeletionwithSecurityAlert.yaml'
