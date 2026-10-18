@@ -1,0 +1,37 @@
+# Red Bears IDOR demo lab — vulnerable and patched side by side.
+#
+# Both services run the one image; LAB_MODE selects behaviour. Published ports
+# bind 127.0.0.1 ONLY: the "0.0.0.0:8000" inside each container is the
+# container-internal listen address and is never exposed to the host network.
+# The operator switches "modes" simply by choosing which URL to hit; the model
+# can never change a service's mode.
+#
+#   docker compose -f lab/docker-compose.yml up -d --build
+#   curl http://127.0.0.1:18081/health   # {"ok":true,"mode":"vulnerable"}
+#   curl http://127.0.0.1:18082/health   # {"ok":true,"mode":"patched"}
+#   docker compose -f lab/docker-compose.yml down
+#
+# Demo tokens: set ALICE_TEST_TOKEN / BOB_TEST_TOKEN in lab/.env (gitignored) to
+# override the dev fallbacks. Never commit real values.
+services:
+  vulnerable:
+    build: .
+    image: redbears-idor-lab:latest
+    environment:
+      LAB_MODE: vulnerable
+      ALICE_TEST_TOKEN: ${ALICE_TEST_TOKEN:-}
+      BOB_TEST_TOKEN: ${BOB_TEST_TOKEN:-}
+    ports:
+      - "127.0.0.1:18081:8000"
+    restart: "no"
+
+  patched:
+    image: redbears-idor-lab:latest
+    build: .
+    environment:
+      LAB_MODE: patched
+      ALICE_TEST_TOKEN: ${ALICE_TEST_TOKEN:-}
+      BOB_TEST_TOKEN: ${BOB_TEST_TOKEN:-}
+    ports:
+      - "127.0.0.1:18082:8000"
+    restart: "no"
