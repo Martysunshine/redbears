@@ -28,6 +28,7 @@ const base = { type: "meta", model: "oyster-dolphin-v2", ollama_model: "x", grou
 
 async function ask() {
   render(<RedBearsPanel onToggleSidebar={() => {}} sidebarOpen selectedModel="oyster-dolphin-v2" onModelChange={() => {}} />);
+  fireEvent.click(screen.getByRole("tab", { name: /Switch to Ask view/i }));
   fireEvent.change(screen.getByLabelText(/Ask a security question/i), { target: { value: "q?" } });
   fireEvent.click(screen.getByRole("button", { name: /Ask/ }));
 }
@@ -65,5 +66,28 @@ describe("RedBearsPanel", () => {
     frames.push({ type: "error", detail: "model not found" });
     await ask();
     await waitFor(() => expect(screen.getByRole("alert")).toHaveTextContent("model not found"));
+  });
+
+  it("renders the Chat tab's chatPane, restoring access to Oyster chat alongside Investigate", () => {
+    render(
+      <RedBearsPanel
+        onToggleSidebar={() => {}}
+        sidebarOpen
+        selectedModel="oyster-dolphin-v2"
+        onModelChange={() => {}}
+        chatPane={<div data-testid="chat-pane">full chat window</div>}
+      />
+    );
+    expect(screen.getByRole("tab", { name: /Switch to Chat view/i })).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByTestId("chat-pane")).toBeInTheDocument();
+    // Ask/Investigate stay reachable from the same switcher.
+    expect(screen.getByRole("tab", { name: /Switch to Ask view/i })).toBeInTheDocument();
+    expect(screen.getByRole("tab", { name: /Switch to Investigate view/i })).toBeInTheDocument();
+  });
+
+  it("tells the truth when no chatPane is supplied, instead of silently showing nothing", () => {
+    render(<RedBearsPanel onToggleSidebar={() => {}} sidebarOpen selectedModel="oyster-dolphin-v2" onModelChange={() => {}} />);
+    fireEvent.click(screen.getByRole("tab", { name: /Switch to Chat view/i }));
+    expect(screen.getByText(/Chat is unavailable right now/i)).toBeInTheDocument();
   });
 });

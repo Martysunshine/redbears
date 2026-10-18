@@ -32,11 +32,17 @@ import {
   ListFilter,
   ShieldOff,
   Package,
+  RefreshCw,
+  Rss,
+  FlaskConical,
 } from "lucide-react";
 import {
   askSecurityIntelligence,
   classifySecurityQuestion,
   resolveCitation,
+  getSecurityIntelFeed,
+  refreshSecurityIntelFeed,
+  researchCve,
   type SecurityIntelAnswer,
   type SecurityIntelClassification,
   type SecurityIntelConfidence,
@@ -44,6 +50,8 @@ import {
   type SecurityIntelListingRow,
   type SecurityIntelSource,
   type CitationSource,
+  type CveFeedEntry,
+  type CveFeedState,
 } from "@/lib/api";
 
 interface SecurityIntelligencePanelProps {
@@ -740,6 +748,195 @@ function EmptyState({ onExample }: { onExample: (q: string) => void }) {
   );
 }
 
+/**
+ * "Latest intelligence" — a read-only mirror of recent OpenCVE catalog
+ * activity (manual refresh; see services/intel/opencve_feed.py). Deliberately
+ * does NOT compute or display a severity verdict, exploitation status, or
+ * applicability to this application: OpenCVE's v2 schema does not expose a
+ * typed severity field this adapter can trust the shape of without a live
+ * credential (see services/integrations/opencve.py's docstring), and
+ * exploitation/applicability only ever come from the KEV/CSAF sources above
+ * or an actual scenario run — never from this feed.
+ */
+function LatestIntelligenceFeed() {
+  const [feed, setFeed] = useState<CveFeedState | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [vendor, setVendor] = useState("");
+  const [product, setProduct] = useState("");
+  const [researching, setResearching] = useState<string | null>(null);
+  const [researchResult, setResearchResult] = useState<Record<string, { lab_validation: string; investigation_id: string }>>({});
+
+  const load = useCallback(async () => {
+    try {
+      setFeed(await getSecurityIntelFeed());
+      setError(null);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Couldn't load the Latest intelligence feed.");
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => { void load(); }, [load]);
+
+  async function handleRefresh() {
+    setRefreshing(true);
+    setError(null);
+    try {
+      setFeed(await refreshSecurityIntelFeed(vendor.trim() || undefined, product.trim() || undefined));
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Refresh failed.");
+    } finally {
+      setRefreshing(false);
+    }
+  }
+
+  async function handleResearch(entry: CveFeedEntry) {
+    setResearching(entry.cve_id);
+    try {
+      const result = await researchCve(entry.cve_id, entry.description ?? entry.title ?? undefined);
+      setResearchResult((r) => ({ ...r, [entry.cve_id]: { lab_validation: result.lab_validation, investigation_id: result.investigation_id } }));
+    } catch (e) {
+      setResearchResult((r) => ({ ...r, [entry.cve_id]: { lab_validation: "error", investigation_id: e instanceof Error ? e.message : "failed" } }));
+    } finally {
+      setResearching(null);
+    }
+  }
+
+  function fmt(iso: string | number | null): string {
+    if (!iso) return "—";
+    const d = typeof iso === "number" ? new Date(iso * 1000) : new Date(iso);
+    if (Number.isNaN(d.getTime())) return String(iso);
+    return d.toLocaleString(undefined, { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  }
+
+  return (
+    <div className="bg-oyster-surface border border-oyster-border rounded-xl p-4 space-y-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <Rss size={14} className="text-oyster-accent shrink-0" />
+        <h3 className="text-sm font-medium text-oyster-text">Latest intelligence</h3>
+        <span className="text-[11px] text-oyster-muted">OpenCVE catalog — newly published &amp; recently modified</span>
+        <div className="ml-auto flex items-center gap-2">
+          {feed && !feed.configured && (
+            <span className="text-[11px] text-oyster-muted">Not configured — set OPENCVE_API_TOKEN</span>
+          )}
+          <input
+            value={vendor}
+            onChange={(e) => setVendor(e.target.value)}
+            placeholder="vendor filter"
+            aria-label="Vendor filter"
+            className="w-28 bg-oyster-bg border border-oyster-border rounded-md px-2 py-1 text-xs text-oyster-text placeholder:text-oyster-muted outline-none focus:border-oyster-accent/50"
+          />
+          <input
+            value={product}
+            onChange={(e) => setProduct(e.target.value)}
+            placeholder="product filter"
+            aria-label="Product filter"
+            className="w-28 bg-oyster-bg border border-oyster-border rounded-md px-2 py-1 text-xs text-oyster-text placeholder:text-oyster-muted outline-none focus:border-oyster-accent/50"
+          />
+          <button
+            onClick={() => void handleRefresh()}
+            disabled={refreshing}
+            className="flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-md border border-oyster-border text-oyster-text hover:border-oyster-accent/40 disabled:opacity-50 transition-colors"
+          >
+            <RefreshCw size={12} className={refreshing ? "animate-spin" : ""} /> Refresh
+          </button>
+        </div>
+      </div>
+
+      <p className="text-[11px] text-oyster-muted leading-relaxed">
+        &ldquo;Research this CVE&rdquo; seeds the investigation workflow&rsquo;s Research/Investigate stages from this
+        record. It only runs an actual lab scenario if that exact CVE id has been explicitly mapped to one — none are
+        currently mapped, so every entry below is research-only. A shared vulnerability class is never treated as proof
+        that a CVE affects the Juice Shop lab.
+      </p>
+
+      {feed?.stale && (
+        <div className="flex items-center gap-2 text-xs text-amber-300 bg-amber-500/10 border border-amber-500/20 rounded-lg px-3 py-1.5">
+          <AlertTriangle size={12} className="shrink-0" />
+          Showing cached results — the last refresh failed ({feed.last_error}). These may be stale.
+        </div>
+      )}
+      {error && (
+        <div className="flex items-center gap-2 text-xs text-red-300 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-1.5">
+          <AlertCircle size={12} className="shrink-0" /> {error}
+        </div>
+      )}
+
+      <p className="text-[11px] text-oyster-muted">
+        Last successful sync: {feed ? fmt(feed.last_synced_at) : "—"}
+      </p>
+
+      {loading ? (
+        <p className="text-sm text-oyster-muted text-center py-4">Loading…</p>
+      ) : !feed || feed.entries.length === 0 ? (
+        <p className="text-sm text-oyster-muted text-center py-4">
+          {feed?.configured === false
+            ? "OpenCVE is not configured. Set OPENCVE_API_TOKEN, then Refresh."
+            : "No cached CVEs yet. Click Refresh to fetch the latest from OpenCVE."}
+        </p>
+      ) : (
+        <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
+          {feed.entries.map((entry) => {
+            const research = researchResult[entry.cve_id];
+            return (
+              <div key={entry.cve_id} className="border border-oyster-border rounded-lg p-3 space-y-1.5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <a
+                    href={`https://app.opencve.io/cve/${entry.cve_id}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-oyster-accent hover:underline inline-flex items-center gap-1"
+                  >
+                    {entry.cve_id} <ExternalLink size={11} />
+                  </a>
+                  {entry.newly_published && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-green-500/10 text-green-400 border border-green-500/20">
+                      newly published
+                    </span>
+                  )}
+                  {entry.recently_modified && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-sky-500/10 text-sky-300 border border-sky-500/20">
+                      recently modified
+                    </span>
+                  )}
+                </div>
+                {entry.title && <p className="text-xs text-oyster-text">{entry.title}</p>}
+                {entry.description && (
+                  <p className="text-xs text-oyster-muted line-clamp-2">{entry.description}</p>
+                )}
+                <p className="text-[10px] text-oyster-muted">
+                  OpenCVE catalog: created {fmt(entry.created_at)} · updated {fmt(entry.updated_at)}
+                  {" · "}severity scoring unavailable (OpenCVE v2&rsquo;s metrics shape is not verified against a live credential — see docs/INVESTIGATION.md)
+                </p>
+                <button
+                  onClick={() => void handleResearch(entry)}
+                  disabled={researching === entry.cve_id}
+                  className="flex items-center gap-1.5 text-[11px] px-2 py-1 rounded-md border border-oyster-border text-oyster-text hover:border-oyster-accent/40 disabled:opacity-50 transition-colors"
+                >
+                  <FlaskConical size={11} />
+                  {researching === entry.cve_id ? "Researching…" : "Research this CVE"}
+                </button>
+                {research && (
+                  <p className="text-[11px] text-oyster-muted">
+                    {research.lab_validation === "ran"
+                      ? `Lab scenario ran — investigation ${research.investigation_id}.`
+                      : research.lab_validation === "skipped"
+                      ? `Research only — no compatible lab test (investigation ${research.investigation_id}).`
+                      : `Research failed: ${research.investigation_id}`}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function LoadingSkeleton() {
   return (
     <div className="space-y-3" aria-live="polite" aria-busy="true">
@@ -876,6 +1073,8 @@ export function SecurityIntelligencePanel({ onToggleSidebar, sidebarOpen, select
               </div>
             )}
           </form>
+
+          <LatestIntelligenceFeed />
 
           {error && (
             <div className="flex items-start gap-3 bg-red-500/10 border border-red-500/30 rounded-xl px-4 py-3">

@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "./AuthGate";
 import { AgreementText } from "./AgreementText";
+import { IntegrationsPanel } from "./IntegrationsPanel";
 import { MemoryPanel } from "./MemoryPanel";
 import { SettingsWheel, RedOrcaMark } from "./brand";
 import {
@@ -346,6 +347,18 @@ export function AccountSettingsModal({
               hardware. You can change this at any time, mid-conversation.
             </p>
           </section>
+
+          {/* Integrations — Nemotron reasoning, Tavily, Devin. Server-side
+              credential config for the Red Bears investigation workflow;
+              operator-only since these are instance-wide, not per-account. */}
+          {isOperator && (
+            <section>
+              <h3 className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-oyster-muted">
+                Integrations
+              </h3>
+              <IntegrationsPanel />
+            </section>
+          )}
 
           {/* Runtime */}
           <section>

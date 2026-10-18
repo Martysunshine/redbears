@@ -88,15 +88,39 @@ def _warm_singletons() -> None:
         print(f"  warm-up : embeddings skipped ({type(exc).__name__})", file=sys.stderr)
 
 
+async def _opencve_scheduled_refresh_loop():
+    """Only ever starts if config.OPENCVE_SCHEDULED_REFRESH_ENABLED is true —
+    off by default (brief: "configurable and disabled until deliberately
+    enabled"). A failed refresh just logs and retries next interval; the feed
+    cache itself already handles "keep the old data, mark it stale" (see
+    services/intel/opencve_feed.py)."""
+    from services.intel import opencve_feed
+    while True:
+        try:
+            await opencve_feed.refresh()
+        except Exception as exc:  # noqa: BLE001 — never let the loop die silently
+            print(f"  opencve scheduled refresh failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+        await asyncio.sleep(config.OPENCVE_SCHEDULED_REFRESH_INTERVAL_S)
+
+
 @asynccontextmanager
 async def _lifespan(_app: FastAPI):
     # Failover/slot-count is decided from the prober's state, never
     # discovered inside a user's request — see services/ollama_probe.py.
     ollama_probe.start()
     asyncio.create_task(asyncio.to_thread(_warm_singletons))
+    opencve_task = None
+    if config.OPENCVE_SCHEDULED_REFRESH_ENABLED:
+        opencve_task = asyncio.create_task(_opencve_scheduled_refresh_loop())
     try:
         yield
     finally:
+        if opencve_task is not None:
+            opencve_task.cancel()
+        from routers.research import runs as research_runs
+        from services.lab import provisioner
+        await research_runs.close()
+        await asyncio.to_thread(provisioner.cleanup_all)
         await ollama_probe.stop()
         await ollama_service.aclose_client()
 

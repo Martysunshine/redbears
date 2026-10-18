@@ -227,9 +227,9 @@ function OysterApp() {
   const isSignedIn = tier === "admin" || tier === "user";
   const [locked, setLocked] = useState(false);
   const [upsellOpen, setUpsellOpen] = useState(false);
-  // Hackathon UI: Security Intel is the landing view. Anonymous visitors (who
+  // Hackathon UI: Red Bears Chat is the landing view. Anonymous visitors (who
   // cannot use the signed-in views) are moved to plain Chat by the tier effect.
-  const [mode, setMode] = useState<Mode>("intel");
+  const [mode, setMode] = useState<Mode>("redbears");
   // Start CLOSED on phones: the sidebar is 16rem of a ~390px screen and its
   // mobile overlay sits on top of the composer, so opening by default meant a
   // visitor landed on a dimmed, untypable chat. Desktop keeps it open.
@@ -251,6 +251,8 @@ function OysterApp() {
   // Search now lives in the sidebar; its open state is lifted here so the
   // sidebar button toggles the panel that ChatWindow renders.
   const [searchOpen, setSearchOpen] = useState(false);
+  const [chatRequest, setChatRequest] = useState(0);
+  const openChat = () => { setMode("basic"); setChatRequest(n => n + 1); if (window.innerWidth < 768) setSidebarOpen(false); };
   // Operator project switcher — the list backing the sidebar Project popover.
   const [projects, setProjects] = useState<ProjectSummary[]>([]);
   // Bumped when a finding is created from the message toolbar, so the Findings
@@ -374,8 +376,10 @@ function OysterApp() {
       const rows = (await listConversations(m)).map(toConv);
       dispatch({ type: "mergeList", mode: m, rows });
       if (rows.length) {
-        if (m === "basic") setBasicActiveId(rows[0].id);
-        else setRagActiveId(rows[0].id);
+        const preferred = rows.find(c => c.id === preferId);
+        if (preferred) setMode(m);
+        if (m === "basic") setBasicActiveId(preferred?.id ?? rows[0].id);
+        else setRagActiveId(preferred?.id ?? rows[0].id);
       } else {
         const draft = draftConversation(m);
         dispatch({ type: "upsertDraft", conv: draft });
@@ -417,7 +421,7 @@ function OysterApp() {
       } catch {
         /* the switcher list is a nicety; the workspace itself still loads */
       }
-      await loadWorkspace(pid);
+      await loadWorkspace(pid, convIdFromUrl());
       setBootState("ready");
     } catch (err) {
       setBootState("error");
@@ -829,7 +833,7 @@ function OysterApp() {
   // Keep the URL in step with the conversation on screen, so a refresh reopens
   // it and its link is shareable. Drafts clear the param (nothing to reopen).
   useEffect(() => {
-    syncConvUrl(activeId);
+    if (activeId) syncConvUrl(activeId);
   }, [activeId]);
 
   // Browser back/forward: re-select whatever conversation the URL now names.
@@ -838,7 +842,8 @@ function OysterApp() {
       const id = convIdFromUrl();
       if (!id) return;
       const rec = getConv(store, id);
-      if (!rec || isSignedIn) return;
+      if (!rec) return;
+      setChatRequest(n => n + 1);
       setMode(rec.mode);
       if (rec.mode === "rag") setRagActiveId(id);
       else setBasicActiveId(id);
@@ -848,21 +853,24 @@ function OysterApp() {
   }, [store, isSignedIn]);
 
   const handleNewConv = useCallback(() => {
+    setMode("basic");
+    setChatRequest(n => n + 1);
+    if (window.innerWidth < 768) setSidebarOpen(false);
     // A new chat is just a client-side draft (both tiers) — no server row until
     // the first message. If the current mode already has an unsaved draft open,
     // reuse it rather than stacking a second "New chat", the way Claude/ChatGPT
     // behave. Only `local-` drafts qualify: a freshly-listed server chat also
     // has messages.length === 0 until it is hydrated, and must not be treated
     // as a reusable blank.
-    const blank = conversations.find((c) => c.id.startsWith("local-") && c.messages.length === 0);
+    const blank = listFor(store, "basic").find((c) => c.id.startsWith("local-") && c.messages.length === 0);
     if (blank) {
-      setActiveId(blank.id);
+      setBasicActiveId(blank.id);
       return;
     }
-    const created = draftConversation(isRag ? "rag" : "basic");
+    const created = draftConversation("basic");
     dispatch({ type: "upsertDraft", conv: created });
-    setActiveId(created.id);
-  }, [conversations, isRag, setActiveId]);
+    setBasicActiveId(created.id);
+  }, [store]);
 
   // History actions (persisted for operators; local-only for public tiers)
   const handleRenameConv = useCallback((id: string, title: string) => {
@@ -1091,7 +1099,7 @@ function OysterApp() {
     // can never leave a stale resend armed to fire later if they happen to
     // return to the same mode/conversation without having edited anything.
     pendingEditRef.current = null;
-    if (mode !== p.mode) return;
+    if (chatModeKey !== p.mode) return;
     const liveId = p.mode === "rag" ? ragActiveId : basicActiveId;
     if (liveId !== p.convId) return;
     if (p.mode === "basic") void sendBasic(p.text);
@@ -1354,7 +1362,7 @@ function OysterApp() {
       if (active?.project?.name) setActiveProjectName(active.project.name);
       setProjects((prev) => prev.map((p) => ({ ...p, is_active: p.id === pid })));
       try {
-        await loadWorkspace(pid);
+        await loadWorkspace(pid, convIdFromUrl());
       } catch {
         showToast("Project deleted, but couldn't reload your workspace — try refreshing.");
       }
@@ -1410,16 +1418,15 @@ function OysterApp() {
 
   useEffect(() => {
     const pending = pendingSeedRef.current;
-    if (!pending || mode !== "basic" || basicActiveId !== pending.convId) return;
+    if (!pending || chatModeKey !== "basic" || basicActiveId !== pending.convId) return;
     if (!getConv(store, pending.convId)) return;
     pendingSeedRef.current = null;
     void sendBasic(pending.text);
   }, [mode, basicActiveId, store, sendBasic]);
 
-  // Signed-in users can only ever see the three hackathon views. Any other mode
-  // (a stale conversation URL, a saved record, a removed shortcut) falls back to
-  // Security Intel, so removed views — Execute included — cannot render at all.
-  const viewMode: Mode = isSignedIn && !["intel", "redbears", "findings"].includes(mode) ? "intel" : mode;
+  // Chat conversation modes render inside Red Bears. Removed tool views
+  // fall back to Security Intel; their backend capabilities remain protected.
+  const viewMode: Mode = isSignedIn && !["intel", "redbears", "findings"].includes(mode) ? (["basic", "rag"].includes(mode) ? "redbears" : "intel") : mode;
   const isChatMode = viewMode === "basic" || viewMode === "rag";
   const toggleSidebar = () =>
     setSidebarOpen((v) => !(v ?? window.matchMedia("(min-width: 768px)").matches));
@@ -1430,15 +1437,64 @@ function OysterApp() {
   const booting = tier === null || (isSignedIn && (bootState === "idle" || bootState === "loading"));
   const bootFailed = isSignedIn && bootState === "error";
 
+  // The Chat tab inside Red Bears (brief: restore it "alongside Investigate").
+  // Conversation modes remain internal state while navigation shows Red Bears.
+  // This uses the existing conversation state and streaming handlers,
+  // history, citations and model selector as the pre-hackathon chat, just
+  // reached from a tab instead of the removed sidebar entry. Built here
+  // (not inside RedBearsPanel) because it needs this component's conversation
+  // state and handlers; RedBearsPanel only places it in the layout.
+  const redBearsChatPane = activeConversation ? (
+    <ErrorBoundary resetKey={activeConversation.id}>
+      <ChatWindow
+        conversation={activeConversation}
+        hydration={activeConversation.hydration}
+        hydrationError={activeConversation.hydrationError}
+        onRetryHydrate={retryHydrate}
+        mode={chatModeKey}
+        isStreaming={isStreaming}
+        isLoading={isLoading}
+        onStop={handleStop}
+        onForceResume={forceResumeActive}
+        artifacts={artifacts}
+        projectId={activeProjectId}
+        onUploadFiles={handleUploadFiles}
+        onUploadFolder={handleUploadFolder}
+        onUploadImages={handleUploadImages}
+        onUploadVideos={handleUploadVideos}
+        onCreateNote={handleCreateNote}
+        onOpenKnowledge={() => setKnowledgeOpen(true)}
+        onRemoveArtifact={handleRemoveArtifact}
+        onSummarizeArtifact={handleSummarizeArtifact}
+        onOpenArtifact={setPreviewArtifact}
+        isUploading={isUploading}
+        onSend={handleSend}
+        onToggleSidebar={toggleSidebar}
+        sidebarOpen={sidebarOpen}
+        selectedModel={selectedModel}
+        activeProjectName={activeProjectName}
+        systemPrompt={systemPrompt}
+        onSystemPromptChange={setSystemPrompt}
+        onMessageAction={handleMessageAction}
+        onEditMessage={handleEditMessage}
+        welcomeKey={`${activeConversation.id}:${activeProjectName}`}
+        isLocked={locked}
+        onLockedClick={() => setUpsellOpen(true)}
+        searchOpen={searchOpen}
+        onCloseSearch={() => setSearchOpen(false)}
+      />
+    </ErrorBoundary>
+  ) : null;
+
   return (
     <div className="flex h-app overflow-hidden bg-oyster-bg">
       <Sidebar
         tier={tier}
-        mode={mode}
-        onModeChange={setMode}
+        mode={viewMode}
+        onModeChange={(next) => { setMode(next); if (window.innerWidth < 768) setSidebarOpen(false); }}
         conversations={conversations}
         activeConvId={activeId}
-        onSelectConv={setActiveId}
+        onSelectConv={(id) => { setActiveId(id); openChat(); }}
         onNewConv={handleNewConv}
         onRenameConv={handleRenameConv}
         onDeleteConv={handleDeleteConv}
@@ -1452,7 +1508,7 @@ function OysterApp() {
         onOpenSettings={() => setSettingsOpen(true)}
         onOpenHandbook={() => setHandbookOpen(true)}
         searchOpen={searchOpen}
-        onToggleSearch={() => setSearchOpen((v) => !v)}
+        onToggleSearch={() => { setSearchOpen((v) => !v); openChat(); }}
         projects={projects}
         activeProjectId={activeProjectId}
         onSwitchProject={handleSwitchProject}
@@ -1528,7 +1584,7 @@ function OysterApp() {
       ) : viewMode === "intel" ? (
         <SecurityIntelligencePanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
       ) : viewMode === "redbears" ? (
-        <RedBearsPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} onModelChange={setSelectedModel} />
+        <RedBearsPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} onModelChange={setSelectedModel} chatPane={redBearsChatPane} chatRequest={chatRequest} />
       ) : viewMode === "findings" ? (
         <FindingsPanel
           onToggleSidebar={toggleSidebar}

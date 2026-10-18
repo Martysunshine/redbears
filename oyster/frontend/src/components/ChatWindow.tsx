@@ -12,7 +12,6 @@ import { OysterMascot } from "./OysterMascot";
 import { type MessageAction } from "./MessageToolbar";
 import { useAuth } from "./AuthGate";
 import { RedOrcaMark } from "./brand";
-import { DASHBOARD_URL } from "@/lib/site";
 
 interface ChatWindowProps {
   conversation: Conversation;
@@ -131,12 +130,13 @@ export function ChatWindow({
   const noDocsForRag = mode === "rag" && readyCount === 0;
 
   return (
-    <div className="flex flex-col flex-1 min-w-0 h-app">
+    <div className="flex flex-col flex-1 min-w-0 min-h-0 h-full">
       {/* Header */}
       <header className="flex items-center gap-3 px-4 h-14 border-b border-oyster-border bg-oyster-bg/80 backdrop-blur-sm shrink-0">
         {sidebarOpen !== true && (
           <button
             onClick={onToggleSidebar}
+            aria-label="Open sidebar"
             className={`cursor-pointer text-oyster-muted hover:text-oyster-text transition-colors p-1.5 rounded-md hover:bg-oyster-surface ${
               sidebarOpen === null ? "md:hidden" : ""
             }`}
@@ -208,14 +208,7 @@ export function ChatWindow({
               </span>
               {/* Account hub on the main site. A plain <a>, never next/link:
                   <Link> would prefix basePath and send /oyster/account. */}
-              <a
-                href={DASHBOARD_URL}
-                title="Red Orca dashboard"
-                className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-md border border-oyster-border px-2 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-oyster-muted transition-colors hover:border-oyster-accent/40 hover:bg-oyster-surface hover:text-oyster-text"
-              >
-                <RedOrcaMark width={17} />
-                <span className="hidden sm:inline">Dashboard</span>
-              </a>
+
               {/* The settings wheel used to sit here. It now lives in the
                   sidebar footer, merged with the old Oyster-config gear so
                   there is exactly one Settings door. */}

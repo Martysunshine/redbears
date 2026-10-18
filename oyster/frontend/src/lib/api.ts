@@ -1805,3 +1805,277 @@ export async function socmatError(res: Response): Promise<never> {
   }
   throw new Error(detail);
 }
+
+// ---------------------------------------------------------------------------
+// Integrations settings (Nemotron reasoning, Tavily, Devin) — Red Bears.
+// Credentials are never sent back from the server; only masked shapes.
+// ---------------------------------------------------------------------------
+
+export interface IntegrationStatus {
+  id: string;
+  label: string;
+  role: string;
+  status: "not_configured" | "connected" | "unavailable";
+  detail: string;
+  checked_at: number | null;
+  configured: boolean;
+  base_url?: string;
+  model?: string | null;
+  org_id_set?: boolean;
+  api_key_shape?: string | null;
+  allowed_repos?: string[];
+  excluded_domains?: string[];
+}
+
+export async function listIntegrations(): Promise<{ integrations: IntegrationStatus[] }> {
+  const res = await authFetch(`${API_URL}/integrations`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function testIntegration(id: string): Promise<{ status: string; detail: string; latency_ms: number | null }> {
+  const res = await authFetch(`${API_URL}/integrations/${id}/test`, { method: "POST" });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function setIntegrationCredentials(id: string, fields: Record<string, string>): Promise<IntegrationStatus> {
+  const res = await authFetch(`${API_URL}/integrations/${id}/credentials`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ fields }),
+  });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function disconnectIntegration(id: string): Promise<IntegrationStatus> {
+  const res = await authFetch(`${API_URL}/integrations/${id}/credentials`, { method: "DELETE" });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+// ---------------------------------------------------------------------------
+// Investigation workflow — scenarios, lab instances, pipeline runs, detection,
+// verified findings, Devin handoff. Red Bears.
+// ---------------------------------------------------------------------------
+
+export interface ScenarioCatalogueEntry {
+  id: string;
+  title: string;
+  description: string;
+  available: boolean;
+  lab_template: string;
+  prerequisites: string[];
+  permitted_target: string;
+  max_requests: number;
+  timeout_s: number;
+  success_criteria: { name: string; description: string }[];
+  required_telemetry: string[];
+  cleanup: string;
+}
+
+export async function listScenarios(): Promise<{ scenarios: ScenarioCatalogueEntry[] }> {
+  const res = await authFetch(`${API_URL}/investigation/scenarios`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export interface LabInstanceView {
+  id: string;
+  status: "starting" | "ready" | "error" | "stopped";
+  error: string | null;
+  base_url: string | null;
+  scenario_id: string | null;
+  created_at: number;
+  patch_applied: boolean;
+  ttl_s: number;
+  expires_at: number;
+}
+
+export async function listLabInstances(): Promise<{ instances: LabInstanceView[] }> {
+  const res = await authFetch(`${API_URL}/investigation/lab/instances`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function cleanupLabInstance(id: string): Promise<void> {
+  const res = await authFetch(`${API_URL}/investigation/lab/instances/${id}`, { method: "DELETE" });
+  if (!res.ok) await handleError(res);
+}
+
+export interface DetectionReport {
+  scenario_id: string;
+  rule_id: string;
+  rule_label: string;
+  is_demo_baseline: boolean;
+  detection: "detected" | "missed" | "inconclusive";
+  reasoning: string;
+  matched_events: Record<string, unknown>[];
+  benign_events_checked: number;
+  false_positive_on_benign: boolean | null;
+  total_events: number;
+}
+
+export interface StageResultView {
+  stage: string;
+  status: "ok" | "skipped" | "unavailable";
+  detail: string;
+  data: Record<string, unknown>;
+}
+
+export interface InvestigationRecord {
+  investigation_id: string;
+  id?: string;
+  scenario_id: string;
+  created_at: number;
+  duration_s: number;
+  stages: StageResultView[];
+  simulation: "reproduced" | "not_reproduced" | "inconclusive";
+  detection_baseline: DetectionReport | null;
+  detection_improved_retest: { retest_simulation: string; retest_detection: DetectionReport; fresh_instance_id: string } | null;
+  lab_instance_id: string | null;
+  lab_version: string;
+  lab_commit: string;
+}
+
+export async function runInvestigation(scenarioId: string, researchQuestion?: string): Promise<InvestigationRecord> {
+  const res = await authFetch(`${API_URL}/investigation/run`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ scenario_id: scenarioId, research_question: researchQuestion ?? null }),
+  });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export interface VerifiedFinding {
+  id: string;
+  title: string;
+  verified_by: string | null;
+  investigation_id: string;
+  scenario_id: string;
+  simulation: string;
+  detection_baseline: DetectionReport | null;
+  detection_improved_retest: InvestigationRecord["detection_improved_retest"];
+  lab_version: string;
+  lab_commit: string;
+  source_references: string[];
+  devin_session: { session_id?: string; status?: string; url?: string } | null;
+  created_at: number;
+}
+
+export async function promoteFinding(investigationId: string, title: string, verifiedBy?: string): Promise<VerifiedFinding> {
+  const res = await authFetch(`${API_URL}/investigation/findings`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ investigation_id: investigationId, title, verified_by: verifiedBy ?? null }),
+  });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function listVerifiedFindings(): Promise<{ findings: VerifiedFinding[] }> {
+  const res = await authFetch(`${API_URL}/investigation/findings`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function devinPreview(findingId: string, repo: string): Promise<{
+  evidence_package: Record<string, unknown>; destination_repo: string; repo_allowed: boolean; devin_configured: boolean;
+}> {
+  const res = await authFetch(`${API_URL}/investigation/findings/${findingId}/devin-preview?repo=${encodeURIComponent(repo)}`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function devinHandoff(findingId: string, repo: string): Promise<{ session_id: string; url: string; status: string }> {
+  const res = await authFetch(`${API_URL}/investigation/findings/${findingId}/devin-handoff`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ repo }),
+  });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function devinSessionStatus(findingId: string): Promise<Record<string, unknown>> {
+  const res = await authFetch(`${API_URL}/investigation/findings/${findingId}/devin-session`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+/** "Research this CVE" from Security Intel — seeds Research + Investigate
+ *  from the CVE record. Runs an actual lab scenario only if the backend's
+ *  CVE_SCENARIO_COMPAT names one for this exact CVE id; otherwise the result
+ *  carries `lab_validation: "skipped"` with an honest reason, never a
+ *  fabricated run. */
+export async function researchCve(cveId: string, summary?: string, sourceUrl?: string): Promise<InvestigationRecord & {
+  seed_cve_id: string; lab_validation: "ran" | "skipped";
+}> {
+  const res = await authFetch(`${API_URL}/investigation/research-cve`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ cve_id: cveId, summary: summary ?? null, source_url: sourceUrl ?? null }),
+  });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function getCompatibleScenario(cveId: string): Promise<{ cve_id: string; compatible_scenario_id: string | null }> {
+  const res = await authFetch(`${API_URL}/investigation/research-cve/${encodeURIComponent(cveId)}/compatible-scenario`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+// ---------------------------------------------------------------------------
+// Security Intel — "Latest intelligence" feed (OpenCVE, read-only)
+// ---------------------------------------------------------------------------
+
+export interface CveFeedEntry {
+  cve_id: string;
+  title: string | null;
+  description: string | null;
+  created_at: string;   // OpenCVE catalog timestamp — NOT NVD publishedDate
+  updated_at: string;   // OpenCVE catalog timestamp — NOT NVD lastModifiedDate
+  newly_published: boolean;
+  recently_modified: boolean;
+  metrics?: unknown;
+  weaknesses?: unknown;
+  vendors?: unknown;
+}
+
+export interface CveFeedState {
+  entries: CveFeedEntry[];
+  last_synced_at: number | null;
+  last_attempt_at: number | null;
+  last_error: string | null;
+  stale: boolean;
+  configured: boolean;
+}
+
+export async function getSecurityIntelFeed(): Promise<CveFeedState> {
+  const res = await authFetch(`${API_URL}/security-intel/feed`);
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+export async function refreshSecurityIntelFeed(vendor?: string, product?: string): Promise<CveFeedState> {
+  const params = new URLSearchParams();
+  if (vendor) params.set("vendor", vendor);
+  if (product) params.set("product", product);
+  const qs = params.toString();
+  const res = await authFetch(`${API_URL}/security-intel/feed/refresh${qs ? `?${qs}` : ""}`, { method: "POST" });
+  if (!res.ok) await handleError(res);
+  return res.json();
+}
+
+// Bounded cloud research is separate from local chat/reranking.
+export type ResearchSource = { id: string; url: string; title: string; retrieved_at: string; published_at: string; updated_at?: string; passage: string; extracted: boolean };
+export type ResearchClaim = { text: string; kind: string; source_id: string | null; quote: string; support: string };
+export type ResearchRun = {
+  id: string; question: string; status: string; model: string;
+  events: { seq: number; at: string; type: string; [key: string]: unknown }[];
+  sources: ResearchSource[];
+  usage: { searches: number; reads: number; reserved_tokens: number; provider_tokens: number };
+  report: null | { summary: string; claims: ResearchClaim[]; scenario_id: string; scenario_reason: string; support_note: string };
+  lab?: { simulation: string; detection: string; retest_simulation: string; retest_detection: string; benign_events_checked: number; false_positive_on_benign: boolean | null; limitations: string };
+};
+export const researchStatus = () => request<{missing: string[]; model: string; lab_available: boolean}>(`${API_URL}/research/status`);
+export const startResearch = (question: string) => request<ResearchRun>(`${API_URL}/research/runs`, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({question})});
+export const getResearch = (id: string) => request<ResearchRun>(`${API_URL}/research/runs/${encodeURIComponent(id)}`);
+export const cancelResearch = (id: string) => request<ResearchRun>(`${API_URL}/research/runs/${encodeURIComponent(id)}/cancel`, {method: "POST"});
+export const validateResearchLab = (id: string) => request<ResearchRun>(`${API_URL}/research/runs/${encodeURIComponent(id)}/lab`, {method: "POST"});

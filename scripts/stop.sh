@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Stop only Red Bears' own services (by port). Leaves Ollama and any other project running.
+# Stop only identity-checked service groups launched by scripts/start.sh.
+set -euo pipefail
 . "$(dirname "$0")/lib.sh"
-for p in "$REDBEARS_FRONTEND_PORT" "$REDBEARS_BACKEND_PORT" "$REDBEARS_RERANK_PORT"; do
-  pid=$(lsof -tiTCP:"$p" -sTCP:LISTEN 2>/dev/null); [ -n "$pid" ] && kill $pid && echo "stopped :$p"; done
+for name in frontend backend rerank; do
+  "$VENV/bin/python" "$ROOT/scripts/service-process.py" stop "$LOGS/$name.pid.json"
+done

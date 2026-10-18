@@ -11,12 +11,19 @@ import {
   type RerankInfo,
 } from "@/lib/api";
 import { CitationCard } from "@/components/CitationCard";
+import { InvestigationWorkflow } from "@/components/InvestigationWorkflow";
 
 interface RedBearsPanelProps {
   onToggleSidebar: () => void;
   sidebarOpen: boolean;
   selectedModel: string;
   onModelChange: (model: string) => void;
+  /** The full Oyster chat experience (streaming, history, citations, model
+   *  selector) — built by page.tsx, which owns the conversation state this
+   *  needs. Rendered here, filling the Chat tab, so Chat/Ask/Investigate stay
+   *  one switcher inside Red Bears rather than three separate surfaces. */
+  chatPane?: React.ReactNode;
+  chatRequest?: number;
 }
 
 const EXAMPLES = [
@@ -59,7 +66,9 @@ function RerankBadge({ info, requested }: { info: RerankInfo | null; requested: 
   );
 }
 
-export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onModelChange }: RedBearsPanelProps) {
+export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onModelChange, chatPane, chatRequest = 0 }: RedBearsPanelProps) {
+  const [tab, setTab] = useState<"chat" | "ask" | "investigate">("chat");
+  useEffect(() => { setTab("chat"); }, [chatRequest]);
   // One shared model choice (Oyster | Huihui) for the whole app.
   const models = UI_MODELS;
   const model = UI_MODEL_KEYS.includes(selectedModel) ? selectedModel : UI_MODEL_KEYS[0];
@@ -121,6 +130,49 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onM
   const modelLabel = (k: string | null) => UI_MODELS.find((m) => m.key === k)?.label ?? k;
   const sec = (ms?: number | null) => (ms == null ? "–" : `${(ms / 1000).toFixed(1)}s`);
 
+  const tabSwitcher = (
+    <div role="tablist" aria-label="Red Bears view" className="ml-auto flex items-center gap-1 bg-oyster-surface border border-oyster-border rounded-lg p-0.5">
+      <button role="tab" aria-selected={tab === "chat"} aria-label="Switch to Chat view" onClick={() => setTab("chat")}
+              className={`text-xs px-3 py-1 rounded-md transition-colors ${tab === "chat" ? "bg-oyster-accent text-white" : "text-oyster-muted hover:text-oyster-text"}`}>
+        Chat
+      </button>
+      <button role="tab" aria-selected={tab === "ask"} aria-label="Switch to Ask view" onClick={() => setTab("ask")}
+              className={`text-xs px-3 py-1 rounded-md transition-colors ${tab === "ask" ? "bg-oyster-accent text-white" : "text-oyster-muted hover:text-oyster-text"}`}>
+        Ask
+      </button>
+      <button role="tab" aria-selected={tab === "investigate"} aria-label="Switch to Investigate view" onClick={() => setTab("investigate")}
+              className={`text-xs px-3 py-1 rounded-md transition-colors ${tab === "investigate" ? "bg-oyster-accent text-white" : "text-oyster-muted hover:text-oyster-text"}`}>
+        Investigate
+      </button>
+    </div>
+  );
+
+  if (tab === "chat") {
+    // ChatWindow is a full, self-contained panel (its own header, scroll
+    // region and composer — see components/ChatWindow.tsx) built and owned by
+    // page.tsx, which holds the conversation state it needs. It is rendered
+    // directly here rather than nested inside the Ask/Investigate padded
+    // wrapper below, so streaming/history/citations behave exactly as they do
+    // for an anonymous visitor's plain Chat view. A slim strip carries the
+    // Chat/Ask/Investigate switcher above it.
+    return (
+      <div className="flex flex-col flex-1 min-w-0 h-app">
+        <div className="flex items-center gap-3 px-4 py-1.5 border-b border-oyster-border bg-oyster-bg/80 backdrop-blur-sm shrink-0">
+          <Layers size={13} className="text-oyster-muted shrink-0" />
+          <span className="text-xs font-medium text-oyster-muted">Red Bears</span>
+          {tabSwitcher}
+        </div>
+        <div className="flex-1 min-h-0 flex overflow-hidden">
+          {chatPane ?? (
+            <div className="flex-1 flex items-center justify-center text-sm text-oyster-muted">
+              Chat is unavailable right now.
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col flex-1 min-w-0 h-app">
       <header className="flex items-center gap-3 px-4 py-3 border-b border-oyster-border bg-oyster-bg/80 backdrop-blur-sm shrink-0">
@@ -138,8 +190,14 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onM
         <span className="text-xs text-oyster-muted bg-oyster-surface px-2 py-0.5 rounded-md border border-oyster-border ml-1 hidden sm:inline-block">
           retrieve → Nemotron rerank → answer with citations
         </span>
+        {tabSwitcher}
       </header>
 
+      {tab === "investigate" ? (
+        <div className="flex-1 overflow-y-auto px-4 py-6">
+          <InvestigationWorkflow />
+        </div>
+      ) : (
       <div className="flex-1 overflow-y-auto px-4 py-6">
         <div className="max-w-3xl mx-auto space-y-5">
           <form
@@ -261,6 +319,7 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onM
           )}
         </div>
       </div>
+      )}
     </div>
   );
 }

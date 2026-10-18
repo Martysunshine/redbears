@@ -286,8 +286,8 @@ export function Sidebar({
         </nav>
 
 
-        {/* Chat history / search / new chat belong to the Chat view, which only anonymous visitors have now. */}
-        {!isSignedIn && (<>
+        {/* Conversation controls open the Chat tab from any main view. */}
+        <>
         <div className="mx-3 my-3 border-t border-oyster-border shrink-0" />
 
         {/* Search + New chat */}
@@ -379,8 +379,7 @@ export function Sidebar({
           </div>
         </div>
 
-        </>)}
-        {isSignedIn && <div className="flex-1" />}
+        </>
         {/* Footer */}
         <div className="px-3 py-2.5 border-t border-oyster-border shrink-0 flex items-center gap-2">
           {isSignedIn ? (

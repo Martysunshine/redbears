@@ -27,6 +27,7 @@ describe("Sidebar (hackathon navigation)", () => {
     const p = props();
     render(<Sidebar {...p} />);
     const nav = within(screen.getByRole("navigation", { name: "Primary" }));
+    expect(screen.getByRole("button", {name: "New Chat"})).toBeVisible();
     expect(nav.getAllByRole("button").map((b) => b.textContent)).toEqual(["Security Intel", "Red Bears", "Findings"]);
     for (const gone of ["Chat", "Dashboard", "Red Team", "Blue Team", "RAG Analyst", "Execute"]) {
       expect(screen.queryByText(gone)).toBeNull();
@@ -44,6 +45,7 @@ describe("Sidebar (hackathon navigation)", () => {
   it("anonymous visitors keep plain Chat only", () => {
     render(<Sidebar {...props({ tier: "anon", mode: "basic" })} />);
     const nav = within(screen.getByRole("navigation", { name: "Primary" }));
+    expect(screen.getByRole("button", {name: "New Chat"})).toBeVisible();
     expect(nav.getAllByRole("button").map((b) => b.textContent)).toEqual(["Chat"]);
   });
 });

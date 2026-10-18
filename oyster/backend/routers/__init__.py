@@ -6,13 +6,15 @@ unchanged — only the file layout differs.
 """
 
 from . import (artifacts, chat, conversations, datasets, documents, evaluation,
-               execution, findings, health, knowledge, profile, projects, rag,
-               redteam, scope, settings, shared, system, training, user_findings,
-               user_memory, vulnerabilities)
+               execution, findings, health, integrations, investigation, knowledge,
+               profile, projects, rag, redteam, scope, security_intel_feed, settings,
+               shared, system, training, user_findings, user_memory, vulnerabilities)
 
 # Reachable with no authentication at all. Keep this to routes that leak
 # nothing and cost nothing — anything a stranger can make the box DO belongs
 # in TIERED_ROUTERS, where at least the caller is identified and charged.
+from . import research
+
 PUBLIC_ROUTERS = [
     # Deploy healthchecks (UptimeRobot, docker healthcheck, Caddy).
     health.router,
@@ -88,14 +90,26 @@ ACCOUNT_ROUTERS = [
 #                 accounts, so flipping that switch back on never silently
 #                 hands network tooling to every signup.
 PROTECTED_ROUTERS = [
+    research.router,
     system.router,
     documents.router,
     rag.router,
     knowledge.router,
+    # Integrations settings (credentials, connection tests) and the
+    # investigation workflow (Research/Investigate/Prepare lab/Validate/
+    # Detect/Improve, scenario catalogue, lab provisioning) are instance-wide
+    # and — for the lab — actually run a process, so they sit at this tier
+    # like execution.router, not under ACCOUNT_ROUTERS.
+    integrations.router,
+    investigation.router,
     # Structured vulnerability knowledge (CISA KEV / NVD / EPSS / CWE / CAPEC) —
     # same tier as knowledge.router for the same reason: it reconfigures one
     # shared knowledge base for everyone, not a per-account resource.
     vulnerabilities.router,
+    # OpenCVE "Latest intelligence" feed cache — one shared, disk-cached feed
+    # for the whole instance (see services/intel/opencve_feed.py), same tier
+    # as vulnerabilities.router for the same reason.
+    security_intel_feed.router,
     datasets.router,
     findings.router,
     execution.router,

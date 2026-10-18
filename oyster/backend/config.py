@@ -668,6 +668,117 @@ NEMOTRON_RERANK_TIMEOUT_S: float = float(_env("NEMOTRON_RERANK_TIMEOUT_S", "15")
 NEMOTRON_RERANK_CANDIDATES: int = _env_int("NEMOTRON_RERANK_CANDIDATES", 16)
 NEMOTRON_RERANK_PASSAGE_CHARS: int = _env_int("NEMOTRON_RERANK_PASSAGE_CHARS", 1800)
 
+# --- Investigation integrations (Red Bears) -----------------------------------
+# Three SEPARATE providers, each with its own role. None of these is the
+# Nemotron reranker above — that stays a cross-encoder with no generative role.
+#
+# 1) Nemotron REASONING — a generative chat model, used for research planning,
+#    evidence analysis and investigation coordination (structured decision
+#    summaries), via NVIDIA/Nebius Token Factory's OpenAI-compatible API.
+#    Base URL + model id verified against docs.tokenfactory.nebius.com
+#    2026-10-18: POST {base}/chat/completions, GET {base}/models.
+NEBIUS_TOKEN_FACTORY_BASE_URL: str = _env(
+    "NEBIUS_TOKEN_FACTORY_BASE_URL", "https://api.tokenfactory.nebius.com/v1")
+# No credential on this machine as of 2026-10-18 (checked: not in env, shell
+# profiles, or any .env file). Leave empty -> adapter reports "not_configured".
+NEBIUS_API_KEY: str = _env("NEBIUS_API_KEY", "")
+# Nebius model ids use a publisher prefix (e.g. "nvidia/..."); the exact
+# Nemotron reasoning id must be read from GET {base}/models at connect time —
+# model availability changes, and guessing one here would be exactly the
+# "invented endpoint" the brief says not to do. Settable as an override once
+# confirmed against a real account's model list.
+NEMOTRON_REASONING_MODEL: str = _env("NEMOTRON_REASONING_MODEL", "")
+NEBIUS_TIMEOUT_S: float = float(_env("NEBIUS_TIMEOUT_S", "30"))
+
+# 2) Tavily — current web research, source extraction, follow-up search.
+# Verified 2026-10-18 against docs.tavily.com: POST https://api.tavily.com/search
+# and /extract, `Authorization: Bearer tvly-...`.
+TAVILY_BASE_URL: str = _env("TAVILY_BASE_URL", "https://api.tavily.com")
+TAVILY_API_KEY: str = _env("TAVILY_API_KEY", "")
+TAVILY_TIMEOUT_S: float = float(_env("TAVILY_TIMEOUT_S", "20"))
+# Juice Shop solutions/walkthroughs must never enter research retrieval (brief
+# §5) — enforced as a domain blocklist on every Tavily call, not a prompt
+# instruction. Add any domain hosting Juice Shop writeups if one is found.
+TAVILY_EXCLUDE_DOMAINS: tuple[str, ...] = tuple(
+    d.strip() for d in _env(
+        "TAVILY_EXCLUDE_DOMAINS",
+        "github.com/juice-shop,pwning-owasp-juice-shop.helmesjo.net,"
+        "bkimminich.gitbooks.io,owasp-juice.shop",
+    ).split(",") if d.strip()
+)
+
+# 3) Devin — code investigation + proposed fixes for VERIFIED findings only.
+# Verified 2026-10-18 against docs.devin.ai: current API is v3,
+# POST https://api.devin.ai/v3/organizations/{org_id}/sessions, Bearer key
+# prefixed "cog_". Legacy v1 (apk_/apk_user_ keys) is deprecated and NOT used
+# here. No credential, org id, or allowed repo is configured on this machine —
+# the adapter must report not_configured and this implementation never starts
+# a session on its own; a human reviews the evidence package first.
+DEVIN_BASE_URL: str = _env("DEVIN_BASE_URL", "https://api.devin.ai")
+DEVIN_API_KEY: str = _env("DEVIN_API_KEY", "")
+DEVIN_ORG_ID: str = _env("DEVIN_ORG_ID", "")
+# Allowlist of "owner/repo" Devin may ever be pointed at. Empty = Devin cannot
+# be used at all, regardless of credentials — there is no default repo.
+DEVIN_ALLOWED_REPOS: tuple[str, ...] = tuple(
+    r.strip() for r in _env("DEVIN_ALLOWED_REPOS", "").split(",") if r.strip()
+)
+DEVIN_TIMEOUT_S: float = float(_env("DEVIN_TIMEOUT_S", "20"))
+
+# --- Investigation lab (isolated Juice Shop) ----------------------------------
+# Disposable instances of OWASP Juice Shop, pinned to one release, used ONLY as
+# the scenario catalogue's target. No production system, real credential, or
+# host resource is ever reachable from inside a lab instance (services/lab).
+LAB_JUICE_SHOP_DIR: str = _env(
+    "LAB_JUICE_SHOP_DIR", str(Path.home() / "redbears-assets" / "lab" / "juice-shop-src"))
+LAB_JUICE_SHOP_VERSION: str = _env("LAB_JUICE_SHOP_VERSION", "v20.2.0")
+# Pinned commit for the above tag (git rev-parse v20.2.0^{}, verified against
+# the upstream repo 2026-10-18) — the provisioner refuses to use a checkout
+# whose HEAD does not match this, so a silently-moved tag or a dirty checkout
+# cannot change what scenarios run against.
+LAB_JUICE_SHOP_COMMIT: str = _env(
+    "LAB_JUICE_SHOP_COMMIT", "5658473cf8814459bf89000ce373b20ed0b4eb37")
+LAB_PORT_RANGE_START: int = _env_int("LAB_PORT_RANGE_START", 31100)
+LAB_PORT_RANGE_END: int = _env_int("LAB_PORT_RANGE_END", 31199)
+LAB_MAX_INSTANCES: int = _env_int("LAB_MAX_INSTANCES", 2)
+LAB_INSTANCE_TTL_S: int = _env_int("LAB_INSTANCE_TTL_S", 1800)
+LAB_BOOT_TIMEOUT_S: float = float(_env("LAB_BOOT_TIMEOUT_S", "60"))
+# Enforced OUTSIDE the model: a macOS sandbox profile (sandbox-exec) denies the
+# lab process network egress other than its own loopback port, and file access
+# other than its own working copy. See services/lab/sandbox.py. If sandbox-exec
+# (or an equivalent on the deploy OS) is unavailable, LAB_ENABLED forces false
+# at boot — execution stays disabled rather than falling back to an
+# unrestricted host process.
+LAB_ENABLED: bool = _env("LAB_ENABLED", "true").lower() in ("1", "true", "yes")
+
+# --- OpenCVE (read-only CVE catalog; Security Intel "Latest intelligence") --
+# Verified against the live OpenAPI v2 schema at
+# https://app.opencve.io/api/v2/schema/?format=json (2026-10-18) — see
+# services/integrations/opencve.py's module docstring for exactly which paths
+# and params that schema confirms. API v1 is deprecated per docs.opencve.io and
+# is not used.
+OPENCVE_BASE_URL: str = _env("OPENCVE_BASE_URL", "https://app.opencve.io/api/v2")
+# Organisation API token: "opc_org.<token_id>.<secret>" (OrganizationBearerAuth
+# in the schema). Left empty until a real token is configured — the adapter
+# reports "not_configured" rather than guessing one exists.
+OPENCVE_API_TOKEN: str = _env("OPENCVE_API_TOKEN", "")
+OPENCVE_TIMEOUT_S: float = float(_env("OPENCVE_TIMEOUT_S", "20"))
+OPENCVE_PAGE_SIZE: int = _env_int("OPENCVE_PAGE_SIZE", 20)  # schema max is 100
+# Cache lives outside git (REDBEARS_ASSETS), like the knowledge index.
+OPENCVE_CACHE_PATH: str = _env(
+    "OPENCVE_CACHE_PATH", str(Path.home() / "redbears-assets" / "data" / "opencve_feed_cache.json"))
+OPENCVE_CACHE_MAX_ENTRIES: int = _env_int("OPENCVE_CACHE_MAX_ENTRIES", 200)
+# A CVE whose OpenCVE created_at/updated_at falls within this window of "now"
+# is shown as newly-published / recently-modified respectively (see
+# services/intel/opencve_feed.py — these are OpenCVE catalog timestamps, not
+# NVD publishedDate/lastModifiedDate, which the v2 schema does not expose).
+OPENCVE_RECENT_WINDOW_S: int = _env_int("OPENCVE_RECENT_WINDOW_S", 7 * 86400)
+# Disabled until deliberately enabled (brief: "configurable and disabled until
+# deliberately enabled"). When true, a background task refreshes the cache
+# every OPENCVE_SCHEDULED_REFRESH_INTERVAL_S; see app.py's startup hook. Never
+# exercised against a live feed on this machine (no credential).
+OPENCVE_SCHEDULED_REFRESH_ENABLED: bool = _env("OPENCVE_SCHEDULED_REFRESH_ENABLED", "false").lower() in ("1", "true", "yes")
+OPENCVE_SCHEDULED_REFRESH_INTERVAL_S: int = _env_int("OPENCVE_SCHEDULED_REFRESH_INTERVAL_S", 3600)
+
 # --- Second-stage lexical reranker ------------------------------------------
 # A bounded rescorer applied to the fused candidates BEFORE the exact-identifier
 # boosts (so an exact CVE/ATT&CK/LOLBAS match still wins): it nudges up a

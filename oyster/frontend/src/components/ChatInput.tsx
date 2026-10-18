@@ -99,7 +99,7 @@ export function ChatInput({
   onLockedClick,
   allowAttach = true,
 }: ChatInputProps) {
-  const { trainingConsent } = useAuth();
+  const { trainingConsent, tier } = useAuth();
   const [value, setValue] = useState("");
   // Guards the gap between clicking Send and the parent flipping isStreaming
   // true (there's an await in between — promoting a draft conversation to a
@@ -392,10 +392,12 @@ export function ChatInput({
             opposite to an anonymous visitor (whose chats really are never
             stored) would be alarming and false. */}
         <p className="text-center text-[11px] text-oyster-muted/70 mt-2.5">
-          Runs on Red Orca&apos;s own servers ·{" "}
+          Oyster chat ·{" "}
           {trainingConsent
             ? "your chats help improve Oyster — manage in Settings"
-            : "not signed in — chats stay in your browser, never used for training"}
+            : tier === "admin" || tier === "user"
+              ? "workspace conversation history enabled"
+              : "not signed in — chats stay in your browser, never used for training"}
         </p>
       </div>
 
