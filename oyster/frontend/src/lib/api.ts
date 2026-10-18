@@ -207,6 +207,16 @@ export const MODELS: OysterModel[] = [
 // the same weights was ~1.85x slower). Held-out gate (96 cases) at parity with
 // V1. V1 stays selectable as the rollback; dolphin3 stays the anonymous/public
 // baseline. See oyster/docs/AI_HANDOFF.md.
+/** The ONLY answer models offered in the hackathon UI, mapped to their existing
+ *  working backend configurations. Every other entry in MODELS (V1, Dolphin 3,
+ *  Edge, Reasoning, …) stays configured in the backend registry and callable by
+ *  key — it is just not offered in the normal UI. */
+export const UI_MODELS: OysterModel[] = [
+  { key: "oyster-dolphin-v2", label: "Oyster", description: "Local 8B · Oyster Dolphin V2 (transformed Dolphin 3.0, GGUF Q4_K_M) · default · fastest" },
+  { key: "huihui-qwen3.8-27b", label: "Huihui", description: "Local 27B · upstream huihui-ai abliterated Qwen3.8 (UD-IQ3_XXS) · slower, stronger grounding" },
+];
+export const UI_MODEL_KEYS = UI_MODELS.map((m) => m.key);
+
 export const DEFAULT_MODEL = "oyster-dolphin-v2";
 
 async function handleError(res: Response): Promise<never> {

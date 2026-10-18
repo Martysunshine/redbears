@@ -43,10 +43,10 @@ interface FindingsPanelProps {
   /** The active project — findings are scoped to it, exactly like artifacts. */
   projectId: string;
   /** Jump into the source chat (chat-captured findings only). */
-  onOpenChat: (finding: UserFinding) => void;
+  onOpenChat?: (finding: UserFinding) => void;
   /** Start a new chat in the viewer's own workspace, seeded with a published
    *  finding plus the question the viewer actually wants to ask about it. */
-  onReuseFinding: (finding: PublicFinding, question: string) => void;
+  onReuseFinding?: (finding: PublicFinding, question: string) => void;
   /** Bumped by the parent when a finding is created from the message toolbar. */
   refreshKey?: number;
 }
@@ -255,7 +255,7 @@ export function FindingsPanel({
                     expanded={expandedId === f.id}
                     onToggle={() => setExpandedId(expandedId === f.id ? null : f.id)}
                     onMakePrivate={() => handleUnshareFromFeed(f.id)}
-                    onReuse={(question) => onReuseFinding(f, question)}
+                    onReuse={onReuseFinding ? (question) => onReuseFinding(f, question) : undefined}
                   />
                 ))}
               </>
@@ -297,7 +297,7 @@ export function FindingsPanel({
                 onDelete={() => handleDelete(f.id)}
                 onShare={() => handleShare(f.id)}
                 onUnshare={() => handleUnshare(f.id)}
-                onOpenChat={() => onOpenChat(f)}
+                onOpenChat={onOpenChat ? () => onOpenChat(f) : undefined}
               />
             ))
           )}
@@ -472,7 +472,7 @@ function FindingCard({
   onDelete: () => void;
   onShare: () => void;
   onUnshare: () => void;
-  onOpenChat: () => void;
+  onOpenChat?: () => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(finding.title);
@@ -567,7 +567,7 @@ function FindingCard({
         >
           <ClipboardCheck size={13} />
         </button>
-        {finding.conversation_id && (
+        {finding.conversation_id && onOpenChat && (
           <button onClick={onOpenChat} title="Open the source chat"
             className="cursor-pointer p-1.5 rounded-md text-oyster-muted hover:text-oyster-accent hover:bg-oyster-bg/60 transition-colors shrink-0">
             <MessageSquare size={13} />
@@ -657,7 +657,7 @@ function PublicFindingCard({
   expanded: boolean;
   onToggle: () => void;
   onMakePrivate: () => void;
-  onReuse: (question: string) => void;
+  onReuse?: (question: string) => void;
 }) {
   // Reuse asks WHAT you want before starting the chat: two ready-made questions
   // and an "Ask something else" box, so the opening message is the one the
@@ -680,7 +680,7 @@ function PublicFindingCard({
 
   const start = (question: string) => {
     const q = question.trim();
-    if (!q) return;
+    if (!q || !onReuse) return;
     onReuse(q);
     setAsking(false);
     setWritingOwn(false);
@@ -719,6 +719,7 @@ function PublicFindingCard({
         </span>
         <span className="hidden md:inline text-[10px] text-oyster-muted shrink-0">{when}</span>
 
+        {onReuse && (<>
         {/* Reuse — the point of a shared feed. Starts a fresh chat in YOUR
             workspace seeded with this finding; the original is untouched. */}
         <button
@@ -734,6 +735,7 @@ function PublicFindingCard({
           <MessageSquarePlus size={12} />
           <span className="hidden sm:inline">Use this</span>
         </button>
+        </>)}
 
         {finding.is_mine && (
           <button
@@ -748,7 +750,7 @@ function PublicFindingCard({
       </div>
 
       {/* What do you want to ask? Two ready-made questions, or write your own. */}
-      {asking && (
+      {onReuse && asking && (
         <div className="px-4 pb-4 pt-1 space-y-2 border-t border-green-500/20 bg-green-500/[0.03]">
           <p className="text-[11px] text-oyster-muted pt-2">
             Start a chat about <span className="text-oyster-text">{finding.title}</span> — what do
@@ -828,6 +830,7 @@ function PublicFindingCard({
           </div>
           {finding.recommended_fix && <Detail label="Recommended fix" value={finding.recommended_fix} />}
           <div className="flex flex-wrap items-center gap-2 pt-1">
+            {onReuse && (
             <button
               onClick={() => setAsking(true)}
               className="cursor-pointer flex items-center gap-1.5 bg-green-500/10 hover:bg-green-500/20 text-green-400 border border-green-500/20 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors"
@@ -835,6 +838,7 @@ function PublicFindingCard({
               <MessageSquarePlus size={12} />
               Start a chat from this
             </button>
+            )}
             <span className="text-[10px] text-oyster-muted">
               Shared by {finding.author} · {when}
             </span>

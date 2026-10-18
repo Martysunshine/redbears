@@ -227,7 +227,9 @@ function OysterApp() {
   const isSignedIn = tier === "admin" || tier === "user";
   const [locked, setLocked] = useState(false);
   const [upsellOpen, setUpsellOpen] = useState(false);
-  const [mode, setMode] = useState<Mode>("basic");
+  // Hackathon UI: Security Intel is the landing view. Anonymous visitors (who
+  // cannot use the signed-in views) are moved to plain Chat by the tier effect.
+  const [mode, setMode] = useState<Mode>("intel");
   // Start CLOSED on phones: the sidebar is 16rem of a ~390px screen and its
   // mobile overlay sits on top of the composer, so opening by default meant a
   // visitor landed on a dimmed, untypable chat. Desktop keeps it open.
@@ -836,14 +838,14 @@ function OysterApp() {
       const id = convIdFromUrl();
       if (!id) return;
       const rec = getConv(store, id);
-      if (!rec) return;
+      if (!rec || isSignedIn) return;
       setMode(rec.mode);
       if (rec.mode === "rag") setRagActiveId(id);
       else setBasicActiveId(id);
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
-  }, [store]);
+  }, [store, isSignedIn]);
 
   const handleNewConv = useCallback(() => {
     // A new chat is just a client-side draft (both tiers) — no server row until
@@ -1360,19 +1362,6 @@ function OysterApp() {
     return null;
   }, [activeProjectId, loadWorkspace, showToast]);
 
-  // Jump from a finding card into its source chat: switch project if the
-  // finding lives in a different one, then select the right mode + conversation.
-  const openFindingChat = useCallback(async (f: UserFinding) => {
-    const targetMode: Mode = f.conv_mode === "rag" ? "rag" : "basic";
-    if (f.project_id && f.project_id !== activeProjectId) {
-      await handleSwitchProject(f.project_id);
-    }
-    setMode(targetMode);
-    if (f.conversation_id) {
-      if (targetMode === "rag") setRagActiveId(f.conversation_id);
-      else setBasicActiveId(f.conversation_id);
-    }
-  }, [activeProjectId, handleSwitchProject]);
 
   // --- reuse a published finding -------------------------------------------
   // Someone else's finding becomes the opening message of a NEW chat in the
@@ -1418,18 +1407,6 @@ function OysterApp() {
     return lines.join("\n");
   };
 
-  const handleReuseFinding = useCallback((f: PublicFinding, question: string) => {
-    if (!isSignedIn) return void showToast("Sign in to start a chat from a finding.");
-    const draft = draftConversation("basic");
-    dispatch({ type: "upsertDraft", conv: draft });
-    setBasicActiveId(draft.id);
-    setMode("basic");
-    // sendBasic reads the ACTIVE conversation out of state, so calling it now
-    // would find nothing and silently bail. Hand the seed to an effect that
-    // fires once React has flushed the new conversation into place.
-    pendingSeedRef.current = { convId: draft.id, text: seedFromFinding(f, question) };
-    showToast("Started a new chat from that finding");
-  }, [isSignedIn, showToast]);
 
   useEffect(() => {
     const pending = pendingSeedRef.current;
@@ -1439,7 +1416,11 @@ function OysterApp() {
     void sendBasic(pending.text);
   }, [mode, basicActiveId, store, sendBasic]);
 
-  const isChatMode = mode === "basic" || mode === "rag";
+  // Signed-in users can only ever see the three hackathon views. Any other mode
+  // (a stale conversation URL, a saved record, a removed shortcut) falls back to
+  // Security Intel, so removed views — Execute included — cannot render at all.
+  const viewMode: Mode = isSignedIn && !["intel", "redbears", "findings"].includes(mode) ? "intel" : mode;
+  const isChatMode = viewMode === "basic" || viewMode === "rag";
   const toggleSidebar = () =>
     setSidebarOpen((v) => !(v ?? window.matchMedia("(min-width: 768px)").matches));
 
@@ -1524,37 +1505,35 @@ function OysterApp() {
             onCloseSearch={() => setSearchOpen(false)}
           />
         </ErrorBoundary>
-      ) : mode === "scope" ? (
+      ) : viewMode === "scope" ? (
         <ScopePanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} />
-      ) : mode === "recon" ? (
+      ) : viewMode === "recon" ? (
         <ReconPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
-      ) : mode === "testplan" ? (
+      ) : viewMode === "testplan" ? (
         <TestPlannerPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
-      ) : mode === "fix" ? (
+      ) : viewMode === "fix" ? (
         <FixAdvisorPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
-      ) : mode === "execute" ? (
+      ) : viewMode === "execute" ? (
         <ExecutionPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} activeProjectName={activeProjectName} />
-      ) : mode === "soccopilot" ? (
+      ) : viewMode === "soccopilot" ? (
         <SocCopilotPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} activeProjectName={activeProjectName} />
-      ) : mode === "cookbook" ? (
+      ) : viewMode === "cookbook" ? (
         <CookBookPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} />
-      ) : mode === "notes" ? (
+      ) : viewMode === "notes" ? (
         <NotesPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} />
-      ) : mode === "codelab" ? (
+      ) : viewMode === "codelab" ? (
         <CodeLabPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} />
-      ) : mode === "shield" ? (
+      ) : viewMode === "shield" ? (
         <ShieldPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} />
-      ) : mode === "intel" ? (
+      ) : viewMode === "intel" ? (
         <SecurityIntelligencePanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
-      ) : mode === "redbears" ? (
-        <RedBearsPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} />
-      ) : mode === "findings" ? (
+      ) : viewMode === "redbears" ? (
+        <RedBearsPanel onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen ?? true} selectedModel={selectedModel} onModelChange={setSelectedModel} />
+      ) : viewMode === "findings" ? (
         <FindingsPanel
           onToggleSidebar={toggleSidebar}
           sidebarOpen={sidebarOpen ?? true}
           projectId={activeProjectId}
-          onOpenChat={openFindingChat}
-          onReuseFinding={handleReuseFinding}
           refreshKey={findingsRefresh}
         />
       ) : (
@@ -1594,7 +1573,7 @@ function OysterApp() {
 
       <HandbookPanel
         open={handbookOpen}
-        context={modeToHandbookContext(mode)}
+        context={modeToHandbookContext(viewMode)}
         onClose={() => setHandbookOpen(false)}
       />
     </div>

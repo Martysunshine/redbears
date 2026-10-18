@@ -28,7 +28,7 @@ import { AgreementText } from "./AgreementText";
 import { MemoryPanel } from "./MemoryPanel";
 import { SettingsWheel, RedOrcaMark } from "./brand";
 import {
-  MODELS,
+  UI_MODELS,
   getSettings,
   updateSettings,
   deleteAllPersonalData,
@@ -335,7 +335,7 @@ export function AccountSettingsModal({
               onChange={(e) => onModelChange(e.target.value)}
               className="cursor-pointer w-full bg-oyster-surface border border-oyster-border rounded-lg px-3 py-2 text-sm text-oyster-text outline-none focus:border-oyster-accent/50"
             >
-              {MODELS.map((m) => (
+              {UI_MODELS.map((m) => (
                 <option key={m.key} value={m.key}>
                   {m.label} — {m.description}
                 </option>

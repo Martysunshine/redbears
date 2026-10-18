@@ -4,7 +4,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { PanelLeftOpen, Layers, Loader2, AlertTriangle, CheckCircle2, Square, ArrowUp } from "lucide-react";
 import {
   askKnowledgeStream,
-  MODELS,
+  UI_MODELS,
+  UI_MODEL_KEYS,
   type KnowledgeStreamFrame,
   type RankedCitation,
   type RerankInfo,
@@ -15,11 +16,8 @@ interface RedBearsPanelProps {
   onToggleSidebar: () => void;
   sidebarOpen: boolean;
   selectedModel: string;
+  onModelChange: (model: string) => void;
 }
-
-// The two models this demo compares, plus V1 as the rollback. Anything else in
-// MODELS stays available in the main picker; this list is just the demo's.
-const DEMO_MODEL_KEYS = ["oyster-dolphin-v2", "huihui-qwen3.8-27b", "oyster-dolphin-v1"];
 
 const EXAMPLES = [
   "How does Kerberoasting work and how do I detect it?",
@@ -61,9 +59,10 @@ function RerankBadge({ info, requested }: { info: RerankInfo | null; requested: 
   );
 }
 
-export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel }: RedBearsPanelProps) {
-  const models = MODELS.filter((m) => DEMO_MODEL_KEYS.includes(m.key));
-  const [model, setModel] = useState(DEMO_MODEL_KEYS.includes(selectedModel) ? selectedModel : DEMO_MODEL_KEYS[0]);
+export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel, onModelChange }: RedBearsPanelProps) {
+  // One shared model choice (Oyster | Huihui) for the whole app.
+  const models = UI_MODELS;
+  const model = UI_MODEL_KEYS.includes(selectedModel) ? selectedModel : UI_MODEL_KEYS[0];
   const [rerank, setRerank] = useState(true);
   const [question, setQuestion] = useState("");
   const [running, setRunning] = useState(false);
@@ -119,7 +118,7 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel }: R
   }, [model, rerank, running]);
 
   const shown = finalAnswer ?? answer;
-  const modelLabel = (k: string | null) => MODELS.find((m) => m.key === k)?.label ?? k;
+  const modelLabel = (k: string | null) => UI_MODELS.find((m) => m.key === k)?.label ?? k;
   const sec = (ms?: number | null) => (ms == null ? "–" : `${(ms / 1000).toFixed(1)}s`);
 
   return (
@@ -163,7 +162,7 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel }: R
               <select
                 aria-label="Answer model"
                 value={model}
-                onChange={(e) => setModel(e.target.value)}
+                onChange={(e) => onModelChange(e.target.value)}
                 disabled={running}
                 className="bg-oyster-bg border border-oyster-border rounded-lg px-3 py-2 text-sm text-oyster-text outline-none focus:border-oyster-accent/50"
               >
@@ -173,7 +172,7 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel }: R
               </select>
               <label className="flex items-center gap-2 text-sm text-oyster-text select-none cursor-pointer">
                 <input type="checkbox" checked={rerank} onChange={(e) => setRerank(e.target.checked)} disabled={running} />
-                Rerank evidence with Nemotron
+                Rerank evidence with Nemotron (reranker only)
               </label>
               <div className="sm:ml-auto flex items-center gap-2">
                 {running ? (
@@ -200,7 +199,7 @@ export function RedBearsPanel({ onToggleSidebar, sidebarOpen, selectedModel }: R
               </div>
             </div>
             <p className="text-[11px] text-oyster-muted">
-              {MODELS.find((m) => m.key === model)?.description}
+              {UI_MODELS.find((m) => m.key === model)?.description}
             </p>
             <div className="flex flex-wrap gap-1.5">
               {EXAMPLES.map((ex) => (

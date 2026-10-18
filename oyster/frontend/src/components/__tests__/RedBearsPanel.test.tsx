@@ -27,7 +27,7 @@ const cite = (n: number, id: string, extra = {}) => ({
 const base = { type: "meta", model: "oyster-dolphin-v2", ollama_model: "x", grounded: true, retrieval_ms: 10 };
 
 async function ask() {
-  render(<RedBearsPanel onToggleSidebar={() => {}} sidebarOpen selectedModel="oyster-dolphin-v2" />);
+  render(<RedBearsPanel onToggleSidebar={() => {}} sidebarOpen selectedModel="oyster-dolphin-v2" onModelChange={() => {}} />);
   fireEvent.change(screen.getByLabelText(/Ask a security question/i), { target: { value: "q?" } });
   fireEvent.click(screen.getByRole("button", { name: /Ask/ }));
 }

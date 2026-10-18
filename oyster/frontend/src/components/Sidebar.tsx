@@ -34,7 +34,7 @@ import {
   Layers,
 } from "lucide-react";
 import { type Conversation, type Mode } from "@/types/chat";
-import { MODELS, type ProjectSummary } from "@/lib/api";
+import { UI_MODELS, type ProjectSummary } from "@/lib/api";
 import { OysterMascot } from "./OysterMascot";
 import { ReportBugButton } from "./ReportBugButton";
 import { useAuth } from "./AuthGate";
@@ -256,119 +256,38 @@ export function Sidebar({
           />
         )}
 
-        {/* Primary navigation */}
-        <nav className="px-3 space-y-0.5 shrink-0">
-          <button onClick={() => onModeChange("basic")} className={navBtn(mode === "basic")}>
-            <MessageSquare size={16} className="shrink-0" />
-            <span className="font-medium">Chat</span>
-          </button>
-
+        {/* Primary navigation — hackathon build: exactly three views. The old
+            Chat/Dashboard, Red Team, Blue Team, RAG Analyst and Execute entries
+            are gone from the UI (their backend services are untouched).
+            Anonymous visitors have no other view, so they keep plain Chat. */}
+        <nav className="px-3 space-y-0.5 shrink-0" aria-label="Primary">
+          {!isSignedIn && (
+            <button onClick={() => onModeChange("basic")} className={navBtn(mode === "basic")}>
+              <MessageSquare size={16} className="shrink-0" />
+              <span className="font-medium">Chat</span>
+            </button>
+          )}
           {isSignedIn && (<>
-          <button
-            onClick={() => setRedTeamOpen((v) => !v)}
-            className={navBtn(RED_TEAM_IDS.includes(mode))}
-            aria-expanded={redTeamOpen}
-          >
-            <Shield size={16} className="shrink-0" />
-            <span className="font-medium flex-1">Red Team</span>
-            <ChevronRight
-              size={14}
-              className={`text-oyster-muted transition-transform ${redTeamOpen ? "rotate-90" : ""}`}
-            />
-          </button>
-          {redTeamOpen && (
-            <div className="pl-4 ml-2 border-l border-oyster-border space-y-0.5 py-0.5">
-              {RED_TEAM.map(({ id, label, icon: Icon }) => (
-                <button
-                  key={id}
-                  onClick={() => onModeChange(id)}
-                  className={`cursor-pointer w-full flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-left text-[13px] transition-all duration-150 ${
-                    mode === id
-                      ? "bg-oyster-accent/15 text-oyster-accent"
-                      : "text-oyster-muted hover:text-oyster-text hover:bg-oyster-surface/60"
-                  }`}
-                >
-                  <Icon size={13} className="shrink-0" />
-                  <span className="font-medium">{label}</span>
-                </button>
-              ))}
-            </div>
-          )}
-
-          <button
-            onClick={() => setBlueTeamOpen((v) => !v)}
-            className={navBtn(BLUE_TEAM_IDS.includes(mode))}
-            aria-expanded={blueTeamOpen}
-          >
-            <ShieldCheck size={16} className="shrink-0" />
-            <span className="font-medium flex-1">Blue Team</span>
-            <ChevronRight
-              size={14}
-              className={`text-oyster-muted transition-transform ${blueTeamOpen ? "rotate-90" : ""}`}
-            />
-          </button>
-          {blueTeamOpen && (
-            <div className="pl-4 ml-2 border-l border-oyster-border space-y-0.5 py-0.5">
-              {BLUE_TEAM.map(({ id, label, icon: Icon }) => (
-                <button
-                  key={id}
-                  onClick={() => onModeChange(id)}
-                  className={`cursor-pointer w-full flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-left text-[13px] transition-all duration-150 ${
-                    mode === id
-                      ? "bg-oyster-accent/15 text-oyster-accent"
-                      : "text-oyster-muted hover:text-oyster-text hover:bg-oyster-surface/60"
-                  }`}
-                >
-                  <Icon size={13} className="shrink-0" />
-                  <span className="font-medium">{label}</span>
-                </button>
-              ))}
-            </div>
-          )}
-
-          <button onClick={() => onModeChange("rag")} className={navBtn(mode === "rag")}>
-            <BookOpen size={16} className="shrink-0" />
-            <span className="font-medium">RAG Analyst</span>
-          </button>
-
-          {/* Security Intelligence — the deterministic router over exact
-              CVE/CWE/CAPEC/ATT&CK/D3FEND lookups plus vulnerability-filter,
-              detection, mitigation, incident-response, cloud, and general
-              questions. Serves both Red and Blue Team, so it sits as its own
-              top-level item rather than under either team's submenu. */}
           <button onClick={() => onModeChange("intel")} className={navBtn(mode === "intel")}>
             <ShieldQuestion size={16} className="shrink-0" />
             <span className="font-medium">Security Intel</span>
           </button>
 
-          {/* Red Bears — streamed, cited answers with optional Nemotron
-              evidence reranking and a selectable answer model. */}
           <button onClick={() => onModeChange("redbears")} className={navBtn(mode === "redbears")}>
             <Layers size={16} className="shrink-0" />
             <span className="font-medium">Red Bears</span>
           </button>
 
-          {/* Findings — the account's own logged findings, whether captured
-              from a chat message or logged by hand. This is the former
-              Red-Team "Evidence" surface too, hence the same Bug icon. */}
           <button onClick={() => onModeChange("findings")} className={navBtn(mode === "findings")}>
             <Bug size={16} className="shrink-0" />
             <span className="font-medium">Findings</span>
           </button>
           </>)}
-
-          {/* Execute stays operator-only: it runs REAL tools against real
-              hosts, and the backend keeps /execution/* admin-gated behind the
-              kill-switch. Showing it to everyone would only render a button
-              that 403s. */}
-          {isOperator && (
-          <button onClick={() => onModeChange("execute")} className={navBtn(mode === "execute")}>
-            <Terminal size={16} className="shrink-0" />
-            <span className="font-medium">Execute</span>
-          </button>
-          )}
         </nav>
 
+
+        {/* Chat history / search / new chat belong to the Chat view, which only anonymous visitors have now. */}
+        {!isSignedIn && (<>
         <div className="mx-3 my-3 border-t border-oyster-border shrink-0" />
 
         {/* Search + New chat */}
@@ -460,6 +379,8 @@ export function Sidebar({
           </div>
         </div>
 
+        </>)}
+        {isSignedIn && <div className="flex-1" />}
         {/* Footer */}
         <div className="px-3 py-2.5 border-t border-oyster-border shrink-0 flex items-center gap-2">
           {isSignedIn ? (
@@ -471,7 +392,7 @@ export function Sidebar({
               title="Model"
               aria-label="Model"
             >
-              {MODELS.map((m) => (
+              {UI_MODELS.map((m) => (
                 <option key={m.key} value={m.key}>
                   {m.label}
                 </option>
