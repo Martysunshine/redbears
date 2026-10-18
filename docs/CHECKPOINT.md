@@ -1,8 +1,13 @@
 # Local development checkpoint (2026-10-18) — not a release
 
-Scope: Oyster import + Huihui model option + Nemotron evidence reranking + Red Bears panel.
+Scope: Oyster import + Huihui model option + Nemotron evidence reranking + Red Bears panel, extended with the
+investigation workflow (Nemotron reasoning / Tavily / Devin integration adapters, an isolated Juice Shop lab,
+two scenarios, detection validation) — see **[docs/INVESTIGATION.md](INVESTIGATION.md)** for what of that is
+live-verified versus unit-tested-only versus still unimplemented. Deployment hardening remains open (see SECURITY.md).
 
-**Not implemented:** Tavily research · generative Nemotron orchestration · Juice Shop isolation · detection validation · sandboxed attack simulation · deployment hardening (see SECURITY.md).
+Still genuinely unimplemented, as distinct from "implemented but unverified live": a Devin handoff that has
+actually run end-to-end (no credentials/allowed repo configured here), real Nemotron-reasoning or Tavily calls
+against a live account, and a second lab template beyond Juice Shop.
 
 ## Pre-push checks run
 * Remote `Martysunshine/redbears` reported `"private": false` by the GitHub API → **push blocked until made private**.

@@ -107,9 +107,17 @@ class TavilyAdapter(IntegrationAdapter):
 
     async def extract(self, urls: list[str], *, query: str | None = None) -> tuple[list[dict], list[dict]]:
         """Returns (results, failed_results); both are reported — a 200 can
-        still carry per-URL failures."""
+        still carry per-URL failures. Tavily's /extract endpoint takes
+        explicit URLs, not a domain filter, so the Juice Shop exclusion
+        (brief §5, enforced on search() via exclude_domains) is applied here
+        client-side instead — never pass a URL from an excluded domain
+        through to the provider."""
         if not self.is_configured():
             raise IntegrationError("Tavily is not configured.", status=IntegrationStatus.NOT_CONFIGURED)
+        excluded = tuple(config.TAVILY_EXCLUDE_DOMAINS)
+        urls = [u for u in urls if not any(d in u for d in excluded)]
+        if not urls:
+            raise IntegrationError("Every requested URL is on the excluded-domains list.")
         body: dict = {"urls": urls[:20], "extract_depth": "basic", "format": "markdown"}
         if query:
             body["query"] = query

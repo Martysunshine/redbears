@@ -11,6 +11,10 @@
 | `OYSTER_SUPABASE_JWT_SECRET` / Supabase URL | backend token verification | secret manager | same |
 | `OYSTER_MCP_HTTP_TOKENS` | MCP gateway (≥24 random chars in prod) | secret manager | same |
 | `data/.memory_key` | decrypts stored user memories | `$OYSTER_DATA_DIR`, outside git, backed up separately from the DB | beside the DB it decrypts |
+| `NEBIUS_API_KEY` | backend → Nebius Token Factory (Nemotron reasoning) | secret manager, or runtime-only override via Account Settings → Integrations | same |
+| `TAVILY_API_KEY` | backend → api.tavily.com | secret manager / runtime-only override | same |
+| `DEVIN_API_KEY` / `DEVIN_ORG_ID` | backend → api.devin.ai, only for repos in `DEVIN_ALLOWED_REPOS` | secret manager / runtime-only override | same |
+| `OPENCVE_API_TOKEN` | backend → app.opencve.io (read-only CVE catalog) | secret manager / runtime-only override | same |
 
 Only `NEXT_PUBLIC_*` values reach the browser (API URL, Supabase *anon* URL/key — public by design). The NVIDIA key is read only by `services/rerank_service.py` and is sent only when the endpoint host ends in `nvidia.com` (unit-tested); local/third-party rerank endpoints use the separate `NEMOTRON_RERANK_API_KEY`.
 
@@ -33,15 +37,28 @@ With `OYSTER_DISABLE_AUTH=false` and `OYSTER_PUBLIC_CHAT_ENABLED=false`, all 193
 ## Agent / sandbox isolation
 * The Execution Engine, legacy MCP tools and agent loop are off (`OYSTER_EXECUTION_ENGINE_ENABLED=false`) and 401 without admin. Do not enable them on a shared host.
 * Fixed here: legacy MCP command/network/project tools ran subprocesses with the **full backend environment** (a tool running `env` would have seen every secret). They now get an allowlisted env (`mcp_server/tools/_safe_env.py`, tested). The newer Execution Engine already used a minimal env.
-* **Not implemented / not verified:** disposable container sandbox for attack simulation, egress/metadata/host-file denial enforced outside the model, target allowlist enforced at network level, Juice Shop isolation. Until those exist, do not run attack tools against anything. No Docker socket is mounted anywhere in this repo (searched). Retrieved text is already framed as untrusted data in the prompts; that is a mitigation, not isolation.
+* **Implemented since the above was written** (see [docs/INVESTIGATION.md](INVESTIGATION.md) for exactly what's
+  live-verified vs. unit-tested): a disposable, sandboxed (macOS `sandbox-exec`/Seatbelt) Juice Shop lab under
+  `services/lab/`, with an automated isolation self-test that forces `LAB_ENABLED=false` if the sandbox can't be
+  verified (never falls back to an unrestricted process), per-scenario request/time budgets enforced outside the
+  model (`services/scenarios/base.py::ScopedClient`), and a target allowlist (the lab's own loopback-bound
+  instance only). **Not implemented**: an equivalent isolation mechanism for non-macOS hosts; a container-based
+  sandbox (this uses OS-level process sandboxing, not containers, since Docker isn't available on this machine).
+  No Docker socket is mounted anywhere in this repo (searched).
 
 ## Data and retention
 Uploaded documents, memory DB, logs and reports live under `$OYSTER_DATA_DIR`/`$OYSTER_LOGS_DIR` (outside git, `chmod 700` them on shared hosts). **No retention schedule, backup encryption or access-controlled log shipping is implemented yet.** Audit logging stores question prefixes; the NVIDIA key is never logged (rerank errors log only the exception type).
 
 ## Open blockers before any deployment
-1. Repo visibility (see checkpoint notes); licence/attribution for third-party knowledge packs (docs/CHECKPOINT.md).
-2. Sandbox for attack simulation, egress control, Juice Shop isolation, detection validation — unimplemented.
-3. Tavily research and generative-Nemotron orchestration — unimplemented.
+1. Repo visibility: `Martysunshine/redbears` is **public** (checked live via the GitHub API, 2026-10-18) — make it
+   private before pushing anything from this branch of work; licence/attribution for third-party knowledge
+   packs (docs/CHECKPOINT.md) is unresolved too.
+2. Sandbox for attack simulation and Juice Shop isolation are now implemented (macOS `sandbox-exec`) — see
+   docs/INVESTIGATION.md. Still open: an equivalent for non-macOS hosts, and network-level egress control beyond
+   the sandbox profile's own `allow`-list.
+3. Tavily research, generative-Nemotron orchestration, Devin handoff, and OpenCVE are now implemented as
+   adapters with no code path that fakes a successful connection — but none has been exercised against a live
+   credential on this machine; see docs/INVESTIGATION.md for the live-verified/unit-tested split.
 4. Provider spend caps, HTTPS termination/reverse proxy, WAF, shared (multi-worker) rate limiting.
 5. Retention/backup policy; verification of valid-token authorisation against a real Supabase project.
 6. Production-mode frontend bundle scan (only the dev bundle was scanned; no secrets or secret names found).
