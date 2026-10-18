@@ -1,0 +1,7 @@
+# Lab-local, never committed.
+.venv/
+.env
+artifacts/
+__pycache__/
+*.pyc
+.pytest_cache/
